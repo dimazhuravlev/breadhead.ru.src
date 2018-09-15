@@ -6,8 +6,4 @@ node_js:
 before_install:
   - npm install -g yarn
 
-jobs:
-  include:
-    - stage: lint code
-      install: yarn
-      script: yarn lint
+script: yarn lint
