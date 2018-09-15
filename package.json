@@ -9,8 +9,8 @@
     "dev": "next",
     "build": "next build && next export",
     "lint": "yarn lint-css && yarn lint-js",
-    "lint-css": "stylelint 'pages/**/*.css' && stylelint 'components/**/*.css'",
-    "lint-js": "eslint 'pages/**/*.js' && eslint 'components/**/*.js'"
+    "lint-css": "stylelint 'pages/**/*.css' && stylelint 'ui/**/*.css'",
+    "lint-js": "eslint 'pages/**/*.js' && eslint 'ui/**/*.js'"
   },
   "devDependencies": {
     "autoprefixer": "^9.1.5",
