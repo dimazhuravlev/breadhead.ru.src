@@ -1,0 +1,13 @@
+language: node
+php:
+  - 8
+  - 10
+
+before_install:
+  - npm install -g yarn
+
+jobs:
+  include:
+    - stage: lint code
+      install: yarn
+      script: yarn lint
