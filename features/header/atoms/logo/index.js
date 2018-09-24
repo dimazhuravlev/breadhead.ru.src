@@ -1,9 +1,8 @@
-import React from 'react';
+import React from 'react'
+import './logo.css'
 
-class Logo extends React.Component {
-  render() {
-    return <div>Breadhead</div>
-  }
+const Logo = () => {
+  return <div className="HeaderLogo">Breadhead</div>
 }
 
-export default Logo;
+export default Logo
