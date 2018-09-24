@@ -1,10 +1,8 @@
-import styles from './index.css'
-
-import Button from '@site/ui/atoms/Button'
+import './index.css'
+import Home from '@site/features/home'
 
 export default () => (
   <div>
-    <div className={styles.root}>Welcome to Sold Soda!</div>
-    <Button />
+    <Home />
   </div>
 )
