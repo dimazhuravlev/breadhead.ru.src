@@ -1,3 +1,15 @@
 import styles from './Button.css'
+import * as Icons from '@site/ui/molecules/Icons'
 
-export default () => <button className={styles.Button}>Связь</button>
+const Button = () => {
+  return (
+    <button className={styles.Button}>
+      <div>
+        <Icons.ZipIcon />
+        Связь
+      </div>
+    </button>
+  )
+}
+
+export default Button

@@ -6,7 +6,7 @@
   --title80-80: light 80px/80px var(--fontFamilyAeroport);
   --title40-40: light 40px/40px var(--fontFamilyAeroport);
   --title40-48: light 40px/48px var(--fontFamilyAeroport);
-  --caption20-24: regular 20px/24px var(--fontFamilyAeroport);
+  --caption20-24: light 20px/24px var(--fontFamilyAeroport);
   --text24-32: light 24px/32px var(--fontFamilyGraphik);
 
   /* Mobile text styles */
