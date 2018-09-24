@@ -1,0 +1,10 @@
+.Button {
+  background-color: var(--beigeSecondary);
+  color: var(--darkPrimary);
+  font: var(--caption20-24);
+  border-radius: 50%;
+  padding: 12px 16px;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+}
