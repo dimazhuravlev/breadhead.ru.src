@@ -1,11 +1,11 @@
 import React from 'react'
-// import * as styles from './logo.css'
-import BreadheadLogo from './breadhead_logo.svg'
+import * as Icons from '@site/ui/molecules/Icons'
+import * as styles from './logo.css'
 
 const Logo = () => {
   return (
     <div>
-      <BreadheadLogo />
+      <Icons.BreadHeadLogo />
     </div>
   )
 }
