@@ -1,22 +1,21 @@
 import React from 'react'
-import NavigationLink from './atoms/navigation_link'
+import NavigationLink from './atoms/navigationLink'
+import * as styles from './navigation.css'
 
-class Navigation extends React.Component {
-  render() {
-    return (
+const Navigation = () => {
+  return (
+    <div className={styles.NavigationWrapper}>
       <div>
-        <div>
-          <NavigationLink />
-        </div>
-        <div>
-          <NavigationLink />
-        </div>
-        <div>
-          <NavigationLink />
-        </div>
+        <NavigationLink link="опыт" />
       </div>
-    )
-  }
+      <div>
+        <NavigationLink link="студия" />
+      </div>
+      <div>
+        <NavigationLink link="как мы работаем" />
+      </div>
+    </div>
+  )
 }
 
 export default Navigation

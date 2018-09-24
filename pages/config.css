@@ -1,0 +1,23 @@
+:root {
+  --fontFamilyAeroport: -apple-system, BlinkMacSystemFont, Helvetica, sans-serif;
+  --fontFamilyGraphik: -apple-system, BlinkMacSystemFont, Helvetica, sans-serif;
+
+  /* Desktop text styles */
+  --title80-80: light 80px/80px var(--fontFamilyAeroport);
+  --title40-40: light 40px/40px var(--fontFamilyAeroport);
+  --title40-48: light 40px/48px var(--fontFamilyAeroport);
+  --caption20-24: regular 20px/24px var(--fontFamilyAeroport);
+  --text24-32: light 24px/32px var(--fontFamilyGraphik);
+
+  /* Mobile text styles */
+  --titleMobile28-32: light 28px/32px var(--fontFamilyAeroport);
+  --titleMobile24-28: light 24px/28px var(--fontFamilyAeroport);
+  --titleMobile18-24: light 18px/24px var(--fontFamilyGraphik);
+
+  /* Colors */
+  --darkPrimary: #0e0f0f;
+  --darkSecondary: #1d1e21;
+  --beigePrimary: #e0d7ce;
+  --beigeSecondary: #a38e7c;
+  --redPrimary: #ff4f05;
+}

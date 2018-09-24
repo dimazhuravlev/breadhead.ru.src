@@ -3,18 +3,18 @@ import React from 'react'
 import Logo from '../../atoms/logo'
 import Navigation from '../../molecules/navigation'
 import Button from '@site/ui/atoms/Button'
-import './header.css'
+import * as styles from './header.css'
 
-class Header extends React.Component {
-  render() {
-    return (
-      <div>
+const Header = () => {
+  return (
+    <div className={styles.Header}>
+      <div className={styles.HeaderWrapper}>
         <Logo />
         <Navigation />
-        <Button />
       </div>
-    )
-  }
+      <Button />
+    </div>
+  )
 }
 
 export default Header
