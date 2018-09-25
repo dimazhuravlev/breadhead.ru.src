@@ -1,6 +1,8 @@
 :root {
-  --fontFamilyAeroport: -apple-system, BlinkMacSystemFont, Helvetica, sans-serif;
-  --fontFamilyGraphik: -apple-system, BlinkMacSystemFont, Helvetica, sans-serif;
+  --fontFamilyAeroport: "AeroportLight", -apple-system, BlinkMacSystemFont,
+    Helvetica, sans-serif;
+  --fontFamilyGraphik: "GraphikLight", -apple-system, BlinkMacSystemFont,
+    Helvetica, sans-serif;
 
   /* Desktop text styles */
   --title80-80: light 80px/80px var(--fontFamilyAeroport);
