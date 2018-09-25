@@ -1,3 +1,10 @@
 .NavigationLink {
-  color: white;
+  color: var(--beigeSecondary);
+  font: var(--caption20-24);
+  margin-right: 32px;
+  cursor: pointer;
+  &:hover {
+    color: var(--redPrimary);
+    transition: all 0.2s ease;
+  }
 }
