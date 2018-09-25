@@ -1,9 +1,10 @@
 import React from 'react'
 import Header from '@site/features/header'
+import * as styles from './home.css'
 
 const Home = () => {
   return (
-    <div>
+    <div className={styles.Home}>
       <Header />
     </div>
   )

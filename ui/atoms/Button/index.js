@@ -1,13 +1,11 @@
-import styles from './Button.css'
+import styles from './button.css'
 import * as Icons from '@site/ui/molecules/Icons'
 
 const Button = () => {
   return (
     <button className={styles.Button}>
-      <div>
-        <Icons.ZipIcon />
-        Связь
-      </div>
+      <Icons.ZipIcon className={styles.ButtonIcon} />
+      <div className={styles.ButtonText}>cвязь</div>
     </button>
   )
 }

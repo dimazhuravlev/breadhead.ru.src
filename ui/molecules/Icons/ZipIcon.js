@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ZipIcon = () => {
+const ZipIcon = props => {
   return (
     <svg
       width="24px"
@@ -8,6 +8,7 @@ const ZipIcon = () => {
       viewBox="0 0 24 40"
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
+      {...props}
     >
       <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g transform="translate(-1299.000000, -36.000000)" fill="#0E0F0F">
