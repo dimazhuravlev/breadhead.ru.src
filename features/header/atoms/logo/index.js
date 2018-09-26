@@ -1,12 +1,11 @@
 import React from 'react'
-import * as Icons from '@site/ui/molecules/Icons'
-import * as styles from './logo.css'
+import { BreadHeadLogo } from '@site/ui/molecules/Icons'
 
 const Logo = () => {
   return (
-    <div>
-      <Icons.BreadHeadLogo />
-    </div>
+    <React.Fragment>
+      <BreadHeadLogo />
+    </React.Fragment>
   )
 }
 
