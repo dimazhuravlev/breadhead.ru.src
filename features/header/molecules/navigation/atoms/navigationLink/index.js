@@ -1,7 +1,12 @@
-import * as styles from './navigationLink.css'
+// import PropTypes from 'prop-types'
+import * as styles from './navLink.css'
 
-const NavigationLink = props => {
-  return <a className={styles.NavigationLink}>{props.link}</a>
+const NavLink = props => {
+  return <a className={styles.NavLink}>{props.children}</a>
 }
 
-export default NavigationLink
+// NavLink.propTypes = {
+//   children: PropTypes.element.isRequired
+// }
+
+export default NavLink

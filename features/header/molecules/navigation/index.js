@@ -1,18 +1,17 @@
-import React from 'react'
-import NavigationLink from './atoms/navigationLink'
+import NavLink from './atoms/navigationLink'
 import * as styles from './navigation.css'
 
 const Navigation = () => {
   return (
-    <div className={styles.NavigationWrapper}>
+    <div className={styles.NavWrapper}>
       <div>
-        <NavigationLink link="опыт" />
+        <NavLink>опыт</NavLink>
       </div>
       <div>
-        <NavigationLink link="студия" />
+        <NavLink>студия</NavLink>
       </div>
       <div>
-        <NavigationLink link="как мы работаем" />
+        <NavLink>как мы работаем</NavLink>
       </div>
     </div>
   )

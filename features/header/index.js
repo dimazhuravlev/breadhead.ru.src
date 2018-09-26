@@ -1,2 +1,1 @@
-export { default as default } from './organisms/header'
-
+export { default } from './organisms/header'

@@ -1,0 +1,5 @@
+.Title {
+  font: var(--title80-80);
+  color: var(--beigePrimary);
+  margin-bottom: 48px;
+}

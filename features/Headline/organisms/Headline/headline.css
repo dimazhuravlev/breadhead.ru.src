@@ -1,0 +1,11 @@
+.Headline {
+  display: flex;
+  margin-top: 120px;
+  margin-left: 25%;
+  align-items: flex-end;
+  /* background-color: papayawhip; */
+}
+
+.Title {
+  margin-bottom: 48px;
+}
