@@ -1,4 +1,4 @@
-import * as styles from './button.css'
+import * as styles from './Button.css'
 import { ZipIcon } from '@site/ui/molecules/Icons'
 
 const Button = () => (
