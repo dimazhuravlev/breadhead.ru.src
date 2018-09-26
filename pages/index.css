@@ -18,5 +18,6 @@ html {
 }
 
 ::selection {
-  background-color: rgba(224, 215, 206, 0.2);
+  background-color: rgba(224, 215, 206, 0);
+  color: var(--redPrimary);
 }
