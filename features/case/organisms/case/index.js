@@ -1,6 +1,11 @@
-// import HeadlineImage from '../../atoms/HeadlineImage'
+import Slider from '@site/features/slider'
 // import * as styles from './headline.css'
 
-const Case = () => <div>Кейс</div>
+const Case = () => (
+  <div>
+    {/* <Descriptor /> */}
+    <Slider />
+  </div>
+)
 
 export default Case

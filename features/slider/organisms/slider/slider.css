@@ -1,0 +1,6 @@
+.Slider {
+  width: 1024px;
+  height: 576px;
+  background-color: var(--darkSecondary);
+  border-radius: 6px;
+}
