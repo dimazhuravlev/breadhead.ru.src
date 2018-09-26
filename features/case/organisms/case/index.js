@@ -1,9 +1,10 @@
 import Slider from '@site/features/slider'
-// import * as styles from './headline.css'
+import Descriptor from '@site/features/descriptor'
+import * as styles from './case.css'
 
 const Case = () => (
-  <div>
-    {/* <Descriptor /> */}
+  <div className={styles.Case}>
+    <Descriptor />
     <Slider />
   </div>
 )

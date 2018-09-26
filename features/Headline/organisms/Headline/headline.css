@@ -1,6 +1,7 @@
 .Headline {
   display: flex;
   margin-top: 120px;
+  margin-bottom: 120px;
   margin-left: 25%;
   align-items: flex-end;
   /* background-color: papayawhip; */
