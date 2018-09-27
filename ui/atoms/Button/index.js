@@ -1,10 +1,12 @@
 import * as styles from './Button.css'
-import { ZipIcon } from '@site/ui/molecules/Icons'
+// import { ZipIcon } from '@site/ui/molecules/Icons'
+// import { PlusIcon } from '@site/ui/molecules/Icons'
 
-const Button = () => (
+const Button = props => (
   <button className={styles.Button}>
-    <ZipIcon className={styles.ButtonIcon} />
-    <div className={styles.ButtonText}>cвязь</div>
+    <div>{props.icon}</div>
+    {/* <PlusIcon className={styles.ButtonIcon} /> */}
+    <div className={styles.ButtonText}>{props.value}</div>
   </button>
 )
 
