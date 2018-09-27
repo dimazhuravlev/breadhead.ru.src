@@ -1,24 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[` 1`] = `
-<button>
-  <ZipIcon />
-  <div>
-    cвязь
-  </div>
-</button>
-`;
-
-exports[`Button renders correctly 1`] = `
-<button>
-  <ZipIcon />
-  <div>
-    cвязь
-  </div>
-</button>
-`;
-
-exports[`fdf Button renders correctly 1`] = `
+exports[`button ui Button renders correctly 1`] = `
 <button>
   <ZipIcon />
   <div>

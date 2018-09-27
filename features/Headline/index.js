@@ -1,2 +1,1 @@
-import React from 'react'
-export { default } from './organisms/headline'
+export { default } from './organisms/Headline'

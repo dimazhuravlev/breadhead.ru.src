@@ -1,6 +1,6 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-import * as styles from './navLink.css'
+// import PropTypes from 'prop-types'
+import styles from './navLink.css'
 
 // const NavLink = props => {
 //   return <a className={styles.NavLink}>{props.children}</a>

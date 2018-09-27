@@ -2,7 +2,7 @@ import React from 'react'
 
 import { ZipIcon } from '@site/ui/molecules/Icons'
 
-import * as styles from './Button.css'
+import styles from './Button.css'
 
 const Button = () => (
   <button className={styles.Button}>

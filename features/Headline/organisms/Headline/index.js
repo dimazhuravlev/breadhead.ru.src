@@ -3,7 +3,7 @@ import React from 'react'
 import Button from '@site/ui/atoms/Button'
 import HeadlineImage from '../../atoms/HeadlineImage'
 import HeadlineTitle from '../../atoms/HeadlineTitle'
-import * as styles from './headline.css'
+import styles from './headline.css'
 
 const Headline = () => {
   return (

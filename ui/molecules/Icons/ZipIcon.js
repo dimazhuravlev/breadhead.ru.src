@@ -1,3 +1,5 @@
+import React from 'react'
+
 const ZipIcon = props => (
   <svg
     width="24px"

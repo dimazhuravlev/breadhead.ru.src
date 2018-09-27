@@ -1,5 +1,5 @@
 import React from 'react'
-import * as styles from './headlineTitle.css'
+import styles from './headlineTitle.css'
 
 const HeadlineTitle = () => (
   <div className={styles.Title}>
