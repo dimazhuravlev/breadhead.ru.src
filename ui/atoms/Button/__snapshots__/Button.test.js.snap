@@ -1,7 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[` 1`] = `
+exports[`button ui Button renders correctly 1`] = `
 <button>
-  Welcome to Sold Soda!
+  <ZipIcon />
+  <div>
+    cвязь
+  </div>
 </button>
 `;

@@ -1,10 +1,11 @@
-import styles from './index.css'
+import React from 'react'
 
-import Button from '@site/ui/atoms/Button'
+import Home from '@site/features/home'
+import 'normalize.css'
+import './index.css'
 
 export default () => (
   <div>
-    <div className={styles.root}>Welcome to Sold Soda!</div>
-    <Button />
+    <Home />
   </div>
 )

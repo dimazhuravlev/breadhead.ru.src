@@ -4,9 +4,9 @@ import { shallowToJson } from 'enzyme-to-json'
 
 import Button from '.'
 
-test('', () => {
-  const output = shallow(
-    <Button />
-  )
-  expect(shallowToJson(output)).toMatchSnapshot()
+describe('button ui', () => {
+  test('Button renders correctly', () => {
+    const output = shallow(<Button />)
+    expect(shallowToJson(output)).toMatchSnapshot()
+  })
 })
