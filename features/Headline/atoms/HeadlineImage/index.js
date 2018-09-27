@@ -1,3 +1,5 @@
+import React from 'react'
+
 const HeadlineImage = () => (
   <img
     src="/static/img/HeadlineImage.png"

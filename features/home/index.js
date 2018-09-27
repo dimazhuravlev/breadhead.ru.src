@@ -1,1 +1,2 @@
-export { default as default } from './page/Home'
+import React from 'react'
+export { default } from './page/Home'
