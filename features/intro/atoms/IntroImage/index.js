@@ -1,6 +1,6 @@
 import React from 'react'
 
-const HeadlineImage = () => (
+const IntroImage = () => (
   <img
     src="/static/img/HeadlineImage.png"
     width="328"
@@ -9,4 +9,4 @@ const HeadlineImage = () => (
   />
 )
 
-export default HeadlineImage
+export default IntroImage
