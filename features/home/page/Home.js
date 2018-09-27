@@ -9,6 +9,8 @@ const Home = () => {
       <Header />
       <Headline />
       <Case />
+      <Case />
+      <Case />
     </div>
   )
 }

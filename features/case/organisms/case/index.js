@@ -1,3 +1,4 @@
+import React from 'react'
 import Slider from '@site/features/slider'
 import Descriptor from '@site/features/descriptor'
 import * as styles from './case.css'

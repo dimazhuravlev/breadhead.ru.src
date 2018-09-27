@@ -1,3 +1,4 @@
+import React from 'react'
 import { SiteLinkIcon, ArticleLinkIcon } from '@site/ui/molecules/Icons'
 import * as styles from './descriptor.css'
 

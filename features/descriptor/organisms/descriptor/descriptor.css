@@ -1,5 +1,6 @@
 .descriptor {
   margin-right: 44px;
+  width: calc(25% - 44px);
 }
 
 .descriptorType {
