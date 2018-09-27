@@ -12,7 +12,8 @@
     "lint": "yarn lint-css && yarn lint-js",
     "lint-css": "stylelint 'pages/**/*.css' && stylelint 'ui/**/*.css'",
     "lint-js": "eslint 'pages/**/*.js' && eslint 'ui/**/*.js'",
-    "test": "jest"
+    "test": "jest",
+    "ci": "yarn lint && yarn test",
   },
   "devDependencies": {
     "autoprefixer": "^9.1.5",
