@@ -2,7 +2,7 @@ import React from 'react'
 import { shallow } from 'enzyme'
 import { shallowToJson } from 'enzyme-to-json'
 
-import Button from './index'
+import Button from '.'
 
 test('', () => {
   const output = shallow(
