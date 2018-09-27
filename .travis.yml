@@ -6,4 +6,4 @@ node_js:
 before_install:
   - npm install -g yarn
 
-script: yarn lint
+script: yarn ci
