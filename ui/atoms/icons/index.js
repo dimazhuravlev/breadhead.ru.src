@@ -1,5 +1,5 @@
-export { default as BreadHeadLogo } from './BreadheadLogo'
+export { default as BreadHeadLogo } from './BreadHeadLogo'
 export { default as ZipIcon } from './ZipIcon'
 export { default as PlusIcon } from './PlusIcon'
-export { default as SiteLinkIcon } from './SiteLinkIcon'
-export { default as ArticleLinkIcon } from './ArticleLinkIcon'
+export { default as GlobeIcon } from './GlobeIcon'
+export { default as ArticleIcon } from './ArticleIcon'

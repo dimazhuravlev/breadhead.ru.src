@@ -1,4 +1,4 @@
-const SiteLinkIcon = props => (
+const GlobeIcon = props => (
   <svg
     width="21px"
     height="21px"
@@ -68,4 +68,4 @@ const SiteLinkIcon = props => (
   </svg>
 )
 
-export default SiteLinkIcon
+export default GlobeIcon

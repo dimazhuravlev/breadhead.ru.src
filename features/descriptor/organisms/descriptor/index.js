@@ -1,6 +1,7 @@
 import React from 'react'
-import { SiteLinkIcon, ArticleLinkIcon } from '@site/ui/atoms/icons'
-import * as styles from './descriptor.css'
+// import { SiteLinkIcon, ArticleLinkIcon } from '@site/ui/atoms/icons'
+import IconLink from '@site/ui/molecules/IconLink'
+import styles from './descriptor.css'
 
 const Descriptor = () => (
   <div className={styles.descriptor}>
@@ -8,8 +9,12 @@ const Descriptor = () => (
     <div className={styles.descriptorName}>
       Faster. Новый опыт покупки лекарств
     </div>
-    <SiteLinkIcon className={styles.SiteLinkIcon} />
-    <ArticleLinkIcon className={styles.ArticleLinkIcon} />
+    <IconLink
+      title="Faster.ru"
+      text="ссылка на сайт"
+      icon="globe"
+      href="https://faster.ru/"
+    />
   </div>
 )
 

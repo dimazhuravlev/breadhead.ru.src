@@ -1,4 +1,4 @@
-const ArticleLinkIcon = props => (
+const ArticleIcon = props => (
   <svg
     width="19px"
     height="21px"
@@ -62,4 +62,4 @@ const ArticleLinkIcon = props => (
   </svg>
 )
 
-export default ArticleLinkIcon
+export default ArticleIcon
