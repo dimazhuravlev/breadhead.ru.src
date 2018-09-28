@@ -1,5 +1,5 @@
 import React from 'react'
-import { SiteLinkIcon, ArticleLinkIcon } from '@site/ui/molecules/Icons'
+import { SiteLinkIcon, ArticleLinkIcon } from '@site/ui/atoms/icons'
 import * as styles from './descriptor.css'
 
 const Descriptor = () => (

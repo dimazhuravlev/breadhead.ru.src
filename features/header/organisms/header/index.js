@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { BreadHeadLogo } from '@site/ui/molecules/Icons'
+import { BreadHeadLogo } from '@site/ui/atoms/icons'
 import Navigation from '../../molecules/navigation'
 import styles from './header.css'
 

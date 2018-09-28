@@ -1,7 +1,7 @@
 import React from 'react'
 
-import Button from '@site/ui/atoms/Button'
-import { ZipIcon } from '@site/ui/molecules/Icons'
+import Button from '@site/ui/molecules/Button'
+import { ZipIcon } from '@site/ui/atoms/icons'
 import IntroImage from '../../atoms/IntroImage'
 import IntroTitle from '../../atoms/IntroTitle'
 import styles from './intro.css'
