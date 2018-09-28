@@ -1,4 +1,4 @@
-.SiteLinkIcon {
+.iconLink {
   margin-right: 16px;
   cursor: pointer;
   &:hover g {
@@ -10,13 +10,16 @@
   }
 }
 
-.ArticleLinkIcon {
-  cursor: pointer;
-  &:hover rect {
-    fill: var(--redPrimary);
-    transition: all 0.15s ease-in;
-  }
-  @media (max-width: 768px) {
-    display: none;
-  }
+.iconTooltip {
+  display: inline;
+  background-color: var(--darkSecondary);
+  font: var(--caption20-24);
+  color: var(--beigePrimary);
+  border-radius: 4px;
+  padding: 8px 12px;
+}
+
+.iconText {
+  font: var(--caption20-24);
+  color: var(--beigePrimary);
 }

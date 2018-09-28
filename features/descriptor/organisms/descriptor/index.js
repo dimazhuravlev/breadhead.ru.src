@@ -1,5 +1,5 @@
 import React from 'react'
-// import { SiteLinkIcon, ArticleLinkIcon } from '@site/ui/atoms/icons'
+
 import IconLink from '@site/ui/molecules/IconLink'
 import styles from './descriptor.css'
 
