@@ -1,16 +1,20 @@
+import React from 'react'
+
 import Header from '@site/features/header'
-import Headline from '@site/features/headline'
+import Intro from '@site/features/intro'
 import Case from '@site/features/case'
-import * as styles from './home.css'
+import Button from '@site/ui/atoms/Button'
+import styles from './home.css'
 
 const Home = () => {
   return (
     <div className={styles.Home}>
       <Header />
-      <Headline />
+      <Intro />
       <Case />
       <Case />
       <Case />
+      <Button value="ещё" />
     </div>
   )
 }

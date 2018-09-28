@@ -1,9 +1,10 @@
-import * as styles from './headlineTitle.css'
+import React from 'react'
+import styles from './introTitle.css'
 
-const HeadlineTitle = () => (
+const IntroTitle = () => (
   <div className={styles.Title}>
     Разработка цифровых сервисов. Веб, iOS, Android
   </div>
 )
 
-export default HeadlineTitle
+export default IntroTitle

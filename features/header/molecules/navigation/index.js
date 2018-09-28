@@ -1,5 +1,7 @@
+import React from 'react'
+
 import NavLink from './atoms/navigationLink'
-import * as styles from './navigation.css'
+import styles from './navigation.css'
 
 const Navigation = () => {
   return (

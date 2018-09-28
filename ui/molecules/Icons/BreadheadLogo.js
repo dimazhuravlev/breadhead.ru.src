@@ -1,3 +1,5 @@
+import React from 'react'
+
 const BreadHeadLogo = () => (
   <svg
     width="248px"
