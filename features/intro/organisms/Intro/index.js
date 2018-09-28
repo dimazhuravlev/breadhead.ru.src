@@ -1,6 +1,7 @@
 import React from 'react'
 
 import Button from '@site/ui/atoms/Button'
+import { ZipIcon } from '@site/ui/molecules/Icons'
 import IntroImage from '../../atoms/IntroImage'
 import IntroTitle from '../../atoms/IntroTitle'
 import styles from './intro.css'
@@ -9,7 +10,7 @@ const Intro = () => (
   <div className={styles.Headline}>
     <div>
       <IntroTitle />
-      <Button value="связь" />
+      <Button icon={<ZipIcon />}>связь</Button>
     </div>
     <IntroImage />
   </div>

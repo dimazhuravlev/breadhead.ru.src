@@ -4,6 +4,7 @@ import Header from '@site/features/header'
 import Intro from '@site/features/intro'
 import Case from '@site/features/case'
 import Button from '@site/ui/atoms/Button'
+import { PlusIcon } from '@site/ui/molecules/Icons'
 import styles from './home.css'
 
 const Home = () => {
@@ -14,7 +15,9 @@ const Home = () => {
       <Case />
       <Case />
       <Case />
-      <Button value="ещё" />
+      <Button className={styles.plusButton} icon={<PlusIcon />}>
+        ещё
+      </Button>
     </div>
   )
 }
