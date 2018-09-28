@@ -7,7 +7,7 @@ import IntroTitle from '../../atoms/IntroTitle'
 import styles from './intro.css'
 
 const Intro = () => (
-  <div className={styles.Headline}>
+  <div className={styles.intro}>
     <div>
       <IntroTitle />
       <Button icon={<ZipIcon />}>связь</Button>
