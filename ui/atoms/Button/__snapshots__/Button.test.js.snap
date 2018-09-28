@@ -3,7 +3,5 @@
 exports[`button ui Button renders correctly 1`] = `
 <button>
   <div />
-  <ZipIcon />
-  <div />
 </button>
 `;
