@@ -4,7 +4,7 @@ import Descriptor from '@site/features/descriptor'
 import * as styles from './case.css'
 
 const Case = props => (
-  <div className={styles.Case}>
+  <div className={styles.case}>
     <Descriptor
       casetype={props.casetype}
       casename={props.casename}
