@@ -1,0 +1,7 @@
+.client {
+  font: var(--title40-48);
+  color: var(--beigePrimary);
+  @media (max-width: 1023px) {
+    font: var(--titleMobile28-32);
+  }
+}

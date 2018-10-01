@@ -8,3 +8,11 @@
     padding: 30px 16px;
   }
 }
+
+.plusButton {
+  margin-bottom: 160px;
+  margin-left: 25%;
+  @media (max-width: 1023px) {
+    margin-bottom: 80px;
+  }
+}

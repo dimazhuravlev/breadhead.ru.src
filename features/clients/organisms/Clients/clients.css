@@ -1,0 +1,23 @@
+.clients {
+  display: flex;
+  margin-bottom: 160px;
+  @media (max-width: 1023px) {
+    flex-direction: column;
+    margin-bottom: 80px;
+  }
+}
+
+.clientsLists {
+  display: flex;
+  justify-content: space-between;
+  width: 65%;
+  @media (max-width: 1700px) {
+    width: 75%;
+  }
+  @media (max-width: 1023px) {
+    width: 100%;
+  }
+  @media (max-width: 690px) {
+    flex-direction: column;
+  }
+}
