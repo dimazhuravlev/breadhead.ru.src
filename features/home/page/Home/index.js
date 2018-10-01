@@ -4,6 +4,7 @@ import Header from '@site/features/header'
 import Intro from '@site/features/intro'
 import Case from '@site/features/case'
 import Clients from '@site/features/clients'
+import About from '@site/features/about'
 import Button from '@site/ui/molecules/Button'
 import { PlusIcon } from '@site/ui/atoms/icons'
 import styles from './home.css'
@@ -44,6 +45,15 @@ const Home = () => {
         ещё
       </Button>
       <Clients />
+      <About />
+      <Case
+        casetype="вики"
+        casename="Как мы работаем"
+        icontype="globe"
+        href="https://medium.com/"
+        // tooltip="Faster.ru"
+        // text="ссылка на сайт"
+      />
     </div>
   )
 }

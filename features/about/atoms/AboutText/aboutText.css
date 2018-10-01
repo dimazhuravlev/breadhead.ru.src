@@ -1,0 +1,5 @@
+.aboutText {
+  font: var(--title40-48);
+  color: var(--beigePrimary);
+  margin-bottom: 80px;
+}
