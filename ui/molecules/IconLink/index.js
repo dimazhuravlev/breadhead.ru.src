@@ -10,7 +10,7 @@ class IconLink extends React.Component {
       article: ArticleIcon
     }
 
-    const Icon = iconsMap[this.props.icon]
+    const Icon = iconsMap[this.props.icontype]
 
     return (
       <div>
@@ -18,7 +18,7 @@ class IconLink extends React.Component {
           <Icon />
         </a>
         <div className={styles.iconText}>{this.props.text}</div>
-        <div className={styles.iconTooltip}>{this.props.title}</div>
+        <div className={styles.iconTooltip}>{this.props.tooltip}</div>
       </div>
     )
   }

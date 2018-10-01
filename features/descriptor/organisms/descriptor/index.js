@@ -3,17 +3,15 @@ import React from 'react'
 import IconLink from '@site/ui/molecules/IconLink'
 import styles from './descriptor.css'
 
-const Descriptor = () => (
+const Descriptor = props => (
   <div className={styles.descriptor}>
-    <div className={styles.descriptorType}>проект</div>
-    <div className={styles.descriptorName}>
-      Faster. Новый опыт покупки лекарств
-    </div>
+    <div className={styles.descriptorType}>{props.casetype}</div>
+    <div className={styles.descriptorName}>{props.casename}</div>
     <IconLink
-      title="Faster.ru"
-      text="ссылка на сайт"
-      icon="globe"
-      href="https://faster.ru/"
+      tooltip={props.tooltip}
+      text={props.text}
+      icontype={props.icontype}
+      href={props.href}
     />
   </div>
 )

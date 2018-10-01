@@ -3,9 +3,17 @@ import Slider from '@site/features/slider'
 import Descriptor from '@site/features/descriptor'
 import * as styles from './case.css'
 
-const Case = () => (
+const Case = props => (
   <div className={styles.Case}>
-    <Descriptor />
+    <Descriptor
+      casetype={props.casetype}
+      casename={props.casename}
+      tooltip={props.tooltip}
+      text={props.text}
+      icontype={props.icontype}
+      href={props.href}
+    />
+
     <Slider />
   </div>
 )

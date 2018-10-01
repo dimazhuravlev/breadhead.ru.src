@@ -12,9 +12,33 @@ const Home = () => {
     <div className={styles.Home}>
       <Header />
       <Intro />
-      <Case />
-      <Case />
-      <Case />
+      <Case
+        casetype="проект"
+        casename="Faster. Новый опыт покупки лекарств"
+        icontype="globe"
+        href="https://faster.ru/"
+        // tooltip="Faster.ru"
+        // text="ссылка на сайт"
+      />
+
+      <Case
+        casetype="подборка"
+        casename="E-learning сервисы"
+        icontype="article"
+        href="https://medium.com/breadhead-stories"
+        // tooltip="Faster.ru"
+        // text="ссылка на сайт"
+      />
+
+      <Case
+        casetype="проект"
+        casename="Yami Yami. Красивая доставка еды"
+        icontype="globe"
+        href="https://yamiyami.ru/"
+        // tooltip="Faster.ru"
+        // text="ссылка на сайт"
+      />
+
       <Button className={styles.plusButton} icon={<PlusIcon />}>
         ещё
       </Button>
