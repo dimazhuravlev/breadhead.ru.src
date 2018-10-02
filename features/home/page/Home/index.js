@@ -9,47 +9,43 @@ import Button from '@site/ui/molecules/Button'
 import { PlusIcon } from '@site/ui/atoms/icons'
 import styles from './home.css'
 
-const Home = () => {
-  return (
-    <div className={styles.Home}>
-      <Header />
-      <Intro />
-      <Case
-        casetype="проект"
-        casename="Faster. Новый опыт покупки лекарств"
-        icontype="globe"
-        href="https://faster.ru/"
-      />
+const Home = () => (
+  <main className={styles.Home}>
+    <Header />
+    <Intro />
+    <Case
+      casetype="проект"
+      casename="Faster. Новый опыт покупки лекарств"
+      icontype="globe"
+      href="https://faster.ru/"
+    />
 
-      <Case
-        casetype="подборка"
-        casename="E-learning сервисы"
-        icontype="article"
-        href="https://medium.com/breadhead-stories"
-      />
+    <Case
+      casetype="подборка"
+      casename="E-learning сервисы"
+      icontype="article"
+      href="https://medium.com/breadhead-stories"
+    />
 
-      <Case
-        casetype="проект"
-        casename="Yami Yami. Красивая доставка еды"
-        icontype="globe"
-        href="https://yamiyami.ru/"
-      />
+    <Case
+      casetype="проект"
+      casename="Yami Yami. Красивая доставка еды"
+      icontype="globe"
+      href="https://yamiyami.ru/"
+    />
 
-      <Button className={styles.plusButton} icon={<PlusIcon />}>
-        ещё
-      </Button>
-      <Clients />
-      <About />
-      <Case
-        casetype="вики"
-        casename="Как мы работаем"
-        icontype="globe"
-        href="https://medium.com/"
-        // tooltip="Faster.ru"
-        // text="ссылка на сайт"
-      />
-    </div>
-  )
-}
+    <Button className={styles.plusButton} icon={<PlusIcon />}>
+      ещё
+    </Button>
+    <Clients />
+    <About />
+    <Case
+      casetype="вики"
+      casename="Как мы работаем"
+      icontype="globe"
+      href="https://medium.com/"
+    />
+  </main>
+)
 
 export default Home

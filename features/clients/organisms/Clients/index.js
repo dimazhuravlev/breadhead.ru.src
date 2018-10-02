@@ -1,5 +1,6 @@
 import React from 'react'
 import Descriptor from '@site/features/descriptor'
+import ClientsList from '../../molecules/ClientsList'
 import styles from './clients.css'
 
 const clients = [
@@ -17,19 +18,11 @@ const clients = [
   'London Calling'
 ]
 
-const Clients = () => {
-  return (
-    <div className={styles.clients}>
-      <Descriptor casename="Клиенты" />
-      <div className={styles.clientsList}>
-        {clients.map(client => (
-          <div key={client} className={styles.client}>
-            {client}
-          </div>
-        ))}
-      </div>
-    </div>
-  )
-}
+const Clients = () => (
+  <section className={styles.clients}>
+    <Descriptor casename="Клиенты" />
+    <ClientsList clients={clients} />
+  </section>
+)
 
 export default Clients

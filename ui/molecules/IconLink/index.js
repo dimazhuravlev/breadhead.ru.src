@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { GlobeIcon } from '@site/ui/atoms/icons'
 import { ArticleIcon } from '@site/ui/atoms/icons'
 import styles from './iconLink.css'
@@ -22,6 +23,12 @@ class IconLink extends React.Component {
       </div>
     )
   }
+}
+
+IconLink.propTypes = {
+  href: PropTypes.string,
+  text: PropTypes.string,
+  tooltip: PropTypes.string
 }
 
 export default IconLink
