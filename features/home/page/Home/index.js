@@ -19,8 +19,6 @@ const Home = () => {
         casename="Faster. Новый опыт покупки лекарств"
         icontype="globe"
         href="https://faster.ru/"
-        // tooltip="Faster.ru"
-        // text="ссылка на сайт"
       />
 
       <Case
@@ -28,8 +26,6 @@ const Home = () => {
         casename="E-learning сервисы"
         icontype="article"
         href="https://medium.com/breadhead-stories"
-        // tooltip="Faster.ru"
-        // text="ссылка на сайт"
       />
 
       <Case
@@ -37,8 +33,6 @@ const Home = () => {
         casename="Yami Yami. Красивая доставка еды"
         icontype="globe"
         href="https://yamiyami.ru/"
-        // tooltip="Faster.ru"
-        // text="ссылка на сайт"
       />
 
       <Button className={styles.plusButton} icon={<PlusIcon />}>

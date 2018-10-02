@@ -8,8 +8,8 @@
 }
 
 .textBlockHeader {
-  font: var(--caption20-24);
   color: var(--beigePrimary);
+  font: var(--caption20-24);
   margin-bottom: 24px;
   @media (max-width: 690px) {
     margin-bottom: 16px;
@@ -24,11 +24,10 @@
   }
 }
 
-.textBlockIcons {
+.icons {
   display: flex;
   margin-top: 16px;
-}
-
-.textBlockIcon {
-  margin-right: 12px;
+  & > svg {
+    margin-right: 12px;
+  }
 }

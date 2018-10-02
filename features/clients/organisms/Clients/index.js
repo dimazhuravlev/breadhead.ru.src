@@ -1,32 +1,35 @@
 import React from 'react'
-import ClientsList from '../../molecules'
 import Descriptor from '@site/features/descriptor'
 import styles from './clients.css'
 
-const Clients = () => (
-  <div className={styles.clients}>
-    <Descriptor casename="Клиенты" />
-    <div className={styles.clientsLists}>
-      <ClientsList
-        name1="Яндекс"
-        name2="ВТБ"
-        name3="Look at Media"
-        name4="Филармония"
-      />
-      <ClientsList
-        name1="Encore Fitness"
-        name2="Yami Yami"
-        name3="Ginza Project"
-        name4="Great Simple"
-      />
-      <ClientsList
-        name1="PYE"
-        name2="TRA Robotics"
-        name3="Artdocfest"
-        name4="London Calling"
-      />
+const clients = [
+  'Яндекс',
+  'ВТБ',
+  'Look at Media',
+  'Филармония',
+  'Encore Fitness',
+  'Yami Yami',
+  'Ginza Project',
+  'Great Simple',
+  'PYE',
+  'TRA Robotics',
+  'Artdocfest',
+  'London Calling'
+]
+
+const Clients = () => {
+  return (
+    <div className={styles.clients}>
+      <Descriptor casename="Клиенты" />
+      <div className={styles.clientsList}>
+        {clients.map(client => (
+          <div key={client} className={styles.client}>
+            {client}
+          </div>
+        ))}
+      </div>
     </div>
-  </div>
-)
+  )
+}
 
 export default Clients

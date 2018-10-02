@@ -7,9 +7,9 @@
   }
 }
 
-.clientsLists {
-  display: flex;
-  justify-content: space-between;
+.clientsList {
+  grid-template-columns: repeat(3, 1fr);
+  display: grid;
   width: 65%;
   @media (max-width: 1700px) {
     width: 75%;
@@ -18,6 +18,14 @@
     width: 100%;
   }
   @media (max-width: 690px) {
-    flex-direction: column;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.client {
+  font: var(--title40-48);
+  color: var(--beigePrimary);
+  @media (max-width: 1023px) {
+    font: var(--titleMobile28-32);
   }
 }
