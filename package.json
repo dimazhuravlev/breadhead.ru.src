@@ -33,7 +33,7 @@
     "postcss": "^7.0.2",
     "postcss-nesting": "^7.0.0",
     "postcss-normalize": "^7.0.1",
-    "postcss-preset-env": "^6.0.7",
+    "postcss-preset-env": "^6.0.8",
     "stylelint": "^9.6.0",
     "stylelint-config-recommended": "^2.1.0"
   }
