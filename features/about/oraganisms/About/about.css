@@ -1,11 +1,41 @@
 .about {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   margin-bottom: 160px;
+  @media (max-width: 1023px) {
+    flex-direction: column;
+  }
 }
 
 .aboutContent {
   display: flex;
   flex-direction: column;
-  /* margin-left: 25%; */
+  width: 75%;
+  @media (max-width: 1023px) {
+    width: 100%;
+  }
+}
+
+.aboutSlider {
+  width: 100%;
+  margin-bottom: 80px;
+  @media (max-width: 1023px) {
+    margin-bottom: 40px;
+  }
+}
+
+.aboutTextBlocks {
+  display: flex;
+  justify-content: space-between;
+  width: 65%;
+  @media (max-width: 1700px) {
+    width: 100%;
+  }
+  @media (max-width: 1023px) {
+    width: 100%;
+  }
+  @media (max-width: 690px) {
+    flex-direction: column;
+  }
 }

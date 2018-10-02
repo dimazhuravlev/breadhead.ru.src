@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "@zeit/next-css": "^0.2.0",
+    "classnames": "^2.2.6",
     "next": "^6.1.2",
     "postcss-custom-properties": "^8.0.6",
     "react": "^16.5.1",

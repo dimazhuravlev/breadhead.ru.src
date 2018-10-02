@@ -2,4 +2,8 @@
   font: var(--title40-48);
   color: var(--beigePrimary);
   margin-bottom: 80px;
+  @media (max-width: 1023px) {
+    font: var(--titleMobile28-32);
+    margin-bottom: 40px;
+  }
 }

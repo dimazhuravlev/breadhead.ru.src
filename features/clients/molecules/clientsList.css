@@ -1,3 +1,7 @@
+.clientsList {
+  width: 336px;
+}
+
 .client {
   font: var(--title40-48);
   color: var(--beigePrimary);
