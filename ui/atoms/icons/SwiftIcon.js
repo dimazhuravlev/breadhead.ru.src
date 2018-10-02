@@ -1,3 +1,5 @@
+import React from 'react'
+
 const SwiftIcon = () => (
   <svg
     width="28px"

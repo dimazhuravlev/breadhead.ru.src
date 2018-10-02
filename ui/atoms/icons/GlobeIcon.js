@@ -1,3 +1,5 @@
+import React from 'react'
+
 const GlobeIcon = props => (
   <svg
     width="21px"

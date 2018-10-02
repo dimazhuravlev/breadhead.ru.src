@@ -1,3 +1,5 @@
+import React from 'react'
+
 const ReactIcon = () => (
   <svg
     width="36px"

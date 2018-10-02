@@ -1,3 +1,5 @@
+import React from 'react'
+
 const ArticleIcon = props => (
   <svg
     width="19px"
