@@ -14,14 +14,14 @@
   }
 }
 
-/* .iconTooltip {
+.iconTooltip {
   display: inline-flex;
   background-color: var(--darkSecondary);
   font: var(--caption20-24);
   color: var(--beigePrimary);
   border-radius: 4px;
   padding: 8px 12px;
-} */
+}
 
 .iconText {
   font: var(--caption20-24);

@@ -15,7 +15,7 @@ const Descriptor = ({ casetype, casename, icontype, href, tooltip, text }) => (
 
 Descriptor.propTypes = {
   casetype: PropTypes.string,
-  casename: PropTypes.string,
+  casename: PropTypes.string.isRequired,
   icontype: PropTypes.oneOf(['globe', 'article']),
   href: PropTypes.string,
   tooltip: PropTypes.string,
