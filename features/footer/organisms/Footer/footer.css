@@ -1,35 +1,25 @@
-.about {
+.footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 160px;
   @media (max-width: 1023px) {
     flex-direction: column;
-    margin-bottom: 56px;
   }
 }
 
-.aboutContent {
-  display: flex;
-  flex-direction: column;
+.content {
   width: 75%;
   @media (max-width: 1023px) {
     width: 100%;
   }
 }
 
-.aboutSlider {
-  width: 100%;
-  margin-bottom: 80px;
-  @media (max-width: 1023px) {
-    margin-bottom: 40px;
-  }
-}
-
-.aboutTextBlocks {
+.textBlocks {
   display: flex;
+  flex: 0 0 auto;
   justify-content: space-between;
   width: 89%;
+  margin-bottom: 288px;
   @media (max-width: 1700px) {
     width: 100%;
   }
@@ -38,6 +28,11 @@
   }
 }
 
-.TextBlockLast {
+.textBlockLast {
   margin-right: 0;
+}
+
+.copyright {
+  font: var(--text24-32);
+  color: var(--beigePrimary);
 }

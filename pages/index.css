@@ -22,3 +22,13 @@ html {
   background-color: rgba(224, 215, 206, 0);
   color: var(--redPrimary);
 }
+
+a {
+  text-decoration: none;
+  color: var(--beigeSecondary);
+  transition: all 0.15s ease;
+  &:hover {
+    color: var(--redPrimary);
+    transition: all 0.15s ease;
+  }
+}

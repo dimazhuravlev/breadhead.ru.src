@@ -34,10 +34,8 @@ const About = () => (
 
         <TextBlock header="практики">
           Исследования / Бренд-консалтинг (
-          <a className={styles.TextBlockLink} href="http://fullfort.agency/">
-            Fullfort
-          </a>
-          ) / Дизайн, проектирование / Веб +&nbsp;мобильная разработка
+          <a href="http://fullfort.agency/">Fullfort</a>) / Дизайн,
+          проектирование / Веб +&nbsp;мобильная разработка
         </TextBlock>
 
         <TextBlock

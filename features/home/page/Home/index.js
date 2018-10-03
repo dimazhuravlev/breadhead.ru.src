@@ -6,6 +6,7 @@ import Case from '@site/features/case'
 import Clients from '@site/features/clients'
 import About from '@site/features/about'
 import Button from '@site/ui/molecules/Button'
+import Footer from '@site/features/footer'
 import { PlusIcon } from '@site/ui/atoms/icons'
 import styles from './home.css'
 
@@ -17,7 +18,7 @@ const Home = () => (
       casetype="проект"
       casename="Faster. Новый опыт покупки лекарств"
       icontype="globe"
-      href="https://faster.ru/"
+      href="https://faster.ru"
     />
 
     <Case
@@ -31,7 +32,7 @@ const Home = () => (
       casetype="проект"
       casename="Yami Yami. Красивая доставка еды"
       icontype="globe"
-      href="https://yamiyami.ru/"
+      href="https://yamiyami.ru"
     />
 
     <Button className={styles.plusButton} icon={<PlusIcon />}>
@@ -45,6 +46,7 @@ const Home = () => (
       icontype="globe"
       href="https://medium.com/"
     />
+    <Footer />
   </main>
 )
 
