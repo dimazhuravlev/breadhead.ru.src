@@ -11,6 +11,7 @@ const Footer = () => {
     <footer>
       <div className={styles.footer}>
         <Descriptor casename="Для связи" />
+
         <div className={styles.content}>
           <div className={styles.textBlocks}>
             <TextBlock header="офис">
@@ -43,11 +44,13 @@ const Footer = () => {
               </a>
             </TextBlock>
           </div>
-          <span className={styles.copyright}>
-            {`2009–${date.getFullYear()}`}
-          </span>
-          <div className={styles.logo}>
-            <BreadheadLogo className={styles.svgBig} />
+          <div className={styles.wrapper}>
+            <span className={styles.copyright}>
+              {`2009–${date.getFullYear()}`}
+            </span>
+            <div className={styles.logo}>
+              <BreadheadLogo className={styles.svgBig} />
+            </div>
           </div>
         </div>
       </div>

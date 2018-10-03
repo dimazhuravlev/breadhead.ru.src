@@ -8,9 +8,10 @@
 }
 
 .content {
-  position: relative;
-  overflow: hidden;
+  /* position: relative;
+  overflow: hidden; */
   width: 75%;
+  /* padding-bottom: 24px; */
   @media (max-width: 1023px) {
     width: 100%;
   }
@@ -21,13 +22,22 @@
   flex: 0 0 auto;
   justify-content: space-between;
   width: 89%;
-  margin-bottom: 288px;
+  /* margin-bottom: 288px; */
   @media (max-width: 1700px) {
     width: 100%;
   }
   @media (max-width: 690px) {
     flex-direction: column;
   }
+}
+
+.wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 288px;
+  right: -56px;
+  bottom: 0;
+  background-color: #ff0051;
 }
 
 .textBlockLast {
@@ -41,8 +51,8 @@
 
 .logo {
   position: absolute;
-  bottom: -160px;
-  right: 460px;
+  bottom: -20px;
+  right: -250px;
   transform: rotate(-15deg);
 }
 
