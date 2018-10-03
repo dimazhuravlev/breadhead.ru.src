@@ -16,16 +16,21 @@ const About = () => (
         Breadhead проектирует и&nbsp;выпускает сервисы и&nbsp;приложения.
         Совершенствует деятельность компаний с&nbsp;помощью технологий.
       </AboutText>
+
       <Slider className={styles.aboutSlider} />
+
       <AboutText>
-        Мы стремимся к&nbsp;открытой рабочей среде, в&nbsp;которой студия
-        и&nbsp;клиент —&nbsp;одна команда. Верим, что такой{' '}
-        <a href="#" className={styles.TextBlockLink}>
-          подход
-        </a>{' '}
-        меняет отношение к&nbsp;делу и&nbsp;помогает создавать полезные
-        продукты.
+        <React.Fragment>
+          Мы стремимся к&nbsp;открытой рабочей среде, в&nbsp;которой студия
+          и&nbsp;клиент —&nbsp;одна команда. Верим, что такой{' '}
+          <a href="#" className={styles.TextBlockLink}>
+            подход
+          </a>{' '}
+          меняет отношение к&nbsp;делу и&nbsp;помогает создавать полезные
+          продукты.
+        </React.Fragment>
       </AboutText>
+
       <div className={styles.aboutTextBlocks}>
         <TextBlock header="экспертиза">
           Образовательные сервисы / E-commerce / Службы бронирования
