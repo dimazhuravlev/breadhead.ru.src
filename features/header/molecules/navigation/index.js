@@ -4,16 +4,18 @@ import NavLink from './atoms/navigationLink'
 import styles from './navigation.css'
 
 const Navigation = () => (
-  <nav className={styles.NavWrapper}>
-    <div>
-      <NavLink>опыт</NavLink>
-    </div>
-    <div>
-      <NavLink>студия</NavLink>
-    </div>
-    <div>
-      <NavLink>как мы работаем</NavLink>
-    </div>
+  <nav className={styles.navigation}>
+    <ul className={styles.navWrapper}>
+      <li>
+        <NavLink>опыт</NavLink>
+      </li>
+      <li>
+        <NavLink>студия</NavLink>
+      </li>
+      <li>
+        <NavLink>как мы работаем</NavLink>
+      </li>
+    </ul>
   </nav>
 )
 

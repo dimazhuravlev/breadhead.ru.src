@@ -1,7 +1,9 @@
 import React from 'react'
+import cx from 'classnames'
 
-const BreadheadLogo = () => (
+const BreadheadLogo = ({ className }) => (
   <svg
+    className={cx(className)}
     width="248px"
     height="18px"
     viewBox="0 0 248 18"

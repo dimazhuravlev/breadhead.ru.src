@@ -2,9 +2,9 @@ import React from 'react'
 import styles from './introTitle.css'
 
 const IntroTitle = () => (
-  <div className={styles.Title}>
+  <h1 className={styles.Title}>
     Разработка цифровых сервисов. Веб, iOS, Android
-  </div>
+  </h1>
 )
 
 export default IntroTitle

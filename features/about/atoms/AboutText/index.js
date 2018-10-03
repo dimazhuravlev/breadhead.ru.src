@@ -1,8 +1,6 @@
 import React from 'react'
 import styles from './aboutText.css'
 
-const AboutText = props => (
-  <div className={styles.aboutText}>{props.children}</div>
-)
+const AboutText = props => <p className={styles.aboutText}>{props.children}</p>
 
 export default AboutText

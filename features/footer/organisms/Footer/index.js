@@ -1,6 +1,7 @@
 import React from 'react'
 import Descriptor from '@site/features/descriptor'
 import TextBlock from '@site/ui/molecules/TextBlock'
+import { BreadheadLogo } from '@site/ui/atoms/icons'
 import styles from './footer.css'
 
 const Footer = () => {
@@ -45,6 +46,9 @@ const Footer = () => {
           <span className={styles.copyright}>
             {`2009–${date.getFullYear()}`}
           </span>
+          <div className={styles.logo}>
+            <BreadheadLogo className={styles.svgBig} />
+          </div>
         </div>
       </div>
     </footer>
