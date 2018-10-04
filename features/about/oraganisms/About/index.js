@@ -4,7 +4,7 @@ import Slider from '@site/features/slider'
 import TextBlock from '@site/ui/molecules/TextBlock'
 import { ReactIcon, NodeIcon, SwiftIcon } from '@site/ui/atoms/icons'
 import AboutText from '../../atoms/AboutText'
-import { NON_BREAKING_SPACE } from '@site/pages/config'
+import { NON_BREAKING_SPACE } from '@site/config'
 import styles from './about.css'
 
 const About = () => (
