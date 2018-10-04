@@ -35,7 +35,7 @@
   height: 288px;
   right: -56px;
   bottom: 0;
-  background-color: #ff0051;
+  /* background-color: #ff0051; */
 }
 
 .textBlockLast {
@@ -48,13 +48,27 @@
 }
 
 .logo {
+  width: 1476px;
+  height: 105px;
   position: absolute;
-  bottom: -20px;
-  right: -250px;
+  bottom: -40px;
+  right: -80px;
   transform: rotate(-15deg);
 }
 
-.svgBig {
-  width: 1440px;
-  height: 105px;
+.bg {
+  height: 100%;
+  width: 100%;
+  background: url(/static/img/LogoLine.png) repeat 0 0;
+  background-size: 100%;
+  animation: moveLogo 60s linear infinite;
+}
+
+@keyframes moveLogo {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 5000px 0;
+  }
 }
