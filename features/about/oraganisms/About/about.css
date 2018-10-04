@@ -46,6 +46,9 @@
     color: var(--redPrimary);
     transition: all 0.15s ease;
   }
+  &:active {
+    color: var(--redSecondary);
+  }
 }
 
 .TextBlockLast {
