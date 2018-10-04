@@ -29,17 +29,18 @@
   }
 }
 
+.textBlockLast {
+  margin-right: 0;
+}
+
 .wrapper {
   position: relative;
   overflow: hidden;
   height: 288px;
+  width: 100%;
   right: -56px;
   bottom: 0;
-  /* background-color: #ff0051; */
-}
-
-.textBlockLast {
-  margin-right: 0;
+  background-color: #ff0051;
 }
 
 .copyright {
@@ -56,12 +57,12 @@
   transform: rotate(-15deg);
 }
 
-.bg {
+.moveBg {
   height: 100%;
   width: 100%;
   background: url(/static/img/LogoLine.png) repeat 0 0;
   background-size: 100%;
-  animation: moveLogo 60s linear infinite;
+  animation: moveLogo 600s linear infinite;
 }
 
 @keyframes moveLogo {
@@ -69,6 +70,6 @@
     background-position: 0 0;
   }
   to {
-    background-position: 5000px 0;
+    background-position: 70000px 0;
   }
 }

@@ -49,7 +49,7 @@ const Footer = () => {
               {`2009–${date.getFullYear()}`}
             </span>
             <div className={styles.logo}>
-              <div className={styles.bg} />
+              <div className={styles.moveBg} />
             </div>
           </div>
         </div>
