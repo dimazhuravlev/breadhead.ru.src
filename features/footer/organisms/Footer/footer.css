@@ -18,11 +18,9 @@
 }
 
 .textBlocks {
-  display: flex;
-  flex: 0 0 auto;
-  justify-content: space-between;
+  display: grid;
+  /* justify-content: space-between; */
   width: 89%;
-  /* margin-bottom: 288px; */
   @media (max-width: 1700px) {
     width: 100%;
   }
