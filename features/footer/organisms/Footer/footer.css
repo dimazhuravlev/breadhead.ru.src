@@ -31,12 +31,34 @@
   position: relative;
   overflow: hidden;
   height: 500px;
-  background-color: #ff0051;
+  @media (max-width: 1024px) {
+    height: 280px;
+  }
+  @media (max-width: 768px) {
+    height: 220px;
+  }
 }
 
 .copyright {
+  display: block;
+  position: absolute;
   font: var(--text24-32);
   color: var(--beigePrimary);
+  left: calc(25% + 28px);
+  bottom: 24px;
+  @media (max-width: 1440px) {
+    left: calc(25% + 17px);
+  }
+  @media (max-width: 1024px) {
+    left: calc(25% + 8px);
+    bottom: 16px;
+  }
+  @media (max-width: 1023px) {
+    left: 16px;
+  }
+  @media (max-width: 690px) {
+    font: var(--textMobile18-24);
+  }
 }
 
 .logo {
@@ -46,6 +68,11 @@
   bottom: -40px;
   right: -80px;
   transform: rotate(-15deg);
+  @media (max-width: 768px) {
+    width: 984px;
+    height: 70px;
+    bottom: 0px;
+  }
 }
 
 .moveBg {
