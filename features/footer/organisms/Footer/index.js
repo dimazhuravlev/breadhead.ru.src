@@ -11,7 +11,7 @@ const Footer = () => {
     <footer>
       <div className={styles.footer}>
         <div className={styles.content}>
-          <Descriptor casename="Для связи" />
+          <Descriptor className={styles.caseNameOnly} casename="Для связи" />
 
           <div className={styles.textBlocks}>
             <TextBlock header="офис">

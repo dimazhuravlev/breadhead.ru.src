@@ -62,3 +62,7 @@
     color: var(--redSecondary);
   }
 }
+
+.caseNameOnly {
+  margin-top: 4px;
+}
