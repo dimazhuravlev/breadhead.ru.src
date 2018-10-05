@@ -1,0 +1,33 @@
+.textBlock {
+  max-width: 336px;
+  margin-right: 32px;
+  @media (max-width: 690px) {
+    max-width: 600px;
+    margin-bottom: 24px;
+  }
+}
+
+.textBlockHeader {
+  color: var(--beigePrimary);
+  font: var(--caption20-24);
+  margin-bottom: 24px;
+  @media (max-width: 690px) {
+    margin-bottom: 16px;
+  }
+}
+
+.textBlockContent {
+  font: var(--text24-32);
+  color: var(--beigePrimary);
+  @media (max-width: 690px) {
+    font: var(--textMobile18-24);
+  }
+}
+
+.icons {
+  display: flex;
+  margin-top: 16px;
+  & > svg {
+    margin-right: 12px;
+  }
+}

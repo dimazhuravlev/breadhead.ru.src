@@ -3,5 +3,13 @@
   color: var(--beigePrimary);
   margin-bottom: 48px;
   margin-right: 40px;
-  max-width: 800px;
+  max-width: 570px;
+  @media (max-width: 1200px) {
+    max-width: 570px;
+  }
+  @media (max-width: 768px) {
+    font: var(--titleMobile40-40);
+    max-width: 290px;
+    margin-bottom: 28px;
+  }
 }

@@ -12,7 +12,10 @@
   cursor: pointer;
   &:hover {
     background-color: var(--redPrimary);
-    transition: all 0.2s ease-in;
+    transition: all 0.15s ease-in;
+  }
+  &:active {
+    background-color: var(--redSecondary);
   }
 }
 
@@ -22,6 +25,6 @@
   margin-bottom: 3px;
 }
 
-.ButtonIcon {
+.Button svg {
   margin-right: 8px;
 }

@@ -14,9 +14,11 @@
   --text24-32: 200 24px/32px var(--fontFamilyGraphik);
 
   /* Mobile text styles */
+  --titleMobile40-40: 200 40px/40px var(--fontFamilyAeroport);
   --titleMobile28-32: 200 28px/32px var(--fontFamilyAeroport);
-  --titleMobile24-28: 200 24px/28px var(--fontFamilyAeroport);
-  --titleMobile18-24: 200 18px/24px var(--fontFamilyGraphik);
+  --titleMobile22-28: 200 22px/28px var(--fontFamilyAeroport);
+  --captionMobile20-24: 200 20px/24px var(--fontFamilyAeroport);
+  --textMobile18-24: 200 18px/24px var(--fontFamilyGraphik);
 
   /* Colors */
   --darkPrimary: #0e0f0f;
@@ -24,6 +26,7 @@
   --beigePrimary: #e0d7ce;
   --beigeSecondary: #a38e7c;
   --redPrimary: #ff4f05;
+  --redSecondary: #e0421b;
 
   font-family: var(--fontFamilyAeroport);
 }

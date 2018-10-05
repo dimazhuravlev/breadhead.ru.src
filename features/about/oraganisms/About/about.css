@@ -1,0 +1,56 @@
+.about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 160px;
+  @media (max-width: 1023px) {
+    flex-direction: column;
+    margin-bottom: 56px;
+  }
+}
+
+.aboutContent {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  @media (max-width: 1023px) {
+    width: 100%;
+  }
+}
+
+.aboutSlider {
+  width: 100%;
+  margin-bottom: 80px;
+  @media (max-width: 1023px) {
+    margin-bottom: 40px;
+  }
+}
+
+.aboutTextBlocks {
+  display: flex;
+  justify-content: space-between;
+  width: 89%;
+  @media (max-width: 1700px) {
+    width: 100%;
+  }
+  @media (max-width: 690px) {
+    flex-direction: column;
+  }
+}
+
+.TextBlockLink {
+  text-decoration: none;
+  color: var(--beigeSecondary);
+  transition: all 0.15s ease;
+  &:hover {
+    color: var(--redPrimary);
+    transition: all 0.15s ease;
+  }
+  &:active {
+    color: var(--redSecondary);
+  }
+}
+
+.TextBlockLast {
+  margin-right: 0;
+}

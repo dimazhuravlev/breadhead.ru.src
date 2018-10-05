@@ -1,6 +1,6 @@
 import React from 'react'
 
-const BreadHeadLogo = () => (
+const BreadheadLogo = () => (
   <svg
     width="248px"
     height="18px"
@@ -64,4 +64,4 @@ const BreadHeadLogo = () => (
   </svg>
 )
 
-export default BreadHeadLogo
+export default BreadheadLogo

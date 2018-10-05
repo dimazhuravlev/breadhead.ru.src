@@ -1,16 +1,14 @@
 import React from 'react'
 
-import { BreadHeadLogo } from '@site/ui/molecules/Icons'
+import { BreadheadLogo } from '@site/ui/atoms/icons'
 import Navigation from '../../molecules/navigation'
 import styles from './header.css'
 
-const Header = () => {
-  return (
-    <div className={styles.Header}>
-      <BreadHeadLogo />
-      <Navigation />
-    </div>
-  )
-}
+const Header = () => (
+  <header className={styles.Header}>
+    <BreadheadLogo />
+    <Navigation />
+  </header>
+)
 
 export default Header

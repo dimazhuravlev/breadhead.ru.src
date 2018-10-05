@@ -1,10 +1,10 @@
 import React from 'react'
+import styles from './introImage.css'
 
 const IntroImage = () => (
   <img
+    className={styles.introImage}
     src="/static/img/HeadlineImage.png"
-    width="328"
-    height="280"
     alt="headerPicture"
   />
 )

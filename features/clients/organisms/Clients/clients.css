@@ -1,0 +1,8 @@
+.clients {
+  display: flex;
+  margin-bottom: 160px;
+  @media (max-width: 1023px) {
+    flex-direction: column;
+    margin-bottom: 80px;
+  }
+}

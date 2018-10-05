@@ -1,0 +1,9 @@
+.case {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 80px;
+  @media (max-width: 1023px) {
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+}
