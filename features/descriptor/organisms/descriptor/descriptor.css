@@ -1,5 +1,4 @@
 .descriptor {
-  /* flex-grow: 3; */
   margin-right: 44px;
   width: calc(25% - 44px);
   transition: all 0.8s ease;

@@ -38,6 +38,19 @@
   }
 }
 
+.TextBlockLink {
+  text-decoration: none;
+  color: var(--beigeSecondary);
+  transition: all 0.15s ease;
+  &:hover {
+    color: var(--redPrimary);
+    transition: all 0.15s ease;
+  }
+  &:active {
+    color: var(--redSecondary);
+  }
+}
+
 .TextBlockLast {
   margin-right: 0;
 }

@@ -2,12 +2,11 @@
   "dependencies": {
     "@zeit/next-css": "^0.2.0",
     "classnames": "^2.2.6",
-    "lodash": "^4.17.11",
     "next": "^6.1.2",
     "postcss-custom-properties": "^8.0.6",
     "prop-types": "^15.6.2",
-    "react": "^16.5.1",
-    "react-dom": "^16.5.1"
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2"
   },
   "scripts": {
     "dev": "next",
@@ -28,8 +27,8 @@
     "enzyme": "^3.6.0",
     "enzyme-adapter-react-16": "^1.5.0",
     "enzyme-to-json": "^3.3.4",
-    "eslint": "^5.6.0",
-    "eslint-plugin-jest": "^21.22.1",
+    "eslint": "^5.6.1",
+    "eslint-plugin-jest": "^21.24.0",
     "eslint-plugin-react": "^7.11.1",
     "jest": "^23.6.0",
     "jest-enzyme": "^6.1.2",
@@ -37,8 +36,8 @@
     "postcss": "^7.0.2",
     "postcss-nesting": "^7.0.0",
     "postcss-normalize": "^7.0.1",
-    "postcss-preset-env": "^5.3.0",
-    "stylelint": "^9.5.0",
+    "postcss-preset-env": "^6.0.8",
+    "stylelint": "^9.6.0",
     "stylelint-config-recommended": "^2.1.0"
   }
 }

@@ -13,7 +13,7 @@ const TextBlock = ({ className, header, children, icons }) => (
 
 TextBlock.propTypes = {
   header: PropTypes.string,
-  icons: PropTypes.object
+  icons: PropTypes.element
 }
 
 export default TextBlock

@@ -14,6 +14,9 @@
     background-color: var(--redPrimary);
     transition: all 0.15s ease-in;
   }
+  &:active {
+    background-color: var(--redSecondary);
+  }
 }
 
 .ButtonText {
