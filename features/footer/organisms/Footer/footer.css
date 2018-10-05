@@ -1,45 +1,36 @@
-.footer {
+.content {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
+
   @media (max-width: 1023px) {
     flex-direction: column;
   }
-}
 
-.content {
-  /* position: relative;
-  overflow: hidden; */
-  width: 75%;
-  /* padding-bottom: 24px; */
-  @media (max-width: 1023px) {
-    width: 100%;
+  padding: 0px 56px 0px 56px;
+  @media (max-width: 1440px) {
+    padding: 0px 34px 0px 34px;
+  }
+  @media (max-width: 1024px) {
+    padding: 0px 16px 0px 16px;
   }
 }
 
 .textBlocks {
-  display: flex;
-  justify-content: space-between;
-  width: 89%;
-  @media (max-width: 1700px) {
+  grid-template-columns: repeat(3, 1fr);
+  display: grid;
+  width: 75%;
+  @media (max-width: 1023px) {
     width: 100%;
   }
   @media (max-width: 690px) {
-    flex-direction: column;
+    grid-template-columns: repeat(1, 1fr);
   }
-}
-
-.textBlockLast {
-  margin-right: 0;
 }
 
 .wrapper {
   position: relative;
   overflow: hidden;
-  height: 288px;
-  width: 100%;
-  right: -56px;
-  bottom: 0;
+  height: 500px;
   background-color: #ff0051;
 }
 
@@ -71,5 +62,20 @@
   }
   to {
     background-position: 70000px 0;
+  }
+}
+
+.phoneLink {
+  color: var(--beigePrimary);
+  cursor: default;
+  &:hover {
+    color: var(--beigePrimary);
+  }
+  @media (max-width: 690px) {
+    color: var(--beigeSecondary);
+    cursor: pointer;
+    &:hover {
+      color: var(--redPrimary);
+    }
   }
 }

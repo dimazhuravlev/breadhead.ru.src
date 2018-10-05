@@ -1,20 +1,18 @@
-.Home {
-  position: relative;
-  padding: 40px 56px 0px 56px;
-  box-sizing: border-box;
+.plusButton {
+  margin-bottom: 160px;
+  margin-left: calc(25% + 28px);
   @media (max-width: 1440px) {
-    padding: 40px 34px 0px 34px;
+    margin-left: calc(25% + 17px);
   }
-  @media (max-width: 1024px) {
-    padding: 30px 16px 0px 16px;
+  @media (max-width: 1023px) {
+    margin-bottom: 80px;
+    margin-left: 16px;
   }
 }
 
-.plusButton {
+.caseWiki {
   margin-bottom: 160px;
-  margin-left: 25%;
   @media (max-width: 1023px) {
     margin-bottom: 80px;
-    margin-left: 0;
   }
 }

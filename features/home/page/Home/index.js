@@ -11,7 +11,7 @@ import { PlusIcon } from '@site/ui/atoms/icons'
 import styles from './home.css'
 
 const Home = () => (
-  <main className={styles.Home}>
+  <main>
     <Header />
     <Intro />
     <Case
@@ -41,6 +41,7 @@ const Home = () => (
     <Clients />
     <About />
     <Case
+      className={styles.caseWiki}
       casetype="вики"
       casename="Как мы работаем"
       icontype="globe"
