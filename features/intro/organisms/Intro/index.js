@@ -6,14 +6,28 @@ import IntroImage from '../../atoms/IntroImage'
 import IntroTitle from '../../atoms/IntroTitle'
 import styles from './intro.css'
 
-const Intro = () => (
-  <div className={styles.intro}>
-    <div>
-      <IntroTitle />
-      <Button icon={<ZipIcon />}>связь</Button>
-    </div>
-    <IntroImage />
-  </div>
-)
+class Intro extends React.Component {
+  handleClick() {
+    const footer = document.getElementById('footer')
+    footer.scrollIntoView({
+      behavior: 'smooth',
+      block: 'center'
+    })
+  }
+
+  render() {
+    return (
+      <div className={styles.intro}>
+        <div>
+          <IntroTitle />
+          <div onClick={this.handleClick}>
+            <Button icon={<ZipIcon />}>связь</Button>
+          </div>
+        </div>
+        <IntroImage />
+      </div>
+    )
+  }
+}
 
 export default Intro

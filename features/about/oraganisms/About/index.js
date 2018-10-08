@@ -8,7 +8,7 @@ import AboutText from '../../atoms/AboutText'
 import styles from './about.css'
 
 const About = () => (
-  <section className={styles.about}>
+  <section id="about" className={styles.about}>
     <div>
       <Descriptor className={styles.caseNameOnly} name="Студия" />
     </div>

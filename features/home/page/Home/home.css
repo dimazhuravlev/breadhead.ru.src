@@ -1,3 +1,7 @@
+.cases {
+  padding-top: 56px;
+}
+
 .plusButton {
   margin-bottom: 160px;
   margin-left: calc(25% + 28px);
@@ -10,7 +14,8 @@
   }
 }
 
-.caseWiki {
+.howWeWork {
+  padding-top: 56px;
   margin-bottom: 160px;
   @media (max-width: 1023px) {
     margin-bottom: 80px;

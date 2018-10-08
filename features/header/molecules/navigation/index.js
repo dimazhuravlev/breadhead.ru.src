@@ -7,13 +7,13 @@ const Navigation = () => (
   <nav className={styles.navigation}>
     <ul className={styles.navWrapper}>
       <li>
-        <NavLink>опыт</NavLink>
+        <NavLink linkId="cases">опыт</NavLink>
       </li>
       <li>
-        <NavLink>студия</NavLink>
+        <NavLink linkId="about">студия</NavLink>
       </li>
       <li>
-        <NavLink>как мы работаем</NavLink>
+        <NavLink linkId="howWeWork">как мы работаем</NavLink>
       </li>
     </ul>
   </nav>
