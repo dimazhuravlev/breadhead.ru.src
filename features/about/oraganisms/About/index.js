@@ -10,7 +10,7 @@ import styles from './about.css'
 const About = () => (
   <section className={styles.about}>
     <div>
-      <Descriptor casename="Студия" />
+      <Descriptor className={styles.caseNameOnly} name="Студия" />
     </div>
     <div className={styles.aboutContent}>
       <AboutText>
@@ -22,11 +22,7 @@ const About = () => (
       <AboutText>
         <React.Fragment>
           {`Мы стремимся к${NON_BREAKING_SPACE}открытой рабочей среде, в${NON_BREAKING_SPACE}которой студия
-          и${NON_BREAKING_SPACE}клиент —${NON_BREAKING_SPACE}одна команда. Верим, что такой`}{' '}
-          <a href="#" className={styles.TextBlockLink}>
-            подход
-          </a>{' '}
-          {`меняет отношение к${NON_BREAKING_SPACE}делу и${NON_BREAKING_SPACE}помогает создавать полезные
+          и${NON_BREAKING_SPACE}клиент —${NON_BREAKING_SPACE}одна команда. Верим, что такой подход меняет отношение к${NON_BREAKING_SPACE}делу и${NON_BREAKING_SPACE}помогает создавать полезные
           продукты.`}
         </React.Fragment>
       </AboutText>
@@ -45,7 +41,6 @@ const About = () => (
         </TextBlock>
 
         <TextBlock
-          className={styles.TextBlockLast}
           header="технологии"
           icons={
             <React.Fragment>

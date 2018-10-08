@@ -20,7 +20,7 @@ const clients = [
 
 const Clients = () => (
   <section className={styles.clients}>
-    <Descriptor casename="Клиенты" />
+    <Descriptor className={styles.caseNameOnly} name="Клиенты" />
     <ClientsList clients={clients} />
   </section>
 )

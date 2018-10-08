@@ -6,6 +6,15 @@
   margin-bottom: 120px;
   margin-left: 25%;
   transition: all 0.8s ease;
+
+  padding: 0px 56px 0px 28px;
+  @media (max-width: 1440px) {
+    padding: 0px 34px 0px 17px;
+  }
+  @media (max-width: 1024px) {
+    padding: 0px 16px 0px 16px;
+  }
+
   @media (max-width: 1200px) {
     margin-left: 0;
     transition: all 0.8s ease;

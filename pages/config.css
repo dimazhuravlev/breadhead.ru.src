@@ -1,7 +1,7 @@
 @import "/pages/index.css";
 
 :root {
-  --fontFamilyAeroport: "AeroportLight", -apple-system, BlinkMacSystemFont,
+  --fontFamilyAeroport: "Aeroport-light", -apple-system, BlinkMacSystemFont,
     Helvetica, sans-serif;
   --fontFamilyGraphik: "GraphikLight", -apple-system, BlinkMacSystemFont,
     Helvetica, sans-serif;

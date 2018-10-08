@@ -5,7 +5,7 @@ import cx from 'classnames'
 
 const TextBlock = ({ className, header, children, icons }) => (
   <section className={cx(styles.textBlock, className)}>
-    <div className={styles.textBlockHeader}>{header}</div>
+    <h3 className={styles.textBlockHeader}>{header}</h3>
     <div className={styles.textBlockContent}>{children}</div>
     {icons && <div className={styles.icons}>{icons}</div>}
   </section>

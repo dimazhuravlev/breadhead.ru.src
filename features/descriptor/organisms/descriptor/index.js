@@ -1,12 +1,21 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import IconLink from '@site/ui/molecules/IconLink'
+import cx from 'classnames'
 import styles from './descriptor.css'
 
-const Descriptor = ({ casetype, casename, icontype, href, tooltip, text }) => (
-  <section className={styles.descriptor}>
-    {casetype && <div className={styles.descriptorType}>{casetype}</div>}
-    <div className={styles.descriptorName}>{casename}</div>
+const Descriptor = ({
+  type,
+  name,
+  icontype,
+  href,
+  tooltip,
+  text,
+  className
+}) => (
+  <section className={cx(styles.descriptor, className)}>
+    {type && <p className={styles.type}>{type}</p>}
+    <h2 className={styles.name}>{name}</h2>
     {icontype && (
       <IconLink icontype={icontype} href={href} tooltip={tooltip} text={text} />
     )}
@@ -14,8 +23,8 @@ const Descriptor = ({ casetype, casename, icontype, href, tooltip, text }) => (
 )
 
 Descriptor.propTypes = {
-  casetype: PropTypes.string,
-  casename: PropTypes.string.isRequired,
+  type: PropTypes.string,
+  name: PropTypes.string.isRequired,
   icontype: PropTypes.oneOf(['globe', 'article']),
   href: PropTypes.string,
   tooltip: PropTypes.string,

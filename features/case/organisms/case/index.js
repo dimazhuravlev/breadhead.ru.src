@@ -2,25 +2,26 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Slider from '@site/features/slider'
 import Descriptor from '@site/features/descriptor'
-import * as styles from './case.css'
+import cx from 'classnames'
+import styles from './case.css'
 
-const Case = props => (
-  <section className={styles.case}>
+const Case = ({ className, type, name, tooltip, text, icontype, href }) => (
+  <section className={cx(styles.case, className)}>
     <Descriptor
-      casetype={props.casetype}
-      casename={props.casename}
-      tooltip={props.tooltip}
-      text={props.text}
-      icontype={props.icontype}
-      href={props.href}
+      type={type}
+      name={name}
+      tooltip={tooltip}
+      text={text}
+      icontype={icontype}
+      href={href}
     />
     <Slider />
   </section>
 )
 
 Case.propTypes = {
-  casetype: PropTypes.string,
-  casename: PropTypes.string,
+  type: PropTypes.string,
+  name: PropTypes.string,
   tooltip: PropTypes.string,
   text: PropTypes.string,
   icontype: PropTypes.string,

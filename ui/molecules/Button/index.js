@@ -3,12 +3,16 @@ import PropTypes from 'prop-types'
 import styles from './Button.css'
 import cx from 'classnames'
 
-const Button = ({ children, icon, className }) => (
-  <button className={cx(styles.Button, className)}>
-    {icon}
-    <div className={styles.ButtonText}>{children}</div>
-  </button>
-)
+class Button extends React.Component {
+  render() {
+    return (
+      <button className={cx(styles.Button, this.props.className)}>
+        {this.props.icon}
+        <p className={styles.ButtonText}>{this.props.children}</p>
+      </button>
+    )
+  }
+}
 
 Button.propTypes = {
   children: PropTypes.string,

@@ -1,7 +1,5 @@
-.NavWrapper {
+.navigation {
   position: absolute;
-  display: flex;
-  justify-content: flex-start;
   left: calc(25% + 28px);
   @media (max-width: 1440px) {
     left: calc(25% + 17px);
@@ -9,4 +7,11 @@
   @media (max-width: 1200px) {
     display: none;
   }
+}
+
+.navWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  list-style: none;
 }
