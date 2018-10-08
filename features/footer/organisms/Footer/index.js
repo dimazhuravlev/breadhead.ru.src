@@ -11,11 +11,15 @@ const Footer = () => {
     <footer>
       <div className={styles.footer}>
         <div className={styles.content}>
-          <Descriptor className={styles.caseNameOnly} casename="Для связи" />
+          <Descriptor className={styles.caseNameOnly} name="Для связи" />
 
           <div className={styles.textBlocks}>
             <TextBlock header="офис">
-              <a href="https://goo.gl/maps/vud3y2m6k7m" target="_blank">
+              <a
+                href="https://goo.gl/maps/vud3y2m6k7m"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 {`Итальянская улица,${NON_BREAKING_SPACE}14,`}
               </a>
               <br />
@@ -31,15 +35,27 @@ const Footer = () => {
               <a href="mailto:hello@breadhead.ru">hello@breadhead.ru</a>
             </TextBlock>
             <TextBlock header="мы в соцсетях">
-              <a href="https://www.facebook.com/breadhead.ru" target="_blank">
+              <a
+                href="https://www.facebook.com/breadhead.ru"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Facebook
               </a>
               <br />
-              <a href="https://medium.com/breadhead-stories" target="_blank">
+              <a
+                href="https://medium.com/breadhead-stories"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Medium
               </a>
               <br />
-              <a href="https://www.instagram.com/breadhead.ru" target="_blank">
+              <a
+                href="https://www.instagram.com/breadhead.ru"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Instagram
               </a>
             </TextBlock>

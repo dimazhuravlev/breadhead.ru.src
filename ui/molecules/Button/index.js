@@ -4,18 +4,11 @@ import styles from './Button.css'
 import cx from 'classnames'
 
 class Button extends React.Component {
-  handleClick() {
-    alert('Нажалось!')
-  }
-
   render() {
     return (
-      <button
-        onClick={this.handleClick}
-        className={cx(styles.Button, this.props.className)}
-      >
+      <button className={cx(styles.Button, this.props.className)}>
         {this.props.icon}
-        <div className={styles.ButtonText}>{this.props.children}</div>
+        <p className={styles.ButtonText}>{this.props.children}</p>
       </button>
     )
   }

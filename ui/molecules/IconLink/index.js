@@ -15,7 +15,12 @@ class IconLink extends React.Component {
 
     return (
       <div>
-        <a href={this.props.href} className={styles.iconLink}>
+        <a
+          className={styles.iconLink}
+          href={this.props.href}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <Icon />
         </a>
         {this.tooltip && (

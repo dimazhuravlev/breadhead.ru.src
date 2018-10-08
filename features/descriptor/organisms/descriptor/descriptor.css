@@ -9,7 +9,7 @@
   }
 }
 
-.descriptorType {
+.type {
   font: var(--caption20-24);
   color: var(--beigePrimary);
   margin-bottom: 24px;
@@ -20,7 +20,7 @@
   }
 }
 
-.descriptorName {
+.name {
   font: var(--title40-40);
   color: var(--beigePrimary);
   margin-bottom: 32px;

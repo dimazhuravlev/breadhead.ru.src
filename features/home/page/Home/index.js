@@ -15,22 +15,22 @@ const Home = () => (
     <Header />
     <Intro />
     <Case
-      casetype="проект"
-      casename="Faster. Новый опыт покупки лекарств"
+      type="проект"
+      name="Faster. Новый опыт покупки лекарств"
       icontype="globe"
       href="https://faster.ru"
     />
 
     <Case
-      casetype="подборка"
-      casename="E-learning сервисы"
+      type="подборка"
+      name="E-learning сервисы"
       icontype="article"
       href="https://medium.com/breadhead-stories"
     />
 
     <Case
-      casetype="проект"
-      casename="Yami Yami. Красивая доставка еды"
+      type="проект"
+      name="Yami Yami. Красивая доставка еды"
       icontype="globe"
       href="https://yamiyami.ru"
     />
@@ -42,8 +42,8 @@ const Home = () => (
     <About />
     <Case
       className={styles.caseWiki}
-      casetype="вики"
-      casename="Как мы работаем"
+      type="вики"
+      name="Как мы работаем"
       icontype="globe"
       href="https://medium.com/"
     />

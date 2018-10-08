@@ -10,7 +10,7 @@ import styles from './about.css'
 const About = () => (
   <section className={styles.about}>
     <div>
-      <Descriptor className={styles.caseNameOnly} casename="Студия" />
+      <Descriptor className={styles.caseNameOnly} name="Студия" />
     </div>
     <div className={styles.aboutContent}>
       <AboutText>

@@ -5,8 +5,8 @@ import cx from 'classnames'
 import styles from './descriptor.css'
 
 const Descriptor = ({
-  casetype,
-  casename,
+  type,
+  name,
   icontype,
   href,
   tooltip,
@@ -14,8 +14,8 @@ const Descriptor = ({
   className
 }) => (
   <section className={cx(styles.descriptor, className)}>
-    {casetype && <p className={styles.descriptorType}>{casetype}</p>}
-    <h2 className={styles.descriptorName}>{casename}</h2>
+    {type && <p className={styles.type}>{type}</p>}
+    <h2 className={styles.name}>{name}</h2>
     {icontype && (
       <IconLink icontype={icontype} href={href} tooltip={tooltip} text={text} />
     )}
@@ -23,8 +23,8 @@ const Descriptor = ({
 )
 
 Descriptor.propTypes = {
-  casetype: PropTypes.string,
-  casename: PropTypes.string.isRequired,
+  type: PropTypes.string,
+  name: PropTypes.string.isRequired,
   icontype: PropTypes.oneOf(['globe', 'article']),
   href: PropTypes.string,
   tooltip: PropTypes.string,
