@@ -5,8 +5,8 @@ import Descriptor from '@site/features/descriptor'
 import cx from 'classnames'
 import styles from './case.css'
 
-const Case = ({ className, type, name, tooltip, text, icontype, href }) => (
-  <section className={cx(styles.case, className)}>
+const Case = ({ className, id, type, name, tooltip, text, icontype, href }) => (
+  <section id={id} className={cx(styles.case, className)}>
     <Descriptor
       type={type}
       name={name}

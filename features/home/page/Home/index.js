@@ -41,16 +41,15 @@ const Home = () => (
       ещё
     </Button>
     <Clients />
-    <About />
-    <section id="howWeWork">
-      <Case
-        className={styles.howWeWork}
-        type="вики"
-        name="Как мы работаем"
-        icontype="globe"
-        href="https://medium.com/"
-      />
-    </section>
+    <About id="about" />
+    <Case
+      id="howWeWork"
+      className={styles.howWeWork}
+      type="вики"
+      name="Как мы работаем"
+      icontype="globe"
+      href="https://medium.com/"
+    />
     <Footer />
   </main>
 )
