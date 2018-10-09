@@ -1,0 +1,39 @@
+.slide {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  background-color: #86878f;
+}
+
+.browser {
+  position: absolute;
+  overflow: hidden;
+  width: 70%;
+  height: 70%;
+  border-radius: 6px 6px 3px 3px;
+  background-size: cover;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05), 0 1px 2px 0 rgba(0, 0, 0, 0.1),
+    0 8px 12px 0 rgba(0, 0, 0, 0.03);
+}
+
+.browserHeader {
+  position: absolute;
+  top: 0;
+  height: 28px;
+  width: 100%;
+  background-color: #dcdce0;
+  border-radius: 6px 6px 0px 0px;
+}
+
+.browserScreen {
+  position: absolute;
+  top: 28px;
+  width: 100%;
+  height: 100%;
+  background-color: #ff6185;
+  border-radius: 0px 0px 3px 3px;
+  background-size: cover;
+  background-image: url("/static/img/LondonCalling.png");
+}

@@ -1,0 +1,22 @@
+.slide {
+  width: 100%;
+  height: 100%;
+  background-color: var(--darkSecondary);
+  padding-top: 7vw;
+  padding-left: 8vw;
+  box-sizing: border-box;
+}
+
+.title {
+  font: var(--title40-48);
+  color: var(--beigePrimary);
+  margin-bottom: 48px;
+  width: 70%;
+}
+
+.text {
+  font: var(--text24-32);
+  color: var(--beigePrimary);
+  margin-bottom: 32px;
+  width: 70%;
+}
