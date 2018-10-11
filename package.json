@@ -7,6 +7,7 @@
     "prop-types": "^15.6.2",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
+    "react-motion": "^0.5.2",
     "scroll-into-view-if-needed": "^2.2.19"
   },
   "scripts": {
