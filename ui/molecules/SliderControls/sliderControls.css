@@ -1,0 +1,41 @@
+.background {
+  z-index: 1;
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  margin-left: -50px;
+  width: 100px;
+  height: 48px;
+  border-radius: 24px;
+  background-color: #fff;
+}
+
+.button {
+  position: absolute;
+  top: 2px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--redPrimary);
+  border: none;
+}
+
+.left {
+  left: 2px;
+}
+
+.right {
+  right: 2px;
+}
+
+.leftArrow {
+  position: absolute;
+  left: 14px;
+  top: 10px;
+}
+
+.rightArrow {
+  position: absolute;
+  right: 14px;
+  top: 10px;
+}

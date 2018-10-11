@@ -3,6 +3,7 @@ import { Transition, animated } from 'react-spring'
 import { SlidePicture } from '@site/features/templates'
 import { SlideArticle } from '@site/features/templates'
 import { SlideBrowserPicture } from '@site/features/templates'
+import SliderControls from '@site/ui/molecules/SliderControls'
 import styles from './slider.css'
 import cx from 'classnames'
 
@@ -14,18 +15,23 @@ import cx from 'classnames'
 
 const pages = [
   style => (
-    <animated.div style={{ ...style}}><SlidePicture/></animated.div>
+    <animated.div style={{ ...style }}>
+      <SlidePicture />
+    </animated.div>
   ),
   style => (
-    <animated.div style={{ ...style}}><SlideArticle/></animated.div>
+    <animated.div style={{ ...style }}>
+      <SlideArticle />
+    </animated.div>
   ),
   style => (
-    <animated.div style={{ ...style}}><SlideBrowserPicture/></animated.div>
+    <animated.div style={{ ...style }}>
+      <SlideBrowserPicture />
+    </animated.div>
   )
 ]
 
 class Slider extends React.PureComponent {
-  
   state = { index: 0 }
   toggle = e =>
     this.setState(state => ({ index: state.index === 2 ? 0 : state.index + 1 }))
@@ -33,10 +39,11 @@ class Slider extends React.PureComponent {
   render() {
     return (
       <div className={cx(styles.Slider, this.props.className)}>
+        <SliderControls />
         <div className={styles.main} onClick={this.toggle}>
           <Transition
             native
-            from={{ opacity: .6, transform: 'translate3d(100%,0,0)' }}
+            from={{ opacity: 0.6, transform: 'translate3d(100%,0,0)' }}
             enter={{ opacity: 1, transform: 'translate3d(0%,0,0)' }}
             leave={{ opacity: 0, transform: 'translate3d(-50%,0,0)' }}
           >
