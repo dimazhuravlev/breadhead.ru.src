@@ -1,23 +1,21 @@
 import React from 'react'
-import withScroll from '@site/features/withScroll'
+import withScrollOnClick from '@site/features/withScrollOnClick'
 import NavLink from './atoms/navigationLink'
 import styles from './navigation.css'
 
-const WithScrollNavLink = withScroll(NavLink)
+const ScrollLink = withScrollOnClick(NavLink)
 
 const Navigation = () => (
   <nav className={styles.navigation}>
     <ul className={styles.navWrapper}>
       <li>
-        <WithScrollNavLink linkId="cases">опыт</WithScrollNavLink>
+        <ScrollLink linkId="cases">опыт</ScrollLink>
       </li>
       <li>
-        <WithScrollNavLink linkId="about">студия</WithScrollNavLink>
+        <ScrollLink linkId="about">студия</ScrollLink>
       </li>
       <li>
-        <WithScrollNavLink linkId="howWeWork">
-          как мы работаем
-        </WithScrollNavLink>
+        <ScrollLink linkId="howWeWork">как мы работаем</ScrollLink>
       </li>
     </ul>
   </nav>

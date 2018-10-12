@@ -1,6 +1,6 @@
 import React from 'react'
 
-const withScroll = Component => {
+const withScrollOnClick = Component => {
   const ComponentWithScroll = props => {
     const handleClick = () => {
       const target = document.getElementById(props.linkId)
@@ -16,4 +16,4 @@ const withScroll = Component => {
   return ComponentWithScroll
 }
 
-export default withScroll
+export default withScrollOnClick
