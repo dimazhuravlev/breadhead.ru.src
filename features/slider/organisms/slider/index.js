@@ -29,7 +29,6 @@ class Slider extends React.PureComponent {
   constructor(props) {
     super(props)
     this.state = { index: 0 }
-    this.sliderControls = React.createRef()
     this.toggle = this.toggle.bind(this)
   }
 
@@ -50,7 +49,7 @@ class Slider extends React.PureComponent {
             {pages[this.state.index]}
           </Transition>
         </div>
-        <SliderControls ref={this.sliderControls} />
+        <SliderControls />
       </div>
     )
   }
