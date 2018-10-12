@@ -1,5 +1,9 @@
 .Title {
-  font: var(--title80-80);
+  /* font: var(--title80-80); */
+  font-size: calc(40px + 40 * ((100vw - 768px) / 1152));
+  line-height: calc(40px + 40 * ((100vw - 768px) / 1152));
+  font-family: var(--fontFamilyAeroport);
+  font-weight: 200;
   color: var(--beigePrimary);
   margin-bottom: 48px;
   margin-right: 40px;

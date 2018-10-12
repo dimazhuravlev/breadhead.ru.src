@@ -35,7 +35,6 @@ class Slider extends React.PureComponent {
     super(props)
     this.state = { index: 3 }
     this.toggleAhead = this.toggleAhead.bind(this)
-    // this.toggleBack = this.toggleBack.bind(this)
   }
 
   toggleAhead() {
@@ -44,19 +43,15 @@ class Slider extends React.PureComponent {
     })
   }
 
-  // toggleBack() {
-  //   this.setState({ index: this.state.index === 3 ? 0 : this.state.index - 1 })
-  // }
-
   render() {
     return (
       <div className={cx(styles.slider, this.props.className)}>
         <div className={styles.main} onClick={this.toggleAhead}>
           <Transition
             native
-            from={{ opacity: 0.6, transform: 'translate3d(100%,0,0)' }}
-            enter={{ opacity: 1, transform: 'translate3d(0%,0,0)' }}
-            leave={{ opacity: 0, transform: 'translate3d(-50%,0,0)' }}
+            from={{ opacity: 0.6, transform: 'translateX(100%)' }}
+            enter={{ opacity: 1, transform: 'translateX(0%)' }}
+            leave={{ opacity: 0, transform: 'translateX(-50%)' }}
           >
             {pages[this.state.index]}
           </Transition>
