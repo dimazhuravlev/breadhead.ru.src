@@ -7,12 +7,6 @@ import SliderControls from '@site/ui/molecules/SliderControls'
 import styles from './slider.css'
 import cx from 'classnames'
 
-// const Slider = ({ className }) => (
-//   <div className={cx(styles.Slider, className)}>
-//     <SlideBrowserPicture />
-//   </div>
-// )
-
 const pages = [
   style => (
     <animated.div style={{ ...style }}>
@@ -32,14 +26,20 @@ const pages = [
 ]
 
 class Slider extends React.PureComponent {
-  state = { index: 0 }
-  toggle = e =>
-    this.setState(state => ({ index: state.index === 2 ? 0 : state.index + 1 }))
+  constructor(props) {
+    super(props)
+    this.state = { index: 0 }
+    this.sliderControls = React.createRef()
+    this.toggle = this.toggle.bind(this)
+  }
+
+  toggle() {
+    this.setState({ index: this.state.index === 2 ? 0 : this.state.index + 1 })
+  }
 
   render() {
     return (
       <div className={cx(styles.Slider, this.props.className)}>
-        <SliderControls />
         <div className={styles.main} onClick={this.toggle}>
           <Transition
             native
@@ -50,6 +50,7 @@ class Slider extends React.PureComponent {
             {pages[this.state.index]}
           </Transition>
         </div>
+        <SliderControls ref={this.sliderControls} />
       </div>
     )
   }
