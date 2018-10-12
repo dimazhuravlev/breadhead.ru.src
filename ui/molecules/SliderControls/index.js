@@ -7,17 +7,33 @@ class SliderControls extends React.Component {
     super(props)
     this.buttonLeft = React.createRef()
     this.buttonRight = React.createRef()
-    this.handleHover = this.handleHover.bind(this)
+    this.arrowLeft = React.createRef()
+    this.arrowRight = React.createRef()
+    this.handleMouseMove = this.handleMouseMove.bind(this)
+    this.handleMouseOut = this.handleMouseOut.bind(this)
   }
 
-  handleHover() {
+  handleMouseMove() {
     this.buttonLeft.current.style.backgroundColor = 'var(--redPrimary)'
     this.buttonRight.current.style.backgroundColor = 'var(--redPrimary)'
+    this.arrowLeft.current.style.stroke = 'var(--darkPrimary)'
+    this.arrowRight.current.style.stroke = 'var(--darkPrimary)'
+  }
+
+  handleMouseOut() {
+    this.buttonLeft.current.style.backgroundColor = 'var(--darkPrimary)'
+    this.buttonRight.current.style.backgroundColor = 'var(--darkPrimary)'
+    this.arrowLeft.current.style.stroke = 'var(--beigePrimary)'
+    this.arrowRight.current.style.stroke = 'var(--beigePrimary)'
   }
 
   render() {
     return (
-      <div onMouseMove={this.handleHover} className={styles.background}>
+      <div
+        onMouseMove={this.handleMouseMove}
+        onMouseOut={this.handleMouseOut}
+        className={styles.background}
+      >
         <button
           ref={this.buttonLeft}
           className={cx(styles.button, styles.left)}
@@ -30,7 +46,8 @@ class SliderControls extends React.Component {
           >
             <g fill="none">
               <polyline
-                stroke="#0E0F0F"
+                ref={this.arrowLeft}
+                stroke="var(--beigePrimary)"
                 strokeWidth="2"
                 points="13 1 2 12 13 23"
               />
@@ -50,7 +67,8 @@ class SliderControls extends React.Component {
           >
             <g fill="none">
               <polyline
-                stroke="#0E0F0F"
+                ref={this.arrowRight}
+                stroke="var(--beigePrimary)"
                 strokeWidth="2"
                 points="1 1 12 12 1 23"
               />
