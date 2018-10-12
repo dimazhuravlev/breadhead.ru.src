@@ -1,4 +1,5 @@
 import React from 'react'
+import IconLink from '@site/ui/molecules/IconLink'
 import styles from './slideArticle.css'
 
 const SlideArticle = () => (
@@ -10,6 +11,12 @@ const SlideArticle = () => (
       Мы консультировали клиента, помогая описать бизнес-логику. Спроектировали
       и разработали веб-приложение на React и Android-приложение для аптек.
     </div>
+    <IconLink
+      icontype="globe"
+      href="https://faster.ru/"
+      description="beta:"
+      text="faster.ru"
+    />
   </article>
 )
 

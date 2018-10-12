@@ -10,12 +10,12 @@ import cx from 'classnames'
 const pages = [
   style => (
     <animated.div style={{ ...style }}>
-      <SlidePicture />
+      <SlideArticle />
     </animated.div>
   ),
   style => (
     <animated.div style={{ ...style }}>
-      <SlideArticle />
+      <SlidePicture />
     </animated.div>
   ),
   style => (

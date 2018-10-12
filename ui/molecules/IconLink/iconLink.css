@@ -1,6 +1,24 @@
 .iconLink {
-  margin-right: 16px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+  @media (max-width: 1023px) {
+    display: none;
+  }
+}
+
+.description {
+  margin-bottom: 2px;
+  margin-right: 8px;
+  font: var(--text24-32);
+  color: var(--beigePrimary);
+}
+
+.icon {
+  display: flex;
+  align-items: center;
   cursor: pointer;
+  transition: all 0.15s ease-in;
   &:hover g {
     fill: var(--redPrimary);
     transition: all 0.15s ease-in;
@@ -9,27 +27,38 @@
     fill: var(--redPrimary);
     transition: all 0.15s ease-in;
   }
+  &:hover .text {
+    color: var(--redPrimary);
+    transition: all 0.15s ease-in;
+  }
   &:active g {
     fill: var(--redSecondary);
+    transition: all 0.15s ease-in;
   }
   &:active rect {
     fill: var(--redSecondary);
+    transition: all 0.15s ease-in;
   }
-  @media (max-width: 1023px) {
-    display: none;
+  &:active .text {
+    color: var(--redSecondary);
+    transition: all 0.15s ease-in;
   }
 }
 
-.iconTooltip {
+.text {
+  margin-bottom: 2px;
+  margin-left: 8px;
+  font: var(--text24-32);
+  color: var(--beigeSecondary);
+}
+
+.tooltip {
   display: inline-flex;
-  background-color: var(--darkSecondary);
+  position: relative;
+  top: 0px;
+  background-color: var(--redPrimary);
   font: var(--caption20-24);
-  color: var(--beigePrimary);
-  border-radius: 4px;
+  color: var(--darkPrimary);
+  border-radius: 32px;
   padding: 8px 12px;
-}
-
-.iconText {
-  font: var(--caption20-24);
-  color: var(--beigePrimary);
 }
