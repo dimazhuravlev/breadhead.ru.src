@@ -2,20 +2,20 @@ import React from 'react'
 
 import Button from '@site/ui/molecules/Button'
 import { ZipIcon } from '@site/ui/atoms/icons'
-import withScroll from '@site/features/withScroll'
+import withScrollOnClick from '@site/features/withScrollOnClick'
 import IntroImage from '../../atoms/IntroImage'
 import IntroTitle from '../../atoms/IntroTitle'
 import styles from './intro.css'
 
-const WithScrollButton = withScroll(Button)
+const ScrollButton = withScrollOnClick(Button)
 
 const Intro = () => (
   <div className={styles.intro}>
     <div>
       <IntroTitle />
-      <WithScrollButton linkId="footer" icon={<ZipIcon />}>
+      <ScrollButton linkId="footer" icon={<ZipIcon />}>
         связь
-      </WithScrollButton>
+      </ScrollButton>
     </div>
     <IntroImage />
   </div>
