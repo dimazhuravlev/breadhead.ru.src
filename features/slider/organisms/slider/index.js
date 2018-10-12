@@ -22,24 +22,36 @@ const pages = [
     <animated.div style={{ ...style }}>
       <SlideBrowserPicture />
     </animated.div>
+  ),
+  style => (
+    <animated.div style={{ ...style }}>
+      <SlidePicture />
+    </animated.div>
   )
 ]
 
 class Slider extends React.PureComponent {
   constructor(props) {
     super(props)
-    this.state = { index: 0 }
-    this.toggle = this.toggle.bind(this)
+    this.state = { index: 3 }
+    this.toggleAhead = this.toggleAhead.bind(this)
+    // this.toggleBack = this.toggleBack.bind(this)
   }
 
-  toggle() {
-    this.setState({ index: this.state.index === 2 ? 0 : this.state.index + 1 })
+  toggleAhead() {
+    this.setState({
+      index: this.state.index === pages.length - 1 ? 0 : this.state.index + 1
+    })
   }
+
+  // toggleBack() {
+  //   this.setState({ index: this.state.index === 3 ? 0 : this.state.index - 1 })
+  // }
 
   render() {
     return (
-      <div className={cx(styles.Slider, this.props.className)}>
-        <div className={styles.main} onClick={this.toggle}>
+      <div className={cx(styles.slider, this.props.className)}>
+        <div className={styles.main} onClick={this.toggleAhead}>
           <Transition
             native
             from={{ opacity: 0.6, transform: 'translate3d(100%,0,0)' }}
