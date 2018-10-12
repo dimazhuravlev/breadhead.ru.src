@@ -6,7 +6,10 @@ import cx from 'classnames'
 class Button extends React.Component {
   render() {
     return (
-      <button className={cx(styles.Button, this.props.className)}>
+      <button
+        onClick={this.props.onClick}
+        className={cx(styles.Button, this.props.className)}
+      >
         {this.props.icon}
         <p className={styles.ButtonText}>{this.props.children}</p>
       </button>

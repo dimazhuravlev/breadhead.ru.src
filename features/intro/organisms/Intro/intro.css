@@ -3,14 +3,15 @@
   align-items: flex-end;
   justify-content: space-between;
   margin-top: 120px;
-  margin-bottom: 120px;
+  margin-bottom: 64px;
   margin-left: 25%;
   transition: all 0.8s ease;
-
   padding: 0px 56px 0px 28px;
+
   @media (max-width: 1440px) {
     padding: 0px 34px 0px 17px;
   }
+
   @media (max-width: 1024px) {
     padding: 0px 16px 0px 16px;
   }

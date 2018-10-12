@@ -8,7 +8,7 @@ const Footer = () => {
   const date = new Date()
 
   return (
-    <footer>
+    <footer id="footer">
       <div className={styles.footer}>
         <div className={styles.content}>
           <Descriptor className={styles.caseNameOnly} name="Для связи" />
