@@ -28,13 +28,16 @@ class SliderControls extends React.Component {
   }
 
   render() {
+    const { toggleBack, toggleAhead, className } = this.props
+
     return (
       <div
         onMouseMove={this.handleMouseMove}
         onMouseOut={this.handleMouseOut}
-        className={styles.background}
+        className={cx(styles.background, className)}
       >
         <button
+          onClick={toggleBack}
           ref={this.buttonLeft}
           className={cx(styles.button, styles.left)}
         >
@@ -56,6 +59,7 @@ class SliderControls extends React.Component {
         </button>
 
         <button
+          onClick={toggleAhead}
           ref={this.buttonRight}
           className={cx(styles.button, styles.right)}
         >

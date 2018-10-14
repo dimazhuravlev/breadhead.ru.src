@@ -1,0 +1,15 @@
+.timeLine {
+  position: relative;
+  height: 12px;
+  background-color: #fff;
+  margin-right: 16px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+}
+
+.progressBar {
+  width: 0%;
+  height: 12px;
+  background-color: red;
+}
