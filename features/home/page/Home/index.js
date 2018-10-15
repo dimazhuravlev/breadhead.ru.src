@@ -22,7 +22,7 @@ const Home = () => (
         href="https://faster.ru"
       />
 
-      {/* <Case
+      <Case
         type="подборка"
         name="E-learning сервисы"
         icontype="article"
@@ -34,22 +34,22 @@ const Home = () => (
         name="Yami Yami. Красивая доставка еды"
         icontype="globe"
         href="https://yamiyami.ru"
-      /> */}
+      />
     </section>
 
     <Button className={styles.plusButton} icon={<PlusIcon />}>
       ещё
     </Button>
     <Clients />
-    {/* <About id="about" /> */}
-    {/* <Case
+    <About id="about" />
+    <Case
       id="howWeWork"
       className={styles.howWeWork}
       type="вики"
       name="Как мы работаем"
       icontype="globe"
       href="https://medium.com/"
-    /> */}
+    />
     <Footer />
   </main>
 )
