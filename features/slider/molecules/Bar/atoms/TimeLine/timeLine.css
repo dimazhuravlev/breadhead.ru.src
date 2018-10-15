@@ -1,8 +1,9 @@
 .timeLine {
-  position: relative;
-  height: 12px;
-  background-color: #fff;
-  margin-right: 16px;
+  overflow: hidden;
+  height: 2px;
+  background-color: rgba(88, 89, 104, 0.5);
+  margin-right: 8px;
+  border-radius: 2px;
   flex-grow: 1;
   flex-shrink: 1;
   flex-basis: 0;
@@ -10,6 +11,7 @@
 
 .progressBar {
   width: 0%;
-  height: 12px;
-  background-color: red;
+  height: 2px;
+  border-radius: 2px;
+  background-color: rgba(244, 244, 245, 0.5);
 }
