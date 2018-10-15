@@ -11,11 +11,31 @@ import styles from './slider.css'
 import cx from 'classnames'
 
 const pages = [
-  <SlideArticle />,
-  <SlidePicture />,
-  <SlideBrowserPicture />,
-  <SlideArticle />,
-  <SlidePicture />
+  style => (
+    <animated.div style={{ ...style }}>
+      <SlideArticle />
+    </animated.div>
+  ),
+  style => (
+    <animated.div style={{ ...style }}>
+      <SlidePicture />
+    </animated.div>
+  ),
+  style => (
+    <animated.div style={{ ...style }}>
+      <SlideArticle />
+    </animated.div>
+  ),
+  style => (
+    <animated.div style={{ ...style }}>
+      <SlidePicture />
+    </animated.div>
+  ),
+  style => (
+    <animated.div style={{ ...style }}>
+      <SlideBrowserPicture />
+    </animated.div>
+  )
 ]
 
 const directions = {
@@ -95,9 +115,7 @@ class Slider extends React.PureComponent {
               easing: Easing.bezier(0.645, 0.045, 0.355, 1)
             }}
           >
-            {style => (
-              <animated.div style={{ ...style }}>{pages[index]}</animated.div>
-            )}
+            {pages[index]}
           </Transition>
         </div>
       </div>
