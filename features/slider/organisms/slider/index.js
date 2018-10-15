@@ -41,8 +41,7 @@ class Slider extends React.PureComponent {
     super(props)
     this.state = {
       index: 0,
-      direction: directions.ahead.name,
-      inProgress: false
+      direction: directions.ahead.name
     }
     this.toggle = this.toggle.bind(this)
   }
@@ -70,20 +69,16 @@ class Slider extends React.PureComponent {
   }
 
   render() {
-    const { direction, index, inProgress } = this.state
+    const { direction, index } = this.state
 
     return (
       <div className={cx(styles.slider, this.props.className)}>
         <Bar
           onRest={() => this.toggle(directions.ahead.name)}
-          inProgress={inProgress}
           index={index}
           quantity={pages.length}
         />
-        <div
-          className={styles.main}
-          onClick={() => this.setState({ inProgress: true })}
-        >
+        <div className={styles.main}>
           <Transition
             native
             from={{
