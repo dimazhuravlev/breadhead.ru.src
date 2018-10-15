@@ -6,6 +6,7 @@ import { SlideArticle } from '@site/features/templates'
 import Bar from '../../molecules/Bar'
 import { SlideBrowserPicture } from '@site/features/templates'
 import SliderControls from '@site/ui/molecules/SliderControls'
+import { SliderAmountIcon } from '@site/ui/atoms/icons'
 import styles from './slider.css'
 import cx from 'classnames'
 
@@ -29,6 +30,11 @@ const pages = [
     <animated.div style={{ ...style }}>
       <SlidePicture />
     </animated.div>
+  ),
+  style => (
+    <animated.div style={{ ...style }}>
+      <SlideBrowserPicture />
+    </animated.div>
   )
 ]
 
@@ -36,6 +42,8 @@ const directions = {
   ahead: { leave: '-50%', from: '100%', name: 'ahead', multiplier: 1 },
   back: { leave: '50%', from: '-100%', name: 'back', multiplier: -1 }
 }
+
+const listLength = pages.length
 
 class Slider extends React.PureComponent {
   constructor(props) {
@@ -48,7 +56,6 @@ class Slider extends React.PureComponent {
   }
 
   getNextIndex(index, direction) {
-    const listLength = pages.length
     const nextIndex = index + 1 * directions[direction].multiplier
 
     if (nextIndex < 0) {
@@ -79,14 +86,25 @@ class Slider extends React.PureComponent {
           index={index}
           quantity={pages.length}
         />
+        <SliderAmountIcon className={styles.amountIcon}>
+          <span className={styles.amount}>{listLength}</span>
+        </SliderAmountIcon>
+        <SliderControls
+          className={styles.showControls}
+          toggleAhead={() => this.toggle(directions.ahead.name)}
+          toggleBack={() => this.toggle(directions.back.name)}
+        />
         <div className={styles.main}>
           <Transition
             native
             from={{
-              opacity: 0.6,
+              opacity: 1,
               transform: `translateX(${directions[direction].from})`
             }}
-            enter={{ opacity: 1, transform: 'translateX(0%)' }}
+            enter={{
+              opacity: 1,
+              transform: 'translateX(0%)'
+            }}
             leave={{
               opacity: 0,
               transform: `translateX(${directions[direction].leave})`
@@ -100,11 +118,6 @@ class Slider extends React.PureComponent {
             {pages[index]}
           </Transition>
         </div>
-        <SliderControls
-          className={styles.showControls}
-          toggleAhead={() => this.toggle(directions.ahead.name)}
-          toggleBack={() => this.toggle(directions.back.name)}
-        />
       </div>
     )
   }
