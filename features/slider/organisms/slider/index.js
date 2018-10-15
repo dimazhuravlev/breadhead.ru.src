@@ -3,39 +3,19 @@ import { Transition, animated } from 'react-spring'
 import { TimingAnimation, Easing } from 'react-spring/dist/addons.cjs'
 import { SlidePicture } from '@site/features/templates'
 import { SlideArticle } from '@site/features/templates'
-import Bar from '../../molecules/Bar'
 import { SlideBrowserPicture } from '@site/features/templates'
 import SliderControls from '@site/ui/molecules/SliderControls'
 import { SliderAmountIcon } from '@site/ui/atoms/icons'
+import Bar from '../../molecules/Bar'
 import styles from './slider.css'
 import cx from 'classnames'
 
 const pages = [
-  style => (
-    <animated.div style={{ ...style }}>
-      <SlideArticle />
-    </animated.div>
-  ),
-  style => (
-    <animated.div style={{ ...style }}>
-      <SlidePicture />
-    </animated.div>
-  ),
-  style => (
-    <animated.div style={{ ...style }}>
-      <SlideBrowserPicture />
-    </animated.div>
-  ),
-  style => (
-    <animated.div style={{ ...style }}>
-      <SlidePicture />
-    </animated.div>
-  ),
-  style => (
-    <animated.div style={{ ...style }}>
-      <SlideBrowserPicture />
-    </animated.div>
-  )
+  <SlideArticle />,
+  <SlidePicture />,
+  <SlideBrowserPicture />,
+  <SlideArticle />,
+  <SlidePicture />
 ]
 
 const directions = {
@@ -115,7 +95,9 @@ class Slider extends React.PureComponent {
               easing: Easing.bezier(0.645, 0.045, 0.355, 1)
             }}
           >
-            {pages[index]}
+            {style => (
+              <animated.div style={{ ...style }}>{pages[index]}</animated.div>
+            )}
           </Transition>
         </div>
       </div>
