@@ -13,7 +13,7 @@ class TimeLine extends React.Component {
         from={{ width: 0 }}
         to={{ width: active ? 100 : 0 }}
         impl={TimingAnimation}
-        config={{ duration: 4000, easing: Easing.linear }}
+        config={{ duration: 5000, easing: Easing.linear }}
         onRest={onRest}
       >
         {({ width }) => {

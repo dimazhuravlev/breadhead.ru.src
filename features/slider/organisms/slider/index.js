@@ -1,5 +1,6 @@
 import React from 'react'
 import { Transition, animated } from 'react-spring'
+import { TimingAnimation, Easing } from 'react-spring/dist/addons.cjs'
 import { SlidePicture } from '@site/features/templates'
 import { SlideArticle } from '@site/features/templates'
 import Bar from '../../molecules/Bar'
@@ -89,6 +90,11 @@ class Slider extends React.PureComponent {
             leave={{
               opacity: 0,
               transform: `translateX(${directions[direction].leave})`
+            }}
+            impl={TimingAnimation}
+            config={{
+              duration: 600,
+              easing: Easing.bezier(0.645, 0.045, 0.355, 1)
             }}
           >
             {pages[index]}
