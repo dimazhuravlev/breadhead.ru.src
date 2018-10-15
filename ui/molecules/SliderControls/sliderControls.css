@@ -20,15 +20,7 @@
   border-radius: 50%;
   background-color: var(--darkPrimary);
   border: none;
-  transition: background-color 0.2s ease;
-}
-
-.left {
-  left: 2px;
-}
-
-.right {
-  right: 2px;
+  transition: background-color 0.3s ease;
 }
 
 .leftArrow {
@@ -41,4 +33,32 @@
   position: absolute;
   right: 14px;
   top: 10px;
+}
+
+.left {
+  left: 2px;
+  &:hover {
+    background-color: var(--redPrimary);
+    transition: background-color 0s ease;
+  }
+  &:active {
+    background-color: var(--redSecondary);
+  }
+  &:hover .leftArrow polyline {
+    stroke: var(--darkPrimary);
+  }
+}
+
+.right {
+  right: 2px;
+  &:hover {
+    background-color: var(--redPrimary);
+  }
+  &:active {
+    background-color: var(--redSecondary);
+    transition: background-color 0s ease;
+  }
+  &:hover .rightArrow polyline {
+    stroke: var(--darkPrimary);
+  }
 }

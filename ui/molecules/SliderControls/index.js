@@ -3,44 +3,12 @@ import cx from 'classnames'
 import styles from './sliderControls.css'
 
 class SliderControls extends React.Component {
-  constructor(props) {
-    super(props)
-    this.buttonLeft = React.createRef()
-    this.buttonRight = React.createRef()
-    this.arrowLeft = React.createRef()
-    this.arrowRight = React.createRef()
-    this.handleMouseMove = this.handleMouseMove.bind(this)
-    this.handleMouseOut = this.handleMouseOut.bind(this)
-  }
-
-  handleMouseMove() {
-    this.buttonLeft.current.style.backgroundColor = 'var(--redPrimary)'
-    this.buttonRight.current.style.backgroundColor = 'var(--redPrimary)'
-    this.arrowLeft.current.style.stroke = 'var(--darkPrimary)'
-    this.arrowRight.current.style.stroke = 'var(--darkPrimary)'
-  }
-
-  handleMouseOut() {
-    this.buttonLeft.current.style.backgroundColor = 'var(--darkPrimary)'
-    this.buttonRight.current.style.backgroundColor = 'var(--darkPrimary)'
-    this.arrowLeft.current.style.stroke = 'var(--beigePrimary)'
-    this.arrowRight.current.style.stroke = 'var(--beigePrimary)'
-  }
-
   render() {
     const { toggleBack, toggleAhead, className } = this.props
 
     return (
-      <div
-        onMouseMove={this.handleMouseMove}
-        onMouseOut={this.handleMouseOut}
-        className={cx(styles.background, className)}
-      >
-        <button
-          onClick={toggleBack}
-          ref={this.buttonLeft}
-          className={cx(styles.button, styles.left)}
-        >
+      <div className={cx(styles.background, className)}>
+        <button onClick={toggleBack} className={cx(styles.button, styles.left)}>
           <svg
             className={styles.leftArrow}
             width="14px"
@@ -49,7 +17,6 @@ class SliderControls extends React.Component {
           >
             <g fill="none">
               <polyline
-                ref={this.arrowLeft}
                 stroke="var(--beigePrimary)"
                 strokeWidth="2"
                 points="13 1 2 12 13 23"
@@ -60,7 +27,6 @@ class SliderControls extends React.Component {
 
         <button
           onClick={toggleAhead}
-          ref={this.buttonRight}
           className={cx(styles.button, styles.right)}
         >
           <svg
@@ -71,7 +37,6 @@ class SliderControls extends React.Component {
           >
             <g fill="none">
               <polyline
-                ref={this.arrowRight}
                 stroke="var(--beigePrimary)"
                 strokeWidth="2"
                 points="1 1 12 12 1 23"

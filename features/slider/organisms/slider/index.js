@@ -1,8 +1,7 @@
 import React from 'react'
-import { Transition, animated, Spring } from 'react-spring'
+import { Transition, animated } from 'react-spring'
 import { SlidePicture } from '@site/features/templates'
 import { SlideArticle } from '@site/features/templates'
-import TimeLine from '../../molecules/Bar/atoms/TimeLine'
 import Bar from '../../molecules/Bar'
 import { SlideBrowserPicture } from '@site/features/templates'
 import SliderControls from '@site/ui/molecules/SliderControls'
@@ -100,7 +99,8 @@ class Slider extends React.PureComponent {
             {pages[index]}
           </Transition>
         </div>
-        <SliderControls className={styles.showControls}
+        <SliderControls
+          className={styles.showControls}
           toggleAhead={() => this.toggle(directions.ahead.name)}
           toggleBack={() => this.toggle(directions.back.name)}
         />
