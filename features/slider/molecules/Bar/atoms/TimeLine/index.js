@@ -10,17 +10,17 @@ class TimeLine extends React.Component {
       <Spring
         reset={active}
         immediate={!animate}
-        from={{ width: 0 }}
-        to={{ width: active ? 100 : 0 }}
+        from={{ transform: 0 }}
+        to={{ transform: active ? 1 : 0 }}
         impl={TimingAnimation}
         config={{ duration: 5000, easing: Easing.linear }}
         onRest={onRest}
       >
-        {({ width }) => {
+        {({ transform }) => {
           return (
             <div className={styles.timeLine}>
               <div
-                style={{ width: `${width}%` }}
+                style={{ transform: `scaleX(${transform})` }}
                 className={styles.progressBar}
               />
             </div>
