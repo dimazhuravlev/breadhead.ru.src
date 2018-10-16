@@ -4,8 +4,8 @@ import { TimingAnimation, Easing } from 'react-spring/dist/addons.cjs'
 import { SlidePicture } from '@site/features/templates'
 import { SlideArticle } from '@site/features/templates'
 import { SlideBrowserPicture } from '@site/features/templates'
-import SliderControls from '@site/ui/molecules/SliderControls'
 import { SliderAmountIcon } from '@site/ui/atoms/icons'
+import SliderControls from '@site/ui/molecules/SliderControls'
 import Bar from '../../molecules/Bar'
 import styles from './slider.css'
 import cx from 'classnames'
@@ -31,6 +31,7 @@ const templatesMap = {
   browserPicture: SlideBrowserPicture
 }
 
+// массив компонентов
 const slides = data.map(item => templatesMap[item.type])
 
 const directions = {
@@ -93,6 +94,10 @@ class Slider extends React.PureComponent {
         <div className={styles.main}>
           <Transition
             native
+            initial={{
+              opacity: 0,
+              transform: 'translateX(0%)'
+            }}
             from={{
               opacity: 1,
               transform: `translateX(${directions[direction].from})`
@@ -110,7 +115,7 @@ class Slider extends React.PureComponent {
               duration: 600,
               easing: Easing.bezier(0.645, 0.045, 0.355, 1)
             }}
-            key={index}
+            keys={index}
           >
             {style => (
               <animated.div style={{ ...style }}>

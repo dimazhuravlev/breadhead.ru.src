@@ -1,4 +1,5 @@
 import React from 'react'
+import { SliderArrowLeftIcon, SliderArrowRightIcon } from '@site/ui/atoms/icons'
 import cx from 'classnames'
 import styles from './sliderControls.css'
 
@@ -9,40 +10,14 @@ class SliderControls extends React.Component {
     return (
       <div className={cx(styles.background, className)}>
         <button onClick={toggleBack} className={cx(styles.button, styles.left)}>
-          <svg
-            className={styles.leftArrow}
-            width="14px"
-            height="24px"
-            viewBox="0 0 14 24"
-          >
-            <g fill="none">
-              <polyline
-                stroke="var(--beigePrimary)"
-                strokeWidth="2"
-                points="13 1 2 12 13 23"
-              />
-            </g>
-          </svg>
+          <SliderArrowLeftIcon className={styles.leftArrow} />
         </button>
 
         <button
           onClick={toggleAhead}
           className={cx(styles.button, styles.right)}
         >
-          <svg
-            className={styles.rightArrow}
-            width="14px"
-            height="24px"
-            viewBox="0 0 14 24"
-          >
-            <g fill="none">
-              <polyline
-                stroke="var(--beigePrimary)"
-                strokeWidth="2"
-                points="1 1 12 12 1 23"
-              />
-            </g>
-          </svg>
+          <SliderArrowRightIcon className={styles.rightArrow} />
         </button>
       </div>
     )
