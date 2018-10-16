@@ -2,12 +2,14 @@
   "dependencies": {
     "@zeit/next-css": "^0.2.0",
     "classnames": "^2.2.6",
+    "lodash": "^4.17.11",
     "next": "^6.1.2",
     "postcss-custom-properties": "^8.0.8",
     "prop-types": "^15.6.2",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
-    "scroll-into-view-if-needed": "^2.2.20"
+    "react-motion": "^0.5.2",
+    "react-spring": "^5.9.2"
   },
   "scripts": {
     "dev": "next",

@@ -1,4 +1,12 @@
-.Slider {
+.showControls {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
   width: 75%;
   height: 40vw;
   background-color: var(--darkSecondary);
@@ -10,4 +18,39 @@
   @media (max-width: 600px) {
     height: 130vw;
   }
+  &:hover .showControls {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.main > div {
+  position: absolute;
+  width: 100%;
+  top: -2px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  will-change: transform, opacity;
+}
+
+.amountIcon {
+  z-index: 2;
+  position: absolute;
+  bottom: 12px;
+  right: 16px;
+}
+
+.amount {
+  position: absolute;
+  color: #e0d7ce;
+  opacity: 0.5;
+  width: 25px;
+  top: 4px;
+  font-size: 15px;
+  line-height: 10px;
+  font-family: var(--fontFamilyAeroport);
+  font-weight: 200;
+  text-align: center;
 }

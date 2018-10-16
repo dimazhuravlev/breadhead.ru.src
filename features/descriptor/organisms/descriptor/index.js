@@ -11,13 +11,20 @@ const Descriptor = ({
   href,
   tooltip,
   text,
-  className
+  className,
+  description
 }) => (
   <section className={cx(styles.descriptor, className)}>
     {type && <p className={styles.type}>{type}</p>}
     <h2 className={styles.name}>{name}</h2>
     {icontype && (
-      <IconLink icontype={icontype} href={href} tooltip={tooltip} text={text} />
+      <IconLink
+        icontype={icontype}
+        href={href}
+        tooltip={tooltip}
+        text={text}
+        description={description}
+      />
     )}
   </section>
 )
@@ -28,7 +35,8 @@ Descriptor.propTypes = {
   icontype: PropTypes.oneOf(['globe', 'article']),
   href: PropTypes.string,
   tooltip: PropTypes.string,
-  text: PropTypes.string
+  text: PropTypes.string,
+  description: PropTypes.string
 }
 
 export default Descriptor
