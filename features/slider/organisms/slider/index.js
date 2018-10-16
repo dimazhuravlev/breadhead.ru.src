@@ -10,40 +10,35 @@ import Bar from '../../molecules/Bar'
 import styles from './slider.css'
 import cx from 'classnames'
 
-const pages = [
-  style => (
-    <animated.div style={{ ...style }}>
-      <SlideArticle />
-    </animated.div>
-  ),
-  style => (
-    <animated.div style={{ ...style }}>
-      <SlidePicture />
-    </animated.div>
-  ),
-  style => (
-    <animated.div style={{ ...style }}>
-      <SlideArticle />
-    </animated.div>
-  ),
-  style => (
-    <animated.div style={{ ...style }}>
-      <SlidePicture />
-    </animated.div>
-  ),
-  style => (
-    <animated.div style={{ ...style }}>
-      <SlideBrowserPicture />
-    </animated.div>
-  )
+const data = [
+  {
+    type: 'article'
+  },
+  {
+    type: 'picture'
+  },
+  {
+    type: 'article'
+  },
+  {
+    type: 'browserPicture'
+  }
 ]
+
+const templatesMap = {
+  article: SlideArticle,
+  picture: SlidePicture,
+  browserPicture: SlideBrowserPicture
+}
+
+const slides = data.map(item => templatesMap[item.type])
 
 const directions = {
   ahead: { leave: '-50%', from: '100%', name: 'ahead', multiplier: 1 },
   back: { leave: '50%', from: '-100%', name: 'back', multiplier: -1 }
 }
 
-const listLength = pages.length
+const listLength = slides.length
 
 class Slider extends React.PureComponent {
   constructor(props) {
@@ -78,13 +73,14 @@ class Slider extends React.PureComponent {
 
   render() {
     const { direction, index } = this.state
+    const Slide = slides[index]
 
     return (
       <div className={cx(styles.slider, this.props.className)}>
         <Bar
           onRest={() => this.toggle(directions.ahead.name)}
           index={index}
-          quantity={pages.length}
+          quantity={slides.length}
         />
         <SliderAmountIcon className={styles.amountIcon}>
           <span className={styles.amount}>{listLength}</span>
@@ -114,8 +110,13 @@ class Slider extends React.PureComponent {
               duration: 600,
               easing: Easing.bezier(0.645, 0.045, 0.355, 1)
             }}
+            key={index}
           >
-            {pages[index]}
+            {style => (
+              <animated.div style={{ ...style }}>
+                <Slide />
+              </animated.div>
+            )}
           </Transition>
         </div>
       </div>
