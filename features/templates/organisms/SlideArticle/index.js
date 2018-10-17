@@ -11,12 +11,20 @@ const SlideArticle = () => (
       Мы консультировали клиента, помогая описать бизнес-логику. Спроектировали
       и разработали веб-приложение на React и Android-приложение для аптек.
     </div>
-    <IconLink
-      icontype="globe"
-      href="https://faster.ru/"
-      description="beta:"
-      text="faster.ru"
-    />
+    <div className={styles.icons}>
+      <IconLink
+        icontype="globe"
+        href="https://faster.ru/"
+        description="alfa:"
+        text="Какое-то длинное описание"
+      />
+      <IconLink
+        icontype="globe"
+        href="https://faster.ru/"
+        description="beta:"
+        text="faster.ru"
+      />
+    </div>
   </article>
 )
 

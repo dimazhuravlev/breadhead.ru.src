@@ -4,7 +4,7 @@ import styles from './introImage.css'
 const IntroImage = () => (
   <img
     className={styles.introImage}
-    src="/static/img/HeadlineImage.png"
+    src="/static/img/BH_second_wide.png"
     alt="headerPicture"
   />
 )

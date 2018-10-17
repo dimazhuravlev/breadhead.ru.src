@@ -9,7 +9,6 @@ const Descriptor = ({
   name,
   icontype,
   href,
-  tooltip,
   text,
   className,
   description
@@ -21,7 +20,6 @@ const Descriptor = ({
       <IconLink
         icontype={icontype}
         href={href}
-        tooltip={tooltip}
         text={text}
         description={description}
       />
@@ -34,7 +32,6 @@ Descriptor.propTypes = {
   name: PropTypes.string.isRequired,
   icontype: PropTypes.oneOf(['globe', 'article']),
   href: PropTypes.string,
-  tooltip: PropTypes.string,
   text: PropTypes.string,
   description: PropTypes.string
 }

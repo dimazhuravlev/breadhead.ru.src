@@ -21,17 +21,6 @@
   color: var(--beigeSecondary);
 }
 
-.tooltip {
-  display: inline-flex;
-  position: relative;
-  top: 0px;
-  background-color: var(--redPrimary);
-  font: var(--caption20-24);
-  color: var(--darkPrimary);
-  border-radius: 32px;
-  padding: 8px 12px;
-}
-
 .icon {
   display: flex;
   align-items: center;

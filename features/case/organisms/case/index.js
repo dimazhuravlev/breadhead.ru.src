@@ -10,7 +10,6 @@ const Case = ({
   id,
   type,
   name,
-  tooltip,
   text,
   icontype,
   href,
@@ -21,7 +20,6 @@ const Case = ({
     <Descriptor
       type={type}
       name={name}
-      tooltip={tooltip}
       text={text}
       icontype={icontype}
       href={href}
@@ -34,7 +32,6 @@ const Case = ({
 Case.propTypes = {
   type: PropTypes.string,
   name: PropTypes.string,
-  tooltip: PropTypes.string,
   text: PropTypes.string,
   icontype: PropTypes.string,
   href: PropTypes.string,

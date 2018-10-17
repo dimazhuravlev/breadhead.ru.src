@@ -14,27 +14,22 @@ class IconLink extends React.Component {
     const Icon = iconsMap[this.props.icontype]
 
     return (
-      <React.Fragment>
-        {this.props.tooltip && (
-          <div className={styles.tooltip}>{this.props.tooltip}</div>
+      <div className={styles.iconLink}>
+        {this.props.description && (
+          <div className={styles.description}>{this.props.description}</div>
         )}
-        <div className={styles.iconLink}>
-          {this.props.description && (
-            <div className={styles.description}>{this.props.description}</div>
+        <a
+          className={styles.icon}
+          href={this.props.href}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Icon />
+          {this.props.text && (
+            <div className={styles.text}>{this.props.text}</div>
           )}
-          <a
-            className={styles.icon}
-            href={this.props.href}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Icon />
-            {this.props.text && (
-              <div className={styles.text}>{this.props.text}</div>
-            )}
-          </a>
-        </div>
-      </React.Fragment>
+        </a>
+      </div>
     )
   }
 }
@@ -43,8 +38,7 @@ IconLink.propTypes = {
   icontype: PropTypes.oneOf(['globe', 'article']).isRequired,
   href: PropTypes.string.isRequired,
   description: PropTypes.string,
-  text: PropTypes.string,
-  tooltip: PropTypes.string
+  text: PropTypes.string
 }
 
 export default IconLink

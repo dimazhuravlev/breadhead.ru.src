@@ -32,11 +32,11 @@ const Home = () => (
     <Intro />
     <section className={styles.cases} id="cases">
       <Case
-        data={data}
         type="проект"
         name="Faster. Новый опыт покупки лекарств"
         icontype="globe"
         href="https://faster.ru"
+        data={data}
       />
 
       <Case
