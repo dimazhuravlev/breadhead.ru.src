@@ -1,95 +1,39 @@
 import React from 'react'
 import { Transition, animated } from 'react-spring'
 import { TimingAnimation, Easing } from 'react-spring/dist/addons.cjs'
-import { SlidePicture } from '@site/features/templates'
-import { SlideArticle } from '@site/features/templates'
-import { SlideBrowserPicture } from '@site/features/templates'
 import { SliderAmountIcon } from '@site/ui/atoms/icons'
 import SliderControls from '@site/ui/molecules/SliderControls'
 import Bar from '../../molecules/Bar'
 import styles from './slider.css'
 import cx from 'classnames'
 
-const data = [
-  {
-    type: 'article'
-  },
-  {
-    type: 'picture'
-  },
-  {
-    type: 'article'
-  },
-  {
-    type: 'browserPicture'
-  }
-]
-
-const templatesMap = {
-  article: SlideArticle,
-  picture: SlidePicture,
-  browserPicture: SlideBrowserPicture
-}
-
-// массив компонентов
-const slides = data.map(item => templatesMap[item.type])
-
-const directions = {
-  ahead: { leave: '-50%', from: '100%', name: 'ahead', multiplier: 1 },
-  back: { leave: '50%', from: '-100%', name: 'back', multiplier: -1 }
-}
-
-const listLength = slides.length
-
 class Slider extends React.PureComponent {
-  constructor(props) {
-    super(props)
-    this.state = {
-      index: 0,
-      direction: directions.ahead.name
-    }
-    this.toggle = this.toggle.bind(this)
-  }
-
-  getNextIndex(index, direction) {
-    const nextIndex = index + 1 * directions[direction].multiplier
-
-    if (nextIndex < 0) {
-      return listLength - 1
-    }
-
-    if (nextIndex >= listLength) {
-      return 0
-    }
-
-    return nextIndex
-  }
-
-  toggle(direction) {
-    this.setState(({ index }) => ({
-      index: this.getNextIndex(index, direction),
-      direction
-    }))
-  }
-
   render() {
-    const { direction, index } = this.state
+    const {
+      direction,
+      index,
+      directions,
+      slides,
+      toggle,
+      className
+    } = this.props
+
     const Slide = slides[index]
 
     return (
-      <div className={cx(styles.slider, this.props.className)}>
+      <div className={cx(styles.slider, className)}>
         <Bar
-          onRest={() => this.toggle(directions.ahead.name)}
+          onRest={() => toggle(directions.ahead.name)}
           index={index}
           quantity={slides.length}
         />
         <SliderAmountIcon className={styles.amountIcon}>
-          <span className={styles.amount}>{listLength}</span>
+          <span className={styles.amount}>{slides.length}</span>
         </SliderAmountIcon>
         <SliderControls
           className={styles.showControls}
-          toggleAhead={() => this.toggle(directions.ahead.name)}
-          toggleBack={() => this.toggle(directions.back.name)}
+          toggleAhead={() => toggle(directions.ahead.name)}
+          toggleBack={() => toggle(directions.back.name)}
         />
         <div className={styles.main}>
           <Transition

@@ -14,7 +14,8 @@ const Case = ({
   text,
   icontype,
   href,
-  description
+  description,
+  data
 }) => (
   <section id={id} className={cx(styles.case, className)}>
     <Descriptor
@@ -26,7 +27,7 @@ const Case = ({
       href={href}
       description={description}
     />
-    <Slider />
+    <Slider data={data} />
   </section>
 )
 

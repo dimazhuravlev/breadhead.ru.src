@@ -8,7 +8,23 @@ import About from '@site/features/about'
 import Button from '@site/ui/molecules/Button'
 import Footer from '@site/features/footer'
 import { PlusIcon } from '@site/ui/atoms/icons'
+import { TemplatesNames } from '@site/features/templates'
 import styles from './home.css'
+
+const data = [
+  {
+    type: TemplatesNames.Article
+  },
+  {
+    type: TemplatesNames.Picture
+  },
+  {
+    type: TemplatesNames.Article
+  },
+  {
+    type: TemplatesNames.BrowserPicture
+  }
+]
 
 const Home = () => (
   <main>
@@ -16,6 +32,7 @@ const Home = () => (
     <Intro />
     <section className={styles.cases} id="cases">
       <Case
+        data={data}
         type="проект"
         name="Faster. Новый опыт покупки лекарств"
         icontype="globe"
@@ -23,6 +40,7 @@ const Home = () => (
       />
 
       <Case
+        data={data}
         type="подборка"
         name="E-learning сервисы"
         icontype="article"
@@ -30,6 +48,7 @@ const Home = () => (
       />
 
       <Case
+        data={data}
         type="проект"
         name="Yami Yami. Красивая доставка еды"
         icontype="globe"
@@ -43,6 +62,7 @@ const Home = () => (
     <Clients />
     <About id="about" />
     <Case
+      data={data}
       id="howWeWork"
       className={styles.howWeWork}
       type="вики"

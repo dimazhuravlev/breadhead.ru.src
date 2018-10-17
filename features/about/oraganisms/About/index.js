@@ -7,6 +7,21 @@ import { NON_BREAKING_SPACE } from '@site/constants'
 import AboutText from '../../atoms/AboutText'
 import styles from './about.css'
 
+const data = [
+  {
+    type: 'article'
+  },
+  {
+    type: 'picture'
+  },
+  {
+    type: 'article'
+  },
+  {
+    type: 'browserPicture'
+  }
+]
+
 const About = props => (
   <section id={props.id} className={styles.about}>
     <div>
@@ -17,7 +32,7 @@ const About = props => (
         {`Breadhead проектирует и${NON_BREAKING_SPACE}выпускает сервисы и${NON_BREAKING_SPACE}приложения. Совершенствует деятельность компаний с${NON_BREAKING_SPACE}помощью технологий.`}
       </AboutText>
 
-      <Slider className={styles.aboutSlider} />
+      <Slider data={data} className={styles.aboutSlider} />
 
       <AboutText>
         <React.Fragment>
