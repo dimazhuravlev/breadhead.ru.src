@@ -5,6 +5,8 @@ import Descriptor from '@site/features/descriptor'
 import cx from 'classnames'
 import styles from './case.css'
 
+// ;({ data: { description, slides } })
+
 const Case = ({
   className,
   id,

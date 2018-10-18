@@ -1,5 +1,5 @@
 import React from 'react'
-import { templatesMap } from '@site/features/templates'
+import { templatesMap } from '@site/features/slider/molecules/Templates'
 
 const directions = {
   ahead: { leave: '-50%', from: '100%', name: 'ahead', multiplier: 1 },
