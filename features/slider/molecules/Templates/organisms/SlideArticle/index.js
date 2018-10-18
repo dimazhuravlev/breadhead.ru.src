@@ -2,28 +2,26 @@ import React from 'react'
 import IconLink from '@site/ui/molecules/IconLink'
 import styles from './slideArticle.css'
 
-const SlideArticle = () => (
+const SlideArticle = ({ title, description, links }) => (
   <article className={styles.slide}>
-    <h2 className={styles.title}>
-      Сервис для сравнения и бронирования лекарств в аптеках города.
-    </h2>
+    <h2 className={styles.title}>{title}</h2>
     <div className={styles.text}>
-      Мы консультировали клиента, помогая описать бизнес-логику. Спроектировали
-      и разработали веб-приложение на React и Android-приложение для аптек.
+      {description.map(description => (
+        <div key={description} className={styles.text}>
+          {description}
+        </div>
+      ))}
     </div>
     <div className={styles.icons}>
-      <IconLink
-        icontype="globe"
-        href="https://faster.ru/"
-        description="alfa:"
-        text="Какое-то длинное описание"
-      />
-      <IconLink
-        icontype="globe"
-        href="https://faster.ru/"
-        description="beta:"
-        text="faster.ru"
-      />
+      {links.map(({ icontype, href, description, text }) => (
+        <IconLink
+          key={href}
+          icontype={icontype}
+          href={href}
+          text={text}
+          description={description}
+        />
+      ))}
     </div>
   </article>
 )

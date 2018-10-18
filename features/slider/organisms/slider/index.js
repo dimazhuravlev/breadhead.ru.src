@@ -15,7 +15,8 @@ class Slider extends React.PureComponent {
       directions,
       slides,
       toggle,
-      className
+      className,
+      data
     } = this.props
 
     const Slide = slides[index]
@@ -63,7 +64,7 @@ class Slider extends React.PureComponent {
           >
             {style => (
               <animated.div style={{ ...style }}>
-                <Slide />
+                <Slide {...data} />
               </animated.div>
             )}
           </Transition>

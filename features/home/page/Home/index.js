@@ -11,60 +11,119 @@ import { PlusIcon } from '@site/ui/atoms/icons'
 import { TemplatesNames } from '@site/features/slider/molecules/Templates'
 import styles from './home.css'
 
-// const caseData = {
-//   description: {
-//     type: 'проект',
-//     name: 'Faster. Новый опыт покупки лекарств',
-//     icontype: 'globe',
-//     href: 'https://faster.ru',
-//     text: 'ссылка',
-//     description: 'описание ссылки'
-//   },
-//   slides: [
-//     {
-//       type: TemplatesNames.Article,
-//       data: {
-//         title: 'Сервис для сравнения и бронирования лекарств в аптеках города.',
-//         description: [
-//           'Мы консультировали клиента, помогая описать бизнес-логику. Спроектировали и разработали веб-приложение на React и Android-приложение для аптек.'
-//         ],
-//         links: [
-//           {
-//             icontype: 'globe',
-//             href: 'google.com',
-//             description: 'google',
-//             text: 'text'
-//           }
-//         ]
-//       }
-//     },
-//     {
-//       type: TemplatesNames.Picture,
-//       data: {
-//         src: 'faster'
-//       }
-//     },
-//     {
-//       type: TemplatesNames.BrowserPicture,
-//       data: {
-//         src: 'faster'
-//       }
-//     }
-//   ]
-// }
+const casesData = [
+  {
+    description: {
+      type: 'проект',
+      name: 'Faster. Новый опыт покупки лекарств',
+      links: [
+        {
+          icontype: 'globe',
+          description: 'сайтец',
+          href: 'https://yamiyami.ru',
+          text: 'Yami Yami'
+        },
+        {
+          icontype: 'article',
+          href: 'https://medium.com/breadhead-stories/yami-yami-c7f2b5916442',
+          text: 'статья на Medium'
+        }
+      ]
+      // icontype: 'globe',
+      // description: 'beta:',
+      // href: 'https://faster.ru',
+      // text: 'faster.ru'
+    },
+    slides: [
+      {
+        type: TemplatesNames.Article,
+        data: {
+          title:
+            'Сервис для сравнения и бронирования лекарств в аптеках города.',
+          description: [
+            'Мы консультировали клиента, помогая описать бизнес-логику.',
+            'Спроектировали и разработали веб-приложение на React и Android-приложение для аптек.'
+          ],
+          links: [
+            {
+              icontype: 'globe',
+              description: 'beta:',
+              href: 'https://faster.ru',
+              text: 'faster.ru'
+            }
+          ]
+        }
+      },
+      {
+        type: TemplatesNames.Picture,
+        data: {
+          src: '/static/img/faster.png'
+        }
+      },
+      {
+        type: TemplatesNames.BrowserPicture,
+        data: {
+          src: '/static/img/FasterScreenShot.png'
+        }
+      }
+    ]
+  },
 
-const data = [
   {
-    type: TemplatesNames.Article
-  },
-  {
-    type: TemplatesNames.Picture
-  },
-  {
-    type: TemplatesNames.Article
-  },
-  {
-    type: TemplatesNames.BrowserPicture
+    description: {
+      type: 'проект',
+      name: 'Yami Yami. Красивая доставка еды',
+      links: [
+        {
+          icontype: 'globe',
+          description: 'сайтец',
+          href: 'https://yamiyami.ru',
+          text: 'Yami Yami'
+        },
+        {
+          icontype: 'article',
+          href: 'https://medium.com/breadhead-stories/yami-yami-c7f2b5916442',
+          text: 'статья на Medium'
+        }
+      ]
+    },
+    slides: [
+      {
+        type: TemplatesNames.Article,
+        data: {
+          title:
+            'Какая разница сколько часов вам везут еду, если её везут из Yami Yami?',
+          description: [
+            'Люди приходят в восторг, когда впервые видят сайт. А когда еда приезжает к ним домой, они просто сходят с ума от фирменной упаковки и маленькой машинки Smart, которую хочется облизывать.'
+          ],
+          links: [
+            {
+              icontype: 'globe',
+              href: 'https://yamiyami.ru',
+              text: 'сайт Yami Yami'
+            },
+            {
+              icontype: 'article',
+              href:
+                'https://medium.com/breadhead-stories/yami-yami-c7f2b5916442',
+              text: 'статья на Medium'
+            }
+          ]
+        }
+      },
+      {
+        type: TemplatesNames.Picture,
+        data: {
+          src: '/static/img/yamiyami.jpg'
+        }
+      },
+      {
+        type: TemplatesNames.BrowserPicture,
+        data: {
+          src: '/static/img/yamisite.png'
+        }
+      }
+    ]
   }
 ]
 
@@ -73,38 +132,17 @@ const Home = () => (
     <Header />
     <Intro />
     <section className={styles.cases} id="cases">
-      <Case
-        type="проект"
-        name="Faster. Новый опыт покупки лекарств"
-        icontype="globe"
-        href="https://faster.ru"
-        data={data}
-      />
-
-      {/* <Case
-        data={data}
-        type="подборка"
-        name="E-learning сервисы"
-        icontype="article"
-        href="https://medium.com/breadhead-stories"
-      />
-
-      <Case
-        data={data}
-        type="проект"
-        name="Yami Yami. Красивая доставка еды"
-        icontype="globe"
-        href="https://yamiyami.ru"
-      /> */}
+      {casesData.map(caseData => (
+        <Case key={caseData.description.name} {...caseData} />
+      ))}
     </section>
 
     <Button className={styles.plusButton} icon={<PlusIcon />}>
       ещё
     </Button>
     <Clients />
-    {/* <About id="about" /> */}
-    {/* <Case
-      data={data}
+    {/* <About id="about" />
+    <Case
       id="howWeWork"
       className={styles.howWeWork}
       type="вики"

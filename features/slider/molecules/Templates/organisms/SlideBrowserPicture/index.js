@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './slideBrowserPicture.css'
 
-const SlideBrowserPicture = () => (
+const SlideBrowserPicture = ({ src }) => (
   <div className={styles.slide}>
     <div className={styles.browser}>
       <div className={styles.header}>
@@ -32,7 +32,7 @@ const SlideBrowserPicture = () => (
           </svg>
         </div>
       </div>
-      <img src="/static/img/FasterScreenShot.png" className={styles.screen} />
+      <img src={src} className={styles.screen} />
     </div>
   </div>
 )

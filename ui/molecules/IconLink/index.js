@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { GlobeIcon } from '@site/ui/atoms/icons'
 import { ArticleIcon } from '@site/ui/atoms/icons'
 import styles from './iconLink.css'
+import cx from 'classnames'
 
 const iconsMap = {
   globe: GlobeIcon,
@@ -14,7 +15,7 @@ class IconLink extends React.Component {
     const Icon = iconsMap[this.props.icontype]
 
     return (
-      <div className={styles.iconLink}>
+      <div className={cx(styles.iconLink, this.props.className)}>
         {this.props.description && (
           <div className={styles.description}>{this.props.description}</div>
         )}

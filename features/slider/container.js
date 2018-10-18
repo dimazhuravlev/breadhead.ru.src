@@ -13,7 +13,7 @@ const Container = Component =>
       this.state = {
         index: 0,
         direction: directions.ahead.name,
-        slides: []
+        slideComponents: []
       }
       this.toggle = this.toggle.bind(this)
       this.getNextIndex = this.getNextIndex.bind(this)
@@ -21,7 +21,9 @@ const Container = Component =>
 
     static getDerivedStateFromProps(props) {
       return {
-        slides: props.data.map(item => templatesMap[item.type])
+        slideComponents: (props.slides || []).map(
+          item => templatesMap[item.type]
+        )
       }
     }
 
@@ -29,10 +31,10 @@ const Container = Component =>
       const nextIndex = index + 1 * directions[direction].multiplier
 
       if (nextIndex < 0) {
-        return this.state.slides.length - 1
+        return this.state.slideComponents.length - 1
       }
 
-      if (nextIndex >= this.state.slides.length) {
+      if (nextIndex >= this.state.slideComponents.length) {
         return 0
       }
 
@@ -47,14 +49,18 @@ const Container = Component =>
     }
 
     render() {
+      const { index, direction, slideComponents } = this.state
+      const { className, slides } = this.props
+
       return (
         <Component
-          index={this.state.index}
-          direction={this.state.direction}
-          slides={this.state.slides}
+          index={index}
+          direction={direction}
+          slides={slideComponents}
+          data={slides[index].data}
           getNextIndex={this.getNextIndex}
           toggle={this.toggle}
-          className={this.props.className}
+          className={className}
           directions={directions}
         />
       )
