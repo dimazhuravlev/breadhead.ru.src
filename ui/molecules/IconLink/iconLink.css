@@ -15,7 +15,6 @@
 }
 
 .text {
-  margin-left: 8px;
   font: var(--text24-32);
   color: var(--beigeSecondary);
   @media (max-width: 1200px) {
@@ -23,7 +22,7 @@
   }
 }
 
-.icon {
+.link {
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -52,4 +51,8 @@
     color: var(--redSecondary);
     transition: all 0.15s ease-in;
   }
+}
+
+.icon {
+  margin-right: 8px;
 }

@@ -20,12 +20,12 @@ class IconLink extends React.Component {
           <div className={styles.description}>{this.props.description}</div>
         )}
         <a
-          className={styles.icon}
+          className={styles.link}
           href={this.props.href}
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Icon />
+          {Icon && <Icon className={styles.icon} />}
           {this.props.text && (
             <div className={styles.text}>{this.props.text}</div>
           )}
@@ -36,7 +36,7 @@ class IconLink extends React.Component {
 }
 
 IconLink.propTypes = {
-  icontype: PropTypes.oneOf(['globe', 'article']).isRequired,
+  icontype: PropTypes.oneOf(['globe', 'article']),
   href: PropTypes.string.isRequired,
   description: PropTypes.string,
   text: PropTypes.string
