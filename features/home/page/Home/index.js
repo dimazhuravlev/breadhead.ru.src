@@ -19,20 +19,9 @@ const casesData = [
       links: [
         {
           icontype: 'globe',
-          description: 'сайтец',
-          href: 'https://yamiyami.ru',
-          text: 'Yami Yami'
-        },
-        {
-          icontype: 'article',
-          href: 'https://medium.com/breadhead-stories/yami-yami-c7f2b5916442',
-          text: 'статья на Medium'
+          href: 'https://yamiyami.ru'
         }
       ]
-      // icontype: 'globe',
-      // description: 'beta:',
-      // href: 'https://faster.ru',
-      // text: 'faster.ru'
     },
     slides: [
       {
@@ -76,14 +65,11 @@ const casesData = [
       links: [
         {
           icontype: 'globe',
-          description: 'сайтец',
-          href: 'https://yamiyami.ru',
-          text: 'Yami Yami'
+          href: 'https://yamiyami.ru'
         },
         {
           icontype: 'article',
-          href: 'https://medium.com/breadhead-stories/yami-yami-c7f2b5916442',
-          text: 'статья на Medium'
+          href: 'https://medium.com/breadhead-stories/yami-yami-c7f2b5916442'
         }
       ]
     },
@@ -94,19 +80,19 @@ const casesData = [
           title:
             'Какая разница сколько часов вам везут еду, если её везут из Yami Yami?',
           description: [
-            'Люди приходят в восторг, когда впервые видят сайт. А когда еда приезжает к ним домой, они просто сходят с ума от фирменной упаковки и маленькой машинки Smart, которую хочется облизывать.'
+            'Люди приходят в восторг, когда впервые видят сайт Yami Yami. А когда еда приезжает к ним домой, они просто сходят с ума от фирменной упаковки и маленькой машинки Smart, которую хочеться облизывать.'
           ],
           links: [
             {
               icontype: 'globe',
               href: 'https://yamiyami.ru',
-              text: 'сайт Yami Yami'
+              text: 'Yami Yami'
             },
             {
               icontype: 'article',
               href:
                 'https://medium.com/breadhead-stories/yami-yami-c7f2b5916442',
-              text: 'статья на Medium'
+              text: 'Medium'
             }
           ]
         }

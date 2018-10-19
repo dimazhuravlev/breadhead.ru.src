@@ -8,16 +8,18 @@ const Descriptor = ({ className, type, name, links }) => (
   <section className={cx(styles.descriptor, className)}>
     {type && <p className={styles.type}>{type}</p>}
     <h2 className={styles.name}>{name}</h2>
-    <div className={styles.descriptorIconLink}>
-      {links.map(({ icontype, href, description, text }) => (
-        <IconLink
-          key={href}
-          icontype={icontype}
-          href={href}
-          text={text}
-          description={description}
-        />
-      ))}
+    <div className={styles.descriptorIconBlock}>
+      {links &&
+        links.map(({ icontype, href, description, text }) => (
+          <IconLink
+            className={styles.descriptionIconLink}
+            key={href}
+            icontype={icontype}
+            href={href}
+            text={text}
+            description={description}
+          />
+        ))}
     </div>
   </section>
 )

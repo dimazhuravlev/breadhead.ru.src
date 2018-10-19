@@ -32,8 +32,15 @@
   }
 }
 
-.descriptorIconLink {
+.descriptorIconBlock {
+  display: flex;
+  flex-wrap: wrap;
   @media (max-width: 1023px) {
     display: none;
   }
+}
+
+.descriptionIconLink {
+  margin-right: 16px;
+  margin-bottom: 16px;
 }

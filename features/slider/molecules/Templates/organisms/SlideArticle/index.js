@@ -12,9 +12,10 @@ const SlideArticle = ({ title, description, links }) => (
         </div>
       ))}
     </div>
-    <div className={styles.icons}>
+    <div className={styles.articleIconBlock}>
       {links.map(({ icontype, href, description, text }) => (
         <IconLink
+          className={styles.articleIconLink}
           key={href}
           icontype={icontype}
           href={href}
