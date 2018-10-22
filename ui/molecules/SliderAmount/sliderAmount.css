@@ -1,0 +1,19 @@
+.amountIcon {
+  z-index: 2;
+  position: absolute;
+  bottom: 12px;
+  right: 16px;
+}
+
+.amount {
+  position: absolute;
+  color: #e0d7ce;
+  opacity: 0.5;
+  width: 25px;
+  top: 4px;
+  font-size: 15px;
+  line-height: 10px;
+  font-family: var(--fontFamilyAeroport);
+  font-weight: 200;
+  text-align: center;
+}

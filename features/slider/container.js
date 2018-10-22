@@ -56,12 +56,12 @@ const Container = Component =>
         <Component
           index={index}
           direction={direction}
+          directions={directions}
           slides={slideComponents}
-          data={slides[index].data}
-          getNextIndex={this.getNextIndex}
           toggle={this.toggle}
           className={className}
-          directions={directions}
+          data={slides[index].data}
+          getNextIndex={this.getNextIndex}
         />
       )
     }

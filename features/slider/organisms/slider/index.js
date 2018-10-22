@@ -1,7 +1,7 @@
 import React from 'react'
 import { Transition, animated } from 'react-spring'
 import { TimingAnimation, Easing } from 'react-spring/dist/addons.cjs'
-import { SliderAmountIcon } from '@site/ui/atoms/icons'
+import SliderAmount from '@site/ui/molecules/SliderAmount'
 import SliderControls from '@site/ui/molecules/SliderControls'
 import Bar from '../../molecules/Bar'
 import styles from './slider.css'
@@ -10,8 +10,8 @@ import cx from 'classnames'
 class Slider extends React.PureComponent {
   render() {
     const {
-      direction,
       index,
+      direction,
       directions,
       slides,
       toggle,
@@ -28,9 +28,7 @@ class Slider extends React.PureComponent {
           index={index}
           quantity={slides.length}
         />
-        <SliderAmountIcon className={styles.amountIcon}>
-          <span className={styles.amount}>{slides.length}</span>
-        </SliderAmountIcon>
+        <SliderAmount slides={slides} />
         <SliderControls
           className={styles.showControls}
           toggleAhead={() => toggle(directions.ahead.name)}
