@@ -22,7 +22,7 @@
     "ci": "yarn lint && yarn test"
   },
   "devDependencies": {
-    "autoprefixer": "^9.2.0",
+    "autoprefixer": "^9.2.1",
     "babel-jest": "^23.6.0",
     "babel-plugin-module-resolver": "^3.1.1",
     "babel-preset-env": "^1.7.0",
@@ -39,7 +39,7 @@
     "postcss": "^7.0.5",
     "postcss-nesting": "^7.0.0",
     "postcss-normalize": "^7.0.1",
-    "postcss-preset-env": "^6.1.1",
+    "postcss-preset-env": "^6.1.2",
     "stylelint": "^9.6.0",
     "stylelint-config-recommended": "^2.1.0"
   }
