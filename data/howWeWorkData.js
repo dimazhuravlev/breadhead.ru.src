@@ -18,31 +18,31 @@ export const howWeWorkData = {
         title: 'Принципы проектной работы и коммуникации Breadhead',
         links: [
           {
-            href: 'https://yamiyami.ru',
+            href: 'https://yamiyami.ru/prod',
             text: 'Команда и клиент ›'
           },
           {
-            href: 'https://medium.com/breadhead-stories/yami-yami-c7f2b5916442',
+            href: 'https://medium.com/1',
             text: 'Проектирование ›'
           },
           {
-            href: 'https://medium.com/breadhead-stories/yami-yami-c7f2b5916442',
+            href: 'https://medium.com/2',
             text: 'Гибкий процесс ›'
           },
           {
-            href: 'https://medium.com/breadhead-stories/yami-yami-c7f2b5916442',
+            href: 'https://medium.com/3',
             text: 'Разработка ›'
           },
           {
-            href: 'https://medium.com/breadhead-stories/yami-yami-c7f2b5916442',
+            href: 'https://medium.com/4',
             text: 'Отчеты и деньги ›'
           },
           {
-            href: 'https://medium.com/breadhead-stories/yami-yami-c7f2b5916442',
+            href: 'https://medium.com/5',
             text: 'Контроль качества ›'
           },
           {
-            href: 'https://medium.com/breadhead-stories/yami-yami-c7f2b5916442',
+            href: 'https://medium.com/6',
             text: 'С чего начать ›'
           }
         ]

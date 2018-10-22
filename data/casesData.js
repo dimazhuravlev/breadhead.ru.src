@@ -8,7 +8,7 @@ export const casesData = [
       links: [
         {
           icontype: 'globe',
-          href: 'https://yamiyami.ru'
+          href: 'https://faster.ru'
         }
       ]
     },
@@ -26,7 +26,7 @@ export const casesData = [
             {
               icontype: 'globe',
               description: 'beta:',
-              href: 'https://faster.ru',
+              href: 'https://dev.faster.ru',
               text: 'faster.ru'
             }
           ]
@@ -74,13 +74,12 @@ export const casesData = [
           links: [
             {
               icontype: 'globe',
-              href: 'https://yamiyami.ru',
+              href: 'https://yamiyami.ru/menu',
               text: 'Yami Yami'
             },
             {
               icontype: 'article',
-              href:
-                'https://medium.com/breadhead-stories/yami-yami-c7f2b5916442',
+              href: 'https://medium.com/breadhead-stories',
               text: 'Medium'
             }
           ]

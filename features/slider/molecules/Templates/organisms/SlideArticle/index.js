@@ -7,22 +7,19 @@ const SlideArticle = ({ title, description, links }) => (
     {title && <h2 className={styles.title}>{title}</h2>}
     <div className={styles.text}>
       {description &&
-        description.map(description => (
+        description.map(text => (
           <div key={description} className={styles.text}>
-            {description}
+            {text}
           </div>
         ))}
     </div>
     <div className={styles.articleIconBlock}>
       {links &&
-        links.map(({ icontype, href, description, text }) => (
+        links.map(links => (
           <IconLink
+            key={links.href}
             className={styles.articleIconLink}
-            key={href}
-            icontype={icontype}
-            href={href}
-            text={text}
-            description={description}
+            {...links}
           />
         ))}
     </div>

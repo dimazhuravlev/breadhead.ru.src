@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import ExternalLink from '@site/ui/molecules/ExternalLink'
 import { GlobeIcon } from '@site/ui/atoms/icons'
 import { ArticleIcon } from '@site/ui/atoms/icons'
 import styles from './iconLink.css'
@@ -12,24 +13,16 @@ const iconsMap = {
 
 class IconLink extends React.Component {
   render() {
-    const Icon = iconsMap[this.props.icontype]
+    const { icontype, description, href, text, className } = this.props
+    const Icon = iconsMap[icontype]
 
     return (
-      <div className={cx(styles.iconLink, this.props.className)}>
-        {this.props.description && (
-          <div className={styles.description}>{this.props.description}</div>
-        )}
-        <a
-          className={styles.link}
-          href={this.props.href}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+      <div className={cx(styles.iconLink, className)}>
+        {description && <div className={styles.description}>{description}</div>}
+        <ExternalLink className={styles.link} href={href}>
           {Icon && <Icon className={styles.icon} />}
-          {this.props.text && (
-            <div className={styles.text}>{this.props.text}</div>
-          )}
-        </a>
+          {text && <div className={styles.text}>{text}</div>}
+        </ExternalLink>
       </div>
     )
   }
