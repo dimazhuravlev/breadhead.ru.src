@@ -35,13 +35,14 @@ export const casesData = [
       {
         type: TemplatesNames.Picture,
         data: {
-          src: '/static/img/faster.png'
+          srcDesktop: '/static/img/faster.png'
         }
       },
       {
         type: TemplatesNames.BrowserPicture,
         data: {
-          src: '/static/img/FasterScreenShot.png'
+          srcDesktop: '/static/img/FasterScreenShot.png',
+          srcMobile: '/static/img/faster_mobile.png'
         }
       }
     ]
@@ -88,13 +89,14 @@ export const casesData = [
       {
         type: TemplatesNames.Picture,
         data: {
-          src: '/static/img/yamiyami.jpg'
+          srcDesktop: '/static/img/yamiyami.jpg'
         }
       },
       {
         type: TemplatesNames.BrowserPicture,
         data: {
-          src: '/static/img/yamisite.png'
+          srcDesktop: '/static/img/yamisite.png',
+          srcMobile: '/static/img/yami_mobile.png'
         }
       }
     ]

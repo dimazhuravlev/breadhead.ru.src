@@ -8,37 +8,37 @@ export const aboutData = {
     {
       type: TemplatesNames.Picture,
       data: {
-        src: '/static/img/about1.jpg'
+        srcDesktop: '/static/img/about1.jpg'
       }
     },
     {
       type: TemplatesNames.Picture,
       data: {
-        src: '/static/img/about2.jpg'
+        srcDesktop: '/static/img/about2.jpg'
       }
     },
     {
       type: TemplatesNames.Picture,
       data: {
-        src: '/static/img/about3.jpg'
+        srcDesktop: '/static/img/about3.jpg'
       }
     },
     {
       type: TemplatesNames.Picture,
       data: {
-        src: '/static/img/about4.jpg'
+        srcDesktop: '/static/img/about4.jpg'
       }
     },
     {
       type: TemplatesNames.Picture,
       data: {
-        src: '/static/img/about5.jpg'
+        srcDesktop: '/static/img/about5.jpg'
       }
     },
     {
       type: TemplatesNames.Picture,
       data: {
-        src: '/static/img/about6.jpg'
+        srcDesktop: '/static/img/about6.jpg'
       }
     }
   ]
