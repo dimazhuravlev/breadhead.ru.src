@@ -9,7 +9,8 @@
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-motion": "^0.5.2",
-    "react-spring": "^5.9.2"
+    "react-spring": "^5.9.2",
+    "react-with-gesture": "^1.0.10"
   },
   "scripts": {
     "dev": "next",
