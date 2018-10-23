@@ -14,7 +14,8 @@ const SlidePicture = ({ srcDesktop, srcMobile }) => (
 )
 
 SlidePicture.propTypes = {
-  src: PropTypes.string.isRequired
+  srcDesktop: PropTypes.string.isRequired,
+  srcMobile: PropTypes.string
 }
 
 export default SlidePicture
