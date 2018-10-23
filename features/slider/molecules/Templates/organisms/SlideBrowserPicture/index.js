@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styles from './slideBrowserPicture.css'
 
 const SlideBrowserPicture = ({ src }) => (
@@ -36,5 +37,9 @@ const SlideBrowserPicture = ({ src }) => (
     </div>
   </div>
 )
+
+SlideBrowserPicture.propTypes = {
+  src: PropTypes.string.isRequired
+}
 
 export default SlideBrowserPicture

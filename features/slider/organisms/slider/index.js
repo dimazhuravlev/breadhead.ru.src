@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { Transition, animated } from 'react-spring'
 import { TimingAnimation, Easing } from 'react-spring/dist/addons.cjs'
 import { SliderAmountIcon } from '@site/ui/atoms/icons'
@@ -72,6 +73,15 @@ class Slider extends React.PureComponent {
       </div>
     )
   }
+}
+
+Slider.propTypes = {
+  direction: PropTypes.string,
+  index: PropTypes.number,
+  directions: PropTypes.object,
+  slides: PropTypes.array,
+  toggle: PropTypes.func,
+  data: PropTypes.object
 }
 
 export default Slider

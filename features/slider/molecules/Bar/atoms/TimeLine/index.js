@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { Spring } from 'react-spring'
 import { TimingAnimation, Easing } from 'react-spring/dist/addons.cjs'
 import { SLIDE_DELAY } from '@site/constants'
@@ -30,6 +31,12 @@ class TimeLine extends React.Component {
       </Spring>
     )
   }
+}
+
+TimeLine.propTypes = {
+  active: PropTypes.bool,
+  onRest: PropTypes.oneOfType([PropTypes.bool, PropTypes.func]),
+  animate: PropTypes.bool
 }
 
 export default TimeLine

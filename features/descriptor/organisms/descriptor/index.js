@@ -10,14 +10,11 @@ const Descriptor = ({ className, type, name, links }) => (
     <h2 className={styles.name}>{name}</h2>
     <div className={styles.descriptorIconBlock}>
       {links &&
-        links.map(({ icontype, href, description, text }) => (
+        links.map(link => (
           <IconLink
+            {...link}
+            key={link.href}
             className={styles.descriptionIconLink}
-            key={href}
-            icontype={icontype}
-            href={href}
-            text={text}
-            description={description}
           />
         ))}
     </div>
@@ -27,10 +24,7 @@ const Descriptor = ({ className, type, name, links }) => (
 Descriptor.propTypes = {
   type: PropTypes.string,
   name: PropTypes.string.isRequired,
-  icontype: PropTypes.oneOf(['globe', 'article']),
-  href: PropTypes.string,
-  text: PropTypes.string,
-  description: PropTypes.string
+  links: PropTypes.arrayOf(PropTypes.object)
 }
 
 export default Descriptor

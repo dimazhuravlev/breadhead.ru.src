@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import Descriptor from '@site/features/descriptor'
 import Slider from '@site/features/slider'
 import TextBlock from '@site/ui/molecules/TextBlock'
@@ -57,5 +58,10 @@ const About = ({ id, description, slides }) => (
     </div>
   </section>
 )
+
+About.propTypes = {
+  description: PropTypes.object.isRequired,
+  slides: PropTypes.arrayOf(PropTypes.object)
+}
 
 export default About

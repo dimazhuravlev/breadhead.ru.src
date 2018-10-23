@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { range } from 'lodash'
 import TimeLine from '../../molecules/Bar/atoms/TimeLine'
 import styles from './bar.css'
@@ -20,6 +21,12 @@ class Bar extends React.Component {
       </div>
     )
   }
+}
+
+Bar.propTypes = {
+  index: PropTypes.number,
+  onRest: PropTypes.oneOfType([PropTypes.bool, PropTypes.func]),
+  quantity: PropTypes.number
 }
 
 export default Bar
