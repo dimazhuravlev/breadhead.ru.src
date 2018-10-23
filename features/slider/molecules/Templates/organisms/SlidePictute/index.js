@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styles from './slidePicture.css'
 
 const SlidePicture = ({ srcDesktop, srcMobile }) => (
@@ -11,5 +12,9 @@ const SlidePicture = ({ srcDesktop, srcMobile }) => (
     <img src={srcDesktop} className={styles.picture} />
   </picture>
 )
+
+SlidePicture.propTypes = {
+  src: PropTypes.string.isRequired
+}
 
 export default SlidePicture

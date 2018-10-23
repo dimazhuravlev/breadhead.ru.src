@@ -26,7 +26,7 @@ export const casesData = [
             {
               icontype: 'globe',
               description: 'beta:',
-              href: 'https://dev.faster.ru',
+              href: 'https://faster.ru',
               text: 'faster.ru'
             }
           ]
