@@ -1,4 +1,5 @@
 import React from 'react'
+import ExternalLink from '@site/ui/molecules/ExternalLink'
 import Descriptor from '@site/features/descriptor'
 import TextBlock from '@site/ui/molecules/TextBlock'
 import { NON_BREAKING_SPACE } from '@site/constants'
@@ -15,13 +16,9 @@ const Footer = () => {
 
           <div className={styles.textBlocks}>
             <TextBlock header="офис">
-              <a
-                href="https://goo.gl/maps/vud3y2m6k7m"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <ExternalLink href="https://goo.gl/maps/vud3y2m6k7m">
                 {`Итальянская улица,${NON_BREAKING_SPACE}14,`}
-              </a>
+              </ExternalLink>
               <br />
               мансарда №39
               <br />
@@ -35,29 +32,17 @@ const Footer = () => {
               <a href="mailto:hello@breadhead.ru">hello@breadhead.ru</a>
             </TextBlock>
             <TextBlock header="мы в соцсетях">
-              <a
-                href="https://www.facebook.com/breadhead.ru"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <ExternalLink href="https://www.facebook.com/breadhead.ru">
                 Facebook
-              </a>
+              </ExternalLink>
               <br />
-              <a
-                href="https://medium.com/breadhead-stories"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <ExternalLink href="https://medium.com/breadhead-stories">
                 Medium
-              </a>
+              </ExternalLink>
               <br />
-              <a
-                href="https://www.instagram.com/breadhead.ru"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <ExternalLink href="https://www.instagram.com/breadhead.ru">
                 Instagram
-              </a>
+              </ExternalLink>
             </TextBlock>
           </div>
         </div>

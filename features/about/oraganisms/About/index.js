@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import Descriptor from '@site/features/descriptor'
 import Slider from '@site/features/slider'
 import TextBlock from '@site/ui/molecules/TextBlock'
@@ -7,17 +8,17 @@ import { NON_BREAKING_SPACE } from '@site/constants'
 import AboutText from '../../atoms/AboutText'
 import styles from './about.css'
 
-const About = props => (
-  <section id={props.id} className={styles.about}>
+const About = ({ id, description, slides }) => (
+  <section id={id} className={styles.about}>
     <div>
-      <Descriptor className={styles.caseNameOnly} name="Студия" />
+      <Descriptor className={styles.caseNameOnly} {...description} />
     </div>
     <div className={styles.aboutContent}>
       <AboutText>
         {`Breadhead проектирует и${NON_BREAKING_SPACE}выпускает сервисы и${NON_BREAKING_SPACE}приложения. Совершенствует деятельность компаний с${NON_BREAKING_SPACE}помощью технологий.`}
       </AboutText>
 
-      <Slider className={styles.aboutSlider} />
+      <Slider slides={slides} className={styles.aboutSlider} />
 
       <AboutText>
         <React.Fragment>
@@ -57,5 +58,10 @@ const About = props => (
     </div>
   </section>
 )
+
+About.propTypes = {
+  description: PropTypes.object.isRequired,
+  slides: PropTypes.arrayOf(PropTypes.object)
+}
 
 export default About

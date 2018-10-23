@@ -13,7 +13,7 @@ const ClientsList = ({ clients }) => (
 )
 
 ClientsList.propTypes = {
-  client: PropTypes.arrayOf(PropTypes.string)
+  clients: PropTypes.arrayOf(PropTypes.string).isRequired
 }
 
 export default ClientsList

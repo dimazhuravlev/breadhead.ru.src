@@ -4,39 +4,27 @@ import IconLink from '@site/ui/molecules/IconLink'
 import cx from 'classnames'
 import styles from './descriptor.css'
 
-const Descriptor = ({
-  type,
-  name,
-  icontype,
-  href,
-  tooltip,
-  text,
-  className,
-  description
-}) => (
+const Descriptor = ({ className, type, name, links }) => (
   <section className={cx(styles.descriptor, className)}>
     {type && <p className={styles.type}>{type}</p>}
     <h2 className={styles.name}>{name}</h2>
-    {icontype && (
-      <IconLink
-        icontype={icontype}
-        href={href}
-        tooltip={tooltip}
-        text={text}
-        description={description}
-      />
-    )}
+    <div className={styles.descriptorIconBlock}>
+      {links &&
+        links.map(link => (
+          <IconLink
+            {...link}
+            key={link.href}
+            className={styles.descriptionIconLink}
+          />
+        ))}
+    </div>
   </section>
 )
 
 Descriptor.propTypes = {
   type: PropTypes.string,
   name: PropTypes.string.isRequired,
-  icontype: PropTypes.oneOf(['globe', 'article']),
-  href: PropTypes.string,
-  tooltip: PropTypes.string,
-  text: PropTypes.string,
-  description: PropTypes.string
+  links: PropTypes.arrayOf(PropTypes.object)
 }
 
 export default Descriptor

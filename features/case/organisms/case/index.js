@@ -5,39 +5,16 @@ import Descriptor from '@site/features/descriptor'
 import cx from 'classnames'
 import styles from './case.css'
 
-const Case = ({
-  className,
-  id,
-  type,
-  name,
-  tooltip,
-  text,
-  icontype,
-  href,
-  description
-}) => (
+const Case = ({ className, id, description, slides }) => (
   <section id={id} className={cx(styles.case, className)}>
-    <Descriptor
-      type={type}
-      name={name}
-      tooltip={tooltip}
-      text={text}
-      icontype={icontype}
-      href={href}
-      description={description}
-    />
-    <Slider />
+    <Descriptor {...description} />
+    <Slider slides={slides} />
   </section>
 )
 
 Case.propTypes = {
-  type: PropTypes.string,
-  name: PropTypes.string,
-  tooltip: PropTypes.string,
-  text: PropTypes.string,
-  icontype: PropTypes.string,
-  href: PropTypes.string,
-  description: PropTypes.string
+  description: PropTypes.object.isRequired,
+  slides: PropTypes.arrayOf(PropTypes.object)
 }
 
 export default Case

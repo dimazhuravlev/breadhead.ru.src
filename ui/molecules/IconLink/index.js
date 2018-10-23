@@ -1,8 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import ExternalLink from '@site/ui/molecules/ExternalLink'
 import { GlobeIcon } from '@site/ui/atoms/icons'
 import { ArticleIcon } from '@site/ui/atoms/icons'
 import styles from './iconLink.css'
+import cx from 'classnames'
 
 const iconsMap = {
   globe: GlobeIcon,
@@ -11,40 +13,26 @@ const iconsMap = {
 
 class IconLink extends React.Component {
   render() {
-    const Icon = iconsMap[this.props.icontype]
+    const { icontype, description, href, text, className } = this.props
+    const Icon = iconsMap[icontype]
 
     return (
-      <React.Fragment>
-        {this.props.tooltip && (
-          <div className={styles.tooltip}>{this.props.tooltip}</div>
-        )}
-        <div className={styles.iconLink}>
-          {this.props.description && (
-            <div className={styles.description}>{this.props.description}</div>
-          )}
-          <a
-            className={styles.icon}
-            href={this.props.href}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Icon />
-            {this.props.text && (
-              <div className={styles.text}>{this.props.text}</div>
-            )}
-          </a>
-        </div>
-      </React.Fragment>
+      <div className={cx(styles.iconLink, className)}>
+        {description && <div className={styles.description}>{description}</div>}
+        <ExternalLink className={styles.link} href={href}>
+          {Icon && <Icon className={styles.icon} />}
+          {text && <div className={styles.text}>{text}</div>}
+        </ExternalLink>
+      </div>
     )
   }
 }
 
 IconLink.propTypes = {
-  icontype: PropTypes.oneOf(['globe', 'article']).isRequired,
+  icontype: PropTypes.oneOf(['globe', 'article']),
   href: PropTypes.string.isRequired,
   description: PropTypes.string,
-  text: PropTypes.string,
-  tooltip: PropTypes.string
+  text: PropTypes.string
 }
 
 export default IconLink

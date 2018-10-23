@@ -2,37 +2,27 @@
   display: flex;
   align-items: center;
   margin-bottom: 24px;
-  @media (max-width: 1023px) {
-    display: none;
-  }
+  margin-right: 32px;
 }
 
 .description {
-  margin-bottom: 2px;
   margin-right: 8px;
   font: var(--text24-32);
   color: var(--beigePrimary);
+  @media (max-width: 1200px) {
+    font: var(--textMobile18-24);
+  }
 }
 
 .text {
-  margin-bottom: 2px;
-  margin-left: 8px;
   font: var(--text24-32);
   color: var(--beigeSecondary);
+  @media (max-width: 1200px) {
+    font: var(--textMobile18-24);
+  }
 }
 
-.tooltip {
-  display: inline-flex;
-  position: relative;
-  top: 0px;
-  background-color: var(--redPrimary);
-  font: var(--caption20-24);
-  color: var(--darkPrimary);
-  border-radius: 32px;
-  padding: 8px 12px;
-}
-
-.icon {
+.link {
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -61,4 +51,8 @@
     color: var(--redSecondary);
     transition: all 0.15s ease-in;
   }
+}
+
+.icon {
+  margin-right: 8px;
 }
