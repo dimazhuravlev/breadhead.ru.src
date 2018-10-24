@@ -6,7 +6,7 @@
     "next": "^6.1.2",
     "postcss-custom-properties": "^8.0.8",
     "prop-types": "^15.6.2",
-    "react": "^16.5.2",
+    "react": "^16.6.0",
     "react-dom": "^16.5.2",
     "react-motion": "^0.5.2",
     "react-spring": "^5.9.2"
