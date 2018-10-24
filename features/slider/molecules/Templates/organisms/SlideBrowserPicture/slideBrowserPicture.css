@@ -54,6 +54,7 @@
 }
 
 .screen {
+  pointer-events: none;
   object-fit: cover;
   object-position: top left;
   position: absolute;

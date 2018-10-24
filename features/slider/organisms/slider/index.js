@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Transition, animated } from 'react-spring'
+import { Gesture } from 'react-with-gesture'
+import { Transition, Spring, animated } from 'react-spring'
 import { TimingAnimation, Easing } from 'react-spring/dist/addons.cjs'
 import SliderAmount from '@site/ui/molecules/SliderAmount'
 import SliderControls from '@site/ui/molecules/SliderControls'
@@ -37,37 +38,68 @@ class Slider extends React.PureComponent {
         />
 
         <div>
-          <Transition
-            native
-            initial={{
-              opacity: 0,
-              transform: 'translateX(0%)'
-            }}
-            from={{
-              opacity: 1,
-              transform: `translateX(${directions[direction].from})`
-            }}
-            enter={{
-              opacity: 1,
-              transform: 'translateX(0%)'
-            }}
-            leave={{
-              opacity: 0,
-              transform: `translateX(${directions[direction].leave})`
-            }}
-            impl={TimingAnimation}
-            config={{
-              duration: 600,
-              easing: Easing.bezier(0.645, 0.045, 0.355, 1)
-            }}
-            keys={index}
-          >
-            {style => (
-              <animated.div className={styles.slide} style={{ ...style }}>
-                <Slide {...data} />
-              </animated.div>
+          <Gesture>
+            {({ down, xDelta }) => (
+              <Spring
+                native
+                to={{ x: down ? xDelta : 0 }}
+                immediate={name => down && name === 'x'}
+              >
+                {({ x }) => (
+                  <div
+                    className={styles.bg}
+                    style={{
+                      backgroundColor: xDelta < 0 ? '#FF1C68' : '#14D790'
+                    }}
+                  >
+                    <animated.div
+                      className={styles.slide}
+                      style={{
+                        transform: x.interpolate(x => `translateX(${x}px)`)
+                      }}
+                    >
+                      <Transition
+                        native
+                        initial={{
+                          opacity: 0,
+                          transform: 'translateX(0%)'
+                        }}
+                        from={{
+                          opacity: 1,
+                          transform: `translateX(${directions[direction].from})`
+                        }}
+                        enter={{
+                          opacity: 1,
+                          transform: 'translateX(0%)'
+                        }}
+                        leave={{
+                          opacity: 0,
+                          transform: `translateX(${
+                            directions[direction].leave
+                          })`
+                        }}
+                        impl={TimingAnimation}
+                        config={{
+                          duration: 600,
+                          easing: Easing.bezier(0.645, 0.045, 0.355, 1)
+                        }}
+                        keys={index}
+                      >
+                        {style => (
+                          <animated.div
+                            className={styles.slide}
+                            style={{ ...style }}
+                          >
+                            <Slide {...data} />
+                          </animated.div>
+                        )}
+                      </Transition>
+                    </animated.div>
+                  </div>
+                )}
+              </Spring>
             )}
-          </Transition>
+          </Gesture>
         </div>
       </div>
     )
