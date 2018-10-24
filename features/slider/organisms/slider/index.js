@@ -35,6 +35,7 @@ class Slider extends React.PureComponent {
           toggleAhead={() => toggle(directions.ahead.name)}
           toggleBack={() => toggle(directions.back.name)}
         />
+
         <div className={styles.main}>
           <Transition
             native
@@ -62,7 +63,7 @@ class Slider extends React.PureComponent {
             keys={index}
           >
             {style => (
-              <animated.div style={{ ...style }}>
+              <animated.div className={styles.main} style={{ ...style }}>
                 <Slide {...data} />
               </animated.div>
             )}
