@@ -6,8 +6,8 @@ import styles from './navigation.css'
 const ScrollLink = withScrollOnClick(NavLink)
 
 const Navigation = () => (
-  <nav className={styles.navigation}>
-    <ul className={styles.navWrapper}>
+  <nav>
+    <ul className={styles.navigation}>
       <li>
         <ScrollLink linkId="cases">опыт</ScrollLink>
       </li>

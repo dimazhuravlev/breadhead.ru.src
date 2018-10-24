@@ -46,18 +46,19 @@ class Slider extends React.PureComponent {
                 immediate={name => down && name === 'x'}
               >
                 {({ x }) => (
-                  <div
-                    className={styles.bg}
+                  // <div
+                  //   className={styles.bg}
+                  //   style={{
+                  //     backgroundColor: xDelta < 0 ? '#FF1C68' : '#14D790'
+                  //   }}
+                  // >
+                  <animated.div
+                    className={styles.slide}
                     style={{
-                      backgroundColor: xDelta < 0 ? '#FF1C68' : '#14D790'
+                      transform: x.interpolate(x => `translateX(${x}px)`)
                     }}
                   >
-                    <animated.div
-                      className={styles.slide}
-                      style={{
-                        transform: x.interpolate(x => `translateX(${x}px)`)
-                      }}
-                    >
+                    <div onClick={() => toggle(directions.ahead.name)}>
                       <Transition
                         native
                         initial={{
@@ -94,8 +95,8 @@ class Slider extends React.PureComponent {
                           </animated.div>
                         )}
                       </Transition>
-                    </animated.div>
-                  </div>
+                    </div>
+                  </animated.div>
                 )}
               </Spring>
             )}
