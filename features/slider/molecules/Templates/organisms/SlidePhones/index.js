@@ -7,19 +7,13 @@ const SlidePhones = ({ srcMobileLeft, srcMobileCenter, srcMobileRight }) => (
   <div className={styles.slide}>
     <div className={styles.phones}>
       <div className={cx(styles.phone, styles.phone1)}>
-        <picture>
-          <img src={srcMobileLeft} className={styles.screen} />
-        </picture>
+        <img src={srcMobileLeft} className={styles.screen} />
       </div>
       <div className={cx(styles.phone, styles.phone2)}>
-        <picture>
-          <img src={srcMobileCenter} className={styles.screen} />
-        </picture>
+        <img src={srcMobileCenter} className={styles.screen} />
       </div>
       <div className={cx(styles.phone, styles.phone3)}>
-        <picture>
-          <img src={srcMobileRight} className={styles.screen} />
-        </picture>
+        <img src={srcMobileRight} className={styles.screen} />
       </div>
     </div>
   </div>

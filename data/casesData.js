@@ -25,9 +25,8 @@ export const casesData = [
           links: [
             {
               icontype: 'globe',
-              description: 'beta:',
-              href: 'https://faster.ru',
-              text: 'faster.ru'
+              href: 'https://.nenaprasno.ru',
+              text: 'justask.nenaprasno.ru'
             }
           ]
         }
@@ -92,6 +91,28 @@ export const casesData = [
               text: 'Medium'
             }
           ]
+        }
+      },
+      {
+        type: TemplatesNames.TextPhone,
+        data: {
+          title: 'Yami Yami — вкуснее, чем всё',
+          description: [
+            'Мы консультировали клиента, помогая описать бизнес-логику. Спроектировали и разработали веб-приложение на React и Android-приложение для аптек.'
+          ],
+          links: [
+            {
+              icontype: 'globe',
+              href: 'https://.faster.ru',
+              text: 'faster.ru'
+            },
+            {
+              icontype: 'article',
+              href: 'https://.article.faster.ru',
+              text: 'анонс на сайте'
+            }
+          ],
+          srcMobile: '/static/img/faster_map.png'
         }
       },
       {
