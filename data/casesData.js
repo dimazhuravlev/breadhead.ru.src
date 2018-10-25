@@ -44,6 +44,14 @@ export const casesData = [
           srcDesktop: '/static/img/FasterScreenShot.png',
           srcMobile: '/static/img/faster_mobile.png'
         }
+      },
+      {
+        type: TemplatesNames.Phones,
+        data: {
+          srcMobileLeft: '/static/img/faster_mobile.png',
+          srcMobileCenter: '/static/img/faster_product_page.png',
+          srcMobileRight: '/static/img/faster_map.png'
+        }
       }
     ]
   },

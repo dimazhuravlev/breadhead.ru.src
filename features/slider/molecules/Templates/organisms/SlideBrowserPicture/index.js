@@ -20,7 +20,7 @@ const SlideBrowserPicture = ({ srcDesktop, srcMobile }) => (
   </div>
 )
 
-SlideBrowserPicture.PropTypes = {
+SlideBrowserPicture.propTypes = {
   srcDesktop: PropTypes.string.isRequired,
   srcMobile: PropTypes.string
 }
