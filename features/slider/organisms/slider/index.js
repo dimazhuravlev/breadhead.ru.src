@@ -58,7 +58,15 @@ class Slider extends React.PureComponent {
                       transform: x.interpolate(x => `translateX(${x}px)`)
                     }}
                   >
-                    <div onClick={() => toggle(directions.ahead.name)}>
+                    <div>
+                      <div
+                        className={styles.leftToggle}
+                        onClick={() => toggle(directions.back.name)}
+                      />
+                      <div
+                        className={styles.rightToggle}
+                        onClick={() => toggle(directions.ahead.name)}
+                      />
                       <Transition
                         native
                         initial={{

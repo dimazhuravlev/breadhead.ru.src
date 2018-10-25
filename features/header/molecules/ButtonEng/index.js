@@ -9,7 +9,9 @@ class ButtonEng extends React.Component {
   }
 
   handleClick() {
-    this.setState({ language: 'en' ? 'ru' : 'en' })
+    this.setState(state => ({
+      language: state.language === 'ru' ? 'en' : 'ru'
+    }))
   }
 
   render() {
