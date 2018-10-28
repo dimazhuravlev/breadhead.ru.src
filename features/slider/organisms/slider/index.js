@@ -12,6 +12,7 @@ import cx from 'classnames'
 class Slider extends React.PureComponent {
   render() {
     const {
+      isVisible,
       index,
       direction,
       directions,
@@ -26,6 +27,7 @@ class Slider extends React.PureComponent {
     return (
       <div className={cx(styles.slider, className)}>
         <Bar
+          isVisible={isVisible}
           onRest={() => toggle(directions.ahead.name)}
           index={index}
           quantity={slides.length}
@@ -46,12 +48,6 @@ class Slider extends React.PureComponent {
                 immediate={name => down && name === 'x'}
               >
                 {({ x }) => (
-                  // <div
-                  //   className={styles.bg}
-                  //   style={{
-                  //     backgroundColor: xDelta < 0 ? '#FF1C68' : '#14D790'
-                  //   }}
-                  // >
                   <animated.div
                     className={styles.slide}
                     style={{

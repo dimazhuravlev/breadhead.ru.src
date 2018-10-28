@@ -6,16 +6,18 @@ import styles from './bar.css'
 
 class Bar extends React.Component {
   render() {
-    const { onRest, index, quantity } = this.props
+    const { onRest, index, quantity, isVisible } = this.props
     const timeLines = range(quantity)
+
     return (
       <div className={styles.bar}>
         {timeLines.map(timeLine => (
           <TimeLine
-            animate={index === timeLine}
+            isVisible={isVisible}
+            isActive={index === timeLine}
             key={timeLine}
-            onRest={timeLine === index && onRest}
-            active={index >= timeLine}
+            onRest={timeLine === index ? onRest : () => {}}
+            activated={index >= timeLine}
           />
         ))}
       </div>

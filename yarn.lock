@@ -6931,6 +6931,12 @@ react-test-renderer@^16.0.0-0:
     react-is "^16.5.2"
     schedule "^0.5.0"
 
+react-visibility-sensor@^5.0.2:
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/react-visibility-sensor/-/react-visibility-sensor-5.0.2.tgz#e360fff81572cb3a2a9fd680484447a9da09a55d"
+  dependencies:
+    prop-types "^15.6.2"
+
 react-with-gesture@^1.0.10:
   version "1.0.10"
   resolved "https://registry.yarnpkg.com/react-with-gesture/-/react-with-gesture-1.0.10.tgz#f5e60b848598db587f3d02f5b8d9856bf26dbb59"

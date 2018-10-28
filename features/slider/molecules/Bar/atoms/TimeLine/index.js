@@ -5,18 +5,29 @@ import { TimingAnimation, Easing } from 'react-spring/dist/addons.cjs'
 import { SLIDE_DELAY } from '@site/constants'
 import styles from './timeLine.css'
 
-class TimeLine extends React.Component {
+class TimeLine extends React.PureComponent {
+  constructor(props) {
+    super(props)
+    this.onRest = ({ transform }) => {
+      if (transform === 1) {
+        props.onRest()
+      }
+    }
+    this.onRestBound = this.onRest.bind(this)
+  }
+
   render() {
-    const { active, onRest, animate } = this.props
+    const { activated, onRest, isActive, isVisible } = this.props
+    console.log(isVisible)
     return (
       <Spring
-        reset={active}
-        immediate={!animate}
+        reset={activated}
+        immediate={!isActive}
         from={{ transform: 0 }}
-        to={{ transform: active ? 1 : 0 }}
+        to={{ transform: activated ? 1 : 0 }}
         impl={TimingAnimation}
         config={{ duration: SLIDE_DELAY, easing: Easing.linear }}
-        onRest={onRest}
+        onRest={this.onRestBound}
       >
         {({ transform }) => {
           return (
