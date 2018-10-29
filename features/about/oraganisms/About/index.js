@@ -8,8 +8,8 @@ import { NON_BREAKING_SPACE } from '@site/constants'
 import AboutText from '../../atoms/AboutText'
 import styles from './about.css'
 
-const About = ({ id, description, slides }) => (
-  <section id={id} className={styles.about}>
+const About = ({ name, description, slides }) => (
+  <section name={name} className={styles.about}>
     <div>
       <Descriptor className={styles.caseNameOnly} {...description} />
     </div>

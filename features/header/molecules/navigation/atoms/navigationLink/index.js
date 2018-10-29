@@ -6,7 +6,7 @@ class NavLink extends React.Component {
   render() {
     return (
       <a
-        linkid={this.props.linkId}
+        targetscroll={this.props.targetscroll}
         onClick={this.props.onClick}
         className={styles.NavLink}
       >

@@ -17,7 +17,7 @@ const Home = () => (
   <main>
     <Header />
     <Intro />
-    <section className={styles.cases} id="cases">
+    <section className={styles.cases} name="cases">
       {casesData.map(caseData => (
         <Case key={caseData.description.name} {...caseData} />
       ))}
@@ -27,8 +27,8 @@ const Home = () => (
       ещё
     </Button>
     <Clients />
-    <About id="about" {...aboutData} />
-    <Case id="howWeWork" className={styles.howWeWork} {...howWeWorkData} />
+    <About name="about" {...aboutData} />
+    <Case name="howWeWork" className={styles.howWeWork} {...howWeWorkData} />
     <Footer />
   </main>
 )
