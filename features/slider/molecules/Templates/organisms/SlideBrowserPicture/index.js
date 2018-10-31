@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import ReactPlayer from 'react-player'
+// import ReactPlayer from 'react-player'
 import styles from './slideBrowserPicture.css'
 
 const SlideBrowserPicture = ({ srcDesktop, srcMobile }) => (
@@ -9,16 +9,16 @@ const SlideBrowserPicture = ({ srcDesktop, srcMobile }) => (
       <div className={styles.header}>
         <img className={styles.dots} src="/static/img/dots.png" />
       </div>
-      {/* <picture>
+      <picture>
         <source
           className={styles.screen}
           media="(max-width: 600px)"
           srcSet={srcMobile}
         />
         <img src={srcDesktop} className={styles.screen} />
-      </picture> */}
+      </picture>
 
-      <ReactPlayer
+      {/* <ReactPlayer
         className={styles.screen}
         url="/static/video/map.mov"
         playsinline="true"
@@ -28,7 +28,7 @@ const SlideBrowserPicture = ({ srcDesktop, srcMobile }) => (
         loop="true"
         playing="true"
         muted="true"
-      />
+      /> */}
     </div>
   </div>
 )
