@@ -1,9 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import IconLink from '@site/ui/molecules/IconLink'
-import styles from './slideArticle.css'
+import styles from './slideTitleDesktop.css'
 
-const SlideArticle = ({ title, description, links }) => (
+const SlideTitleDesktop = ({ title, description, links }) => (
   <article className={styles.slide}>
     {title && <h2 className={styles.title}>{title}</h2>}
     {description && (
@@ -19,8 +19,8 @@ const SlideArticle = ({ title, description, links }) => (
       {links &&
         links.map(link => (
           <IconLink
-            key={link.href}
             className={styles.articleIconLink}
+            key={link.href}
             {...link}
           />
         ))}
@@ -28,10 +28,10 @@ const SlideArticle = ({ title, description, links }) => (
   </article>
 )
 
-SlideArticle.propTypes = {
+SlideTitleDesktop.propTypes = {
   title: PropTypes.string,
   description: PropTypes.arrayOf(PropTypes.string),
   links: PropTypes.arrayOf(PropTypes.object)
 }
 
-export default SlideArticle
+export default SlideTitleDesktop

@@ -1,8 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import styles from './slidePicture.css'
+import styles from './slidePictureMobile.css'
 
-const SlidePicture = ({ srcDesktop, srcMobile }) => (
+const SlidePictureMobile = ({ srcDesktop, srcMobile }) => (
   <picture className={styles.picture}>
     <source
       srcSet={srcMobile}
@@ -13,9 +13,9 @@ const SlidePicture = ({ srcDesktop, srcMobile }) => (
   </picture>
 )
 
-SlidePicture.propTypes = {
+SlidePictureMobile.propTypes = {
   srcDesktop: PropTypes.string.isRequired,
   srcMobile: PropTypes.string
 }
 
-export default SlidePicture
+export default SlidePictureMobile

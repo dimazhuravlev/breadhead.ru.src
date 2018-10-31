@@ -1,9 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-// import ReactPlayer from 'react-player'
-import styles from './slideBrowserPicture.css'
+import styles from './slideFramePictMobile.css'
 
-const SlideBrowserPicture = ({ srcDesktop, srcMobile }) => (
+const SlideFramePictMobile = ({ srcDesktop, srcMobile }) => (
   <div className={styles.slide}>
     <div className={styles.browser}>
       <div className={styles.header}>
@@ -17,25 +16,13 @@ const SlideBrowserPicture = ({ srcDesktop, srcMobile }) => (
         />
         <img src={srcDesktop} className={styles.screen} />
       </picture>
-
-      {/* <ReactPlayer
-        className={styles.screen}
-        url="/static/video/map.mov"
-        playsinline="true"
-        autoplay="true"
-        height="410"
-        width="220"
-        loop="true"
-        playing="true"
-        muted="true"
-      /> */}
     </div>
   </div>
 )
 
-SlideBrowserPicture.propTypes = {
+SlideFramePictMobile.propTypes = {
   srcDesktop: PropTypes.string.isRequired,
   srcMobile: PropTypes.string
 }
 
-export default SlideBrowserPicture
+export default SlideFramePictMobile

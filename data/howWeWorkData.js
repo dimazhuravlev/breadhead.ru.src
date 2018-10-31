@@ -13,7 +13,7 @@ export const howWeWorkData = {
   },
   slides: [
     {
-      type: TemplatesNames.Title,
+      type: TemplatesNames.TitleDesktop,
       data: {
         title: 'Принципы проектной работы и коммуникации Breadhead',
         links: [
@@ -49,7 +49,7 @@ export const howWeWorkData = {
       }
     },
     {
-      type: TemplatesNames.Article,
+      type: TemplatesNames.ArticleDesktop,
       data: {
         title: 'Мы работаем хорошо. Но иногда мы работаем ещё чуть более лучше',
         description: [
@@ -58,7 +58,7 @@ export const howWeWorkData = {
       }
     },
     {
-      type: TemplatesNames.Article,
+      type: TemplatesNames.ArticleDesktop,
       data: {
         title:
           'У нас очень гибкие процессы. Возможно, они даже самые гибкие в мире',

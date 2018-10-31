@@ -6,37 +6,37 @@ export const aboutData = {
   },
   slides: [
     {
-      type: TemplatesNames.Picture,
+      type: TemplatesNames.PictureDesktop,
       data: {
         srcDesktop: '/static/img/about1.jpg'
       }
     },
     {
-      type: TemplatesNames.Picture,
+      type: TemplatesNames.PictureDesktop,
       data: {
         srcDesktop: '/static/img/about2.jpg'
       }
     },
     {
-      type: TemplatesNames.Picture,
+      type: TemplatesNames.PictureDesktop,
       data: {
         srcDesktop: '/static/img/about3.jpg'
       }
     },
     {
-      type: TemplatesNames.Picture,
+      type: TemplatesNames.PictureDesktop,
       data: {
         srcDesktop: '/static/img/about4.jpg'
       }
     },
     {
-      type: TemplatesNames.Picture,
+      type: TemplatesNames.PictureDesktop,
       data: {
         srcDesktop: '/static/img/about5.jpg'
       }
     },
     {
-      type: TemplatesNames.Picture,
+      type: TemplatesNames.PictureDesktop,
       data: {
         srcDesktop: '/static/img/about6.jpg'
       }

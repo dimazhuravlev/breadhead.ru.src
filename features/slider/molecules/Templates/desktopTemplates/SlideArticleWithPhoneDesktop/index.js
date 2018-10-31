@@ -1,9 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import IconLink from '@site/ui/molecules/IconLink'
-import styles from './slideTextPhone.css'
+import styles from './slideArticleWithPhoneDesktop.css'
 
-const SlideTextPhone = ({ title, description, links, srcMobile }) => (
+const SlideArticleWithPhoneDesktop = ({
+  title,
+  description,
+  links,
+  srcMobile
+}) => (
   <React.Fragment>
     <div className={styles.wrapper}>
       <article className={styles.slide}>
@@ -35,10 +40,10 @@ const SlideTextPhone = ({ title, description, links, srcMobile }) => (
   </React.Fragment>
 )
 
-SlideTextPhone.propTypes = {
+SlideArticleWithPhoneDesktop.propTypes = {
   title: PropTypes.string,
   description: PropTypes.arrayOf(PropTypes.string),
   links: PropTypes.arrayOf(PropTypes.object)
 }
 
-export default SlideTextPhone
+export default SlideArticleWithPhoneDesktop

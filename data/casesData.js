@@ -14,7 +14,7 @@ export const casesData = [
     },
     slides: [
       {
-        type: TemplatesNames.Article,
+        type: TemplatesNames.ArticleDesktop,
         data: {
           title:
             'Сервис для сравнения и бронирования лекарств в аптеках города.',
@@ -32,20 +32,20 @@ export const casesData = [
         }
       },
       {
-        type: TemplatesNames.Picture,
+        type: TemplatesNames.PictureDesktop,
         data: {
           srcDesktop: '/static/img/faster.png'
         }
       },
       {
-        type: TemplatesNames.BrowserPicture,
+        type: TemplatesNames.FramePictDesktop,
         data: {
           srcDesktop: '/static/img/FasterScreenShot.png',
           srcMobile: '/static/img/faster_mobile.png'
         }
       },
       {
-        type: TemplatesNames.Phones,
+        type: TemplatesNames.PhonesDesktop,
         data: {
           srcMobileLeft: '/static/img/faster_mobile.png',
           srcMobileCenter: '/static/img/faster_product_page.png',
@@ -72,7 +72,7 @@ export const casesData = [
     },
     slides: [
       {
-        type: TemplatesNames.Article,
+        type: TemplatesNames.ArticleDesktop,
         data: {
           title:
             'Какая разница сколько часов вам везут еду, если её везут из Yami Yami?',
@@ -94,7 +94,7 @@ export const casesData = [
         }
       },
       {
-        type: TemplatesNames.TextPhone,
+        type: TemplatesNames.ArticleWithPhoneDesktop,
         data: {
           title: 'Yami Yami — вкуснее, чем всё',
           description: [
@@ -116,13 +116,13 @@ export const casesData = [
         }
       },
       {
-        type: TemplatesNames.Picture,
+        type: TemplatesNames.PictureDesktop,
         data: {
           srcDesktop: '/static/img/yamiyami.jpg'
         }
       },
       {
-        type: TemplatesNames.BrowserPicture,
+        type: TemplatesNames.FramePictDesktop,
         data: {
           srcDesktop: '/static/img/yamisite.png',
           srcMobile: '/static/img/yami_mobile.png'

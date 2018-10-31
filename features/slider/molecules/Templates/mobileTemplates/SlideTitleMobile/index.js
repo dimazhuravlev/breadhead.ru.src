@@ -1,9 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import IconLink from '@site/ui/molecules/IconLink'
-import styles from './slideTitle.css'
+import styles from './slideTitleMobile.css'
 
-const SlideTitle = ({ title, description, links }) => (
+const SlideTitleMobile = ({ title, description, links }) => (
   <article className={styles.slide}>
     {title && <h2 className={styles.title}>{title}</h2>}
     {description && (
@@ -28,10 +28,10 @@ const SlideTitle = ({ title, description, links }) => (
   </article>
 )
 
-SlideTitle.propTypes = {
+SlideTitleMobile.propTypes = {
   title: PropTypes.string,
   description: PropTypes.arrayOf(PropTypes.string),
   links: PropTypes.arrayOf(PropTypes.object)
 }
 
-export default SlideTitle
+export default SlideTitleMobile

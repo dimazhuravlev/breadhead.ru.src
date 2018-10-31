@@ -1,9 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import styles from './slidePhones.css'
+import styles from './slidePhonesDesktop.css'
 import cx from 'classnames'
 
-const SlidePhones = ({ srcMobileLeft, srcMobileCenter, srcMobileRight }) => (
+const SlidePhonesDesktop = ({
+  srcMobileLeft,
+  srcMobileCenter,
+  srcMobileRight
+}) => (
   <div className={styles.slide}>
     <div className={styles.phones}>
       <div className={cx(styles.phone, styles.phone1)}>
@@ -19,10 +23,10 @@ const SlidePhones = ({ srcMobileLeft, srcMobileCenter, srcMobileRight }) => (
   </div>
 )
 
-SlidePhones.propTypes = {
+SlidePhonesDesktop.propTypes = {
   srcMobileLeft: PropTypes.string.isRequired,
   srcMobileCenter: PropTypes.string.isRequired,
   srcMobileRight: PropTypes.string.isRequired
 }
 
-export default SlidePhones
+export default SlidePhonesDesktop
