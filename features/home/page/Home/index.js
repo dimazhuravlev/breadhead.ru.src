@@ -9,7 +9,8 @@ import Button from '@site/ui/molecules/Button'
 import Footer from '@site/features/footer'
 import { PlusIcon } from '@site/ui/atoms/icons'
 import { casesData } from '@site/data/casesData'
-import { aboutData } from '@site/data/aboutData'
+import { aboutDataDesktop } from '@site/data/aboutDataDesktop'
+import { aboutDataMobile } from '@site/data/aboutDataMobile'
 import { howWeWorkData } from '@site/data/howWeWorkData'
 import styles from './home.css'
 
@@ -27,7 +28,11 @@ const Home = () => (
       ещё
     </Button>
     <Clients />
-    <About name="about" {...aboutData} />
+    <About
+      name="about"
+      aboutDataDesktop={aboutDataDesktop}
+      aboutDataMobile={aboutDataMobile}
+    />
     <Case name="howWeWork" className={styles.howWeWork} {...howWeWorkData} />
     <Footer />
   </main>

@@ -34,7 +34,7 @@ export const casesData = [
       {
         type: TemplatesNames.PictureDesktop,
         data: {
-          srcDesktop: '/static/img/faster.png'
+          src: '/static/img/faster.png'
         }
       },
       {
@@ -118,7 +118,7 @@ export const casesData = [
       {
         type: TemplatesNames.PictureDesktop,
         data: {
-          srcDesktop: '/static/img/yamiyami.jpg'
+          src: '/static/img/yamiyami.jpg'
         }
       },
       {

@@ -1,44 +1,38 @@
 import { TemplatesNames } from '@site/features/slider/molecules/Templates'
 
-export const aboutData = {
+export const aboutDataDesktop = {
   description: {
-    name: 'Студия'
+    name: 'Студия десктоп'
   },
   slides: [
     {
       type: TemplatesNames.PictureDesktop,
       data: {
-        srcDesktop: '/static/img/about1.jpg'
+        src: '/static/img/about1.jpg'
       }
     },
     {
       type: TemplatesNames.PictureDesktop,
       data: {
-        srcDesktop: '/static/img/about2.jpg'
+        src: '/static/img/about2.jpg'
       }
     },
     {
       type: TemplatesNames.PictureDesktop,
       data: {
-        srcDesktop: '/static/img/about3.jpg'
+        src: '/static/img/about3.jpg'
       }
     },
     {
       type: TemplatesNames.PictureDesktop,
       data: {
-        srcDesktop: '/static/img/about4.jpg'
+        src: '/static/img/about4.jpg'
       }
     },
     {
       type: TemplatesNames.PictureDesktop,
       data: {
-        srcDesktop: '/static/img/about5.jpg'
-      }
-    },
-    {
-      type: TemplatesNames.PictureDesktop,
-      data: {
-        srcDesktop: '/static/img/about6.jpg'
+        src: '/static/img/about5.jpg'
       }
     }
   ]

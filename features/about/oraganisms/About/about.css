@@ -36,6 +36,18 @@
   }
 }
 
+.sliderDesktop {
+  @media (max-width: 600px) {
+    display: none;
+  }
+}
+
+.sliderMobile {
+  @media (min-width: 600px) {
+    display: none;
+  }
+}
+
 .aboutTextBlocks {
   grid-template-columns: repeat(3, 1fr);
   display: grid;
@@ -66,4 +78,16 @@
 
 .caseNameOnly {
   margin-top: 4px;
+}
+
+.descriptorDesktop {
+  @media (max-width: 600px) {
+    display: none;
+  }
+}
+
+.descriptorMobile {
+  @media (min-width: 600px) {
+    display: none;
+  }
 }
