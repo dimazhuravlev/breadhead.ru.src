@@ -27,16 +27,16 @@
     height: 48vw;
   }
   @media (max-width: 600px) {
-    margin-left: -122px;
-    margin-top: -250px;
-    width: 244px;
-    height: 500px;
-    border-radius: 28px;
+    margin-left: -115px;
+    margin-top: -240px;
+    width: 230px;
+    height: 480px;
+    border-radius: 26px;
     background-color: var(--darkSecondary);
   }
-  @media (max-width: 440px) {
+  /* @media (max-width: 440px) {
     margin-top: -180px;
-  }
+  } */
 }
 
 .header {
@@ -54,6 +54,7 @@
 }
 
 .screen {
+  overflow: hidden;
   pointer-events: none;
   object-fit: cover;
   object-position: top left;
@@ -68,10 +69,10 @@
   @media (max-width: 600px) {
     top: 50%;
     left: 50%;
-    margin-left: -115px;
-    margin-top: -206px;
-    height: 412px;
-    width: 230px;
+    margin-left: -110px;
+    margin-top: -205px;
+    height: 410px;
+    width: 220px;
     border-radius: 3px;
   }
 }

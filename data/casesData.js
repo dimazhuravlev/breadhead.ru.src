@@ -34,6 +34,13 @@ export const casesData = [
       {
         type: TemplatesNames.Picture,
         data: {
+          srcDesktop: '/static/img/faster_browser.png',
+          srcMobile: '/static/img/faster_browser_mobile.png'
+        }
+      },
+      {
+        type: TemplatesNames.Picture,
+        data: {
           srcDesktop: '/static/img/faster.png'
         }
       },
@@ -42,6 +49,12 @@ export const casesData = [
         data: {
           srcDesktop: '/static/img/FasterScreenShot.png',
           srcMobile: '/static/img/faster_mobile.png'
+        }
+      },
+      {
+        type: TemplatesNames.Picture,
+        data: {
+          srcMobile: '/static/img/faster_element_mobile.png'
         }
       },
       {

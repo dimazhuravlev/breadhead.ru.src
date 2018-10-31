@@ -35,6 +35,11 @@ div {
   -webkit-tap-highlight-color: transparent;
 }
 
+*,
+*:focus {
+  outline: 0;
+}
+
 ::selection {
   background-color: rgba(224, 215, 206, 0);
   color: var(--redPrimary);

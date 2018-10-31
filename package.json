@@ -9,6 +9,7 @@
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-motion": "^0.5.2",
+    "react-player": "^1.6.6",
     "react-scroll": "^1.7.10",
     "react-spring": "^5.9.2",
     "react-with-gesture": "^1.0.10"
