@@ -1,14 +1,13 @@
 import React from 'react'
-// import PropTypes from 'prop-types'
+import PropTypes from 'prop-types'
 import styles from './slidePictureDesktop.css'
 
-const SlidePictureDesktop = aboutDataDesktop => (
-  <img src={aboutDataDesktop.src} className={styles.picture} />
+const SlidePictureDesktop = data => (
+  <img src={data.src} className={styles.picture} />
 )
 
-// SlidePictureDesktop.propTypes = {
-//   srcDesktop: PropTypes.string.isRequired,
-//   srcMobile: PropTypes.string
-// }
+SlidePictureDesktop.propTypes = {
+  data: PropTypes.array
+}
 
 export default SlidePictureDesktop

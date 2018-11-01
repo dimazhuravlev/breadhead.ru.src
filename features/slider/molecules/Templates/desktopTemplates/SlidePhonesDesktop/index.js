@@ -3,30 +3,26 @@ import PropTypes from 'prop-types'
 import styles from './slidePhonesDesktop.css'
 import cx from 'classnames'
 
-const SlidePhonesDesktop = ({
-  srcMobileLeft,
-  srcMobileCenter,
-  srcMobileRight
-}) => (
+const SlidePhonesDesktop = ({ srcLeft, srcCenter, srcRight }) => (
   <div className={styles.slide}>
     <div className={styles.phones}>
       <div className={cx(styles.phone, styles.phone1)}>
-        <img src={srcMobileLeft} className={styles.screen} />
+        <img src={srcLeft} className={styles.screen} />
       </div>
       <div className={cx(styles.phone, styles.phone2)}>
-        <img src={srcMobileCenter} className={styles.screen} />
+        <img src={srcCenter} className={styles.screen} />
       </div>
       <div className={cx(styles.phone, styles.phone3)}>
-        <img src={srcMobileRight} className={styles.screen} />
+        <img src={srcRight} className={styles.screen} />
       </div>
     </div>
   </div>
 )
 
 SlidePhonesDesktop.propTypes = {
-  srcMobileLeft: PropTypes.string.isRequired,
-  srcMobileCenter: PropTypes.string.isRequired,
-  srcMobileRight: PropTypes.string.isRequired
+  srcLeft: PropTypes.string.isRequired,
+  srcCenter: PropTypes.string.isRequired,
+  srcRight: PropTypes.string.isRequired
 }
 
 export default SlidePhonesDesktop

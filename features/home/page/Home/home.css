@@ -2,6 +2,18 @@
   padding-top: 56px;
 }
 
+.desktopCases {
+  @media (max-width: 600px) {
+    display: none;
+  }
+}
+
+.mobileCases {
+  @media (min-width: 600px) {
+    display: none;
+  }
+}
+
 .plusButton {
   margin-bottom: 160px;
   margin-left: calc(25% + 28px);
@@ -19,5 +31,17 @@
   margin-bottom: 160px;
   @media (max-width: 1023px) {
     margin-bottom: 80px;
+  }
+}
+
+.howWeWorkDesktop {
+  @media (max-width: 600px) {
+    display: none;
+  }
+}
+
+.howWeWorkMobile {
+  @media (min-width: 600px) {
+    display: none;
   }
 }

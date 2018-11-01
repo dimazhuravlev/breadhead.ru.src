@@ -2,27 +2,19 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styles from './slideFramePictDesktop.css'
 
-const SlideFramePictDesktop = ({ srcDesktop, srcMobile }) => (
+const SlideFramePictDesktop = data => (
   <div className={styles.slide}>
     <div className={styles.browser}>
       <div className={styles.header}>
         <img className={styles.dots} src="/static/img/dots.png" />
       </div>
-      <picture>
-        <source
-          className={styles.screen}
-          media="(max-width: 600px)"
-          srcSet={srcMobile}
-        />
-        <img src={srcDesktop} className={styles.screen} />
-      </picture>
+      <img src={data.src} className={styles.screen} />
     </div>
   </div>
 )
 
 SlideFramePictDesktop.propTypes = {
-  srcDesktop: PropTypes.string.isRequired,
-  srcMobile: PropTypes.string
+  data: PropTypes.object
 }
 
 export default SlideFramePictDesktop

@@ -1,19 +1,13 @@
 import { TemplatesNames } from '@site/features/slider/molecules/Templates'
 
-export const howWeWorkData = {
+export const howWeWorkDataMobile = {
   description: {
     type: 'вики',
-    name: 'Как мы работаем',
-    links: [
-      {
-        icontype: 'globe',
-        href: 'https://medium.com/'
-      }
-    ]
+    name: 'Как мы работаем'
   },
   slides: [
     {
-      type: TemplatesNames.TitleDesktop,
+      type: TemplatesNames.TitleMobile,
       data: {
         title: 'Принципы проектной работы и коммуникации Breadhead',
         links: [
@@ -49,7 +43,7 @@ export const howWeWorkData = {
       }
     },
     {
-      type: TemplatesNames.ArticleDesktop,
+      type: TemplatesNames.ArticleMobile,
       data: {
         title: 'Мы работаем хорошо. Но иногда мы работаем ещё чуть более лучше',
         description: [
@@ -58,7 +52,7 @@ export const howWeWorkData = {
       }
     },
     {
-      type: TemplatesNames.ArticleDesktop,
+      type: TemplatesNames.ArticleMobile,
       data: {
         title:
           'У нас очень гибкие процессы. Возможно, они даже самые гибкие в мире',

@@ -3,12 +3,7 @@ import PropTypes from 'prop-types'
 import IconLink from '@site/ui/molecules/IconLink'
 import styles from './slideArticleWithPhoneDesktop.css'
 
-const SlideArticleWithPhoneDesktop = ({
-  title,
-  description,
-  links,
-  srcMobile
-}) => (
+const SlideArticleWithPhoneDesktop = ({ title, description, links, src }) => (
   <React.Fragment>
     <div className={styles.wrapper}>
       <article className={styles.slide}>
@@ -34,7 +29,7 @@ const SlideArticleWithPhoneDesktop = ({
         </div>
       </article>
       <div className={styles.phone}>
-        <img src={srcMobile} className={styles.screen} />
+        <img src={src} className={styles.screen} />
       </div>
     </div>
   </React.Fragment>

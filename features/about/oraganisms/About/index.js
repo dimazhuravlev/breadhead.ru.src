@@ -72,8 +72,9 @@ const About = ({ aboutDataDesktop, aboutDataMobile, name }) => (
 )
 
 About.propTypes = {
-  description: PropTypes.object.isRequired,
-  slides: PropTypes.arrayOf(PropTypes.object)
+  aboutDataDesktop: PropTypes.object,
+  aboutDataMobile: PropTypes.object,
+  name: PropTypes.string
 }
 
 export default About

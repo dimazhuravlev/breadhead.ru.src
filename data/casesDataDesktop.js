@@ -1,6 +1,6 @@
 import { TemplatesNames } from '@site/features/slider/molecules/Templates'
 
-export const casesData = [
+export const casesDataDesktop = [
   {
     description: {
       type: 'проект',
@@ -40,16 +40,15 @@ export const casesData = [
       {
         type: TemplatesNames.FramePictDesktop,
         data: {
-          srcDesktop: '/static/img/FasterScreenShot.png',
-          srcMobile: '/static/img/faster_mobile.png'
+          src: '/static/img/FasterScreenShot.png'
         }
       },
       {
         type: TemplatesNames.PhonesDesktop,
         data: {
-          srcMobileLeft: '/static/img/faster_mobile.png',
-          srcMobileCenter: '/static/img/faster_product_page.png',
-          srcMobileRight: '/static/img/faster_map.png'
+          srcLeft: '/static/img/faster_mobile.png',
+          srcCenter: '/static/img/faster_product_page.png',
+          srcRight: '/static/img/faster_map.png'
         }
       }
     ]
@@ -112,7 +111,7 @@ export const casesData = [
               text: 'анонс на сайте'
             }
           ],
-          srcMobile: '/static/img/faster_map.png'
+          src: '/static/img/faster_map.png'
         }
       },
       {
@@ -124,8 +123,7 @@ export const casesData = [
       {
         type: TemplatesNames.FramePictDesktop,
         data: {
-          srcDesktop: '/static/img/yamisite.png',
-          srcMobile: '/static/img/yami_mobile.png'
+          src: '/static/img/yamisite.png'
         }
       }
     ]

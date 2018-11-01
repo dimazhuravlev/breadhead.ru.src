@@ -2,7 +2,7 @@ import { TemplatesNames } from '@site/features/slider/molecules/Templates'
 
 export const aboutDataMobile = {
   description: {
-    name: 'Студия мобилка'
+    name: 'Студия'
   },
   slides: [
     {

@@ -8,18 +8,26 @@ import About from '@site/features/about'
 import Button from '@site/ui/molecules/Button'
 import Footer from '@site/features/footer'
 import { PlusIcon } from '@site/ui/atoms/icons'
-import { casesData } from '@site/data/casesData'
+import { casesDataDesktop } from '@site/data/casesDataDesktop'
+import { casesDataMobile } from '@site/data/casesDataMobile'
 import { aboutDataDesktop } from '@site/data/aboutDataDesktop'
 import { aboutDataMobile } from '@site/data/aboutDataMobile'
-import { howWeWorkData } from '@site/data/howWeWorkData'
+import { howWeWorkDataDesktop } from '@site/data/howWeWorkDataDesktop'
+import { howWeWorkDataMobile } from '@site/data/howWeWorkDataMobile'
 import styles from './home.css'
+import cx from 'classnames'
 
 const Home = () => (
   <main>
     <Header />
     <Intro />
-    <section className={styles.cases} name="cases">
-      {casesData.map(caseData => (
+    <section className={cx(styles.cases, styles.desktopCases)} name="cases">
+      {casesDataDesktop.map(caseData => (
+        <Case key={caseData.description.name} {...caseData} />
+      ))}
+    </section>
+    <section className={cx(styles.cases, styles.mobileCases)} name="cases">
+      {casesDataMobile.map(caseData => (
         <Case key={caseData.description.name} {...caseData} />
       ))}
     </section>
@@ -33,7 +41,16 @@ const Home = () => (
       aboutDataDesktop={aboutDataDesktop}
       aboutDataMobile={aboutDataMobile}
     />
-    <Case name="howWeWork" className={styles.howWeWork} {...howWeWorkData} />
+    <Case
+      name="howWeWork"
+      className={cx(styles.howWeWork, styles.howWeWorkDesktop)}
+      {...howWeWorkDataDesktop}
+    />
+    <Case
+      name="howWeWork"
+      className={cx(styles.howWeWork, styles.howWeWorkMobile)}
+      {...howWeWorkDataMobile}
+    />
     <Footer />
   </main>
 )
