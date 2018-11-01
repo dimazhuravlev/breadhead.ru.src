@@ -14,10 +14,15 @@ export const casesDataDesktop = [
     },
     slides: [
       {
+        type: TemplatesNames.FramePictDesktop,
+        data: {
+          src: '/static/img/FasterScreenShot.png'
+        }
+      },
+      {
         type: TemplatesNames.ArticleDesktop,
         data: {
-          title:
-            'Сервис для сравнения и бронирования лекарств в аптеках города.',
+          title: 'Сервис для бронирования лекарств в аптеках города',
           description: [
             'Мы консультировали клиента, помогая описать бизнес-логику.',
             'Спроектировали и разработали веб-приложение на React и Android-приложение для аптек.'
@@ -32,15 +37,15 @@ export const casesDataDesktop = [
         }
       },
       {
-        type: TemplatesNames.PictureDesktop,
+        type: TemplatesNames.FramePictDesktop,
         data: {
-          src: '/static/img/faster.png'
+          src: '/static/img/faster_product_page_desktop.png'
         }
       },
       {
-        type: TemplatesNames.FramePictDesktop,
+        type: TemplatesNames.PictureDesktop,
         data: {
-          src: '/static/img/FasterScreenShot.png'
+          src: '/static/img/faster.png'
         }
       },
       {
@@ -71,28 +76,6 @@ export const casesDataDesktop = [
     },
     slides: [
       {
-        type: TemplatesNames.ArticleDesktop,
-        data: {
-          title:
-            'Какая разница сколько часов вам везут еду, если её везут из Yami Yami?',
-          description: [
-            'Люди приходят в восторг, когда впервые видят сайт Yami Yami. А когда еда приезжает к ним домой, они просто сходят с ума от фирменной упаковки и маленькой машинки Smart, которую хочеться облизывать.'
-          ],
-          links: [
-            {
-              icontype: 'globe',
-              href: 'https://yamiyami.ru/menu',
-              text: 'Yami Yami'
-            },
-            {
-              icontype: 'article',
-              href: 'https://medium.com/breadhead-stories',
-              text: 'Medium'
-            }
-          ]
-        }
-      },
-      {
         type: TemplatesNames.ArticleWithPhoneDesktop,
         data: {
           title: 'Yami Yami — вкуснее, чем всё',
@@ -112,6 +95,28 @@ export const casesDataDesktop = [
             }
           ],
           src: '/static/img/faster_map.png'
+        }
+      },
+      {
+        type: TemplatesNames.ArticleDesktop,
+        data: {
+          title:
+            'Какая разница сколько часов вам везут еду, если её везут из Yami Yami?',
+          description: [
+            'Люди приходят в восторг, когда впервые видят сайт Yami Yami. А когда еда приезжает к ним домой, они просто сходят с ума от фирменной упаковки и маленькой машинки Smart, которую хочеться облизывать.'
+          ],
+          links: [
+            {
+              icontype: 'globe',
+              href: 'https://yamiyami.ru/menu',
+              text: 'Yami Yami'
+            },
+            {
+              icontype: 'article',
+              href: 'https://medium.com/breadhead-stories',
+              text: 'Medium'
+            }
+          ]
         }
       },
       {

@@ -43,7 +43,7 @@
 }
 
 .sliderMobile {
-  @media (min-width: 600px) {
+  @media (min-width: 601px) {
     display: none;
   }
 }
@@ -87,7 +87,7 @@
 }
 
 .descriptorMobile {
-  @media (min-width: 600px) {
+  @media (min-width: 601px) {
     display: none;
   }
 }

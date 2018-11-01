@@ -8,6 +8,12 @@ export const casesDataMobile = [
     },
     slides: [
       {
+        type: TemplatesNames.FramePictMobile,
+        data: {
+          src: '/static/img/faster_mobile.png'
+        }
+      },
+      {
         type: TemplatesNames.ArticleMobile,
         data: {
           title:
@@ -26,6 +32,12 @@ export const casesDataMobile = [
         }
       },
       {
+        type: TemplatesNames.PictureMobile,
+        data: {
+          src: '/static/img/faster_browser_mobile.png'
+        }
+      },
+      {
         type: TemplatesNames.FrameVideoMobile,
         data: {
           src: '/static/video/map.mov'
@@ -38,9 +50,9 @@ export const casesDataMobile = [
         }
       },
       {
-        type: TemplatesNames.FramePictMobile,
+        type: TemplatesNames.PictureMobile,
         data: {
-          src: '/static/img/faster_mobile.png'
+          src: '/static/img/faster_element_mobile.png'
         }
       }
     ]

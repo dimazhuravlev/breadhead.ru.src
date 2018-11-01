@@ -6,7 +6,7 @@ import styles from './slideArticleWithPhoneDesktop.css'
 const SlideArticleWithPhoneDesktop = ({ title, description, links, src }) => (
   <React.Fragment>
     <div className={styles.wrapper}>
-      <article className={styles.slide}>
+      <article className={styles.article}>
         {title && <h2 className={styles.title}>{title}</h2>}
         {description && (
           <div className={styles.text}>

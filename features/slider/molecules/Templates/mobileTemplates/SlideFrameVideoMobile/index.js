@@ -5,10 +5,7 @@ import styles from './slideFrameVideoMobile.css'
 
 const SlideFrameVideoMobile = data => (
   <div className={styles.slide}>
-    <div className={styles.browser}>
-      <div className={styles.header}>
-        <img className={styles.dots} src="/static/img/dots.png" />
-      </div>
+    <div className={styles.phone}>
       <ReactPlayer
         url={data.src}
         className={styles.screen}

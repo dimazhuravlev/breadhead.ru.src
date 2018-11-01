@@ -13,10 +13,6 @@
   @media (max-width: 767px) {
     padding-right: 48px;
   }
-  @media (max-width: 600px) {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
 }
 
 .title {
@@ -38,7 +34,7 @@
   margin-bottom: 32px;
   @media (max-width: 1200px) {
     font: var(--textMobile18-24);
-    margin-bottom: 28px;
+    margin-bottom: 24px;
   }
 }
 
