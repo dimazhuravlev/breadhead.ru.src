@@ -1,0 +1,23 @@
+.screen {
+  overflow: hidden;
+  pointer-events: none;
+  object-fit: cover;
+  object-position: top left;
+  position: absolute;
+  top: 1.6vw;
+  width: 100%;
+  height: calc(100% - 1.6vw);
+  @media (max-width: 1023px) {
+    top: 2vw;
+    height: calc(100% - 2vw);
+  }
+  @media (max-width: 600px) {
+    top: 50%;
+    left: 50%;
+    margin-left: -110px;
+    margin-top: -205px;
+    height: 410px;
+    width: 220px;
+    border-radius: 3px;
+  }
+}

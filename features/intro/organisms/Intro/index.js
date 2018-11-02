@@ -13,7 +13,7 @@ const Intro = () => (
   <div className={styles.intro}>
     <div>
       <IntroTitle />
-      <ScrollButton linkId="footer" icon={<ZipIcon />}>
+      <ScrollButton targetscroll="footer" icon={<ZipIcon />}>
         связь
       </ScrollButton>
     </div>

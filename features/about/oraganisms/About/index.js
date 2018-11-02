@@ -7,19 +7,32 @@ import { ReactIcon, NodeIcon, SwiftIcon } from '@site/ui/atoms/icons'
 import { NON_BREAKING_SPACE } from '@site/constants'
 import AboutText from '../../atoms/AboutText'
 import styles from './about.css'
+import cx from 'classnames'
 
-const About = ({ id, description, slides }) => (
-  <section id={id} className={styles.about}>
+const About = ({ aboutDataDesktop, aboutDataMobile, name }) => (
+  <section name={name} className={styles.about}>
     <div>
-      <Descriptor className={styles.caseNameOnly} {...description} />
+      <Descriptor
+        className={cx(styles.caseNameOnly, styles.descriptorDesktop)}
+        name={aboutDataDesktop.description.name}
+      />
+      <Descriptor
+        className={cx(styles.caseNameOnly, styles.descriptorMobile)}
+        name={aboutDataMobile.description.name}
+      />
     </div>
     <div className={styles.aboutContent}>
       <AboutText>
         {`Breadhead проектирует и${NON_BREAKING_SPACE}выпускает сервисы и${NON_BREAKING_SPACE}приложения. Совершенствует деятельность компаний с${NON_BREAKING_SPACE}помощью технологий.`}
       </AboutText>
-
-      <Slider slides={slides} className={styles.aboutSlider} />
-
+      <Slider
+        slides={aboutDataDesktop.slides}
+        className={cx(styles.aboutSlider, styles.sliderDesktop)}
+      />
+      <Slider
+        slides={aboutDataMobile.slides}
+        className={cx(styles.aboutSlider, styles.sliderMobile)}
+      />
       <AboutText>
         <React.Fragment>
           {`Мы стремимся к${NON_BREAKING_SPACE}открытой рабочей среде, в${NON_BREAKING_SPACE}которой студия
@@ -27,7 +40,6 @@ const About = ({ id, description, slides }) => (
           продукты.`}
         </React.Fragment>
       </AboutText>
-
       <div className={styles.aboutTextBlocks}>
         <TextBlock header="экспертиза">
           {`Образовательные сервисы / E-commerce / Службы бронирования и${NON_BREAKING_SPACE}доставки / Инструменты автоматизации / Медиа`}
@@ -60,8 +72,9 @@ const About = ({ id, description, slides }) => (
 )
 
 About.propTypes = {
-  description: PropTypes.object.isRequired,
-  slides: PropTypes.arrayOf(PropTypes.object)
+  aboutDataDesktop: PropTypes.object,
+  aboutDataMobile: PropTypes.object,
+  name: PropTypes.string
 }
 
 export default About

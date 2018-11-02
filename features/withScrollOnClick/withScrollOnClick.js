@@ -1,16 +1,17 @@
 import React from 'react'
+import { scroller } from 'react-scroll'
 
 const withScrollOnClick = Component => {
   const ComponentWithScroll = props => {
-    const handleClick = () => {
-      const target = document.getElementById(props.linkId)
-      target.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
+    const scrollTo = props => {
+      scroller.scrollTo(props.targetscroll, {
+        duration: 1600,
+        delay: 0,
+        smooth: 'easeInOutQuint'
       })
     }
 
-    return <Component onClick={handleClick} {...props} />
+    return <Component onClick={() => scrollTo(props)} {...props} />
   }
 
   return ComponentWithScroll

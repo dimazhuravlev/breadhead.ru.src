@@ -8,6 +8,9 @@
   height: 48px;
   border-radius: 24px;
   background-color: var(--darkPrimary);
+  @media (max-width: 1024px) {
+    display: none;
+  }
 }
 
 .button {

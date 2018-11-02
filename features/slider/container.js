@@ -1,5 +1,6 @@
 import React from 'react'
 import { templatesMap } from '@site/features/slider/molecules/Templates'
+// import VisibilitySensor from 'react-visibility-sensor'
 
 const directions = {
   ahead: { leave: '-50%', from: '100%', name: 'ahead', multiplier: 1 },
@@ -56,12 +57,12 @@ const Container = Component =>
         <Component
           index={index}
           direction={direction}
+          directions={directions}
           slides={slideComponents}
-          data={slides[index].data}
-          getNextIndex={this.getNextIndex}
           toggle={this.toggle}
           className={className}
-          directions={directions}
+          data={slides[index].data}
+          getNextIndex={this.getNextIndex}
         />
       )
     }

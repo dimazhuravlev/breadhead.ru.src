@@ -1,7 +1,7 @@
-.Header {
+.header {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
 
   padding: 46px 56px 0px 56px;
   @media (max-width: 1440px) {
@@ -9,5 +9,16 @@
   }
   @media (max-width: 1024px) {
     padding: 30px 16px 0px 16px;
+  }
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 75%;
+  @media (max-width: 1440px) {
+    justify-content: flex-end;
+    width: auto;
   }
 }

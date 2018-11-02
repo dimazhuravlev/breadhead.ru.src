@@ -1,0 +1,25 @@
+.button {
+  font: var(--caption20-24);
+  color: var(--beigeSecondary);
+  background-color: var(--darkSecondary);
+  border-radius: 50px;
+  padding: 2px 8px 6px 8px;
+  width: 40px;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  align-items: center;
+  cursor: pointer;
+  &:hover {
+    background-color: var(--redPrimary);
+    transition: all 0.15s ease-in;
+    color: var(--darkSecondary);
+  }
+  &:active {
+    background-color: var(--redSecondary);
+    color: var(--darkSecondary);
+  }
+  @media (max-width: 768px) {
+    margin-left: 24px;
+  }
+}
