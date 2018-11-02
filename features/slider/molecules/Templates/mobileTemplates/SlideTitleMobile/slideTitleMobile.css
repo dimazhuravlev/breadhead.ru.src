@@ -20,7 +20,7 @@
 .text {
   font: var(--textMobile18-24);
   color: var(--beigePrimary);
-  margin-bottom: 28px;
+  margin-bottom: 24px;
 }
 
 .articleIconBlock {

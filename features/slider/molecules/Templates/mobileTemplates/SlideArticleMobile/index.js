@@ -1,20 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import SlideText from '@site/features/slider/molecules/SlideText'
 import ArticleIconBlock from '@site/ui/molecules/ArticleIconBlock'
 import styles from './slideArticleMobile.css'
 
 const SlideArticleMobile = ({ title, description, links }) => (
   <article className={styles.slide}>
     {title && <h2 className={styles.title}>{title}</h2>}
-    {description && (
-      <div className={styles.text}>
-        {description.map(text => (
-          <div key={text} className={styles.text}>
-            {text}
-          </div>
-        ))}
-      </div>
-    )}
+    <SlideText description={description} className={styles.text} />
     <ArticleIconBlock links={links} />
   </article>
 )
