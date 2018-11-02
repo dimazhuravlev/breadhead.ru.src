@@ -38,21 +38,6 @@
   }
 }
 
-.screen {
-  overflow: hidden;
-  pointer-events: none;
-  object-fit: cover;
-  object-position: top left;
-  position: absolute;
-  top: 1.6vw;
-  width: 100%;
-  height: calc(100% - 1.6vw);
-  @media (max-width: 1023px) {
-    top: 2vw;
-    height: calc(100% - 2vw);
-  }
-}
-
 .dots {
   pointer-events: none;
   position: absolute;

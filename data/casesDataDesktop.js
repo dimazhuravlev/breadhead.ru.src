@@ -20,6 +20,14 @@ export const casesDataDesktop = [
         }
       },
       {
+        type: TemplatesNames.PhonesVideoDesktop,
+        data: {
+          srcLeft: '/static/video/catalog.mov',
+          srcCenter: '/static/video/map.mov',
+          srcRight: '/static/video/slider_scroll.mov'
+        }
+      },
+      {
         type: TemplatesNames.ArticleDesktop,
         data: {
           title: 'Сервис для бронирования лекарств в аптеках города',

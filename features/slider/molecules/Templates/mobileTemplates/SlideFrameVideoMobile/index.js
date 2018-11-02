@@ -1,22 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import ReactPlayer from 'react-player'
+import VideoPlayer from '@site/features/slider/molecules/VideoPlayer'
 import styles from './slideFrameVideoMobile.css'
 
 const SlideFrameVideoMobile = ({ src }) => (
   <div className={styles.slide}>
     <div className={styles.phone}>
-      <ReactPlayer
-        url={src}
-        className={styles.screen}
-        height="410"
-        width="220"
-        playsinline={true}
-        autoPlay={true}
-        loop={true}
-        playing={true}
-        muted={true}
-      />
+      <VideoPlayer src={src} width="220" height="410" />
     </div>
   </div>
 )

@@ -1,50 +1,35 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import ReactPlayer from 'react-player'
+import VideoPlayer from '@site/features/slider/molecules/VideoPlayer'
 import styles from './slidePhonesVideoDesktop.css'
 
 const SlidePhonesVideoDesktop = ({ srcLeft, srcCenter, srcRight }) => (
   <div className={styles.slide}>
     <div className={styles.phones}>
       <div className={styles.phone}>
-        <ReactPlayer
-          url={srcLeft}
+        <VideoPlayer
+          src={srcLeft}
           className={styles.screen}
-          height="412"
-          width="230"
-          playsinline={true}
-          autoPlay={true}
-          loop={true}
-          playing={true}
-          muted={true}
+          width="220"
+          height="410"
         />
       </div>
 
       <div className={styles.phone}>
-        <ReactPlayer
-          url={srcCenter}
+        <VideoPlayer
+          src={srcCenter}
           className={styles.screen}
-          height="410"
           width="220"
-          playsinline={true}
-          autoPlay={true}
-          loop={true}
-          playing={true}
-          muted={true}
+          height="410"
         />
       </div>
 
       <div className={styles.phone}>
-        <ReactPlayer
-          url={srcRight}
+        <VideoPlayer
+          src={srcRight}
           className={styles.screen}
-          height="410"
           width="220"
-          playsinline={true}
-          autoPlay={true}
-          loop={true}
-          playing={true}
-          muted={true}
+          height="410"
         />
       </div>
     </div>

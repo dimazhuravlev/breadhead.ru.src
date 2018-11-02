@@ -29,18 +29,3 @@
     transform: scale(0.7);
   }
 }
-
-.screen {
-  overflow: hidden;
-  pointer-events: none;
-  object-fit: cover;
-  object-position: top left;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-left: -110px;
-  margin-top: -205px;
-  height: 410px;
-  width: 220px;
-  border-radius: 3px;
-}
