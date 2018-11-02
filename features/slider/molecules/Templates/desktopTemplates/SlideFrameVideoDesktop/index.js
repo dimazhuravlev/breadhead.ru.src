@@ -3,14 +3,14 @@ import PropTypes from 'prop-types'
 import ReactPlayer from 'react-player'
 import styles from './slideFrameVideoDesktop.css'
 
-const SlideFrameVideoDesktop = data => (
+const SlideFrameVideoDesktop = ({ src }) => (
   <div className={styles.slide}>
     <div className={styles.browser}>
       <div className={styles.header}>
         <img className={styles.dots} src="/static/img/dots.png" />
       </div>
       <ReactPlayer
-        url={data.src}
+        url={src}
         className={styles.screen}
         height="410"
         width="220"
@@ -25,7 +25,7 @@ const SlideFrameVideoDesktop = data => (
 )
 
 SlideFrameVideoDesktop.propTypes = {
-  data: PropTypes.object
+  src: PropTypes.string.isRequired
 }
 
 export default SlideFrameVideoDesktop

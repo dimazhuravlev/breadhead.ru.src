@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import IconLink from '@site/ui/molecules/IconLink'
+import ArticleIconBlock from '@site/ui/molecules/ArticleIconBlock'
 import styles from './slideTitleMobile.css'
 
 const SlideTitleMobile = ({ title, description, links }) => (
@@ -15,16 +15,11 @@ const SlideTitleMobile = ({ title, description, links }) => (
         ))}
       </div>
     )}
-    <div className={styles.articleIconBlock}>
-      {links &&
-        links.map(link => (
-          <IconLink
-            className={styles.articleIconLink}
-            key={link.href}
-            {...link}
-          />
-        ))}
-    </div>
+    <ArticleIconBlock
+      links={links}
+      classNameIcon={styles.articleIconLink}
+      classNameBlock={styles.articleIconBlock}
+    />
   </article>
 )
 

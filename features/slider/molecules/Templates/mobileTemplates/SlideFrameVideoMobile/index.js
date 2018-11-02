@@ -3,11 +3,11 @@ import PropTypes from 'prop-types'
 import ReactPlayer from 'react-player'
 import styles from './slideFrameVideoMobile.css'
 
-const SlideFrameVideoMobile = data => (
+const SlideFrameVideoMobile = ({ src }) => (
   <div className={styles.slide}>
     <div className={styles.phone}>
       <ReactPlayer
-        url={data.src}
+        url={src}
         className={styles.screen}
         height="410"
         width="220"
@@ -22,7 +22,7 @@ const SlideFrameVideoMobile = data => (
 )
 
 SlideFrameVideoMobile.propTypes = {
-  data: PropTypes.object
+  src: PropTypes.string.isRequired
 }
 
 export default SlideFrameVideoMobile

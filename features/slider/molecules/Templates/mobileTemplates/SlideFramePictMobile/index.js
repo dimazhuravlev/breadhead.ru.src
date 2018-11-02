@@ -2,16 +2,16 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styles from './slideFramePictMobile.css'
 
-const SlideFramePictMobile = data => (
+const SlideFramePictMobile = ({ src }) => (
   <div className={styles.slide}>
     <div className={styles.phone}>
-      <img src={data.src} className={styles.screen} />
+      <img src={src} className={styles.screen} />
     </div>
   </div>
 )
 
 SlideFramePictMobile.propTypes = {
-  data: PropTypes.object
+  src: PropTypes.string.isRequired
 }
 
 export default SlideFramePictMobile
