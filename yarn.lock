@@ -3084,9 +3084,9 @@ escope@^3.6.0:
     esrecurse "^4.1.0"
     estraverse "^4.1.1"
 
-eslint-plugin-jest@^21.26.2:
-  version "21.26.2"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-21.26.2.tgz#5b24413970e83e2c5b87c5c047a08a4881783605"
+eslint-plugin-jest@^21.27.0:
+  version "21.27.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-21.27.0.tgz#35ab98d41066efbac481b7a50b7c2877dfede70e"
 
 eslint-plugin-react@^7.11.1:
   version "7.11.1"
@@ -7002,19 +7002,13 @@ react-test-renderer@^16.0.0-0:
     react-is "^16.5.2"
     schedule "^0.5.0"
 
-<<<<<<< HEAD
 react-with-gesture@^1.0.10:
   version "1.0.10"
   resolved "https://registry.yarnpkg.com/react-with-gesture/-/react-with-gesture-1.0.10.tgz#f5e60b848598db587f3d02f5b8d9856bf26dbb59"
 
-react@^16.5.2:
-  version "16.5.2"
-  resolved "https://registry.yarnpkg.com/react/-/react-16.5.2.tgz#19f6b444ed139baa45609eee6dc3d318b3895d42"
-=======
 react@^16.6.0:
   version "16.6.0"
   resolved "https://registry.yarnpkg.com/react/-/react-16.6.0.tgz#b34761cfaf3e30f5508bc732fb4736730b7da246"
->>>>>>> bread/master
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
