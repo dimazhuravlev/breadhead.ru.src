@@ -140,5 +140,64 @@ export const casesDataDesktop = [
         }
       }
     ]
+  },
+
+  {
+    description: {
+      type: 'проект',
+      name: 'Обед Буфет. Приложуху грузи скорее!'
+    },
+    slides: [
+      {
+        type: TemplatesNames.PictureDesktop,
+        data: {
+          src: '/static/img/obedBufet/cover_obedbufet_desktop_fullslide.jpg'
+        }
+      },
+      {
+        type: TemplatesNames.ArticleWithPhoneDesktop,
+        data: {
+          title: 'Обед Буфет. Закажи пожрать',
+          description: [
+            'Проектировали, прототипировали, рисовали, а они уже год программируют. Ну сколько можно ёпта?'
+          ],
+          links: [
+            {
+              icontype: 'globe',
+              href: 'https://apple.com',
+              text: 'iOS'
+            },
+            {
+              icontype: 'globe',
+              href: 'https://android.com',
+              text: 'Android'
+            }
+          ],
+          src: '/static/img/obedBufet/0-location_obedbufet_mobile.jpg'
+        }
+      },
+      {
+        type: TemplatesNames.PhonesDesktop,
+        data: {
+          srcLeft: '/static/img/obedBufet/1-main_obedbufet_mobile.jpg',
+          srcCenter: '/static/img/obedBufet/2-catalog_obedbufet_mobile.jpg',
+          srcRight: '/static/img/obedBufet/3-product_obedbufet_mobile.jpg'
+        }
+      },
+      {
+        type: TemplatesNames.PhonesDesktop,
+        data: {
+          srcLeft: '/static/img/obedBufet/4-profile_obedbufet_mobile.jpg',
+          srcCenter: '/static/img/obedBufet/5-address_obedbufet_mobile.jpg',
+          srcRight: '/static/img/obedBufet/6-history_obedbufet_mobile.jpg'
+        }
+      },
+      {
+        type: TemplatesNames.PictureDesktop,
+        data: {
+          src: '/static/img/obedBufet/7-rest_obedbufet_desktop-fullscreen.jpg'
+        }
+      }
+    ]
   }
 ]
