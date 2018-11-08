@@ -14,7 +14,6 @@
   width: 45%;
   height: 100%;
   box-sizing: border-box;
-  background-color: var(--darkSecondary);
   @media (max-width: 1300px) {
     width: 50%;
   }

@@ -181,7 +181,9 @@ export const casesDataDesktop = [
         data: {
           srcLeft: '/static/img/obedBufet/1-main_obedbufet_mobile.jpg',
           srcCenter: '/static/img/obedBufet/2-catalog_obedbufet_mobile.jpg',
-          srcRight: '/static/img/obedBufet/3-product_obedbufet_mobile.jpg'
+          srcRight: '/static/img/obedBufet/3-product_obedbufet_mobile.jpg',
+          backgroundSrc:
+            '/static/img/obedBufet/cover_obedbufet_desktop_fullslide.jpg'
         }
       },
       {
@@ -189,7 +191,8 @@ export const casesDataDesktop = [
         data: {
           srcLeft: '/static/img/obedBufet/4-profile_obedbufet_mobile.jpg',
           srcCenter: '/static/img/obedBufet/5-address_obedbufet_mobile.jpg',
-          srcRight: '/static/img/obedBufet/6-history_obedbufet_mobile.jpg'
+          srcRight: '/static/img/obedBufet/6-history_obedbufet_mobile.jpg',
+          backgroundColor: 'pink'
         }
       },
       {
