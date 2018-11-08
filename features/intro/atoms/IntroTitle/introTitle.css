@@ -7,12 +7,17 @@
   margin-bottom: 48px;
   margin-right: 40px;
   max-width: 570px;
+  @media (max-width: 1440px) {
+    font-size: calc(56px + 24 * ((100vw - 768px) / 672));
+    line-height: calc(56px + 24 * ((100vw - 768px) / 672));
+  }
   @media (max-width: 1200px) {
     max-width: 570px;
   }
-  @media (max-width: 768px) {
-    font: var(--titleMobile40-40);
-    max-width: 290px;
+  @media (max-width: 600px) {
+    font-size: calc(36px + 20 * ((100vw - 320px) / 280));
+    line-height: calc(36px + 20 * ((100vw - 320px) / 280));
+    max-width: 570px;
     margin-bottom: 28px;
   }
 }

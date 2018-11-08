@@ -31,12 +31,54 @@
   position: relative;
   overflow: hidden;
   height: 500px;
+
   @media (max-width: 1024px) {
-    height: 280px;
+    height: 420px;
   }
   @media (max-width: 768px) {
-    height: 220px;
+    height: 260px;
   }
+  @media (max-width: 420px) {
+    height: 300px;
+  }
+}
+
+.footerImage {
+  position: absolute;
+  z-index: -1;
+  width: auto;
+  height: 480px;
+  right: 0;
+  bottom: -2px;
+  @media (max-width: 1024px) {
+    height: 400px;
+  }
+  @media (max-width: 768px) {
+    height: 260px;
+  }
+  @media (max-width: 420px) {
+    height: auto;
+    width: 100%;
+  }
+}
+
+.phoneLink {
+  color: var(--beigePrimary);
+  cursor: default;
+  &:hover {
+    color: var(--beigePrimary);
+  }
+  @media (max-width: 690px) {
+    color: var(--beigeSecondary);
+    cursor: pointer;
+    &:hover {
+      color: var(--redPrimary);
+    }
+  }
+}
+
+.caseNameOnly {
+  margin-top: 4px;
 }
 
 .copyright {
@@ -59,54 +101,7 @@
   @media (max-width: 690px) {
     font: var(--textMobile18-24);
   }
-}
-
-.logo {
-  width: 1476px;
-  height: 104px;
-  position: absolute;
-  bottom: -40px;
-  right: -80px;
-  transform: rotate(-15deg);
-  @media (max-width: 768px) {
-    width: 984px;
-    height: 70px;
-    bottom: 0px;
+  @media (max-width: 600px) {
+    display: none;
   }
-}
-
-.moveBg {
-  height: 100%;
-  width: 100%;
-  background: url(/static/img/LogoLine.png) repeat 0 0;
-  background-size: 100%;
-  animation: moveLogo 600s linear infinite;
-}
-
-@keyframes moveLogo {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: 70000px 0;
-  }
-}
-
-.phoneLink {
-  color: var(--beigePrimary);
-  cursor: default;
-  &:hover {
-    color: var(--beigePrimary);
-  }
-  @media (max-width: 690px) {
-    color: var(--beigeSecondary);
-    cursor: pointer;
-    &:hover {
-      color: var(--redPrimary);
-    }
-  }
-}
-
-.caseNameOnly {
-  margin-top: 4px;
 }

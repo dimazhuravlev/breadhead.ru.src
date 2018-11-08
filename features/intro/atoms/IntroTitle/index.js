@@ -3,7 +3,13 @@ import styles from './introTitle.css'
 
 const IntroTitle = () => (
   <h1 className={styles.Title}>
-    Разработка цифровых сервисов. Веб, iOS, Android
+    Разработка
+    <br />
+    цифровых
+    <br />
+    сервисов. Веб,
+    <br />
+    iOS, Android
   </h1>
 )
 
