@@ -144,7 +144,7 @@ export const casesDataDesktop = [
 
   {
     description: {
-      type: 'проект',
+      type: 'приложение',
       name: 'Обед Буфет. Приложуху грузи скорее!'
     },
     slides: [

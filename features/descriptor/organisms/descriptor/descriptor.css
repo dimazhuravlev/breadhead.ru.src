@@ -1,11 +1,9 @@
 .descriptor {
   margin-right: 44px;
   width: calc(25% - 44px);
-  transition: all 0.8s ease;
-  @media (max-width: 1023px) {
+  @media (max-width: 1024px) {
     width: 100%;
     margin-bottom: 24px;
-    transition: all 0.8s ease;
   }
 }
 
@@ -13,10 +11,8 @@
   font: var(--caption20-24);
   color: var(--beigePrimary);
   margin-bottom: 24px;
-  transition: all 0.8s ease;
-  @media (max-width: 1023px) {
+  @media (max-width: 1024px) {
     margin-bottom: 8px;
-    transition: all 0.8s ease;
   }
 }
 
@@ -24,18 +20,16 @@
   font: var(--title40-40);
   color: var(--beigePrimary);
   margin-bottom: 32px;
-  transition: all 0.8s ease;
-  @media (max-width: 1023px) {
+  @media (max-width: 1024px) {
     font: var(--titleMobile28-32);
     margin-bottom: 0;
-    transition: all 0.8s ease;
   }
 }
 
 .articleIconBlock {
   display: flex;
   flex-wrap: wrap;
-  @media (max-width: 1023px) {
+  @media (max-width: 1024px) {
     display: none;
   }
 }

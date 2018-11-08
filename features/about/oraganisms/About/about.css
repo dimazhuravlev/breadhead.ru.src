@@ -8,14 +8,11 @@
   @media (max-width: 1440px) {
     padding: 56px 34px 0px 34px;
   }
+
   @media (max-width: 1024px) {
     padding: 56px 16px 0px 16px;
-  }
-
-  @media (max-width: 1023px) {
     flex-direction: column;
     margin-bottom: 24px;
-    padding-top: 56px;
   }
 }
 
@@ -23,7 +20,7 @@
   display: flex;
   flex-direction: column;
   width: 75%;
-  @media (max-width: 1023px) {
+  @media (max-width: 1024px) {
     width: 100%;
   }
 }
@@ -31,7 +28,7 @@
 .aboutSlider {
   width: 100%;
   margin-bottom: 80px;
-  @media (max-width: 1023px) {
+  @media (max-width: 1024px) {
     margin-bottom: 40px;
   }
 }
@@ -55,7 +52,7 @@
   @media (max-width: 1700px) {
     width: 100%;
   }
-  @media (max-width: 1023px) {
+  @media (max-width: 1024px) {
     width: 100%;
   }
   @media (max-width: 690px) {

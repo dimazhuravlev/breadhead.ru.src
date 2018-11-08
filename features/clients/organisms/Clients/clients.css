@@ -1,16 +1,14 @@
 .clients {
   display: flex;
   margin-bottom: 104px;
-
   padding: 0px 56px 0px 56px;
+
   @media (max-width: 1440px) {
     padding: 0px 34px 0px 34px;
   }
+
   @media (max-width: 1024px) {
     padding: 30px 16px 0px 16px;
-  }
-
-  @media (max-width: 1023px) {
     flex-direction: column;
     margin-bottom: 24px;
   }
