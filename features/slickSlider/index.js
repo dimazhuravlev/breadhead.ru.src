@@ -1,30 +1,4 @@
-import React from 'react'
-import Slider from 'react-slick'
+import Container from './container'
+import Slider from './organisms/Slider'
 
-class ReactSlickDemo extends React.Component {
-  render() {
-    var settings = {
-      dots: true,
-    }
-    return (
-      <div className="container">
-        <Slider {...settings}>
-          <div>
-            <img src="http://placekitten.com/g/400/200" />
-          </div>
-          <div>
-            <img src="http://placekitten.com/g/400/200" />
-          </div>
-          <div>
-            <img src="http://placekitten.com/g/400/200" />
-          </div>
-          <div>
-            <img src="http://placekitten.com/g/400/200" />
-          </div>
-        </Slider>
-      </div>
-    )
-  }
-}
-
-export default ReactSlickDemo
+export default Container(Slider)

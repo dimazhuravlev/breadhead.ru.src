@@ -1,0 +1,16 @@
+.slick-track {
+  display: flex !important;
+}
+
+.slick-slide {
+  position: relative;
+  height: auto !important;
+  min-height: none !important;
+  max-height: none !important;
+  display: flex !important;
+}
+
+.slick-slide > div {
+  flex-grow: 1;
+  width: 100%;
+}

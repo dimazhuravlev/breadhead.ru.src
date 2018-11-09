@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Slider from '@site/features/slider'
+import Slider from '@site/features/slickSlider'
 import Descriptor from '@site/features/descriptor'
 import cx from 'classnames'
 import styles from './case.css'
@@ -14,7 +14,7 @@ const Case = ({ name, className, description, slides }) => (
 
 Case.propTypes = {
   description: PropTypes.object.isRequired,
-  slides: PropTypes.arrayOf(PropTypes.object)
+  slides: PropTypes.arrayOf(PropTypes.object),
 }
 
 export default Case

@@ -23,12 +23,12 @@ const Home = () => (
     <Header />
     <Intro />
     <Slider />
-    {/* <section className={cx(styles.cases, styles.desktopCases)} name="cases">
+    <section className={cx(styles.cases, styles.desktopCases)} name="cases">
       {casesDataDesktop.map(caseData => (
         <Case key={caseData.description.name} {...caseData} />
       ))}
     </section>
-    <section className={cx(styles.cases, styles.mobileCases)} name="cases">
+    {/* <section className={cx(styles.cases, styles.mobileCases)} name="cases">
       {casesDataMobile.map(caseData => (
         <Case key={caseData.description.name} {...caseData} />
       ))}
@@ -52,8 +52,8 @@ const Home = () => (
       name="howWeWork"
       className={cx(styles.howWeWork, styles.howWeWorkMobile)}
       {...howWeWorkDataMobile}
-    /> */}
-    <Footer />
+    />
+    <Footer /> */}
   </main>
 )
 
