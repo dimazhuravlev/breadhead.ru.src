@@ -2,8 +2,11 @@ import React from 'react'
 import SlickSlider from 'react-slick'
 import styles from './Slider.css'
 import './SliderGlobal.css?CSSModulesDisable'
-
-const settings = {}
+import NavButton from '../../molecules/NavButton'
+const settings = {
+  nextArrow: <NavButton className={styles.navButton} direction="left" />,
+  prevArrow: <NavButton className={styles.navButton} direction="right" />,
+}
 class Slider extends React.Component {
   render() {
     const { children } = this.props
