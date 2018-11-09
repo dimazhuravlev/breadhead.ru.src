@@ -1,5 +1,5 @@
-const withCSS = require('@zeit/next-css')
+const withCSS = require('next-css')
 
 module.exports = withCSS({
-  cssModules: true
+  cssModules: true,
 })
