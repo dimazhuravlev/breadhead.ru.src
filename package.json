@@ -1,10 +1,9 @@
 {
   "dependencies": {
-    "@zeit/next-css": "^0.2.0",
     "classnames": "^2.2.6",
     "lodash": "^4.17.11",
-    "next": "^6.1.2",
-    "next-css": "git+ssh://git@github.com/breadhead/next-css.git",
+    "next": "^7.0.2",
+    "next-css-unpluggable": "^1.0.1",
     "postcss-custom-properties": "^8.0.9",
     "prop-types": "^15.6.2",
     "react": "^16.6.1",
