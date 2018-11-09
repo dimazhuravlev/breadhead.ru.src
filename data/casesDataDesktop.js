@@ -145,7 +145,7 @@ export const casesDataDesktop = [
   {
     description: {
       type: 'приложение',
-      name: 'Обед Буфет. Приложуху грузи скорее!'
+      name: 'Обед Буфет'
     },
     slides: [
       {
@@ -199,6 +199,87 @@ export const casesDataDesktop = [
         type: TemplatesNames.PictureDesktop,
         data: {
           src: '/static/img/obedBufet/7-rest_obedbufet_desktop-fullscreen.jpg'
+        }
+      }
+    ]
+  },
+
+  {
+    description: {
+      type: 'подборка',
+      name: 'E-commerce проекты',
+      links: [
+        {
+          icontype: 'globe',
+          href: 'https://yamiyami.ru'
+        }
+      ]
+    },
+    slides: [
+      {
+        type: TemplatesNames.PictureDesktop,
+        data: {
+          src: '/static/img/yamiyami.jpg'
+        }
+      },
+      {
+        type: TemplatesNames.FramePictDesktop,
+        data: {
+          src: '/static/img/yamisite.png'
+        }
+      }
+    ]
+  },
+
+  {
+    description: {
+      type: 'проект',
+      name: 'Encore Fitness. Качалка за тонну бабла',
+      links: [
+        {
+          icontype: 'globe',
+          href: 'https://encorefitness.ru'
+        }
+      ]
+    },
+    slides: [
+      {
+        type: TemplatesNames.PictureDesktop,
+        data: {
+          src: '/static/img/encore.jpg'
+        }
+      },
+      {
+        type: TemplatesNames.PictureDesktop,
+        data: {
+          src: '/static/img/encore2.jpg'
+        }
+      }
+    ]
+  },
+
+  {
+    description: {
+      type: 'проект',
+      name: 'Чевостик. И дядя Кузя',
+      links: [
+        {
+          icontype: 'globe',
+          href: 'https://chevostik.ru'
+        }
+      ]
+    },
+    slides: [
+      {
+        type: TemplatesNames.PictureDesktop,
+        data: {
+          src: '/static/img/chevostik2.png'
+        }
+      },
+      {
+        type: TemplatesNames.FramePictDesktop,
+        data: {
+          src: '/static/img/chevostik.png'
         }
       }
     ]

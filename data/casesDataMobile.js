@@ -177,5 +177,68 @@ export const casesDataMobile = [
         }
       }
     ]
+  },
+
+  {
+    description: {
+      type: 'подборка',
+      name: 'E-commerce проекты'
+    },
+    slides: [
+      {
+        type: TemplatesNames.PictureMobile,
+        data: {
+          src: '/static/img/yamiyami.jpg'
+        }
+      },
+      {
+        type: TemplatesNames.FramePictMobile,
+        data: {
+          src: '/static/img/yamisite.png'
+        }
+      }
+    ]
+  },
+
+  {
+    description: {
+      type: 'проект',
+      name: 'Encore Fitness. Качалка за тонну бабла'
+    },
+    slides: [
+      {
+        type: TemplatesNames.PictureMobile,
+        data: {
+          src: '/static/img/encore.jpg'
+        }
+      },
+      {
+        type: TemplatesNames.PictureMobile,
+        data: {
+          src: '/static/img/encore2.jpg'
+        }
+      }
+    ]
+  },
+
+  {
+    description: {
+      type: 'проект',
+      name: 'Чевостик. И дядя Кузя'
+    },
+    slides: [
+      {
+        type: TemplatesNames.PictureMobile,
+        data: {
+          src: '/static/img/chevostik2.png'
+        }
+      },
+      {
+        type: TemplatesNames.FramePictMobile,
+        data: {
+          src: '/static/img/chevostik.png'
+        }
+      }
+    ]
   }
 ]
