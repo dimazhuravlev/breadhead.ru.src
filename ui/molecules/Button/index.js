@@ -7,6 +7,7 @@ class Button extends React.Component {
   render() {
     return (
       <button
+        name={this.props.name}
         onClick={this.props.onClick}
         className={cx(styles.Button, this.props.className)}
       >

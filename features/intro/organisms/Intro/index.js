@@ -9,8 +9,8 @@ import styles from './intro.css'
 
 const ScrollButton = withScrollOnClick(Button)
 
-const Intro = () => (
-  <div className={styles.intro}>
+const Intro = props => (
+  <div className={styles.intro} {...props}>
     <div>
       <IntroTitle />
       <ScrollButton targetscroll="footer" icon={<ZipIcon />}>
