@@ -8,6 +8,7 @@
   min-height: none !important;
   max-height: none !important;
   display: flex !important;
+  overflow: hidden !important;
 }
 
 .slick-slide > div {

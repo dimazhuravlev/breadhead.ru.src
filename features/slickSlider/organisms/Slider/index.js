@@ -4,8 +4,8 @@ import styles from './Slider.css'
 import './SliderGlobal.css?CSSModulesDisable'
 import NavButton from '../../molecules/NavButton'
 const settings = {
-  nextArrow: <NavButton className={styles.navButton} direction="left" />,
-  prevArrow: <NavButton className={styles.navButton} direction="right" />,
+  prevArrow: <NavButton className={styles.navButton} direction="left" />,
+  nextArrow: <NavButton className={styles.navButton} direction="right" />,
 }
 class Slider extends React.Component {
   render() {
