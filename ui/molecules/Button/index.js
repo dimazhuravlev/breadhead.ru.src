@@ -5,6 +5,7 @@ import cx from 'classnames'
 
 const Button = React.forwardRef((props, ref) => (
   <button
+    style={props}
     ref={ref}
     name={props.name}
     onClick={props.onClick}

@@ -3,6 +3,7 @@
 exports[`button ui Button renders correctly 1`] = `
 <button
   className=""
+  style={Object {}}
 >
   <p />
 </button>

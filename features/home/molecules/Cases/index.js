@@ -1,5 +1,6 @@
 import React from 'react'
 import { scroller } from 'react-scroll'
+import VisibilitySensor from 'react-visibility-sensor'
 
 import Case from '@site/features/case'
 import Button from '@site/ui/molecules/Button'
@@ -15,7 +16,8 @@ class Cases extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      isShown: false
+      isShown: false,
+      isVisible: false
     }
     this.handleClick = this.handleClick.bind(this)
     this.scrollToButton = this.scrollToButton.bind(this)
@@ -73,7 +75,10 @@ class Cases extends React.Component {
           ref={this.buttonRef}
           name="buttonToShow"
           onClick={this.handleClick}
-          className={styles.plusButton}
+          className={cx(
+            styles.plusButton,
+            this.state.isVisible ? styles.visible : styles.inVisible
+          )}
           icon={this.state.isShown ? <MinusIcon /> : <PlusIcon />}
         >
           {this.state.isShown ? 'свернуть' : 'ещё'}
