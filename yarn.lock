@@ -6923,6 +6923,13 @@ react-test-renderer@^16.0.0-0:
     react-is "^16.5.2"
     schedule "^0.5.0"
 
+react-visibility-sensor@^5.0.2:
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/react-visibility-sensor/-/react-visibility-sensor-5.0.2.tgz#e360fff81572cb3a2a9fd680484447a9da09a55d"
+  integrity sha512-7+1lr7oQOO2vKr5u/uxoDGFWAAy7lsDy2aJU3Zy1/OymI+TRqOBk8m2L8YE1B0UyfCDWxVAWO+aifVGqNOvqeQ==
+  dependencies:
+    prop-types "^15.6.2"
+
 react-with-gesture@^2.0.4:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/react-with-gesture/-/react-with-gesture-2.0.4.tgz#3b1095b55b937d0ca89b9d4570bc35c1e3238236"

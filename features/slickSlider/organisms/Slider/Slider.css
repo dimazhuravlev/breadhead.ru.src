@@ -2,6 +2,7 @@
   width: 100%;
   border-radius: 6px;
   overflow: hidden;
+  position: relative;
 
   &:hover .navButton {
     display: block !important;
@@ -11,4 +12,11 @@
 .navButton {
   display: none !important;
   width: 500px !important;
+}
+
+.sensor {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: red;
 }
