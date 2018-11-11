@@ -15,30 +15,36 @@ class Cases extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      isShown: false,
-      isScroll: false,
-      textBtn: 'ещё',
-      iconBtn: <PlusIcon />
+      isShown: false
     }
     this.handleClick = this.handleClick.bind(this)
     this.scrollToButton = this.scrollToButton.bind(this)
+    this.buttonRef = React.createRef()
   }
 
-  scrollToButton() {
+  scrollToButton(offset) {
     scroller.scrollTo('buttonToShow', {
-      duration: 600,
-      delay: 0,
-      smooth: 'easeInOutQuart'
+      offset: offset
     })
   }
 
   handleClick() {
-    this.setState(state => ({
-      isScroll: state.isShown ? this.scrollToButton() : false,
-      isShown: !state.isShown,
-      textBtn: state.textBtn === 'ещё' ? 'свернуть' : 'ещё',
-      iconBtn: state.iconBtn === <PlusIcon /> ? <MinusIcon /> : <PlusIcon />
-    }))
+    let isShown
+    let y
+    this.setState(
+      state => {
+        isShown = state.isShown
+        y = this.buttonRef.current.getBoundingClientRect().y
+        return {
+          isShown: !state.isShown
+        }
+      },
+      () => {
+        if (isShown) {
+          this.scrollToButton(-y)
+        }
+      }
+    )
   }
 
   render() {
@@ -64,12 +70,13 @@ class Cases extends React.Component {
         </section>
 
         <Button
+          ref={this.buttonRef}
           name="buttonToShow"
           onClick={this.handleClick}
           className={styles.plusButton}
-          icon={this.state.iconBtn}
+          icon={this.state.isShown ? <MinusIcon /> : <PlusIcon />}
         >
-          {this.state.textBtn}
+          {this.state.isShown ? 'свернуть' : 'ещё'}
         </Button>
       </>
     )
