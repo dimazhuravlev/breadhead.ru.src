@@ -1,4 +1,5 @@
 import React from 'react'
+import withSizes from 'react-sizes'
 import SlickSlider from 'react-slick'
 import VisibilitySensor from 'react-visibility-sensor'
 import styles from './Slider.css'
@@ -10,7 +11,7 @@ const settings = {
   prevArrow: <NavButton className={styles.navButton} direction="left" />,
   nextArrow: <NavButton className={styles.navButton} direction="right" />,
 }
-class Slider extends React.Component {
+class Slider extends React.PureComponent {
   state = { index: 0 }
 
   componentDidUpdate(prevProps, prevState) {
@@ -29,21 +30,22 @@ class Slider extends React.Component {
   sliderRef = React.createRef()
 
   render() {
-    const { children } = this.props
+    const { children, height } = this.props
     const { index } = this.state
 
     return (
-      <VisibilitySensor partialVisibility>
+      <VisibilitySensor
+        minTopValue={height > 600 ? height / 2.5 : height / 2}
+        offset={{ top: height / 2 }}
+        partialVisibility
+      >
         {({ isVisible }) => (
           <div className={styles.wrapper}>
             <Bar
               index={index}
+              isVisible={isVisible}
               quantity={children.length}
-              onRest={arg => {
-                // console.log(arg)
-                debugger
-                this.sliderRef.slickNext()
-              }}
+              onRest={this.sliderRef.slickNext}
             />
             <SlickSlider
               ref={slider => (this.sliderRef = slider)}
@@ -62,4 +64,9 @@ class Slider extends React.Component {
   }
 }
 
-export default Slider
+const mapSizesToProps = ({ width, height }) => ({
+  width,
+  height,
+})
+
+export default withSizes(mapSizesToProps)(Slider)

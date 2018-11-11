@@ -5,16 +5,27 @@ import TimeLine from '../../molecules/Bar/atoms/TimeLine'
 import styles from './bar.css'
 
 class Bar extends React.Component {
+  state = { key: Math.random() }
+
+  componentDidUpdate(prevProps) {
+    if (prevProps.index !== 0 && this.props.index === 0) {
+      this.setState({ key: Math.random() })
+    }
+  }
   render() {
-    const { onRest, index, quantity } = this.props
+    const { onRest, index, quantity, isVisible } = this.props
     const timeLines = range(quantity)
+
     return (
-      <div className={styles.bar}>
+      <div key={this.state.key} className={styles.bar}>
         {timeLines.map(timeLine => (
           <TimeLine
+            activeIndex={index}
+            index={timeLine}
+            isVisible={isVisible}
             animate={index === timeLine}
             key={timeLine}
-            onRest={timeLine === index && onRest}
+            onRest={timeLine === index && isVisible ? onRest : () => {}}
             active={index >= timeLine}
           />
         ))}
@@ -26,7 +37,7 @@ class Bar extends React.Component {
 Bar.propTypes = {
   index: PropTypes.number,
   onRest: PropTypes.oneOfType([PropTypes.bool, PropTypes.func]),
-  quantity: PropTypes.number
+  quantity: PropTypes.number,
 }
 
 export default Bar

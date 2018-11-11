@@ -14,7 +14,7 @@ import { aboutDataDesktop } from '@site/data/aboutDataDesktop'
 import { aboutDataMobile } from '@site/data/aboutDataMobile'
 import { howWeWorkDataDesktop } from '@site/data/howWeWorkDataDesktop'
 import { howWeWorkDataMobile } from '@site/data/howWeWorkDataMobile'
-import Slider from '@site/features/slickSlider'
+import Slider from '@site/features/slider'
 import styles from './home.css'
 import cx from 'classnames'
 
@@ -28,7 +28,7 @@ const Home = () => (
         <Case key={caseData.description.name} {...caseData} />
       ))}
     </section>
-    {/* <section className={cx(styles.cases, styles.mobileCases)} name="cases">
+    <section className={cx(styles.cases, styles.mobileCases)} name="cases">
       {casesDataMobile.map(caseData => (
         <Case key={caseData.description.name} {...caseData} />
       ))}
@@ -53,7 +53,7 @@ const Home = () => (
       className={cx(styles.howWeWork, styles.howWeWorkMobile)}
       {...howWeWorkDataMobile}
     />
-    <Footer /> */}
+    <Footer />
   </main>
 )
 

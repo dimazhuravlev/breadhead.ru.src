@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Slider from '@site/features/slickSlider'
+import Slider from '@site/features/slider'
 import Descriptor from '@site/features/descriptor'
 import cx from 'classnames'
 import styles from './case.css'

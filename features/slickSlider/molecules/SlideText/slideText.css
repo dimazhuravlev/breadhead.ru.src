@@ -1,9 +1,0 @@
-.text {
-  font: var(--text24-32);
-  color: var(--beigePrimary);
-  margin-bottom: 32px;
-  @media (max-width: 1200px) {
-    font: var(--textMobile18-24);
-    margin-bottom: 24px;
-  }
-}

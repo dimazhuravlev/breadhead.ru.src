@@ -2,11 +2,11 @@
   padding-top: 56px;
 }
 
-/* .desktopCases {
+.desktopCases {
   @media (max-width: 600px) {
     display: none;
   }
-} */
+}
 
 .mobileCases {
   @media (min-width: 601px) {

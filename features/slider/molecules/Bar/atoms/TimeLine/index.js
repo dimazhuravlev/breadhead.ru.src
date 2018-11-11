@@ -1,22 +1,32 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Spring } from 'react-spring'
-import { TimingAnimation, Easing } from 'react-spring/dist/addons.cjs'
 import { SLIDE_DELAY } from '@site/constants'
 import styles from './timeLine.css'
-
 class TimeLine extends React.Component {
+  transform = 0
+
   render() {
-    const { active, onRest, animate } = this.props
+    const {
+      active,
+      onRest,
+      animate,
+      isVisible,
+      index,
+      activeIndex,
+    } = this.props
+
     return (
       <Spring
         reset={active}
-        immediate={!animate}
-        from={{ transform: 0 }}
-        to={{ transform: active ? 1 : 0 }}
-        impl={TimingAnimation}
-        config={{ duration: SLIDE_DELAY, easing: Easing.linear }}
+        // immediate={!animate}
+        from={{ transform: index < activeIndex ? 1 : this.transform }}
+        to={{ transform: active && isVisible ? 1 : this.transform }}
+        config={{ duration: SLIDE_DELAY - SLIDE_DELAY * this.transform }}
         onRest={onRest}
+        onFrame={({ transform }) => {
+          this.transform = transform
+        }}
       >
         {({ transform }) => {
           return (
@@ -36,7 +46,7 @@ class TimeLine extends React.Component {
 TimeLine.propTypes = {
   active: PropTypes.bool,
   onRest: PropTypes.oneOfType([PropTypes.bool, PropTypes.func]),
-  animate: PropTypes.bool
+  animate: PropTypes.bool,
 }
 
 export default TimeLine
