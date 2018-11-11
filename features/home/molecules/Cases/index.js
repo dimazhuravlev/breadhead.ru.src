@@ -1,6 +1,5 @@
 import React from 'react'
 import { scroller } from 'react-scroll'
-import VisibilitySensor from 'react-visibility-sensor'
 
 import Case from '@site/features/case'
 import Button from '@site/ui/molecules/Button'
