@@ -1,13 +1,11 @@
 import React from 'react'
 import { templatesMap } from '@site/features/slider/molecules/Templates'
-// import VisibilitySensor from 'react-visibility-sensor'
 
 const Container = Component =>
   class extends React.Component {
     constructor(props) {
       super(props)
       this.state = {
-        index: 0,
         slideComponents: (props.slides || []).map(
           item => templatesMap[item.type]
         ),
@@ -15,8 +13,8 @@ const Container = Component =>
     }
 
     render() {
-      const { index, direction, slideComponents } = this.state
-      const { className, slides } = this.props
+      const { slideComponents } = this.state
+      const { slides } = this.props
 
       return (
         <Component>

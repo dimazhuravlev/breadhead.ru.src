@@ -5,30 +5,32 @@ import TimeLine from '../../molecules/Bar/atoms/TimeLine'
 import styles from './bar.css'
 
 class Bar extends React.Component {
-  state = { key: Math.random() }
-
-  componentDidUpdate(prevProps) {
-    if (prevProps.index !== 0 && this.props.index === 0) {
-      this.setState({ key: Math.random() })
-    }
-  }
   render() {
     const { onRest, index, quantity, isVisible } = this.props
     const timeLines = range(quantity)
 
     return (
-      <div key={this.state.key} className={styles.bar}>
-        {timeLines.map(timeLine => (
-          <TimeLine
-            activeIndex={index}
-            index={timeLine}
-            isVisible={isVisible}
-            animate={index === timeLine}
-            key={timeLine}
-            onRest={timeLine === index && isVisible ? onRest : () => {}}
-            active={index >= timeLine}
-          />
-        ))}
+      <div className={styles.bar}>
+        {timeLines.map(timeLine => {
+          let state
+          if (!isVisible && index === timeLine) {
+            state = 'frozen'
+          } else if (isVisible && index === timeLine) {
+            state = 'active'
+          } else if (index < timeLine) {
+            state = 'empty'
+          } else if (index > timeLine) {
+            state = 'full'
+          }
+          return (
+            <TimeLine
+              index={index}
+              onRest={onRest}
+              key={timeLine}
+              state={state}
+            />
+          )
+        })}
       </div>
     )
   }

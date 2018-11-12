@@ -1,6 +1,7 @@
 import React from 'react'
 import withSizes from 'react-sizes'
 import SlickSlider from 'react-slick'
+import { Gesture } from 'react-with-gesture'
 import VisibilitySensor from 'react-visibility-sensor'
 import styles from './Slider.css'
 import './SliderGlobal.css?CSSModulesDisable'
@@ -32,34 +33,37 @@ class Slider extends React.PureComponent {
   render() {
     const { children, height } = this.props
     const { index } = this.state
+    const minTopValue = height > 600 ? height / 2.5 : height / 2
+    const offset = { top: height / 2 }
 
     return (
-      <VisibilitySensor
-        minTopValue={height > 600 ? height / 2.5 : height / 2}
-        offset={{ top: height / 2 }}
-        partialVisibility
-      >
-        {({ isVisible }) => (
-          <div className={styles.wrapper}>
-            <Bar
-              index={index}
-              isVisible={isVisible}
-              quantity={children.length}
-              onRest={this.sliderRef.slickNext}
-            />
-            <SlickSlider
-              ref={slider => (this.sliderRef = slider)}
-              beforeChange={this.beforeChange}
-              {...settings}
-            >
-              {children}
-            </SlickSlider>
-            <span className={styles.sensor}>
-              {isVisible ? 'visible' : 'invisible'}
-            </span>
-          </div>
+      <Gesture>
+        {({ down }) => (
+          <VisibilitySensor
+            minTopValue={minTopValue}
+            offset={offset}
+            partialVisibility
+          >
+            {({ isVisible }) => (
+              <div className={styles.wrapper}>
+                <Bar
+                  index={index}
+                  isVisible={isVisible && !down}
+                  quantity={children.length}
+                  onRest={this.sliderRef.slickNext}
+                />
+                <SlickSlider
+                  ref={slider => (this.sliderRef = slider)}
+                  beforeChange={this.beforeChange}
+                  {...settings}
+                >
+                  {children}
+                </SlickSlider>
+              </div>
+            )}
+          </VisibilitySensor>
         )}
-      </VisibilitySensor>
+      </Gesture>
     )
   }
 }
