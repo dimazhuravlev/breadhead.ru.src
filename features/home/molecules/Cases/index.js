@@ -80,7 +80,7 @@ class Cases extends React.Component {
           )}
           icon={this.state.isShown ? <MinusIcon /> : <PlusIcon />}
         >
-          {this.state.isShown ? 'свернуть' : 'ещё'}
+          {this.state.isShown ? 'скрыть' : 'ещё'}
         </Button>
       </>
     )
