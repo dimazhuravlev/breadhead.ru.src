@@ -21,12 +21,16 @@
   visibility: visible;
   opacity: 1;
   transform: translateY(0px);
+  -webkit-transform: translateY(0px);
   transition: all 0.6s ease-in-out;
+  -webkit-transition: all 0.6s ease-in-out;
 }
 
 .inVisible {
   visibility: hidden;
   opacity: 0;
   transform: translateY(30px);
+  -webkit-transform: translateY(30px);
   transition: all 0.6s ease-in-out;
+  -webkit-transition: all 0.6s ease-in-out;
 }
