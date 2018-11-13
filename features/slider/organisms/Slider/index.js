@@ -1,6 +1,7 @@
 import React from 'react'
 import withSizes from 'react-sizes'
 import SlickSlider from 'react-slick'
+import cx from 'classnames'
 import { Gesture } from 'react-with-gesture'
 import VisibilitySensor from 'react-visibility-sensor'
 import styles from './Slider.css'
@@ -11,7 +12,7 @@ import Bar from '../../molecules/Bar'
 
 const settings = {
   prevArrow: <NavButton className={styles.navButton} direction="left" />,
-  nextArrow: <NavButton className={styles.navButton} direction="right" />,
+  nextArrow: <NavButton className={styles.navButton} direction="right" />
 }
 class Slider extends React.PureComponent {
   state = { index: 0 }
@@ -32,7 +33,7 @@ class Slider extends React.PureComponent {
   sliderRef = React.createRef()
 
   render() {
-    const { children, height } = this.props
+    const { children, height, className } = this.props
     const { index } = this.state
     const minTopValue = height > 600 ? height / 2.5 : height / 2
     const offset = { top: height / 2 }
@@ -46,7 +47,7 @@ class Slider extends React.PureComponent {
             partialVisibility
           >
             {({ isVisible }) => (
-              <div className={styles.wrapper}>
+              <div className={cx(styles.wrapper, className)}>
                 <Bar
                   index={index}
                   isVisible={isVisible && !down}
@@ -72,7 +73,7 @@ class Slider extends React.PureComponent {
 
 const mapSizesToProps = ({ width, height }) => ({
   width,
-  height,
+  height
 })
 
 export default withSizes(mapSizesToProps)(Slider)

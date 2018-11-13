@@ -4,16 +4,29 @@
 
 .slick-slide {
   position: relative;
-  height: auto !important;
-  min-height: none !important;
-  max-height: none !important;
   display: flex !important;
   overflow: hidden !important;
+  /* min-height: none !important;
+  max-height: none !important; */
+  height: 100%;
 }
 
 .slick-slide > div {
   flex-grow: 1;
   width: 100%;
+  height: 40vw;
+}
+
+@media (max-width: 1024px) {
+  .slick-slide > div {
+    height: 60vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .slick-slide > div {
+    height: 130vw;
+  }
 }
 
 .slick-arrow,
@@ -25,9 +38,11 @@
 .slick-slider .slick-arrow {
   visibility: hidden;
   opacity: 0;
+  transition: all 0.4s ease;
 }
 
 .slick-slider:hover .slick-arrow {
   visibility: visible;
   opacity: 1;
+  transition: all 0.4s ease;
 }

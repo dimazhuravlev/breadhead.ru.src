@@ -21,7 +21,7 @@ class Case extends React.Component {
         }}
         partialVisibility
         delayedCall
-        offset={{ bottom: 40 }}
+        offset={{ bottom: 0 }}
       >
         <section
           name={name}
@@ -41,7 +41,7 @@ class Case extends React.Component {
 
 Case.propTypes = {
   description: PropTypes.object.isRequired,
-  slides: PropTypes.arrayOf(PropTypes.object),
+  slides: PropTypes.arrayOf(PropTypes.object)
 }
 
 export default Case

@@ -5,8 +5,6 @@ export default class MyDocument extends Document {
     return (
       <html>
         <Head>
-          <title>Breadhead – разработка цифровых сервисов</title>
-
           <link
             rel="apple-touch-icon"
             sizes="180x180"

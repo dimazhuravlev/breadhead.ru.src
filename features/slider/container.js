@@ -8,16 +8,16 @@ const Container = Component =>
       this.state = {
         slideComponents: (props.slides || []).map(
           item => templatesMap[item.type]
-        ),
+        )
       }
     }
 
     render() {
       const { slideComponents } = this.state
-      const { slides } = this.props
+      const { slides, ...rest } = this.props
 
       return (
-        <Component>
+        <Component {...rest}>
           {slideComponents.map((SlideComponent, i) => (
             <SlideComponent key={i} {...slides[i].data} />
           ))}
