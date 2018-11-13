@@ -16,3 +16,10 @@
     margin-bottom: 40px;
   }
 }
+
+.sliderWrapper {
+  width: 75%;
+  @media (max-width: 1023px) {
+    width: 100%;
+  }
+}
