@@ -1,4 +1,5 @@
 .descriptor {
+  flex-shrink: 0;
   margin-right: 44px;
   width: calc(25% - 44px);
   @media (max-width: 1024px) {

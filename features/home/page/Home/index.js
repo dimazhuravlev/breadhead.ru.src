@@ -12,7 +12,6 @@ import { aboutDataDesktop } from '@site/data/aboutDataDesktop'
 import { aboutDataMobile } from '@site/data/aboutDataMobile'
 import { howWeWorkDataDesktop } from '@site/data/howWeWorkDataDesktop'
 import { howWeWorkDataMobile } from '@site/data/howWeWorkDataMobile'
-
 import styles from './home.css'
 import cx from 'classnames'
 
