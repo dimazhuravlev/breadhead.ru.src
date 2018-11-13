@@ -21,7 +21,6 @@ class Case extends React.Component {
         }}
         partialVisibility
         delayedCall
-        offset={{ bottom: 0 }}
       >
         <section
           name={name}

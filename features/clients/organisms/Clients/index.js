@@ -21,7 +21,6 @@ class Clients extends React.Component {
         }}
         partialVisibility
         delayedCall
-        offset={{ bottom: 40 }}
       >
         <section
           className={cx(

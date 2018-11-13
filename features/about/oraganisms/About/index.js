@@ -25,7 +25,6 @@ class About extends React.Component {
         }}
         partialVisibility
         delayedCall
-        offset={{ bottom: 40 }}
       >
         <section
           name={name}

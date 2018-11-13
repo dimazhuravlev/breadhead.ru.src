@@ -25,7 +25,6 @@ class Footer extends React.Component {
             }}
             partialVisibility
             delayedCall
-            offset={{ bottom: 40 }}
           >
             <div
               className={cx(
