@@ -5,6 +5,7 @@ import { Gesture } from 'react-with-gesture'
 import VisibilitySensor from 'react-visibility-sensor'
 import styles from './Slider.css'
 import './SliderGlobal.css?CSSModulesDisable'
+import SliderAmount from '@site/ui/molecules/SliderAmount'
 import NavButton from '../../molecules/NavButton'
 import Bar from '../../molecules/Bar'
 
@@ -52,6 +53,7 @@ class Slider extends React.PureComponent {
                   quantity={children.length}
                   onRest={this.sliderRef.slickNext}
                 />
+                <SliderAmount amount={children.length} />
                 <SlickSlider
                   ref={slider => (this.sliderRef = slider)}
                   beforeChange={this.beforeChange}
