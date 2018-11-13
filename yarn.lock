@@ -3198,9 +3198,9 @@ eslint-visitor-keys@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/eslint-visitor-keys/-/eslint-visitor-keys-1.0.0.tgz#3f3180fb2e291017716acb4c9d6d5b5c34a6a81d"
 
-eslint@^5.8.0:
-  version "5.8.0"
-  resolved "https://registry.yarnpkg.com/eslint/-/eslint-5.8.0.tgz#91fbf24f6e0471e8fdf681a4d9dd1b2c9f28309b"
+eslint@^5.9.0:
+  version "5.9.0"
+  resolved "https://registry.yarnpkg.com/eslint/-/eslint-5.9.0.tgz#b234b6d15ef84b5849c6de2af43195a2d59d408e"
   dependencies:
     "@babel/code-frame" "^7.0.0"
     ajv "^6.5.3"
@@ -4063,23 +4063,13 @@ ignore@^3.3.5:
   version "3.3.10"
   resolved "https://registry.yarnpkg.com/ignore/-/ignore-3.3.10.tgz#0a97fb876986e8081c631160f8f9f389157f0043"
 
-ignore@^4.0.0, ignore@^4.0.6:
+ignore@^4.0.6:
   version "4.0.6"
   resolved "https://registry.yarnpkg.com/ignore/-/ignore-4.0.6.tgz#750e3db5862087b4737ebac8207ffd1ef27b25fc"
 
-import-cwd@^2.0.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/import-cwd/-/import-cwd-2.1.0.tgz#aa6cf36e722761285cb371ec6519f53e2435b0a9"
-  integrity sha1-qmzzbnInYShcs3HsZRn1PiQ1sKk=
-  dependencies:
-    import-from "^2.1.0"
-
-import-from@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/import-from/-/import-from-2.1.0.tgz#335db7f2a7affd53aaa471d4b8021dee36b7f3b1"
-  integrity sha1-M1238qev/VOqpHHUuAId7ja387E=
-  dependencies:
-    resolve-from "^3.0.0"
+ignore@^5.0.4:
+  version "5.0.4"
+  resolved "https://registry.yarnpkg.com/ignore/-/ignore-5.0.4.tgz#33168af4a21e99b00c5d41cbadb6a6cb49903a45"
 
 import-lazy@^3.1.0:
   version "3.1.0"
@@ -5794,9 +5784,9 @@ normalize-url@^1.9.1:
     query-string "^4.1.0"
     sort-keys "^1.0.0"
 
-normalize.css@^8.0.0:
-  version "8.0.0"
-  resolved "https://registry.yarnpkg.com/normalize.css/-/normalize.css-8.0.0.tgz#14ac5e461612538a4ce9be90a7da23f86e718493"
+normalize.css@^8.0.1:
+  version "8.0.1"
+  resolved "https://registry.yarnpkg.com/normalize.css/-/normalize.css-8.0.1.tgz#9b98a208738b9cc2634caacbc42d131c97487bf3"
 
 npm-bundled@^1.0.1:
   version "1.0.5"
@@ -6566,9 +6556,9 @@ postcss-safe-parser@^4.0.0:
   dependencies:
     postcss "^7.0.0"
 
-postcss-sass@^0.3.0:
-  version "0.3.3"
-  resolved "https://registry.yarnpkg.com/postcss-sass/-/postcss-sass-0.3.3.tgz#bec188ac285d21ac8feba194c2f327fdda31e671"
+postcss-sass@^0.3.5:
+  version "0.3.5"
+  resolved "https://registry.yarnpkg.com/postcss-sass/-/postcss-sass-0.3.5.tgz#6d3e39f101a53d2efa091f953493116d32beb68c"
   dependencies:
     gonzales-pe "^4.2.3"
     postcss "^7.0.1"
@@ -6965,14 +6955,14 @@ react-with-gesture@^2.0.4:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/react-with-gesture/-/react-with-gesture-2.0.4.tgz#3b1095b55b937d0ca89b9d4570bc35c1e3238236"
 
-react@^16.6.1:
-  version "16.6.1"
-  resolved "https://registry.yarnpkg.com/react/-/react-16.6.1.tgz#ee2aef4f0a09e494594882029821049772f915fe"
+react@^16.6.3:
+  version "16.6.3"
+  resolved "https://registry.yarnpkg.com/react/-/react-16.6.3.tgz#25d77c91911d6bbdd23db41e70fb094cc1e0871c"
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
     prop-types "^15.6.2"
-    scheduler "^0.11.0"
+    scheduler "^0.11.2"
 
 read-pkg-up@^1.0.1:
   version "1.0.1"
@@ -7444,7 +7434,20 @@ scheduler@^0.11.0:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
 
-schema-utils@^0.4.4, schema-utils@^0.4.5:
+scheduler@^0.11.2:
+  version "0.11.2"
+  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.11.2.tgz#a8db5399d06eba5abac51b705b7151d2319d33d3"
+  dependencies:
+    loose-envify "^1.1.0"
+    object-assign "^4.1.1"
+
+schema-utils@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/schema-utils/-/schema-utils-0.3.0.tgz#f5877222ce3e931edae039f17eb3716e7137f8cf"
+  dependencies:
+    ajv "^5.0.0"
+
+schema-utils@^0.4.2:
   version "0.4.7"
   resolved "https://registry.yarnpkg.com/schema-utils/-/schema-utils-0.4.7.tgz#ba74f597d2be2ea880131746ee17d0a093c68187"
   integrity sha512-v/iwU6wvwGK8HbU9yi3/nhGzP0yGSuhQMzL6ySiec1FSrZZDkhm4noOSWzrNFo/jEc+SJY6jRTwuwbSXJPDUnQ==
@@ -7572,6 +7575,10 @@ sisteransi@^0.1.1:
 slash@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/slash/-/slash-1.0.0.tgz#c41f2f6c39fc16d1cd17ad4b5d896114ae470d55"
+
+slash@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/slash/-/slash-2.0.0.tgz#de552851a1759df3a8f206535442f5ec4ddeab44"
 
 slice-ansi@1.0.0:
   version "1.0.0"
@@ -7902,9 +7909,9 @@ stylelint-config-recommended@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/stylelint-config-recommended/-/stylelint-config-recommended-2.1.0.tgz#f526d5c771c6811186d9eaedbed02195fee30858"
 
-stylelint@^9.7.1:
-  version "9.7.1"
-  resolved "https://registry.yarnpkg.com/stylelint/-/stylelint-9.7.1.tgz#522f8795832a9f7e062e5e4105c0e05fb53f827f"
+stylelint@^9.8.0:
+  version "9.8.0"
+  resolved "https://registry.yarnpkg.com/stylelint/-/stylelint-9.8.0.tgz#bfdade6360d82afe820d6b15251b01acf8ffd04d"
   dependencies:
     autoprefixer "^9.0.0"
     balanced-match "^1.0.0"
@@ -7918,7 +7925,7 @@ stylelint@^9.7.1:
     globby "^8.0.0"
     globjoin "^0.1.4"
     html-tags "^2.0.0"
-    ignore "^4.0.0"
+    ignore "^5.0.4"
     import-lazy "^3.1.0"
     imurmurhash "^0.1.4"
     known-css-properties "^0.9.0"
@@ -7927,7 +7934,7 @@ stylelint@^9.7.1:
     log-symbols "^2.0.0"
     mathml-tag-names "^2.0.1"
     meow "^5.0.0"
-    micromatch "^2.3.11"
+    micromatch "^3.1.10"
     normalize-selector "^0.2.0"
     pify "^4.0.0"
     postcss "^7.0.0"
@@ -7939,7 +7946,7 @@ stylelint@^9.7.1:
     postcss-reporter "^6.0.0"
     postcss-resolve-nested-selector "^0.1.1"
     postcss-safe-parser "^4.0.0"
-    postcss-sass "^0.3.0"
+    postcss-sass "^0.3.5"
     postcss-scss "^2.0.0"
     postcss-selector-parser "^3.1.0"
     postcss-styled "^0.34.0"
@@ -7947,6 +7954,7 @@ stylelint@^9.7.1:
     postcss-value-parser "^3.3.0"
     resolve-from "^4.0.0"
     signal-exit "^3.0.2"
+    slash "^2.0.0"
     specificity "^0.4.1"
     string-width "^2.1.0"
     style-search "^0.1.0"
