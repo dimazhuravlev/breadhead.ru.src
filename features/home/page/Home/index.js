@@ -1,5 +1,4 @@
 import React from 'react'
-import { Spring } from 'react-spring'
 
 import Header from '@site/features/header'
 import Intro from '@site/features/intro'
@@ -17,23 +16,8 @@ import cx from 'classnames'
 
 const Home = () => (
   <main>
-    <Spring
-      from={{ opacity: 0, transform: 'translateY(-20px)' }}
-      to={{ opacity: 1, transform: 'translateY(0px)' }}
-      config={{ tension: 280, friction: 120 }}
-    >
-      {props => <Header style={props} />}
-    </Spring>
-
-    <Spring
-      // delay="250"
-      from={{ opacity: 0, transform: 'translateY(20px)' }}
-      to={{ opacity: 1, transform: 'translateY(0px)' }}
-      config={{ tension: 280, friction: 120 }}
-    >
-      {props => <Intro style={props} />}
-    </Spring>
-
+    <Header />
+    <Intro />
     <Cases />
     <Clients />
     <About

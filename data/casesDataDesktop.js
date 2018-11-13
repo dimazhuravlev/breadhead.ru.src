@@ -25,14 +25,14 @@ export const casesDataDesktop = [
           src: '/static/video/faster_show_popup_1440.mp4'
         }
       },
-      {
-        type: TemplatesNames.PhonesVideoDesktop,
-        data: {
-          srcLeft: '/static/video/catalog.mov',
-          srcCenter: '/static/video/map.mov',
-          srcRight: '/static/video/slider_scroll.mov'
-        }
-      },
+      // {
+      //   type: TemplatesNames.PhonesVideoDesktop,
+      //   data: {
+      //     srcLeft: '/static/video/catalog.mov',
+      //     srcCenter: '/static/video/map.mov',
+      //     srcRight: '/static/video/slider_scroll.mov'
+      //   }
+      // },
       {
         type: TemplatesNames.ArticleDesktop,
         data: {
@@ -249,6 +249,12 @@ export const casesDataDesktop = [
       ]
     },
     slides: [
+      {
+        type: TemplatesNames.FrameVideoDesktop,
+        data: {
+          src: '/static/video/encore-club_video_comp.mp4'
+        }
+      },
       {
         type: TemplatesNames.PictureDesktop,
         data: {
