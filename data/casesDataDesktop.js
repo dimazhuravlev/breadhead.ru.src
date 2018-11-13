@@ -20,6 +20,12 @@ export const casesDataDesktop = [
         }
       },
       {
+        type: TemplatesNames.FrameVideoDesktop,
+        data: {
+          src: '/static/video/faster_show_popup_1440.mp4'
+        }
+      },
+      {
         type: TemplatesNames.PhonesVideoDesktop,
         data: {
           srcLeft: '/static/video/catalog.mov',
