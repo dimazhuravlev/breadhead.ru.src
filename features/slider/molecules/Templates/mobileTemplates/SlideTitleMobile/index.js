@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import SlideText from '@site/features/slider/molecules/SlideText'
+import SlideText from '@site/ui/molecules/SlideText'
 import ArticleIconBlock from '@site/ui/molecules/ArticleIconBlock'
 import styles from './slideTitleMobile.css'
 
@@ -23,7 +23,7 @@ SlideTitleMobile.propTypes = {
   title: PropTypes.string,
   description: PropTypes.arrayOf(PropTypes.string),
   links: PropTypes.arrayOf(PropTypes.object),
-  backgroundColor: PropTypes.string
+  backgroundColor: PropTypes.string,
 }
 
 export default SlideTitleMobile

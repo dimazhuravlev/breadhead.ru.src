@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import SlideText from '@site/features/slider/molecules/SlideText'
+import SlideText from '@site/ui/molecules/SlideText'
 import ArticleIconBlock from '../../../ArticleIconBlock'
 import styles from './slideNavDesktop.css'
 

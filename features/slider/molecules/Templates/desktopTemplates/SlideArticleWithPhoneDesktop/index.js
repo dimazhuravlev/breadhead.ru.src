@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import SlideText from '@site/features/slider/molecules/SlideText'
+import SlideText from '@site/ui/molecules/SlideText'
 import ArticleIconBlock from '@site/ui/molecules/ArticleIconBlock'
 import styles from './slideArticleWithPhoneDesktop.css'
 
@@ -9,7 +9,7 @@ const SlideArticleWithPhoneDesktop = ({
   description,
   links,
   src,
-  backgroundColor
+  backgroundColor,
 }) => (
   <div style={{ backgroundColor: backgroundColor }}>
     <div className={styles.wrapper}>
@@ -30,7 +30,7 @@ SlideArticleWithPhoneDesktop.propTypes = {
   description: PropTypes.arrayOf(PropTypes.string),
   links: PropTypes.arrayOf(PropTypes.object),
   src: PropTypes.string.isRequired,
-  backgroundColor: PropTypes.string
+  backgroundColor: PropTypes.string,
 }
 
 export default SlideArticleWithPhoneDesktop
