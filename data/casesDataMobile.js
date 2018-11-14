@@ -99,5 +99,146 @@ export const casesDataMobile = [
         }
       }
     ]
+  },
+
+  {
+    description: {
+      type: 'проект',
+      name: 'Обед Буфет. Приложушечка'
+    },
+    slides: [
+      {
+        type: TemplatesNames.PictureMobile,
+        data: {
+          src: '/static/img/obedBufet/cover_obedbufet_mobile_fullslide.png'
+        }
+      },
+      {
+        type: TemplatesNames.ArticleMobile,
+        data: {
+          title: 'Обед Буфет. Закажи пожрать',
+          description: [
+            'Проектировали, прототипировали, рисовали, а они уже год программируют. Ну сколько можно ёпта?'
+          ],
+          links: [
+            {
+              icontype: 'globe',
+              href: 'https://apple.com',
+              text: 'iOS'
+            },
+            {
+              icontype: 'globe',
+              href: 'https://android.com',
+              text: 'Android'
+            }
+          ]
+        }
+      },
+      {
+        type: TemplatesNames.FramePictMobile,
+        data: {
+          src: '/static/img/obedBufet/1-main_obedbufet_mobile.jpg'
+        }
+      },
+      {
+        type: TemplatesNames.FramePictMobile,
+        data: {
+          src: '/static/img/obedBufet/2-catalog_obedbufet_mobile.jpg'
+        }
+      },
+      {
+        type: TemplatesNames.FramePictMobile,
+        data: {
+          src: '/static/img/obedBufet/3-product_obedbufet_mobile.jpg'
+        }
+      },
+      {
+        type: TemplatesNames.FramePictMobile,
+        data: {
+          src: '/static/img/obedBufet/4-profile_obedbufet_mobile.jpg'
+        }
+      },
+      {
+        type: TemplatesNames.FramePictMobile,
+        data: {
+          src: '/static/img/obedBufet/5-address_obedbufet_mobile.jpg'
+        }
+      },
+      {
+        type: TemplatesNames.FramePictMobile,
+        data: {
+          src: '/static/img/obedBufet/6-history_obedbufet_mobile.jpg'
+        }
+      },
+      {
+        type: TemplatesNames.PictureMobile,
+        data: {
+          src: '/static/img/obedBufet/7-rest_obedbufet_mobile-fullscreen.png'
+        }
+      }
+    ]
+  },
+
+  {
+    description: {
+      type: 'подборка',
+      name: 'E-commerce проекты'
+    },
+    slides: [
+      {
+        type: TemplatesNames.PictureMobile,
+        data: {
+          src: '/static/img/yamiyami.jpg'
+        }
+      },
+      {
+        type: TemplatesNames.FramePictMobile,
+        data: {
+          src: '/static/img/yamisite.png'
+        }
+      }
+    ]
+  },
+
+  {
+    description: {
+      type: 'проект',
+      name: 'Encore Fitness. Качалка за тонну бабла'
+    },
+    slides: [
+      {
+        type: TemplatesNames.PictureMobile,
+        data: {
+          src: '/static/img/encore.jpg'
+        }
+      },
+      {
+        type: TemplatesNames.PictureMobile,
+        data: {
+          src: '/static/img/encore2.jpg'
+        }
+      }
+    ]
+  },
+
+  {
+    description: {
+      type: 'проект',
+      name: 'Чевостик. И дядя Кузя'
+    },
+    slides: [
+      {
+        type: TemplatesNames.PictureMobile,
+        data: {
+          src: '/static/img/chevostik2.png'
+        }
+      },
+      {
+        type: TemplatesNames.FramePictMobile,
+        data: {
+          src: '/static/img/chevostik.png'
+        }
+      }
+    ]
   }
 ]

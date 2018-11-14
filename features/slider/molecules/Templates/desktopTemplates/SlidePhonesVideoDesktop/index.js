@@ -3,8 +3,13 @@ import PropTypes from 'prop-types'
 import VideoPlayer from '@site/features/slider/molecules/VideoPlayer'
 import styles from './slidePhonesVideoDesktop.css'
 
-const SlidePhonesVideoDesktop = ({ srcLeft, srcCenter, srcRight }) => (
-  <div className={styles.slide}>
+const SlidePhonesVideoDesktop = ({
+  srcLeft,
+  srcCenter,
+  srcRight,
+  backgroundColor
+}) => (
+  <div style={{ backgroundColor: backgroundColor }} className={styles.slide}>
     <div className={styles.phones}>
       <div className={styles.phone}>
         <VideoPlayer
@@ -39,7 +44,8 @@ const SlidePhonesVideoDesktop = ({ srcLeft, srcCenter, srcRight }) => (
 SlidePhonesVideoDesktop.propTypes = {
   srcLeft: PropTypes.string.isRequired,
   srcCenter: PropTypes.string.isRequired,
-  srcRight: PropTypes.string.isRequired
+  srcRight: PropTypes.string.isRequired,
+  backgroundColor: PropTypes.string
 }
 
 export default SlidePhonesVideoDesktop

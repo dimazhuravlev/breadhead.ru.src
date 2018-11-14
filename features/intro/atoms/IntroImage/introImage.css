@@ -1,16 +1,29 @@
 .introImage {
+  z-index: -1;
+  position: absolute;
+  right: 56px;
+  margin-top: 18px;
   flex-shrink: 1;
   width: auto;
-  height: 17vw;
-  align-self: flex-end;
-  transition: all 1s ease;
-  @media (max-width: 1200px) {
-    height: 27vw;
-    transition: all 1s ease;
+  height: 26vw;
+
+  @media (max-width: 1440px) {
+    right: 34px;
+    height: 34vw;
   }
+
+  @media (max-width: 1200px) {
+    height: 32vw;
+  }
+
+  @media (max-width: 1024px) {
+    right: 16px;
+  }
+
   @media (max-width: 600px) {
+    position: static;
+    margin-top: 0;
     width: 100%;
     height: auto;
-    transition: all 1s ease;
   }
 }

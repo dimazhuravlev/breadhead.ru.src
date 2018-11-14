@@ -20,13 +20,19 @@ export const casesDataDesktop = [
         }
       },
       {
-        type: TemplatesNames.PhonesVideoDesktop,
+        type: TemplatesNames.FrameVideoDesktop,
         data: {
-          srcLeft: '/static/video/catalog.mov',
-          srcCenter: '/static/video/map.mov',
-          srcRight: '/static/video/slider_scroll.mov'
+          src: '/static/video/faster_show_popup_1440.mp4'
         }
       },
+      // {
+      //   type: TemplatesNames.PhonesVideoDesktop,
+      //   data: {
+      //     srcLeft: '/static/video/catalog.mov',
+      //     srcCenter: '/static/video/map.mov',
+      //     srcRight: '/static/video/slider_scroll.mov'
+      //   }
+      // },
       {
         type: TemplatesNames.ArticleDesktop,
         data: {
@@ -137,6 +143,155 @@ export const casesDataDesktop = [
         type: TemplatesNames.FramePictDesktop,
         data: {
           src: '/static/img/yamisite.png'
+        }
+      }
+    ]
+  },
+
+  {
+    description: {
+      type: 'приложение',
+      name: 'Обед Буфет'
+    },
+    slides: [
+      {
+        type: TemplatesNames.PictureDesktop,
+        data: {
+          src: '/static/img/obedBufet/cover_obedbufet_desktop_fullslide.jpg'
+        }
+      },
+      {
+        type: TemplatesNames.ArticleWithPhoneDesktop,
+        data: {
+          title: 'Обед Буфет. Закажи пожрать',
+          description: [
+            'Проектировали, прототипировали, рисовали, а они уже год программируют. Ну сколько можно ёпта?'
+          ],
+          links: [
+            {
+              icontype: 'globe',
+              href: 'https://apple.com',
+              text: 'iOS'
+            },
+            {
+              icontype: 'globe',
+              href: 'https://android.com',
+              text: 'Android'
+            }
+          ],
+          src: '/static/img/obedBufet/0-location_obedbufet_mobile.jpg'
+        }
+      },
+      {
+        type: TemplatesNames.PhonesDesktop,
+        data: {
+          srcLeft: '/static/img/obedBufet/1-main_obedbufet_mobile.jpg',
+          srcCenter: '/static/img/obedBufet/2-catalog_obedbufet_mobile.jpg',
+          srcRight: '/static/img/obedBufet/3-product_obedbufet_mobile.jpg',
+          backgroundSrc:
+            '/static/img/obedBufet/cover_obedbufet_desktop_fullslide.jpg'
+        }
+      },
+      {
+        type: TemplatesNames.PhonesDesktop,
+        data: {
+          srcLeft: '/static/img/obedBufet/4-profile_obedbufet_mobile.jpg',
+          srcCenter: '/static/img/obedBufet/5-address_obedbufet_mobile.jpg',
+          srcRight: '/static/img/obedBufet/6-history_obedbufet_mobile.jpg',
+          backgroundColor: 'pink'
+        }
+      },
+      {
+        type: TemplatesNames.PictureDesktop,
+        data: {
+          src: '/static/img/obedBufet/7-rest_obedbufet_desktop-fullscreen.jpg'
+        }
+      }
+    ]
+  },
+
+  {
+    description: {
+      type: 'подборка',
+      name: 'E-commerce проекты',
+      links: [
+        {
+          icontype: 'globe',
+          href: 'https://yamiyami.ru'
+        }
+      ]
+    },
+    slides: [
+      {
+        type: TemplatesNames.PictureDesktop,
+        data: {
+          src: '/static/img/yamiyami.jpg'
+        }
+      },
+      {
+        type: TemplatesNames.FramePictDesktop,
+        data: {
+          src: '/static/img/yamisite.png'
+        }
+      }
+    ]
+  },
+
+  {
+    description: {
+      type: 'проект',
+      name: 'Encore Fitness. Качалка за тонну бабла',
+      links: [
+        {
+          icontype: 'globe',
+          href: 'https://encorefitness.ru'
+        }
+      ]
+    },
+    slides: [
+      {
+        type: TemplatesNames.FrameVideoDesktop,
+        data: {
+          src: '/static/video/encore-club_video_comp.mp4'
+        }
+      },
+      {
+        type: TemplatesNames.PictureDesktop,
+        data: {
+          src: '/static/img/encore.jpg'
+        }
+      },
+      {
+        type: TemplatesNames.PictureDesktop,
+        data: {
+          src: '/static/img/encore2.jpg'
+        }
+      }
+    ]
+  },
+
+  {
+    description: {
+      type: 'проект',
+      name: 'Чевостик. И дядя Кузя',
+      links: [
+        {
+          icontype: 'globe',
+          href: 'https://chevostik.ru'
+        }
+      ]
+    },
+    slides: [
+      {
+        type: TemplatesNames.PictureDesktop,
+        data: {
+          src: '/static/img/chevostik2.png'
+        }
+      },
+      {
+        type: TemplatesNames.FramePictDesktop,
+        data: {
+          src: '/static/img/chevostik.png'
         }
       }
     ]

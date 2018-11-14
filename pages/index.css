@@ -47,8 +47,8 @@ div {
 }
 
 ::selection {
-  background-color: rgba(224, 215, 206, 0);
-  color: var(--redPrimary);
+  background-color: var(--redPrimary);
+  color: var(--darkPrimary);
 }
 
 a {

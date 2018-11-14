@@ -1,35 +1,7 @@
-.cases {
-  padding-top: 56px;
-}
-
-.desktopCases {
-  @media (max-width: 600px) {
-    display: none;
-  }
-}
-
-.mobileCases {
-  @media (min-width: 601px) {
-    display: none;
-  }
-}
-
-.plusButton {
-  margin-bottom: 160px;
-  margin-left: calc(25% + 28px);
-  @media (max-width: 1440px) {
-    margin-left: calc(25% + 17px);
-  }
-  @media (max-width: 1023px) {
-    margin-bottom: 80px;
-    margin-left: 16px;
-  }
-}
-
 .howWeWork {
   padding-top: 56px;
   margin-bottom: 160px;
-  @media (max-width: 1023px) {
+  @media (max-width: 1024px) {
     margin-bottom: 80px;
   }
 }
