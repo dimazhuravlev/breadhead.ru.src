@@ -16,13 +16,15 @@ class About extends React.Component {
     this.state = { isVisible: false }
   }
 
+  onVisibilityChange = isVisible => {
+    !this.state.isVisible && isVisible && this.setState({ isVisible })
+  }
+
   render() {
     const { aboutDataDesktop, aboutDataMobile, name } = this.props
     return (
       <VisibilitySensor
-        onChange={isVisible => {
-          !this.state.isVisible && isVisible && this.setState({ isVisible })
-        }}
+        onChange={this.onVisibilityChange}
         partialVisibility
         delayedCall
       >

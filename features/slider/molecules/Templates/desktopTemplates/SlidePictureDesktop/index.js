@@ -7,7 +7,7 @@ const SlidePictureDesktop = ({ src }) => (
 )
 
 SlidePictureDesktop.propTypes = {
-  src: PropTypes.string.isRequired
+  src: PropTypes.string.isRequired,
 }
 
-export default SlidePictureDesktop
+export default React.memo(SlidePictureDesktop)

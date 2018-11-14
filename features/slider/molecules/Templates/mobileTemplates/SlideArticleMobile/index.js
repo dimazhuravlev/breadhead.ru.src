@@ -22,4 +22,4 @@ SlideArticleMobile.propTypes = {
   backgroundColor: PropTypes.string,
 }
 
-export default SlideArticleMobile
+export default React.memo(SlideArticleMobile)

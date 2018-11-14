@@ -26,4 +26,4 @@ SlideTitleDesktop.propTypes = {
   backgroundColor: PropTypes.string,
 }
 
-export default SlideTitleDesktop
+export default React.memo(SlideTitleDesktop)

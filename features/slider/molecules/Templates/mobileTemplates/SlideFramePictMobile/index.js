@@ -12,7 +12,7 @@ const SlideFramePictMobile = ({ src, backgroundColor }) => (
 
 SlideFramePictMobile.propTypes = {
   src: PropTypes.string.isRequired,
-  backgroundColor: PropTypes.string
+  backgroundColor: PropTypes.string,
 }
 
-export default SlideFramePictMobile
+export default React.memo(SlideFramePictMobile)

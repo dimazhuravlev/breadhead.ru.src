@@ -33,4 +33,4 @@ SlideArticleWithPhoneDesktop.propTypes = {
   backgroundColor: PropTypes.string,
 }
 
-export default SlideArticleWithPhoneDesktop
+export default React.memo(SlideArticleWithPhoneDesktop)
