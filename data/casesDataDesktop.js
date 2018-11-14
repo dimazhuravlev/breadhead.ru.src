@@ -8,22 +8,23 @@ export const casesDataDesktop = [
       links: [
         {
           icontype: 'globe',
-          href: 'https://faster.ru'
-        }
-      ]
+          href: 'https://faster.ru',
+        },
+      ],
     },
+    // priority: true, // set true if slider is really needed
     slides: [
       {
         type: TemplatesNames.FramePictDesktop,
         data: {
-          src: '/static/img/FasterScreenShot.png'
-        }
+          src: '/static/img/FasterScreenShot.png',
+        },
       },
       {
         type: TemplatesNames.FrameVideoDesktop,
         data: {
-          src: '/static/video/faster_show_popup_1440.mp4'
-        }
+          src: '/static/video/faster_show_popup_1440.mp4',
+        },
       },
       // {
       //   type: TemplatesNames.PhonesVideoDesktop,
@@ -39,38 +40,38 @@ export const casesDataDesktop = [
           title: 'Сервис для бронирования лекарств в аптеках города',
           description: [
             'Мы консультировали клиента, помогая описать бизнес-логику.',
-            'Спроектировали и разработали веб-приложение на React и Android-приложение для аптек.'
+            'Спроектировали и разработали веб-приложение на React и Android-приложение для аптек.',
           ],
           links: [
             {
               icontype: 'globe',
               href: 'https://.nenaprasno.ru',
-              text: 'justask.nenaprasno.ru'
-            }
-          ]
-        }
+              text: 'justask.nenaprasno.ru',
+            },
+          ],
+        },
       },
       {
         type: TemplatesNames.FramePictDesktop,
         data: {
-          src: '/static/img/faster_product_page_desktop.png'
-        }
+          src: '/static/img/faster_product_page_desktop.png',
+        },
       },
       {
         type: TemplatesNames.PictureDesktop,
         data: {
-          src: '/static/img/faster.png'
-        }
+          src: '/static/img/faster.png',
+        },
       },
       {
         type: TemplatesNames.PhonesDesktop,
         data: {
           srcLeft: '/static/img/faster_mobile.png',
           srcCenter: '/static/img/faster_product_page.png',
-          srcRight: '/static/img/faster_map.png'
-        }
-      }
-    ]
+          srcRight: '/static/img/faster_map.png',
+        },
+      },
+    ],
   },
 
   {
@@ -80,13 +81,13 @@ export const casesDataDesktop = [
       links: [
         {
           icontype: 'globe',
-          href: 'https://yamiyami.ru'
+          href: 'https://yamiyami.ru',
         },
         {
           icontype: 'article',
-          href: 'https://medium.com/breadhead-stories/yami-yami-c7f2b5916442'
-        }
-      ]
+          href: 'https://medium.com/breadhead-stories/yami-yami-c7f2b5916442',
+        },
+      ],
     },
     slides: [
       {
@@ -94,22 +95,22 @@ export const casesDataDesktop = [
         data: {
           title: 'Yami Yami — вкуснее, чем всё',
           description: [
-            'Мы консультировали клиента, помогая описать бизнес-логику. Спроектировали и разработали веб-приложение на React и Android-приложение для аптек.'
+            'Мы консультировали клиента, помогая описать бизнес-логику. Спроектировали и разработали веб-приложение на React и Android-приложение для аптек.',
           ],
           links: [
             {
               icontype: 'globe',
               href: 'https://.faster.ru',
-              text: 'faster.ru'
+              text: 'faster.ru',
             },
             {
               icontype: 'article',
               href: 'https://.article.faster.ru',
-              text: 'анонс на сайте'
-            }
+              text: 'анонс на сайте',
+            },
           ],
-          src: '/static/img/faster_map.png'
-        }
+          src: '/static/img/faster_map.png',
+        },
       },
       {
         type: TemplatesNames.ArticleDesktop,
@@ -117,70 +118,70 @@ export const casesDataDesktop = [
           title:
             'Какая разница сколько часов вам везут еду, если её везут из Yami Yami?',
           description: [
-            'Люди приходят в восторг, когда впервые видят сайт Yami Yami. А когда еда приезжает к ним домой, они просто сходят с ума от фирменной упаковки и маленькой машинки Smart, которую хочеться облизывать.'
+            'Люди приходят в восторг, когда впервые видят сайт Yami Yami. А когда еда приезжает к ним домой, они просто сходят с ума от фирменной упаковки и маленькой машинки Smart, которую хочеться облизывать.',
           ],
           links: [
             {
               icontype: 'globe',
               href: 'https://yamiyami.ru/menu',
-              text: 'Yami Yami'
+              text: 'Yami Yami',
             },
             {
               icontype: 'article',
               href: 'https://medium.com/breadhead-stories',
-              text: 'Medium'
-            }
-          ]
-        }
+              text: 'Medium',
+            },
+          ],
+        },
       },
       {
         type: TemplatesNames.PictureDesktop,
         data: {
-          src: '/static/img/yamiyami.jpg'
-        }
+          src: '/static/img/yamiyami.jpg',
+        },
       },
       {
         type: TemplatesNames.FramePictDesktop,
         data: {
-          src: '/static/img/yamisite.png'
-        }
-      }
-    ]
+          src: '/static/img/yamisite.png',
+        },
+      },
+    ],
   },
 
   {
     description: {
       type: 'приложение',
-      name: 'Обед Буфет'
+      name: 'Обед Буфет',
     },
     slides: [
       {
         type: TemplatesNames.PictureDesktop,
         data: {
-          src: '/static/img/obedBufet/cover_obedbufet_desktop_fullslide.jpg'
-        }
+          src: '/static/img/obedBufet/cover_obedbufet_desktop_fullslide.jpg',
+        },
       },
       {
         type: TemplatesNames.ArticleWithPhoneDesktop,
         data: {
           title: 'Обед Буфет. Закажи пожрать',
           description: [
-            'Проектировали, прототипировали, рисовали, а они уже год программируют. Ну сколько можно ёпта?'
+            'Проектировали, прототипировали, рисовали, а они уже год программируют. Ну сколько можно ёпта?',
           ],
           links: [
             {
               icontype: 'globe',
               href: 'https://apple.com',
-              text: 'iOS'
+              text: 'iOS',
             },
             {
               icontype: 'globe',
               href: 'https://android.com',
-              text: 'Android'
-            }
+              text: 'Android',
+            },
           ],
-          src: '/static/img/obedBufet/0-location_obedbufet_mobile.jpg'
-        }
+          src: '/static/img/obedBufet/0-location_obedbufet_mobile.jpg',
+        },
       },
       {
         type: TemplatesNames.PhonesDesktop,
@@ -189,8 +190,8 @@ export const casesDataDesktop = [
           srcCenter: '/static/img/obedBufet/2-catalog_obedbufet_mobile.jpg',
           srcRight: '/static/img/obedBufet/3-product_obedbufet_mobile.jpg',
           backgroundSrc:
-            '/static/img/obedBufet/cover_obedbufet_desktop_fullslide.jpg'
-        }
+            '/static/img/obedBufet/cover_obedbufet_desktop_fullslide.jpg',
+        },
       },
       {
         type: TemplatesNames.PhonesDesktop,
@@ -198,16 +199,16 @@ export const casesDataDesktop = [
           srcLeft: '/static/img/obedBufet/4-profile_obedbufet_mobile.jpg',
           srcCenter: '/static/img/obedBufet/5-address_obedbufet_mobile.jpg',
           srcRight: '/static/img/obedBufet/6-history_obedbufet_mobile.jpg',
-          backgroundColor: 'pink'
-        }
+          backgroundColor: 'pink',
+        },
       },
       {
         type: TemplatesNames.PictureDesktop,
         data: {
-          src: '/static/img/obedBufet/7-rest_obedbufet_desktop-fullscreen.jpg'
-        }
-      }
-    ]
+          src: '/static/img/obedBufet/7-rest_obedbufet_desktop-fullscreen.jpg',
+        },
+      },
+    ],
   },
 
   {
@@ -217,24 +218,24 @@ export const casesDataDesktop = [
       links: [
         {
           icontype: 'globe',
-          href: 'https://yamiyami.ru'
-        }
-      ]
+          href: 'https://yamiyami.ru',
+        },
+      ],
     },
     slides: [
       {
         type: TemplatesNames.PictureDesktop,
         data: {
-          src: '/static/img/yamiyami.jpg'
-        }
+          src: '/static/img/yamiyami.jpg',
+        },
       },
       {
         type: TemplatesNames.FramePictDesktop,
         data: {
-          src: '/static/img/yamisite.png'
-        }
-      }
-    ]
+          src: '/static/img/yamisite.png',
+        },
+      },
+    ],
   },
 
   {
@@ -244,30 +245,30 @@ export const casesDataDesktop = [
       links: [
         {
           icontype: 'globe',
-          href: 'https://encorefitness.ru'
-        }
-      ]
+          href: 'https://encorefitness.ru',
+        },
+      ],
     },
     slides: [
       {
         type: TemplatesNames.FrameVideoDesktop,
         data: {
-          src: '/static/video/encore-club_video_comp.mp4'
-        }
+          src: '/static/video/encore-club_video_comp.mp4',
+        },
       },
       {
         type: TemplatesNames.PictureDesktop,
         data: {
-          src: '/static/img/encore.jpg'
-        }
+          src: '/static/img/encore.jpg',
+        },
       },
       {
         type: TemplatesNames.PictureDesktop,
         data: {
-          src: '/static/img/encore2.jpg'
-        }
-      }
-    ]
+          src: '/static/img/encore2.jpg',
+        },
+      },
+    ],
   },
 
   {
@@ -277,23 +278,23 @@ export const casesDataDesktop = [
       links: [
         {
           icontype: 'globe',
-          href: 'https://chevostik.ru'
-        }
-      ]
+          href: 'https://chevostik.ru',
+        },
+      ],
     },
     slides: [
       {
         type: TemplatesNames.PictureDesktop,
         data: {
-          src: '/static/img/chevostik2.png'
-        }
+          src: '/static/img/chevostik2.png',
+        },
       },
       {
         type: TemplatesNames.FramePictDesktop,
         data: {
-          src: '/static/img/chevostik.png'
-        }
-      }
-    ]
-  }
+          src: '/static/img/chevostik.png',
+        },
+      },
+    ],
+  },
 ]

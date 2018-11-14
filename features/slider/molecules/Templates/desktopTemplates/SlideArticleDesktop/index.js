@@ -27,4 +27,4 @@ SlideArticleDesktop.propTypes = {
   backgroundColor: PropTypes.string,
 }
 
-export default SlideArticleDesktop
+export default React.memo(SlideArticleDesktop)

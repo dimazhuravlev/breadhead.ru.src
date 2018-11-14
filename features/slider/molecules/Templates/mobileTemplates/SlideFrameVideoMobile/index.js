@@ -13,7 +13,7 @@ const SlideFrameVideoMobile = ({ src, backgroundColor }) => (
 
 SlideFrameVideoMobile.propTypes = {
   src: PropTypes.string.isRequired,
-  backgroundColor: PropTypes.string
+  backgroundColor: PropTypes.string,
 }
 
-export default SlideFrameVideoMobile
+export default React.memo(SlideFrameVideoMobile)

@@ -34,4 +34,4 @@ SlideNavMobile.propTypes = {
   backgroundColor: PropTypes.string,
 }
 
-export default SlideNavMobile
+export default React.memo(SlideNavMobile)

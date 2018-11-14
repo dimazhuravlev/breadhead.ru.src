@@ -42,4 +42,4 @@ Bar.propTypes = {
   quantity: PropTypes.number,
 }
 
-export default Bar
+export default React.memo(Bar)

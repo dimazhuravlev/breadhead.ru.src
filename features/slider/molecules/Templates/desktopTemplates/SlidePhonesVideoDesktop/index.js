@@ -7,7 +7,7 @@ const SlidePhonesVideoDesktop = ({
   srcLeft,
   srcCenter,
   srcRight,
-  backgroundColor
+  backgroundColor,
 }) => (
   <div style={{ backgroundColor: backgroundColor }} className={styles.slide}>
     <div className={styles.phones}>
@@ -45,7 +45,7 @@ SlidePhonesVideoDesktop.propTypes = {
   srcLeft: PropTypes.string.isRequired,
   srcCenter: PropTypes.string.isRequired,
   srcRight: PropTypes.string.isRequired,
-  backgroundColor: PropTypes.string
+  backgroundColor: PropTypes.string,
 }
 
-export default SlidePhonesVideoDesktop
+export default React.memo(SlidePhonesVideoDesktop)

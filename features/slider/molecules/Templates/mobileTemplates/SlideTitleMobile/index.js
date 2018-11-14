@@ -26,4 +26,4 @@ SlideTitleMobile.propTypes = {
   backgroundColor: PropTypes.string,
 }
 
-export default SlideTitleMobile
+export default React.memo(SlideTitleMobile)

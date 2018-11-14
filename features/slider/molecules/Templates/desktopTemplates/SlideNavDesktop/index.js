@@ -34,4 +34,4 @@ SlideNavDesktop.propTypes = {
   backgroundColor: PropTypes.string,
 }
 
-export default SlideNavDesktop
+export default React.memo(SlideNavDesktop)
