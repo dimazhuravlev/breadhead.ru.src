@@ -6,6 +6,7 @@ export const casesDataMobile = [
       type: 'проект',
       name: 'Faster. Новый опыт покупки лекарств',
     },
+    priority: true,
     slides: [
       {
         type: TemplatesNames.FramePictMobile,

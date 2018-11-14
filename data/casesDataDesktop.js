@@ -12,6 +12,7 @@ export const casesDataDesktop = [
         },
       ],
     },
+    // priority: true, // set true if slider is really needed
     slides: [
       {
         type: TemplatesNames.FramePictDesktop,
