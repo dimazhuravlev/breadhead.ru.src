@@ -1,17 +1,17 @@
 @font-face {
-  font-family: 'Aeroport-light';
-  src: url('/static/fonts/Aeroport-light.svg#aeroport') format('svg'),
-    url('/static/fonts/Aeroport-light.ttf') format('truetype'),
-    url('/static/fonts/Aeroport-light.eot?#iefix') format('eot'),
-    url('/static/fonts/Aeroport-light.woff') format('woff'),
-    url('/static/fonts/Aeroport-light.woff2') format('woff2');
+  font-family: "Aeroport-light";
+  src: url("/static/fonts/Aeroport-light.svg#aeroport") format("svg"),
+    url("/static/fonts/Aeroport-light.ttf") format("truetype"),
+    url("/static/fonts/Aeroport-light.eot?#iefix") format("eot"),
+    url("/static/fonts/Aeroport-light.woff") format("woff"),
+    url("/static/fonts/Aeroport-light.woff2") format("woff2");
   font-weight: 200;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'GraphikLight';
-  src: url('/static/fonts/Graphik-Light-Cy-Web.woff') format('woff');
+  font-family: "GraphikLight";
+  src: url("/static/fonts/Graphik-Light-Cy-Web.woff") format("woff");
   font-weight: 200;
 }
 
