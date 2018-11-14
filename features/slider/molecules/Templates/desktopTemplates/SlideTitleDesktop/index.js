@@ -23,7 +23,7 @@ SlideTitleDesktop.propTypes = {
   title: PropTypes.string,
   description: PropTypes.arrayOf(PropTypes.string),
   links: PropTypes.arrayOf(PropTypes.object),
-  backgroundColor: PropTypes.string
+  backgroundColor: PropTypes.string,
 }
 
 export default SlideTitleDesktop

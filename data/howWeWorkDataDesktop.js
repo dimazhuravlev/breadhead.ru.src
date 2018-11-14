@@ -13,7 +13,7 @@ export const howWeWorkDataDesktop = {
   },
   slides: [
     {
-      type: TemplatesNames.TitleDesktop,
+      type: TemplatesNames.NavDesktop,
       data: {
         title: 'Принципы проектной работы и коммуникации Breadhead',
         links: [

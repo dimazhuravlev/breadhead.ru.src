@@ -39,6 +39,14 @@ class Slider extends React.PureComponent {
     this.setState(() => ({ index }))
   }
 
+  onLinkClick = id => {
+    const { slides } = this.props
+    const slideIndex = slides.findIndex(slide => slide.id === id)
+    if (slideIndex !== -1) {
+      this.sliderRef.slickGoTo(slideIndex)
+    }
+  }
+
   sliderRef = React.createRef()
 
   render() {
@@ -70,7 +78,11 @@ class Slider extends React.PureComponent {
                   {...settings}
                 >
                   {slideComponents.map((SlideComponent, i) => (
-                    <SlideComponent key={i} {...slides[i].data} />
+                    <SlideComponent
+                      onLinkClick={this.onLinkClick}
+                      key={i}
+                      {...slides[i].data}
+                    />
                   ))}
                 </SlickSlider>
               </div>
