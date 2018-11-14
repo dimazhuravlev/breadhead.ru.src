@@ -12,6 +12,7 @@ import NavButton from '../../molecules/NavButton'
 import Bar from '../../molecules/Bar'
 
 const settings = {
+  lazyLoad: 'progressive',
   prevArrow: <NavButton className={styles.navButton} direction="left" />,
   nextArrow: <NavButton className={styles.navButton} direction="right" />,
 }
@@ -59,6 +60,7 @@ class Slider extends React.PureComponent {
       <Gesture>
         {({ down }) => (
           <VisibilitySensor
+            onChange={this.onVisibilityChange}
             minTopValue={minTopValue}
             offset={offset}
             partialVisibility
