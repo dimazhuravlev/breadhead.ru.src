@@ -1,0 +1,9 @@
+.articleIconBlock {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 16px;
+}
+
+.articleIconLink {
+  margin-bottom: 16px;
+}

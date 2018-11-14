@@ -1,9 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import ExternalLink from '@site/ui/molecules/ExternalLink'
 import { GlobeIcon } from '@site/ui/atoms/icons'
 import { ArticleIcon } from '@site/ui/atoms/icons'
-import styles from './iconLink.css'
+import styles from './iconButton.css'
 import cx from 'classnames'
 
 const iconsMap = {
@@ -11,28 +10,28 @@ const iconsMap = {
   article: ArticleIcon,
 }
 
-class IconLink extends React.Component {
+class IconButton extends React.Component {
   render() {
-    const { icontype, description, href, text, className } = this.props
+    const { icontype, description, text, className, onClick } = this.props
     const Icon = iconsMap[icontype]
 
     return (
-      <div className={cx(styles.iconLink, className)}>
+      <div className={cx(styles.iconButton, className)}>
         {description && <div className={styles.description}>{description}</div>}
-        <ExternalLink className={styles.link} href={href}>
+        <button onClick={onClick} className={styles.button}>
           {Icon && <Icon className={styles.icon} />}
           {text && <div className={styles.text}>{text}</div>}
-        </ExternalLink>
+        </button>
       </div>
     )
   }
 }
 
-IconLink.propTypes = {
+IconButton.propTypes = {
+  onClick: PropTypes.func,
   icontype: PropTypes.oneOf(['globe', 'article']),
-  href: PropTypes.string.isRequired,
   description: PropTypes.string,
   text: PropTypes.string,
 }
 
-export default IconLink
+export default IconButton

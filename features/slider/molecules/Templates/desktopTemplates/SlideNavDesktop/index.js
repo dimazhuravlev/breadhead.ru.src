@@ -1,14 +1,15 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import ArticleIconBlock from '@site/ui/molecules/ArticleIconBlock'
-import styles from './slideArticleDesktop.css'
 import SlideText from '@site/ui/molecules/SlideText'
+import ArticleIconBlock from '../../../ArticleIconBlock'
+import styles from './slideNavDesktop.css'
 
-const SlideArticleDesktop = ({
+const SlideNavDesktop = ({
   title,
   description,
   links,
   backgroundColor,
+  onLinkClick,
 }) => (
   <article
     style={{ backgroundColor: backgroundColor }}
@@ -16,15 +17,21 @@ const SlideArticleDesktop = ({
   >
     {title && <h2 className={styles.title}>{title}</h2>}
     <SlideText description={description} />
-    <ArticleIconBlock links={links} />
+    <ArticleIconBlock
+      onLinkClick={onLinkClick}
+      links={links}
+      classNameIcon={styles.articleIconLink}
+      classNameBlock={styles.articleIconBlock}
+    />
   </article>
 )
 
-SlideArticleDesktop.propTypes = {
+SlideNavDesktop.propTypes = {
+  onLinkClick: PropTypes.func,
   title: PropTypes.string,
   description: PropTypes.arrayOf(PropTypes.string),
   links: PropTypes.arrayOf(PropTypes.object),
   backgroundColor: PropTypes.string,
 }
 
-export default SlideArticleDesktop
+export default SlideNavDesktop

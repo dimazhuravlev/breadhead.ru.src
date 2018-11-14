@@ -3,6 +3,7 @@ import withSizes from 'react-sizes'
 import SlickSlider from 'react-slick'
 import cx from 'classnames'
 import { Gesture } from 'react-with-gesture'
+import { templatesMap } from '@site/features/slider/molecules/Templates'
 import VisibilitySensor from 'react-visibility-sensor'
 import styles from './Slider.css'
 import './SliderGlobal.css?CSSModulesDisable'
@@ -12,10 +13,18 @@ import Bar from '../../molecules/Bar'
 
 const settings = {
   prevArrow: <NavButton className={styles.navButton} direction="left" />,
-  nextArrow: <NavButton className={styles.navButton} direction="right" />
+  nextArrow: <NavButton className={styles.navButton} direction="right" />,
 }
 class Slider extends React.PureComponent {
-  state = { index: 0 }
+  constructor(props) {
+    super(props)
+    this.state = {
+      index: 0,
+      slideComponents: (props.slides || []).map(
+        item => templatesMap[item.type]
+      ),
+    }
+  }
 
   componentDidUpdate(prevProps, prevState) {
     const { index: prevIndex } = prevState
@@ -30,11 +39,19 @@ class Slider extends React.PureComponent {
     this.setState(() => ({ index }))
   }
 
+  onLinkClick = id => {
+    const { slides } = this.props
+    const slideIndex = slides.findIndex(slide => slide.id === id)
+    if (slideIndex !== -1) {
+      this.sliderRef.slickGoTo(slideIndex)
+    }
+  }
+
   sliderRef = React.createRef()
 
   render() {
-    const { children, height, className } = this.props
-    const { index } = this.state
+    const { height, className, slides } = this.props
+    const { index, slideComponents } = this.state
     const minTopValue = height > 600 ? height / 2.5 : height / 2
     const offset = { top: height / 2 }
 
@@ -51,16 +68,22 @@ class Slider extends React.PureComponent {
                 <Bar
                   index={index}
                   isVisible={isVisible && !down}
-                  quantity={children.length}
+                  quantity={slides.length}
                   onRest={this.sliderRef.slickNext}
                 />
-                <SliderAmount amount={children.length} />
+                <SliderAmount amount={slides.length} />
                 <SlickSlider
                   ref={slider => (this.sliderRef = slider)}
                   beforeChange={this.beforeChange}
                   {...settings}
                 >
-                  {children}
+                  {slideComponents.map((SlideComponent, i) => (
+                    <SlideComponent
+                      onLinkClick={this.onLinkClick}
+                      key={i}
+                      {...slides[i].data}
+                    />
+                  ))}
                 </SlickSlider>
               </div>
             )}
@@ -73,7 +96,7 @@ class Slider extends React.PureComponent {
 
 const mapSizesToProps = ({ width, height }) => ({
   width,
-  height
+  height,
 })
 
 export default withSizes(mapSizesToProps)(Slider)

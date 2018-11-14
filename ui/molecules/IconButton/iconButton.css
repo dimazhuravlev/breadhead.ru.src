@@ -1,0 +1,61 @@
+.iconButton {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+  margin-right: 32px;
+}
+
+.description {
+  margin-right: 8px;
+  font: var(--text24-32);
+  color: var(--beigePrimary);
+  @media (max-width: 1200px) {
+    font: var(--textMobile18-24);
+  }
+}
+
+.text {
+  font: var(--text24-32);
+  color: var(--beigeSecondary);
+  @media (max-width: 1200px) {
+    font: var(--textMobile18-24);
+  }
+}
+
+.button {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.15s ease-in;
+  &:hover g {
+    fill: var(--redPrimary);
+    transition: all 0.15s ease-in;
+  }
+  &:hover rect {
+    fill: var(--redPrimary);
+    transition: all 0.15s ease-in;
+  }
+  &:hover .text {
+    color: var(--redPrimary);
+    transition: all 0.15s ease-in;
+  }
+  &:active g {
+    fill: var(--redSecondary);
+    transition: all 0.15s ease-in;
+  }
+  &:active rect {
+    fill: var(--redSecondary);
+    transition: all 0.15s ease-in;
+  }
+  &:active .text {
+    color: var(--redSecondary);
+    transition: all 0.15s ease-in;
+  }
+}
+
+.icon {
+  margin-right: 8px;
+}
