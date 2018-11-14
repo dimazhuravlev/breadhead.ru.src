@@ -1,6 +1,5 @@
 import SlidePictureDesktop from './desktopTemplates/SlidePictureDesktop'
 import SlideArticleDesktop from './desktopTemplates/SlideArticleDesktop'
-import SlideTitleDesktop from './desktopTemplates/SlideTitleDesktop'
 import SlideFramePictDesktop from './desktopTemplates/SlideFramePictDesktop'
 import SlideFrameVideoDesktop from './desktopTemplates/SlideFrameVideoDesktop'
 import SlidePhonesDesktop from './desktopTemplates/SlidePhonesDesktop'
@@ -10,7 +9,6 @@ import SlideNavDesktop from './desktopTemplates/SlideNavDesktop'
 
 import SlidePictureMobile from './mobileTemplates/SlidePictureMobile'
 import SlideArticleMobile from './mobileTemplates/SlideArticleMobile'
-import SlideTitleMobile from './mobileTemplates/SlideTitleMobile'
 import SlideFramePictMobile from './mobileTemplates/SlideFramePictMobile'
 import SlideFrameVideoMobile from './mobileTemplates/SlideFrameVideoMobile'
 import SlideNavMobile from './mobileTemplates/SlideNavMobile'
@@ -18,7 +16,6 @@ import SlideNavMobile from './mobileTemplates/SlideNavMobile'
 export const TemplatesNames = {
   PictureDesktop: 'pictureDesktop',
   ArticleDesktop: 'articleDesktop',
-  TitleDesktop: 'titleDesktop',
   FramePictDesktop: 'framePictDesktop',
   FrameVideoDesktop: 'frameVideoDesktop',
   PhonesDesktop: 'phonesDesktop',
@@ -28,16 +25,14 @@ export const TemplatesNames = {
 
   PictureMobile: 'pictureMobile',
   ArticleMobile: 'articleMobile',
-  TitleMobile: 'titleMobile',
   FramePictMobile: 'framePictMobile',
   FrameVideoMobile: 'frameVideoMobile',
-  NavMobile: 'navMobile',
+  NavMobile: 'navMobile'
 }
 
 export default {
   [TemplatesNames.PictureDesktop]: SlidePictureDesktop,
   [TemplatesNames.ArticleDesktop]: SlideArticleDesktop,
-  [TemplatesNames.TitleDesktop]: SlideTitleDesktop,
   [TemplatesNames.FramePictDesktop]: SlideFramePictDesktop,
   [TemplatesNames.FrameVideoDesktop]: SlideFrameVideoDesktop,
   [TemplatesNames.PhonesDesktop]: SlidePhonesDesktop,
@@ -47,8 +42,7 @@ export default {
 
   [TemplatesNames.PictureMobile]: SlidePictureMobile,
   [TemplatesNames.ArticleMobile]: SlideArticleMobile,
-  [TemplatesNames.TitleMobile]: SlideTitleMobile,
   [TemplatesNames.FramePictMobile]: SlideFramePictMobile,
   [TemplatesNames.FrameVideoMobile]: SlideFrameVideoMobile,
-  [TemplatesNames.NavMobile]: SlideNavMobile,
+  [TemplatesNames.NavMobile]: SlideNavMobile
 }
