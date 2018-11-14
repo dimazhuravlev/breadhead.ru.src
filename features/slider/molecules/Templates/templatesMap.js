@@ -31,6 +31,7 @@ export const TemplatesNames = {
   TitleMobile: 'titleMobile',
   FramePictMobile: 'framePictMobile',
   FrameVideoMobile: 'frameVideoMobile',
+  NavMobile: 'navMobile',
 }
 
 export default {

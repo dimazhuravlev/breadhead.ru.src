@@ -7,7 +7,7 @@ export const howWeWorkDataMobile = {
   },
   slides: [
     {
-      type: TemplatesNames.TitleMobile,
+      type: TemplatesNames.NavMobile,
       data: {
         title: 'Принципы проектной работы и коммуникации Breadhead',
         links: [
