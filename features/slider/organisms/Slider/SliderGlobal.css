@@ -1,5 +1,6 @@
 .slick-track {
   display: flex !important;
+  will-change: transform;
 }
 
 .slick-slide {

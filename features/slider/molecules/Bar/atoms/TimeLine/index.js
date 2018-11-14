@@ -79,4 +79,4 @@ TimeLine.propTypes = {
   animate: PropTypes.bool,
 }
 
-export default TimeLine
+export default React.memo(TimeLine)
