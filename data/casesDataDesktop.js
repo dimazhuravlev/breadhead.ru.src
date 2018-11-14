@@ -250,21 +250,77 @@ export const casesDataDesktop = [
     },
     slides: [
       {
+        type: TemplatesNames.PictureDesktop,
+        data: {
+          src: '/static/img/encoreDesktop/cover_encore_desktop_fullslide.jpg'
+        }
+      },
+      {
+        type: TemplatesNames.FramePictDesktop,
+        data: {
+          src: '/static/img/encoreDesktop/1-main_encore_desktop.jpg'
+        }
+      },
+      {
         type: TemplatesNames.FrameVideoDesktop,
         data: {
-          src: '/static/video/encore-club_video_comp.mp4'
+          src:
+            '/static/img/encoreDesktop/2-club_encore_desktop_opt/2-club_encore_desktop_opt.mp4'
+        }
+      },
+      {
+        type: TemplatesNames.FramePictDesktop,
+        data: {
+          src: '/static/img/encoreDesktop/3-trainers_encore_desktop.jpg'
+        }
+      },
+      {
+        type: TemplatesNames.FramePictDesktop,
+        data: {
+          src: '/static/img/encoreDesktop/4-cards_encore_desktop.jpg'
+        }
+      },
+      {
+        type: TemplatesNames.PhonesDesktop,
+        data: {
+          srcLeft:
+            '/static/img/encoreDesktop/9.1-main_encore_mobile-screen_desktop.jpg',
+          srcCenter:
+            '/static/img/encoreDesktop/9.2-trainers_encore_mobile-screen_desktop.jpg',
+          srcRight:
+            '/static/img/encoreDesktop/9.3-schedule_encore_mobile-screen_desktop.jpg'
+        }
+      },
+      {
+        type: TemplatesNames.FrameVideoDesktop,
+        data: {
+          src:
+            '/static/img/encoreDesktop/5-grouptraining_desktop_opt/5-grouptraining_desktop_opt.mp4'
+        }
+      },
+      {
+        type: TemplatesNames.FramePictDesktop,
+        data: {
+          src: '/static/img/encoreDesktop/6-schedule_encore_desktop.jpg'
+        }
+      },
+      {
+        type: TemplatesNames.FramePictDesktop,
+        data: {
+          src: '/static/img/encoreDesktop/7-workout_encore_desktop.jpg'
+        }
+      },
+      {
+        type: TemplatesNames.FramePictDesktop,
+        data: {
+          src: '/static/img/encoreDesktop/8-spa_encore_desktop.jpg'
         }
       },
       {
         type: TemplatesNames.PictureDesktop,
         data: {
-          src: '/static/img/encore.jpg'
-        }
-      },
-      {
-        type: TemplatesNames.PictureDesktop,
-        data: {
-          src: '/static/img/encore2.jpg'
+          src:
+            '/static/img/encoreDesktop/10_grid-desktop_encore_desktop_full-slide.jpg'
         }
       }
     ]

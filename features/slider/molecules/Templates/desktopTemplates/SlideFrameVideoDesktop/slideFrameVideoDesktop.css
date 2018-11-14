@@ -22,9 +22,9 @@
 
   @media (max-width: 1920px) {
     margin-left: -27vw;
-    margin-top: -16vw;
+    margin-top: -16.5vw;
     width: 54vw;
-    height: 32vw;
+    height: 33vw;
     border-radius: calc(4px + 3 * ((100vw - 1024px) / 896));
   }
 
