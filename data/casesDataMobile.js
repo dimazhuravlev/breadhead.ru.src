@@ -1,6 +1,7 @@
 import { TemplatesNames } from '@site/features/slider/molecules/Templates'
 
 export const casesDataMobile = [
+  /* FASTER MOBILE CASE */
   {
     description: {
       type: 'проект',
@@ -58,6 +59,7 @@ export const casesDataMobile = [
     ]
   },
 
+  /* YAMI YAMI MOBILE CASE */
   {
     description: {
       type: 'проект',
@@ -101,6 +103,7 @@ export const casesDataMobile = [
     ]
   },
 
+  /* OBED BUFET MOBILE CASE */
   {
     description: {
       type: 'проект',
@@ -110,7 +113,7 @@ export const casesDataMobile = [
       {
         type: TemplatesNames.PictureMobile,
         data: {
-          src: '/static/img/obedBufet/cover_obedbufet_mobile_fullslide.png'
+          src: '/static/img/obed_bufet/cover_obedbufet_mobile_fullslide.png'
         }
       },
       {
@@ -137,48 +140,49 @@ export const casesDataMobile = [
       {
         type: TemplatesNames.FramePictMobile,
         data: {
-          src: '/static/img/obedBufet/1-main_obedbufet_mobile.jpg'
+          src: '/static/img/obed_bufet/1-main_obedbufet_mobile.jpg'
         }
       },
       {
         type: TemplatesNames.FramePictMobile,
         data: {
-          src: '/static/img/obedBufet/2-catalog_obedbufet_mobile.jpg'
+          src: '/static/img/obed_bufet/2-catalog_obedbufet_mobile.jpg'
         }
       },
       {
         type: TemplatesNames.FramePictMobile,
         data: {
-          src: '/static/img/obedBufet/3-product_obedbufet_mobile.jpg'
+          src: '/static/img/obed_bufet/3-product_obedbufet_mobile.jpg'
         }
       },
       {
         type: TemplatesNames.FramePictMobile,
         data: {
-          src: '/static/img/obedBufet/4-profile_obedbufet_mobile.jpg'
+          src: '/static/img/obed_bufet/4-profile_obedbufet_mobile.jpg'
         }
       },
       {
         type: TemplatesNames.FramePictMobile,
         data: {
-          src: '/static/img/obedBufet/5-address_obedbufet_mobile.jpg'
+          src: '/static/img/obed_bufet/5-address_obedbufet_mobile.jpg'
         }
       },
       {
         type: TemplatesNames.FramePictMobile,
         data: {
-          src: '/static/img/obedBufet/6-history_obedbufet_mobile.jpg'
+          src: '/static/img/obed_bufet/6-history_obedbufet_mobile.jpg'
         }
       },
       {
         type: TemplatesNames.PictureMobile,
         data: {
-          src: '/static/img/obedBufet/7-rest_obedbufet_mobile-fullscreen.png'
+          src: '/static/img/obed_bufet/7-rest_obedbufet_mobile-fullscreen.png'
         }
       }
     ]
   },
 
+  /* E-COMMERCE MOBILE CASE */
   {
     description: {
       type: 'подборка',
@@ -200,6 +204,7 @@ export const casesDataMobile = [
     ]
   },
 
+  /* ENCORE FITNESS MOBILE CASE */
   {
     description: {
       type: 'проект',
@@ -209,18 +214,81 @@ export const casesDataMobile = [
       {
         type: TemplatesNames.PictureMobile,
         data: {
-          src: '/static/img/encore.jpg'
+          src:
+            '/static/img/encore_fitness/mobile/cover_encore_mobile_fullslide.jpg'
+        }
+      },
+      {
+        type: TemplatesNames.FramePictMobile,
+        data: {
+          src: '/static/img/encore_fitness/mobile/1-main_encore_mobile.jpg'
+        }
+      },
+      {
+        type: TemplatesNames.FrameVideoMobile,
+        data: {
+          src:
+            '/static/img/encore_fitness/mobile/2-club_encore_mobile/2-club_encore_mobile_opt.mp4'
         }
       },
       {
         type: TemplatesNames.PictureMobile,
         data: {
-          src: '/static/img/encore2.jpg'
+          src:
+            '/static/img/encore_fitness/mobile/3-desktop-screens_encore_mobile_fullslide.jpg'
+        }
+      },
+      {
+        type: TemplatesNames.FramePictMobile,
+        data: {
+          src:
+            '/static/img/encore_fitness/mobile/4-club-gallery_encore_mobile.jpg'
+        }
+      },
+      {
+        type: TemplatesNames.PictureMobile,
+        data: {
+          src:
+            '/static/img/encore_fitness/mobile/5-schedule-desktop_encore_mobile_fullslide.jpg'
+        }
+      },
+      {
+        type: TemplatesNames.FramePictMobile,
+        data: {
+          src: '/static/img/encore_fitness/mobile/6-schedule_encore_mobile.jpg'
+        }
+      },
+      {
+        type: TemplatesNames.PictureMobile,
+        data: {
+          src:
+            '/static/img/encore_fitness/mobile/7-desktop-screens_encore_mobile_fullslide.jpg'
+        }
+      },
+      {
+        type: TemplatesNames.FramePictMobile,
+        data: {
+          src: '/static/img/encore_fitness/mobile/8-trainers_encore_mobile.jpg'
+        }
+      },
+      {
+        type: TemplatesNames.PictureMobile,
+        data: {
+          src:
+            '/static/img/encore_fitness/mobile/9_grid-desktop_encore_mobile_full-slide.jpg'
+        }
+      },
+      {
+        type: TemplatesNames.PictureMobile,
+        data: {
+          src:
+            '/static/img/encore_fitness/mobile/10_phone-mockup_encore_mobile_full-slide.jpg'
         }
       }
     ]
   },
 
+  /* CHEVOSTIK MOBILE CASE */
   {
     description: {
       type: 'проект',

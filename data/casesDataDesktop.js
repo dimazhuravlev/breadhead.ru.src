@@ -1,6 +1,7 @@
 import { TemplatesNames } from '@site/features/slider/molecules/Templates'
 
 export const casesDataDesktop = [
+  /* FASTER DESKTOP CASE */
   {
     description: {
       type: 'проект',
@@ -13,6 +14,42 @@ export const casesDataDesktop = [
       ]
     },
     slides: [
+      {
+        type: TemplatesNames.PictureDesktop,
+        data: {
+          src: '/static/img/faster/desktop/Artboard.png'
+        }
+      },
+      {
+        type: TemplatesNames.PictureDesktop,
+        data: {
+          src: '/static/img/faster/desktop/search_block.png'
+        }
+      },
+      {
+        type: TemplatesNames.PictureDesktop,
+        data: {
+          src: '/static/img/faster/desktop/details.png'
+        }
+      },
+      {
+        type: TemplatesNames.PictureDesktop,
+        data: {
+          src: '/static/img/faster/desktop/details2.png'
+        }
+      },
+      {
+        type: TemplatesNames.PictureDesktop,
+        data: {
+          src: '/static/img/faster/desktop/details3.png'
+        }
+      },
+      {
+        type: TemplatesNames.PictureDesktop,
+        data: {
+          src: '/static/img/faster/desktop/details4.png'
+        }
+      },
       {
         type: TemplatesNames.FramePictDesktop,
         data: {
@@ -57,12 +94,6 @@ export const casesDataDesktop = [
         }
       },
       {
-        type: TemplatesNames.PictureDesktop,
-        data: {
-          src: '/static/img/faster.png'
-        }
-      },
-      {
         type: TemplatesNames.PhonesDesktop,
         data: {
           srcLeft: '/static/img/faster_mobile.png',
@@ -73,6 +104,7 @@ export const casesDataDesktop = [
     ]
   },
 
+  /* YAMI YAMI DESKTOP CASE */
   {
     description: {
       type: 'проект',
@@ -148,6 +180,7 @@ export const casesDataDesktop = [
     ]
   },
 
+  /* OBED BUFET DESKTOP CASE */
   {
     description: {
       type: 'приложение',
@@ -157,7 +190,7 @@ export const casesDataDesktop = [
       {
         type: TemplatesNames.PictureDesktop,
         data: {
-          src: '/static/img/obedBufet/cover_obedbufet_desktop_fullslide.jpg'
+          src: '/static/img/obed_bufet/cover_obedbufet_desktop_fullslide.jpg'
         }
       },
       {
@@ -179,37 +212,38 @@ export const casesDataDesktop = [
               text: 'Android'
             }
           ],
-          src: '/static/img/obedBufet/0-location_obedbufet_mobile.jpg'
+          src: '/static/img/obed_bufet/0-location_obedbufet_mobile.jpg'
         }
       },
       {
         type: TemplatesNames.PhonesDesktop,
         data: {
-          srcLeft: '/static/img/obedBufet/1-main_obedbufet_mobile.jpg',
-          srcCenter: '/static/img/obedBufet/2-catalog_obedbufet_mobile.jpg',
-          srcRight: '/static/img/obedBufet/3-product_obedbufet_mobile.jpg',
+          srcLeft: '/static/img/obed_bufet/1-main_obedbufet_mobile.jpg',
+          srcCenter: '/static/img/obed_bufet/2-catalog_obedbufet_mobile.jpg',
+          srcRight: '/static/img/obed_bufet/3-product_obedbufet_mobile.jpg',
           backgroundSrc:
-            '/static/img/obedBufet/cover_obedbufet_desktop_fullslide.jpg'
+            '/static/img/obed_bufet/cover_obedbufet_desktop_fullslide.jpg'
         }
       },
       {
         type: TemplatesNames.PhonesDesktop,
         data: {
-          srcLeft: '/static/img/obedBufet/4-profile_obedbufet_mobile.jpg',
-          srcCenter: '/static/img/obedBufet/5-address_obedbufet_mobile.jpg',
-          srcRight: '/static/img/obedBufet/6-history_obedbufet_mobile.jpg',
+          srcLeft: '/static/img/obed_bufet/4-profile_obedbufet_mobile.jpg',
+          srcCenter: '/static/img/obed_bufet/5-address_obedbufet_mobile.jpg',
+          srcRight: '/static/img/obed_bufet/6-history_obedbufet_mobile.jpg',
           backgroundColor: 'pink'
         }
       },
       {
         type: TemplatesNames.PictureDesktop,
         data: {
-          src: '/static/img/obedBufet/7-rest_obedbufet_desktop-fullscreen.jpg'
+          src: '/static/img/obed_bufet/7-rest_obedbufet_desktop-fullscreen.jpg'
         }
       }
     ]
   },
 
+  /* E-COMMERCE DESKTOP CASE */
   {
     description: {
       type: 'подборка',
@@ -237,6 +271,7 @@ export const casesDataDesktop = [
     ]
   },
 
+  /* ENCORE FITNESS DESKTOP CASE */
   {
     description: {
       type: 'проект',
@@ -252,80 +287,84 @@ export const casesDataDesktop = [
       {
         type: TemplatesNames.PictureDesktop,
         data: {
-          src: '/static/img/encoreDesktop/cover_encore_desktop_fullslide.jpg'
+          src:
+            '/static/img/encore_fitness/desktop/cover_encore_desktop_fullslide.jpg'
         }
       },
       {
         type: TemplatesNames.FramePictDesktop,
         data: {
-          src: '/static/img/encoreDesktop/1-main_encore_desktop.jpg'
+          src: '/static/img/encore_fitness/desktop/1-main_encore_desktop.jpg'
         }
       },
       {
         type: TemplatesNames.FrameVideoDesktop,
         data: {
           src:
-            '/static/img/encoreDesktop/2-club_encore_desktop_opt/2-club_encore_desktop_opt.mp4'
+            '/static/img/encore_fitness/desktop/2-club_encore_desktop_opt/2-club_encore_desktop_opt.mp4'
         }
       },
       {
         type: TemplatesNames.FramePictDesktop,
         data: {
-          src: '/static/img/encoreDesktop/3-trainers_encore_desktop.jpg'
+          src:
+            '/static/img/encore_fitness/desktop/3-trainers_encore_desktop.jpg'
         }
       },
       {
         type: TemplatesNames.FramePictDesktop,
         data: {
-          src: '/static/img/encoreDesktop/4-cards_encore_desktop.jpg'
+          src: '/static/img/encore_fitness/desktop/4-cards_encore_desktop.jpg'
         }
       },
       {
         type: TemplatesNames.PhonesDesktop,
         data: {
           srcLeft:
-            '/static/img/encoreDesktop/9.1-main_encore_mobile-screen_desktop.jpg',
+            '/static/img/encore_fitness/desktop/9.1-main_encore_mobile-screen_desktop.jpg',
           srcCenter:
-            '/static/img/encoreDesktop/9.2-trainers_encore_mobile-screen_desktop.jpg',
+            '/static/img/encore_fitness/desktop/9.2-trainers_encore_mobile-screen_desktop.jpg',
           srcRight:
-            '/static/img/encoreDesktop/9.3-schedule_encore_mobile-screen_desktop.jpg'
+            '/static/img/encore_fitness/desktop/9.3-schedule_encore_mobile-screen_desktop.jpg'
         }
       },
       {
         type: TemplatesNames.FrameVideoDesktop,
         data: {
           src:
-            '/static/img/encoreDesktop/5-grouptraining_desktop_opt/5-grouptraining_desktop_opt.mp4'
+            '/static/img/encore_fitness/desktop/5-grouptraining_desktop_opt/5-grouptraining_desktop_opt.mp4'
         }
       },
       {
         type: TemplatesNames.FramePictDesktop,
         data: {
-          src: '/static/img/encoreDesktop/6-schedule_encore_desktop.jpg'
+          src:
+            '/static/img/encore_fitness/desktop/6-schedule_encore_desktop.jpg'
         }
       },
       {
         type: TemplatesNames.FramePictDesktop,
         data: {
-          src: '/static/img/encoreDesktop/7-workout_encore_desktop.jpg'
+          src: '/static/img/encore_fitness/desktop/7-workout_encore_desktop.jpg'
         }
       },
       {
         type: TemplatesNames.FramePictDesktop,
         data: {
-          src: '/static/img/encoreDesktop/8-spa_encore_desktop.jpg'
+          src: '/static/img/encore_fitness/desktop/8-spa_encore_desktop.jpg'
         }
       },
       {
         type: TemplatesNames.PictureDesktop,
         data: {
           src:
-            '/static/img/encoreDesktop/10_grid-desktop_encore_desktop_full-slide.jpg'
+            '/static/img/encore_fitness/desktop/10_grid-desktop_encore_desktop_full-slide.jpg'
         }
       }
     ]
   },
 
+  /* CHEVOSTIK DESKTOP CASE */
   {
     description: {
       type: 'проект',
