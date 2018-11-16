@@ -14,7 +14,7 @@ const ArticleIconBlock = ({
       {links &&
         links.map(({ text, id, ...rest }) => (
           <IconButton
-            onClick={() => onLinkClick(id)}
+            onClick={e => onLinkClick(id, e)}
             key={id}
             className={cx(styles.articleIconLink, classNameIcon)}
             text={text}
