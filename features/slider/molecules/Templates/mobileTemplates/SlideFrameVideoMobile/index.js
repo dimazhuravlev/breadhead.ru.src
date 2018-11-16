@@ -6,7 +6,12 @@ import styles from './slideFrameVideoMobile.css'
 const SlideFrameVideoMobile = ({ src, backgroundColor }) => (
   <div style={{ backgroundColor: backgroundColor }} className={styles.slide}>
     <div className={styles.phone}>
-      <VideoPlayer src={src} width="220" height="410" />
+      <VideoPlayer
+        className={styles.video}
+        src={src}
+        width="220"
+        height="410"
+      />
     </div>
   </div>
 )

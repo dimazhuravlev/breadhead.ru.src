@@ -63,3 +63,19 @@
     width: calc(16px + 16 * ((100vw - 600px) / 1320));
   }
 }
+
+.video {
+  top: 24px;
+  width: 100%;
+  height: calc(100% - 24px);
+
+  @media (max-width: 1920px) {
+    top: 1.6vw;
+    height: calc(100% - 1.6vw);
+  }
+
+  @media (max-width: 1024px) {
+    top: 2vw;
+    height: calc(100% - 2vw);
+  }
+}

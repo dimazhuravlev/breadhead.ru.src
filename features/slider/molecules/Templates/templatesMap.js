@@ -1,4 +1,5 @@
 import SlidePictureDesktop from './desktopTemplates/SlidePictureDesktop'
+import SlideVideoDesktop from './desktopTemplates/SlideVideoDesktop'
 import SlideArticleDesktop from './desktopTemplates/SlideArticleDesktop'
 import SlideFramePictDesktop from './desktopTemplates/SlideFramePictDesktop'
 import SlideFrameVideoDesktop from './desktopTemplates/SlideFrameVideoDesktop'
@@ -15,6 +16,7 @@ import SlideNavMobile from './mobileTemplates/SlideNavMobile'
 
 export const TemplatesNames = {
   PictureDesktop: 'pictureDesktop',
+  VideoDesktop: 'videoDesktop',
   ArticleDesktop: 'articleDesktop',
   FramePictDesktop: 'framePictDesktop',
   FrameVideoDesktop: 'frameVideoDesktop',
@@ -32,6 +34,7 @@ export const TemplatesNames = {
 
 export default {
   [TemplatesNames.PictureDesktop]: SlidePictureDesktop,
+  [TemplatesNames.VideoDesktop]: SlideVideoDesktop,
   [TemplatesNames.ArticleDesktop]: SlideArticleDesktop,
   [TemplatesNames.FramePictDesktop]: SlideFramePictDesktop,
   [TemplatesNames.FrameVideoDesktop]: SlideFrameVideoDesktop,

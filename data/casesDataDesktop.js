@@ -21,9 +21,21 @@ export const casesDataDesktop = [
         }
       },
       {
+        type: TemplatesNames.VideoDesktop,
+        data: {
+          src: '/static/img/faster/desktop/faster_map_order_1600.mp4'
+        }
+      },
+      {
         type: TemplatesNames.PictureDesktop,
         data: {
           src: '/static/img/faster/desktop/search_block.png'
+        }
+      },
+      {
+        type: TemplatesNames.PictureDesktop,
+        data: {
+          src: '/static/img/faster/desktop/map.png'
         }
       },
       {
@@ -35,25 +47,25 @@ export const casesDataDesktop = [
       {
         type: TemplatesNames.PictureDesktop,
         data: {
-          src: '/static/img/faster/desktop/details2.png'
-        }
-      },
-      {
-        type: TemplatesNames.PictureDesktop,
-        data: {
-          src: '/static/img/faster/desktop/details3.png'
-        }
-      },
-      {
-        type: TemplatesNames.PictureDesktop,
-        data: {
           src: '/static/img/faster/desktop/details4.png'
         }
       },
       {
         type: TemplatesNames.FramePictDesktop,
         data: {
-          src: '/static/img/FasterScreenShot.png'
+          src: '/static/img/faster/desktop/catalog.png'
+        }
+      },
+      {
+        type: TemplatesNames.PictureDesktop,
+        data: {
+          src: '/static/img/faster/desktop/details2.png'
+        }
+      },
+      {
+        type: TemplatesNames.PictureDesktop,
+        data: {
+          src: '/static/img/faster/desktop/details5.png'
         }
       },
       {
@@ -85,12 +97,6 @@ export const casesDataDesktop = [
               text: 'justask.nenaprasno.ru'
             }
           ]
-        }
-      },
-      {
-        type: TemplatesNames.FramePictDesktop,
-        data: {
-          src: '/static/img/faster_product_page_desktop.png'
         }
       },
       {
