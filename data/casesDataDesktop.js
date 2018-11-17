@@ -15,9 +15,39 @@ export const casesDataDesktop = [
     },
     slides: [
       {
+        type: TemplatesNames.FramePictDesktop,
+        data: {
+          src: '/static/img/faster/desktop/catalog.png'
+        }
+      },
+      {
+        type: TemplatesNames.ArticleWithPhoneDesktop,
+        data: {
+          title: 'Сервис для поиска и заказа лекарств в аптеках города',
+          description: [
+            'Сделали покупку лекарств онлайн ещё проще — сравнить цены, найти аналоги и заказать в ближайшей аптеке. Проектировали, рисовали и программировали'
+          ],
+          links: [
+            {
+              icontype: 'globe',
+              description: 'beta:',
+              href: 'https://faster.ru',
+              text: 'faster.ru'
+            }
+          ],
+          src: '/static/img/faster/mobile/faster_mobile.png'
+        }
+      },
+      {
         type: TemplatesNames.PictureDesktop,
         data: {
           src: '/static/img/faster/desktop/Artboard.png'
+        }
+      },
+      {
+        type: TemplatesNames.FramePictDesktop,
+        data: {
+          src: '/static/img/faster/desktop/bag.png'
         }
       },
       {
@@ -27,33 +57,15 @@ export const casesDataDesktop = [
         }
       },
       {
-        type: TemplatesNames.PictureDesktop,
-        data: {
-          src: '/static/img/faster/desktop/search_block.png'
-        }
-      },
-      {
-        type: TemplatesNames.PictureDesktop,
-        data: {
-          src: '/static/img/faster/desktop/map.png'
-        }
-      },
-      {
-        type: TemplatesNames.PictureDesktop,
-        data: {
-          src: '/static/img/faster/desktop/details.png'
-        }
-      },
-      {
-        type: TemplatesNames.PictureDesktop,
-        data: {
-          src: '/static/img/faster/desktop/details4.png'
-        }
-      },
-      {
         type: TemplatesNames.FramePictDesktop,
         data: {
-          src: '/static/img/faster/desktop/catalog.png'
+          src: '/static/img/faster/desktop/status.png'
+        }
+      },
+      {
+        type: TemplatesNames.PictureDesktop,
+        data: {
+          src: '/static/img/faster/desktop/error_page.png'
         }
       },
       {
@@ -63,48 +75,29 @@ export const casesDataDesktop = [
         }
       },
       {
-        type: TemplatesNames.PictureDesktop,
+        type: TemplatesNames.FramePictDesktop,
         data: {
-          src: '/static/img/faster/desktop/details5.png'
+          src: '/static/img/faster/desktop/search.png'
         }
       },
       {
         type: TemplatesNames.FrameVideoDesktop,
         data: {
-          src: '/static/video/faster_show_popup_1440.mp4'
+          src: '/static/img/faster/desktop/faster_show_popup_1440.mp4'
         }
       },
-      // {
-      //   type: TemplatesNames.PhonesVideoDesktop,
-      //   data: {
-      //     srcLeft: '/static/video/catalog.mov',
-      //     srcCenter: '/static/video/map.mov',
-      //     srcRight: '/static/video/slider_scroll.mov'
-      //   }
-      // },
       {
-        type: TemplatesNames.ArticleDesktop,
+        type: TemplatesNames.PictureDesktop,
         data: {
-          title: 'Сервис для бронирования лекарств в аптеках города',
-          description: [
-            'Мы консультировали клиента, помогая описать бизнес-логику.',
-            'Спроектировали и разработали веб-приложение на React и Android-приложение для аптек.'
-          ],
-          links: [
-            {
-              icontype: 'globe',
-              href: 'https://.nenaprasno.ru',
-              text: 'justask.nenaprasno.ru'
-            }
-          ]
+          src: '/static/img/faster/desktop/details6.png'
         }
       },
       {
         type: TemplatesNames.PhonesDesktop,
         data: {
-          srcLeft: '/static/img/faster_mobile.png',
-          srcCenter: '/static/img/faster_product_page.png',
-          srcRight: '/static/img/faster_map.png'
+          srcLeft: '/static/img/faster/mobile/faster_mobile.png',
+          srcCenter: '/static/img/faster/mobile/faster_product_page.png',
+          srcRight: '/static/img/faster/mobile/faster_map.png'
         }
       }
     ]
@@ -146,7 +139,7 @@ export const casesDataDesktop = [
               text: 'анонс на сайте'
             }
           ],
-          src: '/static/img/faster_map.png'
+          src: '/static/img/yami_yami/yami_mobile.png'
         }
       },
       {
@@ -174,104 +167,13 @@ export const casesDataDesktop = [
       {
         type: TemplatesNames.PictureDesktop,
         data: {
-          src: '/static/img/yamiyami.jpg'
+          src: '/static/img/yami_yami/yamiyami.jpg'
         }
       },
       {
         type: TemplatesNames.FramePictDesktop,
         data: {
-          src: '/static/img/yamisite.png'
-        }
-      }
-    ]
-  },
-
-  /* OBED BUFET DESKTOP CASE */
-  {
-    description: {
-      type: 'приложение',
-      name: 'Обед Буфет'
-    },
-    slides: [
-      {
-        type: TemplatesNames.PictureDesktop,
-        data: {
-          src: '/static/img/obed_bufet/cover_obedbufet_desktop_fullslide.jpg'
-        }
-      },
-      {
-        type: TemplatesNames.ArticleWithPhoneDesktop,
-        data: {
-          title: 'Обед Буфет. Закажи пожрать',
-          description: [
-            'Проектировали, прототипировали, рисовали, а они уже год программируют. Ну сколько можно ёпта?'
-          ],
-          links: [
-            {
-              icontype: 'globe',
-              href: 'https://apple.com',
-              text: 'iOS'
-            },
-            {
-              icontype: 'globe',
-              href: 'https://android.com',
-              text: 'Android'
-            }
-          ],
-          src: '/static/img/obed_bufet/0-location_obedbufet_mobile.jpg'
-        }
-      },
-      {
-        type: TemplatesNames.PhonesDesktop,
-        data: {
-          srcLeft: '/static/img/obed_bufet/1-main_obedbufet_mobile.jpg',
-          srcCenter: '/static/img/obed_bufet/2-catalog_obedbufet_mobile.jpg',
-          srcRight: '/static/img/obed_bufet/3-product_obedbufet_mobile.jpg',
-          backgroundSrc:
-            '/static/img/obed_bufet/cover_obedbufet_desktop_fullslide.jpg'
-        }
-      },
-      {
-        type: TemplatesNames.PhonesDesktop,
-        data: {
-          srcLeft: '/static/img/obed_bufet/4-profile_obedbufet_mobile.jpg',
-          srcCenter: '/static/img/obed_bufet/5-address_obedbufet_mobile.jpg',
-          srcRight: '/static/img/obed_bufet/6-history_obedbufet_mobile.jpg',
-          backgroundColor: 'pink'
-        }
-      },
-      {
-        type: TemplatesNames.PictureDesktop,
-        data: {
-          src: '/static/img/obed_bufet/7-rest_obedbufet_desktop-fullscreen.jpg'
-        }
-      }
-    ]
-  },
-
-  /* E-COMMERCE DESKTOP CASE */
-  {
-    description: {
-      type: 'подборка',
-      name: 'E-commerce проекты',
-      links: [
-        {
-          icontype: 'globe',
-          href: 'https://yamiyami.ru'
-        }
-      ]
-    },
-    slides: [
-      {
-        type: TemplatesNames.PictureDesktop,
-        data: {
-          src: '/static/img/yamiyami.jpg'
-        }
-      },
-      {
-        type: TemplatesNames.FramePictDesktop,
-        data: {
-          src: '/static/img/yamisite.png'
+          src: '/static/img/yami_yami/yamisite.png'
         }
       }
     ]
@@ -370,6 +272,69 @@ export const casesDataDesktop = [
     ]
   },
 
+  /* OBED BUFET DESKTOP CASE */
+  {
+    description: {
+      type: 'приложение',
+      name: 'Обед Буфет'
+    },
+    slides: [
+      {
+        type: TemplatesNames.PictureDesktop,
+        data: {
+          src: '/static/img/obed_bufet/cover_obedbufet_desktop_fullslide.jpg'
+        }
+      },
+      {
+        type: TemplatesNames.ArticleWithPhoneDesktop,
+        data: {
+          title: 'Обед Буфет. Закажи пожрать',
+          description: [
+            'Проектировали, прототипировали, рисовали, а они уже год программируют. Ну сколько можно ёпта?'
+          ],
+          links: [
+            {
+              icontype: 'globe',
+              href: 'https://apple.com',
+              text: 'iOS'
+            },
+            {
+              icontype: 'globe',
+              href: 'https://android.com',
+              text: 'Android'
+            }
+          ],
+          src: '/static/img/obed_bufet/0-location_obedbufet_mobile.jpg'
+        }
+      },
+      {
+        type: TemplatesNames.PhonesDesktop,
+        data: {
+          srcLeft: '/static/img/obed_bufet/1-main_obedbufet_mobile.jpg',
+          srcCenter: '/static/img/obed_bufet/2-catalog_obedbufet_mobile.jpg',
+          srcRight: '/static/img/obed_bufet/3-product_obedbufet_mobile.jpg',
+          backgroundSrc:
+            '/static/img/obed_bufet/cover_obedbufet_desktop_fullslide.jpg'
+        }
+      },
+      {
+        type: TemplatesNames.PhonesDesktop,
+        data: {
+          srcLeft: '/static/img/obed_bufet/4-profile_obedbufet_mobile.jpg',
+          srcCenter: '/static/img/obed_bufet/5-address_obedbufet_mobile.jpg',
+          srcRight: '/static/img/obed_bufet/6-history_obedbufet_mobile.jpg',
+          backgroundColor: 'pink'
+        }
+      },
+      {
+        type: TemplatesNames.PictureDesktop,
+        data: {
+          src: '/static/img/obed_bufet/7-rest_obedbufet_desktop-fullscreen.jpg'
+        }
+      }
+    ]
+  },
+
   /* CHEVOSTIK DESKTOP CASE */
   {
     description: {
@@ -386,13 +351,13 @@ export const casesDataDesktop = [
       {
         type: TemplatesNames.PictureDesktop,
         data: {
-          src: '/static/img/chevostik2.png'
+          src: '/static/img/chevostik/chevostik2.png'
         }
       },
       {
         type: TemplatesNames.FramePictDesktop,
         data: {
-          src: '/static/img/chevostik.png'
+          src: '/static/img/chevostik/chevostik.png'
         }
       }
     ]

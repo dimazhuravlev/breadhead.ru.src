@@ -11,7 +11,7 @@ export const casesDataMobile = [
       {
         type: TemplatesNames.FramePictMobile,
         data: {
-          src: '/static/img/faster_mobile.png'
+          src: '/static/img/faster/mobile/faster_mobile.png'
         }
       },
       {
@@ -35,25 +35,13 @@ export const casesDataMobile = [
       {
         type: TemplatesNames.PictureMobile,
         data: {
-          src: '/static/img/faster_browser_mobile.png'
-        }
-      },
-      {
-        type: TemplatesNames.FrameVideoMobile,
-        data: {
-          src: '/static/video/map.mov'
+          src: '/static/img/faster/mobile/faster_browser_mobile.png'
         }
       },
       {
         type: TemplatesNames.PictureMobile,
         data: {
-          src: '/static/img/faster.png'
-        }
-      },
-      {
-        type: TemplatesNames.PictureMobile,
-        data: {
-          src: '/static/img/faster_element_mobile.png'
+          src: '/static/img/faster/mobile/faster_map.png'
         }
       }
     ]
@@ -91,114 +79,13 @@ export const casesDataMobile = [
       {
         type: TemplatesNames.PictureMobile,
         data: {
-          src: '/static/img/yamiyami.jpg'
+          src: '/static/img/yami_yami/yamiyami.jpg'
         }
       },
       {
         type: TemplatesNames.FramePictMobile,
         data: {
-          src: '/static/img/yami_mobile.png'
-        }
-      }
-    ]
-  },
-
-  /* OBED BUFET MOBILE CASE */
-  {
-    description: {
-      type: 'проект',
-      name: 'Обед Буфет. Приложушечка'
-    },
-    slides: [
-      {
-        type: TemplatesNames.PictureMobile,
-        data: {
-          src: '/static/img/obed_bufet/cover_obedbufet_mobile_fullslide.png'
-        }
-      },
-      {
-        type: TemplatesNames.ArticleMobile,
-        data: {
-          title: 'Обед Буфет. Закажи пожрать',
-          description: [
-            'Проектировали, прототипировали, рисовали, а они уже год программируют. Ну сколько можно ёпта?'
-          ],
-          links: [
-            {
-              icontype: 'globe',
-              href: 'https://apple.com',
-              text: 'iOS'
-            },
-            {
-              icontype: 'globe',
-              href: 'https://android.com',
-              text: 'Android'
-            }
-          ]
-        }
-      },
-      {
-        type: TemplatesNames.FramePictMobile,
-        data: {
-          src: '/static/img/obed_bufet/1-main_obedbufet_mobile.jpg'
-        }
-      },
-      {
-        type: TemplatesNames.FramePictMobile,
-        data: {
-          src: '/static/img/obed_bufet/2-catalog_obedbufet_mobile.jpg'
-        }
-      },
-      {
-        type: TemplatesNames.FramePictMobile,
-        data: {
-          src: '/static/img/obed_bufet/3-product_obedbufet_mobile.jpg'
-        }
-      },
-      {
-        type: TemplatesNames.FramePictMobile,
-        data: {
-          src: '/static/img/obed_bufet/4-profile_obedbufet_mobile.jpg'
-        }
-      },
-      {
-        type: TemplatesNames.FramePictMobile,
-        data: {
-          src: '/static/img/obed_bufet/5-address_obedbufet_mobile.jpg'
-        }
-      },
-      {
-        type: TemplatesNames.FramePictMobile,
-        data: {
-          src: '/static/img/obed_bufet/6-history_obedbufet_mobile.jpg'
-        }
-      },
-      {
-        type: TemplatesNames.PictureMobile,
-        data: {
-          src: '/static/img/obed_bufet/7-rest_obedbufet_mobile-fullscreen.png'
-        }
-      }
-    ]
-  },
-
-  /* E-COMMERCE MOBILE CASE */
-  {
-    description: {
-      type: 'подборка',
-      name: 'E-commerce проекты'
-    },
-    slides: [
-      {
-        type: TemplatesNames.PictureMobile,
-        data: {
-          src: '/static/img/yamiyami.jpg'
-        }
-      },
-      {
-        type: TemplatesNames.FramePictMobile,
-        data: {
-          src: '/static/img/yamisite.png'
+          src: '/static/img/yami_yami/yami_mobile.png'
         }
       }
     ]
@@ -288,6 +175,85 @@ export const casesDataMobile = [
     ]
   },
 
+  /* OBED BUFET MOBILE CASE */
+  {
+    description: {
+      type: 'проект',
+      name: 'Обед Буфет. Приложушечка'
+    },
+    slides: [
+      {
+        type: TemplatesNames.PictureMobile,
+        data: {
+          src: '/static/img/obed_bufet/cover_obedbufet_mobile_fullslide.png'
+        }
+      },
+      {
+        type: TemplatesNames.ArticleMobile,
+        data: {
+          title: 'Обед Буфет. Закажи пожрать',
+          description: [
+            'Проектировали, прототипировали, рисовали, а они уже год программируют. Ну сколько можно ёпта?'
+          ],
+          links: [
+            {
+              icontype: 'globe',
+              href: 'https://apple.com',
+              text: 'iOS'
+            },
+            {
+              icontype: 'globe',
+              href: 'https://android.com',
+              text: 'Android'
+            }
+          ]
+        }
+      },
+      {
+        type: TemplatesNames.FramePictMobile,
+        data: {
+          src: '/static/img/obed_bufet/1-main_obedbufet_mobile.jpg'
+        }
+      },
+      {
+        type: TemplatesNames.FramePictMobile,
+        data: {
+          src: '/static/img/obed_bufet/2-catalog_obedbufet_mobile.jpg'
+        }
+      },
+      {
+        type: TemplatesNames.FramePictMobile,
+        data: {
+          src: '/static/img/obed_bufet/3-product_obedbufet_mobile.jpg'
+        }
+      },
+      {
+        type: TemplatesNames.FramePictMobile,
+        data: {
+          src: '/static/img/obed_bufet/4-profile_obedbufet_mobile.jpg'
+        }
+      },
+      {
+        type: TemplatesNames.FramePictMobile,
+        data: {
+          src: '/static/img/obed_bufet/5-address_obedbufet_mobile.jpg'
+        }
+      },
+      {
+        type: TemplatesNames.FramePictMobile,
+        data: {
+          src: '/static/img/obed_bufet/6-history_obedbufet_mobile.jpg'
+        }
+      },
+      {
+        type: TemplatesNames.PictureMobile,
+        data: {
+          src: '/static/img/obed_bufet/7-rest_obedbufet_mobile-fullscreen.png'
+        }
+      }
+    ]
+  },
+
   /* CHEVOSTIK MOBILE CASE */
   {
     description: {
@@ -298,13 +264,13 @@ export const casesDataMobile = [
       {
         type: TemplatesNames.PictureMobile,
         data: {
-          src: '/static/img/chevostik2.png'
+          src: '/static/img/chevostik/chevostik2.png'
         }
       },
       {
         type: TemplatesNames.FramePictMobile,
         data: {
-          src: '/static/img/chevostik.png'
+          src: '/static/img/chevostik/chevostik.png'
         }
       }
     ]
