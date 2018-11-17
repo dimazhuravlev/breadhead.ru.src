@@ -26,30 +26,30 @@
   display: flex;
   align-items: center;
   cursor: pointer;
-  transition: all 0.15s ease-in;
+  transition: all 0.2s ease-in;
   &:hover g {
     fill: var(--redPrimary);
-    transition: all 0.15s ease-in;
+    transition: all 0.2s ease-in;
   }
   &:hover rect {
     fill: var(--redPrimary);
-    transition: all 0.15s ease-in;
+    transition: all 0.2s ease-in;
   }
   &:hover .text {
     color: var(--redPrimary);
-    transition: all 0.15s ease-in;
+    transition: all 0.2s ease-in;
   }
   &:active g {
     fill: var(--redSecondary);
-    transition: all 0.15s ease-in;
+    transition: all 0.2s ease-in;
   }
   &:active rect {
     fill: var(--redSecondary);
-    transition: all 0.15s ease-in;
+    transition: all 0.2s ease-in;
   }
   &:active .text {
     color: var(--redSecondary);
-    transition: all 0.15s ease-in;
+    transition: all 0.2s ease-in;
   }
 }
 
