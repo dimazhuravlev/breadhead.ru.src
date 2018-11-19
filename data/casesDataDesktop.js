@@ -15,9 +15,9 @@ export const casesDataDesktop = [
     },
     slides: [
       {
-        type: TemplatesNames.FramePictDesktop,
+        type: TemplatesNames.FrameVideoDesktop,
         data: {
-          src: '/static/img/faster/desktop/catalog.png'
+          src: '/static/img/faster/desktop/browser—scroll—desktop.mp4'
         }
       },
       {
@@ -25,7 +25,7 @@ export const casesDataDesktop = [
         data: {
           title: 'Сервис для поиска и заказа лекарств в аптеках города',
           description: [
-            'Сделали покупку лекарств онлайн ещё проще — сравнить цены, найти аналоги и заказать в ближайшей аптеке. Проектировали, рисовали и программировали'
+            'Cравнить цены, найти аналоги и заказать в ближайшей аптеке. Проектировали, рисовали и программировали'
           ],
           links: [
             {
@@ -35,69 +35,69 @@ export const casesDataDesktop = [
               text: 'faster.ru'
             }
           ],
-          src: '/static/img/faster/mobile/faster_mobile.png'
-        }
-      },
-      {
-        type: TemplatesNames.PictureDesktop,
-        data: {
-          src: '/static/img/faster/desktop/Artboard.png'
+          src: '/static/img/faster/desktop/phone—map—desktop.jpg'
         }
       },
       {
         type: TemplatesNames.FramePictDesktop,
         data: {
-          src: '/static/img/faster/desktop/bag.png'
+          src: '/static/img/faster/desktop/browser—catalog—desktop.jpg'
+        }
+      },
+      {
+        type: TemplatesNames.PictureDesktop,
+        data: {
+          src: '/static/img/faster/desktop/full—product—desktop.jpg'
         }
       },
       {
         type: TemplatesNames.VideoDesktop,
         data: {
-          src: '/static/img/faster/desktop/faster_map_order_1600.mp4'
+          src: '/static/img/faster/desktop/full—order—desktop.mp4'
         }
       },
       {
         type: TemplatesNames.FramePictDesktop,
         data: {
-          src: '/static/img/faster/desktop/status.png'
-        }
-      },
-      {
-        type: TemplatesNames.PictureDesktop,
-        data: {
-          src: '/static/img/faster/desktop/error_page.png'
-        }
-      },
-      {
-        type: TemplatesNames.PictureDesktop,
-        data: {
-          src: '/static/img/faster/desktop/details2.png'
-        }
-      },
-      {
-        type: TemplatesNames.FramePictDesktop,
-        data: {
-          src: '/static/img/faster/desktop/search.png'
-        }
-      },
-      {
-        type: TemplatesNames.FrameVideoDesktop,
-        data: {
-          src: '/static/img/faster/desktop/faster_show_popup_1440.mp4'
-        }
-      },
-      {
-        type: TemplatesNames.PictureDesktop,
-        data: {
-          src: '/static/img/faster/desktop/details6.png'
+          src: '/static/img/faster/desktop/browser—bag—desktop.jpg'
         }
       },
       {
         type: TemplatesNames.PhonesDesktop,
         data: {
-          srcLeft: '/static/img/faster/mobile/faster_mobile.png',
-          srcCenter: '/static/img/faster/mobile/faster_product_page.png',
-          srcRight: '/static/img/faster/mobile/faster_map.png'
+          srcLeft: '/static/img/faster/desktop/phone—catalog—desktop.jpg',
+          srcCenter: '/static/img/faster/desktop/phone—map—desktop.jpg',
+          srcRight: '/static/img/faster/desktop/phone—product—desktop.jpg'
+        }
+      },
+      {
+        type: TemplatesNames.PictureDesktop,
+        data: {
+          src: '/static/img/faster/desktop/full—elements—desktop.jpg'
+        }
+      },
+      {
+        type: TemplatesNames.FramePictDesktop,
+        data: {
+          src: '/static/img/faster/desktop/browser—status—desktop.jpg'
+        }
+      },
+      {
+        type: TemplatesNames.PictureDesktop,
+        data: {
+          src: '/static/img/faster/desktop/full—notfound—desktop.jpg'
+        }
+      },
+      {
+        type: TemplatesNames.FramePictDesktop,
+        data: {
+          src: '/static/img/faster/desktop/browser—search—desktop.jpg'
+        }
+      },
+      {
+        type: TemplatesNames.PictureDesktop,
+        data: {
+          src: '/static/img/faster/desktop/full—details—desktop.jpg'
         }
       }
     ]
@@ -197,6 +197,23 @@ export const casesDataDesktop = [
         data: {
           src:
             '/static/img/encore_fitness/desktop/cover_encore_desktop_fullslide.jpg'
+        }
+      },
+      {
+        type: TemplatesNames.ArticleWithPhoneDesktop,
+        data: {
+          title: 'Фитнес! Фитнес! Фитнес! Фитнес!',
+          description: [
+            'Качайся, отжимайся, подтягивайся, потей, пыхти и плати нам деньги.'
+          ],
+          links: [
+            {
+              icontype: 'globe',
+              href: 'https://encorefitness.ru',
+              text: 'encorefitness.ru'
+            }
+          ],
+          src: '/static/img/encore_fitness/mobile/1-main_encore_mobile.jpg'
         }
       },
       {

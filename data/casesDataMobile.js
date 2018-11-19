@@ -9,39 +9,74 @@ export const casesDataMobile = [
     },
     slides: [
       {
-        type: TemplatesNames.FramePictMobile,
+        type: TemplatesNames.FrameVideoMobile,
         data: {
-          src: '/static/img/faster/mobile/faster_mobile.png'
+          src: '/static/img/faster/mobile/scroll—mobile.mp4'
         }
       },
       {
         type: TemplatesNames.ArticleMobile,
         data: {
           title:
-            'Сервис для сравнения и бронирования лекарств в аптеках города.',
+            'Сервис для сравнения и бронирования лекарств в аптеках города',
           description: [
-            'Мы консультировали клиента, помогая описать бизнес-логику.',
-            'Спроектировали и разработали веб-приложение на React и Android-приложение для аптек.'
+            'Cравнить цены, найти аналоги и заказать в ближайшей аптеке. Проектировали, рисовали и программировали'
           ],
           links: [
             {
               icontype: 'globe',
-              href: 'https://.nenaprasno.ru',
-              text: 'justask.nenaprasno.ru'
+              href: 'https://faster.ru',
+              text: 'faster.ru'
             }
           ]
         }
       },
       {
-        type: TemplatesNames.PictureMobile,
+        type: TemplatesNames.FramePictMobile,
         data: {
-          src: '/static/img/faster/mobile/faster_browser_mobile.png'
+          src: '/static/img/faster/mobile/phone—map—mobile.jpg'
         }
       },
       {
         type: TemplatesNames.PictureMobile,
         data: {
-          src: '/static/img/faster/mobile/faster_map.png'
+          src: '/static/img/faster/mobile/full—product—mobile.jpg'
+        }
+      },
+      {
+        type: TemplatesNames.FramePictMobile,
+        data: {
+          src: '/static/img/faster/mobile/phone—bag—mobile.jpg'
+        }
+      },
+      {
+        type: TemplatesNames.PictureMobile,
+        data: {
+          src: '/static/img/faster/mobile/full—elements—mobile.jpg'
+        }
+      },
+      {
+        type: TemplatesNames.FrameVideoMobile,
+        data: {
+          src: '/static/img/faster/mobile/filter—mobile.mp4'
+        }
+      },
+      {
+        type: TemplatesNames.PictureMobile,
+        data: {
+          src: '/static/img/faster/mobile/full—tooltip—mobile.jpg'
+        }
+      },
+      {
+        type: TemplatesNames.FramePictMobile,
+        data: {
+          src: '/static/img/faster/mobile/phone—order—mobile.jpg'
+        }
+      },
+      {
+        type: TemplatesNames.PictureMobile,
+        data: {
+          src: '/static/img/faster/mobile/full—2browsers—mobile.jpg'
         }
       }
     ]

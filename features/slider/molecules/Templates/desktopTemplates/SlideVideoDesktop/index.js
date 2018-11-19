@@ -8,8 +8,8 @@ const SlideVideoDesktop = ({ src }) => (
     <VideoPlayer
       className={styles.video}
       src={src}
-      width="100%"
-      height="auto"
+      width="auto"
+      height="100%"
     />
   </div>
 )
