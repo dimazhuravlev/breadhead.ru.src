@@ -9,7 +9,12 @@ const SlideFrameVideoDesktop = ({ src, backgroundColor }) => (
       <div className={styles.header}>
         <img className={styles.dots} src="/static/img/dots.png" />
       </div>
-      <VideoPlayer src={src} width="100%" height="auto" />
+      <VideoPlayer
+        className={styles.video}
+        src={src}
+        width="100%"
+        height="auto"
+      />
     </div>
   </div>
 )
