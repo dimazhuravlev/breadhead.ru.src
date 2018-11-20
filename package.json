@@ -9,6 +9,7 @@
     "prop-types": "^15.6.2",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
+    "react-html-parser": "^2.0.2",
     "react-motion": "^0.5.2",
     "react-player": "^1.6.6",
     "react-scroll": "^1.7.10",
