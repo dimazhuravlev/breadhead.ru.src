@@ -9,7 +9,7 @@ import { NON_BREAKING_SPACE } from '@site/constants'
 import AboutText from '../../atoms/AboutText'
 import styles from './about.css'
 import cx from 'classnames'
-
+import { Desktop, Mobile } from '@site/features/responsive'
 class About extends React.Component {
   constructor(props) {
     super(props)
@@ -22,6 +22,7 @@ class About extends React.Component {
 
   render() {
     const { aboutDataDesktop, aboutDataMobile, name } = this.props
+    const { isVisible } = this.state
     return (
       <VisibilitySensor
         onChange={this.onVisibilityChange}
@@ -49,14 +50,24 @@ class About extends React.Component {
             <AboutText>
               {`Breadhead проектирует и${NON_BREAKING_SPACE}выпускает сервисы и${NON_BREAKING_SPACE}приложения. Совершенствует деятельность компаний с${NON_BREAKING_SPACE}помощью технологий.`}
             </AboutText>
-            <Slider
-              slides={aboutDataDesktop.slides}
-              className={cx(styles.aboutSlider, styles.sliderDesktop)}
-            />
-            <Slider
-              slides={aboutDataMobile.slides}
-              className={cx(styles.aboutSlider, styles.sliderMobile)}
-            />
+            {isVisible ? (
+              <>
+                <Desktop>
+                  <Slider
+                    slides={aboutDataDesktop.slides}
+                    className={cx(styles.aboutSlider, styles.sliderDesktop)}
+                  />
+                </Desktop>
+                <Mobile>
+                  <Slider
+                    slides={aboutDataMobile.slides}
+                    className={cx(styles.aboutSlider, styles.sliderMobile)}
+                  />
+                </Mobile>
+              </>
+            ) : (
+              <div className={styles.placeholder} />
+            )}
             <AboutText>
               <React.Fragment>
                 {`Мы стремимся к${NON_BREAKING_SPACE}открытой рабочей среде, в${NON_BREAKING_SPACE}которой студия
@@ -104,7 +115,7 @@ class About extends React.Component {
 About.propTypes = {
   aboutDataDesktop: PropTypes.object,
   aboutDataMobile: PropTypes.object,
-  name: PropTypes.string
+  name: PropTypes.string,
 }
 
 export default About
