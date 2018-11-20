@@ -5,8 +5,9 @@ export const casesDataMobile = [
   {
     description: {
       type: 'проект',
-      name: 'Faster. Новый опыт покупки лекарств'
+      name: 'Faster. Новый опыт покупки лекарств',
     },
+    priority: true,
     slides: [
       {
         type: TemplatesNames.FrameVideoMobile,
@@ -86,7 +87,7 @@ export const casesDataMobile = [
   {
     description: {
       type: 'проект',
-      name: 'Yami Yami. Красивая доставка еды'
+      name: 'Yami Yami. Красивая доставка еды',
     },
     slides: [
       {
@@ -95,21 +96,21 @@ export const casesDataMobile = [
           title:
             'Какая разница сколько часов вам везут еду, если её везут из Yami Yami?',
           description: [
-            'Люди приходят в восторг, когда впервые видят сайт Yami Yami. А когда еда приезжает к ним домой, они просто сходят с ума от фирменной упаковки и маленькой машинки Smart, которую хочеться облизывать.'
+            'Люди приходят в восторг, когда впервые видят сайт Yami Yami. А когда еда приезжает к ним домой, они просто сходят с ума от фирменной упаковки и маленькой машинки Smart, которую хочеться облизывать.',
           ],
           links: [
             {
               icontype: 'globe',
               href: 'https://yamiyami.ru/menu',
-              text: 'Yami Yami'
+              text: 'Yami Yami',
             },
             {
               icontype: 'article',
               href: 'https://medium.com/breadhead-stories',
-              text: 'Medium'
-            }
-          ]
-        }
+              text: 'Medium',
+            },
+          ],
+        },
       },
       {
         type: TemplatesNames.PictureMobile,
@@ -293,7 +294,7 @@ export const casesDataMobile = [
   {
     description: {
       type: 'проект',
-      name: 'Чевостик. И дядя Кузя'
+      name: 'Чевостик. И дядя Кузя',
     },
     slides: [
       {

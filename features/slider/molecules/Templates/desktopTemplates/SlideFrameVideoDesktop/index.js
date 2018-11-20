@@ -21,7 +21,7 @@ const SlideFrameVideoDesktop = ({ src, backgroundColor }) => (
 
 SlideFrameVideoDesktop.propTypes = {
   src: PropTypes.string.isRequired,
-  backgroundColor: PropTypes.string
+  backgroundColor: PropTypes.string,
 }
 
-export default SlideFrameVideoDesktop
+export default React.memo(SlideFrameVideoDesktop)

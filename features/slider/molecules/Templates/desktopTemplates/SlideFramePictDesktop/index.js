@@ -17,7 +17,7 @@ const SlideFramePictDesktop = ({ src, backgroundColor, backgroundSrc }) => (
 SlideFramePictDesktop.propTypes = {
   src: PropTypes.string.isRequired,
   backgroundColor: PropTypes.string,
-  backgroundSrc: PropTypes.string
+  backgroundSrc: PropTypes.string,
 }
 
-export default SlideFramePictDesktop
+export default React.memo(SlideFramePictDesktop)

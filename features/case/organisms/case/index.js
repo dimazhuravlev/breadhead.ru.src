@@ -12,13 +12,16 @@ class Case extends React.Component {
     this.state = { isVisible: false }
   }
 
+  onVisibilityChange = isVisible => {
+    !this.state.isVisible && isVisible && this.setState({ isVisible })
+  }
+
   render() {
-    const { name, className, description, slides } = this.props
+    const { name, className, description, slides, priority } = this.props
+    const { isVisible } = this.state
     return (
       <VisibilitySensor
-        onChange={isVisible => {
-          !this.state.isVisible && isVisible && this.setState({ isVisible })
-        }}
+        onChange={this.onVisibilityChange}
         partialVisibility
         delayedCall
       >
@@ -27,11 +30,15 @@ class Case extends React.Component {
           className={cx(
             styles.case,
             className,
-            this.state.isVisible ? styles.visible : styles.inVisible
+            isVisible ? styles.visible : styles.inVisible
           )}
         >
           <Descriptor {...description} />
-          <Slider slides={slides} />
+          {isVisible || priority ? (
+            <Slider slides={slides} />
+          ) : (
+            <div className={styles.placeholder} />
+          )}
         </section>
       </VisibilitySensor>
     )
@@ -39,8 +46,9 @@ class Case extends React.Component {
 }
 
 Case.propTypes = {
+  priority: PropTypes.bool,
   description: PropTypes.object.isRequired,
-  slides: PropTypes.arrayOf(PropTypes.object)
+  slides: PropTypes.arrayOf(PropTypes.object),
 }
 
 export default Case

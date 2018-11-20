@@ -1,13 +1,12 @@
 .slick-track {
   display: flex !important;
+  will-change: transform;
 }
 
 .slick-slide {
   position: relative;
   display: flex !important;
   overflow: hidden !important;
-  /* min-height: none !important;
-  max-height: none !important; */
   height: 100%;
 }
 

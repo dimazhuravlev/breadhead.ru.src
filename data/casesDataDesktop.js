@@ -9,10 +9,11 @@ export const casesDataDesktop = [
       links: [
         {
           icontype: 'globe',
-          href: 'https://faster.ru'
-        }
-      ]
+          href: 'https://faster.ru',
+        },
+      ],
     },
+    // priority: true, // set true if slider is really needed
     slides: [
       {
         type: TemplatesNames.FrameVideoDesktop,
@@ -111,13 +112,13 @@ export const casesDataDesktop = [
       links: [
         {
           icontype: 'globe',
-          href: 'https://yamiyami.ru'
+          href: 'https://yamiyami.ru',
         },
         {
           icontype: 'article',
-          href: 'https://medium.com/breadhead-stories/yami-yami-c7f2b5916442'
-        }
-      ]
+          href: 'https://medium.com/breadhead-stories/yami-yami-c7f2b5916442',
+        },
+      ],
     },
     slides: [
       {
@@ -125,19 +126,19 @@ export const casesDataDesktop = [
         data: {
           title: 'Yami Yami — вкуснее, чем всё',
           description: [
-            'Мы консультировали клиента, помогая описать бизнес-логику. Спроектировали и разработали веб-приложение на React и Android-приложение для аптек.'
+            'Мы консультировали клиента, помогая описать бизнес-логику. Спроектировали и разработали веб-приложение на React и Android-приложение для аптек.',
           ],
           links: [
             {
               icontype: 'globe',
               href: 'https://.faster.ru',
-              text: 'faster.ru'
+              text: 'faster.ru',
             },
             {
               icontype: 'article',
               href: 'https://.article.faster.ru',
-              text: 'анонс на сайте'
-            }
+              text: 'анонс на сайте',
+            },
           ],
           src: '/static/img/yami_yami/yami_mobile.png'
         }
@@ -148,21 +149,21 @@ export const casesDataDesktop = [
           title:
             'Какая разница сколько часов вам везут еду, если её везут из Yami Yami?',
           description: [
-            'Люди приходят в восторг, когда впервые видят сайт Yami Yami. А когда еда приезжает к ним домой, они просто сходят с ума от фирменной упаковки и маленькой машинки Smart, которую хочеться облизывать.'
+            'Люди приходят в восторг, когда впервые видят сайт Yami Yami. А когда еда приезжает к ним домой, они просто сходят с ума от фирменной упаковки и маленькой машинки Smart, которую хочеться облизывать.',
           ],
           links: [
             {
               icontype: 'globe',
               href: 'https://yamiyami.ru/menu',
-              text: 'Yami Yami'
+              text: 'Yami Yami',
             },
             {
               icontype: 'article',
               href: 'https://medium.com/breadhead-stories',
-              text: 'Medium'
-            }
-          ]
-        }
+              text: 'Medium',
+            },
+          ],
+        },
       },
       {
         type: TemplatesNames.PictureDesktop,
@@ -360,9 +361,9 @@ export const casesDataDesktop = [
       links: [
         {
           icontype: 'globe',
-          href: 'https://chevostik.ru'
-        }
-      ]
+          href: 'https://chevostik.ru',
+        },
+      ],
     },
     slides: [
       {

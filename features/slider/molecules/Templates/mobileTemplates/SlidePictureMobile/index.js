@@ -7,7 +7,7 @@ const SlidePictureMobile = ({ src }) => (
 )
 
 SlidePictureMobile.propTypes = {
-  src: PropTypes.string.isRequired
+  src: PropTypes.string.isRequired,
 }
 
-export default SlidePictureMobile
+export default React.memo(SlidePictureMobile)

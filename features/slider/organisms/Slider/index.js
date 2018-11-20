@@ -12,6 +12,8 @@ import NavButton from '../../molecules/NavButton'
 import Bar from '../../molecules/Bar'
 
 const settings = {
+  touchThreshold: 8,
+  lazyLoad: 'progressive',
   prevArrow: <NavButton className={styles.navButton} direction="left" />,
   nextArrow: <NavButton className={styles.navButton} direction="right" />,
 }
@@ -23,6 +25,37 @@ class Slider extends React.PureComponent {
       slideComponents: (props.slides || []).map(
         item => templatesMap[item.type]
       ),
+    }
+  }
+
+  componentDidMount() {
+    window.addEventListener('touchstart', this.touchStart)
+    window.addEventListener('touchmove', this.preventTouch, { passive: false })
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('touchstart', this.touchStart)
+    window.removeEventListener('touchmove', this.preventTouch, {
+      passive: false,
+    })
+  }
+
+  touchStart(e) {
+    this.firstClientX = e.touches[0].clientX
+    this.firstClientY = e.touches[0].clientY
+  }
+
+  preventTouch(e) {
+    const minValue = 5 // threshold
+
+    this.clientX = e.touches[0].clientX - this.firstClientX
+    this.clientY = e.touches[0].clientY - this.firstClientY
+
+    // Vertical scrolling does not work when you start swiping horizontally.
+    if (Math.abs(this.clientX) > minValue) {
+      e.preventDefault()
+      e.returnValue = false
+      return false
     }
   }
 
@@ -39,12 +72,25 @@ class Slider extends React.PureComponent {
     this.setState(() => ({ index }))
   }
 
-  onLinkClick = id => {
+  onLinkClick = (id, e) => {
+    e.preventDefault()
+    e.stopPropagation()
     const { slides } = this.props
     const slideIndex = slides.findIndex(slide => slide.id === id)
     if (slideIndex !== -1) {
       this.sliderRef.slickGoTo(slideIndex)
     }
+  }
+
+  onSlideClick = e => {
+    e.persist()
+
+    const { offsetLeft, offsetWidth } = e.currentTarget
+
+    const xCoord = e.clientX - offsetLeft
+
+    const isRightSide = xCoord - offsetWidth / 2 > 0
+    isRightSide ? this.sliderRef.slickNext() : this.sliderRef.slickPrev()
   }
 
   sliderRef = React.createRef()
@@ -59,12 +105,16 @@ class Slider extends React.PureComponent {
       <Gesture>
         {({ down }) => (
           <VisibilitySensor
+            onChange={this.onVisibilityChange}
             minTopValue={minTopValue}
             offset={offset}
             partialVisibility
           >
             {({ isVisible }) => (
-              <div className={cx(styles.wrapper, className)}>
+              <div
+                onClick={this.onSlideClick}
+                className={cx(styles.wrapper, className)}
+              >
                 <Bar
                   index={index}
                   isVisible={isVisible && !down}
