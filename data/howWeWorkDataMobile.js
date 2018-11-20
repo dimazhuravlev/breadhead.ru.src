@@ -8,7 +8,7 @@ export const howWeWorkDataMobile = {
   },
   slides: [
     {
-      type: TemplatesNames.NavDesktop,
+      type: TemplatesNames.NavMobile,
       data: {
         title: `Принципы проектной работы и${NON_BREAKING_SPACE}коммуникации Breadhead`,
         links: [
@@ -45,7 +45,7 @@ export const howWeWorkDataMobile = {
     },
 
     {
-      type: TemplatesNames.ArticleDesktop,
+      type: TemplatesNames.ArticleMobile,
       id: 'team_clients',
       data: {
         title: 'Команда и клиент /\nОткрытость',
@@ -55,7 +55,7 @@ export const howWeWorkDataMobile = {
       }
     },
     {
-      type: TemplatesNames.ArticleDesktop,
+      type: TemplatesNames.ArticleMobile,
       data: {
         title: 'Команда и клиент /\nОтветственность',
         description: [
@@ -64,7 +64,7 @@ export const howWeWorkDataMobile = {
       }
     },
     {
-      type: TemplatesNames.ArticleDesktop,
+      type: TemplatesNames.ArticleMobile,
       data: {
         title: 'Команда и клиент /\nСкорость решений',
         description: [
@@ -74,7 +74,7 @@ export const howWeWorkDataMobile = {
     },
 
     {
-      type: TemplatesNames.ArticleDesktop,
+      type: TemplatesNames.ArticleMobile,
       id: 'processes_roles',
       data: {
         title: 'Процесс и роли /\nПодход',
@@ -84,7 +84,7 @@ export const howWeWorkDataMobile = {
       }
     },
     {
-      type: TemplatesNames.ArticleDesktop,
+      type: TemplatesNames.ArticleMobile,
       data: {
         title: 'Процесс и роли /\nСпринты',
         description: [
@@ -93,7 +93,7 @@ export const howWeWorkDataMobile = {
       }
     },
     {
-      type: TemplatesNames.ArticleDesktop,
+      type: TemplatesNames.ArticleMobile,
       data: {
         title: 'Процесс и роли /\nСпециалисты',
         description: [
@@ -103,7 +103,7 @@ export const howWeWorkDataMobile = {
     },
 
     {
-      type: TemplatesNames.ArticleDesktop,
+      type: TemplatesNames.ArticleMobile,
       id: 'reports_money',
       data: {
         title: 'Отчёты и деньги /\nОплата за время',
@@ -113,7 +113,7 @@ export const howWeWorkDataMobile = {
       }
     },
     {
-      type: TemplatesNames.ArticleDesktop,
+      type: TemplatesNames.ArticleMobile,
       data: {
         title: 'Отчёты и деньги /\nУчёт часов',
         description: [
@@ -122,7 +122,7 @@ export const howWeWorkDataMobile = {
       }
     },
     {
-      type: TemplatesNames.ArticleDesktop,
+      type: TemplatesNames.ArticleMobile,
       data: {
         title: 'Отчёты и деньги /\nОценка',
         description: [
@@ -132,7 +132,7 @@ export const howWeWorkDataMobile = {
     },
 
     {
-      type: TemplatesNames.ArticleDesktop,
+      type: TemplatesNames.ArticleMobile,
       id: 'start',
       data: {
         title: 'Как начать',
@@ -141,7 +141,7 @@ export const howWeWorkDataMobile = {
     },
 
     {
-      type: TemplatesNames.ArticleDesktop,
+      type: TemplatesNames.ArticleMobile,
       id: 'design',
       data: {
         title: 'Проектирование /\nСкоро'
@@ -149,7 +149,7 @@ export const howWeWorkDataMobile = {
     },
 
     {
-      type: TemplatesNames.ArticleDesktop,
+      type: TemplatesNames.ArticleMobile,
       id: 'development',
       data: {
         title: 'Разработка /\nСкоро'
@@ -157,7 +157,7 @@ export const howWeWorkDataMobile = {
     },
 
     {
-      type: TemplatesNames.ArticleDesktop,
+      type: TemplatesNames.ArticleMobile,
       id: 'control',
       data: {
         title: 'Контроль качества /\nСкоро'
