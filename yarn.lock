@@ -5611,10 +5611,10 @@ neo-async@^2.5.0:
   version "2.5.2"
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.5.2.tgz#489105ce7bc54e709d736b195f82135048c50fcc"
 
-next-css-unpluggable@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/next-css-unpluggable/-/next-css-unpluggable-1.0.2.tgz#13e495607dc3ef21338b63d222485dc5e0ea92db"
-  integrity sha512-7tf8edr9ZMhF562weS6Z+TbaIjH3PvxAM0qlH8bh/QqKaIUlV/Yq5LL9aOM1zmV//RfA9ZHbVFaLNyIrq1Xowg==
+next-css-unpluggable@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/next-css-unpluggable/-/next-css-unpluggable-2.0.0.tgz#e2c8282d6e8b91e5fac511d4cffcff507242235c"
+  integrity sha512-sNZHCZb8Ehip2GQh2r9dZ27d+XIwTk1b8DCwZ6XBu4sbm0kUi2LR9Us+YQXtnrE9cVLKs8xK3HfZGjL3WrIPUg==
   dependencies:
     css-loader "1.0.0"
     extract-css-chunks-webpack-plugin "^3.2.1"
