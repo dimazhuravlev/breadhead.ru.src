@@ -52,18 +52,14 @@ class About extends React.Component {
             </AboutText>
             {isVisible ? (
               <>
-                <Desktop>
-                  <Slider
-                    slides={aboutDataDesktop.slides}
-                    className={cx(styles.aboutSlider, styles.sliderDesktop)}
-                  />
-                </Desktop>
-                <Mobile>
-                  <Slider
-                    slides={aboutDataMobile.slides}
-                    className={cx(styles.aboutSlider, styles.sliderMobile)}
-                  />
-                </Mobile>
+                <Slider
+                  slides={aboutDataDesktop.slides}
+                  className={cx(styles.aboutSlider, styles.sliderDesktop)}
+                />
+                <Slider
+                  slides={aboutDataMobile.slides}
+                  className={cx(styles.aboutSlider, styles.sliderMobile)}
+                />
               </>
             ) : (
               <div className={styles.placeholder} />
