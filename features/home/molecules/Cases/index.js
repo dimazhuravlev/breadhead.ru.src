@@ -10,13 +10,14 @@ import { casesDataMobile } from '@site/data/casesDataMobile'
 
 import styles from './cases.css'
 import cx from 'classnames'
+import { Desktop, Mobile } from '@site/features/responsive'
 
 class Cases extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
       isShown: false,
-      isVisible: false
+      isVisible: false,
     }
     this.handleClick = this.handleClick.bind(this)
     this.scrollToButton = this.scrollToButton.bind(this)
@@ -25,7 +26,7 @@ class Cases extends React.Component {
 
   scrollToButton(offset) {
     scroller.scrollTo('buttonToShow', {
-      offset: offset
+      offset: offset,
     })
   }
 
@@ -37,7 +38,7 @@ class Cases extends React.Component {
         isShown = state.isShown
         y = this.buttonRef.current.getBoundingClientRect().y
         return {
-          isShown: !state.isShown
+          isShown: !state.isShown,
         }
       },
       () => {
@@ -59,16 +60,25 @@ class Cases extends React.Component {
 
     const firstShowCasesDesktop = allCasesDesktop.slice(0, 3)
     const firstShowCasesMobile = allCasesMobile.slice(0, 3)
-
     return (
       <>
-        <section className={cx(styles.cases, styles.desktopCases)} name="cases">
-          {this.state.isShown ? allCasesDesktop : firstShowCasesDesktop}
-        </section>
+        <Desktop>
+          <section
+            className={cx(styles.cases, styles.desktopCases)}
+            name="cases"
+          >
+            {this.state.isShown ? allCasesDesktop : firstShowCasesDesktop}
+          </section>
+        </Desktop>
 
-        <section className={cx(styles.cases, styles.mobileCases)} name="cases">
-          {this.state.isShown ? allCasesMobile : firstShowCasesMobile}
-        </section>
+        <Mobile>
+          <section
+            className={cx(styles.cases, styles.mobileCases)}
+            name="cases"
+          >
+            {this.state.isShown ? allCasesMobile : firstShowCasesMobile}
+          </section>
+        </Mobile>
 
         <Button
           ref={this.buttonRef}

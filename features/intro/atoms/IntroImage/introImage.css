@@ -5,7 +5,11 @@
   margin-top: 18px;
   flex-shrink: 1;
   width: auto;
-  height: 26vw;
+  height: 480px;
+
+  @media (max-width: 1920px) {
+    height: 26vw;
+  }
 
   @media (max-width: 1440px) {
     right: 34px;
