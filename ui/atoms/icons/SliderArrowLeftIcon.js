@@ -1,12 +1,12 @@
 import React from 'react'
 
 const SliderArrowLeftIcon = props => (
-  <svg width="14px" height="24px" viewBox="0 0 14 24" {...props}>
-    <g fill="none">
-      <polyline
-        stroke="var(--beigePrimary)"
-        strokeWidth="2"
-        points="13 1 2 12 13 23"
+  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="24" {...props}>
+    <g fill="none" fill-rule="evenodd">
+      <path
+        fill="#A38E7C"
+        fill-rule="nonzero"
+        d="M3.414 12l10.293 10.293-1.414 1.414L.586 12 12.293.293l1.414 1.414z"
       />
     </g>
   </svg>
