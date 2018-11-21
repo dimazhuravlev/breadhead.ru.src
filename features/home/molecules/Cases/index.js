@@ -10,7 +10,6 @@ import { casesDataMobile } from '@site/data/casesDataMobile'
 
 import styles from './cases.css'
 import cx from 'classnames'
-import { Desktop, Mobile } from '@site/features/responsive'
 
 class Cases extends React.Component {
   constructor(props) {
@@ -19,6 +18,7 @@ class Cases extends React.Component {
       isShown: false,
       isVisible: false,
     }
+
     this.handleClick = this.handleClick.bind(this)
     this.scrollToButton = this.scrollToButton.bind(this)
     this.buttonRef = React.createRef()
@@ -62,23 +62,13 @@ class Cases extends React.Component {
     const firstShowCasesMobile = allCasesMobile.slice(0, 3)
     return (
       <>
-        <Desktop>
-          <section
-            className={cx(styles.cases, styles.desktopCases)}
-            name="cases"
-          >
-            {this.state.isShown ? allCasesDesktop : firstShowCasesDesktop}
-          </section>
-        </Desktop>
+        <section className={cx(styles.cases, styles.desktopCases)} name="cases">
+          {this.state.isShown ? allCasesDesktop : firstShowCasesDesktop}
+        </section>
 
-        <Mobile>
-          <section
-            className={cx(styles.cases, styles.mobileCases)}
-            name="cases"
-          >
-            {this.state.isShown ? allCasesMobile : firstShowCasesMobile}
-          </section>
-        </Mobile>
+        <section className={cx(styles.cases, styles.mobileCases)} name="cases">
+          {this.state.isShown ? allCasesMobile : firstShowCasesMobile}
+        </section>
 
         <Button
           ref={this.buttonRef}
