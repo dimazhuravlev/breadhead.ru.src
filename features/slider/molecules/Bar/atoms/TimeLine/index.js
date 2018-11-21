@@ -1,8 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Spring } from 'react-spring'
-import { SLIDE_DELAY } from '@site/constants'
 import styles from './timeLine.css'
+
 class TimeLine extends React.Component {
   state = { reset: false }
   componentDidUpdate(prevProps) {
@@ -15,7 +15,7 @@ class TimeLine extends React.Component {
   transform = 0
 
   render() {
-    const { state, onRest } = this.props
+    const { state, onRest, duration } = this.props
     switch (state) {
     case 'frozen':
       return (
@@ -32,7 +32,9 @@ class TimeLine extends React.Component {
           reset={this.state.reset}
           onRest={onRest}
           onFrame={({ transform }) => (this.transform = transform)}
-          config={{ duration: SLIDE_DELAY - SLIDE_DELAY * this.transform }}
+          config={{
+            duration: duration - duration * this.transform,
+          }}
           from={{ transform: this.transform || 0 }}
           to={{ transform: 1 }}
         >

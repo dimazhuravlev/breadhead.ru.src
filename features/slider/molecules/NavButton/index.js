@@ -1,7 +1,7 @@
 import React from 'react'
-import { SliderArrowLeftIcon, SliderArrowRightIcon } from '@site/ui/atoms/icons'
 import cx from 'classnames'
 import styles from './sliderControls.css'
+import Icon from '@site/ui/atoms/icons/Icon'
 
 class NavButton extends React.Component {
   render() {
@@ -20,9 +20,9 @@ class NavButton extends React.Component {
           className={cx(styles.button, styles[`button_${direction}`])}
         >
           {direction === 'left' ? (
-            <SliderArrowLeftIcon className={styles.leftArrow} />
+            <Icon name="SliderArrowLeftIcon" className={styles.leftArrow} />
           ) : (
-            <SliderArrowRightIcon className={styles.rightArrow} />
+            <Icon name="SliderArrowRightIcon" className={styles.rightArrow} />
           )}
         </button>
       </div>

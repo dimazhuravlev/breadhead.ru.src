@@ -16,6 +16,7 @@ export const casesDataDesktop = [
     slides: [
       {
         type: TemplatesNames.FrameVideoDesktop,
+        duration: 6000,
         data: {
           src: '/static/img/faster/desktop/browser_scroll_desktop.mp4'
         }
@@ -52,6 +53,7 @@ export const casesDataDesktop = [
       },
       {
         type: TemplatesNames.VideoDesktop,
+        duration: 8000,
         data: {
           src: '/static/img/faster/desktop/full_order_desktop.mp4'
         }

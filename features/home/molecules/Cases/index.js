@@ -16,8 +16,9 @@ class Cases extends React.Component {
     super(props)
     this.state = {
       isShown: false,
-      isVisible: false
+      isVisible: false,
     }
+
     this.handleClick = this.handleClick.bind(this)
     this.scrollToButton = this.scrollToButton.bind(this)
     this.buttonRef = React.createRef()
@@ -25,7 +26,7 @@ class Cases extends React.Component {
 
   scrollToButton(offset) {
     scroller.scrollTo('buttonToShow', {
-      offset: offset
+      offset: offset,
     })
   }
 
@@ -37,7 +38,7 @@ class Cases extends React.Component {
         isShown = state.isShown
         y = this.buttonRef.current.getBoundingClientRect().y
         return {
-          isShown: !state.isShown
+          isShown: !state.isShown,
         }
       },
       () => {
@@ -59,7 +60,6 @@ class Cases extends React.Component {
 
     const firstShowCasesDesktop = allCasesDesktop.slice(0, 3)
     const firstShowCasesMobile = allCasesMobile.slice(0, 3)
-
     return (
       <>
         <section className={cx(styles.cases, styles.desktopCases)} name="cases">

@@ -8,11 +8,13 @@ const SlidePhonesVideoDesktop = ({
   srcCenter,
   srcRight,
   backgroundColor,
+  active,
 }) => (
   <div style={{ backgroundColor: backgroundColor }} className={styles.slide}>
     <div className={styles.phones}>
       <div className={styles.phone}>
         <VideoPlayer
+          active={active}
           src={srcLeft}
           className={styles.screen}
           width="220"
@@ -22,6 +24,7 @@ const SlidePhonesVideoDesktop = ({
 
       <div className={styles.phone}>
         <VideoPlayer
+          active={active}
           src={srcCenter}
           className={styles.screen}
           width="220"
@@ -31,6 +34,7 @@ const SlidePhonesVideoDesktop = ({
 
       <div className={styles.phone}>
         <VideoPlayer
+          active={active}
           src={srcRight}
           className={styles.screen}
           width="220"
