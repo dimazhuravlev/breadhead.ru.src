@@ -117,6 +117,7 @@ class Slider extends React.PureComponent {
               >
                 <Bar
                   index={index}
+                  duration={slides[index].duration}
                   isVisible={isVisible && !down}
                   quantity={slides.length}
                   onRest={this.sliderRef.slickNext}
