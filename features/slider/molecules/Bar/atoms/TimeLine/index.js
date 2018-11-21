@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Spring } from 'react-spring'
 import styles from './timeLine.css'
+
 class TimeLine extends React.Component {
   state = { reset: false }
   componentDidUpdate(prevProps) {
@@ -14,8 +15,7 @@ class TimeLine extends React.Component {
   transform = 0
 
   render() {
-    const { state, onRest, slideDuration } = this.props
-
+    const { state, onRest, duration } = this.props
     switch (state) {
     case 'frozen':
       return (
@@ -33,7 +33,7 @@ class TimeLine extends React.Component {
           onRest={onRest}
           onFrame={({ transform }) => (this.transform = transform)}
           config={{
-            duration: slideDuration - slideDuration * this.transform,
+            duration: duration - duration * this.transform,
           }}
           from={{ transform: this.transform || 0 }}
           to={{ transform: 1 }}
@@ -79,7 +79,6 @@ TimeLine.propTypes = {
   active: PropTypes.bool,
   onRest: PropTypes.oneOfType([PropTypes.bool, PropTypes.func]),
   animate: PropTypes.bool,
-  slideDuration: PropTypes.number,
 }
 
 export default React.memo(TimeLine)
