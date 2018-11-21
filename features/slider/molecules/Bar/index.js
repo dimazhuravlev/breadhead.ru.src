@@ -1,14 +1,15 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { SLIDE_DURATION } from '@site/constants'
 import { range } from 'lodash'
 import TimeLine from '../../molecules/Bar/atoms/TimeLine'
 import styles from './bar.css'
 
 class Bar extends React.Component {
   render() {
-    const { onRest, index, quantity, isVisible } = this.props
+    const { onRest, index, quantity, isVisible, duration } = this.props
     const timeLines = range(quantity)
-
+    const slideDuration = duration > 0 ? duration : SLIDE_DURATION
     return (
       <div className={styles.bar}>
         {timeLines.map(timeLine => {
@@ -24,6 +25,7 @@ class Bar extends React.Component {
           }
           return (
             <TimeLine
+              duration={slideDuration}
               index={index}
               onRest={onRest}
               key={timeLine}
@@ -36,10 +38,15 @@ class Bar extends React.Component {
   }
 }
 
+Bar.defautProps = {
+  duration: 0,
+}
+
 Bar.propTypes = {
   index: PropTypes.number,
   onRest: PropTypes.oneOfType([PropTypes.bool, PropTypes.func]),
   quantity: PropTypes.number,
+  slideDuration: PropTypes.number,
 }
 
 export default React.memo(Bar)
