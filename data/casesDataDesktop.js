@@ -9,16 +9,15 @@ export const casesDataDesktop = [
       links: [
         {
           icontype: 'globe',
-          href: 'https://faster.ru',
-        },
-      ],
+          href: 'https://faster.ru'
+        }
+      ]
     },
-    // priority: true, // set true if slider is really needed
     slides: [
       {
         type: TemplatesNames.FrameVideoDesktop,
         data: {
-          src: '/static/img/faster/desktop/browser—scroll—desktop.mp4'
+          src: '/static/img/faster/desktop/browser_scroll_desktop.mp4'
         }
       },
       {
@@ -36,145 +35,185 @@ export const casesDataDesktop = [
               text: 'faster.ru'
             }
           ],
-          src: '/static/img/faster/desktop/phone—map—desktop.jpg'
+          src: '/static/img/faster/desktop/phone_map_desktop.jpg'
         }
       },
       {
         type: TemplatesNames.FramePictDesktop,
         data: {
-          src: '/static/img/faster/desktop/browser—catalog—desktop.jpg'
+          src: '/static/img/faster/desktop/browser_catalog_desktop.jpg'
         }
       },
       {
         type: TemplatesNames.PictureDesktop,
         data: {
-          src: '/static/img/faster/desktop/full—product—desktop.jpg'
+          src: '/static/img/faster/desktop/full_product_desktop.jpg'
         }
       },
       {
         type: TemplatesNames.VideoDesktop,
         data: {
-          src: '/static/img/faster/desktop/full—order—desktop.mp4'
+          src: '/static/img/faster/desktop/full_order_desktop.mp4'
         }
       },
       {
         type: TemplatesNames.FramePictDesktop,
         data: {
-          src: '/static/img/faster/desktop/browser—bag—desktop.jpg'
+          src: '/static/img/faster/desktop/browser_bag_desktop.jpg'
         }
       },
       {
         type: TemplatesNames.PhonesDesktop,
         data: {
-          srcLeft: '/static/img/faster/desktop/phone—catalog—desktop.jpg',
-          srcCenter: '/static/img/faster/desktop/phone—map—desktop.jpg',
-          srcRight: '/static/img/faster/desktop/phone—product—desktop.jpg'
+          srcLeft: '/static/img/faster/desktop/phone_catalog_desktop.jpg',
+          srcCenter: '/static/img/faster/desktop/phone_map_desktop.jpg',
+          srcRight: '/static/img/faster/desktop/phone_product_desktop.jpg'
         }
       },
       {
         type: TemplatesNames.PictureDesktop,
         data: {
-          src: '/static/img/faster/desktop/full—elements—desktop.jpg'
+          src: '/static/img/faster/desktop/full_elements_desktop.jpg'
         }
       },
       {
         type: TemplatesNames.FramePictDesktop,
         data: {
-          src: '/static/img/faster/desktop/browser—status—desktop.jpg'
+          src: '/static/img/faster/desktop/browser_status_desktop.jpg'
         }
       },
       {
         type: TemplatesNames.PictureDesktop,
         data: {
-          src: '/static/img/faster/desktop/full—notfound—desktop.jpg'
+          src: '/static/img/faster/desktop/full_notfound_desktop.jpg'
         }
       },
       {
         type: TemplatesNames.FramePictDesktop,
         data: {
-          src: '/static/img/faster/desktop/browser—search—desktop.jpg'
+          src: '/static/img/faster/desktop/browser_search_desktop.jpg'
         }
       },
       {
         type: TemplatesNames.PictureDesktop,
         data: {
-          src: '/static/img/faster/desktop/full—details—desktop.jpg'
+          src: '/static/img/faster/desktop/full_details_desktop.jpg'
         }
       }
     ]
   },
 
-  /* YAMI YAMI DESKTOP CASE */
+  /* YANGO DESKTOP CASE */
   {
     description: {
       type: 'проект',
-      name: 'Yami Yami. Красивая доставка еды',
+      name: 'Yango. Приложение для доступных инвестиций',
       links: [
         {
           icontype: 'globe',
-          href: 'https://yamiyami.ru',
+          href: 'https://yango.pro'
         },
         {
           icontype: 'article',
-          href: 'https://medium.com/breadhead-stories/yami-yami-c7f2b5916442',
-        },
-      ],
+          href: 'https://medium.com/breadhead-stories/yami-yami-c7f2b5916442'
+        }
+      ]
     },
     slides: [
       {
-        type: TemplatesNames.ArticleWithPhoneDesktop,
+        type: TemplatesNames.PictureDesktop,
         data: {
-          title: 'Yami Yami — вкуснее, чем всё',
-          description: [
-            'Мы консультировали клиента, помогая описать бизнес-логику. Спроектировали и разработали веб-приложение на React и Android-приложение для аптек.',
-          ],
-          links: [
-            {
-              icontype: 'globe',
-              href: 'https://.faster.ru',
-              text: 'faster.ru',
-            },
-            {
-              icontype: 'article',
-              href: 'https://.article.faster.ru',
-              text: 'анонс на сайте',
-            },
-          ],
-          src: '/static/img/yami_yami/yami_mobile.png'
+          src: '/static/img/yango/desktop/cover_desktop_fullslide.jpg'
         }
       },
       {
-        type: TemplatesNames.ArticleDesktop,
+        type: TemplatesNames.ArticleWithPhoneDesktop,
         data: {
-          title:
-            'Какая разница сколько часов вам везут еду, если её везут из Yami Yami?',
+          title: 'Инвестируй в Yango и станешь богат',
           description: [
-            'Люди приходят в восторг, когда впервые видят сайт Yami Yami. А когда еда приезжает к ним домой, они просто сходят с ума от фирменной упаковки и маленькой машинки Smart, которую хочеться облизывать.',
+            'Инверстируй в Yango. Инверстируй в Yango. Инверстируй в Yango. Инверстируй в Yango. Инверстируй в Yango. Аминь.'
           ],
           links: [
             {
               icontype: 'globe',
-              href: 'https://yamiyami.ru/menu',
-              text: 'Yami Yami',
+              href: 'https://.apple.ru',
+              text: 'iOS'
             },
             {
-              icontype: 'article',
-              href: 'https://medium.com/breadhead-stories',
-              text: 'Medium',
-            },
+              icontype: 'globe',
+              href: 'https://.android.ru',
+              text: 'Andriod'
+            }
           ],
-        },
+          src: '/static/img/yango/desktop/0_desktop.jpg'
+        }
       },
       {
-        type: TemplatesNames.PictureDesktop,
+        type: TemplatesNames.PhonesDesktop,
         data: {
-          src: '/static/img/yami_yami/yamiyami.jpg'
+          srcLeft: '/static/img/yango/desktop/1.1_desktop.jpg',
+          srcCenter: '/static/img/yango/desktop/1.2_desktop.mp4',
+          srcRight: '/static/img/yango/desktop/1.3_desktop.jpg'
+        }
+      },
+      {
+        type: TemplatesNames.PhonesDesktop,
+        data: {
+          srcLeft: '/static/img/yango/desktop/2.2_desktop.mp4',
+          srcCenter: '/static/img/yango/desktop/2.1_desktop.jpg',
+          srcRight: '/static/img/yango/desktop/2.3_desktop.jpg'
+        }
+      },
+      {
+        type: TemplatesNames.PhonesDesktop,
+        data: {
+          srcLeft: '/static/img/yango/desktop/3.1_desktop.jpg',
+          srcCenter: '/static/img/yango/desktop/3.2_desktop.jpg',
+          srcRight: '/static/img/yango/desktop/3.3_desktop.jpg'
+        }
+      },
+      {
+        type: TemplatesNames.VideoDesktop,
+        data: {
+          src: '/static/img/yango/desktop/4_desktop_fullslide.mp4'
         }
       },
       {
         type: TemplatesNames.FramePictDesktop,
         data: {
-          src: '/static/img/yami_yami/yamisite.png'
+          src: '/static/img/yango/desktop/5_desktop.jpg'
+        }
+      },
+      {
+        type: TemplatesNames.FramePictDesktop,
+        data: {
+          src: '/static/img/yango/desktop/6_desktop.jpg'
+        }
+      },
+      {
+        type: TemplatesNames.FrameVideoDesktop,
+        data: {
+          src: '/static/img/yango/desktop/7_desktop.mp4'
+        }
+      },
+      {
+        type: TemplatesNames.PhonesDesktop,
+        data: {
+          srcLeft: '/static/img/yango/desktop/8.1_desktop.jpg',
+          srcCenter: '/static/img/yango/desktop/8.2_desktop.jpg',
+          srcRight: '/static/img/yango/desktop/8.3_desktop.jpg'
+        }
+      },
+      {
+        type: TemplatesNames.PictureDesktop,
+        data: {
+          src: '/static/img/yango/desktop/9_desktop_fullslide.jpg'
+        }
+      },
+      {
+        type: TemplatesNames.PictureDesktop,
+        data: {
+          src: '/static/img/yango/desktop/10_desktop_fullslide.jpg'
         }
       }
     ]
@@ -184,7 +223,7 @@ export const casesDataDesktop = [
   {
     description: {
       type: 'проект',
-      name: 'Encore Fitness. Качалка за тонну бабла',
+      name: 'Encore Fitness. Сайт нового поколения фитнес-клубов',
       links: [
         {
           icontype: 'globe',
@@ -203,9 +242,9 @@ export const casesDataDesktop = [
       {
         type: TemplatesNames.ArticleWithPhoneDesktop,
         data: {
-          title: 'Фитнес! Фитнес! Фитнес! Фитнес!',
+          title: 'Новое представление об идеальном фитнесе',
           description: [
-            'Качайся, отжимайся, подтягивайся, потей, пыхти и плати нам деньги.'
+            'Мы изучили бизнес-процессы компании, с нуля разработали визуальный язык бренда совместно с Fullfort, создали гибкую информационную архитектуру, удобное расписание и собственную систему управления клубами и контентом. Чтобы передать уникальную атмосферу Encore, мы сделали акцент на утонченном визуальном образе бренда и подробном рассказе о каждом клубе.'
           ],
           links: [
             {
@@ -215,6 +254,15 @@ export const casesDataDesktop = [
             }
           ],
           src: '/static/img/encore_fitness/mobile/1-main_encore_mobile.jpg'
+        }
+      },
+      {
+        type: TemplatesNames.ArticleDesktop,
+        data: {
+          title: 'Новое представление об идеальном фитнесе',
+          description: [
+            'Мы изучили бизнес-процессы компании, с нуля разработали визуальный язык бренда совместно с Fullfort, создали гибкую информационную архитектуру, удобное расписание и собственную систему управления клубами и контентом. Чтобы передать уникальную атмосферу Encore, мы сделали акцент на утонченном визуальном образе бренда и подробном рассказе о каждом клубе.'
+          ]
         }
       },
       {
@@ -348,34 +396,6 @@ export const casesDataDesktop = [
         type: TemplatesNames.PictureDesktop,
         data: {
           src: '/static/img/obed_bufet/7-rest_obedbufet_desktop-fullscreen.jpg'
-        }
-      }
-    ]
-  },
-
-  /* CHEVOSTIK DESKTOP CASE */
-  {
-    description: {
-      type: 'проект',
-      name: 'Чевостик. И дядя Кузя',
-      links: [
-        {
-          icontype: 'globe',
-          href: 'https://chevostik.ru',
-        },
-      ],
-    },
-    slides: [
-      {
-        type: TemplatesNames.PictureDesktop,
-        data: {
-          src: '/static/img/chevostik/chevostik2.png'
-        }
-      },
-      {
-        type: TemplatesNames.FramePictDesktop,
-        data: {
-          src: '/static/img/chevostik/chevostik.png'
         }
       }
     ]

@@ -5,7 +5,7 @@ export const casesDataMobile = [
   {
     description: {
       type: 'проект',
-      name: 'Faster. Новый опыт покупки лекарств',
+      name: 'Faster. Новый опыт покупки лекарств'
     },
     priority: true,
     slides: [
@@ -35,93 +35,164 @@ export const casesDataMobile = [
       {
         type: TemplatesNames.FramePictMobile,
         data: {
-          src: '/static/img/faster/mobile/phone—map—mobile.jpg'
+          src: '/static/img/faster/mobile/phone_map_mobile.jpg'
         }
       },
       {
         type: TemplatesNames.PictureMobile,
         data: {
-          src: '/static/img/faster/mobile/full—product—mobile.jpg'
+          src: '/static/img/faster/mobile/full_product_mobile.jpg'
         }
       },
       {
         type: TemplatesNames.FramePictMobile,
         data: {
-          src: '/static/img/faster/mobile/phone—bag—mobile.jpg'
+          src: '/static/img/faster/mobile/phone_bag_mobile.jpg'
         }
       },
       {
         type: TemplatesNames.PictureMobile,
         data: {
-          src: '/static/img/faster/mobile/full—elements—mobile.jpg'
+          src: '/static/img/faster/mobile/full_elements_mobile.jpg'
         }
       },
       {
         type: TemplatesNames.FrameVideoMobile,
         data: {
-          src: '/static/img/faster/mobile/filter—mobile.mp4'
+          src: '/static/img/faster/mobile/filter_mobile.mp4'
         }
       },
       {
         type: TemplatesNames.PictureMobile,
         data: {
-          src: '/static/img/faster/mobile/full—tooltip—mobile.jpg'
+          src: '/static/img/faster/mobile/full_tooltip_mobile.jpg'
         }
       },
       {
         type: TemplatesNames.FramePictMobile,
         data: {
-          src: '/static/img/faster/mobile/phone—order—mobile.jpg'
+          src: '/static/img/faster/mobile/phone_order_mobile.jpg'
         }
       },
       {
         type: TemplatesNames.PictureMobile,
         data: {
-          src: '/static/img/faster/mobile/full—2browsers—mobile.jpg'
+          src: '/static/img/faster/mobile/full_2browsers_mobile.jpg'
         }
       }
     ]
   },
 
-  /* YAMI YAMI MOBILE CASE */
+  /* YANGO MOBILE CASE */
   {
     description: {
       type: 'проект',
-      name: 'Yami Yami. Красивая доставка еды',
+      name: 'Yango. Приложение для доступных инвестиций'
     },
     slides: [
       {
+        type: TemplatesNames.PictureMobile,
+        data: {
+          src: '/static/img/yango/mobile/cover_mobile_fullslide.jpg'
+        }
+      },
+      {
         type: TemplatesNames.ArticleMobile,
         data: {
-          title:
-            'Какая разница сколько часов вам везут еду, если её везут из Yami Yami?',
+          title: 'Заголовок для Янго',
           description: [
-            'Люди приходят в восторг, когда впервые видят сайт Yami Yami. А когда еда приезжает к ним домой, они просто сходят с ума от фирменной упаковки и маленькой машинки Smart, которую хочеться облизывать.',
+            'Текст для Янго. Текст для Янго. Текст для Янго. Текст для Янго. Текст для Янго'
           ],
           links: [
             {
               icontype: 'globe',
-              href: 'https://yamiyami.ru/menu',
-              text: 'Yami Yami',
+              href: 'https://.apple.ru',
+              text: 'iOS'
             },
             {
-              icontype: 'article',
-              href: 'https://medium.com/breadhead-stories',
-              text: 'Medium',
-            },
-          ],
-        },
+              icontype: 'globe',
+              href: 'https://.android.ru',
+              text: 'Andriod'
+            }
+          ]
+        }
       },
       {
-        type: TemplatesNames.PictureMobile,
+        type: TemplatesNames.FrameVideoMobile,
         data: {
-          src: '/static/img/yami_yami/yamiyami.jpg'
+          src: '/static/img/yango/mobile/1_mobile.mp4'
         }
       },
       {
         type: TemplatesNames.FramePictMobile,
         data: {
-          src: '/static/img/yami_yami/yami_mobile.png'
+          src: '/static/img/yango/mobile/2_mobile.jpg'
+        }
+      },
+      {
+        type: TemplatesNames.FramePictMobile,
+        data: {
+          src: '/static/img/yango/mobile/3_mobile.jpg'
+        }
+      },
+      {
+        type: TemplatesNames.FrameVideoMobile,
+        data: {
+          src: '/static/img/yango/mobile/4_mobile.mp4'
+        }
+      },
+      {
+        type: TemplatesNames.FramePictMobile,
+        data: {
+          src: '/static/img/yango/mobile/5_mobile.jpg'
+        }
+      },
+      {
+        type: TemplatesNames.FramePictMobile,
+        data: {
+          src: '/static/img/yango/mobile/6_mobile.jpg'
+        }
+      },
+      {
+        type: TemplatesNames.FrameVideoMobile,
+        data: {
+          src: '/static/img/yango/mobile/7_mobile_fullslide.mp4'
+        }
+      },
+      {
+        type: TemplatesNames.FramePictMobile,
+        data: {
+          src: '/static/img/yango/mobile/8_mobile.jpg'
+        }
+      },
+      {
+        type: TemplatesNames.FramePictMobile,
+        data: {
+          src: '/static/img/yango/mobile/9_mobile.jpg'
+        }
+      },
+      {
+        type: TemplatesNames.FramePictMobile,
+        data: {
+          src: '/static/img/yango/mobile/10_mobile.jpg'
+        }
+      },
+      {
+        type: TemplatesNames.PictureMobile,
+        data: {
+          src: '/static/img/yango/mobile/11_mobile_fullslide.jpg'
+        }
+      },
+      {
+        type: TemplatesNames.PictureMobile,
+        data: {
+          src: '/static/img/yango/mobile/12_mobile_fullslide.jpg'
+        }
+      },
+      {
+        type: TemplatesNames.PictureMobile,
+        data: {
+          src: '/static/img/yango/mobile/13_mobile_fullslide.jpg'
         }
       }
     ]
@@ -285,28 +356,6 @@ export const casesDataMobile = [
         type: TemplatesNames.PictureMobile,
         data: {
           src: '/static/img/obed_bufet/7-rest_obedbufet_mobile-fullscreen.png'
-        }
-      }
-    ]
-  },
-
-  /* CHEVOSTIK MOBILE CASE */
-  {
-    description: {
-      type: 'проект',
-      name: 'Чевостик. И дядя Кузя',
-    },
-    slides: [
-      {
-        type: TemplatesNames.PictureMobile,
-        data: {
-          src: '/static/img/chevostik/chevostik2.png'
-        }
-      },
-      {
-        type: TemplatesNames.FramePictMobile,
-        data: {
-          src: '/static/img/chevostik/chevostik.png'
         }
       }
     ]
