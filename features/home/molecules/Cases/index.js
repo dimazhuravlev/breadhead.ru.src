@@ -18,10 +18,15 @@ class Cases extends React.Component {
     this.state = {
       isShown: false,
       isVisible: false,
+      isMount: false,
     }
     this.handleClick = this.handleClick.bind(this)
     this.scrollToButton = this.scrollToButton.bind(this)
     this.buttonRef = React.createRef()
+  }
+
+  componentDidMount() {
+    this.setState({ isMount: true })
   }
 
   scrollToButton(offset) {
@@ -50,6 +55,7 @@ class Cases extends React.Component {
   }
 
   render() {
+    const { isMount } = this.state
     const allCasesDesktop = casesDataDesktop.map(caseData => (
       <Case key={caseData.description.name} {...caseData} />
     ))
@@ -62,6 +68,8 @@ class Cases extends React.Component {
     const firstShowCasesMobile = allCasesMobile.slice(0, 3)
     return (
       <>
+        {/* placeholder is used to shift "More" button lower until js bundle is loaded */}
+        {!isMount && <div className={styles.placeholder} />}
         <Desktop>
           <section
             className={cx(styles.cases, styles.desktopCases)}
