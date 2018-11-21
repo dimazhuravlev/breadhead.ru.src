@@ -29,17 +29,23 @@ const Icon = () => (
           opacity="0.25"
         />
       </symbol>
-      <symbol id="icon-SliderArrowLeftIcon" viewBox="0 0 19 32">
-        <path
-          fill="var(--color1,#a38e7c)"
-          d="M4.552 16l13.724 13.724-1.885 1.885-15.609-15.609 15.609-15.609 1.885 1.885z"
-        />
+      <symbol id="icon-SliderArrowLeftIcon" viewBox="0 0 14 24">
+        <g fill="none">
+          <polyline
+            stroke="var(--beigePrimary)"
+            strokeWidth="2"
+            points="13 1 2 12 13 23"
+          />
+        </g>
       </symbol>
-      <symbol id="icon-SliderArrowRightIcon" viewBox="0 0 19 32">
-        <path
-          fill="var(--color1,#a38e7c)"
-          d="M14.115 16l-13.724-13.724 1.885-1.885 15.609 15.609-15.609 15.609-1.885-1.885z"
-        />
+      <symbol id="icon-SliderArrowRightIcon" viewBox="0 0 14 24">
+        <g fill="none">
+          <polyline
+            stroke="var(--beigePrimary)"
+            strokeWidth="2"
+            points="1 1 12 12 1 23"
+          />
+        </g>
       </symbol>
     </defs>
   </svg>

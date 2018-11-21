@@ -39,12 +39,12 @@
 .slick-next {
   all: unset;
 }
-
+/* 
 .slick-slider .slick-arrow {
   visibility: hidden;
   opacity: 0;
   transition: all 0.4s ease;
-}
+} */
 
 .slick-slider:hover .slick-arrow {
   visibility: visible;
