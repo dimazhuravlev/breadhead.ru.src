@@ -1,4 +1,10 @@
 .intro {
+  -webkit-animation-name: fadeIn;
+  -webkit-animation-duration: 1.4s;
+  -webkit-animation-timing-function: cubic-bezier(0.59, 0.01, 0.28, 1);
+  animation-name: fadeIn;
+  animation-duration: 1.4s;
+  animation-timing-function: cubic-bezier(0.59, 0.01, 0.28, 1);
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
@@ -22,5 +28,31 @@
     align-items: stretch;
     margin-top: 80px;
     margin-bottom: 24px;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    visibility: hidden;
+    -webkit-opacity: 0;
+    -webkit-transform: translateY(10px);
+  }
+  100% {
+    visibility: visible;
+    -webkit-opacity: 1;
+    -webkit-transform: translateY(0px);
   }
 }

@@ -39,7 +39,7 @@ div.background {
   position: absolute;
   left: 14px;
   top: 10px;
-  fill: #a38e7c;
+  /* fill: red !important; */
 }
 
 .rightArrow {
@@ -58,8 +58,8 @@ div.background {
   &:active {
     background-color: var(--redSecondary);
   }
-  &:hover .leftArrow polyline {
-    stroke: var(--darkPrimary);
+  &:hover .leftArrow path {
+    fill: var(--darkPrimary);
   }
 }
 
@@ -72,8 +72,8 @@ div.background {
     background-color: var(--redSecondary);
     transition: background-color 0s ease;
   }
-  &:hover .rightArrow polyline {
-    stroke: var(--darkPrimary);
+  &:hover .rightArrow path {
+    fill: var(--darkPrimary);
   }
 }
 

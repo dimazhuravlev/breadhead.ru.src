@@ -32,18 +32,22 @@
   align-items: center;
   cursor: pointer;
   transition: all 0.2s ease-in;
-  &:hover .icon {
+
+  &:hover .icon path {
     fill: var(--redPrimary);
     transition: all 0.2s ease-in;
   }
+
   &:hover .text {
     color: var(--redPrimary);
     transition: all 0.2s ease-in;
   }
-  &:active .icon {
+
+  &:active .icon path {
     fill: var(--redSecondary);
     transition: all 0.2s ease-in;
   }
+
   &:active .text {
     color: var(--redSecondary);
     transition: all 0.2s ease-in;
