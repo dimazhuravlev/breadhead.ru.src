@@ -13,95 +13,96 @@ export const casesDataDesktop = [
         },
       ],
     },
-    // priority: true, // set true if slider is really needed
     slides: [
       {
         type: TemplatesNames.FrameVideoDesktop,
+        duration: 6000,
         data: {
-          src: '/static/img/faster/desktop/browser—scroll—desktop.mp4'
-        }
+          src: '/static/img/faster/desktop/browser—scroll—desktop.mp4',
+        },
       },
       {
         type: TemplatesNames.ArticleWithPhoneDesktop,
         data: {
           title: 'Сервис для поиска и заказа лекарств в аптеках города',
           description: [
-            'Cравнить цены, найти аналоги и заказать в ближайшей аптеке. Проектировали, рисовали и программировали'
+            'Cравнить цены, найти аналоги и заказать в ближайшей аптеке. Проектировали, рисовали и программировали',
           ],
           links: [
             {
               icontype: 'globe',
               description: 'beta:',
               href: 'https://faster.ru',
-              text: 'faster.ru'
-            }
+              text: 'faster.ru',
+            },
           ],
-          src: '/static/img/faster/desktop/phone—map—desktop.jpg'
-        }
+          src: '/static/img/faster/desktop/phone—map—desktop.jpg',
+        },
       },
       {
         type: TemplatesNames.FramePictDesktop,
         data: {
-          src: '/static/img/faster/desktop/browser—catalog—desktop.jpg'
-        }
+          src: '/static/img/faster/desktop/browser—catalog—desktop.jpg',
+        },
       },
       {
         type: TemplatesNames.PictureDesktop,
         data: {
-          src: '/static/img/faster/desktop/full—product—desktop.jpg'
-        }
+          src: '/static/img/faster/desktop/full—product—desktop.jpg',
+        },
       },
       {
         type: TemplatesNames.VideoDesktop,
+        duration: 8000,
         data: {
-          src: '/static/img/faster/desktop/full—order—desktop.mp4'
-        }
+          src: '/static/img/faster/desktop/full—order—desktop.mp4',
+        },
       },
       {
         type: TemplatesNames.FramePictDesktop,
         data: {
-          src: '/static/img/faster/desktop/browser—bag—desktop.jpg'
-        }
+          src: '/static/img/faster/desktop/browser—bag—desktop.jpg',
+        },
       },
       {
         type: TemplatesNames.PhonesDesktop,
         data: {
           srcLeft: '/static/img/faster/desktop/phone—catalog—desktop.jpg',
           srcCenter: '/static/img/faster/desktop/phone—map—desktop.jpg',
-          srcRight: '/static/img/faster/desktop/phone—product—desktop.jpg'
-        }
+          srcRight: '/static/img/faster/desktop/phone—product—desktop.jpg',
+        },
       },
       {
         type: TemplatesNames.PictureDesktop,
         data: {
-          src: '/static/img/faster/desktop/full—elements—desktop.jpg'
-        }
+          src: '/static/img/faster/desktop/full—elements—desktop.jpg',
+        },
       },
       {
         type: TemplatesNames.FramePictDesktop,
         data: {
-          src: '/static/img/faster/desktop/browser—status—desktop.jpg'
-        }
+          src: '/static/img/faster/desktop/browser—status—desktop.jpg',
+        },
       },
       {
         type: TemplatesNames.PictureDesktop,
         data: {
-          src: '/static/img/faster/desktop/full—notfound—desktop.jpg'
-        }
+          src: '/static/img/faster/desktop/full—notfound—desktop.jpg',
+        },
       },
       {
         type: TemplatesNames.FramePictDesktop,
         data: {
-          src: '/static/img/faster/desktop/browser—search—desktop.jpg'
-        }
+          src: '/static/img/faster/desktop/browser—search—desktop.jpg',
+        },
       },
       {
         type: TemplatesNames.PictureDesktop,
         data: {
-          src: '/static/img/faster/desktop/full—details—desktop.jpg'
-        }
-      }
-    ]
+          src: '/static/img/faster/desktop/full—details—desktop.jpg',
+        },
+      },
+    ],
   },
 
   /* YAMI YAMI DESKTOP CASE */
@@ -140,8 +141,8 @@ export const casesDataDesktop = [
               text: 'анонс на сайте',
             },
           ],
-          src: '/static/img/yami_yami/yami_mobile.png'
-        }
+          src: '/static/img/yami_yami/yami_mobile.png',
+        },
       },
       {
         type: TemplatesNames.ArticleDesktop,
@@ -168,16 +169,16 @@ export const casesDataDesktop = [
       {
         type: TemplatesNames.PictureDesktop,
         data: {
-          src: '/static/img/yami_yami/yamiyami.jpg'
-        }
+          src: '/static/img/yami_yami/yamiyami.jpg',
+        },
       },
       {
         type: TemplatesNames.FramePictDesktop,
         data: {
-          src: '/static/img/yami_yami/yamisite.png'
-        }
-      }
-    ]
+          src: '/static/img/yami_yami/yamisite.png',
+        },
+      },
+    ],
   },
 
   /* ENCORE FITNESS DESKTOP CASE */
@@ -188,60 +189,60 @@ export const casesDataDesktop = [
       links: [
         {
           icontype: 'globe',
-          href: 'https://encorefitness.ru'
-        }
-      ]
+          href: 'https://encorefitness.ru',
+        },
+      ],
     },
     slides: [
       {
         type: TemplatesNames.PictureDesktop,
         data: {
           src:
-            '/static/img/encore_fitness/desktop/cover_encore_desktop_fullslide.jpg'
-        }
+            '/static/img/encore_fitness/desktop/cover_encore_desktop_fullslide.jpg',
+        },
       },
       {
         type: TemplatesNames.ArticleWithPhoneDesktop,
         data: {
           title: 'Фитнес! Фитнес! Фитнес! Фитнес!',
           description: [
-            'Качайся, отжимайся, подтягивайся, потей, пыхти и плати нам деньги.'
+            'Качайся, отжимайся, подтягивайся, потей, пыхти и плати нам деньги.',
           ],
           links: [
             {
               icontype: 'globe',
               href: 'https://encorefitness.ru',
-              text: 'encorefitness.ru'
-            }
+              text: 'encorefitness.ru',
+            },
           ],
-          src: '/static/img/encore_fitness/mobile/1-main_encore_mobile.jpg'
-        }
+          src: '/static/img/encore_fitness/mobile/1-main_encore_mobile.jpg',
+        },
       },
       {
         type: TemplatesNames.FramePictDesktop,
         data: {
-          src: '/static/img/encore_fitness/desktop/1-main_encore_desktop.jpg'
-        }
+          src: '/static/img/encore_fitness/desktop/1-main_encore_desktop.jpg',
+        },
       },
       {
         type: TemplatesNames.FrameVideoDesktop,
         data: {
           src:
-            '/static/img/encore_fitness/desktop/2-club_encore_desktop_opt/2-club_encore_desktop_opt.mp4'
-        }
+            '/static/img/encore_fitness/desktop/2-club_encore_desktop_opt/2-club_encore_desktop_opt.mp4',
+        },
       },
       {
         type: TemplatesNames.FramePictDesktop,
         data: {
           src:
-            '/static/img/encore_fitness/desktop/3-trainers_encore_desktop.jpg'
-        }
+            '/static/img/encore_fitness/desktop/3-trainers_encore_desktop.jpg',
+        },
       },
       {
         type: TemplatesNames.FramePictDesktop,
         data: {
-          src: '/static/img/encore_fitness/desktop/4-cards_encore_desktop.jpg'
-        }
+          src: '/static/img/encore_fitness/desktop/4-cards_encore_desktop.jpg',
+        },
       },
       {
         type: TemplatesNames.PhonesDesktop,
@@ -251,79 +252,80 @@ export const casesDataDesktop = [
           srcCenter:
             '/static/img/encore_fitness/desktop/9.2-trainers_encore_mobile-screen_desktop.jpg',
           srcRight:
-            '/static/img/encore_fitness/desktop/9.3-schedule_encore_mobile-screen_desktop.jpg'
-        }
+            '/static/img/encore_fitness/desktop/9.3-schedule_encore_mobile-screen_desktop.jpg',
+        },
       },
       {
         type: TemplatesNames.FrameVideoDesktop,
         data: {
           src:
-            '/static/img/encore_fitness/desktop/5-grouptraining_desktop_opt/5-grouptraining_desktop_opt.mp4'
-        }
+            '/static/img/encore_fitness/desktop/5-grouptraining_desktop_opt/5-grouptraining_desktop_opt.mp4',
+        },
       },
       {
         type: TemplatesNames.FramePictDesktop,
         data: {
           src:
-            '/static/img/encore_fitness/desktop/6-schedule_encore_desktop.jpg'
-        }
+            '/static/img/encore_fitness/desktop/6-schedule_encore_desktop.jpg',
+        },
       },
       {
         type: TemplatesNames.FramePictDesktop,
         data: {
-          src: '/static/img/encore_fitness/desktop/7-workout_encore_desktop.jpg'
-        }
+          src:
+            '/static/img/encore_fitness/desktop/7-workout_encore_desktop.jpg',
+        },
       },
       {
         type: TemplatesNames.FramePictDesktop,
         data: {
-          src: '/static/img/encore_fitness/desktop/8-spa_encore_desktop.jpg'
-        }
+          src: '/static/img/encore_fitness/desktop/8-spa_encore_desktop.jpg',
+        },
       },
       {
         type: TemplatesNames.PictureDesktop,
         data: {
           src:
-            '/static/img/encore_fitness/desktop/10_grid-desktop_encore_desktop_full-slide.jpg'
-        }
-      }
-    ]
+            '/static/img/encore_fitness/desktop/10_grid-desktop_encore_desktop_full-slide.jpg',
+        },
+      },
+    ],
   },
 
   /* OBED BUFET DESKTOP CASE */
   {
     description: {
       type: 'приложение',
-      name: 'Обед Буфет'
+      name: 'Обед Буфет',
     },
     slides: [
       {
         type: TemplatesNames.PictureDesktop,
         data: {
-          src: '/static/img/obed_bufet/cover_obedbufet_desktop_fullslide.jpg'
-        }
+          src: '/static/img/obed_bufet/cover_obedbufet_desktop_fullslide.jpg',
+        },
       },
       {
         type: TemplatesNames.ArticleWithPhoneDesktop,
         data: {
           title: 'Обед Буфет. Закажи пожрать',
           description: [
-            'Проектировали, прототипировали, рисовали, а они уже год программируют. Ну сколько можно ёпта?'
+            'Проектировали, прототипировали, рисовали, а они уже год программируют. Ну сколько можно ёпта?',
           ],
           links: [
             {
               icontype: 'globe',
               href: 'https://apple.com',
-              text: 'iOS'
+              text: 'iOS',
             },
             {
               icontype: 'globe',
               href: 'https://android.com',
-              text: 'Android'
-            }
+              text: 'Android',
+            },
           ],
-          src: '/static/img/obed_bufet/0-location_obedbufet_mobile.jpg'
-        }
+          src: '/static/img/obed_bufet/0-location_obedbufet_mobile.jpg',
+        },
       },
       {
         type: TemplatesNames.PhonesDesktop,
@@ -332,8 +334,8 @@ export const casesDataDesktop = [
           srcCenter: '/static/img/obed_bufet/2-catalog_obedbufet_mobile.jpg',
           srcRight: '/static/img/obed_bufet/3-product_obedbufet_mobile.jpg',
           backgroundSrc:
-            '/static/img/obed_bufet/cover_obedbufet_desktop_fullslide.jpg'
-        }
+            '/static/img/obed_bufet/cover_obedbufet_desktop_fullslide.jpg',
+        },
       },
       {
         type: TemplatesNames.PhonesDesktop,
@@ -341,16 +343,16 @@ export const casesDataDesktop = [
           srcLeft: '/static/img/obed_bufet/4-profile_obedbufet_mobile.jpg',
           srcCenter: '/static/img/obed_bufet/5-address_obedbufet_mobile.jpg',
           srcRight: '/static/img/obed_bufet/6-history_obedbufet_mobile.jpg',
-          backgroundColor: 'pink'
-        }
+          backgroundColor: 'pink',
+        },
       },
       {
         type: TemplatesNames.PictureDesktop,
         data: {
-          src: '/static/img/obed_bufet/7-rest_obedbufet_desktop-fullscreen.jpg'
-        }
-      }
-    ]
+          src: '/static/img/obed_bufet/7-rest_obedbufet_desktop-fullscreen.jpg',
+        },
+      },
+    ],
   },
 
   /* CHEVOSTIK DESKTOP CASE */
@@ -369,15 +371,15 @@ export const casesDataDesktop = [
       {
         type: TemplatesNames.PictureDesktop,
         data: {
-          src: '/static/img/chevostik/chevostik2.png'
-        }
+          src: '/static/img/chevostik/chevostik2.png',
+        },
       },
       {
         type: TemplatesNames.FramePictDesktop,
         data: {
-          src: '/static/img/chevostik/chevostik.png'
-        }
-      }
-    ]
-  }
+          src: '/static/img/chevostik/chevostik.png',
+        },
+      },
+    ],
+  },
 ]
