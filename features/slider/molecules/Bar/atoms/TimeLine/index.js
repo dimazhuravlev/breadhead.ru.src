@@ -79,6 +79,7 @@ TimeLine.propTypes = {
   active: PropTypes.bool,
   onRest: PropTypes.oneOfType([PropTypes.bool, PropTypes.func]),
   animate: PropTypes.bool,
+  slideDuration: PropTypes.number,
 }
 
 export default React.memo(TimeLine)

@@ -42,6 +42,7 @@ Bar.propTypes = {
   index: PropTypes.number,
   onRest: PropTypes.oneOfType([PropTypes.bool, PropTypes.func]),
   quantity: PropTypes.number,
+  slideDuration: PropTypes.number,
 }
 
 export default React.memo(Bar)
