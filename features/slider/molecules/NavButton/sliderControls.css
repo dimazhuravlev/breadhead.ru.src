@@ -39,12 +39,14 @@ div.background {
   position: absolute;
   left: 14px;
   top: 10px;
+  fill: #a38e7c;
 }
 
 .rightArrow {
   position: absolute;
   right: 14px;
   top: 10px;
+  fill: #a38e7c;
 }
 
 .button_left {
