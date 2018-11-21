@@ -46,7 +46,7 @@
     "jest": "^23.6.0",
     "jest-enzyme": "^7.0.1",
     "normalize.css": "^8.0.1",
-    "postcss": "^7.0.5",
+    "postcss": "^7.0.6",
     "postcss-nesting": "^7.0.0",
     "postcss-normalize": "^7.0.1",
     "postcss-preset-env": "^6.4.0",
