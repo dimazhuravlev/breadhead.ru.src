@@ -9,7 +9,7 @@ class VideoPlayer extends React.Component {
     if (active !== prevActive) {
       if (active) {
         this.playVideo()
-      } else if (!active) {
+      } else {
         this.stopVideo()
       }
     }
@@ -19,12 +19,12 @@ class VideoPlayer extends React.Component {
     this.videoRef.current.play()
   }
 
-  videoRef = React.createRef()
-
   stopVideo = () => {
     this.videoRef.current.pause()
     this.videoRef.current.currentTime = 0
   }
+
+  videoRef = React.createRef()
 
   render() {
     const { src, height, width, className, active } = this.props
