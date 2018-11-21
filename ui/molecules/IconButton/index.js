@@ -17,9 +17,7 @@ class IconButton extends React.Component {
       <div className={cx(styles.iconButton, className)}>
         {description && <div className={styles.description}>{description}</div>}
         <button onClick={onClick} className={styles.button}>
-          {Icon && (
-            <Icon className={styles.icon} name={iconTypeMap[icontype]} />
-          )}
+          <Icon className={styles.icon} name={iconTypeMap[icontype]} />
           {text && <div className={styles.text}>{text}</div>}
         </button>
       </div>
