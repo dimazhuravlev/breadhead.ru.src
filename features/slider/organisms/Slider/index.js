@@ -46,13 +46,13 @@ class Slider extends React.PureComponent {
   }
 
   preventTouch(e) {
-    const minValue = 5 // threshold
+    const MIN_VALUE = 5 // threshold
 
     this.clientX = e.touches[0].clientX - this.firstClientX
     this.clientY = e.touches[0].clientY - this.firstClientY
 
     // Vertical scrolling does not work when you start swiping horizontally.
-    if (Math.abs(this.clientX) > minValue) {
+    if (Math.abs(this.clientX) > MIN_VALUE) {
       e.preventDefault()
       e.returnValue = false
       return false
@@ -131,6 +131,7 @@ class Slider extends React.PureComponent {
                     <SlideComponent
                       onLinkClick={this.onLinkClick}
                       key={i}
+                      active={index === i}
                       {...slides[i].data}
                     />
                   ))}
