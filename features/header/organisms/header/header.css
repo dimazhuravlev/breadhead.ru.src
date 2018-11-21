@@ -1,4 +1,10 @@
 .header {
+  -webkit-animation-name: fadeIn;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -21,5 +27,41 @@
   @media (max-width: 1440px) {
     justify-content: flex-end;
     width: auto;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  50% {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    visibility: hidden;
+    -webkit-opacity: 0;
+    -webkit-transform: translateY(-10px);
+  }
+  50% {
+    visibility: hidden;
+    -webkit-opacity: 0;
+    -webkit-transform: translateY(-10px);
+  }
+  100% {
+    visibility: visible;
+    -webkit-opacity: 1;
+    -webkit-transform: translateY(0px);
   }
 }
