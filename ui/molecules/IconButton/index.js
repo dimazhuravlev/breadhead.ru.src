@@ -6,7 +6,7 @@ import cx from 'classnames'
 
 const iconTypeMap = {
   globe: 'GlobeIcon',
-  article: 'ArticleIcon',
+  article: 'ArticleIcon'
 }
 
 class IconButton extends React.Component {
@@ -17,7 +17,9 @@ class IconButton extends React.Component {
       <div className={cx(styles.iconButton, className)}>
         {description && <div className={styles.description}>{description}</div>}
         <button onClick={onClick} className={styles.button}>
-          <Icon className={styles.icon} name={iconTypeMap[icontype]} />
+          {icontype && (
+            <Icon className={styles.icon} name={iconTypeMap[icontype]} />
+          )}
           {text && <div className={styles.text}>{text}</div>}
         </button>
       </div>
@@ -29,7 +31,7 @@ IconButton.propTypes = {
   onClick: PropTypes.func,
   icontype: PropTypes.oneOf(['globe', 'article']),
   description: PropTypes.string,
-  text: PropTypes.string,
+  text: PropTypes.string
 }
 
 export default IconButton

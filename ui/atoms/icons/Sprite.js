@@ -6,7 +6,7 @@ const Icon = () => (
     style={{
       position: 'absolute',
       width: 0,
-      height: 0,
+      height: 0
     }}
     overflow="hidden"
   >
@@ -32,7 +32,7 @@ const Icon = () => (
       <symbol id="icon-SliderArrowLeftIcon" viewBox="0 0 14 24">
         <g fill="none">
           <polyline
-            stroke="var(--beigePrimary)"
+            // stroke="var(--beigePrimary)"
             strokeWidth="2"
             points="13 1 2 12 13 23"
           />
@@ -41,7 +41,7 @@ const Icon = () => (
       <symbol id="icon-SliderArrowRightIcon" viewBox="0 0 14 24">
         <g fill="none">
           <polyline
-            stroke="var(--beigePrimary)"
+            // stroke="var(--beigePrimary)"
             strokeWidth="2"
             points="1 1 12 12 1 23"
           />
