@@ -35,7 +35,7 @@ class VideoPlayer extends React.Component {
         height={height}
         width={width}
         className={cx(styles.screen, className)}
-        playsInline={active}
+        playsInline
         autoPlay={active}
         loop
         muted
