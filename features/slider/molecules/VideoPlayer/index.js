@@ -23,8 +23,8 @@ class VideoPlayer extends React.Component {
     this.videoRef.current.pause()
     this.videoRef.current.currentTime = 0
   }
-
   videoRef = React.createRef()
+
 
   render() {
     const { src, height, width, className, active } = this.props
@@ -35,7 +35,7 @@ class VideoPlayer extends React.Component {
         height={height}
         width={width}
         className={cx(styles.screen, className)}
-        playsInline={active}
+        playsInline
         autoPlay={active}
         loop
         muted
