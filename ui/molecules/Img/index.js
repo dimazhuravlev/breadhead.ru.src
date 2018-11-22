@@ -4,13 +4,13 @@ import cx from 'classnames'
 import styles from './Img.css'
 import { Transition } from 'react-spring'
 
-const Img = ({ className, src, placeholder }) => {
+const Img = ({ className, src, preloader }) => {
   return (
     <ReactImage
       className={className}
       src={[src]}
       loader={
-        <img className={cx(className, styles.preloader)} src={placeholder} />
+        <img className={cx(className, styles.preloader)} src={preloader} />
       }
       container={children => {
         return (

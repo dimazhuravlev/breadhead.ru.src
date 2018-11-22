@@ -32,7 +32,7 @@ export const casesDataDesktop = [
           image: {
             src: '/static/img/faster/desktop/phone_map_desktop.jpg',
             preloader:
-              'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wAARCAAEAAIDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAj/xAAdEAABBAIDAAAAAAAAAAAAAAACAAEDBAUiI1Fh/8QAFQEBAQAAAAAAAAAAAAAAAAAABAX/xAAYEQADAQEAAAAAAAAAAAAAAAAAAQIRIf/aAAwDAQACEQMRAD8Av7H5u9LQrGU+xRC78YdN4iIhtvSZN1i6f//Z',
+              '/static/img/faster/desktop/preloader-phone_map_desktop.jpg',
           },
         },
       },
@@ -46,17 +46,21 @@ export const casesDataDesktop = [
       {
         type: TemplatesNames.FramePictDesktop,
         data: {
-          src: '/static/img/faster/desktop/browser_catalog_desktop.jpg',
-          preloader:
-            'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wAARCAADAAUDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAn/xAAbEAABBQEBAAAAAAAAAAAAAAABAAIDESEEQf/EABUBAQEAAAAAAAAAAAAAAAAAAAAC/8QAFREBAQAAAAAAAAAAAAAAAAAAAQD/2gAMAwEAAhEDEQA/AKdRcUQbYDwbIyRwwHPURFCsv//Z',
+          image: {
+            src: '/static/img/faster/desktop/browser_catalog_desktop.jpg',
+            preloader:
+              '/static/img/faster/desktop/preloader-browser_catalog_desktop.jpg',
+          },
         },
       },
       {
         type: TemplatesNames.PictureDesktop,
         data: {
-          src: '/static/img/faster/desktop/full_product_desktop.jpg',
-          preloader:
-            'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wAARCAAEAAYDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAj/xAAgEAABAwQCAwAAAAAAAAAAAAACAAERAwQFBgcSEyFh/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgT/xAAXEQADAQAAAAAAAAAAAAAAAAAAAQIx/9oADAMBAAIRAxEAPwCy+E9QwZ8B6DfHh8fUuK2ItBMqlpSLs/ilyeRmXn2/xkRFNVNPQVp//9k=',
+          image: {
+            src: '/static/img/faster/desktop/full_product_desktop.jpg',
+            preloader:
+              '/static/img/faster/desktop/preloader-full_product_desktop.jpg',
+          },
         },
       },
       {
@@ -69,9 +73,11 @@ export const casesDataDesktop = [
       {
         type: TemplatesNames.FramePictDesktop,
         data: {
-          src: '/static/img/faster/desktop/browser_bag_desktop.jpg',
-          preloader:
-            'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wAARCAADAAUDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAn/xAAfEAABAwMFAAAAAAAAAAAAAAABAAIFAwQxBhESEyH/xAAVAQEBAAAAAAAAAAAAAAAAAAAEBf/EABgRAQEBAQEAAAAAAAAAAAAAAAECABED/9oADAMBAAIRAxEAPwCh+uJS5jpCi23qdbSw7jiDg+ZCIiFdUU8dO9aS3jv/2Q==',
+          image: {
+            src: '/static/img/faster/desktop/browser_bag_desktop.jpg',
+            preloader:
+              '/static/img/faster/desktop/preloader-browser_bag_desktop.jpg',
+          },
         },
       },
       {
@@ -85,41 +91,51 @@ export const casesDataDesktop = [
       {
         type: TemplatesNames.PictureDesktop,
         data: {
-          src: '/static/img/faster/desktop/full_elements_desktop.jpg',
-          preloader:
-            'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wAARCAAEAAYDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAj/xAAdEAAABgMBAAAAAAAAAAAAAAAAAQIDBBEFEyFB/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/xAAWEQEBAQAAAAAAAAAAAAAAAAAAATH/2gAMAwEAAhEDEQA/ALUlZVxGNjzDYjqkb32NhspskEu654AAExH/2Q==',
+          image: {
+            src: '/static/img/faster/desktop/full_elements_desktop.jpg',
+            preloader:
+              '/static/img/faster/desktop/preloader-full_elements_desktop.jpg',
+          },
         },
       },
       {
         type: TemplatesNames.FramePictDesktop,
         data: {
-          src: '/static/img/faster/desktop/browser_status_desktop.jpg',
-          preloader:
-            'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wAARCAADAAUDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAn/xAAdEAACAgEFAAAAAAAAAAAAAAABAgADBAUGMTJh/8QAFAEBAAAAAAAAAAAAAAAAAAAAA//EABcRAAMBAAAAAAAAAAAAAAAAAAABAiH/2gAMAwEAAhEDEQA/AKRbkz7tNzUrxitSFOorUjn0REQaehs//9k=',
+          image: {
+            src: '/static/img/faster/desktop/browser_status_desktop.jpg',
+            preloader:
+              '/static/img/faster/desktop/preloader-browser_status_desktop.jpg',
+          },
         },
       },
       {
         type: TemplatesNames.PictureDesktop,
         data: {
-          src: '/static/img/faster/desktop/full_notfound_desktop.jpg',
-          preloader:
-            'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wAARCAAEAAYDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAj/xAAhEAABBAIBBQEAAAAAAAAAAAABAgMEEQAFBgcIEhMhIv/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGxEAAgIDAQAAAAAAAAAAAAAAAQIAsQMhQZH/2gAMAwEAAhEDEQA/ALS7f+CaWR0a4NLd18N1T2hhlSHIMdY8vXZXZbKiTYBskfkfLsljGT8rsG0eChHQAr7Zn//Z',
+          image: {
+            src: '/static/img/faster/desktop/full_notfound_desktop.jpg',
+            preloader:
+              '/static/img/faster/desktop/preloader-full_notfound_desktop.jpg',
+          },
         },
       },
       {
         type: TemplatesNames.FramePictDesktop,
         data: {
-          src: '/static/img/faster/desktop/browser_search_desktop.jpg',
-          preloader:
-            'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wAARCAADAAUDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAn/xAAdEAACAgEFAAAAAAAAAAAAAAAAAQIDEQQFM0GB/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQL/xAAVEQEBAAAAAAAAAAAAAAAAAAAAAf/aAAwDAQACEQMRAD8Ao3XvmtjDKtWW2uOPXgAJEf/Z',
+          image: {
+            src: '/static/img/faster/desktop/browser_search_desktop.jpg',
+            preloader:
+              '/static/img/faster/desktop/preloader-browser_search_desktop.jpg',
+          },
         },
       },
       {
         type: TemplatesNames.PictureDesktop,
         data: {
-          src: '/static/img/faster/desktop/full_details_desktop.jpg',
-          preloader:
-            'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wAARCAAEAAYDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAn/xAAeEAACAgEFAQAAAAAAAAAAAAABAgMEAAUGERIxYf/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/8QAFhEBAQEAAAAAAAAAAAAAAAAAAAEx/9oADAMBAAIRAxEAPwCh2w9j6I9KrqctCKe9ZpxJNPModpAqr17E+8ckD4cYxiLdf//Z',
+          image: {
+            src: '/static/img/faster/desktop/full_details_desktop.jpg',
+            preloader:
+              '/static/img/faster/desktop/preloader-full_details_desktop.jpg',
+          },
         },
       },
     ],
