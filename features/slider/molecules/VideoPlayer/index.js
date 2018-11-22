@@ -23,8 +23,8 @@ class VideoPlayer extends React.Component {
     this.videoRef.current.pause()
     this.videoRef.current.currentTime = 0
   }
-
   videoRef = React.createRef()
+
 
   render() {
     const { src, height, width, className, active } = this.props
