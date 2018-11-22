@@ -12,7 +12,7 @@ export const casesDataMobile = [
       {
         type: TemplatesNames.FrameVideoMobile,
         data: {
-          src: '/static/img/faster/mobile/scroll—mobile.mp4'
+          src: '/static/img/faster/mobile/scroll_mobile.mp4'
         }
       },
       {
@@ -154,7 +154,7 @@ export const casesDataMobile = [
         }
       },
       {
-        type: TemplatesNames.FrameVideoMobile,
+        type: TemplatesNames.VideoMobile,
         data: {
           src: '/static/img/yango/mobile/7_mobile_fullslide.mp4'
         }
