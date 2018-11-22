@@ -67,9 +67,20 @@ export const casesDataDesktop = [
       {
         type: TemplatesNames.PhonesDesktop,
         data: {
-          srcLeft: '/static/img/faster/desktop/phone_catalog_desktop.jpg',
-          srcCenter: '/static/img/faster/desktop/phone_map_desktop.jpg',
-          srcRight: '/static/img/faster/desktop/phone_product_desktop.jpg'
+          screens: [
+            {
+              src: '/static/img/faster/desktop/phone_catalog_desktop.jpg',
+              type: 'img'
+            },
+            {
+              src: '/static/img/faster/desktop/phone_map_desktop.jpg',
+              type: 'img'
+            },
+            {
+              src: '/static/img/faster/desktop/phone_product_desktop.jpg',
+              type: 'img'
+            }
+          ]
         }
       },
       {
@@ -153,25 +164,58 @@ export const casesDataDesktop = [
       {
         type: TemplatesNames.PhonesDesktop,
         data: {
-          srcLeft: '/static/img/yango/desktop/1.1_desktop.jpg',
-          srcCenter: '/static/img/yango/desktop/1.2_desktop.mp4',
-          srcRight: '/static/img/yango/desktop/1.3_desktop.jpg'
+          screens: [
+            {
+              src: '/static/img/yango/desktop/1.1_desktop.jpg',
+              type: 'img'
+            },
+            {
+              src: '/static/img/yango/desktop/1.2_desktop.mp4',
+              type: 'video'
+            },
+            {
+              src: '/static/img/yango/desktop/1.3_desktop.jpg',
+              type: 'img'
+            }
+          ]
         }
       },
       {
         type: TemplatesNames.PhonesDesktop,
         data: {
-          srcLeft: '/static/img/yango/desktop/2.2_desktop.mp4',
-          srcCenter: '/static/img/yango/desktop/2.1_desktop.jpg',
-          srcRight: '/static/img/yango/desktop/2.3_desktop.jpg'
+          screens: [
+            {
+              src: '/static/img/yango/desktop/2.2_desktop.mp4',
+              type: 'video'
+            },
+            {
+              src: '/static/img/yango/desktop/2.1_desktop.jpg',
+              type: 'img'
+            },
+            {
+              src: '/static/img/yango/desktop/2.3_desktop.jpg',
+              type: 'img'
+            }
+          ]
         }
       },
       {
         type: TemplatesNames.PhonesDesktop,
         data: {
-          srcLeft: '/static/img/yango/desktop/3.1_desktop.jpg',
-          srcCenter: '/static/img/yango/desktop/3.2_desktop.jpg',
-          srcRight: '/static/img/yango/desktop/3.3_desktop.jpg'
+          screens: [
+            {
+              src: '/static/img/yango/desktop/3.1_desktop.jpg',
+              type: 'img'
+            },
+            {
+              src: '/static/img/yango/desktop/3.2_desktop.jpg',
+              type: 'img'
+            },
+            {
+              src: '/static/img/yango/desktop/3.3_desktop.jpg',
+              type: 'img'
+            }
+          ]
         }
       },
       {
@@ -201,9 +245,20 @@ export const casesDataDesktop = [
       {
         type: TemplatesNames.PhonesDesktop,
         data: {
-          srcLeft: '/static/img/yango/desktop/8.1_desktop.jpg',
-          srcCenter: '/static/img/yango/desktop/8.2_desktop.jpg',
-          srcRight: '/static/img/yango/desktop/8.3_desktop.jpg'
+          screens: [
+            {
+              src: '/static/img/yango/desktop/8.1_desktop.jpg',
+              type: 'img'
+            },
+            {
+              src: '/static/img/yango/desktop/8.2_desktop.jpg',
+              type: 'img'
+            },
+            {
+              src: '/static/img/yango/desktop/8.3_desktop.jpg',
+              type: 'img'
+            }
+          ]
         }
       },
       {
@@ -296,12 +351,23 @@ export const casesDataDesktop = [
       {
         type: TemplatesNames.PhonesDesktop,
         data: {
-          srcLeft:
-            '/static/img/encore_fitness/desktop/9.1-main_encore_mobile-screen_desktop.jpg',
-          srcCenter:
-            '/static/img/encore_fitness/desktop/9.2-trainers_encore_mobile-screen_desktop.jpg',
-          srcRight:
-            '/static/img/encore_fitness/desktop/9.3-schedule_encore_mobile-screen_desktop.jpg'
+          screens: [
+            {
+              src:
+                '/static/img/encore_fitness/desktop/9.1-main_encore_mobile-screen_desktop.jpg',
+              type: 'img'
+            },
+            {
+              src:
+                '/static/img/encore_fitness/desktop/9.2-trainers_encore_mobile-screen_desktop.jpg',
+              type: 'img'
+            },
+            {
+              src:
+                '/static/img/encore_fitness/desktop/9.3-schedule_encore_mobile-screen_desktop.jpg',
+              type: 'img'
+            }
+          ]
         }
       },
       {
@@ -378,9 +444,20 @@ export const casesDataDesktop = [
       {
         type: TemplatesNames.PhonesDesktop,
         data: {
-          srcLeft: '/static/img/obed_bufet/1-main_obedbufet_mobile.jpg',
-          srcCenter: '/static/img/obed_bufet/2-catalog_obedbufet_mobile.jpg',
-          srcRight: '/static/img/obed_bufet/3-product_obedbufet_mobile.jpg',
+          screens: [
+            {
+              src: '/static/img/obed_bufet/1-main_obedbufet_mobile.jpg',
+              type: 'img'
+            },
+            {
+              src: '/static/img/obed_bufet/2-catalog_obedbufet_mobile.jpg',
+              type: 'img'
+            },
+            {
+              src: '/static/img/obed_bufet/3-product_obedbufet_mobile.jpg',
+              type: 'img'
+            }
+          ],
           backgroundSrc:
             '/static/img/obed_bufet/cover_obedbufet_desktop_fullslide.jpg'
         }
@@ -388,9 +465,20 @@ export const casesDataDesktop = [
       {
         type: TemplatesNames.PhonesDesktop,
         data: {
-          srcLeft: '/static/img/obed_bufet/4-profile_obedbufet_mobile.jpg',
-          srcCenter: '/static/img/obed_bufet/5-address_obedbufet_mobile.jpg',
-          srcRight: '/static/img/obed_bufet/6-history_obedbufet_mobile.jpg',
+          screens: [
+            {
+              src: '/static/img/obed_bufet/4-profile_obedbufet_mobile.jpg',
+              type: 'img'
+            },
+            {
+              src: '/static/img/obed_bufet/5-address_obedbufet_mobile.jpg',
+              type: 'img'
+            },
+            {
+              src: '/static/img/obed_bufet/6-history_obedbufet_mobile.jpg',
+              type: 'img'
+            }
+          ],
           backgroundColor: 'pink'
         }
       },

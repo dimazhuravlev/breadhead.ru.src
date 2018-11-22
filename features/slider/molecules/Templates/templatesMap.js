@@ -5,7 +5,6 @@ import SlideFramePictDesktop from './desktopTemplates/SlideFramePictDesktop'
 import SlideFrameVideoDesktop from './desktopTemplates/SlideFrameVideoDesktop'
 import SlidePhonesDesktop from './desktopTemplates/SlidePhonesDesktop'
 import SlideArticleWithPhoneDesktop from './desktopTemplates/SlideArticleWithPhoneDesktop'
-import SlidePhonesVideoDesktop from './desktopTemplates/SlidePhonesVideoDesktop'
 import SlideNavDesktop from './desktopTemplates/SlideNavDesktop'
 
 import SlidePictureMobile from './mobileTemplates/SlidePictureMobile'
@@ -23,7 +22,6 @@ export const TemplatesNames = {
   FrameVideoDesktop: 'frameVideoDesktop',
   PhonesDesktop: 'phonesDesktop',
   ArticleWithPhoneDesktop: 'articleWithPhoneDesktop',
-  PhonesVideoDesktop: 'phonesVideoDesktop',
   NavDesktop: 'navDesktop',
 
   PictureMobile: 'pictureMobile',
@@ -42,7 +40,6 @@ export default {
   [TemplatesNames.FrameVideoDesktop]: SlideFrameVideoDesktop,
   [TemplatesNames.PhonesDesktop]: SlidePhonesDesktop,
   [TemplatesNames.ArticleWithPhoneDesktop]: SlideArticleWithPhoneDesktop,
-  [TemplatesNames.PhonesVideoDesktop]: SlidePhonesVideoDesktop,
   [TemplatesNames.NavDesktop]: SlideNavDesktop,
 
   [TemplatesNames.PictureMobile]: SlidePictureMobile,
