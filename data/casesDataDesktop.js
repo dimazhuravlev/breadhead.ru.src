@@ -4,7 +4,7 @@ export const casesDataDesktop = [
   /* FASTER DESKTOP CASE */
   {
     description: {
-      type: 'проект',
+      type: 'сервис',
       name: 'Faster. Новый опыт покупки лекарств',
       links: [
         {
@@ -119,7 +119,7 @@ export const casesDataDesktop = [
   /* YANGO DESKTOP CASE */
   {
     description: {
-      type: 'проект',
+      type: 'сайт и приложение',
       name: 'Yango. Приложение для доступных инвестиций',
       links: [
         {
@@ -142,7 +142,7 @@ export const casesDataDesktop = [
       {
         type: TemplatesNames.ArticleWithPhoneDesktop,
         data: {
-          title: 'Инвестируй в Yango и станешь богат',
+          title: 'Свежий взгляд на денежные сбережения',
           description: [
             'Инверстируй в Yango. Инверстируй в Yango. Инверстируй в Yango. Инверстируй в Yango. Инверстируй в Yango. Аминь.'
           ],
@@ -279,7 +279,7 @@ export const casesDataDesktop = [
   /* ENCORE FITNESS DESKTOP CASE */
   {
     description: {
-      type: 'проект',
+      type: 'сайт',
       name: 'Encore Fitness. Сайт нового поколения фитнес-клубов',
       links: [
         {
@@ -297,7 +297,7 @@ export const casesDataDesktop = [
         }
       },
       {
-        type: TemplatesNames.ArticleWithPhoneDesktop,
+        type: TemplatesNames.ArticleDesktop,
         data: {
           title: 'Новое представление об идеальном фитнесе',
           description: [
@@ -309,16 +309,6 @@ export const casesDataDesktop = [
               href: 'https://encorefitness.ru',
               text: 'encorefitness.ru'
             }
-          ],
-          src: '/static/img/encore_fitness/mobile/1-main_encore_mobile.jpg'
-        }
-      },
-      {
-        type: TemplatesNames.ArticleDesktop,
-        data: {
-          title: 'Новое представление об идеальном фитнесе',
-          description: [
-            'Мы изучили бизнес-процессы компании, с нуля разработали визуальный язык бренда совместно с Fullfort, создали гибкую информационную архитектуру, удобное расписание и собственную систему управления клубами и контентом. Чтобы передать уникальную атмосферу Encore, мы сделали акцент на утонченном визуальном образе бренда и подробном рассказе о каждом клубе.'
           ]
         }
       },
@@ -409,8 +399,8 @@ export const casesDataDesktop = [
   /* OBED BUFET DESKTOP CASE */
   {
     description: {
-      type: 'приложение',
-      name: 'Обед Буфет'
+      type: 'мобильное приложение',
+      name: 'Обед Буфет. Дружелюбная доставка домашней еды'
     },
     slides: [
       {
@@ -420,11 +410,11 @@ export const casesDataDesktop = [
         }
       },
       {
-        type: TemplatesNames.ArticleWithPhoneDesktop,
+        type: TemplatesNames.ArticleDesktop,
         data: {
-          title: 'Обед Буфет. Закажи пожрать',
+          title: 'Проектирование и дизайн кроссплатформенного приложения',
           description: [
-            'Проектировали, прототипировали, рисовали, а они уже год программируют. Ну сколько можно ёпта?'
+            'Мы провели исследование бренда, переосмыслили структуру меню, навигацию, процесс оформления и отслеживания заказа. Дружелюбие ObedBufet отразилось в удобных механиках взаимодействия и визуальном стиле приложения – минимум рекламы, позитивные цвета и формы, забавные персонажи, легкий тон коммуникации и простота в использовании.'
           ],
           links: [
             {
@@ -437,8 +427,26 @@ export const casesDataDesktop = [
               href: 'https://android.com',
               text: 'Android'
             }
-          ],
-          src: '/static/img/obed_bufet/0-location_obedbufet_mobile.jpg'
+          ]
+        }
+      },
+      {
+        type: TemplatesNames.PhonesDesktop,
+        data: {
+          screens: [
+            {
+              src: '/static/img/obed_bufet/0-location_obedbufet_mobile.jpg',
+              type: 'img'
+            },
+            {
+              src: '',
+              type: 'img'
+            },
+            {
+              src: '',
+              type: 'img'
+            }
+          ]
         }
       },
       {
