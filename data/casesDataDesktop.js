@@ -9,100 +9,120 @@ export const casesDataDesktop = [
       links: [
         {
           icontype: 'globe',
-          href: 'https://faster.ru'
-        }
-      ]
+          href: 'https://faster.ru',
+        },
+      ],
     },
     slides: [
-      {
-        type: TemplatesNames.FrameVideoDesktop,
-        duration: 6000,
-        data: {
-          src: '/static/img/faster/desktop/browser_scroll_desktop.mp4'
-        }
-      },
       {
         type: TemplatesNames.ArticleWithPhoneDesktop,
         data: {
           title: 'Сервис для поиска и заказа лекарств в аптеках города',
           description: [
-            'Cравнить цены, найти аналоги и заказать в ближайшей аптеке. Проектировали, рисовали и программировали'
+            'Cравнить цены, найти аналоги и заказать в ближайшей аптеке. Проектировали, рисовали и программировали',
           ],
           links: [
             {
               icontype: 'globe',
               description: 'beta:',
               href: 'https://faster.ru',
-              text: 'faster.ru'
-            }
+              text: 'faster.ru',
+            },
           ],
-          src: '/static/img/faster/desktop/phone_map_desktop.jpg'
-        }
+          image: {
+            src: '/static/img/faster/desktop/phone_map_desktop.jpg',
+            preloader:
+              'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wAARCAAEAAIDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAj/xAAdEAABBAIDAAAAAAAAAAAAAAACAAEDBAUiI1Fh/8QAFQEBAQAAAAAAAAAAAAAAAAAABAX/xAAYEQADAQEAAAAAAAAAAAAAAAAAAQIRIf/aAAwDAQACEQMRAD8Av7H5u9LQrGU+xRC78YdN4iIhtvSZN1i6f//Z',
+          },
+        },
+      },
+      {
+        type: TemplatesNames.FrameVideoDesktop,
+        duration: 6000,
+        data: {
+          src: '/static/img/faster/desktop/browser_scroll_desktop.mp4',
+        },
       },
       {
         type: TemplatesNames.FramePictDesktop,
         data: {
-          src: '/static/img/faster/desktop/browser_catalog_desktop.jpg'
-        }
+          src: '/static/img/faster/desktop/browser_catalog_desktop.jpg',
+          preloader:
+            'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wAARCAADAAUDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAn/xAAbEAABBQEBAAAAAAAAAAAAAAABAAIDESEEQf/EABUBAQEAAAAAAAAAAAAAAAAAAAAC/8QAFREBAQAAAAAAAAAAAAAAAAAAAQD/2gAMAwEAAhEDEQA/AKdRcUQbYDwbIyRwwHPURFCsv//Z',
+        },
       },
       {
         type: TemplatesNames.PictureDesktop,
         data: {
-          src: '/static/img/faster/desktop/full_product_desktop.jpg'
-        }
+          src: '/static/img/faster/desktop/full_product_desktop.jpg',
+          preloader:
+            'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wAARCAAEAAYDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAj/xAAgEAABAwQCAwAAAAAAAAAAAAACAAERAwQFBgcSEyFh/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgT/xAAXEQADAQAAAAAAAAAAAAAAAAAAAQIx/9oADAMBAAIRAxEAPwCy+E9QwZ8B6DfHh8fUuK2ItBMqlpSLs/ilyeRmXn2/xkRFNVNPQVp//9k=',
+        },
       },
       {
         type: TemplatesNames.VideoDesktop,
         duration: 8000,
         data: {
-          src: '/static/img/faster/desktop/full_order_desktop.mp4'
-        }
+          src: '/static/img/faster/desktop/full_order_desktop.mp4',
+        },
       },
       {
         type: TemplatesNames.FramePictDesktop,
         data: {
-          src: '/static/img/faster/desktop/browser_bag_desktop.jpg'
-        }
+          src: '/static/img/faster/desktop/browser_bag_desktop.jpg',
+          preloader:
+            'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wAARCAADAAUDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAn/xAAfEAABAwMFAAAAAAAAAAAAAAABAAIFAwQxBhESEyH/xAAVAQEBAAAAAAAAAAAAAAAAAAAEBf/EABgRAQEBAQEAAAAAAAAAAAAAAAECABED/9oADAMBAAIRAxEAPwCh+uJS5jpCi23qdbSw7jiDg+ZCIiFdUU8dO9aS3jv/2Q==',
+        },
       },
       {
         type: TemplatesNames.PhonesDesktop,
         data: {
           srcLeft: '/static/img/faster/desktop/phone_catalog_desktop.jpg',
           srcCenter: '/static/img/faster/desktop/phone_map_desktop.jpg',
-          srcRight: '/static/img/faster/desktop/phone_product_desktop.jpg'
-        }
+          srcRight: '/static/img/faster/desktop/phone_product_desktop.jpg',
+        },
       },
       {
         type: TemplatesNames.PictureDesktop,
         data: {
-          src: '/static/img/faster/desktop/full_elements_desktop.jpg'
-        }
+          src: '/static/img/faster/desktop/full_elements_desktop.jpg',
+          preloader:
+            'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wAARCAAEAAYDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAj/xAAdEAAABgMBAAAAAAAAAAAAAAAAAQIDBBEFEyFB/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/xAAWEQEBAQAAAAAAAAAAAAAAAAAAATH/2gAMAwEAAhEDEQA/ALUlZVxGNjzDYjqkb32NhspskEu654AAExH/2Q==',
+        },
       },
       {
         type: TemplatesNames.FramePictDesktop,
         data: {
-          src: '/static/img/faster/desktop/browser_status_desktop.jpg'
-        }
+          src: '/static/img/faster/desktop/browser_status_desktop.jpg',
+          preloader:
+            'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wAARCAADAAUDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAn/xAAdEAACAgEFAAAAAAAAAAAAAAABAgADBAUGMTJh/8QAFAEBAAAAAAAAAAAAAAAAAAAAA//EABcRAAMBAAAAAAAAAAAAAAAAAAABAiH/2gAMAwEAAhEDEQA/AKRbkz7tNzUrxitSFOorUjn0REQaehs//9k=',
+        },
       },
       {
         type: TemplatesNames.PictureDesktop,
         data: {
-          src: '/static/img/faster/desktop/full_notfound_desktop.jpg'
-        }
+          src: '/static/img/faster/desktop/full_notfound_desktop.jpg',
+          preloader:
+            'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wAARCAAEAAYDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAj/xAAhEAABBAIBBQEAAAAAAAAAAAABAgMEEQAFBgcIEhMhIv/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGxEAAgIDAQAAAAAAAAAAAAAAAQIAsQMhQZH/2gAMAwEAAhEDEQA/ALS7f+CaWR0a4NLd18N1T2hhlSHIMdY8vXZXZbKiTYBskfkfLsljGT8rsG0eChHQAr7Zn//Z',
+        },
       },
       {
         type: TemplatesNames.FramePictDesktop,
         data: {
-          src: '/static/img/faster/desktop/browser_search_desktop.jpg'
-        }
+          src: '/static/img/faster/desktop/browser_search_desktop.jpg',
+          preloader:
+            'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wAARCAADAAUDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAn/xAAdEAACAgEFAAAAAAAAAAAAAAAAAQIDEQQFM0GB/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQL/xAAVEQEBAAAAAAAAAAAAAAAAAAAAAf/aAAwDAQACEQMRAD8Ao3XvmtjDKtWW2uOPXgAJEf/Z',
+        },
       },
       {
         type: TemplatesNames.PictureDesktop,
         data: {
-          src: '/static/img/faster/desktop/full_details_desktop.jpg'
-        }
-      }
-    ]
+          src: '/static/img/faster/desktop/full_details_desktop.jpg',
+          preloader:
+            'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wAARCAAEAAYDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAn/xAAeEAACAgEFAQAAAAAAAAAAAAABAgMEAAUGERIxYf/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/8QAFhEBAQEAAAAAAAAAAAAAAAAAAAEx/9oADAMBAAIRAxEAPwCh2w9j6I9KrqctCKe9ZpxJNPModpAqr17E+8ckD4cYxiLdf//Z',
+        },
+      },
+    ],
   },
 
   /* YANGO DESKTOP CASE */
@@ -113,112 +133,112 @@ export const casesDataDesktop = [
       links: [
         {
           icontype: 'globe',
-          href: 'https://yango.pro'
+          href: 'https://yango.pro',
         },
         {
           icontype: 'article',
-          href: 'https://medium.com/breadhead-stories/yami-yami-c7f2b5916442'
-        }
-      ]
+          href: 'https://medium.com/breadhead-stories/yami-yami-c7f2b5916442',
+        },
+      ],
     },
     slides: [
       {
         type: TemplatesNames.PictureDesktop,
         data: {
-          src: '/static/img/yango/desktop/cover_desktop_fullslide.jpg'
-        }
+          src: '/static/img/yango/desktop/cover_desktop_fullslide.jpg',
+        },
       },
       {
         type: TemplatesNames.ArticleWithPhoneDesktop,
         data: {
           title: 'Инвестируй в Yango и станешь богат',
           description: [
-            'Инверстируй в Yango. Инверстируй в Yango. Инверстируй в Yango. Инверстируй в Yango. Инверстируй в Yango. Аминь.'
+            'Инверстируй в Yango. Инверстируй в Yango. Инверстируй в Yango. Инверстируй в Yango. Инверстируй в Yango. Аминь.',
           ],
           links: [
             {
               icontype: 'globe',
               href: 'https://.apple.ru',
-              text: 'iOS'
+              text: 'iOS',
             },
             {
               icontype: 'globe',
               href: 'https://.android.ru',
-              text: 'Andriod'
-            }
+              text: 'Andriod',
+            },
           ],
-          src: '/static/img/yango/desktop/0_desktop.jpg'
-        }
+          src: '/static/img/yango/desktop/0_desktop.jpg',
+        },
       },
       {
         type: TemplatesNames.PhonesDesktop,
         data: {
           srcLeft: '/static/img/yango/desktop/1.1_desktop.jpg',
           srcCenter: '/static/img/yango/desktop/1.2_desktop.mp4',
-          srcRight: '/static/img/yango/desktop/1.3_desktop.jpg'
-        }
+          srcRight: '/static/img/yango/desktop/1.3_desktop.jpg',
+        },
       },
       {
         type: TemplatesNames.PhonesDesktop,
         data: {
           srcLeft: '/static/img/yango/desktop/2.2_desktop.mp4',
           srcCenter: '/static/img/yango/desktop/2.1_desktop.jpg',
-          srcRight: '/static/img/yango/desktop/2.3_desktop.jpg'
-        }
+          srcRight: '/static/img/yango/desktop/2.3_desktop.jpg',
+        },
       },
       {
         type: TemplatesNames.PhonesDesktop,
         data: {
           srcLeft: '/static/img/yango/desktop/3.1_desktop.jpg',
           srcCenter: '/static/img/yango/desktop/3.2_desktop.jpg',
-          srcRight: '/static/img/yango/desktop/3.3_desktop.jpg'
-        }
+          srcRight: '/static/img/yango/desktop/3.3_desktop.jpg',
+        },
       },
       {
         type: TemplatesNames.VideoDesktop,
         data: {
-          src: '/static/img/yango/desktop/4_desktop_fullslide.mp4'
-        }
+          src: '/static/img/yango/desktop/4_desktop_fullslide.mp4',
+        },
       },
       {
         type: TemplatesNames.FramePictDesktop,
         data: {
-          src: '/static/img/yango/desktop/5_desktop.jpg'
-        }
+          src: '/static/img/yango/desktop/5_desktop.jpg',
+        },
       },
       {
         type: TemplatesNames.FramePictDesktop,
         data: {
-          src: '/static/img/yango/desktop/6_desktop.jpg'
-        }
+          src: '/static/img/yango/desktop/6_desktop.jpg',
+        },
       },
       {
         type: TemplatesNames.FrameVideoDesktop,
         data: {
-          src: '/static/img/yango/desktop/7_desktop.mp4'
-        }
+          src: '/static/img/yango/desktop/7_desktop.mp4',
+        },
       },
       {
         type: TemplatesNames.PhonesDesktop,
         data: {
           srcLeft: '/static/img/yango/desktop/8.1_desktop.jpg',
           srcCenter: '/static/img/yango/desktop/8.2_desktop.jpg',
-          srcRight: '/static/img/yango/desktop/8.3_desktop.jpg'
-        }
+          srcRight: '/static/img/yango/desktop/8.3_desktop.jpg',
+        },
       },
       {
         type: TemplatesNames.PictureDesktop,
         data: {
-          src: '/static/img/yango/desktop/9_desktop_fullslide.jpg'
-        }
+          src: '/static/img/yango/desktop/9_desktop_fullslide.jpg',
+        },
       },
       {
         type: TemplatesNames.PictureDesktop,
         data: {
-          src: '/static/img/yango/desktop/10_desktop_fullslide.jpg'
-        }
-      }
-    ]
+          src: '/static/img/yango/desktop/10_desktop_fullslide.jpg',
+        },
+      },
+    ],
   },
 
   /* ENCORE FITNESS DESKTOP CASE */
@@ -229,69 +249,69 @@ export const casesDataDesktop = [
       links: [
         {
           icontype: 'globe',
-          href: 'https://encorefitness.ru'
-        }
-      ]
+          href: 'https://encorefitness.ru',
+        },
+      ],
     },
     slides: [
       {
         type: TemplatesNames.PictureDesktop,
         data: {
           src:
-            '/static/img/encore_fitness/desktop/cover_encore_desktop_fullslide.jpg'
-        }
+            '/static/img/encore_fitness/desktop/cover_encore_desktop_fullslide.jpg',
+        },
       },
       {
         type: TemplatesNames.ArticleWithPhoneDesktop,
         data: {
           title: 'Новое представление об идеальном фитнесе',
           description: [
-            'Мы изучили бизнес-процессы компании, с нуля разработали визуальный язык бренда совместно с Fullfort, создали гибкую информационную архитектуру, удобное расписание и собственную систему управления клубами и контентом. Чтобы передать уникальную атмосферу Encore, мы сделали акцент на утонченном визуальном образе бренда и подробном рассказе о каждом клубе.'
+            'Мы изучили бизнес-процессы компании, с нуля разработали визуальный язык бренда совместно с Fullfort, создали гибкую информационную архитектуру, удобное расписание и собственную систему управления клубами и контентом. Чтобы передать уникальную атмосферу Encore, мы сделали акцент на утонченном визуальном образе бренда и подробном рассказе о каждом клубе.',
           ],
           links: [
             {
               icontype: 'globe',
               href: 'https://encorefitness.ru',
-              text: 'encorefitness.ru'
-            }
+              text: 'encorefitness.ru',
+            },
           ],
-          src: '/static/img/encore_fitness/mobile/1-main_encore_mobile.jpg'
-        }
+          src: '/static/img/encore_fitness/mobile/1-main_encore_mobile.jpg',
+        },
       },
       {
         type: TemplatesNames.ArticleDesktop,
         data: {
           title: 'Новое представление об идеальном фитнесе',
           description: [
-            'Мы изучили бизнес-процессы компании, с нуля разработали визуальный язык бренда совместно с Fullfort, создали гибкую информационную архитектуру, удобное расписание и собственную систему управления клубами и контентом. Чтобы передать уникальную атмосферу Encore, мы сделали акцент на утонченном визуальном образе бренда и подробном рассказе о каждом клубе.'
-          ]
-        }
+            'Мы изучили бизнес-процессы компании, с нуля разработали визуальный язык бренда совместно с Fullfort, создали гибкую информационную архитектуру, удобное расписание и собственную систему управления клубами и контентом. Чтобы передать уникальную атмосферу Encore, мы сделали акцент на утонченном визуальном образе бренда и подробном рассказе о каждом клубе.',
+          ],
+        },
       },
       {
         type: TemplatesNames.FramePictDesktop,
         data: {
-          src: '/static/img/encore_fitness/desktop/1-main_encore_desktop.jpg'
-        }
+          src: '/static/img/encore_fitness/desktop/1-main_encore_desktop.jpg',
+        },
       },
       {
         type: TemplatesNames.FrameVideoDesktop,
         data: {
           src:
-            '/static/img/encore_fitness/desktop/2-club_encore_desktop_opt/2-club_encore_desktop_opt.mp4'
-        }
+            '/static/img/encore_fitness/desktop/2-club_encore_desktop_opt/2-club_encore_desktop_opt.mp4',
+        },
       },
       {
         type: TemplatesNames.FramePictDesktop,
         data: {
           src:
-            '/static/img/encore_fitness/desktop/3-trainers_encore_desktop.jpg'
-        }
+            '/static/img/encore_fitness/desktop/3-trainers_encore_desktop.jpg',
+        },
       },
       {
         type: TemplatesNames.FramePictDesktop,
         data: {
-          src: '/static/img/encore_fitness/desktop/4-cards_encore_desktop.jpg'
-        }
+          src: '/static/img/encore_fitness/desktop/4-cards_encore_desktop.jpg',
+        },
       },
       {
         type: TemplatesNames.PhonesDesktop,
@@ -301,79 +321,80 @@ export const casesDataDesktop = [
           srcCenter:
             '/static/img/encore_fitness/desktop/9.2-trainers_encore_mobile-screen_desktop.jpg',
           srcRight:
-            '/static/img/encore_fitness/desktop/9.3-schedule_encore_mobile-screen_desktop.jpg'
-        }
+            '/static/img/encore_fitness/desktop/9.3-schedule_encore_mobile-screen_desktop.jpg',
+        },
       },
       {
         type: TemplatesNames.FrameVideoDesktop,
         data: {
           src:
-            '/static/img/encore_fitness/desktop/5-grouptraining_desktop_opt/5-grouptraining_desktop_opt.mp4'
-        }
+            '/static/img/encore_fitness/desktop/5-grouptraining_desktop_opt/5-grouptraining_desktop_opt.mp4',
+        },
       },
       {
         type: TemplatesNames.FramePictDesktop,
         data: {
           src:
-            '/static/img/encore_fitness/desktop/6-schedule_encore_desktop.jpg'
-        }
+            '/static/img/encore_fitness/desktop/6-schedule_encore_desktop.jpg',
+        },
       },
       {
         type: TemplatesNames.FramePictDesktop,
         data: {
-          src: '/static/img/encore_fitness/desktop/7-workout_encore_desktop.jpg'
-        }
+          src:
+            '/static/img/encore_fitness/desktop/7-workout_encore_desktop.jpg',
+        },
       },
       {
         type: TemplatesNames.FramePictDesktop,
         data: {
-          src: '/static/img/encore_fitness/desktop/8-spa_encore_desktop.jpg'
-        }
+          src: '/static/img/encore_fitness/desktop/8-spa_encore_desktop.jpg',
+        },
       },
       {
         type: TemplatesNames.PictureDesktop,
         data: {
           src:
-            '/static/img/encore_fitness/desktop/10_grid-desktop_encore_desktop_full-slide.jpg'
-        }
-      }
-    ]
+            '/static/img/encore_fitness/desktop/10_grid-desktop_encore_desktop_full-slide.jpg',
+        },
+      },
+    ],
   },
 
   /* OBED BUFET DESKTOP CASE */
   {
     description: {
       type: 'приложение',
-      name: 'Обед Буфет'
+      name: 'Обед Буфет',
     },
     slides: [
       {
         type: TemplatesNames.PictureDesktop,
         data: {
-          src: '/static/img/obed_bufet/cover_obedbufet_desktop_fullslide.jpg'
-        }
+          src: '/static/img/obed_bufet/cover_obedbufet_desktop_fullslide.jpg',
+        },
       },
       {
         type: TemplatesNames.ArticleWithPhoneDesktop,
         data: {
           title: 'Обед Буфет. Закажи пожрать',
           description: [
-            'Проектировали, прототипировали, рисовали, а они уже год программируют. Ну сколько можно ёпта?'
+            'Проектировали, прототипировали, рисовали, а они уже год программируют. Ну сколько можно ёпта?',
           ],
           links: [
             {
               icontype: 'globe',
               href: 'https://apple.com',
-              text: 'iOS'
+              text: 'iOS',
             },
             {
               icontype: 'globe',
               href: 'https://android.com',
-              text: 'Android'
-            }
+              text: 'Android',
+            },
           ],
-          src: '/static/img/obed_bufet/0-location_obedbufet_mobile.jpg'
-        }
+          src: '/static/img/obed_bufet/0-location_obedbufet_mobile.jpg',
+        },
       },
       {
         type: TemplatesNames.PhonesDesktop,
@@ -382,8 +403,8 @@ export const casesDataDesktop = [
           srcCenter: '/static/img/obed_bufet/2-catalog_obedbufet_mobile.jpg',
           srcRight: '/static/img/obed_bufet/3-product_obedbufet_mobile.jpg',
           backgroundSrc:
-            '/static/img/obed_bufet/cover_obedbufet_desktop_fullslide.jpg'
-        }
+            '/static/img/obed_bufet/cover_obedbufet_desktop_fullslide.jpg',
+        },
       },
       {
         type: TemplatesNames.PhonesDesktop,
@@ -391,15 +412,15 @@ export const casesDataDesktop = [
           srcLeft: '/static/img/obed_bufet/4-profile_obedbufet_mobile.jpg',
           srcCenter: '/static/img/obed_bufet/5-address_obedbufet_mobile.jpg',
           srcRight: '/static/img/obed_bufet/6-history_obedbufet_mobile.jpg',
-          backgroundColor: 'pink'
-        }
+          backgroundColor: 'pink',
+        },
       },
       {
         type: TemplatesNames.PictureDesktop,
         data: {
-          src: '/static/img/obed_bufet/7-rest_obedbufet_desktop-fullscreen.jpg'
-        }
-      }
-    ]
-  }
+          src: '/static/img/obed_bufet/7-rest_obedbufet_desktop-fullscreen.jpg',
+        },
+      },
+    ],
+  },
 ]
