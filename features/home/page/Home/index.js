@@ -1,5 +1,4 @@
 import React from 'react'
-
 import Header from '@site/features/header'
 import Intro from '@site/features/intro'
 import Case from '@site/features/case'

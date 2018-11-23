@@ -1,0 +1,7 @@
+.preloader {
+  filter: blur(25px);
+}
+
+.wrapper {
+  height: 100%;
+}
