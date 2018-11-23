@@ -10,16 +10,6 @@
   @media (max-width: 1024px) {
     padding-left: 32px;
   }
-  /* padding-right: 124px; */
-
-  /* @media (max-width: 1920px) {
-    padding-top: calc(40px + 80 * ((100vw - 1200px) / 720));
-    padding-left: calc(16px + 136 * ((100vw - 320px) / 1600));
-  }
-
-  @media (max-width: 1200px) {
-    padding-top: 56px;
-  } */
 }
 
 .article {
@@ -41,7 +31,6 @@
 }
 
 .phone {
-  /* top: calc(40px + 80 * ((100vw - 1200px) / 720)); */
   right: calc(16px + 136 * ((100vw - 320px) / 1600));
   top: 48px;
   transform-origin: right top;
