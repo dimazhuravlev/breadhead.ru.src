@@ -15,6 +15,12 @@ export const casesDataDesktop = [
     },
     slides: [
       {
+        type: TemplatesNames.PictureDesktop,
+        data: {
+          src: '/static/img/faster/desktop/full_logo_desktop.jpg'
+        }
+      },
+      {
         type: TemplatesNames.FrameVideoDesktop,
         duration: 6000,
         data: {
@@ -25,9 +31,7 @@ export const casesDataDesktop = [
         type: TemplatesNames.ArticleWithPhoneDesktop,
         data: {
           title: 'Сервис для поиска и заказа лекарств в аптеках города',
-          description: [
-            'Cравнить цены, найти аналоги и заказать в ближайшей аптеке. Проектировали, рисовали и программировали'
-          ],
+          description: ['Текст для фастера я напишу сегодня позже.'],
           links: [
             {
               icontype: 'globe',
