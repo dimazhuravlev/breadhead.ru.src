@@ -17,6 +17,7 @@ const settings = {
   prevArrow: <NavButton className={styles.navButton} direction="left" />,
   nextArrow: <NavButton className={styles.navButton} direction="right" />,
 }
+
 class Slider extends React.PureComponent {
   constructor(props) {
     super(props)

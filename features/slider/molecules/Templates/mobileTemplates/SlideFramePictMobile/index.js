@@ -1,4 +1,5 @@
 import React from 'react'
+import { shouldUpdate } from 'recompose'
 import Img from '@site/ui/molecules/Img'
 import PropTypes from 'prop-types'
 import styles from './slideFramePictMobile.css'
@@ -19,4 +20,4 @@ SlideFramePictMobile.propTypes = {
   backgroundColor: PropTypes.string,
 }
 
-export default React.memo(SlideFramePictMobile)
+export default shouldUpdate(() => false)(SlideFramePictMobile)

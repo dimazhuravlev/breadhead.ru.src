@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { onlyUpdateForKeys } from 'recompose'
 import VideoPlayer from '@site/features/slider/molecules/VideoPlayer'
 import styles from './slideVideoMobile.css'
 
@@ -16,7 +17,7 @@ const SlideVideoMobile = ({ src, active }) => (
 )
 
 SlideVideoMobile.propTypes = {
-  src: PropTypes.string.isRequired
+  src: PropTypes.string.isRequired,
 }
 
-export default React.memo(SlideVideoMobile)
+export default onlyUpdateForKeys('active')(SlideVideoMobile)
