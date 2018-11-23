@@ -2,7 +2,7 @@ import React from 'react'
 import ReactImage from 'react-image'
 import cx from 'classnames'
 import styles from './Img.css'
-import { Transition } from 'react-spring'
+import { Transition, animated } from 'react-spring'
 
 const Img = ({ className, src, preloader }) => {
   return (
@@ -15,13 +15,16 @@ const Img = ({ className, src, preloader }) => {
       container={children => {
         return (
           <Transition
+            native
             items={React.Children.toArray(children)}
             keys={child => child.props.src}
             from={{ opacity: 0 }}
             enter={{ opacity: 1 }}
             leave={{ opacity: 0 }}
           >
-            {child => props => <div style={props}>{child}</div>}
+            {child => props => (
+              <animated.div style={props}>{child}</animated.div>
+            )}
           </Transition>
         )
       }}

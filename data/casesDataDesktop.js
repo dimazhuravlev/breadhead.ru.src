@@ -219,7 +219,10 @@ export const casesDataDesktop = [
               text: 'Andriod',
             },
           ],
-          src: '/static/img/yango/desktop/0_desktop.jpg',
+          image: {
+            src: '/static/img/yango/desktop/0_desktop.jpg',
+            preloader: '/static/img/yango/desktop/preloader-0_desktop.jpg',
+          },
         },
       },
       {
@@ -228,6 +231,7 @@ export const casesDataDesktop = [
           screens: [
             {
               src: '/static/img/yango/desktop/1.1_desktop.jpg',
+              preloader: '/static/img/yango/desktop/preloader-1.1_desktop.jpg',
               type: 'img',
             },
             {
@@ -236,6 +240,7 @@ export const casesDataDesktop = [
             },
             {
               src: '/static/img/yango/desktop/1.3_desktop.jpg',
+              preloader: '/static/img/yango/desktop/preloader-1.3_desktop.jpg',
               type: 'img',
             },
           ],
@@ -251,10 +256,12 @@ export const casesDataDesktop = [
             },
             {
               src: '/static/img/yango/desktop/2.1_desktop.jpg',
+              preloader: '/static/img/yango/desktop/preloader-2.1_desktop.jpg',
               type: 'img',
             },
             {
               src: '/static/img/yango/desktop/2.3_desktop.jpg',
+              preloader: '/static/img/yango/desktop/preloader-2.3_desktop.jpg',
               type: 'img',
             },
           ],
@@ -266,14 +273,17 @@ export const casesDataDesktop = [
           screens: [
             {
               src: '/static/img/yango/desktop/3.1_desktop.jpg',
+              preloader: '/static/img/yango/desktop/preloader-3.1_desktop.jpg',
               type: 'img',
             },
             {
               src: '/static/img/yango/desktop/3.2_desktop.jpg',
+              preloader: '/static/img/yango/desktop/preloader-3.2_desktop.jpg',
               type: 'img',
             },
             {
               src: '/static/img/yango/desktop/3.3_desktop.jpg',
+              preloader: '/static/img/yango/desktop/preloader-3.3_desktop.jpg',
               type: 'img',
             },
           ],
@@ -288,13 +298,19 @@ export const casesDataDesktop = [
       {
         type: TemplatesNames.FramePictDesktop,
         data: {
-          src: '/static/img/yango/desktop/5_desktop.jpg',
+          image: {
+            src: '/static/img/yango/desktop/5_desktop.jpg',
+            preloader: '/static/img/yango/desktop/preloader-5_desktop.jpg',
+          },
         },
       },
       {
         type: TemplatesNames.FramePictDesktop,
         data: {
-          src: '/static/img/yango/desktop/6_desktop.jpg',
+          image: {
+            src: '/static/img/yango/desktop/6_desktop.jpg',
+            preloader: '/static/img/yango/desktop/preloader-6_desktop.jpg',
+          },
         },
       },
       {
@@ -309,14 +325,17 @@ export const casesDataDesktop = [
           screens: [
             {
               src: '/static/img/yango/desktop/8.1_desktop.jpg',
+              preloader: '/static/img/yango/desktop/preloader-8.1_desktop.jpg',
               type: 'img',
             },
             {
               src: '/static/img/yango/desktop/8.2_desktop.jpg',
+              preloader: '/static/img/yango/desktop/preloader-8.2_desktop.jpg',
               type: 'img',
             },
             {
               src: '/static/img/yango/desktop/8.3_desktop.jpg',
+              preloader: '/static/img/yango/desktop/preloader-8.3_desktop.jpg',
               type: 'img',
             },
           ],
@@ -325,13 +344,21 @@ export const casesDataDesktop = [
       {
         type: TemplatesNames.PictureDesktop,
         data: {
-          src: '/static/img/yango/desktop/9_desktop_fullslide.jpg',
+          image: {
+            src: '/static/img/yango/desktop/9_desktop_fullslide.jpg',
+            preloader:
+              '/static/img/yango/desktop/preloader-9_desktop_fullslide.jpg',
+          },
         },
       },
       {
         type: TemplatesNames.PictureDesktop,
         data: {
-          src: '/static/img/yango/desktop/10_desktop_fullslide.jpg',
+          image: {
+            src: '/static/img/yango/desktop/10_desktop_fullslide.jpg',
+            preloader:
+              '/static/img/yango/desktop/preloader-10_desktop_fullslide.jpg',
+          },
         },
       },
     ],
@@ -353,8 +380,12 @@ export const casesDataDesktop = [
       {
         type: TemplatesNames.PictureDesktop,
         data: {
-          src:
-            '/static/img/encore_fitness/desktop/cover_encore_desktop_fullslide.jpg',
+          image: {
+            src:
+              '/static/img/encore_fitness/desktop/cover_encore_desktop_fullslide.jpg',
+            preloader:
+              '/static/img/encore_fitness/desktop/preloader-cover_encore_desktop_fullslide.jpg',
+          },
         },
       },
       {
@@ -376,7 +407,11 @@ export const casesDataDesktop = [
       {
         type: TemplatesNames.FramePictDesktop,
         data: {
-          src: '/static/img/encore_fitness/desktop/1-main_encore_desktop.jpg',
+          image: {
+            src: '/static/img/encore_fitness/desktop/1-main_encore_desktop.jpg',
+            preloader:
+              '/static/img/encore_fitness/desktop/preloader-1-main_encore_desktop.jpg',
+          },
         },
       },
       {
@@ -389,14 +424,23 @@ export const casesDataDesktop = [
       {
         type: TemplatesNames.FramePictDesktop,
         data: {
-          src:
-            '/static/img/encore_fitness/desktop/3-trainers_encore_desktop.jpg',
+          image: {
+            src:
+              '/static/img/encore_fitness/desktop/3-trainers_encore_desktop.jpg',
+            preloader:
+              '/static/img/encore_fitness/desktop/preloader-3-trainers_encore_desktop.jpg',
+          },
         },
       },
       {
         type: TemplatesNames.FramePictDesktop,
         data: {
-          src: '/static/img/encore_fitness/desktop/4-cards_encore_desktop.jpg',
+          image: {
+            src:
+              '/static/img/encore_fitness/desktop/4-cards_encore_desktop.jpg',
+            preloader:
+              '/static/img/encore_fitness/desktop/preloader-4-cards_encore_desktop.jpg',
+          },
         },
       },
       {
@@ -406,16 +450,22 @@ export const casesDataDesktop = [
             {
               src:
                 '/static/img/encore_fitness/desktop/9.1-main_encore_mobile-screen_desktop.jpg',
+              preloader:
+                '/static/img/encore_fitness/desktop/preloader-9.1-main_encore_mobile-screen_desktop.jpg',
               type: 'img',
             },
             {
               src:
                 '/static/img/encore_fitness/desktop/9.2-trainers_encore_mobile-screen_desktop.jpg',
+              preloader:
+                '/static/img/encore_fitness/desktop/preloader-9.2-trainers_encore_mobile-screen_desktop.jpg',
               type: 'img',
             },
             {
               src:
                 '/static/img/encore_fitness/desktop/9.3-schedule_encore_mobile-screen_desktop.jpg',
+              preloader:
+                '/static/img/encore_fitness/desktop/preloader-9.3-schedule_encore_mobile-screen_desktop.jpg',
               type: 'img',
             },
           ],
@@ -431,28 +481,44 @@ export const casesDataDesktop = [
       {
         type: TemplatesNames.FramePictDesktop,
         data: {
-          src:
-            '/static/img/encore_fitness/desktop/6-schedule_encore_desktop.jpg',
+          image: {
+            src:
+              '/static/img/encore_fitness/desktop/6-schedule_encore_desktop.jpg',
+            preloader:
+              '/static/img/encore_fitness/desktop/preloader-6-schedule_encore_desktop.jpg',
+          },
         },
       },
       {
         type: TemplatesNames.FramePictDesktop,
         data: {
-          src:
-            '/static/img/encore_fitness/desktop/7-workout_encore_desktop.jpg',
+          image: {
+            src:
+              '/static/img/encore_fitness/desktop/7-workout_encore_desktop.jpg',
+            preloader:
+              '/static/img/encore_fitness/desktop/preloader-7-workout_encore_desktop.jpg',
+          },
         },
       },
       {
         type: TemplatesNames.FramePictDesktop,
         data: {
-          src: '/static/img/encore_fitness/desktop/8-spa_encore_desktop.jpg',
+          image: {
+            src: '/static/img/encore_fitness/desktop/8-spa_encore_desktop.jpg',
+            preloader:
+              '/static/img/encore_fitness/desktop/preloader-8-spa_encore_desktop.jpg',
+          },
         },
       },
       {
         type: TemplatesNames.PictureDesktop,
         data: {
-          src:
-            '/static/img/encore_fitness/desktop/10_grid-desktop_encore_desktop_full-slide.jpg',
+          image: {
+            src:
+              '/static/img/encore_fitness/desktop/10_grid-desktop_encore_desktop_full-slide.jpg',
+            preloader:
+              '/static/img/encore_fitness/desktop/preloader-10_grid-desktop_encore_desktop_full-slide.jpg',
+          },
         },
       },
     ],
@@ -468,7 +534,11 @@ export const casesDataDesktop = [
       {
         type: TemplatesNames.PictureDesktop,
         data: {
-          src: '/static/img/obed_bufet/cover_obedbufet_desktop_fullslide.jpg',
+          image: {
+            src: '/static/img/obed_bufet/cover_obedbufet_desktop_fullslide.jpg',
+            preloader:
+              '/static/img/obed_bufet/preloader-cover_obedbufet_desktop_fullslide.jpg',
+          },
         },
       },
       {
@@ -498,6 +568,8 @@ export const casesDataDesktop = [
           screens: [
             {
               src: '/static/img/obed_bufet/0-location_obedbufet_mobile.jpg',
+              preloader:
+                '/static/img/obed_bufet/preloader-0-location_obedbufet_mobile.jpg',
               type: 'img',
             },
             {
@@ -517,14 +589,20 @@ export const casesDataDesktop = [
           screens: [
             {
               src: '/static/img/obed_bufet/1-main_obedbufet_mobile.jpg',
+              preloader:
+                '/static/img/obed_bufet/preloader-1-main_obedbufet_mobile.jpg',
               type: 'img',
             },
             {
               src: '/static/img/obed_bufet/2-catalog_obedbufet_mobile.jpg',
+              preloader:
+                '/static/img/obed_bufet/preloader-2-catalog_obedbufet_mobile.jpg',
               type: 'img',
             },
             {
               src: '/static/img/obed_bufet/3-product_obedbufet_mobile.jpg',
+              preloader:
+                '/static/img/obed_bufet/preloader-3-product_obedbufet_mobile.jpg',
               type: 'img',
             },
           ],
@@ -538,14 +616,20 @@ export const casesDataDesktop = [
           screens: [
             {
               src: '/static/img/obed_bufet/4-profile_obedbufet_mobile.jpg',
+              preloader:
+                '/static/img/obed_bufet/preloader-4-profile_obedbufet_mobile.jpg',
               type: 'img',
             },
             {
               src: '/static/img/obed_bufet/5-address_obedbufet_mobile.jpg',
+              preloader:
+                '/static/img/obed_bufet/preloader-5-address_obedbufet_mobile.jpg',
               type: 'img',
             },
             {
               src: '/static/img/obed_bufet/6-history_obedbufet_mobile.jpg',
+              preloader:
+                '/static/img/obed_bufet/preloader-6-history_obedbufet_mobile.jpg',
               type: 'img',
             },
           ],
@@ -555,7 +639,12 @@ export const casesDataDesktop = [
       {
         type: TemplatesNames.PictureDesktop,
         data: {
-          src: '/static/img/obed_bufet/7-rest_obedbufet_desktop-fullscreen.jpg',
+          image: {
+            src:
+              '/static/img/obed_bufet/7-rest_obedbufet_desktop-fullscreen.jpg',
+            preloader:
+              '/static/img/obed_bufet/preloader-7-rest_obedbufet_desktop-fullscreen.jpg',
+          },
         },
       },
     ],
