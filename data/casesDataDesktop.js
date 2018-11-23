@@ -5,7 +5,7 @@ export const casesDataDesktop = [
   {
     description: {
       type: 'сервис',
-      name: 'Faster. Новый опыт покупки лекарств',
+      name: 'Faster',
       links: [
         {
           icontype: 'globe',
@@ -177,7 +177,7 @@ export const casesDataDesktop = [
   {
     description: {
       type: 'сайт и приложение',
-      name: 'Yango. Приложение для доступных инвестиций',
+      name: 'Yango',
       links: [
         {
           icontype: 'globe',
@@ -368,7 +368,7 @@ export const casesDataDesktop = [
   {
     description: {
       type: 'сайт',
-      name: 'Encore Fitness. Сайт нового поколения фитнес-клубов',
+      name: 'Encore Fitness',
       links: [
         {
           icontype: 'globe',
@@ -528,7 +528,7 @@ export const casesDataDesktop = [
   {
     description: {
       type: 'мобильное приложение',
-      name: 'Обед Буфет. Дружелюбная доставка домашней еды',
+      name: 'Обед Буфет',
     },
     slides: [
       {
