@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import Img from '@site/ui/molecules/Img'
 import SlideText from '@site/ui/molecules/SlideText'
 import ArticleIconBlock from '@site/ui/molecules/ArticleIconBlock'
 import styles from './slideArticleWithPhoneDesktop.css'
@@ -8,7 +9,7 @@ const SlideArticleWithPhoneDesktop = ({
   title,
   description,
   links,
-  src,
+  image: { src, preloader },
   backgroundColor,
 }) => (
   <div style={{ backgroundColor: backgroundColor }}>
@@ -19,7 +20,7 @@ const SlideArticleWithPhoneDesktop = ({
         <ArticleIconBlock links={links} />
       </article>
       <div className={styles.phone}>
-        <img src={src} className={styles.screen} />
+        <Img src={src} preloader={preloader} className={styles.screen} />
       </div>
     </div>
   </div>
