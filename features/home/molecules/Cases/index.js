@@ -58,7 +58,7 @@ class Cases extends React.Component {
       <Case key={caseData.description.name} {...caseData} />
     ))
 
-    const firstShowCasesDesktop = allCasesDesktop.slice(0, 1)
+    const firstShowCasesDesktop = allCasesDesktop.slice(0, 3)
     const firstShowCasesMobile = allCasesMobile.slice(0, 3)
     return (
       <>
@@ -66,9 +66,9 @@ class Cases extends React.Component {
           {this.state.isShown ? allCasesDesktop : firstShowCasesDesktop}
         </section>
 
-        {/* <section className={cx(styles.cases, styles.mobileCases)} name="cases">
+        <section className={cx(styles.cases, styles.mobileCases)} name="cases">
           {this.state.isShown ? allCasesMobile : firstShowCasesMobile}
-        </section> */}
+        </section> 
 
         <Button
           ref={this.buttonRef}
