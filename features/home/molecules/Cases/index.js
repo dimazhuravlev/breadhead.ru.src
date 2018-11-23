@@ -68,7 +68,7 @@ class Cases extends React.Component {
 
         <section className={cx(styles.cases, styles.mobileCases)} name="cases">
           {this.state.isShown ? allCasesMobile : firstShowCasesMobile}
-        </section> 
+        </section>
 
         <Button
           ref={this.buttonRef}

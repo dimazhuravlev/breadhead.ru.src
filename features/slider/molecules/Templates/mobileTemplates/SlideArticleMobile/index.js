@@ -1,4 +1,5 @@
 import React from 'react'
+import { shouldUpdate } from 'recompose'
 import PropTypes from 'prop-types'
 import SlideText from '@site/ui/molecules/SlideText'
 import ArticleIconBlock from '@site/ui/molecules/ArticleIconBlock'
@@ -22,4 +23,4 @@ SlideArticleMobile.propTypes = {
   backgroundColor: PropTypes.string,
 }
 
-export default React.memo(SlideArticleMobile)
+export default shouldUpdate(() => false)(SlideArticleMobile)

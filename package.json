@@ -18,7 +18,8 @@
     "react-slick": "^0.23.2",
     "react-spring": "^6.1.9",
     "react-visibility-sensor": "^5.0.2",
-    "react-with-gesture": "^2.0.4"
+    "react-with-gesture": "^2.0.4",
+    "recompose": "^0.30.0"
   },
   "scripts": {
     "dev": "next",
