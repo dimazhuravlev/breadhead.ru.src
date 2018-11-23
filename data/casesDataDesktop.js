@@ -4,7 +4,7 @@ export const casesDataDesktop = [
   /* FASTER DESKTOP CASE */
   {
     description: {
-      type: 'проект',
+      type: 'сервис',
       name: 'Faster. Новый опыт покупки лекарств',
       links: [
         {
@@ -14,6 +14,12 @@ export const casesDataDesktop = [
       ]
     },
     slides: [
+      {
+        type: TemplatesNames.PictureDesktop,
+        data: {
+          src: '/static/img/faster/desktop/full_logo_desktop.jpg'
+        }
+      },
       {
         type: TemplatesNames.FrameVideoDesktop,
         duration: 6000,
@@ -25,9 +31,7 @@ export const casesDataDesktop = [
         type: TemplatesNames.ArticleWithPhoneDesktop,
         data: {
           title: 'Сервис для поиска и заказа лекарств в аптеках города',
-          description: [
-            'Cравнить цены, найти аналоги и заказать в ближайшей аптеке. Проектировали, рисовали и программировали'
-          ],
+          description: ['Текст для фастера я напишу сегодня позже.'],
           links: [
             {
               icontype: 'globe',
@@ -67,9 +71,20 @@ export const casesDataDesktop = [
       {
         type: TemplatesNames.PhonesDesktop,
         data: {
-          srcLeft: '/static/img/faster/desktop/phone_catalog_desktop.jpg',
-          srcCenter: '/static/img/faster/desktop/phone_map_desktop.jpg',
-          srcRight: '/static/img/faster/desktop/phone_product_desktop.jpg'
+          screens: [
+            {
+              src: '/static/img/faster/desktop/phone_catalog_desktop.jpg',
+              type: 'img'
+            },
+            {
+              src: '/static/img/faster/desktop/phone_map_desktop.jpg',
+              type: 'img'
+            },
+            {
+              src: '/static/img/faster/desktop/phone_product_desktop.jpg',
+              type: 'img'
+            }
+          ]
         }
       },
       {
@@ -108,7 +123,7 @@ export const casesDataDesktop = [
   /* YANGO DESKTOP CASE */
   {
     description: {
-      type: 'проект',
+      type: 'сайт и приложение',
       name: 'Yango. Приложение для доступных инвестиций',
       links: [
         {
@@ -131,7 +146,7 @@ export const casesDataDesktop = [
       {
         type: TemplatesNames.ArticleWithPhoneDesktop,
         data: {
-          title: 'Инвестируй в Yango и станешь богат',
+          title: 'Свежий взгляд на денежные сбережения',
           description: [
             'Инверстируй в Yango. Инверстируй в Yango. Инверстируй в Yango. Инверстируй в Yango. Инверстируй в Yango. Аминь.'
           ],
@@ -153,25 +168,58 @@ export const casesDataDesktop = [
       {
         type: TemplatesNames.PhonesDesktop,
         data: {
-          srcLeft: '/static/img/yango/desktop/1.1_desktop.jpg',
-          srcCenter: '/static/img/yango/desktop/1.2_desktop.mp4',
-          srcRight: '/static/img/yango/desktop/1.3_desktop.jpg'
+          screens: [
+            {
+              src: '/static/img/yango/desktop/1.1_desktop.jpg',
+              type: 'img'
+            },
+            {
+              src: '/static/img/yango/desktop/1.2_desktop.mp4',
+              type: 'video'
+            },
+            {
+              src: '/static/img/yango/desktop/1.3_desktop.jpg',
+              type: 'img'
+            }
+          ]
         }
       },
       {
         type: TemplatesNames.PhonesDesktop,
         data: {
-          srcLeft: '/static/img/yango/desktop/2.2_desktop.mp4',
-          srcCenter: '/static/img/yango/desktop/2.1_desktop.jpg',
-          srcRight: '/static/img/yango/desktop/2.3_desktop.jpg'
+          screens: [
+            {
+              src: '/static/img/yango/desktop/2.2_desktop.mp4',
+              type: 'video'
+            },
+            {
+              src: '/static/img/yango/desktop/2.1_desktop.jpg',
+              type: 'img'
+            },
+            {
+              src: '/static/img/yango/desktop/2.3_desktop.jpg',
+              type: 'img'
+            }
+          ]
         }
       },
       {
         type: TemplatesNames.PhonesDesktop,
         data: {
-          srcLeft: '/static/img/yango/desktop/3.1_desktop.jpg',
-          srcCenter: '/static/img/yango/desktop/3.2_desktop.jpg',
-          srcRight: '/static/img/yango/desktop/3.3_desktop.jpg'
+          screens: [
+            {
+              src: '/static/img/yango/desktop/3.1_desktop.jpg',
+              type: 'img'
+            },
+            {
+              src: '/static/img/yango/desktop/3.2_desktop.jpg',
+              type: 'img'
+            },
+            {
+              src: '/static/img/yango/desktop/3.3_desktop.jpg',
+              type: 'img'
+            }
+          ]
         }
       },
       {
@@ -201,9 +249,20 @@ export const casesDataDesktop = [
       {
         type: TemplatesNames.PhonesDesktop,
         data: {
-          srcLeft: '/static/img/yango/desktop/8.1_desktop.jpg',
-          srcCenter: '/static/img/yango/desktop/8.2_desktop.jpg',
-          srcRight: '/static/img/yango/desktop/8.3_desktop.jpg'
+          screens: [
+            {
+              src: '/static/img/yango/desktop/8.1_desktop.jpg',
+              type: 'img'
+            },
+            {
+              src: '/static/img/yango/desktop/8.2_desktop.jpg',
+              type: 'img'
+            },
+            {
+              src: '/static/img/yango/desktop/8.3_desktop.jpg',
+              type: 'img'
+            }
+          ]
         }
       },
       {
@@ -224,7 +283,7 @@ export const casesDataDesktop = [
   /* ENCORE FITNESS DESKTOP CASE */
   {
     description: {
-      type: 'проект',
+      type: 'сайт',
       name: 'Encore Fitness. Сайт нового поколения фитнес-клубов',
       links: [
         {
@@ -242,7 +301,7 @@ export const casesDataDesktop = [
         }
       },
       {
-        type: TemplatesNames.ArticleWithPhoneDesktop,
+        type: TemplatesNames.ArticleDesktop,
         data: {
           title: 'Новое представление об идеальном фитнесе',
           description: [
@@ -254,16 +313,6 @@ export const casesDataDesktop = [
               href: 'https://encorefitness.ru',
               text: 'encorefitness.ru'
             }
-          ],
-          src: '/static/img/encore_fitness/mobile/1-main_encore_mobile.jpg'
-        }
-      },
-      {
-        type: TemplatesNames.ArticleDesktop,
-        data: {
-          title: 'Новое представление об идеальном фитнесе',
-          description: [
-            'Мы изучили бизнес-процессы компании, с нуля разработали визуальный язык бренда совместно с Fullfort, создали гибкую информационную архитектуру, удобное расписание и собственную систему управления клубами и контентом. Чтобы передать уникальную атмосферу Encore, мы сделали акцент на утонченном визуальном образе бренда и подробном рассказе о каждом клубе.'
           ]
         }
       },
@@ -296,12 +345,23 @@ export const casesDataDesktop = [
       {
         type: TemplatesNames.PhonesDesktop,
         data: {
-          srcLeft:
-            '/static/img/encore_fitness/desktop/9.1-main_encore_mobile-screen_desktop.jpg',
-          srcCenter:
-            '/static/img/encore_fitness/desktop/9.2-trainers_encore_mobile-screen_desktop.jpg',
-          srcRight:
-            '/static/img/encore_fitness/desktop/9.3-schedule_encore_mobile-screen_desktop.jpg'
+          screens: [
+            {
+              src:
+                '/static/img/encore_fitness/desktop/9.1-main_encore_mobile-screen_desktop.jpg',
+              type: 'img'
+            },
+            {
+              src:
+                '/static/img/encore_fitness/desktop/9.2-trainers_encore_mobile-screen_desktop.jpg',
+              type: 'img'
+            },
+            {
+              src:
+                '/static/img/encore_fitness/desktop/9.3-schedule_encore_mobile-screen_desktop.jpg',
+              type: 'img'
+            }
+          ]
         }
       },
       {
@@ -343,8 +403,8 @@ export const casesDataDesktop = [
   /* OBED BUFET DESKTOP CASE */
   {
     description: {
-      type: 'приложение',
-      name: 'Обед Буфет'
+      type: 'мобильное приложение',
+      name: 'Обед Буфет. Дружелюбная доставка домашней еды'
     },
     slides: [
       {
@@ -354,11 +414,11 @@ export const casesDataDesktop = [
         }
       },
       {
-        type: TemplatesNames.ArticleWithPhoneDesktop,
+        type: TemplatesNames.ArticleDesktop,
         data: {
-          title: 'Обед Буфет. Закажи пожрать',
+          title: 'Проектирование и дизайн кроссплатформенного приложения',
           description: [
-            'Проектировали, прототипировали, рисовали, а они уже год программируют. Ну сколько можно ёпта?'
+            'Мы провели исследование бренда, переосмыслили структуру меню, навигацию, процесс оформления и отслеживания заказа. Дружелюбие ObedBufet отразилось в удобных механиках взаимодействия и визуальном стиле приложения – минимум рекламы, позитивные цвета и формы, забавные персонажи, легкий тон коммуникации и простота в использовании.'
           ],
           links: [
             {
@@ -371,16 +431,45 @@ export const casesDataDesktop = [
               href: 'https://android.com',
               text: 'Android'
             }
-          ],
-          src: '/static/img/obed_bufet/0-location_obedbufet_mobile.jpg'
+          ]
         }
       },
       {
         type: TemplatesNames.PhonesDesktop,
         data: {
-          srcLeft: '/static/img/obed_bufet/1-main_obedbufet_mobile.jpg',
-          srcCenter: '/static/img/obed_bufet/2-catalog_obedbufet_mobile.jpg',
-          srcRight: '/static/img/obed_bufet/3-product_obedbufet_mobile.jpg',
+          screens: [
+            {
+              src: '/static/img/obed_bufet/0-location_obedbufet_mobile.jpg',
+              type: 'img'
+            },
+            {
+              src: '',
+              type: 'img'
+            },
+            {
+              src: '',
+              type: 'img'
+            }
+          ]
+        }
+      },
+      {
+        type: TemplatesNames.PhonesDesktop,
+        data: {
+          screens: [
+            {
+              src: '/static/img/obed_bufet/1-main_obedbufet_mobile.jpg',
+              type: 'img'
+            },
+            {
+              src: '/static/img/obed_bufet/2-catalog_obedbufet_mobile.jpg',
+              type: 'img'
+            },
+            {
+              src: '/static/img/obed_bufet/3-product_obedbufet_mobile.jpg',
+              type: 'img'
+            }
+          ],
           backgroundSrc:
             '/static/img/obed_bufet/cover_obedbufet_desktop_fullslide.jpg'
         }
@@ -388,9 +477,20 @@ export const casesDataDesktop = [
       {
         type: TemplatesNames.PhonesDesktop,
         data: {
-          srcLeft: '/static/img/obed_bufet/4-profile_obedbufet_mobile.jpg',
-          srcCenter: '/static/img/obed_bufet/5-address_obedbufet_mobile.jpg',
-          srcRight: '/static/img/obed_bufet/6-history_obedbufet_mobile.jpg',
+          screens: [
+            {
+              src: '/static/img/obed_bufet/4-profile_obedbufet_mobile.jpg',
+              type: 'img'
+            },
+            {
+              src: '/static/img/obed_bufet/5-address_obedbufet_mobile.jpg',
+              type: 'img'
+            },
+            {
+              src: '/static/img/obed_bufet/6-history_obedbufet_mobile.jpg',
+              type: 'img'
+            }
+          ],
           backgroundColor: 'pink'
         }
       },
