@@ -4,8 +4,8 @@ export const casesDataMobile = [
   /* FASTER MOBILE CASE */
   {
     description: {
-      type: 'сервис',
-      name: 'Faster. Новый опыт покупки лекарств'
+      type: 'веб-сервис',
+      name: 'Faster'
     },
     priority: true,
     slides: [
@@ -119,8 +119,8 @@ export const casesDataMobile = [
   /* YANGO MOBILE CASE */
   {
     description: {
-      type: 'сайт и приложение',
-      name: 'Yango. Приложение для доступных инвестиций'
+      type: 'сайт + приложение',
+      name: 'Yango'
     },
     slides: [
       {
@@ -272,7 +272,7 @@ export const casesDataMobile = [
   {
     description: {
       type: 'сайт',
-      name: 'Encore Fitness. Сайт нового поколения фитнес-клубов'
+      name: 'Encore Fitness'
     },
     slides: [
       {
@@ -412,8 +412,8 @@ export const casesDataMobile = [
   /* OBED BUFET MOBILE CASE */
   {
     description: {
-      type: 'мобильное приложение',
-      name: 'Обед Буфет. Дружелюбная доставка домашней еды'
+      type: 'ios + android',
+      name: 'Обед Буфет'
     },
     slides: [
       {
@@ -478,6 +478,17 @@ export const casesDataMobile = [
         }
       },
       {
+        type: TemplatesNames.PictureMobile,
+        data: {
+          image: {
+            src:
+              '/static/img/obed_bufet/7-rest_obedbufet_mobile-fullscreen.png',
+            preloader:
+              '/static/img/obed_bufet/preloader-7-rest_obedbufet_mobile-fullscreen.png'
+          }
+        }
+      },
+      {
         type: TemplatesNames.FramePictMobile,
         data: {
           image: {
@@ -504,17 +515,6 @@ export const casesDataMobile = [
             src: '/static/img/obed_bufet/6-history_obedbufet_mobile.jpg',
             preloader:
               '/static/img/obed_bufet/preloader-6-history_obedbufet_mobile.jpg'
-          }
-        }
-      },
-      {
-        type: TemplatesNames.PictureMobile,
-        data: {
-          image: {
-            src:
-              '/static/img/obed_bufet/7-rest_obedbufet_mobile-fullscreen.png',
-            preloader:
-              '/static/img/obed_bufet/preloader-7-rest_obedbufet_mobile-fullscreen.png'
           }
         }
       }

@@ -4,7 +4,7 @@ export const casesDataDesktop = [
   /* FASTER DESKTOP CASE */
   {
     description: {
-      type: 'сервис',
+      type: 'веб-сервис',
       name: 'Faster',
       links: [
         {
@@ -128,16 +128,6 @@ export const casesDataDesktop = [
           backgroundColor: '#EDEEF0'
         }
       },
-      // {
-      //   type: TemplatesNames.PictureDesktop,
-      //   data: {
-      //     image: {
-      //       src: '/static/img/faster/desktop/full_logo_desktop.jpg',
-      //       preloader:
-      //         '/static/img/faster/desktop/preloader-full_logo_desktop.jpg'
-      //     }
-      //   }
-      // },
       {
         type: TemplatesNames.PictureDesktop,
         data: {
@@ -175,7 +165,7 @@ export const casesDataDesktop = [
   /* YANGO DESKTOP CASE */
   {
     description: {
-      type: 'сайт и приложение',
+      type: 'сайт + приложение',
       name: 'Yango',
       links: [
         {
@@ -526,7 +516,7 @@ export const casesDataDesktop = [
   /* OBED BUFET DESKTOP CASE */
   {
     description: {
-      type: 'мобильное приложение',
+      type: 'приложение',
       name: 'Обед Буфет'
     },
     slides: [

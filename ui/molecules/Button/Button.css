@@ -21,6 +21,7 @@
 }
 
 .ButtonText {
+  user-select: none;
   color: var(--darkPrimary);
   font: var(--caption20-24);
   margin-bottom: 3px;
