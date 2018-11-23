@@ -14,9 +14,11 @@ const SlideArticleDesktop = ({
     style={{ backgroundColor: backgroundColor }}
     className={styles.slide}
   >
-    {title && <h2 className={styles.title}>{title}</h2>}
-    <SlideText description={description} />
-    <ArticleIconBlock links={links} />
+    <div className={styles.content}>
+      {title && <h2 className={styles.title}>{title}</h2>}
+      <SlideText description={description} />
+      <ArticleIconBlock links={links} />
+    </div>
   </article>
 )
 
