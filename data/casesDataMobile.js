@@ -4,7 +4,7 @@ export const casesDataMobile = [
   /* FASTER MOBILE CASE */
   {
     description: {
-      type: 'проект',
+      type: 'сервис',
       name: 'Faster. Новый опыт покупки лекарств'
     },
     priority: true,
@@ -12,7 +12,7 @@ export const casesDataMobile = [
       {
         type: TemplatesNames.FrameVideoMobile,
         data: {
-          src: '/static/img/faster/mobile/scroll—mobile.mp4'
+          src: '/static/img/faster/mobile/scroll_mobile.mp4'
         }
       },
       {
@@ -86,7 +86,7 @@ export const casesDataMobile = [
   /* YANGO MOBILE CASE */
   {
     description: {
-      type: 'проект',
+      type: 'сайт и приложение',
       name: 'Yango. Приложение для доступных инвестиций'
     },
     slides: [
@@ -99,7 +99,7 @@ export const casesDataMobile = [
       {
         type: TemplatesNames.ArticleMobile,
         data: {
-          title: 'Заголовок для Янго',
+          title: 'Свежий взгляд на денежные сбережения',
           description: [
             'Текст для Янго. Текст для Янго. Текст для Янго. Текст для Янго. Текст для Янго'
           ],
@@ -154,7 +154,7 @@ export const casesDataMobile = [
         }
       },
       {
-        type: TemplatesNames.FrameVideoMobile,
+        type: TemplatesNames.VideoMobile,
         data: {
           src: '/static/img/yango/mobile/7_mobile_fullslide.mp4'
         }
@@ -201,8 +201,8 @@ export const casesDataMobile = [
   /* ENCORE FITNESS MOBILE CASE */
   {
     description: {
-      type: 'проект',
-      name: 'Encore Fitness. Качалка за тонну бабла'
+      type: 'сайт',
+      name: 'Encore Fitness. Сайт нового поколения фитнес-клубов'
     },
     slides: [
       {
@@ -210,6 +210,22 @@ export const casesDataMobile = [
         data: {
           src:
             '/static/img/encore_fitness/mobile/cover_encore_mobile_fullslide.jpg'
+        }
+      },
+      {
+        type: TemplatesNames.ArticleMobile,
+        data: {
+          title: 'Новое представление об идеальном фитнесе',
+          description: [
+            'Мы изучили бизнес-процессы компании, с нуля разработали визуальный язык бренда совместно с Fullfort, создали гибкую информационную архитектуру, удобное расписание и собственную систему управления клубами и контентом. Чтобы передать уникальную атмосферу Encore, мы сделали акцент на утонченном визуальном образе бренда и подробном рассказе о каждом клубе.'
+          ],
+          links: [
+            {
+              icontype: 'globe',
+              href: 'https://encorefitness.ru',
+              text: 'encorefitness.ru'
+            }
+          ]
         }
       },
       {
@@ -285,8 +301,8 @@ export const casesDataMobile = [
   /* OBED BUFET MOBILE CASE */
   {
     description: {
-      type: 'проект',
-      name: 'Обед Буфет. Приложушечка'
+      type: 'мобильное приложение',
+      name: 'Обед Буфет. Дружелюбная доставка домашней еды'
     },
     slides: [
       {
@@ -298,9 +314,9 @@ export const casesDataMobile = [
       {
         type: TemplatesNames.ArticleMobile,
         data: {
-          title: 'Обед Буфет. Закажи пожрать',
+          title: 'Проектирование и дизайн кроссплатформенного приложения',
           description: [
-            'Проектировали, прототипировали, рисовали, а они уже год программируют. Ну сколько можно ёпта?'
+            'Мы провели исследование бренда, переосмыслили структуру меню, навигацию, процесс оформления и отслеживания заказа. Дружелюбие ObedBufet отразилось в удобных механиках взаимодействия и визуальном стиле приложения – минимум рекламы, позитивные цвета и формы, забавные персонажи, легкий тон коммуникации и простота в использовании.'
           ],
           links: [
             {
