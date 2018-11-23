@@ -23,7 +23,9 @@ const Img = ({ className, src, preloader }) => {
             leave={{ opacity: 0 }}
           >
             {child => props => (
-              <animated.div style={props}>{child}</animated.div>
+              <animated.div className={styles.wrapper} style={props}>
+                {child}
+              </animated.div>
             )}
           </Transition>
         )
