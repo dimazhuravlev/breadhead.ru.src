@@ -11,6 +11,7 @@ export const casesDataMobile = [
     slides: [
       {
         type: TemplatesNames.FrameVideoMobile,
+        duration: 10000,
         data: {
           src: '/static/img/faster/mobile/scroll_mobile.mp4',
           backgroundColor: '#EDEEF0'
@@ -18,6 +19,7 @@ export const casesDataMobile = [
       },
       {
         type: TemplatesNames.ArticleMobile,
+        duration: 12000,
         data: {
           title:
             'Сервис для сравнения и бронирования лекарств в аптеках города',
@@ -77,6 +79,7 @@ export const casesDataMobile = [
       },
       {
         type: TemplatesNames.FrameVideoMobile,
+        duration: 7000,
         data: {
           src: '/static/img/faster/mobile/filter_mobile.mp4',
           backgroundColor: '#EDEEF0'
@@ -135,6 +138,7 @@ export const casesDataMobile = [
       },
       {
         type: TemplatesNames.ArticleMobile,
+        duration: 12000,
         data: {
           title: 'Свежий взгляд на денежные сбережения',
           description: [
@@ -143,19 +147,15 @@ export const casesDataMobile = [
           links: [
             {
               icontype: 'globe',
-              href: 'https://.apple.ru',
-              text: 'iOS'
-            },
-            {
-              icontype: 'globe',
-              href: 'https://.android.ru',
-              text: 'Andriod'
+              href: 'https://yango.pro',
+              text: 'yango.pro'
             }
           ]
         }
       },
       {
         type: TemplatesNames.FrameVideoMobile,
+        duration: 12000,
         data: {
           src: '/static/img/yango/mobile/1_mobile.mp4'
         }
@@ -180,6 +180,7 @@ export const casesDataMobile = [
       },
       {
         type: TemplatesNames.FrameVideoMobile,
+        duration: 9000,
         data: {
           src: '/static/img/yango/mobile/4_mobile.mp4'
         }
@@ -204,6 +205,7 @@ export const casesDataMobile = [
       },
       {
         type: TemplatesNames.VideoMobile,
+        duration: 12000,
         data: {
           src: '/static/img/yango/mobile/7_mobile_fullslide.mp4'
         }
@@ -288,6 +290,7 @@ export const casesDataMobile = [
       },
       {
         type: TemplatesNames.ArticleMobile,
+        duration: 12000,
         data: {
           title: 'Новое представление об идеальном фитнесе',
           description: [
@@ -314,6 +317,7 @@ export const casesDataMobile = [
       },
       {
         type: TemplatesNames.FrameVideoMobile,
+        duration: 10000,
         data: {
           src: '/static/img/encore_fitness/mobile/2-club_encore_mobile_opt.mp4'
         }
@@ -413,7 +417,7 @@ export const casesDataMobile = [
   {
     description: {
       type: 'ios + android',
-      name: 'Обед Буфет'
+      name: 'ОбедБуфет'
     },
     slides: [
       {
@@ -428,22 +432,11 @@ export const casesDataMobile = [
       },
       {
         type: TemplatesNames.ArticleMobile,
+        duration: 12000,
         data: {
           title: 'Проектирование и дизайн кроссплатформенного приложения',
           description: [
             'Мы провели исследование бренда, переосмыслили структуру меню, навигацию, процесс оформления и отслеживания заказа. Дружелюбие ObedBufet отразилось в удобных механиках взаимодействия и визуальном стиле приложения – минимум рекламы, позитивные цвета и формы, забавные персонажи, легкий тон коммуникации и простота в использовании.'
-          ],
-          links: [
-            {
-              icontype: 'globe',
-              href: 'https://apple.com',
-              text: 'iOS'
-            },
-            {
-              icontype: 'globe',
-              href: 'https://android.com',
-              text: 'Android'
-            }
           ]
         }
       },

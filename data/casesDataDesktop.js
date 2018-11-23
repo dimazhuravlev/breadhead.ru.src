@@ -16,13 +16,14 @@ export const casesDataDesktop = [
     slides: [
       {
         type: TemplatesNames.VideoDesktop,
-        duration: 8000,
+        duration: 10000,
         data: {
           src: '/static/img/faster/desktop/full_order_desktop.mp4'
         }
       },
       {
         type: TemplatesNames.ArticleWithPhoneDesktop,
+        duration: 12000,
         data: {
           title: 'Сервис для поиска и заказа лекарств в аптеках города',
           description: ['Текст для фастера я напишу сегодня позже.'],
@@ -43,7 +44,7 @@ export const casesDataDesktop = [
       },
       {
         type: TemplatesNames.FrameVideoDesktop,
-        duration: 6000,
+        duration: 9000,
         data: {
           src: '/static/img/faster/desktop/browser_scroll_desktop.mp4',
           backgroundColor: '#EDEEF0'
@@ -191,6 +192,7 @@ export const casesDataDesktop = [
       },
       {
         type: TemplatesNames.ArticleWithPhoneDesktop,
+        duration: 12000,
         data: {
           title: 'Свежий взгляд на денежные сбережения',
           description: [
@@ -199,13 +201,8 @@ export const casesDataDesktop = [
           links: [
             {
               icontype: 'globe',
-              href: 'https://.apple.ru',
-              text: 'iOS'
-            },
-            {
-              icontype: 'globe',
-              href: 'https://.android.ru',
-              text: 'Andriod'
+              href: 'https://yango.pro',
+              text: 'yango.pro'
             }
           ],
           image: {
@@ -216,6 +213,7 @@ export const casesDataDesktop = [
       },
       {
         type: TemplatesNames.PhonesDesktop,
+        duration: 12000,
         data: {
           screens: [
             {
@@ -237,6 +235,7 @@ export const casesDataDesktop = [
       },
       {
         type: TemplatesNames.PhonesDesktop,
+        duration: 9000,
         data: {
           screens: [
             {
@@ -280,6 +279,7 @@ export const casesDataDesktop = [
       },
       {
         type: TemplatesNames.VideoDesktop,
+        duration: 11000,
         data: {
           src: '/static/img/yango/desktop/4_desktop_fullslide.mp4'
         }
@@ -304,6 +304,7 @@ export const casesDataDesktop = [
       },
       {
         type: TemplatesNames.FrameVideoDesktop,
+        duration: 17000,
         data: {
           src: '/static/img/yango/desktop/7_desktop.mp4'
         }
@@ -379,6 +380,7 @@ export const casesDataDesktop = [
       },
       {
         type: TemplatesNames.ArticleDesktop,
+        duration: 12000,
         data: {
           title: 'Новое представление об идеальном фитнесе',
           description: [
@@ -405,6 +407,7 @@ export const casesDataDesktop = [
       },
       {
         type: TemplatesNames.FrameVideoDesktop,
+        duration: 10000,
         data: {
           src:
             '/static/img/encore_fitness/desktop/2-club_encore_desktop_opt.mp4'
@@ -462,6 +465,7 @@ export const casesDataDesktop = [
       },
       {
         type: TemplatesNames.FrameVideoDesktop,
+        duration: 8000,
         data: {
           src:
             '/static/img/encore_fitness/desktop/5-grouptraining_desktop_opt.mp4'
@@ -517,7 +521,7 @@ export const casesDataDesktop = [
   {
     description: {
       type: 'приложение',
-      name: 'Обед Буфет'
+      name: 'ОбедБуфет'
     },
     slides: [
       {
@@ -532,22 +536,11 @@ export const casesDataDesktop = [
       },
       {
         type: TemplatesNames.ArticleDesktop,
+        duration: 12000,
         data: {
           title: 'Проектирование и дизайн кроссплатформенного приложения',
           description: [
             'Мы провели исследование бренда, переосмыслили структуру меню, навигацию, процесс оформления и отслеживания заказа. Дружелюбие ObedBufet отразилось в удобных механиках взаимодействия и визуальном стиле приложения – минимум рекламы, позитивные цвета и формы, забавные персонажи, легкий тон коммуникации и простота в использовании.'
-          ],
-          links: [
-            {
-              icontype: 'globe',
-              href: 'https://apple.com',
-              text: 'iOS'
-            },
-            {
-              icontype: 'globe',
-              href: 'https://android.com',
-              text: 'Android'
-            }
           ]
         }
       },
@@ -594,9 +587,18 @@ export const casesDataDesktop = [
                 '/static/img/obed_bufet/preloader-3-product_obedbufet_mobile.jpg',
               type: 'img'
             }
-          ],
-          backgroundSrc:
-            '/static/img/obed_bufet/cover_obedbufet_desktop_fullslide.jpg'
+          ]
+        }
+      },
+      {
+        type: TemplatesNames.PictureDesktop,
+        data: {
+          image: {
+            src:
+              '/static/img/obed_bufet/7-rest_obedbufet_desktop-fullscreen.jpg',
+            preloader:
+              '/static/img/obed_bufet/preloader-7-rest_obedbufet_desktop-fullscreen.jpg'
+          }
         }
       },
       {
@@ -621,19 +623,7 @@ export const casesDataDesktop = [
                 '/static/img/obed_bufet/preloader-6-history_obedbufet_mobile.jpg',
               type: 'img'
             }
-          ],
-          backgroundColor: 'pink'
-        }
-      },
-      {
-        type: TemplatesNames.PictureDesktop,
-        data: {
-          image: {
-            src:
-              '/static/img/obed_bufet/7-rest_obedbufet_desktop-fullscreen.jpg',
-            preloader:
-              '/static/img/obed_bufet/preloader-7-rest_obedbufet_desktop-fullscreen.jpg'
-          }
+          ]
         }
       }
     ]
