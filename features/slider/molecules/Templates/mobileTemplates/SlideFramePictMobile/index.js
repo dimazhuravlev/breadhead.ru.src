@@ -1,11 +1,15 @@
 import React from 'react'
+import Img from '@site/ui/molecules/Img'
 import PropTypes from 'prop-types'
 import styles from './slideFramePictMobile.css'
 
-const SlideFramePictMobile = ({ src, backgroundColor }) => (
+const SlideFramePictMobile = ({
+  image: { src, preloader },
+  backgroundColor,
+}) => (
   <div style={{ backgroundColor: backgroundColor }} className={styles.slide}>
     <div className={styles.phone}>
-      <img src={src} className={styles.screen} />
+      <Img src={src} className={styles.screen} preloader={preloader} />
     </div>
   </div>
 )
