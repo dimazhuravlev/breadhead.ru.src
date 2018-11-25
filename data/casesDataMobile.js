@@ -21,10 +21,9 @@ export const casesDataMobile = [
         type: TemplatesNames.ArticleMobile,
         duration: 12000,
         data: {
-          title:
-            'Сервис для сравнения и бронирования лекарств в аптеках города',
+          title: 'Новый опыт покупки лекарств',
           description: [
-            'Cравнить цены, найти аналоги и заказать в ближайшей аптеке. Проектировали, рисовали и программировали'
+            'Faster — это сервис, который объединяет все аптеки города, находит и бронирует лекарства по лучшим ценам. Мы отвечали за все стороны продукта: от логотипа и цвета кнопок до архитектуры проекта, интеграций с базами данных и разработки приложения для аптек.'
           ],
           links: [
             {
@@ -429,9 +428,9 @@ export const casesDataMobile = [
         type: TemplatesNames.PictureMobile,
         data: {
           image: {
-            src: '/static/img/obed_bufet/cover_obedbufet_mobile_fullslide.png',
+            src: '/static/img/obed_bufet/cover_obedbufet_mobile_fullslide.jpg',
             preloader:
-              '/static/img/obed_bufet/preloader-cover_obedbufet_mobile_fullslide.png'
+              '/static/img/obed_bufet/preloader-cover_obedbufet_mobile_fullslide.jpg'
           }
         }
       },
@@ -446,12 +445,21 @@ export const casesDataMobile = [
         }
       },
       {
+        type: TemplatesNames.FrameVideoMobile,
+        duration: 13000,
+        data: {
+          src: '/static/img/obed_bufet/1.1-video1_obedbufet-app_desktop.mp4'
+          // preloader:
+          //   '/static/img/obed_bufet/preloader-1.1-video1_obedbufet-app_desktop.jpg'
+        }
+      },
+      {
         type: TemplatesNames.FramePictMobile,
         data: {
           image: {
-            src: '/static/img/obed_bufet/1-main_obedbufet_mobile.jpg',
+            src: '/static/img/obed_bufet/1.2-main_obedbufet-app_desktop.jpg',
             preloader:
-              '/static/img/obed_bufet/preloader-1-main_obedbufet_mobile.jpg'
+              '/static/img/obed_bufet/preloader-1.2-main_obedbufet-app_desktop.jpg'
           }
         }
       },
@@ -459,19 +467,9 @@ export const casesDataMobile = [
         type: TemplatesNames.FramePictMobile,
         data: {
           image: {
-            src: '/static/img/obed_bufet/2-catalog_obedbufet_mobile.jpg',
+            src: '/static/img/obed_bufet/1.3-catalog_obedbufet-app_desktop.jpg',
             preloader:
-              '/static/img/obed_bufet/preloader-2-catalog_obedbufet_mobile.jpg'
-          }
-        }
-      },
-      {
-        type: TemplatesNames.FramePictMobile,
-        data: {
-          image: {
-            src: '/static/img/obed_bufet/3-product_obedbufet_mobile.jpg',
-            preloader:
-              '/static/img/obed_bufet/preloader-3-product_obedbufet_mobile.jpg'
+              '/static/img/obed_bufet/preloader-1.3-catalog_obedbufet-app_desktop.jpg'
           }
         }
       },
@@ -480,9 +478,28 @@ export const casesDataMobile = [
         data: {
           image: {
             src:
-              '/static/img/obed_bufet/7-rest_obedbufet_mobile-fullscreen.png',
+              '/static/img/obed_bufet/7-rest_obedbufet_mobile-fullscreen.jpg',
             preloader:
-              '/static/img/obed_bufet/preloader-7-rest_obedbufet_mobile-fullscreen.png'
+              '/static/img/obed_bufet/preloader-7-rest_obedbufet_mobile-fullscreen.jpg'
+          }
+        }
+      },
+      {
+        type: TemplatesNames.FrameVideoMobile,
+        duration: 13000,
+        data: {
+          src: '/static/img/obed_bufet/2.1-video2_obedbufet-app_desktop.mp4'
+          // preloader:
+          //   '/static/img/obed_bufet/preloader-1.1-video1_obedbufet-app_desktop.jpg'
+        }
+      },
+      {
+        type: TemplatesNames.FramePictMobile,
+        data: {
+          image: {
+            src: '/static/img/obed_bufet/2.2-product_obedbufet-app_desktop.jpg',
+            preloader:
+              '/static/img/obed_bufet/preloader-2.2-product_obedbufet-app_desktop.jpg'
           }
         }
       },
@@ -490,9 +507,9 @@ export const casesDataMobile = [
         type: TemplatesNames.FramePictMobile,
         data: {
           image: {
-            src: '/static/img/obed_bufet/4-profile_obedbufet_mobile.jpg',
-            preloader:
-              '/static/img/obed_bufet/preloader-4-profile_obedbufet_mobile.jpg'
+            src: '/static/img/obed_bufet/2.3-order_obedbufet-app_desktop.jpg'
+            // preloader:
+            //   '/static/img/obed_bufet/preloader-2.3-order_obedbufet-app_desktop.jpg'
           }
         }
       },
@@ -500,9 +517,9 @@ export const casesDataMobile = [
         type: TemplatesNames.FramePictMobile,
         data: {
           image: {
-            src: '/static/img/obed_bufet/5-address_obedbufet_mobile.jpg',
+            src: '/static/img/obed_bufet/3.1-profile_obedbufet-app_desktop.jpg',
             preloader:
-              '/static/img/obed_bufet/preloader-5-address_obedbufet_mobile.jpg'
+              '/static/img/obed_bufet/preloader-3.1-profile_obedbufet-app_desktop.jpg'
           }
         }
       },
@@ -510,9 +527,19 @@ export const casesDataMobile = [
         type: TemplatesNames.FramePictMobile,
         data: {
           image: {
-            src: '/static/img/obed_bufet/6-history_obedbufet_mobile.jpg',
+            src: '/static/img/obed_bufet/3.2-address_obedbufet-app_desktop.jpg',
             preloader:
-              '/static/img/obed_bufet/preloader-6-history_obedbufet_mobile.jpg'
+              '/static/img/obed_bufet/preloader-3.2-address_obedbufet-app_desktop.jpg'
+          }
+        }
+      },
+      {
+        type: TemplatesNames.FramePictMobile,
+        data: {
+          image: {
+            src: '/static/img/obed_bufet/3.3-history_obedbufet-app_desktop.jpg',
+            preloader:
+              '/static/img/obed_bufet/preloader-3.3-history_obedbufet-app_desktop.jpg'
           }
         }
       }

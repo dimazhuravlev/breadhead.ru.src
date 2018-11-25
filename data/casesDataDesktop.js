@@ -25,12 +25,13 @@ export const casesDataDesktop = [
         type: TemplatesNames.ArticleWithPhoneDesktop,
         duration: 12000,
         data: {
-          title: 'Сервис для поиска и заказа лекарств в аптеках города',
-          description: ['Текст для фастера я напишу сегодня позже.'],
+          title: 'Новый опыт покупки лекарств',
+          description: [
+            'Faster — это сервис, который объединяет все аптеки города, находит и бронирует лекарства по лучшим ценам. Мы отвечали за все стороны продукта: от логотипа и цвета кнопок до архитектуры проекта, интеграций с базами данных и разработки приложения для аптек.'
+          ],
           links: [
             {
               icontype: 'globe',
-              description: 'beta:',
               href: 'https://faster.ru',
               text: 'faster.ru'
             }
@@ -525,7 +526,7 @@ export const casesDataDesktop = [
   /* OBED BUFET DESKTOP CASE */
   {
     description: {
-      type: 'приложение',
+      type: 'ios + android',
       name: 'ОбедБуфет'
     },
     slides: [
@@ -551,20 +552,27 @@ export const casesDataDesktop = [
       },
       {
         type: TemplatesNames.PhonesDesktop,
+        duration: 13000,
         data: {
           screens: [
             {
-              src: '/static/img/obed_bufet/0-location_obedbufet_mobile.jpg',
+              src:
+                '/static/img/obed_bufet/1.1-video1_obedbufet-app_desktop.mp4',
               preloader:
-                '/static/img/obed_bufet/preloader-0-location_obedbufet_mobile.jpg',
+                '/static/img/obed_bufet/preloader-1.1-video1_obedbufet-app_desktop.jpg',
+              type: 'video'
+            },
+            {
+              src: '/static/img/obed_bufet/1.2-main_obedbufet-app_desktop.jpg',
+              preloader:
+                '/static/img/obed_bufet/preloader-1.2-main_obedbufet-app_desktop.jpg',
               type: 'img'
             },
             {
-              src: '',
-              type: 'img'
-            },
-            {
-              src: '',
+              src:
+                '/static/img/obed_bufet/1.3-catalog_obedbufet-app_desktop.jpg',
+              preloader:
+                '/static/img/obed_bufet/preloader-1.3-catalog_obedbufet-app_desktop.jpg',
               type: 'img'
             }
           ]
@@ -572,24 +580,27 @@ export const casesDataDesktop = [
       },
       {
         type: TemplatesNames.PhonesDesktop,
+        duration: 13000,
         data: {
           screens: [
             {
-              src: '/static/img/obed_bufet/1-main_obedbufet_mobile.jpg',
+              src:
+                '/static/img/obed_bufet/2.1-video2_obedbufet-app_desktop.mp4',
               preloader:
-                '/static/img/obed_bufet/preloader-1-main_obedbufet_mobile.jpg',
+                '/static/img/obed_bufet/preloader-1.3-catalog_obedbufet-app_desktop.jpg',
+              type: 'video'
+            },
+            {
+              src:
+                '/static/img/obed_bufet/2.2-product_obedbufet-app_desktop.jpg',
+              preloader:
+                '/static/img/obed_bufet/preloader-2.2-product_obedbufet-app_desktop.jpg',
               type: 'img'
             },
             {
-              src: '/static/img/obed_bufet/2-catalog_obedbufet_mobile.jpg',
+              src: '/static/img/obed_bufet/2.3-order_obedbufet-app_desktop.jpg',
               preloader:
-                '/static/img/obed_bufet/preloader-2-catalog_obedbufet_mobile.jpg',
-              type: 'img'
-            },
-            {
-              src: '/static/img/obed_bufet/3-product_obedbufet_mobile.jpg',
-              preloader:
-                '/static/img/obed_bufet/preloader-3-product_obedbufet_mobile.jpg',
+                '/static/img/obed_bufet/preloader-2.3-order_obedbufet-app_desktop.jpg',
               type: 'img'
             }
           ]
@@ -611,21 +622,24 @@ export const casesDataDesktop = [
         data: {
           screens: [
             {
-              src: '/static/img/obed_bufet/4-profile_obedbufet_mobile.jpg',
+              src:
+                '/static/img/obed_bufet/3.1-profile_obedbufet-app_desktop.jpg',
               preloader:
-                '/static/img/obed_bufet/preloader-4-profile_obedbufet_mobile.jpg',
+                '/static/img/obed_bufet/preloader-3.1-profile_obedbufet-app_desktop.jpg',
               type: 'img'
             },
             {
-              src: '/static/img/obed_bufet/5-address_obedbufet_mobile.jpg',
+              src:
+                '/static/img/obed_bufet/3.2-address_obedbufet-app_desktop.jpg',
               preloader:
-                '/static/img/obed_bufet/preloader-5-address_obedbufet_mobile.jpg',
+                '/static/img/obed_bufet/preloader-3.2-address_obedbufet-app_desktop.jpg',
               type: 'img'
             },
             {
-              src: '/static/img/obed_bufet/6-history_obedbufet_mobile.jpg',
+              src:
+                '/static/img/obed_bufet/3.3-history_obedbufet-app_desktop.jpg',
               preloader:
-                '/static/img/obed_bufet/preloader-6-history_obedbufet_mobile.jpg',
+                '/static/img/obed_bufet/preloader-3.3-history_obedbufet-app_desktop.jpg',
               type: 'img'
             }
           ]
