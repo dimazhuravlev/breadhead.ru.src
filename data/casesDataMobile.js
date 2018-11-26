@@ -286,7 +286,7 @@ export const casesDataMobile = [
         type: TemplatesNames.ArticleMobile,
         duration: 12000,
         data: {
-          title: 'Новое представление об идеальном фитнесе',
+          title: `Новое представление об${NON_BREAKING_SPACE}идеальном фитнесе`,
           description: [
             `Мы сделали сайт, который стал продолжением уникального клиентского опыта в${NON_BREAKING_SPACE}клубах Encore Fitness. Cочетанием технологичности и${NON_BREAKING_SPACE}функциональности с${NON_BREAKING_SPACE}историей бренда и${NON_BREAKING_SPACE}вниманием к${NON_BREAKING_SPACE}деталям.`
           ],
