@@ -372,20 +372,21 @@ export const casesDataDesktop = [
         type: TemplatesNames.ArticleDesktop,
         duration: 12000,
         data: {
-          title: 'Новое представление об идеальном фитнесе',
+          title: `Меняем представление о${NON_BREAKING_SPACE}фитнес-клубах`,
           description: [
-            `Мы сделали сайт, который стал продолжением уникального клиентского опыта в${NON_BREAKING_SPACE}клубах Encore Fitness. Cочетанием технологичности и${NON_BREAKING_SPACE}функциональности с${NON_BREAKING_SPACE}историей бренда и${NON_BREAKING_SPACE}вниманием к${NON_BREAKING_SPACE}деталям.`
+            `Мы консультировали разработку концепции бренда (совместно с${NON_BREAKING_SPACE}<a target="_blank" rel = "noopener noreferrer" href="http://fullfort.agency/">Fullfort</a>) и${NON_BREAKING_SPACE}сделали сайт, который стал продолжением уникального клиентского опыта в${NON_BREAKING_SPACE}клубах Encore Fitness —${NON_BREAKING_SPACE}сочетанием технологичности и${NON_BREAKING_SPACE}функциональности с${NON_BREAKING_SPACE}историей бренда и${NON_BREAKING_SPACE}вниманием к${NON_BREAKING_SPACE}деталям.`,
+            'Фото: Арсений Джабиев.'
           ],
           links: [
-            {
-              icontype: 'globe',
-              href: 'https://encorefitness.ru',
-              text: 'encorefitness.ru'
-            },
             {
               icontype: 'article',
               href: 'https://encorefitness.ru',
               text: 'читать кейс'
+            },
+            {
+              icontype: 'globe',
+              href: 'https://encorefitness.ru',
+              text: 'encorefitness.ru'
             }
           ]
         }

@@ -286,20 +286,20 @@ export const casesDataMobile = [
         type: TemplatesNames.ArticleMobile,
         duration: 12000,
         data: {
-          title: `Новое представление об${NON_BREAKING_SPACE}идеальном фитнесе`,
+          title: `Меняем представление о${NON_BREAKING_SPACE}фитнес-клубах`,
           description: [
-            `Мы сделали сайт, который стал продолжением уникального клиентского опыта в${NON_BREAKING_SPACE}клубах Encore Fitness. Cочетанием технологичности и${NON_BREAKING_SPACE}функциональности с${NON_BREAKING_SPACE}историей бренда и${NON_BREAKING_SPACE}вниманием к${NON_BREAKING_SPACE}деталям.`
+            `Мы консультировали разработку концепции бренда и${NON_BREAKING_SPACE}сделали сайт, который стал продолжением уникального клиентского опыта в${NON_BREAKING_SPACE}клубах Encore Fitness —${NON_BREAKING_SPACE}сочетанием функциональности с${NON_BREAKING_SPACE}историей бренда.`
           ],
           links: [
-            {
-              icontype: 'globe',
-              href: 'https://encorefitness.ru',
-              text: 'encorefitness.ru'
-            },
             {
               icontype: 'article',
               href: 'https://encorefitness.ru',
               text: 'читать кейс'
+            },
+            {
+              icontype: 'globe',
+              href: 'https://encorefitness.ru',
+              text: 'encorefitness.ru'
             }
           ]
         }
