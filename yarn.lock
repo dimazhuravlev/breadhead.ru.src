@@ -6967,14 +6967,6 @@ react-html-parser@^2.0.2:
   dependencies:
     htmlparser2 "^3.9.0"
 
-react-image@^1.5.1:
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/react-image/-/react-image-1.5.1.tgz#e900baa3f48b15ca94500542a2aff762c94431b8"
-  integrity sha512-UHVXGmv9NttI5nWlvXdqxqzbfRebZSmHTT4n5hsUb0uElYXwE71+Zla4/KZjjU96Z6eZPT66OFSVwd2wwBOKyg==
-  dependencies:
-    "@babel/runtime" "^7.0.0"
-    prop-types "15.6.2"
-
 react-is@^16.5.2:
   version "16.5.2"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.5.2.tgz#e2a7b7c3f5d48062eb769fcb123505eb928722e3"

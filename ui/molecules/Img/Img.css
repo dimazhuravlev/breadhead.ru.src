@@ -1,7 +1,21 @@
 .preloader {
-  filter: blur(25px);
+  position: absolute;
+  top: -20px;
+  left: -20px;
+
+  width: calc(100% + 40px) !important;
+  height: calc(100% + 40px) !important;
+
+  z-index: 50;
+  filter: blur(15px);
+  transition: opacity 0.3s ease-in-out;
+  will-change: transition;
 }
 
 .wrapper {
-  height: 100%;
+  overflow: hidden;
+}
+
+.loaded {
+  opacity: 0;
 }
