@@ -25,20 +25,20 @@ export const howWeWorkDataMobile = {
             text: 'Отчёты и деньги ›'
           },
           {
-            id: 'start',
-            text: 'Как начать ›'
+            text: 'Проектирование ›',
+            isDisabled: true
           },
           {
-            id: 'design',
-            text: 'Проектирование ›'
+            text: 'Разработка ›',
+            isDisabled: true
           },
           {
-            id: 'development',
-            text: 'Разработка ›'
+            text: 'Контроль качества ›',
+            isDisabled: true
           },
           {
-            id: 'control',
-            text: 'Контроль качества ›'
+            text: 'Как начать ›',
+            isDisabled: true
           }
         ]
       }
