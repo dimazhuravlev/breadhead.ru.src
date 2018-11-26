@@ -1,5 +1,5 @@
 import React from 'react'
-import { shouldUpdate } from 'recompose'
+import neverUpdate from '@site/lib/neverUpdate'
 import Img from '@site/ui/molecules/Img'
 import styles from './slideFramePictDesktop.css'
 
@@ -23,4 +23,4 @@ const SlideFramePictDesktop = ({
   )
 }
 
-export default shouldUpdate(() => false)(SlideFramePictDesktop)
+export default neverUpdate(SlideFramePictDesktop)

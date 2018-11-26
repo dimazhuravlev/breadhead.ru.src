@@ -1,5 +1,5 @@
 import React from 'react'
-import { shouldUpdate } from 'recompose'
+import neverUpdate from '@site/lib/neverUpdate'
 import PropTypes from 'prop-types'
 import SlideText from '@site/ui/molecules/SlideText'
 import ArticleIconBlock from '@site/ui/molecules/ArticleIconBlock'
@@ -23,4 +23,4 @@ SlideArticleMobile.propTypes = {
   backgroundColor: PropTypes.string,
 }
 
-export default shouldUpdate(() => false)(SlideArticleMobile)
+export default neverUpdate(SlideArticleMobile)
