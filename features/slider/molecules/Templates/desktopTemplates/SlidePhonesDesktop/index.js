@@ -1,5 +1,5 @@
 import React from 'react'
-import { shouldUpdate } from 'recompose'
+import neverUpdate from '@site/lib/neverUpdate'
 import VideoPlayer from '@site/features/slider/molecules/VideoPlayer'
 import styles from './slidePhonesDesktop.css'
 
@@ -35,4 +35,4 @@ const SlidePhonesDesktop = ({
   )
 }
 
-export default shouldUpdate(() => false)(SlidePhonesDesktop)
+export default neverUpdate(SlidePhonesDesktop)

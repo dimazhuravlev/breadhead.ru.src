@@ -1,5 +1,5 @@
 import React from 'react'
-import { shouldUpdate } from 'recompose'
+import neverUpdate from '@site/lib/neverUpdate'
 import Img from '@site/ui/molecules/Img'
 import SlideText from '@site/ui/molecules/SlideText'
 import ArticleIconBlock from '@site/ui/molecules/ArticleIconBlock'
@@ -28,4 +28,4 @@ const SlideArticleWithPhoneDesktop = ({
   )
 }
 
-export default shouldUpdate(() => false)(SlideArticleWithPhoneDesktop)
+export default neverUpdate(SlideArticleWithPhoneDesktop)

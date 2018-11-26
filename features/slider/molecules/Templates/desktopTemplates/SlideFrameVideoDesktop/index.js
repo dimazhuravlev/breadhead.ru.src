@@ -29,4 +29,4 @@ SlideFrameVideoDesktop.propTypes = {
   active: PropTypes.bool,
 }
 
-export default onlyUpdateForKeys('active')(SlideFrameVideoDesktop)
+export default onlyUpdateForKeys(['active'])(SlideFrameVideoDesktop)

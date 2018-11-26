@@ -1,3 +1,4 @@
+import Container from './container'
 import Slider from './organisms/Slider'
 
-export default Slider
+export default Container(Slider)

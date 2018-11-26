@@ -20,4 +20,4 @@ SlideVideoMobile.propTypes = {
   src: PropTypes.string.isRequired,
 }
 
-export default onlyUpdateForKeys('active')(SlideVideoMobile)
+export default onlyUpdateForKeys(['active'])(SlideVideoMobile)

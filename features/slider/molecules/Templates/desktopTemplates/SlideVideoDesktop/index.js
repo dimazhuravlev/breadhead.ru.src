@@ -20,4 +20,4 @@ SlideVideoDesktop.propTypes = {
   src: PropTypes.string.isRequired,
 }
 
-export default onlyUpdateForKeys('active')(SlideVideoDesktop)
+export default onlyUpdateForKeys(['active'])(SlideVideoDesktop)
