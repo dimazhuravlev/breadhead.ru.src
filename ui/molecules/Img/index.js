@@ -13,6 +13,9 @@ const Img = ({ className, src, preloader }) => {
       loader={
         <img className={cx(className, styles.preloader)} src={preloader} />
       }
+      unloader={
+        <img className={cx(className, styles.preloader)} src={preloader} />
+      }
     />
   )
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 import { scroller } from 'react-scroll'
 import Case from '@site/features/case'
-import { Desktop, Mobile } from '@site/lib/responsive'
+import { Desktop, Mobile, Any } from '@site/lib/responsive'
 import Button from '@site/ui/molecules/Button'
 import { PlusIcon } from '@site/ui/atoms/icons'
 import { MinusIcon } from '@site/ui/atoms/icons'
@@ -50,6 +50,8 @@ class Cases extends React.Component {
   }
 
   render() {
+    const { isShown } = this.state
+
     const allCasesDesktop = casesDataDesktop.map(caseData => (
       <Case key={caseData.description.name} {...caseData} />
     ))
@@ -67,7 +69,7 @@ class Cases extends React.Component {
             className={cx(styles.cases, styles.desktopCases)}
             name="cases"
           >
-            {this.state.isShown ? allCasesDesktop : firstShowCasesDesktop}
+            {isShown ? allCasesDesktop : firstShowCasesDesktop}
           </section>
         </Desktop>
 
@@ -76,22 +78,21 @@ class Cases extends React.Component {
             className={cx(styles.cases, styles.mobileCases)}
             name="cases"
           >
-            {this.state.isShown ? allCasesMobile : firstShowCasesMobile}
+            {isShown ? allCasesMobile : firstShowCasesMobile}
           </section>
         </Mobile>
 
-        <Button
-          ref={this.buttonRef}
-          name="buttonToShow"
-          onClick={this.handleClick}
-          className={cx(
-            styles.plusButton,
-            this.state.isVisible ? styles.visible : styles.inVisible
-          )}
-          icon={this.state.isShown ? <MinusIcon /> : <PlusIcon />}
-        >
-          {this.state.isShown ? 'скрыть' : 'ещё'}
-        </Button>
+        <Any>
+          <Button
+            ref={this.buttonRef}
+            name="buttonToShow"
+            onClick={this.handleClick}
+            className={styles.plusButton}
+            icon={isShown ? <MinusIcon /> : <PlusIcon />}
+          >
+            {isShown ? 'скрыть' : 'ещё'}
+          </Button>
+        </Any>
       </>
     )
   }
