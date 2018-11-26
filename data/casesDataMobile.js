@@ -452,16 +452,6 @@ export const casesDataMobile = [
         type: TemplatesNames.FramePictMobile,
         data: {
           image: {
-            src: '/static/img/obed_bufet/1.2-main_obedbufet-app_desktop.jpg',
-            preloader:
-              '/static/img/obed_bufet/preloader-1.2-main_obedbufet-app_desktop.jpg'
-          }
-        }
-      },
-      {
-        type: TemplatesNames.FramePictMobile,
-        data: {
-          image: {
             src: '/static/img/obed_bufet/1.3-catalog_obedbufet-app_desktop.jpg',
             preloader:
               '/static/img/obed_bufet/preloader-1.3-catalog_obedbufet-app_desktop.jpg'
@@ -505,6 +495,18 @@ export const casesDataMobile = [
             src: '/static/img/obed_bufet/2.3-order_obedbufet-app_desktop.jpg'
             // preloader:
             //   '/static/img/obed_bufet/preloader-2.3-order_obedbufet-app_desktop.jpg'
+          }
+        }
+      },
+      /*новый*/
+
+      {
+        type: TemplatesNames.PictureMobile,
+        data: {
+          image: {
+            src: '/static/img/obed_bufet/elements_mobile-fullscreen.jpg'
+            // preloader:
+            //   '/static/img/obed_bufet/preloader-7-rest_obedbufet_mobile-fullscreen.jpg'
           }
         }
       },

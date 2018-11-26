@@ -531,13 +531,18 @@ export const casesDataDesktop = [
         }
       },
       {
-        type: TemplatesNames.ArticleDesktop,
+        type: TemplatesNames.ArticleWithPhoneDesktop,
         duration: 12000,
         data: {
           title: 'Дружелюбная доставка домашней еды',
           description: [
             `Заказ еды — простое и${NON_BREAKING_SPACE}понятное действие. Таким мы${NON_BREAKING_SPACE}сделали интерфейс этого приложения. Mинимум рекламы, позитивные цвета и${NON_BREAKING_SPACE}формы, забавные персонажи, легкий тон коммуникации и${NON_BREAKING_SPACE}простота в${NON_BREAKING_SPACE}использовании.`
-          ]
+          ],
+          image: {
+            src: '/static/img/obed_bufet/0-location_obedbufet-app_desktop.jpg'
+            // preloader:
+            //   '/static/img/yango/desktop/preloader-0-location_obedbufet-app_desktop.jpg'
+          }
         }
       },
       {
