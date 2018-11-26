@@ -1,3 +1,7 @@
+.wrapper {
+  overflow: hidden;
+}
+
 .screen {
   overflow: hidden;
   pointer-events: none;
@@ -5,4 +9,20 @@
   object-position: top left;
   position: absolute;
   top: 0;
+}
+
+.preloader {
+  transition: opacity 0.3s ease-in-out;
+  overflow: hidden;
+  pointer-events: none;
+  object-fit: cover;
+  object-position: top left;
+  position: absolute;
+  top: 0;
+  filter: blur(15px);
+  z-index: 50;
+}
+
+.canPlay {
+  opacity: 0 !important;
 }

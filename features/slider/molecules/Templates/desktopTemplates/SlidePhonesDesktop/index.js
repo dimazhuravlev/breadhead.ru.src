@@ -7,7 +7,7 @@ const SlidePhonesDesktop = ({
   screens,
   backgroundColor,
   backgroundSrc,
-  active
+  active,
 }) => {
   return (
     <div style={{ backgroundColor: backgroundColor }} className={styles.slide}>
@@ -20,6 +20,7 @@ const SlidePhonesDesktop = ({
               <VideoPlayer
                 active={active}
                 src={screen.src}
+                preloader={screen.preloader}
                 className={styles.screen}
                 width="220"
                 height="410"
