@@ -1,9 +1,10 @@
 .preloader {
   position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
+  top: -20px;
+  left: -20px;
+
+  width: calc(100% + 40px) !important;
+  height: calc(100% + 40px) !important;
 
   z-index: 50;
   filter: blur(15px);
