@@ -1,4 +1,5 @@
 import React from 'react'
+import neverUpdate from '@site/lib/neverUpdate'
 import PropTypes from 'prop-types'
 import ArticleIconBlock from '@site/ui/molecules/ArticleIconBlock'
 import styles from './slideArticleDesktop.css'
@@ -8,7 +9,7 @@ const SlideArticleDesktop = ({
   title,
   description,
   links,
-  backgroundColor
+  backgroundColor,
 }) => (
   <article
     style={{ backgroundColor: backgroundColor }}
@@ -26,7 +27,7 @@ SlideArticleDesktop.propTypes = {
   title: PropTypes.string,
   description: PropTypes.arrayOf(PropTypes.string),
   links: PropTypes.arrayOf(PropTypes.object),
-  backgroundColor: PropTypes.string
+  backgroundColor: PropTypes.string,
 }
 
-export default React.memo(SlideArticleDesktop)
+export default neverUpdate(SlideArticleDesktop)

@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { onlyUpdateForKeys } from 'recompose'
 import VideoPlayer from '@site/features/slider/molecules/VideoPlayer'
 import styles from './slideFrameVideoMobile.css'
 
@@ -22,4 +23,4 @@ SlideFrameVideoMobile.propTypes = {
   backgroundColor: PropTypes.string
 }
 
-export default React.memo(SlideFrameVideoMobile)
+export default onlyUpdateForKeys(['active'])(SlideFrameVideoMobile)

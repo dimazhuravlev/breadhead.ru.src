@@ -1,7 +1,7 @@
 import React from 'react'
 import { scroller } from 'react-scroll'
-
 import Case from '@site/features/case'
+import { Desktop, Mobile } from '@site/lib/responsive'
 import Button from '@site/ui/molecules/Button'
 import { PlusIcon } from '@site/ui/atoms/icons'
 import { MinusIcon } from '@site/ui/atoms/icons'
@@ -62,13 +62,23 @@ class Cases extends React.Component {
     const firstShowCasesMobile = allCasesMobile.slice(0, 3)
     return (
       <>
-        <section className={cx(styles.cases, styles.desktopCases)} name="cases">
-          {this.state.isShown ? allCasesDesktop : firstShowCasesDesktop}
-        </section>
+        <Desktop>
+          <section
+            className={cx(styles.cases, styles.desktopCases)}
+            name="cases"
+          >
+            {this.state.isShown ? allCasesDesktop : firstShowCasesDesktop}
+          </section>
+        </Desktop>
 
-        <section className={cx(styles.cases, styles.mobileCases)} name="cases">
-          {this.state.isShown ? allCasesMobile : firstShowCasesMobile}
-        </section>
+        <Mobile>
+          <section
+            className={cx(styles.cases, styles.mobileCases)}
+            name="cases"
+          >
+            {this.state.isShown ? allCasesMobile : firstShowCasesMobile}
+          </section>
+        </Mobile>
 
         <Button
           ref={this.buttonRef}

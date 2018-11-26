@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { compose, onlyUpdateForKeys } from 'recompose'
 import { Spring } from 'react-spring'
 import styles from './timeLine.css'
 
@@ -81,4 +82,8 @@ TimeLine.propTypes = {
   animate: PropTypes.bool,
 }
 
-export default React.memo(TimeLine)
+const TimeLineHOC = compose(
+  onlyUpdateForKeys(['active', 'state', 'index', 'onRest'])
+)
+
+export default TimeLineHOC(TimeLine)

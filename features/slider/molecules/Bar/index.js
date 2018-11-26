@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { compose, onlyUpdateForKeys } from 'recompose'
 import { SLIDE_DURATION } from '@site/constants'
 import { range } from 'lodash'
 import TimeLine from '../../molecules/Bar/atoms/TimeLine'
@@ -49,4 +50,6 @@ Bar.propTypes = {
   slideDuration: PropTypes.number,
 }
 
-export default React.memo(Bar)
+const BarHOC = compose(onlyUpdateForKeys(['index', 'isVisible', 'duration']))
+
+export default BarHOC(Bar)

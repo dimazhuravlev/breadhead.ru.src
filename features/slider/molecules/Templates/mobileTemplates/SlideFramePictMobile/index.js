@@ -1,6 +1,6 @@
 import React from 'react'
+import neverUpdate from '@site/lib/neverUpdate'
 import Img from '@site/ui/molecules/Img'
-import PropTypes from 'prop-types'
 import styles from './slideFramePictMobile.css'
 
 const SlideFramePictMobile = ({
@@ -14,9 +14,4 @@ const SlideFramePictMobile = ({
   </div>
 )
 
-SlideFramePictMobile.propTypes = {
-  src: PropTypes.string.isRequired,
-  backgroundColor: PropTypes.string,
-}
-
-export default React.memo(SlideFramePictMobile)
+export default neverUpdate(SlideFramePictMobile)

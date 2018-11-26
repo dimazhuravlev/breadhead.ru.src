@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { onlyUpdateForKeys } from 'recompose'
 import VideoPlayer from '@site/features/slider/molecules/VideoPlayer'
 import styles from './slideVideoDesktop.css'
 
@@ -19,4 +20,4 @@ SlideVideoDesktop.propTypes = {
   src: PropTypes.string.isRequired,
 }
 
-export default SlideVideoDesktop
+export default onlyUpdateForKeys(['active'])(SlideVideoDesktop)

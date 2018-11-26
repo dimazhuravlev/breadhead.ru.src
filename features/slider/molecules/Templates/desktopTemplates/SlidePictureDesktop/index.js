@@ -1,14 +1,10 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import neverUpdate from '@site/lib/neverUpdate'
 import Img from '@site/ui/molecules/Img'
 import styles from './slidePictureDesktop.css'
 
-const SlidePictureDesktop = ({ image: { src, preloader } }) => (
-  <Img src={src} className={styles.picture} preloader={preloader} />
-)
-
-SlidePictureDesktop.propTypes = {
-  src: PropTypes.string.isRequired,
+const SlidePictureDesktop = ({ image: { src, preloader } }) => {
+  return <Img src={src} className={styles.picture} preloader={preloader} />
 }
 
-export default React.memo(SlidePictureDesktop)
+export default neverUpdate(SlidePictureDesktop)
