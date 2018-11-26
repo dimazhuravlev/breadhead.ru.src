@@ -4,13 +4,18 @@ import { onlyUpdateForKeys } from 'recompose'
 import VideoPlayer from '@site/features/slider/molecules/VideoPlayer'
 import styles from './slideFrameVideoMobile.css'
 
-const SlideFrameVideoMobile = ({ src, backgroundColor, active }) => (
+const SlideFrameVideoMobile = ({
+  image: { src, preloader },
+  backgroundColor,
+  active
+}) => (
   <div style={{ backgroundColor: backgroundColor }} className={styles.slide}>
     <div className={styles.phone}>
       <VideoPlayer
         active={active}
         className={styles.video}
         src={src}
+        preloader={preloader}
         width="220"
         height="410"
       />

@@ -4,12 +4,13 @@ import { onlyUpdateForKeys } from 'recompose'
 import VideoPlayer from '@site/features/slider/molecules/VideoPlayer'
 import styles from './slideVideoDesktop.css'
 
-const SlideVideoDesktop = ({ src, active }) => (
+const SlideVideoDesktop = ({ image: { src, preloader }, active }) => (
   <div className={styles.frame}>
     <VideoPlayer
       active={active}
       className={styles.video}
       src={src}
+      preloader={preloader}
       width="auto"
       height="100%"
     />
@@ -17,7 +18,7 @@ const SlideVideoDesktop = ({ src, active }) => (
 )
 
 SlideVideoDesktop.propTypes = {
-  src: PropTypes.string.isRequired,
+  src: PropTypes.string.isRequired
 }
 
 export default onlyUpdateForKeys(['active'])(SlideVideoDesktop)

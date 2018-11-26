@@ -4,7 +4,11 @@ import { onlyUpdateForKeys } from 'recompose'
 import VideoPlayer from '@site/features/slider/molecules/VideoPlayer'
 import styles from './slideFrameVideoDesktop.css'
 
-const SlideFrameVideoDesktop = ({ src, backgroundColor, active }) => {
+const SlideFrameVideoDesktop = ({
+  image: { src, preloader },
+  backgroundColor,
+  active
+}) => {
   return (
     <div style={{ backgroundColor: backgroundColor }} className={styles.slide}>
       <div className={styles.browser}>
@@ -15,6 +19,7 @@ const SlideFrameVideoDesktop = ({ src, backgroundColor, active }) => {
           active={active}
           className={styles.video}
           src={src}
+          preloader={preloader}
           width="100%"
           height="auto"
         />

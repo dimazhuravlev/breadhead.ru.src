@@ -14,7 +14,10 @@ export const casesDataMobile = [
         type: TemplatesNames.FrameVideoMobile,
         duration: 10000,
         data: {
-          src: '/static/img/faster/mobile/scroll_mobile.mp4',
+          image: {
+            src: '/static/img/faster/mobile/scroll_mobile.mp4',
+            preloader: '/static/img/faster/mobile/preloader-scroll_mobile.jpg'
+          },
           backgroundColor: '#EDEEF0'
         }
       },
@@ -75,7 +78,10 @@ export const casesDataMobile = [
         type: TemplatesNames.FrameVideoMobile,
         duration: 7000,
         data: {
-          src: '/static/img/faster/mobile/filter_mobile.mp4',
+          image: {
+            src: '/static/img/faster/mobile/filter_mobile.mp4',
+            preloader: '/static/img/faster/mobile/preloader-filter_mobile.jpg'
+          },
           backgroundColor: '#EDEEF0'
         }
       },
@@ -151,7 +157,10 @@ export const casesDataMobile = [
         type: TemplatesNames.FrameVideoMobile,
         duration: 12000,
         data: {
-          src: '/static/img/yango/mobile/1_mobile.mp4'
+          image: {
+            src: '/static/img/yango/mobile/1_mobile.mp4',
+            preloader: '/static/img/yango/mobile/preloader-1_mobile.jpg'
+          }
         }
       },
       {
@@ -176,7 +185,10 @@ export const casesDataMobile = [
         type: TemplatesNames.FrameVideoMobile,
         duration: 9000,
         data: {
-          src: '/static/img/yango/mobile/4_mobile.mp4'
+          image: {
+            src: '/static/img/yango/mobile/4_mobile.mp4',
+            preloader: '/static/img/yango/mobile/preloader-4_mobile.jpg'
+          }
         }
       },
       {
@@ -201,7 +213,11 @@ export const casesDataMobile = [
         type: TemplatesNames.VideoMobile,
         duration: 12000,
         data: {
-          src: '/static/img/yango/mobile/7_mobile_fullslide.mp4'
+          image: {
+            src: '/static/img/yango/mobile/7_mobile_fullslide.mp4',
+            preloader:
+              '/static/img/yango/mobile/preloader-7_mobile_fullslide.jpg'
+          }
         }
       },
       {
@@ -318,7 +334,12 @@ export const casesDataMobile = [
         type: TemplatesNames.FrameVideoMobile,
         duration: 10000,
         data: {
-          src: '/static/img/encore_fitness/mobile/2-club_encore_mobile_opt.mp4'
+          image: {
+            src:
+              '/static/img/encore_fitness/mobile/2-club_encore_mobile_opt.mp4',
+            preloader:
+              '/static/img/encore_fitness/mobile/preloader-2-club_encore_mobile_opt.jpg'
+          }
         }
       },
       {
@@ -443,9 +464,9 @@ export const casesDataMobile = [
         type: TemplatesNames.FrameVideoMobile,
         duration: 13000,
         data: {
-          src: '/static/img/obed_bufet/1.1-video1_obedbufet-app_desktop.mp4'
-          // preloader:
-          //   '/static/img/obed_bufet/preloader-1.1-video1_obedbufet-app_desktop.jpg'
+          src: '/static/img/obed_bufet/1.1-video1_obedbufet-app_desktop.mp4',
+          preloader:
+            '/static/img/obed_bufet/preloader-1.1-video1_obedbufet-app_desktop.jpg'
         }
       },
       {
@@ -473,9 +494,9 @@ export const casesDataMobile = [
         type: TemplatesNames.FrameVideoMobile,
         duration: 13000,
         data: {
-          src: '/static/img/obed_bufet/2.1-video2_obedbufet-app_desktop.mp4'
-          // preloader:
-          //   '/static/img/obed_bufet/preloader-1.1-video1_obedbufet-app_desktop.jpg'
+          src: '/static/img/obed_bufet/2.1-video2_obedbufet-app_desktop.mp4',
+          preloader:
+            '/static/img/obed_bufet/preloader-2.1-video2_obedbufet-app_desktop.jpg'
         }
       },
       {
@@ -492,21 +513,19 @@ export const casesDataMobile = [
         type: TemplatesNames.FramePictMobile,
         data: {
           image: {
-            src: '/static/img/obed_bufet/2.3-order_obedbufet-app_desktop.jpg'
-            // preloader:
-            //   '/static/img/obed_bufet/preloader-2.3-order_obedbufet-app_desktop.jpg'
+            src: '/static/img/obed_bufet/2.3-order_obedbufet-app_desktop.jpg',
+            preloader:
+              '/static/img/obed_bufet/preloader-2.3-order_obedbufet-app_desktop.jpg'
           }
         }
       },
-      /*новый*/
-
       {
         type: TemplatesNames.PictureMobile,
         data: {
           image: {
-            src: '/static/img/obed_bufet/elements_mobile-fullscreen.jpg'
-            // preloader:
-            //   '/static/img/obed_bufet/preloader-7-rest_obedbufet_mobile-fullscreen.jpg'
+            src: '/static/img/obed_bufet/elements_mobile-fullscreen.jpg',
+            preloader:
+              '/static/img/obed_bufet/preloader-elements_mobile-fullscreen.jpg'
           }
         }
       },
