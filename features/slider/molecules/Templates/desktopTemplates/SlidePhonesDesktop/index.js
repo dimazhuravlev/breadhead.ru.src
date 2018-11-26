@@ -1,6 +1,5 @@
 import React from 'react'
 import { onlyUpdateForKeys } from 'recompose'
-import neverUpdate from '@site/lib/neverUpdate'
 import VideoPlayer from '@site/features/slider/molecules/VideoPlayer'
 import styles from './slidePhonesDesktop.css'
 
