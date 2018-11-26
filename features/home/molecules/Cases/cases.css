@@ -15,9 +15,6 @@
 }
 
 .plusButton {
-  animation: plusButtonAnimation;
-  animation-duration: 500ms;
-  animation-direction: forwards;
   margin-bottom: 160px;
   margin-left: calc(25% + 28px);
   @media (max-width: 1440px) {
@@ -26,22 +23,6 @@
   @media (max-width: 1024px) {
     margin-bottom: 80px;
     margin-left: 16px;
-  }
-}
-
-@keyframes plusButtonAnimation {
-  0% {
-    opacity: 0;
-    visibility: hidden;
-  }
-
-  80% {
-    opacity: 0;
-    visibility: hidden;
-  }
-  100% {
-    opacity: 1;
-    visibility: visible;
   }
 }
 
