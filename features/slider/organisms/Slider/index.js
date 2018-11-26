@@ -1,15 +1,9 @@
 import React from 'react'
-import withSizes from 'react-sizes'
 import SlickSlider from 'react-slick'
-import cx from 'classnames'
-import { Gesture } from 'react-with-gesture'
-import { templatesMap } from '@site/features/slider/molecules/Templates'
-import VisibilitySensor from 'react-visibility-sensor'
+import { onlyUpdateForKeys } from 'recompose'
+import NavButton from '../../molecules/NavButton'
 import styles from './Slider.css'
 import './SliderGlobal.css?CSSModulesDisable'
-import SliderAmount from '@site/ui/molecules/SliderAmount'
-import NavButton from '../../molecules/NavButton'
-import Bar from '../../molecules/Bar'
 
 const settings = {
   touchThreshold: 8,
@@ -18,138 +12,13 @@ const settings = {
   nextArrow: <NavButton className={styles.navButton} direction="right" />,
 }
 
-class Slider extends React.PureComponent {
-  constructor(props) {
-    super(props)
-    this.state = {
-      index: 0,
-      slideComponents: (props.slides || []).map(
-        item => templatesMap[item.type]
-      ),
-    }
-  }
-
-  componentDidMount() {
-    window.addEventListener('touchstart', this.touchStart)
-    window.addEventListener('touchmove', this.preventTouch, { passive: false })
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener('touchstart', this.touchStart)
-    window.removeEventListener('touchmove', this.preventTouch, {
-      passive: false,
-    })
-  }
-
-  touchStart(e) {
-    this.firstClientX = e.touches[0].clientX
-    this.firstClientY = e.touches[0].clientY
-  }
-
-  preventTouch(e) {
-    const MIN_VALUE = 5 // threshold
-
-    this.clientX = e.touches[0].clientX - this.firstClientX
-    this.clientY = e.touches[0].clientY - this.firstClientY
-
-    // Vertical scrolling does not work when you start swiping horizontally.
-    if (Math.abs(this.clientX) > MIN_VALUE) {
-      e.preventDefault()
-      e.returnValue = false
-      return false
-    }
-  }
-
-  componentDidUpdate(prevProps, prevState) {
-    const { index: prevIndex } = prevState
-    const { index } = this.state
-
-    if (prevIndex !== index) {
-      this.setState({ index })
-    }
-  }
-
-  beforeChange = (_, index) => {
-    this.setState(() => ({ index }))
-  }
-
-  onLinkClick = (id, e) => {
-    e.preventDefault()
-    e.stopPropagation()
-    const { slides } = this.props
-    const slideIndex = slides.findIndex(slide => slide.id === id)
-    if (slideIndex !== -1) {
-      this.sliderRef.slickGoTo(slideIndex)
-    }
-  }
-
-  onSlideClick = e => {
-    e.persist()
-
-    const { offsetLeft, offsetWidth } = e.currentTarget
-
-    const xCoord = e.clientX - offsetLeft
-
-    const isRightSide = xCoord - offsetWidth / 2 > 0
-    isRightSide ? this.sliderRef.slickNext() : this.sliderRef.slickPrev()
-  }
-
-  sliderRef = React.createRef()
-
+class Slider extends React.Component {
+  state = {}
   render() {
-    const { height, className, slides } = this.props
-    const { index, slideComponents } = this.state
-    const minTopValue = height > 600 ? height / 2.5 : height / 2
-    const offset = { top: height / 2 }
+    const { forwardRef, ...rest } = this.props
 
-    return (
-      <Gesture>
-        {({ down }) => (
-          <VisibilitySensor
-            onChange={this.onVisibilityChange}
-            minTopValue={minTopValue}
-            offset={offset}
-            partialVisibility
-          >
-            {({ isVisible }) => (
-              <div
-                onClick={this.onSlideClick}
-                className={cx(styles.wrapper, className)}
-              >
-                <Bar
-                  index={index}
-                  duration={slides[index].duration}
-                  isVisible={isVisible && !down}
-                  quantity={slides.length}
-                  onRest={this.sliderRef.slickNext}
-                />
-                <SliderAmount amount={slides.length} />
-                <SlickSlider
-                  ref={slider => (this.sliderRef = slider)}
-                  beforeChange={this.beforeChange}
-                  {...settings}
-                >
-                  {slideComponents.map((SlideComponent, i) => (
-                    <SlideComponent
-                      onLinkClick={this.onLinkClick}
-                      key={i}
-                      active={index === i}
-                      {...slides[i].data}
-                    />
-                  ))}
-                </SlickSlider>
-              </div>
-            )}
-          </VisibilitySensor>
-        )}
-      </Gesture>
-    )
+    return <SlickSlider ref={forwardRef} {...rest} {...settings} />
   }
 }
 
-const mapSizesToProps = ({ width, height }) => ({
-  width,
-  height,
-})
-
-export default withSizes(mapSizesToProps)(Slider)
+export default onlyUpdateForKeys('index')(Slider)
