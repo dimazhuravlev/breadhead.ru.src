@@ -1,8 +1,14 @@
 .wrapper {
   overflow: hidden;
+  pointer-events: none;
+  object-fit: cover;
+  object-position: top left;
+  position: absolute;
+  top: 0;
 }
 
-.screen {
+.video {
+  opacity: 0;
   overflow: hidden;
   pointer-events: none;
   object-fit: cover;
@@ -12,17 +18,21 @@
 }
 
 .preloader {
-  transition: opacity 0.3s ease-in-out;
-  overflow: hidden;
-  pointer-events: none;
-  object-fit: cover;
-  object-position: top left;
   position: absolute;
-  top: 0;
+  transform: none;
+  transition: opacity 0.3s ease-in-out;
+  top: -20px;
+  left: -20px;
+  width: calc(100% + 40px);
+  height: calc(100% + 40px);
   filter: blur(15px);
   z-index: 50;
 }
 
-.canPlay {
+.canPlay .preloader {
   opacity: 0 !important;
+}
+
+.canPlay .video {
+  opacity: 1;
 }

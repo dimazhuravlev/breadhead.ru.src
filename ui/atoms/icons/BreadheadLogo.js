@@ -6,6 +6,7 @@ const BreadheadLogo = ({ className }) => (
     className={cx(className)}
     width="248"
     height="18"
+    viewBox="0 0 248 18"
     xmlns="http://www.w3.org/2000/svg"
   >
     <g fillRule="nonzero" fill="#E0D7CE">

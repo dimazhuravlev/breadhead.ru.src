@@ -10,7 +10,7 @@ class Bar extends React.Component {
   render() {
     const { onRest, index, quantity, isVisible, duration } = this.props
     const timeLines = range(quantity)
-    const slideDuration = duration > 0 ? duration : SLIDE_DURATION
+    const slideDuration = SLIDE_DURATION
     return (
       <div className={styles.bar}>
         {timeLines.map(timeLine => {
@@ -40,14 +40,14 @@ class Bar extends React.Component {
 }
 
 Bar.defautProps = {
-  duration: 0,
+  duration: 0
 }
 
 Bar.propTypes = {
   index: PropTypes.number,
   onRest: PropTypes.oneOfType([PropTypes.bool, PropTypes.func]),
   quantity: PropTypes.number,
-  slideDuration: PropTypes.number,
+  slideDuration: PropTypes.number
 }
 
 const BarHOC = compose(onlyUpdateForKeys(['index', 'isVisible', 'duration']))
