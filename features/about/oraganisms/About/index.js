@@ -110,7 +110,7 @@ class About extends React.Component {
 About.propTypes = {
   aboutDataDesktop: PropTypes.object,
   aboutDataMobile: PropTypes.object,
-  name: PropTypes.string,
+  name: PropTypes.string
 }
 
 export default About

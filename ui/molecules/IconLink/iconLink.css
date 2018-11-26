@@ -33,7 +33,7 @@
   cursor: pointer;
   transition: all 0.2s ease-in;
 
-  &:hover .icon path {
+  &:hover .icon {
     fill: var(--redPrimary);
     transition: all 0.2s ease-in;
   }
@@ -43,7 +43,7 @@
     transition: all 0.2s ease-in;
   }
 
-  &:active .icon path {
+  &:active .icon {
     fill: var(--redSecondary);
     transition: all 0.2s ease-in;
   }

@@ -1,17 +1,12 @@
 import { TemplatesNames } from '@site/features/slider/molecules/Templates'
+import { NON_BREAKING_SPACE } from '@site/constants.js'
 
 export const casesDataDesktop = [
   /* FASTER DESKTOP CASE */
   {
     description: {
       type: 'веб-сервис',
-      name: 'Faster',
-      links: [
-        {
-          icontype: 'globe',
-          href: 'https://faster.ru'
-        }
-      ]
+      name: 'Faster'
     },
     slides: [
       {
@@ -27,14 +22,8 @@ export const casesDataDesktop = [
         data: {
           title: 'Новый опыт покупки лекарств',
           description: [
-            'Faster — это сервис, который объединяет все аптеки города, находит и бронирует лекарства по лучшим ценам. Мы отвечали за все стороны продукта: от логотипа и цвета кнопок до архитектуры проекта, интеграций с базами данных и разработки приложения для аптек.'
-          ],
-          links: [
-            {
-              icontype: 'globe',
-              href: 'https://faster.ru',
-              text: 'faster.ru'
-            }
+            `Faster — это сервис, который объединяет все аптеки города, находит и${NON_BREAKING_SPACE}бронирует лекарства по${NON_BREAKING_SPACE}лучшим ценам. Мы отвечали за${NON_BREAKING_SPACE}все стороны продукта: от${NON_BREAKING_SPACE}логотипа и${NON_BREAKING_SPACE}цвета кнопок до${NON_BREAKING_SPACE}архитектуры проекта, интеграций с${NON_BREAKING_SPACE}базами данных и${NON_BREAKING_SPACE}разработки приложения для аптек.`,
+            'Запуск скоро.'
           ],
           image: {
             src: '/static/img/faster/desktop/phone_map_desktop.jpg',
@@ -173,10 +162,6 @@ export const casesDataDesktop = [
         {
           icontype: 'globe',
           href: 'https://yango.pro'
-        },
-        {
-          icontype: 'article',
-          href: 'https://medium.com/breadhead-stories/yami-yami-c7f2b5916442'
         }
       ]
     },
@@ -197,7 +182,7 @@ export const casesDataDesktop = [
         data: {
           title: 'Инвестиции через мобильное приложение',
           description: [
-            'Yango — сервис для инвестирования в надежные компании. С помощью приложения можно купить облигации Сбербанка, МТС или РЖД и получить доход выше, чем у обычных вкладов. Мы сделали редизайн приложения и запустили первую версию промо-сайта.'
+            `Yango — сервис для инвестирования в${NON_BREAKING_SPACE}надежные компании. С${NON_BREAKING_SPACE}помощью приложения можно купить облигации Сбербанка, МТС или РЖД и${NON_BREAKING_SPACE}получить доход выше, чем у${NON_BREAKING_SPACE}обычных вкладов. Мы сделали редизайн приложения и${NON_BREAKING_SPACE}запустили первую версию промо-сайта.`
           ],
           links: [
             {
@@ -364,6 +349,10 @@ export const casesDataDesktop = [
         {
           icontype: 'globe',
           href: 'https://encorefitness.ru'
+        },
+        {
+          icontype: 'article',
+          href: 'https://encorefitness.ru'
         }
       ]
     },
@@ -385,7 +374,7 @@ export const casesDataDesktop = [
         data: {
           title: 'Новое представление об идеальном фитнесе',
           description: [
-            'Мы сделали сайт, который стал продолжением уникального клиентского опыта в клубах Encore Fitness. Cочетанием технологичности и функциональности с историей бренда и вниманием к деталям.'
+            `Мы сделали сайт, который стал продолжением уникального клиентского опыта в${NON_BREAKING_SPACE}клубах Encore Fitness. Cочетанием технологичности и${NON_BREAKING_SPACE}функциональности с${NON_BREAKING_SPACE}историей бренда и${NON_BREAKING_SPACE}вниманием к${NON_BREAKING_SPACE}деталям.`
           ],
           links: [
             {
@@ -546,7 +535,7 @@ export const casesDataDesktop = [
         data: {
           title: 'Дружелюбная доставка домашней еды',
           description: [
-            'Заказ еды — простое и понятное действие. Таким мы сделали интерфейс этого приложения. Mинимум рекламы, позитивные цвета и формы, забавные персонажи, легкий тон коммуникации и простота в использовании.'
+            `Заказ еды — простое и${NON_BREAKING_SPACE}понятное действие. Таким мы${NON_BREAKING_SPACE}сделали интерфейс этого приложения. Mинимум рекламы, позитивные цвета и${NON_BREAKING_SPACE}формы, забавные персонажи, легкий тон коммуникации и${NON_BREAKING_SPACE}простота в${NON_BREAKING_SPACE}использовании.`
           ]
         }
       },
@@ -579,6 +568,17 @@ export const casesDataDesktop = [
         }
       },
       {
+        type: TemplatesNames.PictureDesktop,
+        data: {
+          image: {
+            src:
+              '/static/img/obed_bufet/7-rest_obedbufet_desktop-fullscreen.jpg',
+            preloader:
+              '/static/img/obed_bufet/preloader-7-rest_obedbufet_desktop-fullscreen.jpg'
+          }
+        }
+      },
+      {
         type: TemplatesNames.PhonesDesktop,
         duration: 13000,
         data: {
@@ -604,17 +604,6 @@ export const casesDataDesktop = [
               type: 'img'
             }
           ]
-        }
-      },
-      {
-        type: TemplatesNames.PictureDesktop,
-        data: {
-          image: {
-            src:
-              '/static/img/obed_bufet/7-rest_obedbufet_desktop-fullscreen.jpg',
-            preloader:
-              '/static/img/obed_bufet/preloader-7-rest_obedbufet_desktop-fullscreen.jpg'
-          }
         }
       },
       {
