@@ -26,7 +26,7 @@ const SlideFrameVideoDesktop = ({ src, backgroundColor, active }) => {
 SlideFrameVideoDesktop.propTypes = {
   src: PropTypes.string.isRequired,
   backgroundColor: PropTypes.string,
-  active: PropTypes.bool,
+  active: PropTypes.bool
 }
 
 export default onlyUpdateForKeys(['active'])(SlideFrameVideoDesktop)

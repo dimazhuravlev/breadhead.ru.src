@@ -11,7 +11,14 @@ const iconTypeMap = {
 
 class IconButton extends React.Component {
   render() {
-    const { icontype, description, text, className, onClick } = this.props
+    const {
+      icontype,
+      description,
+      text,
+      isDisabled,
+      className,
+      onClick
+    } = this.props
 
     return (
       <div className={cx(styles.iconButton, className)}>
@@ -20,7 +27,11 @@ class IconButton extends React.Component {
           {icontype && (
             <Icon className={styles.icon} name={iconTypeMap[icontype]} />
           )}
-          {text && <div className={styles.text}>{text}</div>}
+          {text && (
+            <div className={isDisabled ? styles.disableText : styles.text}>
+              {text}
+            </div>
+          )}
         </button>
       </div>
     )

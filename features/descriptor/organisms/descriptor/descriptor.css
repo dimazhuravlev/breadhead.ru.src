@@ -18,7 +18,7 @@
 }
 
 .name {
-  font: var(--title40-40);
+  font: var(--title40-48);
   color: var(--beigePrimary);
   margin-bottom: 32px;
   @media (max-width: 1024px) {

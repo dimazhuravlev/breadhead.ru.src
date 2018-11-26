@@ -1,5 +1,5 @@
 import React from 'react'
-import neverUpdate from '@site/lib/neverUpdate'
+import { onlyUpdateForKeys } from 'recompose'
 import VideoPlayer from '@site/features/slider/molecules/VideoPlayer'
 import styles from './slidePhonesDesktop.css'
 
@@ -7,7 +7,7 @@ const SlidePhonesDesktop = ({
   screens,
   backgroundColor,
   backgroundSrc,
-  active,
+  active
 }) => {
   return (
     <div style={{ backgroundColor: backgroundColor }} className={styles.slide}>
@@ -35,4 +35,4 @@ const SlidePhonesDesktop = ({
   )
 }
 
-export default neverUpdate(SlidePhonesDesktop)
+export default onlyUpdateForKeys(['active'])(SlidePhonesDesktop)

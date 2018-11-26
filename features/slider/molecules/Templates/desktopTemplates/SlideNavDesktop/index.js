@@ -9,20 +9,22 @@ const SlideNavDesktop = ({
   description,
   links,
   backgroundColor,
-  onLinkClick,
+  onLinkClick
 }) => (
   <article
     style={{ backgroundColor: backgroundColor }}
     className={styles.slide}
   >
-    {title && <h2 className={styles.title}>{title}</h2>}
-    <SlideText description={description} />
-    <ArticleIconBlock
-      onLinkClick={onLinkClick}
-      links={links}
-      classNameIcon={styles.articleIconLink}
-      classNameBlock={styles.articleIconBlock}
-    />
+    <div className={styles.content}>
+      {title && <h2 className={styles.title}>{title}</h2>}
+      <SlideText description={description} />
+      <ArticleIconBlock
+        onLinkClick={onLinkClick}
+        links={links}
+        classNameIcon={styles.articleIconLink}
+        classNameBlock={styles.articleIconBlock}
+      />
+    </div>
   </article>
 )
 
@@ -31,7 +33,7 @@ SlideNavDesktop.propTypes = {
   title: PropTypes.string,
   description: PropTypes.arrayOf(PropTypes.string),
   links: PropTypes.arrayOf(PropTypes.object),
-  backgroundColor: PropTypes.string,
+  backgroundColor: PropTypes.string
 }
 
 export default React.memo(SlideNavDesktop)
