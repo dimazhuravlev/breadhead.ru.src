@@ -8,8 +8,8 @@ class VideoPlayer extends React.Component {
 
   componentDidUpdate({ active: prevActive }) {
     const { active } = this.props
-    if (active) {
-      if (active !== prevActive || this.videoRef.current.paused) {
+    if (active !== prevActive) {
+      if (active) {
         this.playVideo()
       } else {
         this.stopVideo()
