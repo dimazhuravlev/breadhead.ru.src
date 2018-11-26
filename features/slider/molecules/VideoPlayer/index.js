@@ -4,10 +4,12 @@ import styles from './videoPlayer.css'
 import cx from 'classnames'
 
 class VideoPlayer extends React.Component {
+  state = { canPlay: false }
+
   componentDidUpdate({ active: prevActive }) {
     const { active } = this.props
-    if (active !== prevActive) {
-      if (active) {
+    if (active) {
+      if (active !== prevActive || this.videoRef.current.paused) {
         this.playVideo()
       } else {
         this.stopVideo()
@@ -23,23 +25,36 @@ class VideoPlayer extends React.Component {
     this.videoRef.current.pause()
     this.videoRef.current.currentTime = 0
   }
+
+  onCanPlay = () => {
+    this.setState({ canPlay: true })
+  }
+
   videoRef = React.createRef()
 
-
   render() {
-    const { src, height, width, className, active } = this.props
+    const { src, height, width, className, active, preloader } = this.props
+    const { canPlay } = this.state
     return (
-      <video
-        ref={this.videoRef}
-        src={src}
-        height={height}
-        width={width}
-        className={cx(styles.screen, className)}
-        playsInline
-        autoPlay={active}
-        loop
-        muted
-      />
+      <div className={styles.wrapper}>
+        <video
+          onCanPlay={this.onCanPlay}
+          ref={this.videoRef}
+          src={src}
+          height={height}
+          width={width}
+          className={cx(styles.screen, className)}
+          playsInline
+          autoPlay={canPlay && active}
+          loop
+          muted
+        />
+        <img
+          className={cx(styles.preloader, className, canPlay && styles.canPlay)}
+          src={preloader}
+          alt=""
+        />
+      </div>
     )
   }
 }
@@ -47,7 +62,7 @@ class VideoPlayer extends React.Component {
 VideoPlayer.propTypes = {
   src: PropTypes.string.isRequired,
   height: PropTypes.string.isRequired,
-  width: PropTypes.string.isRequired,
+  width: PropTypes.string.isRequired
 }
 
 export default VideoPlayer

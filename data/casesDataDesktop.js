@@ -13,7 +13,11 @@ export const casesDataDesktop = [
         type: TemplatesNames.VideoDesktop,
         duration: 10000,
         data: {
-          src: '/static/img/faster/desktop/full_order_desktop.mp4'
+          image: {
+            src: '/static/img/faster/desktop/full_order_desktop.mp4',
+            preloader:
+              '/static/img/faster/desktop/preloader-full_order_desktop.jpg'
+          }
         }
       },
       {
@@ -36,7 +40,11 @@ export const casesDataDesktop = [
         type: TemplatesNames.FrameVideoDesktop,
         duration: 9000,
         data: {
-          src: '/static/img/faster/desktop/browser_scroll_desktop.mp4',
+          image: {
+            src: '/static/img/faster/desktop/browser_scroll_desktop.mp4',
+            preloader:
+              '/static/img/faster/desktop/preloader-browser_scroll_desktop.jpg'
+          },
           backgroundColor: '#EDEEF0'
         }
       },
@@ -53,24 +61,25 @@ export const casesDataDesktop = [
       },
       {
         type: TemplatesNames.PhonesDesktop,
+        duration: 7000,
         data: {
           screens: [
-            {
-              src: '/static/img/faster/desktop/phone_catalog_desktop.jpg',
-              preloader:
-                '/static/img/faster/desktop/preloader-phone_catalog_desktop.jpg',
-              type: 'img'
-            },
-            {
-              src: '/static/img/faster/desktop/phone_map_desktop.jpg',
-              preloader:
-                '/static/img/faster/desktop/preloader-phone_map_desktop.jpg',
-              type: 'img'
-            },
             {
               src: '/static/img/faster/desktop/phone_product_desktop.jpg',
               preloader:
                 '/static/img/faster/desktop/preloader-phone_product_desktop.jpg',
+              type: 'img'
+            },
+            {
+              src: '/static/img/faster/mobile/filter_mobile.mp4',
+              preloader:
+                '/static/img/faster/mobile/preloader-filter_mobile.jpg',
+              type: 'video'
+            },
+            {
+              src: '/static/img/faster/mobile/phone_order_mobile.jpg',
+              preloader:
+                '/static/img/faster/mobile/preloader-phone_order_mobile.jpg',
               type: 'img'
             }
           ],
@@ -209,6 +218,7 @@ export const casesDataDesktop = [
             },
             {
               src: '/static/img/yango/desktop/1.2_desktop.mp4',
+              preloader: '/static/img/yango/desktop/preloader-1.2_desktop.jpg',
               type: 'video'
             },
             {
@@ -226,6 +236,7 @@ export const casesDataDesktop = [
           screens: [
             {
               src: '/static/img/yango/desktop/2.2_desktop.mp4',
+              preloader: '/static/img/yango/desktop/preloader-2.2_desktop.jpg',
               type: 'video'
             },
             {
@@ -267,7 +278,11 @@ export const casesDataDesktop = [
         type: TemplatesNames.VideoDesktop,
         duration: 11000,
         data: {
-          src: '/static/img/yango/desktop/4_desktop_fullslide.mp4'
+          image: {
+            src: '/static/img/yango/desktop/4_desktop_fullslide.mp4',
+            preloader:
+              '/static/img/yango/desktop/preloader-4_desktop_fullslide.jpg'
+          }
         }
       },
       {
@@ -292,7 +307,10 @@ export const casesDataDesktop = [
         type: TemplatesNames.FrameVideoDesktop,
         duration: 17000,
         data: {
-          src: '/static/img/yango/desktop/7_desktop.mp4'
+          image: {
+            src: '/static/img/yango/desktop/7_desktop.mp4',
+            preloader: '/static/img/yango/desktop/preloader-7_desktop.jpg'
+          }
         }
       },
       {
@@ -405,8 +423,12 @@ export const casesDataDesktop = [
         type: TemplatesNames.FrameVideoDesktop,
         duration: 10000,
         data: {
-          src:
-            '/static/img/encore_fitness/desktop/2-club_encore_desktop_opt.mp4'
+          image: {
+            src:
+              '/static/img/encore_fitness/desktop/2-club_encore_desktop_opt.mp4',
+            preloader:
+              '/static/img/encore_fitness/desktop/preloader-2-club_encore_desktop_opt.jpg'
+          }
         }
       },
       {
@@ -463,8 +485,12 @@ export const casesDataDesktop = [
         type: TemplatesNames.FrameVideoDesktop,
         duration: 8000,
         data: {
-          src:
-            '/static/img/encore_fitness/desktop/5-grouptraining_desktop_opt.mp4'
+          image: {
+            src:
+              '/static/img/encore_fitness/desktop/5-grouptraining_desktop_opt.mp4',
+            preloader:
+              '/static/img/encore_fitness/desktop/preloader-5-grouptraining_desktop_opt.jpg'
+          }
         }
       },
       {
@@ -539,9 +565,9 @@ export const casesDataDesktop = [
             `Заказ еды — простое и${NON_BREAKING_SPACE}понятное действие. Таким мы${NON_BREAKING_SPACE}сделали интерфейс этого приложения. Mинимум рекламы, позитивные цвета и${NON_BREAKING_SPACE}формы, забавные персонажи, легкий тон коммуникации и${NON_BREAKING_SPACE}простота в${NON_BREAKING_SPACE}использовании.`
           ],
           image: {
-            src: '/static/img/obed_bufet/0-location_obedbufet-app_desktop.jpg'
-            // preloader:
-            //   '/static/img/yango/desktop/preloader-0-location_obedbufet-app_desktop.jpg'
+            src: '/static/img/obed_bufet/0-location_obedbufet-app_desktop.jpg',
+            preloader:
+              '/static/img/yango/desktop/preloader-1.1-video1_obedbufet-app_desktop.jpg'
           }
         }
       },
@@ -593,7 +619,7 @@ export const casesDataDesktop = [
               src:
                 '/static/img/obed_bufet/2.1-video2_obedbufet-app_desktop.mp4',
               preloader:
-                '/static/img/obed_bufet/preloader-1.3-catalog_obedbufet-app_desktop.jpg',
+                '/static/img/obed_bufet/preloader-2.1-video2_obedbufet-app_desktop.jpg',
               type: 'video'
             },
             {

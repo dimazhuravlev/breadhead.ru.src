@@ -1,2 +1,2 @@
 export const NON_BREAKING_SPACE = '\u00A0'
-export const SLIDE_DURATION = 7000
+export const SLIDE_DURATION = 20000
