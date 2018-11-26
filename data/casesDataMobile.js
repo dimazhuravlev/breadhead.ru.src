@@ -496,9 +496,11 @@ export const casesDataMobile = [
         type: TemplatesNames.FrameVideoMobile,
         duration: 13000,
         data: {
-          src: '/static/img/obed_bufet/2.1-video2_obedbufet-app_desktop.mp4',
-          preloader:
-            '/static/img/obed_bufet/preloader-2.1-video2_obedbufet-app_desktop.jpg'
+          image: {
+            src: '/static/img/obed_bufet/2.1-video2_obedbufet-app_desktop.mp4',
+            preloader:
+              '/static/img/obed_bufet/preloader-2.1-video2_obedbufet-app_desktop.jpg'
+          }
         }
       },
       {
