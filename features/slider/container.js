@@ -97,7 +97,6 @@ const Container = Slider => {
       const { index, slideComponents } = this.state
       const minTopValue = height > 600 ? height / 2.5 : height / 2
       const offset = { top: height / 2 }
-
       return (
         <Gesture>
           {({ down }) => (
@@ -117,7 +116,11 @@ const Container = Slider => {
                     duration={slides[index].duration}
                     isVisible={isVisible && !down}
                     quantity={slides.length}
-                    onRest={this.sliderRef.slickNext}
+                    onRest={
+                      this.sliderRef.current
+                        ? this.sliderRef.current.slickNext
+                        : () => {}
+                    }
                   />
                   <SliderAmount amount={slides.length} />
                   <Slider

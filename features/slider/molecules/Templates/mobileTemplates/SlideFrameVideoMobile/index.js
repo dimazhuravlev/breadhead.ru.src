@@ -23,4 +23,4 @@ SlideFrameVideoMobile.propTypes = {
   backgroundColor: PropTypes.string,
 }
 
-export default onlyUpdateForKeys('active')(SlideFrameVideoMobile)
+export default onlyUpdateForKeys(['active'])(SlideFrameVideoMobile)

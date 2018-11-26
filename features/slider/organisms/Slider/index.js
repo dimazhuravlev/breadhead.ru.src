@@ -21,4 +21,4 @@ class Slider extends React.Component {
   }
 }
 
-export default onlyUpdateForKeys('index')(Slider)
+export default onlyUpdateForKeys(['index'])(Slider)
