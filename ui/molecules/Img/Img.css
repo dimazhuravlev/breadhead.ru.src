@@ -1,3 +1,7 @@
+.image {
+  opacity: 0;
+}
+
 .preloader {
   position: absolute;
   top: -20px;
@@ -16,6 +20,10 @@
   overflow: hidden;
 }
 
-.loaded {
+.loaded .preloader {
   opacity: 0;
+}
+
+.loaded .image {
+  opacity: 1;
 }

@@ -23,18 +23,14 @@ class Image extends React.Component {
     const { className, src, preloader } = this.props
     const { loaded } = this.state
     return (
-      <div className={cx(className, styles.wrapper)}>
+      <div className={cx(className, styles.wrapper, loaded && styles.loaded)}>
         <img
           className={cx(styles.image, className)}
           src={src}
           ref={this.image}
           onLoad={this.handleImageLoaded}
         />
-        <img
-          className={cx(styles.preloader, className, loaded && styles.loaded)}
-          src={preloader}
-          alt=""
-        />
+        <img className={cx(styles.preloader)} src={preloader} alt="" />
       </div>
     )
   }

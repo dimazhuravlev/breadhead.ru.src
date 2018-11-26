@@ -36,24 +36,20 @@ class VideoPlayer extends React.Component {
     const { src, height, width, className, active, preloader } = this.props
     const { canPlay } = this.state
     return (
-      <div className={cx(className, styles.wrapper)}>
+      <div className={cx(className, styles.wrapper, canPlay && styles.canPlay)}>
         <video
           onCanPlay={this.onCanPlay}
           ref={this.videoRef}
           src={src}
           height={height}
           width={width}
-          className={cx(styles.screen, className)}
+          className={cx(styles.video, className)}
           playsInline
           autoPlay={active}
           loop
           muted
         />
-        <img
-          className={cx(styles.preloader, className, canPlay && styles.canPlay)}
-          src={preloader}
-          alt=""
-        />
+        <img className={cx(styles.preloader)} src={preloader} alt="" />
       </div>
     )
   }
