@@ -4,7 +4,6 @@ import './SliderGlobal.css?CSSModulesDisable'
 
 const settings = {
   touchThreshold: 8,
-  lazyLoad: 'progressive',
 }
 
 class Slider extends React.Component {
