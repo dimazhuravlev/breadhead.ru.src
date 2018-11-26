@@ -1,23 +1,43 @@
 import React from 'react'
-import ReactImage from 'react-image'
 import cx from 'classnames'
 import styles from './Img.css'
-import './ImgGlobal.css?CSSModulesDisable'
 
-const Img = ({ className, src, preloader }) => {
-  return (
-    <ReactImage
-      className={className}
-      src={[src]}
-      key={src}
-      loader={
-        <img className={cx(className, styles.preloader)} src={preloader} />
-      }
-      unloader={
-        <img className={cx(className, styles.preloader)} src={preloader} />
-      }
-    />
-  )
+class Image extends React.Component {
+  state = { loaded: false }
+
+  componentDidMount() {
+    const img = this.image.current
+    if (img && img.complete) {
+      this.handleImageLoaded()
+    }
+  }
+
+  handleImageLoaded = () => {
+    if (!this.state.loaded) {
+      this.setState({ loaded: true })
+    }
+  }
+  image = React.createRef()
+
+  render() {
+    const { className, src, preloader } = this.props
+    const { loaded } = this.state
+    return (
+      <div className={cx(className, styles.wrapper)}>
+        <img
+          className={cx(styles.image, className)}
+          src={src}
+          ref={this.image}
+          onLoad={this.handleImageLoaded}
+        />
+        <img
+          className={cx(styles.preloader, className, loaded && styles.loaded)}
+          src={preloader}
+          alt=""
+        />
+      </div>
+    )
+  }
 }
 
-export default Img
+export default Image
