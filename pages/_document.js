@@ -1,10 +1,16 @@
 import Document, { Head, Main, NextScript } from 'next/document'
-
+import { getHTML } from '@site/features/googleAnalytics'
 export default class MyDocument extends Document {
   render() {
     return (
       <html>
         <Head>
+          <script
+            dangerouslySetInnerHTML={{
+              __html: getHTML(),
+            }}
+          />
+
           <link
             rel="apple-touch-icon"
             sizes="180x180"
