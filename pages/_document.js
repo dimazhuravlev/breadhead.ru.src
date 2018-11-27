@@ -5,6 +5,30 @@ export default class MyDocument extends Document {
     return (
       <html>
         <Head>
+          <meta name="title" content="Breadhead" />
+          <meta
+            name="description"
+            content="Breadhead проектирует и выпускает сервисы и приложения: e-commerce, образовательные продукты, службы бронирования и доставки, инструменты автоматизации, медиа."
+          />
+
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="https://breadhead.ru/" />
+          <meta property="og:title" content="Breadhead" />
+          <meta
+            property="og:description"
+            content="Breadhead проектирует и выпускает сервисы и приложения: e-commerce, образовательные продукты, службы бронирования и доставки, инструменты автоматизации, медиа."
+          />
+          <meta property="og:image" content="/static/img/bh_title.jpg" />
+
+          <meta property="twitter:card" content="summary_large_image" />
+          <meta property="twitter:url" content="https://breadhead.ru/" />
+          <meta property="twitter:title" content="Breadhead" />
+          <meta
+            property="twitter:description"
+            content="Breadhead проектирует и выпускает сервисы и приложения: e-commerce, образовательные продукты, службы бронирования и доставки, инструменты автоматизации, медиа."
+          />
+          <meta property="twitter:image" content="/static/img/bh_title.jpg" />
+
           <link
             rel="apple-touch-icon"
             sizes="180x180"
