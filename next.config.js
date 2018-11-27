@@ -6,5 +6,7 @@ module.exports = withPlugins([
   [optimizedImages, {
     optimizeImagesInDev: true,
   }],
-  [withCSS, { cssModules: true }],
+  [withCSS, {
+    cssModules: true,
+  }],
 ])
