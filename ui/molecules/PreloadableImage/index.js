@@ -2,6 +2,7 @@ import React from 'react'
 import cx from 'classnames'
 import styles from './PreloadableImage.css'
 import resolveStaticSrc from '@site/resolveStaticSrc'
+import Image from '@site/ui/atoms/Image'
 
 class PreloadableImage extends React.Component {
   state = { loaded: false }
@@ -31,7 +32,7 @@ class PreloadableImage extends React.Component {
           ref={this.image}
           onLoad={this.handleImageLoaded}
         />
-        <img className={cx(styles.preloader)} src={resolveStaticSrc(preloader)} alt="" />
+        <Image className={cx(styles.preloader)} src={preloader} alt="" />
       </div>
     )
   }
