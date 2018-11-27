@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styles from './videoPlayer.css'
 import cx from 'classnames'
+import Image from '@site/ui/atoms/Image'
 
 class VideoPlayer extends React.Component {
   state = { canPlay: false }
@@ -49,7 +50,7 @@ class VideoPlayer extends React.Component {
           loop
           muted
         />
-        <img className={cx(styles.preloader)} src={preloader} alt="" />
+        <Image className={cx(styles.preloader)} src={preloader} alt="" />
       </div>
     )
   }
