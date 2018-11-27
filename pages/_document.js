@@ -5,27 +5,40 @@ export default class MyDocument extends Document {
     return (
       <html>
         <Head>
-          <meta name="title" content="Breadhead" />
+          <meta
+            name="title"
+            content="Breadhead – разработка цифровых сервисов"
+          />
           <meta
             name="description"
-            content="Breadhead проектирует и выпускает сервисы и приложения: e-commerce, образовательные продукты, службы бронирования и доставки, инструменты автоматизации, медиа."
+            content="Проектируем и выпускаем сервисы и приложения: e-commerce, образовательные продукты, службы бронирования и доставки, инструменты автоматизации, медиа."
           />
 
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://breadhead.ru/" />
-          <meta property="og:title" content="Breadhead" />
+          <meta
+            property="og:title"
+            content="Breadhead – разработка цифровых сервисов"
+          />
           <meta
             property="og:description"
-            content="Breadhead проектирует и выпускает сервисы и приложения: e-commerce, образовательные продукты, службы бронирования и доставки, инструменты автоматизации, медиа."
+            content="Проектируем и выпускаем сервисы и приложения: e-commerce, образовательные продукты, службы бронирования и доставки, инструменты автоматизации, медиа."
           />
           <meta property="og:image" content="/static/img/bh_title.jpg" />
+          <meta property="og:image:width" content="1080" />
+          <meta property="og:image:height" content="630" />
+          <meta property="og:locale" content="ru_RU" />
+          <meta property="og:site_name" content="breadhead.ru" />
 
           <meta property="twitter:card" content="summary_large_image" />
           <meta property="twitter:url" content="https://breadhead.ru/" />
-          <meta property="twitter:title" content="Breadhead" />
+          <meta
+            property="twitter:title"
+            content="Breadhead – разработка цифровых сервисов"
+          />
           <meta
             property="twitter:description"
-            content="Breadhead проектирует и выпускает сервисы и приложения: e-commerce, образовательные продукты, службы бронирования и доставки, инструменты автоматизации, медиа."
+            content="Проектируем и выпускаем сервисы и приложения: e-commerce, образовательные продукты, службы бронирования и доставки, инструменты автоматизации, медиа."
           />
           <meta property="twitter:image" content="/static/img/bh_title.jpg" />
 
