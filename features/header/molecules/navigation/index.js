@@ -12,7 +12,7 @@ const Navigation = () => (
         <ScrollLink targetscroll="cases">опыт</ScrollLink>
       </li>
       <li>
-        <ScrollLink targetscroll="about">студия</ScrollLink>
+        <ScrollLink targetscroll="clients">студия</ScrollLink>
       </li>
       <li>
         <ScrollLink targetscroll="howWeWork">как мы работаем</ScrollLink>

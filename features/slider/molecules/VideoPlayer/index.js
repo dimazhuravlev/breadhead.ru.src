@@ -43,7 +43,7 @@ class VideoPlayer extends React.Component {
           src={resolveStaticSrc(src)}
           height={height}
           width={width}
-          className={cx(styles.video, className)}
+          className={cx(styles.video)}
           playsInline
           autoPlay={active}
           loop

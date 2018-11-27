@@ -18,7 +18,7 @@ const SlideFrameVideoDesktop = ({
         </div>
         <VideoPlayer
           active={active}
-          className={styles.video}
+          className={styles.videoframe}
           src={src}
           preloader={preloader}
           width="100%"

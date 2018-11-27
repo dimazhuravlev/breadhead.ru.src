@@ -1,5 +1,4 @@
 export const clientsData = [
-  'Яндекс',
   'ВТБ',
   'Look at Media',
   'Филармония',

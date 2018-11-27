@@ -1,14 +1,14 @@
 @font-face {
-  font-family: 'Aeroport-light';
-  src: url('/static/fonts/Aeroport-light.woff2') format('woff2');
+  font-family: "Aeroport-light";
+  src: url("/static/fonts/Aeroport-light.woff2") format("woff2");
   font-weight: 200;
   font-display: block;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'GraphikLight';
-  src: url('/static/fonts/Graphik-Light-Cy-Web.woff2') format('woff2');
+  font-family: "GraphikLight";
+  src: url("/static/fonts/Graphik-Light-Cy-Web.woff2") format("woff2");
   font-weight: 200;
   font-display: block;
 }
@@ -46,7 +46,7 @@ div {
 }
 
 ::selection {
-  background-color: var(--redPrimary);
+  background-color: rgba(255, 79, 5, 0.99);
   color: var(--darkPrimary);
 }
 
