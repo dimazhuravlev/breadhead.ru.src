@@ -1,4 +1,6 @@
 import Document, { Head, Main, NextScript } from 'next/document'
+import { getHTML } from '@site/features/googleAnalytics'
+import resolveStaticSrc from '@site/features/slider/molecules/VideoPlayer/resolveStaticSrc'
 
 export default class MyDocument extends Document {
   render() {
@@ -42,6 +44,24 @@ export default class MyDocument extends Document {
           />
           <meta property="twitter:image" content="/static/img/bh_title.jpg" />
 
+          <script
+            dangerouslySetInnerHTML={{
+              __html: getHTML()
+            }}
+          />
+          {/* TODO: replace it with automatically generated content */}
+          <link
+            rel="preload"
+            as="video"
+            media="only screen and (min-width:1025px)"
+            href={resolveStaticSrc('faster/desktop/full_order_desktop.mp4')}
+          />
+          <link
+            rel="preload"
+            as="video"
+            media="only screen and (max-width:1024px)"
+            href={resolveStaticSrc('faster/mobile/scroll_mobile.mp4')}
+          />
           <link
             rel="apple-touch-icon"
             sizes="180x180"

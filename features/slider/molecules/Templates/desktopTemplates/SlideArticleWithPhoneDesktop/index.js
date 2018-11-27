@@ -1,6 +1,6 @@
 import React from 'react'
-import neverUpdate from '@site/lib/neverUpdate'
-import Img from '@site/ui/molecules/Img'
+import { neverUpdate } from '@site/lib/shouldUpdate'
+import PreloadableImage from '@site/ui/molecules/PreloadableImage'
 import SlideText from '@site/ui/molecules/SlideText'
 import ArticleIconBlock from '@site/ui/molecules/ArticleIconBlock'
 import styles from './slideArticleWithPhoneDesktop.css'
@@ -21,7 +21,11 @@ const SlideArticleWithPhoneDesktop = ({
           <ArticleIconBlock links={links} />
         </article>
         <div className={styles.phone}>
-          <Img src={src} preloader={preloader} className={styles.screen} />
+          <PreloadableImage
+            src={src}
+            preloader={preloader}
+            className={styles.screen}
+          />
         </div>
       </div>
     </div>

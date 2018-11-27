@@ -1,8 +1,9 @@
 import React from 'react'
+import Image from '@site/ui/atoms/Image'
 import styles from './introImage.css'
 
 const IntroImage = () => (
-  <img className={styles.introImage} src="/static/img/animationTop.gif" />
+  <Image className={styles.introImage} src="animationTop.gif" />
 )
 
 export default IntroImage

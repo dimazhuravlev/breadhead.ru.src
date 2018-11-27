@@ -15,8 +15,8 @@ export const casesDataMobile = [
         duration: 10000,
         data: {
           image: {
-            src: '/static/img/faster/mobile/scroll_mobile.mp4',
-            preloader: '/static/img/faster/mobile/preloader-scroll_mobile.jpg'
+            src: 'faster/mobile/scroll_mobile.mp4',
+            preloader: 'faster/mobile/preloader-scroll_mobile.jpg'
           },
           backgroundColor: '#EDEEF0'
         }
@@ -36,9 +36,8 @@ export const casesDataMobile = [
         type: TemplatesNames.FramePictMobile,
         data: {
           image: {
-            src: '/static/img/faster/mobile/phone_map_mobile.jpg',
-            preloader:
-              '/static/img/faster/mobile/preloader-phone_map_mobile.jpg'
+            src: 'faster/mobile/phone_map_mobile.jpg',
+            preloader: 'faster/mobile/preloader-phone_map_mobile.jpg'
           },
           backgroundColor: '#EDEEF0'
         }
@@ -47,9 +46,8 @@ export const casesDataMobile = [
         type: TemplatesNames.PictureMobile,
         data: {
           image: {
-            src: '/static/img/faster/mobile/full_product_mobile.jpg',
-            preloader:
-              '/static/img/faster/mobile/preloader-full_product_mobile.jpg'
+            src: 'faster/mobile/full_product_mobile.jpg',
+            preloader: 'faster/mobile/preloader-full_product_mobile.jpg'
           }
         }
       },
@@ -57,9 +55,8 @@ export const casesDataMobile = [
         type: TemplatesNames.FramePictMobile,
         data: {
           image: {
-            src: '/static/img/faster/mobile/phone_bag_mobile.jpg',
-            preloader:
-              '/static/img/faster/mobile/preloader-phone_bag_mobile.jpg'
+            src: 'faster/mobile/phone_bag_mobile.jpg',
+            preloader: 'faster/mobile/preloader-phone_bag_mobile.jpg'
           },
           backgroundColor: '#EDEEF0'
         }
@@ -68,9 +65,8 @@ export const casesDataMobile = [
         type: TemplatesNames.PictureMobile,
         data: {
           image: {
-            src: '/static/img/faster/mobile/full_elements_mobile.jpg',
-            preloader:
-              '/static/img/faster/mobile/preloader-full_elements_mobile.jpg'
+            src: 'faster/mobile/full_elements_mobile.jpg',
+            preloader: 'faster/mobile/preloader-full_elements_mobile.jpg'
           }
         }
       },
@@ -79,8 +75,8 @@ export const casesDataMobile = [
         duration: 7000,
         data: {
           image: {
-            src: '/static/img/faster/mobile/filter_mobile.mp4',
-            preloader: '/static/img/faster/mobile/preloader-filter_mobile.jpg'
+            src: 'faster/mobile/filter_mobile.mp4',
+            preloader: 'faster/mobile/preloader-filter_mobile.jpg'
           },
           backgroundColor: '#EDEEF0'
         }
@@ -89,9 +85,8 @@ export const casesDataMobile = [
         type: TemplatesNames.PictureMobile,
         data: {
           image: {
-            src: '/static/img/faster/mobile/full_tooltip_mobile.jpg',
-            preloader:
-              '/static/img/faster/mobile/preloader-full_tooltip_mobile.jpg'
+            src: 'faster/mobile/full_tooltip_mobile.jpg',
+            preloader: 'faster/mobile/preloader-full_tooltip_mobile.jpg'
           }
         }
       },
@@ -99,9 +94,8 @@ export const casesDataMobile = [
         type: TemplatesNames.FramePictMobile,
         data: {
           image: {
-            src: '/static/img/faster/mobile/phone_order_mobile.jpg',
-            preloader:
-              '/static/img/faster/mobile/preloader-phone_order_mobile.jpg'
+            src: 'faster/mobile/phone_order_mobile.jpg',
+            preloader: 'faster/mobile/preloader-phone_order_mobile.jpg'
           },
           backgroundColor: '#EDEEF0'
         }
@@ -110,9 +104,8 @@ export const casesDataMobile = [
         type: TemplatesNames.PictureMobile,
         data: {
           image: {
-            src: '/static/img/faster/mobile/full_2browsers_mobile.jpg',
-            preloader:
-              '/static/img/faster/mobile/preloader-full_2browsers_mobile.jpg'
+            src: 'faster/mobile/full_2browsers_mobile.jpg',
+            preloader: 'faster/mobile/preloader-full_2browsers_mobile.jpg'
           }
         }
       }
@@ -130,9 +123,8 @@ export const casesDataMobile = [
         type: TemplatesNames.PictureMobile,
         data: {
           image: {
-            src: '/static/img/yango/mobile/cover_mobile_fullslide.jpg',
-            preloader:
-              '/static/img/yango/mobile/preloader-cover_mobile_fullslide.jpg'
+            src: 'yango/mobile/cover_mobile_fullslide.jpg',
+            preloader: 'yango/mobile/preloader-cover_mobile_fullslide.jpg'
           }
         }
       },
@@ -220,9 +212,8 @@ export const casesDataMobile = [
         duration: 12000,
         data: {
           image: {
-            src: '/static/img/yango/mobile/7_mobile_fullslide.mp4',
-            preloader:
-              '/static/img/yango/mobile/preloader-7_mobile_fullslide.jpg'
+            src: 'yango/mobile/7_mobile_fullslide.mp4',
+            preloader: 'yango/mobile/preloader-7_mobile_fullslide.jpg'
           }
         }
       },
@@ -260,9 +251,8 @@ export const casesDataMobile = [
         type: TemplatesNames.PictureMobile,
         data: {
           image: {
-            src: '/static/img/yango/mobile/11_mobile_fullslide.jpg',
-            preloader:
-              '/static/img/yango/mobile/preloader-11_mobile_fullslide.jpg'
+            src: 'yango/mobile/11_mobile_fullslide.jpg',
+            preloader: 'yango/mobile/preloader-11_mobile_fullslide.jpg'
           }
         }
       },
@@ -270,9 +260,8 @@ export const casesDataMobile = [
         type: TemplatesNames.PictureMobile,
         data: {
           image: {
-            src: '/static/img/yango/mobile/12_mobile_fullslide.jpg',
-            preloader:
-              '/static/img/yango/mobile/preloader-12_mobile_fullslide.jpg'
+            src: 'yango/mobile/12_mobile_fullslide.jpg',
+            preloader: 'yango/mobile/preloader-12_mobile_fullslide.jpg'
           }
         }
       },
@@ -280,9 +269,8 @@ export const casesDataMobile = [
         type: TemplatesNames.PictureMobile,
         data: {
           image: {
-            src: '/static/img/yango/mobile/13_mobile_fullslide.jpg',
-            preloader:
-              '/static/img/yango/mobile/preloader-13_mobile_fullslide.jpg'
+            src: 'yango/mobile/13_mobile_fullslide.jpg',
+            preloader: 'yango/mobile/preloader-13_mobile_fullslide.jpg'
           }
         }
       }
@@ -300,10 +288,9 @@ export const casesDataMobile = [
         type: TemplatesNames.PictureMobile,
         data: {
           image: {
-            src:
-              '/static/img/encore_fitness/mobile/cover_encore_mobile_fullslide.jpg',
+            src: 'encore_fitness/mobile/cover_encore_mobile_fullslide.jpg',
             preloader:
-              '/static/img/encore_fitness/mobile/preloader-cover_encore_mobile_fullslide.jpg'
+              'encore_fitness/mobile/preloader-cover_encore_mobile_fullslide.jpg'
           }
         }
       },
@@ -334,8 +321,8 @@ export const casesDataMobile = [
         data: {
           image: {
             preloader:
-              '/static/img/encore_fitness/mobile/preloader-1-main_encore_mobile.jpg',
-            src: '/static/img/encore_fitness/mobile/1-main_encore_mobile.jpg'
+              'encore_fitness/mobile/preloader-1-main_encore_mobile.jpg',
+            src: 'encore_fitness/mobile/1-main_encore_mobile.jpg'
           }
         }
       },
@@ -344,10 +331,9 @@ export const casesDataMobile = [
         duration: 10000,
         data: {
           image: {
-            src:
-              '/static/img/encore_fitness/mobile/2-club_encore_mobile_opt.mp4',
+            src: 'encore_fitness/mobile/2-club_encore_mobile_opt.mp4',
             preloader:
-              '/static/img/encore_fitness/mobile/preloader-2-club_encore_mobile_opt.jpg'
+              'encore_fitness/mobile/preloader-2-club_encore_mobile_opt.jpg'
           }
         }
       },
@@ -356,9 +342,9 @@ export const casesDataMobile = [
         data: {
           image: {
             preloader:
-              '/static/img/encore_fitness/mobile/preloader-3-desktop-screens_encore_mobile_fullslide.jpg',
+              'encore_fitness/mobile/preloader-3-desktop-screens_encore_mobile_fullslide.jpg',
             src:
-              '/static/img/encore_fitness/mobile/3-desktop-screens_encore_mobile_fullslide.jpg'
+              'encore_fitness/mobile/3-desktop-screens_encore_mobile_fullslide.jpg'
           }
         }
       },
@@ -367,9 +353,8 @@ export const casesDataMobile = [
         data: {
           image: {
             preloader:
-              '/static/img/encore_fitness/mobile/preloader-4-club-gallery_encore_mobile.jpg',
-            src:
-              '/static/img/encore_fitness/mobile/4-club-gallery_encore_mobile.jpg'
+              'encore_fitness/mobile/preloader-4-club-gallery_encore_mobile.jpg',
+            src: 'encore_fitness/mobile/4-club-gallery_encore_mobile.jpg'
           }
         }
       },
@@ -378,9 +363,9 @@ export const casesDataMobile = [
         data: {
           image: {
             preloader:
-              '/static/img/encore_fitness/mobile/preloader-5-schedule-desktop_encore_mobile_fullslide.jpg',
+              'encore_fitness/mobile/preloader-5-schedule-desktop_encore_mobile_fullslide.jpg',
             src:
-              '/static/img/encore_fitness/mobile/5-schedule-desktop_encore_mobile_fullslide.jpg'
+              'encore_fitness/mobile/5-schedule-desktop_encore_mobile_fullslide.jpg'
           }
         }
       },
@@ -389,9 +374,8 @@ export const casesDataMobile = [
         data: {
           image: {
             preloader:
-              '/static/img/encore_fitness/mobile/preloader-6-schedule_encore_mobile.jpg',
-            src:
-              '/static/img/encore_fitness/mobile/6-schedule_encore_mobile.jpg'
+              'encore_fitness/mobile/preloader-6-schedule_encore_mobile.jpg',
+            src: 'encore_fitness/mobile/6-schedule_encore_mobile.jpg'
           }
         }
       },
@@ -400,9 +384,9 @@ export const casesDataMobile = [
         data: {
           image: {
             preloader:
-              '/static/img/encore_fitness/mobile/preloader-7-desktop-screens_encore_mobile_fullslide.jpg',
+              'encore_fitness/mobile/preloader-7-desktop-screens_encore_mobile_fullslide.jpg',
             src:
-              '/static/img/encore_fitness/mobile/7-desktop-screens_encore_mobile_fullslide.jpg'
+              'encore_fitness/mobile/7-desktop-screens_encore_mobile_fullslide.jpg'
           }
         }
       },
@@ -411,9 +395,8 @@ export const casesDataMobile = [
         data: {
           image: {
             preloader:
-              '/static/img/encore_fitness/mobile/preloader-8-trainers_encore_mobile.jpg',
-            src:
-              '/static/img/encore_fitness/mobile/8-trainers_encore_mobile.jpg'
+              'encore_fitness/mobile/preloader-8-trainers_encore_mobile.jpg',
+            src: 'encore_fitness/mobile/8-trainers_encore_mobile.jpg'
           }
         }
       },
@@ -422,9 +405,9 @@ export const casesDataMobile = [
         data: {
           image: {
             preloader:
-              '/static/img/encore_fitness/mobile/preloader-9_grid-desktop_encore_mobile_full-slide.jpg',
+              'encore_fitness/mobile/preloader-9_grid-desktop_encore_mobile_full-slide.jpg',
             src:
-              '/static/img/encore_fitness/mobile/9_grid-desktop_encore_mobile_full-slide.jpg'
+              'encore_fitness/mobile/9_grid-desktop_encore_mobile_full-slide.jpg'
           }
         }
       },
@@ -433,9 +416,9 @@ export const casesDataMobile = [
         data: {
           image: {
             preloader:
-              '/static/img/encore_fitness/mobile/preloader-10_phone-mockup_encore_mobile_full-slide.jpg',
+              'encore_fitness/mobile/preloader-10_phone-mockup_encore_mobile_full-slide.jpg',
             src:
-              '/static/img/encore_fitness/mobile/10_phone-mockup_encore_mobile_full-slide.jpg'
+              'encore_fitness/mobile/10_phone-mockup_encore_mobile_full-slide.jpg'
           }
         }
       }
@@ -453,9 +436,9 @@ export const casesDataMobile = [
         type: TemplatesNames.PictureMobile,
         data: {
           image: {
-            src: '/static/img/obed_bufet/cover_obedbufet_mobile_fullslide.jpg',
+            src: 'obed_bufet/cover_obedbufet_mobile_fullslide.jpg',
             preloader:
-              '/static/img/obed_bufet/preloader-cover_obedbufet_mobile_fullslide.jpg'
+              'obed_bufet/preloader-cover_obedbufet_mobile_fullslide.jpg'
           }
         }
       },
@@ -474,9 +457,9 @@ export const casesDataMobile = [
         duration: 13000,
         data: {
           image: {
-            src: '/static/img/obed_bufet/1.1-video1_obedbufet-app_desktop.mp4',
+            src: 'obed_bufet/1.1-video1_obedbufet-app_desktop.mp4',
             preloader:
-              '/static/img/obed_bufet/preloader-1.1-video1_obedbufet-app_desktop.jpg'
+              'obed_bufet/preloader-1.1-video1_obedbufet-app_desktop.jpg'
           }
         }
       },
@@ -484,9 +467,9 @@ export const casesDataMobile = [
         type: TemplatesNames.FramePictMobile,
         data: {
           image: {
-            src: '/static/img/obed_bufet/1.3-catalog_obedbufet-app_desktop.jpg',
+            src: 'obed_bufet/1.3-catalog_obedbufet-app_desktop.jpg',
             preloader:
-              '/static/img/obed_bufet/preloader-1.3-catalog_obedbufet-app_desktop.jpg'
+              'obed_bufet/preloader-1.3-catalog_obedbufet-app_desktop.jpg'
           }
         }
       },
@@ -494,10 +477,9 @@ export const casesDataMobile = [
         type: TemplatesNames.PictureMobile,
         data: {
           image: {
-            src:
-              '/static/img/obed_bufet/7-rest_obedbufet_mobile-fullscreen.jpg',
+            src: 'obed_bufet/7-rest_obedbufet_mobile-fullscreen.jpg',
             preloader:
-              '/static/img/obed_bufet/preloader-7-rest_obedbufet_mobile-fullscreen.jpg'
+              'obed_bufet/preloader-7-rest_obedbufet_mobile-fullscreen.jpg'
           }
         }
       },
@@ -506,9 +488,9 @@ export const casesDataMobile = [
         duration: 13000,
         data: {
           image: {
-            src: '/static/img/obed_bufet/2.1-video2_obedbufet-app_desktop.mp4',
+            src: 'obed_bufet/2.1-video2_obedbufet-app_desktop.mp4',
             preloader:
-              '/static/img/obed_bufet/preloader-2.1-video2_obedbufet-app_desktop.jpg'
+              'obed_bufet/preloader-2.1-video2_obedbufet-app_desktop.jpg'
           }
         }
       },
@@ -516,9 +498,9 @@ export const casesDataMobile = [
         type: TemplatesNames.FramePictMobile,
         data: {
           image: {
-            src: '/static/img/obed_bufet/2.2-product_obedbufet-app_desktop.jpg',
+            src: 'obed_bufet/2.2-product_obedbufet-app_desktop.jpg',
             preloader:
-              '/static/img/obed_bufet/preloader-2.2-product_obedbufet-app_desktop.jpg'
+              'obed_bufet/preloader-2.2-product_obedbufet-app_desktop.jpg'
           }
         }
       },
@@ -526,9 +508,9 @@ export const casesDataMobile = [
         type: TemplatesNames.FramePictMobile,
         data: {
           image: {
-            src: '/static/img/obed_bufet/2.3-order_obedbufet-app_desktop.jpg',
+            src: 'obed_bufet/2.3-order_obedbufet-app_desktop.jpg',
             preloader:
-              '/static/img/obed_bufet/preloader-2.3-order_obedbufet-app_desktop.jpg'
+              'obed_bufet/preloader-2.3-order_obedbufet-app_desktop.jpg'
           }
         }
       },
@@ -536,9 +518,8 @@ export const casesDataMobile = [
         type: TemplatesNames.PictureMobile,
         data: {
           image: {
-            src: '/static/img/obed_bufet/elements_mobile-fullscreen.jpg',
-            preloader:
-              '/static/img/obed_bufet/preloader-elements_mobile-fullscreen.jpg'
+            src: 'obed_bufet/elements_mobile-fullscreen.jpg',
+            preloader: 'obed_bufet/preloader-elements_mobile-fullscreen.jpg'
           }
         }
       },
@@ -546,9 +527,9 @@ export const casesDataMobile = [
         type: TemplatesNames.FramePictMobile,
         data: {
           image: {
-            src: '/static/img/obed_bufet/3.1-profile_obedbufet-app_desktop.jpg',
+            src: 'obed_bufet/3.1-profile_obedbufet-app_desktop.jpg',
             preloader:
-              '/static/img/obed_bufet/preloader-3.1-profile_obedbufet-app_desktop.jpg'
+              'obed_bufet/preloader-3.1-profile_obedbufet-app_desktop.jpg'
           }
         }
       },
@@ -556,9 +537,9 @@ export const casesDataMobile = [
         type: TemplatesNames.FramePictMobile,
         data: {
           image: {
-            src: '/static/img/obed_bufet/3.2-address_obedbufet-app_desktop.jpg',
+            src: 'obed_bufet/3.2-address_obedbufet-app_desktop.jpg',
             preloader:
-              '/static/img/obed_bufet/preloader-3.2-address_obedbufet-app_desktop.jpg'
+              'obed_bufet/preloader-3.2-address_obedbufet-app_desktop.jpg'
           }
         }
       },
@@ -566,9 +547,9 @@ export const casesDataMobile = [
         type: TemplatesNames.FramePictMobile,
         data: {
           image: {
-            src: '/static/img/obed_bufet/3.3-history_obedbufet-app_desktop.jpg',
+            src: 'obed_bufet/3.3-history_obedbufet-app_desktop.jpg',
             preloader:
-              '/static/img/obed_bufet/preloader-3.3-history_obedbufet-app_desktop.jpg'
+              'obed_bufet/preloader-3.3-history_obedbufet-app_desktop.jpg'
           }
         }
       }

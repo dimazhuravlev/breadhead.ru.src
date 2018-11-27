@@ -1,19 +1,19 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import styles from './videoPlayer.css'
 import cx from 'classnames'
+import Image from '@site/ui/atoms/Image'
+import styles from './videoPlayer.css'
+import resolveStaticSrc from './resolveStaticSrc'
 
 class VideoPlayer extends React.Component {
   state = { canPlay: false }
 
-  componentDidUpdate({ active: prevActive }) {
+  componentDidUpdate() {
     const { active } = this.props
     if (active) {
-      if (active !== prevActive || this.videoRef.current.paused) {
-        this.playVideo()
-      } else {
-        this.stopVideo()
-      }
+      this.playVideo()
+    } else {
+      this.stopVideo()
     }
   }
 
@@ -40,7 +40,7 @@ class VideoPlayer extends React.Component {
         <video
           onCanPlay={this.onCanPlay}
           ref={this.videoRef}
-          src={src}
+          src={resolveStaticSrc(src)}
           height={height}
           width={width}
           className={cx(styles.video)}
@@ -49,7 +49,7 @@ class VideoPlayer extends React.Component {
           loop
           muted
         />
-        <img className={cx(styles.preloader)} src={preloader} alt="" />
+        <Image className={cx(styles.preloader)} src={preloader} alt="" />
       </div>
     )
   }
@@ -58,7 +58,7 @@ class VideoPlayer extends React.Component {
 VideoPlayer.propTypes = {
   src: PropTypes.string.isRequired,
   height: PropTypes.string.isRequired,
-  width: PropTypes.string.isRequired
+  width: PropTypes.string.isRequired,
 }
 
 export default VideoPlayer
