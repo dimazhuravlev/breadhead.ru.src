@@ -18,7 +18,7 @@ const Home = () => (
     <Header />
     <Intro />
     <Cases />
-    <Clients />
+    <Clients name="clients" />
     <About
       name="about"
       aboutDataDesktop={aboutDataDesktop}
