@@ -10,7 +10,7 @@ class Bar extends React.Component {
   render() {
     const { onRest, index, quantity, isVisible, duration } = this.props
     const timeLines = range(quantity)
-    const slideDuration = duration > 0 ? duration : SLIDE_DURATION
+    const slideDuration = SLIDE_DURATION
     return (
       <div className={styles.bar}>
         {timeLines.map(timeLine => {

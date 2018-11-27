@@ -38,7 +38,7 @@ export const casesDataDesktop = [
       },
       {
         type: TemplatesNames.FrameVideoDesktop,
-        duration: 9000,
+        duration: 90000,
         data: {
           image: {
             src: '/static/img/faster/desktop/browser_scroll_desktop.mp4',
