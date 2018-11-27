@@ -18,7 +18,7 @@ const SlideVideoMobile = ({ image: { src, preloader }, active }) => (
 )
 
 SlideVideoMobile.propTypes = {
-  src: PropTypes.string.isRequired
+  src: PropTypes.string.isRequired,
 }
 
 export default onlyUpdateForKeys(['active'])(SlideVideoMobile)

@@ -6,14 +6,12 @@ import cx from 'classnames'
 class VideoPlayer extends React.Component {
   state = { canPlay: false }
 
-  componentDidUpdate({ active: prevActive }) {
+  componentDidUpdate() {
     const { active } = this.props
     if (active) {
-      if (active !== prevActive || this.videoRef.current.paused) {
-        this.playVideo()
-      } else {
-        this.stopVideo()
-      }
+      this.playVideo()
+    } else {
+      this.stopVideo()
     }
   }
 
@@ -58,7 +56,7 @@ class VideoPlayer extends React.Component {
 VideoPlayer.propTypes = {
   src: PropTypes.string.isRequired,
   height: PropTypes.string.isRequired,
-  width: PropTypes.string.isRequired
+  width: PropTypes.string.isRequired,
 }
 
 export default VideoPlayer

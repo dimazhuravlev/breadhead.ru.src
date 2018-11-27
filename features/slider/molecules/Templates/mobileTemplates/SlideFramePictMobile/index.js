@@ -1,5 +1,5 @@
 import React from 'react'
-import neverUpdate from '@site/lib/neverUpdate'
+import { neverUpdate } from '@site/lib/shouldUpdate'
 import Img from '@site/ui/molecules/Img'
 import styles from './slideFramePictMobile.css'
 
