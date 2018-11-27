@@ -150,8 +150,8 @@ export const casesDataMobile = [
         duration: 12000,
         data: {
           image: {
-            src: '/static/img/yango/mobile/1_mobile.mp4',
-            preloader: '/static/img/yango/mobile/preloader-1_mobile.jpg'
+            src: 'yango/mobile/1_mobile.mp4',
+            preloader: 'yango/mobile/preloader-1_mobile.jpg'
           },
           backgroundColor: '#AAACB5'
         }
@@ -160,8 +160,8 @@ export const casesDataMobile = [
         type: TemplatesNames.FramePictMobile,
         data: {
           image: {
-            src: '/static/img/yango/mobile/2_mobile.jpg',
-            preloader: '/static/img/yango/mobile/preloader-2_mobile.jpg'
+            src: 'yango/mobile/2_mobile.jpg',
+            preloader: 'yango/mobile/preloader-2_mobile.jpg'
           },
           backgroundColor: '#AAACB5'
         }
@@ -170,8 +170,8 @@ export const casesDataMobile = [
         type: TemplatesNames.FramePictMobile,
         data: {
           image: {
-            src: '/static/img/yango/mobile/3_mobile.jpg',
-            preloader: '/static/img/yango/mobile/preloader-3_mobile.jpg'
+            src: 'yango/mobile/3_mobile.jpg',
+            preloader: 'yango/mobile/preloader-3_mobile.jpg'
           },
           backgroundColor: '#AAACB5'
         }
@@ -181,8 +181,8 @@ export const casesDataMobile = [
         duration: 9000,
         data: {
           image: {
-            src: '/static/img/yango/mobile/4_mobile.mp4',
-            preloader: '/static/img/yango/mobile/preloader-4_mobile.jpg'
+            src: 'yango/mobile/4_mobile.mp4',
+            preloader: 'yango/mobile/preloader-4_mobile.jpg'
           },
           backgroundColor: '#AAACB5'
         }
@@ -191,8 +191,8 @@ export const casesDataMobile = [
         type: TemplatesNames.FramePictMobile,
         data: {
           image: {
-            src: '/static/img/yango/mobile/5_mobile.jpg',
-            preloader: '/static/img/yango/mobile/preloader-5_mobile.jpg'
+            src: 'yango/mobile/5_mobile.jpg',
+            preloader: 'yango/mobile/preloader-5_mobile.jpg'
           },
           backgroundColor: '#AAACB5'
         }
@@ -201,8 +201,8 @@ export const casesDataMobile = [
         type: TemplatesNames.FramePictMobile,
         data: {
           image: {
-            src: '/static/img/yango/mobile/6_mobile.jpg',
-            preloader: '/static/img/yango/mobile/preloader-6_mobile.jpg'
+            src: 'yango/mobile/6_mobile.jpg',
+            preloader: 'yango/mobile/preloader-6_mobile.jpg'
           },
           backgroundColor: '#AAACB5'
         }
@@ -221,8 +221,8 @@ export const casesDataMobile = [
         type: TemplatesNames.FramePictMobile,
         data: {
           image: {
-            src: '/static/img/yango/mobile/8_mobile.jpg',
-            preloader: '/static/img/yango/mobile/preloader-8_mobile.jpg'
+            src: 'yango/mobile/8_mobile.jpg',
+            preloader: 'yango/mobile/preloader-8_mobile.jpg'
           },
           backgroundColor: '#AAACB5'
         }
@@ -231,8 +231,8 @@ export const casesDataMobile = [
         type: TemplatesNames.FramePictMobile,
         data: {
           image: {
-            src: '/static/img/yango/mobile/9_mobile.jpg',
-            preloader: '/static/img/yango/mobile/preloader-9_mobile.jpg'
+            src: 'yango/mobile/9_mobile.jpg',
+            preloader: 'yango/mobile/preloader-9_mobile.jpg'
           },
           backgroundColor: '#AAACB5'
         }
@@ -241,8 +241,8 @@ export const casesDataMobile = [
         type: TemplatesNames.FramePictMobile,
         data: {
           image: {
-            src: '/static/img/yango/mobile/10_mobile.jpg',
-            preloader: '/static/img/yango/mobile/preloader-10_mobile.jpg'
+            src: 'yango/mobile/10_mobile.jpg',
+            preloader: 'yango/mobile/preloader-10_mobile.jpg'
           },
           backgroundColor: '#AAACB5'
         }
@@ -305,7 +305,8 @@ export const casesDataMobile = [
           links: [
             {
               icontype: 'article',
-              href: 'https://encorefitness.ru',
+              href:
+                'https://medium.com/breadhead-stories/%D0%BC%D0%B5%D0%BD%D1%8F%D0%B5%D0%BC-%D0%BF%D1%80%D0%B5%D0%B4%D1%81%D1%82%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BE-%D1%84%D0%B8%D1%82%D0%BD%D0%B5%D1%81-%D0%BA%D0%BB%D1%83%D0%B1%D0%B0%D1%85-d6e8e081f8e8',
               text: 'читать кейс'
             },
             {

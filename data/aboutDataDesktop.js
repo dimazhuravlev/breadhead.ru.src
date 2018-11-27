@@ -9,8 +9,8 @@ export const aboutDataDesktop = {
       type: TemplatesNames.PictureDesktop,
       data: {
         image: {
-          src: '/static/img/studio/desktop/1.jpg',
-          preloader: '/static/img/studio/desktop/preloader-1.jpg'
+          src: 'studio/desktop/1.jpg',
+          preloader: 'studio/desktop/preloader-1.jpg'
         }
       }
     },
@@ -18,8 +18,8 @@ export const aboutDataDesktop = {
       type: TemplatesNames.PictureDesktop,
       data: {
         image: {
-          src: '/static/img/studio/desktop/2.jpg',
-          preloader: '/static/img/studio/desktop/preloader-2.jpg'
+          src: 'studio/desktop/2.jpg',
+          preloader: 'studio/desktop/preloader-2.jpg'
         }
       }
     },
@@ -27,8 +27,8 @@ export const aboutDataDesktop = {
       type: TemplatesNames.PictureDesktop,
       data: {
         image: {
-          src: '/static/img/studio/desktop/3.jpg',
-          preloader: '/static/img/studio/desktop/preloader-3.jpg'
+          src: 'studio/desktop/3.jpg',
+          preloader: 'studio/desktop/preloader-3.jpg'
         }
       }
     },
@@ -36,8 +36,8 @@ export const aboutDataDesktop = {
       type: TemplatesNames.PictureDesktop,
       data: {
         image: {
-          src: '/static/img/studio/desktop/4.jpg',
-          preloader: '/static/img/studio/desktop/preloader-4.jpg'
+          src: 'studio/desktop/4.jpg',
+          preloader: 'studio/desktop/preloader-4.jpg'
         }
       }
     },
@@ -45,8 +45,8 @@ export const aboutDataDesktop = {
       type: TemplatesNames.PictureDesktop,
       data: {
         image: {
-          src: '/static/img/studio/desktop/5.jpg',
-          preloader: '/static/img/studio/desktop/preloader-5.jpg'
+          src: 'studio/desktop/5.jpg',
+          preloader: 'studio/desktop/preloader-5.jpg'
         }
       }
     },
@@ -54,8 +54,8 @@ export const aboutDataDesktop = {
       type: TemplatesNames.PictureDesktop,
       data: {
         image: {
-          src: '/static/img/studio/desktop/6.jpg',
-          preloader: '/static/img/studio/desktop/preloader-6.jpg'
+          src: 'studio/desktop/6.jpg',
+          preloader: 'studio/desktop/preloader-6.jpg'
         }
       }
     },
@@ -63,8 +63,8 @@ export const aboutDataDesktop = {
       type: TemplatesNames.PictureDesktop,
       data: {
         image: {
-          src: '/static/img/studio/desktop/7.jpg',
-          preloader: '/static/img/studio/desktop/preloader-7.jpg'
+          src: 'studio/desktop/7.jpg',
+          preloader: 'studio/desktop/preloader-7.jpg'
         }
       }
     },
@@ -72,8 +72,8 @@ export const aboutDataDesktop = {
       type: TemplatesNames.PictureDesktop,
       data: {
         image: {
-          src: '/static/img/studio/desktop/8.jpg',
-          preloader: '/static/img/studio/desktop/preloader-8.jpg'
+          src: 'studio/desktop/8.jpg',
+          preloader: 'studio/desktop/preloader-8.jpg'
         }
       }
     }
