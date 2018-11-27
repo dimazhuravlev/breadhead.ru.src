@@ -76,7 +76,7 @@ class Footer extends React.Component {
 
             <Image
               className={styles.footerImage}
-              src="/static/img/animationBottom.gif"
+              src="animationBottom.gif"
             />
           </div>
         </div>

@@ -1,10 +1,8 @@
 import React from 'react'
+import requireImage from './requireImage'
 
-const Image = ({ src, ...rest }) => {
-
-  // TODO: require for optimization
-
-  return <img src={src} {...rest} />
-}
+const Image = ({ src, ...rest }) => (
+  <img src={requireImage(src)} {...rest} />
+)
 
 export default Image

@@ -14,7 +14,7 @@ const SlideFrameVideoDesktop = ({
     <div style={{ backgroundColor: backgroundColor }} className={styles.slide}>
       <div className={styles.browser}>
         <div className={styles.header}>
-          <Image className={styles.dots} src="/static/img/dots.png" />
+          <Image className={styles.dots} src="dots.png" />
         </div>
         <VideoPlayer
           active={active}
