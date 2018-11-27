@@ -160,7 +160,8 @@ export const casesDataMobile = [
           image: {
             src: '/static/img/yango/mobile/1_mobile.mp4',
             preloader: '/static/img/yango/mobile/preloader-1_mobile.jpg'
-          }
+          },
+          backgroundColor: '#AAACB5'
         }
       },
       {
@@ -169,7 +170,8 @@ export const casesDataMobile = [
           image: {
             src: '/static/img/yango/mobile/2_mobile.jpg',
             preloader: '/static/img/yango/mobile/preloader-2_mobile.jpg'
-          }
+          },
+          backgroundColor: '#AAACB5'
         }
       },
       {
@@ -178,7 +180,8 @@ export const casesDataMobile = [
           image: {
             src: '/static/img/yango/mobile/3_mobile.jpg',
             preloader: '/static/img/yango/mobile/preloader-3_mobile.jpg'
-          }
+          },
+          backgroundColor: '#AAACB5'
         }
       },
       {
@@ -188,7 +191,8 @@ export const casesDataMobile = [
           image: {
             src: '/static/img/yango/mobile/4_mobile.mp4',
             preloader: '/static/img/yango/mobile/preloader-4_mobile.jpg'
-          }
+          },
+          backgroundColor: '#AAACB5'
         }
       },
       {
@@ -197,7 +201,8 @@ export const casesDataMobile = [
           image: {
             src: '/static/img/yango/mobile/5_mobile.jpg',
             preloader: '/static/img/yango/mobile/preloader-5_mobile.jpg'
-          }
+          },
+          backgroundColor: '#AAACB5'
         }
       },
       {
@@ -206,7 +211,8 @@ export const casesDataMobile = [
           image: {
             src: '/static/img/yango/mobile/6_mobile.jpg',
             preloader: '/static/img/yango/mobile/preloader-6_mobile.jpg'
-          }
+          },
+          backgroundColor: '#AAACB5'
         }
       },
       {
@@ -226,7 +232,8 @@ export const casesDataMobile = [
           image: {
             src: '/static/img/yango/mobile/8_mobile.jpg',
             preloader: '/static/img/yango/mobile/preloader-8_mobile.jpg'
-          }
+          },
+          backgroundColor: '#AAACB5'
         }
       },
       {
@@ -235,7 +242,8 @@ export const casesDataMobile = [
           image: {
             src: '/static/img/yango/mobile/9_mobile.jpg',
             preloader: '/static/img/yango/mobile/preloader-9_mobile.jpg'
-          }
+          },
+          backgroundColor: '#AAACB5'
         }
       },
       {
@@ -244,7 +252,8 @@ export const casesDataMobile = [
           image: {
             src: '/static/img/yango/mobile/10_mobile.jpg',
             preloader: '/static/img/yango/mobile/preloader-10_mobile.jpg'
-          }
+          },
+          backgroundColor: '#AAACB5'
         }
       },
       {

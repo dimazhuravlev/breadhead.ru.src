@@ -212,21 +212,22 @@ export const casesDataDesktop = [
         data: {
           screens: [
             {
-              src: '/static/img/yango/desktop/1.1_desktop.jpg',
-              preloader: '/static/img/yango/desktop/preloader-1.1_desktop.jpg',
-              type: 'img'
-            },
-            {
               src: '/static/img/yango/desktop/1.2_desktop.mp4',
               preloader: '/static/img/yango/desktop/preloader-1.2_desktop.jpg',
               type: 'video'
+            },
+            {
+              src: '/static/img/yango/desktop/1.1_desktop.jpg',
+              preloader: '/static/img/yango/desktop/preloader-1.1_desktop.jpg',
+              type: 'img'
             },
             {
               src: '/static/img/yango/desktop/1.3_desktop.jpg',
               preloader: '/static/img/yango/desktop/preloader-1.3_desktop.jpg',
               type: 'img'
             }
-          ]
+          ],
+          backgroundColor: '#AAACB5'
         }
       },
       {
@@ -249,7 +250,8 @@ export const casesDataDesktop = [
               preloader: '/static/img/yango/desktop/preloader-2.3_desktop.jpg',
               type: 'img'
             }
-          ]
+          ],
+          backgroundColor: '#AAACB5'
         }
       },
       {
@@ -271,7 +273,8 @@ export const casesDataDesktop = [
               preloader: '/static/img/yango/desktop/preloader-3.3_desktop.jpg',
               type: 'img'
             }
-          ]
+          ],
+          backgroundColor: '#AAACB5'
         }
       },
       {
@@ -291,7 +294,8 @@ export const casesDataDesktop = [
           image: {
             src: '/static/img/yango/desktop/5_desktop.jpg',
             preloader: '/static/img/yango/desktop/preloader-5_desktop.jpg'
-          }
+          },
+          backgroundColor: '#AAACB5'
         }
       },
       {
@@ -300,7 +304,8 @@ export const casesDataDesktop = [
           image: {
             src: '/static/img/yango/desktop/6_desktop.jpg',
             preloader: '/static/img/yango/desktop/preloader-6_desktop.jpg'
-          }
+          },
+          backgroundColor: '#AAACB5'
         }
       },
       {
@@ -310,7 +315,8 @@ export const casesDataDesktop = [
           image: {
             src: '/static/img/yango/desktop/7_desktop.mp4',
             preloader: '/static/img/yango/desktop/preloader-7_desktop.jpg'
-          }
+          },
+          backgroundColor: '#AAACB5'
         }
       },
       {
@@ -332,7 +338,8 @@ export const casesDataDesktop = [
               preloader: '/static/img/yango/desktop/preloader-8.3_desktop.jpg',
               type: 'img'
             }
-          ]
+          ],
+          backgroundColor: '#AAACB5'
         }
       },
       {
