@@ -9,9 +9,9 @@ export const aboutDataDesktop = {
       type: TemplatesNames.PictureDesktop,
       data: {
         image: {
-          src: '/static/img/studio/desktop/studio_desktop_developers.jpg',
+          src: 'studio/desktop/studio_desktop_developers.jpg',
           preloader:
-            '/static/img/studio/desktop/preloader-studio_desktop_developers.jpg'
+            'studio/desktop/preloader-studio_desktop_developers.jpg'
         }
       }
     },
@@ -19,9 +19,9 @@ export const aboutDataDesktop = {
       type: TemplatesNames.PictureDesktop,
       data: {
         image: {
-          src: '/static/img/studio/desktop/studio_desktop_dima_vova.jpg',
+          src: 'studio/desktop/studio_desktop_dima_vova.jpg',
           preloader:
-            '/static/img/studio/desktop/preloader-studio_desktop_dima_vova.jpg'
+            'studio/desktop/preloader-studio_desktop_dima_vova.jpg'
         }
       }
     },
@@ -29,9 +29,9 @@ export const aboutDataDesktop = {
       type: TemplatesNames.PictureDesktop,
       data: {
         image: {
-          src: '/static/img/studio/desktop/studio_desktop_sergey.jpg',
+          src: 'studio/desktop/studio_desktop_sergey.jpg',
           preloader:
-            '/static/img/studio/desktop/preloader-studio_desktop_sergey.jpg'
+            'studio/desktop/preloader-studio_desktop_sergey.jpg'
         }
       }
     },
@@ -39,9 +39,9 @@ export const aboutDataDesktop = {
       type: TemplatesNames.PictureDesktop,
       data: {
         image: {
-          src: '/static/img/studio/desktop/studio_desktop_meetup.jpg',
+          src: 'studio/desktop/studio_desktop_meetup.jpg',
           preloader:
-            '/static/img/studio/desktop/preloader-studio_desktop_meetup.jpg'
+            'studio/desktop/preloader-studio_desktop_meetup.jpg'
         }
       }
     },
@@ -49,9 +49,9 @@ export const aboutDataDesktop = {
       type: TemplatesNames.PictureDesktop,
       data: {
         image: {
-          src: '/static/img/studio/desktop/studio_desktop_sculpture.jpg',
+          src: 'studio/desktop/studio_desktop_sculpture.jpg',
           preloader:
-            '/static/img/studio/desktop/preloader-studio_desktop_sculpture.jpg'
+            'studio/desktop/preloader-studio_desktop_sculpture.jpg'
         }
       }
     },
@@ -59,9 +59,9 @@ export const aboutDataDesktop = {
       type: TemplatesNames.PictureDesktop,
       data: {
         image: {
-          src: '/static/img/studio/desktop/studio_desktop_ian.jpg',
+          src: 'studio/desktop/studio_desktop_ian.jpg',
           preloader:
-            '/static/img/studio/desktop/preloader-studio_desktop_ian.jpg'
+            'studio/desktop/preloader-studio_desktop_ian.jpg'
         }
       }
     },
@@ -69,9 +69,9 @@ export const aboutDataDesktop = {
       type: TemplatesNames.PictureDesktop,
       data: {
         image: {
-          src: '/static/img/studio/desktop/studio_desktop_dima.jpg',
+          src: 'studio/desktop/studio_desktop_dima.jpg',
           preloader:
-            '/static/img/studio/desktop/preloader-studio_desktop_dima.jpg'
+            'studio/desktop/preloader-studio_desktop_dima.jpg'
         }
       }
     }

@@ -2,6 +2,7 @@ import React from 'react'
 import VisibilitySensor from 'react-visibility-sensor'
 
 import ExternalLink from '@site/ui/molecules/ExternalLink'
+import Image from '@site/ui/atoms/Image'
 import Descriptor from '@site/features/descriptor'
 import TextBlock from '@site/ui/molecules/TextBlock'
 import { NON_BREAKING_SPACE } from '@site/constants'
@@ -73,9 +74,9 @@ class Footer extends React.Component {
               {`2009–${date.getFullYear()}`}
             </span>
 
-            <img
+            <Image
               className={styles.footerImage}
-              src="/static/img/animationBottom.gif"
+              src="animationBottom.gif"
             />
           </div>
         </div>

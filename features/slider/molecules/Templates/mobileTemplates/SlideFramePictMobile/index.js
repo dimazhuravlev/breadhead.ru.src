@@ -1,6 +1,6 @@
 import React from 'react'
 import neverUpdate from '@site/lib/neverUpdate'
-import Img from '@site/ui/molecules/Img'
+import PreloadableImage from '@site/ui/molecules/PreloadableImage'
 import styles from './slideFramePictMobile.css'
 
 const SlideFramePictMobile = ({
@@ -9,7 +9,7 @@ const SlideFramePictMobile = ({
 }) => (
   <div style={{ backgroundColor: backgroundColor }} className={styles.slide}>
     <div className={styles.phone}>
-      <Img src={src} className={styles.screen} preloader={preloader} />
+      <PreloadableImage src={src} className={styles.screen} preloader={preloader} />
     </div>
   </div>
 )

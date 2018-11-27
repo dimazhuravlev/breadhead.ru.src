@@ -1,8 +1,9 @@
 import React from 'react'
 import cx from 'classnames'
-import styles from './Img.css'
+import styles from './PreloadableImage.css'
+import Image from '@site/ui/atoms/Image'
 
-class Image extends React.Component {
+class PreloadableImage extends React.Component {
   state = { loaded: false }
 
   componentDidMount() {
@@ -24,16 +25,16 @@ class Image extends React.Component {
     const { loaded } = this.state
     return (
       <div className={cx(className, styles.wrapper, loaded && styles.loaded)}>
-        <img
+        <Image
           className={cx(styles.image, className)}
           src={src}
           ref={this.image}
           onLoad={this.handleImageLoaded}
         />
-        <img className={cx(styles.preloader)} src={preloader} alt="" />
+        <Image className={cx(styles.preloader)} src={preloader} alt="загружается" />
       </div>
     )
   }
 }
 
-export default Image
+export default PreloadableImage
