@@ -1,6 +1,7 @@
 import React from 'react'
 import { onlyUpdateForKeys } from 'recompose'
 import VideoPlayer from '@site/features/slider/molecules/VideoPlayer'
+import Image from '@site/ui/atoms/Image'
 import styles from './slidePhonesDesktop.css'
 
 const SlidePhonesDesktop = ({
@@ -15,7 +16,7 @@ const SlidePhonesDesktop = ({
         {screens.map((screen, i) => (
           <div key={i} className={styles.phone}>
             {screen.type === 'img' ? (
-              <img src={screen.src} className={styles.screen} />
+              <Image src={screen.src} className={styles.screen} />
             ) : (
               <VideoPlayer
                 active={active}
@@ -30,7 +31,7 @@ const SlidePhonesDesktop = ({
         ))}
       </div>
       {backgroundSrc && (
-        <img src={backgroundSrc} className={styles.background} />
+        <Image src={backgroundSrc} className={styles.background} />
       )}
     </div>
   )

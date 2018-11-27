@@ -9,9 +9,9 @@ export const aboutDataMobile = {
       type: TemplatesNames.PictureMobile,
       data: {
         image: {
-          src: '/static/img/studio/mobile/studio_mobile_developers.jpg',
+          src: 'studio/mobile/studio_mobile_developers.jpg',
           preloader:
-            '/static/img/studio/mobile/preloader-studio_mobile_developers.jpg'
+            'studio/mobile/preloader-studio_mobile_developers.jpg'
         }
       }
     },
@@ -19,9 +19,9 @@ export const aboutDataMobile = {
       type: TemplatesNames.PictureMobile,
       data: {
         image: {
-          src: '/static/img/studio/mobile/studio_mobile_dima_vova.jpg',
+          src: 'studio/mobile/studio_mobile_dima_vova.jpg',
           preloader:
-            '/static/img/studio/mobile/preloader-studio_mobile_dima_vova.jpg'
+            'studio/mobile/preloader-studio_mobile_dima_vova.jpg'
         }
       }
     },
@@ -29,9 +29,9 @@ export const aboutDataMobile = {
       type: TemplatesNames.PictureMobile,
       data: {
         image: {
-          src: '/static/img/studio/mobile/studio_mobile_sergey.jpg',
+          src: 'studio/mobile/studio_mobile_sergey.jpg',
           preloader:
-            '/static/img/studio/mobile/preloader-studio_mobile_sergey.jpg'
+            'studio/mobile/preloader-studio_mobile_sergey.jpg'
         }
       }
     },
@@ -39,9 +39,9 @@ export const aboutDataMobile = {
       type: TemplatesNames.PictureMobile,
       data: {
         image: {
-          src: '/static/img/studio/mobile/studio_mobile_meetup.jpg',
+          src: 'studio/mobile/studio_mobile_meetup.jpg',
           preloader:
-            '/static/img/studio/mobile/preloader-studio_mobile_meetup.jpg'
+            'studio/mobile/preloader-studio_mobile_meetup.jpg'
         }
       }
     },
@@ -49,9 +49,9 @@ export const aboutDataMobile = {
       type: TemplatesNames.PictureMobile,
       data: {
         image: {
-          src: '/static/img/studio/mobile/studio_mobile_sculpture.jpg',
+          src: 'studio/mobile/studio_mobile_sculpture.jpg',
           preloader:
-            '/static/img/studio/mobile/preloader-studio_mobile_sculpture.jpg'
+            'studio/mobile/preloader-studio_mobile_sculpture.jpg'
         }
       }
     },
@@ -59,8 +59,8 @@ export const aboutDataMobile = {
       type: TemplatesNames.PictureMobile,
       data: {
         image: {
-          src: '/static/img/studio/mobile/studio_mobile_ian.jpg',
-          preloader: '/static/img/studio/mobile/preloader-studio_mobile_ian.jpg'
+          src: 'studio/mobile/studio_mobile_ian.jpg',
+          preloader: 'studio/mobile/preloader-studio_mobile_ian.jpg'
         }
       }
     },
@@ -68,9 +68,9 @@ export const aboutDataMobile = {
       type: TemplatesNames.PictureMobile,
       data: {
         image: {
-          src: '/static/img/studio/mobile/studio_mobile_dima.jpg',
+          src: 'studio/mobile/studio_mobile_dima.jpg',
           preloader:
-            '/static/img/studio/mobile/preloader-studio_mobile_dima.jpg'
+            'studio/mobile/preloader-studio_mobile_dima.jpg'
         }
       }
     }

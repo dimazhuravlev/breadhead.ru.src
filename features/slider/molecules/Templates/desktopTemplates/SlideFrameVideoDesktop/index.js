@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { onlyUpdateForKeys } from 'recompose'
 import VideoPlayer from '@site/features/slider/molecules/VideoPlayer'
+import Image from '@site/ui/atoms/Image'
 import styles from './slideFrameVideoDesktop.css'
 
 const SlideFrameVideoDesktop = ({
@@ -13,7 +14,7 @@ const SlideFrameVideoDesktop = ({
     <div style={{ backgroundColor: backgroundColor }} className={styles.slide}>
       <div className={styles.browser}>
         <div className={styles.header}>
-          <img className={styles.dots} src="/static/img/dots.png" />
+          <Image className={styles.dots} src="dots.png" />
         </div>
         <VideoPlayer
           active={active}
