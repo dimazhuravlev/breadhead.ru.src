@@ -1,7 +1,6 @@
 import React from 'react'
 import cx from 'classnames'
 import styles from './PreloadableImage.css'
-import resolveStaticSrc from '@site/resolveStaticSrc'
 import Image from '@site/ui/atoms/Image'
 
 class PreloadableImage extends React.Component {
@@ -26,9 +25,9 @@ class PreloadableImage extends React.Component {
     const { loaded } = this.state
     return (
       <div className={cx(className, styles.wrapper, loaded && styles.loaded)}>
-        <img
+        <Image
           className={cx(styles.image, className)}
-          src={resolveStaticSrc(src)}
+          src={src}
           ref={this.image}
           onLoad={this.handleImageLoaded}
         />

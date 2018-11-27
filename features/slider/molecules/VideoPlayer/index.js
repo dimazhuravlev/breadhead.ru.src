@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import cx from 'classnames'
 import Image from '@site/ui/atoms/Image'
 import styles from './videoPlayer.css'
-import resolveStaticSrc from '@site/resolveStaticSrc'
+import resolveStaticSrc from './resolveStaticSrc'
 
 class VideoPlayer extends React.Component {
   state = { canPlay: false }
