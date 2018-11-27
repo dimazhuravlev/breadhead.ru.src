@@ -1,8 +1,8 @@
 import React from 'react'
 import cx from 'classnames'
-import styles from './Img.css'
+import styles from './PreloadableImage.css'
 
-class Image extends React.Component {
+class PreloadableImage extends React.Component {
   state = { loaded: false }
 
   componentDidMount() {
@@ -36,4 +36,4 @@ class Image extends React.Component {
   }
 }
 
-export default Image
+export default PreloadableImage
