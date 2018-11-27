@@ -1,5 +1,5 @@
 import React from 'react'
-import requireImage from './requireImage'
+import requireImage from '../Image/requireImage'
 
 const Image = ({ src, ...rest }) => (
   <img src={requireImage(src)} {...rest} />

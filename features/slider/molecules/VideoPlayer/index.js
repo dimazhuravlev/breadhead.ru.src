@@ -1,8 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import styles from './videoPlayer.css'
 import cx from 'classnames'
 import Image from '@site/ui/atoms/Image'
+import styles from './videoPlayer.css'
+import resolveStaticSrc from '@site/resolveStaticSrc'
 
 class VideoPlayer extends React.Component {
   state = { canPlay: false }
@@ -41,7 +42,7 @@ class VideoPlayer extends React.Component {
         <video
           onCanPlay={this.onCanPlay}
           ref={this.videoRef}
-          src={src}
+          src={resolveStaticSrc(src)}
           height={height}
           width={width}
           className={cx(styles.video, className)}
