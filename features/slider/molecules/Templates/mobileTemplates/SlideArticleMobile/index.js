@@ -1,5 +1,5 @@
 import React from 'react'
-import neverUpdate from '@site/lib/neverUpdate'
+import { neverUpdate } from '@site/lib/shouldUpdate'
 import PropTypes from 'prop-types'
 import SlideText from '@site/ui/molecules/SlideText'
 import ArticleIconBlock from '@site/ui/molecules/ArticleIconBlock'

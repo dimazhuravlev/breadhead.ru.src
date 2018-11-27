@@ -1,5 +1,5 @@
 import React from 'react'
-import neverUpdate from '@site/lib/neverUpdate'
+import { neverUpdate } from '@site/lib/shouldUpdate'
 import PreloadableImage from '@site/ui/molecules/PreloadableImage'
 import Image from '@site/ui/atoms/Image'
 import styles from './slideFramePictDesktop.css'
@@ -15,7 +15,11 @@ const SlideFramePictDesktop = ({
         <div className={styles.header}>
           <Image className={styles.dots} src="dots.png" />
         </div>
-        <PreloadableImage src={src} className={styles.screen} preloader={preloader} />
+        <PreloadableImage
+          src={src}
+          className={styles.screen}
+          preloader={preloader}
+        />
       </div>
       {backgroundSrc && (
         <Image src={backgroundSrc} className={styles.background} />
