@@ -89,8 +89,6 @@ export default class MyDocument extends Document {
           <meta name="application-name" content="Breadhead" />
           <meta name="msapplication-TileColor" content="#b91d47" />
           <meta name="theme-color" content="#ffffff" />
-
-          <link rel="stylesheet" href="/_next/static/style.css" />
           <link
             rel="stylesheet"
             type="text/css"
