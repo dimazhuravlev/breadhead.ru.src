@@ -23,6 +23,7 @@ class Clients extends React.Component {
         delayedCall
       >
         <section
+          name={this.props.name}
           className={cx(
             styles.clients,
             this.state.isVisible ? styles.visible : styles.inVisible

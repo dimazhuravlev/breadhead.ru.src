@@ -1,16 +1,67 @@
 import Document, { Head, Main, NextScript } from 'next/document'
 import { getHTML } from '@site/features/googleAnalytics'
+import resolveStaticSrc from '@site/features/slider/molecules/VideoPlayer/resolveStaticSrc'
+
 export default class MyDocument extends Document {
   render() {
     return (
       <html>
         <Head>
-          <script
-            dangerouslySetInnerHTML={{
-              __html: getHTML(),
-            }}
+          <meta
+            name="title"
+            content="Breadhead – разработка цифровых сервисов"
+          />
+          <meta
+            name="description"
+            content="Проектируем и выпускаем сервисы и приложения: e-commerce, образовательные продукты, службы бронирования и доставки, инструменты автоматизации, медиа."
           />
 
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="https://breadhead.ru/" />
+          <meta
+            property="og:title"
+            content="Breadhead – разработка цифровых сервисов"
+          />
+          <meta
+            property="og:description"
+            content="Проектируем и выпускаем сервисы и приложения: e-commerce, образовательные продукты, службы бронирования и доставки, инструменты автоматизации, медиа."
+          />
+          <meta property="og:image" content="/static/img/bh_title.jpg" />
+          <meta property="og:image:width" content="1080" />
+          <meta property="og:image:height" content="630" />
+          <meta property="og:locale" content="ru_RU" />
+          <meta property="og:site_name" content="breadhead.ru" />
+
+          <meta property="twitter:card" content="summary_large_image" />
+          <meta property="twitter:url" content="https://breadhead.ru/" />
+          <meta
+            property="twitter:title"
+            content="Breadhead – разработка цифровых сервисов"
+          />
+          <meta
+            property="twitter:description"
+            content="Проектируем и выпускаем сервисы и приложения: e-commerce, образовательные продукты, службы бронирования и доставки, инструменты автоматизации, медиа."
+          />
+          <meta property="twitter:image" content="/static/img/bh_title.jpg" />
+
+          <script
+            dangerouslySetInnerHTML={{
+              __html: getHTML()
+            }}
+          />
+          {/* TODO: replace it with automatically generated content */}
+          <link
+            rel="preload"
+            as="video"
+            media="only screen and (min-width:1025px)"
+            href={resolveStaticSrc('faster/desktop/full_order_desktop.mp4')}
+          />
+          <link
+            rel="preload"
+            as="video"
+            media="only screen and (max-width:1024px)"
+            href={resolveStaticSrc('faster/mobile/scroll_mobile.mp4')}
+          />
           <link
             rel="apple-touch-icon"
             sizes="180x180"

@@ -9,9 +9,8 @@ export const aboutDataDesktop = {
       type: TemplatesNames.PictureDesktop,
       data: {
         image: {
-          src: 'studio/desktop/studio_desktop_developers.jpg',
-          preloader:
-            'studio/desktop/preloader-studio_desktop_developers.jpg'
+          src: 'studio/desktop/1.jpg',
+          preloader: 'studio/desktop/preloader-1.jpg'
         }
       }
     },
@@ -19,9 +18,8 @@ export const aboutDataDesktop = {
       type: TemplatesNames.PictureDesktop,
       data: {
         image: {
-          src: 'studio/desktop/studio_desktop_dima_vova.jpg',
-          preloader:
-            'studio/desktop/preloader-studio_desktop_dima_vova.jpg'
+          src: 'studio/desktop/2.jpg',
+          preloader: 'studio/desktop/preloader-2.jpg'
         }
       }
     },
@@ -29,9 +27,8 @@ export const aboutDataDesktop = {
       type: TemplatesNames.PictureDesktop,
       data: {
         image: {
-          src: 'studio/desktop/studio_desktop_sergey.jpg',
-          preloader:
-            'studio/desktop/preloader-studio_desktop_sergey.jpg'
+          src: 'studio/desktop/3.jpg',
+          preloader: 'studio/desktop/preloader-3.jpg'
         }
       }
     },
@@ -39,9 +36,8 @@ export const aboutDataDesktop = {
       type: TemplatesNames.PictureDesktop,
       data: {
         image: {
-          src: 'studio/desktop/studio_desktop_meetup.jpg',
-          preloader:
-            'studio/desktop/preloader-studio_desktop_meetup.jpg'
+          src: 'studio/desktop/4.jpg',
+          preloader: 'studio/desktop/preloader-4.jpg'
         }
       }
     },
@@ -49,9 +45,8 @@ export const aboutDataDesktop = {
       type: TemplatesNames.PictureDesktop,
       data: {
         image: {
-          src: 'studio/desktop/studio_desktop_sculpture.jpg',
-          preloader:
-            'studio/desktop/preloader-studio_desktop_sculpture.jpg'
+          src: 'studio/desktop/5.jpg',
+          preloader: 'studio/desktop/preloader-5.jpg'
         }
       }
     },
@@ -59,9 +54,8 @@ export const aboutDataDesktop = {
       type: TemplatesNames.PictureDesktop,
       data: {
         image: {
-          src: 'studio/desktop/studio_desktop_ian.jpg',
-          preloader:
-            'studio/desktop/preloader-studio_desktop_ian.jpg'
+          src: 'studio/desktop/6.jpg',
+          preloader: 'studio/desktop/preloader-6.jpg'
         }
       }
     },
@@ -69,9 +63,17 @@ export const aboutDataDesktop = {
       type: TemplatesNames.PictureDesktop,
       data: {
         image: {
-          src: 'studio/desktop/studio_desktop_dima.jpg',
-          preloader:
-            'studio/desktop/preloader-studio_desktop_dima.jpg'
+          src: 'studio/desktop/7.jpg',
+          preloader: 'studio/desktop/preloader-7.jpg'
+        }
+      }
+    },
+    {
+      type: TemplatesNames.PictureDesktop,
+      data: {
+        image: {
+          src: 'studio/desktop/8.jpg',
+          preloader: 'studio/desktop/preloader-8.jpg'
         }
       }
     }
