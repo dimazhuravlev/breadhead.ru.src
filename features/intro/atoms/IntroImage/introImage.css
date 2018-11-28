@@ -5,6 +5,8 @@
   margin-top: 18px;
   flex-shrink: 1;
   width: auto;
+  user-select: none;
+  -webkit-user-drag: none;
   height: 480px;
 
   @media (max-width: 1920px) {

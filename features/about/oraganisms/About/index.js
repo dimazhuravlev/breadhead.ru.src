@@ -4,7 +4,6 @@ import PropTypes from 'prop-types'
 import Descriptor from '@site/features/descriptor'
 import Slider from '@site/features/slider'
 import TextBlock from '@site/ui/molecules/TextBlock'
-import { ReactIcon, NodeIcon, SwiftIcon } from '@site/ui/atoms/icons'
 import { NON_BREAKING_SPACE } from '@site/constants'
 import AboutText from '../../atoms/AboutText'
 import styles from './about.css'
@@ -90,9 +89,9 @@ class About extends React.Component {
                 header="технологии"
                 icons={
                   <React.Fragment>
-                    <ReactIcon />
-                    <NodeIcon />
-                    <SwiftIcon />
+                    <img src="static/img/react.png" width="36" height="35" />
+                    <img src="static/img/node.png" width="36" height="35" />
+                    <img src="static/img/swift.png" width="36" height="35" />
                   </React.Fragment>
                 }
               >
