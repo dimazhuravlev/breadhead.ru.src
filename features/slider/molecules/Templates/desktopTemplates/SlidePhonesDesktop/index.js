@@ -9,6 +9,7 @@ const SlidePhonesDesktop = ({
   backgroundColor,
   backgroundSrc,
   active,
+  visible,
 }) => {
   return (
     <div style={{ backgroundColor: backgroundColor }} className={styles.slide}>
@@ -19,6 +20,7 @@ const SlidePhonesDesktop = ({
               <Image src={screen.src} className={styles.screen} />
             ) : (
               <VideoPlayer
+                visible={visible}
                 active={active}
                 src={screen.src}
                 preloader={screen.preloader}
@@ -37,4 +39,4 @@ const SlidePhonesDesktop = ({
   )
 }
 
-export default onlyUpdateForKeys(['active'])(SlidePhonesDesktop)
+export default onlyUpdateForKeys(['active', 'visible'])(SlidePhonesDesktop)

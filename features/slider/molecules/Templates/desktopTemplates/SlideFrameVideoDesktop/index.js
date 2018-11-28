@@ -8,7 +8,8 @@ import styles from './slideFrameVideoDesktop.css'
 const SlideFrameVideoDesktop = ({
   image: { src, preloader },
   backgroundColor,
-  active
+  active,
+  visible,
 }) => {
   return (
     <div style={{ backgroundColor: backgroundColor }} className={styles.slide}>
@@ -17,6 +18,7 @@ const SlideFrameVideoDesktop = ({
           <Image className={styles.dots} src="dots.png" />
         </div>
         <VideoPlayer
+          visible={visible}
           active={active}
           className={styles.videoframe}
           src={src}
@@ -32,7 +34,7 @@ const SlideFrameVideoDesktop = ({
 SlideFrameVideoDesktop.propTypes = {
   src: PropTypes.string,
   backgroundColor: PropTypes.string,
-  active: PropTypes.bool
+  active: PropTypes.bool,
 }
 
-export default onlyUpdateForKeys(['active'])(SlideFrameVideoDesktop)
+export default onlyUpdateForKeys(['active', 'visible'])(SlideFrameVideoDesktop)
