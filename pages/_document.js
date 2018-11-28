@@ -26,14 +26,21 @@ export default class MyDocument extends Document {
             property="og:description"
             content="Проектируем и выпускаем сервисы и приложения: e-commerce, образовательные продукты, службы бронирования и доставки, инструменты автоматизации, медиа."
           />
-          <meta property="og:image" content="/static/img/bh_title.jpg" />
+          <meta
+            property="og:image"
+            content="https://breadhead.ru/static/img/bh_title.jpg"
+          />
           <meta property="og:image:width" content="1080" />
           <meta property="og:image:height" content="630" />
           <meta property="og:locale" content="ru_RU" />
           <meta property="og:site_name" content="breadhead.ru" />
+          <meta property="fb:app_id" content="306467899461953" />
 
           <meta property="twitter:card" content="summary_large_image" />
-          <meta property="twitter:url" content="https://breadhead.ru/" />
+          <meta
+            property="twitter:url"
+            content="https://breadhead.ru/static/img/bh_title.jpg"
+          />
           <meta
             property="twitter:title"
             content="Breadhead – разработка цифровых сервисов"
@@ -42,7 +49,10 @@ export default class MyDocument extends Document {
             property="twitter:description"
             content="Проектируем и выпускаем сервисы и приложения: e-commerce, образовательные продукты, службы бронирования и доставки, инструменты автоматизации, медиа."
           />
-          <meta property="twitter:image" content="/static/img/bh_title.jpg" />
+          <meta
+            property="twitter:image"
+            content="https://breadhead.ru/static/img/bh_title.jpg"
+          />
 
           <script
             dangerouslySetInnerHTML={{
