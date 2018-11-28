@@ -32,7 +32,7 @@ const SlideFrameVideoDesktop = ({
 }
 
 SlideFrameVideoDesktop.propTypes = {
-  src: PropTypes.string.isRequired,
+  src: PropTypes.string,
   backgroundColor: PropTypes.string,
   active: PropTypes.bool,
 }

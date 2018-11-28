@@ -440,7 +440,8 @@ export const casesDataMobile = [
             src: 'obed_bufet/cover_obedbufet_mobile_fullslide.jpg',
             preloader:
               'obed_bufet/preloader-cover_obedbufet_mobile_fullslide.jpg'
-          }
+          },
+          backgroundColor: '#FED67D'
         }
       },
       {
@@ -461,7 +462,8 @@ export const casesDataMobile = [
             src: 'obed_bufet/1.1-video1_obedbufet-app_desktop.mp4',
             preloader:
               'obed_bufet/preloader-1.1-video1_obedbufet-app_desktop.jpg'
-          }
+          },
+          backgroundColor: '#FED67D'
         }
       },
       {
@@ -471,7 +473,8 @@ export const casesDataMobile = [
             src: 'obed_bufet/1.3-catalog_obedbufet-app_desktop.jpg',
             preloader:
               'obed_bufet/preloader-1.3-catalog_obedbufet-app_desktop.jpg'
-          }
+          },
+          backgroundColor: '#FED67D'
         }
       },
       {
@@ -492,7 +495,8 @@ export const casesDataMobile = [
             src: 'obed_bufet/2.1-video2_obedbufet-app_desktop.mp4',
             preloader:
               'obed_bufet/preloader-2.1-video2_obedbufet-app_desktop.jpg'
-          }
+          },
+          backgroundColor: '#FED67D'
         }
       },
       {
@@ -502,7 +506,8 @@ export const casesDataMobile = [
             src: 'obed_bufet/2.2-product_obedbufet-app_desktop.jpg',
             preloader:
               'obed_bufet/preloader-2.2-product_obedbufet-app_desktop.jpg'
-          }
+          },
+          backgroundColor: '#FED67D'
         }
       },
       {
@@ -512,7 +517,8 @@ export const casesDataMobile = [
             src: 'obed_bufet/2.3-order_obedbufet-app_desktop.jpg',
             preloader:
               'obed_bufet/preloader-2.3-order_obedbufet-app_desktop.jpg'
-          }
+          },
+          backgroundColor: '#FED67D'
         }
       },
       {
@@ -531,7 +537,8 @@ export const casesDataMobile = [
             src: 'obed_bufet/3.1-profile_obedbufet-app_desktop.jpg',
             preloader:
               'obed_bufet/preloader-3.1-profile_obedbufet-app_desktop.jpg'
-          }
+          },
+          backgroundColor: '#FED67D'
         }
       },
       {
@@ -541,7 +548,8 @@ export const casesDataMobile = [
             src: 'obed_bufet/3.2-address_obedbufet-app_desktop.jpg',
             preloader:
               'obed_bufet/preloader-3.2-address_obedbufet-app_desktop.jpg'
-          }
+          },
+          backgroundColor: '#FED67D'
         }
       },
       {
@@ -551,7 +559,8 @@ export const casesDataMobile = [
             src: 'obed_bufet/3.3-history_obedbufet-app_desktop.jpg',
             preloader:
               'obed_bufet/preloader-3.3-history_obedbufet-app_desktop.jpg'
-          }
+          },
+          backgroundColor: '#FED67D'
         }
       }
     ]
