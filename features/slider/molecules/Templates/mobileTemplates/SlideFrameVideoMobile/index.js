@@ -8,10 +8,12 @@ const SlideFrameVideoMobile = ({
   image: { src, preloader },
   backgroundColor,
   active,
+  visible,
 }) => (
   <div style={{ backgroundColor: backgroundColor }} className={styles.slide}>
     <div className={styles.phone}>
       <VideoPlayer
+        visible={visible}
         active={active}
         className={styles.video}
         src={src}
@@ -28,4 +30,4 @@ SlideFrameVideoMobile.propTypes = {
   backgroundColor: PropTypes.string,
 }
 
-export default onlyUpdateForKeys(['active'])(SlideFrameVideoMobile)
+export default onlyUpdateForKeys(['active', 'visible'])(SlideFrameVideoMobile)
