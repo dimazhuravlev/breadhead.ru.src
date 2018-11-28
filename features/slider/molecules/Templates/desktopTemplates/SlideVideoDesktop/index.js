@@ -18,7 +18,7 @@ const SlideVideoDesktop = ({ image: { src, preloader }, active }) => (
 )
 
 SlideVideoDesktop.propTypes = {
-  src: PropTypes.string.isRequired
+  src: PropTypes.string
 }
 
 export default onlyUpdateForKeys(['active'])(SlideVideoDesktop)
