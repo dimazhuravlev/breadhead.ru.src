@@ -151,7 +151,7 @@ export const casesDataDesktop = [
   /* YANGO DESKTOP CASE */
   {
     description: {
-      type: 'сайт + приложение',
+      type: 'приложение и сайт',
       name: 'Yango',
       links: [
         {
@@ -526,7 +526,7 @@ export const casesDataDesktop = [
   /* OBED BUFET DESKTOP CASE */
   {
     description: {
-      type: 'ios + android',
+      type: 'приложение',
       name: 'ОбедБуфет'
     },
     slides: [
@@ -578,7 +578,8 @@ export const casesDataDesktop = [
                 'obed_bufet/preloader-1.3-catalog_obedbufet-app_desktop.jpg',
               type: 'img'
             }
-          ]
+          ],
+          backgroundColor: '#FED67D'
         }
       },
       {
@@ -614,7 +615,8 @@ export const casesDataDesktop = [
                 'obed_bufet/preloader-2.3-order_obedbufet-app_desktop.jpg',
               type: 'img'
             }
-          ]
+          ],
+          backgroundColor: '#FED67D'
         }
       },
       {
@@ -639,7 +641,8 @@ export const casesDataDesktop = [
                 'obed_bufet/preloader-3.3-history_obedbufet-app_desktop.jpg',
               type: 'img'
             }
-          ]
+          ],
+          backgroundColor: '#FED67D'
         }
       }
     ]
