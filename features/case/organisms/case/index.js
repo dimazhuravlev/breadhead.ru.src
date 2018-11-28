@@ -17,7 +17,7 @@ class Case extends React.Component {
   }
 
   render() {
-    const { name, className, description, slides } = this.props
+    const { name, className, description, slides, priority } = this.props
     const { isVisible } = this.state
     return (
       <VisibilitySensor
@@ -34,7 +34,7 @@ class Case extends React.Component {
           )}
         >
           <Descriptor {...description} />
-          {isVisible ? (
+          {isVisible || priority ? (
             <Slider slides={slides} />
           ) : (
             <div className={styles.placeholder} />
