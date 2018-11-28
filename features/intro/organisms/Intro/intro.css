@@ -6,12 +6,17 @@
   animation-duration: 1.4s;
   animation-timing-function: cubic-bezier(0.59, 0.01, 0.28, 1);
   display: flex;
+  position: relative;
   align-items: flex-end;
   justify-content: space-between;
   margin-top: 160px;
   margin-bottom: 64px;
   margin-left: 25%;
   padding: 0px 56px 0px 28px;
+
+  @media (max-width: 1460px) {
+    margin-left: 34px;
+  }
 
   @media (max-width: 1440px) {
     margin-top: 120px;

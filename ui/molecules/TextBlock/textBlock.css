@@ -25,7 +25,9 @@
 .icons {
   display: flex;
   margin-top: 16px;
-  & > svg {
+  & > img {
     margin-right: 12px;
+    user-select: none;
+    -webkit-user-drag: none;
   }
 }
