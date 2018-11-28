@@ -93,7 +93,7 @@ const Container = Slider => {
     sliderRef = React.createRef()
 
     render() {
-      const { height, className, slides } = this.props
+      const { height, className, slides, width } = this.props
       const { index, slideComponents } = this.state
       const minTopValue = height > 600 ? height / 2.5 : height / 2
       const offset = { top: height / 2 }
@@ -124,6 +124,7 @@ const Container = Slider => {
                   />
                   <SliderAmount amount={slides.length} />
                   <Slider
+                    width={width}
                     forwardRef={this.sliderRef}
                     beforeChange={this.beforeChange}
                   >
