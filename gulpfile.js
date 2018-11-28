@@ -15,4 +15,4 @@ gulp.task('watch', () =>
   gulp.watch(targetImages, ['images'])
 )
 
-gulp.task('default', [ 'images' ])
+gulp.task('default', ['images'])
