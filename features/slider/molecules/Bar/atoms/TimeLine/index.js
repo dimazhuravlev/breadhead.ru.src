@@ -16,15 +16,17 @@ class TimeLine extends React.Component {
   transform = 0
 
   render() {
-    const { state, onRest, duration } = this.props
+    const { state, onRest, duration, onClick } = this.props
     switch (state) {
     case 'frozen':
       return (
-        <div className={styles.timeLine}>
-          <div
-            style={{ transform: `scaleX(${this.transform})` }}
-            className={styles.progressBar}
-          />
+        <div className={styles.wrapper} onClick={onClick}>
+          <div className={styles.timeLine}>
+            <div
+              style={{ transform: `scaleX(${this.transform})` }}
+              className={styles.progressBar}
+            />
+          </div>
         </div>
       )
     case 'active':
@@ -41,11 +43,13 @@ class TimeLine extends React.Component {
         >
           {({ transform }) => {
             return (
-              <div className={styles.timeLine}>
-                <div
-                  style={{ transform: `scaleX(${transform})` }}
-                  className={styles.progressBar}
-                />
+              <div className={styles.wrapper} onClick={onClick}>
+                <div className={styles.timeLine}>
+                  <div
+                    style={{ transform: `scaleX(${transform})` }}
+                    className={styles.progressBar}
+                  />
+                </div>
               </div>
             )
           }}
@@ -53,20 +57,24 @@ class TimeLine extends React.Component {
       )
     case 'empty':
       return (
-        <div className={styles.timeLine}>
-          <div
-            style={{ transform: `scaleX(${0})` }}
-            className={styles.progressBar}
-          />
+        <div className={styles.wrapper} onClick={onClick}>
+          <div className={styles.timeLine}>
+            <div
+              style={{ transform: `scaleX(${0})` }}
+              className={styles.progressBar}
+            />
+          </div>
         </div>
       )
     case 'full':
       return (
-        <div className={styles.timeLine}>
-          <div
-            style={{ transform: `scaleX(${1})` }}
-            className={styles.progressBar}
-          />
+        <div className={styles.wrapper} onClick={onClick}>
+          <div className={styles.timeLine}>
+            <div
+              style={{ transform: `scaleX(${1})` }}
+              className={styles.progressBar}
+            />
+          </div>
         </div>
       )
 
