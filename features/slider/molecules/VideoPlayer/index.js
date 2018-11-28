@@ -9,25 +9,41 @@ class VideoPlayer extends React.Component {
   state = { canPlay: false }
 
   componentDidUpdate() {
-    const { active } = this.props
+    const { active, visible } = this.props
     if (active) {
-      this.playVideo()
+      this.handleActiveState(visible)
     } else {
-      this.stopVideo()
+      this.handleInActiveState()
     }
   }
 
-  playVideo = () => {
-    this.videoRef.current.play()
+  play = () => {
+    this.videoRef.current.paused && this.videoRef.current.play()
   }
 
-  stopVideo = () => {
+  stop = () => {
     this.videoRef.current.pause()
     this.videoRef.current.currentTime = 0
   }
 
+  pause = () => {
+    this.videoRef.current.pause()
+  }
+
   onCanPlay = () => {
     this.setState({ canPlay: true })
+  }
+
+  handleActiveState = visible => {
+    if (visible) {
+      this.play()
+    } else {
+      this.pause()
+    }
+  }
+
+  handleInActiveState = () => {
+    this.stop()
   }
 
   videoRef = React.createRef()

@@ -132,6 +132,7 @@ const Container = Slider => {
                       <SlideComponent
                         onLinkClick={this.onLinkClick}
                         key={i}
+                        visible={isVisible}
                         active={index === i}
                         {...slides[i].data}
                       />
