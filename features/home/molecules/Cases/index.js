@@ -1,6 +1,7 @@
 import React from 'react'
 import { scroller } from 'react-scroll'
 import Case from '@site/features/case'
+import VisibilitySensor from 'react-visibility-sensor'
 import { Desktop, Mobile, Any } from '@site/lib/responsive'
 import Button from '@site/ui/molecules/Button'
 import { PlusIcon } from '@site/ui/atoms/icons'
@@ -16,7 +17,7 @@ class Cases extends React.Component {
     super(props)
     this.state = {
       isShown: false,
-      isVisible: false,
+      isVisible: false
     }
 
     this.handleClick = this.handleClick.bind(this)
@@ -24,9 +25,13 @@ class Cases extends React.Component {
     this.buttonRef = React.createRef()
   }
 
+  onVisibilityChange = isVisible => {
+    !this.state.isVisible && isVisible && this.setState({ isVisible })
+  }
+
   scrollToButton(offset) {
     scroller.scrollTo('buttonToShow', {
-      offset: offset,
+      offset: offset
     })
   }
 
@@ -38,7 +43,7 @@ class Cases extends React.Component {
         isShown = state.isShown
         y = this.buttonRef.current.getBoundingClientRect().y
         return {
-          isShown: !state.isShown,
+          isShown: !state.isShown
         }
       },
       () => {
@@ -50,7 +55,7 @@ class Cases extends React.Component {
   }
 
   render() {
-    const { isShown } = this.state
+    const { isShown, isVisible } = this.state
 
     const allCasesDesktop = casesDataDesktop.map(caseData => (
       <Case key={caseData.description.name} {...caseData} />
@@ -82,17 +87,26 @@ class Cases extends React.Component {
           </section>
         </Mobile>
 
-        <Any>
-          <Button
-            ref={this.buttonRef}
-            name="buttonToShow"
-            onClick={this.handleClick}
-            className={styles.plusButton}
-            icon={isShown ? <MinusIcon /> : <PlusIcon />}
-          >
-            {isShown ? 'скрыть' : 'ещё'}
-          </Button>
-        </Any>
+        <VisibilitySensor
+          onChange={this.onVisibilityChange}
+          partialVisibility
+          delayedCall
+        >
+          <Any>
+            <Button
+              ref={this.buttonRef}
+              name="buttonToShow"
+              onClick={this.handleClick}
+              className={cx(
+                styles.plusButton,
+                isVisible ? styles.visible : styles.inVisible
+              )}
+              icon={isShown ? <MinusIcon /> : <PlusIcon />}
+            >
+              {isShown ? 'скрыть' : 'ещё'}
+            </Button>
+          </Any>
+        </VisibilitySensor>
       </>
     )
   }

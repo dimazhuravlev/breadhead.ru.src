@@ -26,14 +26,21 @@ export default class MyDocument extends Document {
             property="og:description"
             content="Проектируем и выпускаем сервисы и приложения: e-commerce, образовательные продукты, службы бронирования и доставки, инструменты автоматизации, медиа."
           />
-          <meta property="og:image" content="/static/img/bh_title.jpg" />
+          <meta
+            property="og:image"
+            content="https://breadhead.ru/static/img/bh_title.jpg"
+          />
           <meta property="og:image:width" content="1080" />
           <meta property="og:image:height" content="630" />
           <meta property="og:locale" content="ru_RU" />
           <meta property="og:site_name" content="breadhead.ru" />
+          <meta property="fb:app_id" content="306467899461953" />
 
           <meta property="twitter:card" content="summary_large_image" />
-          <meta property="twitter:url" content="https://breadhead.ru/" />
+          <meta
+            property="twitter:url"
+            content="https://breadhead.ru/static/img/bh_title.jpg"
+          />
           <meta
             property="twitter:title"
             content="Breadhead – разработка цифровых сервисов"
@@ -42,14 +49,18 @@ export default class MyDocument extends Document {
             property="twitter:description"
             content="Проектируем и выпускаем сервисы и приложения: e-commerce, образовательные продукты, службы бронирования и доставки, инструменты автоматизации, медиа."
           />
-          <meta property="twitter:image" content="/static/img/bh_title.jpg" />
+          <meta
+            property="twitter:image"
+            content="https://breadhead.ru/static/img/bh_title.jpg"
+          />
 
           <script
             dangerouslySetInnerHTML={{
-              __html: getHTML()
+              __html: getHTML(),
             }}
           />
           {/* TODO: replace it with automatically generated content */}
+          {/* faster-desktop */}
           <link
             rel="preload"
             as="video"
@@ -58,10 +69,136 @@ export default class MyDocument extends Document {
           />
           <link
             rel="preload"
+            as="image"
+            media="only screen and (min-width:1025px)"
+            href={resolveStaticSrc('faster/desktop/phone_map_desktop.jpg')}
+          />
+          <link
+            rel="preload"
+            as="video"
+            media="only screen and (min-width:1025px)"
+            href={resolveStaticSrc('faster/desktop/browser_scroll_desktop.mp4')}
+          />
+          {/* yango-desktop */}
+          <link
+            rel="preload"
+            as="image"
+            media="only screen and (min-width:1025px)"
+            href={resolveStaticSrc('yango/desktop/cover_desktop_fullslide.jpg')}
+          />
+          <link
+            rel="preload"
+            as="image"
+            media="only screen and (min-width:1025px)"
+            href={resolveStaticSrc('yango/desktop/0_desktop.jpg')}
+          />
+          <link
+            rel="preload"
+            as="video"
+            media="only screen and (min-width:1025px)"
+            href={resolveStaticSrc('yango/desktop/1.2_desktop.mp4')}
+          />
+          <link
+            rel="preload"
+            as="image"
+            media="only screen and (min-width:1025px)"
+            href={resolveStaticSrc('yango/desktop/1.1_desktop.jpg')}
+          />
+          <link
+            rel="preload"
+            as="image"
+            media="only screen and (min-width:1025px)"
+            href={resolveStaticSrc('yango/desktop/1.3_desktop.jpg')}
+          />
+          <link
+            rel="preload"
+            as="image"
+            media="only screen and (min-width:1025px)"
+            href={resolveStaticSrc('yango/desktop/2.3_desktop.jpg')}
+          />
+          <link
+            rel="preload"
+            as="image"
+            media="only screen and (min-width:1025px)"
+            href={resolveStaticSrc('yango/desktop/2.1_desktop.jpg')}
+          />
+          <link
+            rel="preload"
+            as="video"
+            media="only screen and (min-width:1025px)"
+            href={resolveStaticSrc('yango/desktop/2.2_desktop.mp4')}
+          />
+          <link
+            rel="preload"
+            as="video"
+            media="only screen and (min-width:1025px)"
+            href={resolveStaticSrc('yango/desktop/2.2_desktop.mp4')}
+          />
+
+          {/* encore-desktop */}
+          <link
+            rel="preload"
+            as="image"
+            media="only screen and (min-width:1025px)"
+            href={resolveStaticSrc(
+              'encore_fitness/desktop/cover_encore_desktop_fullslide.jpg'
+            )}
+          />
+          <link
+            rel="preload"
+            as="image"
+            media="only screen and (min-width:1025px)"
+            href={resolveStaticSrc(
+              'encore_fitness/desktop/1-main_encore_desktop.jpg'
+            )}
+          />
+
+          {/* faster-mobile */}
+          <link
+            rel="preload"
             as="video"
             media="only screen and (max-width:1024px)"
             href={resolveStaticSrc('faster/mobile/scroll_mobile.mp4')}
           />
+          <link
+            rel="preload"
+            as="image"
+            media="only screen and (max-width:1024px)"
+            href={resolveStaticSrc('faster/mobile/phone_map_mobile.jpg')}
+          />
+
+          {/* yango-mobile */}
+          <link
+            rel="preload"
+            as="image"
+            media="only screen and (max-width:1024px)"
+            href={resolveStaticSrc('yango/mobile/cover_mobile_fullslide.jpg')}
+          />
+          <link
+            rel="preload"
+            as="video"
+            media="only screen and (max-width:1024px)"
+            href={resolveStaticSrc('yango/mobile/1_mobile.mp4')}
+          />
+
+          {/* encore-mobile */}
+          <link
+            rel="preload"
+            as="image"
+            media="only screen and (max-width:1024px)"
+            href={resolveStaticSrc(
+              'encore_fitness/mobile/cover_encore_mobile_fullslide.jpg'
+            )}
+          />
+          <link
+            rel="preload"
+            as="image"
+            media="only screen and (max-width:1024px)"
+            href={resolveStaticSrc(
+              'encore_fitness/mobile/1-main_encore_mobile.jpg'
+            )}
+          />
+
           <link
             rel="apple-touch-icon"
             sizes="180x180"
