@@ -23,7 +23,7 @@
     "recompose": "^0.30.0"
   },
   "scripts": {
-    "dev": "gulp && concurrently --kill-others \"yarn next\" \"gulp watch\"",
+    "dev": "next",
     "prod": "next build && next start",
     "build": "gulp && next build && next export",
     "lint": "yarn lint-css && yarn lint-js",
@@ -39,7 +39,6 @@
     "babel-plugin-module-resolver": "^3.1.1",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
-    "concurrently": "^4.1.0",
     "enzyme": "^3.7.0",
     "enzyme-adapter-react-16": "^1.7.0",
     "enzyme-to-json": "^3.3.4",
@@ -47,6 +46,7 @@
     "eslint-plugin-jest": "^22.1.0",
     "eslint-plugin-react": "^7.11.1",
     "gulp": "^3.9.1",
+    "gulp-image-resize": "^0.13.0",
     "gulp-imagemin": "^5.0.3",
     "gulp-rename": "^1.4.0",
     "jest": "^23.6.0",

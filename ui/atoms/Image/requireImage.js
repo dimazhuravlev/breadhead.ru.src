@@ -6,7 +6,12 @@ const addCompressToPath = flow([
     start: dropRight(piece, 1).join('.'),
     ext: takeRight(piece, 1),
   }),
-  ({ start, ...rest }) => ({ start: `${start}-compress`, ...rest }),
+  ({ start, ext }) => ({
+    start: ['jpg', 'png'].includes(ext)
+      ? `${start}-compress`
+      : start,
+    ext,
+  }),
   ({ start, ext }) => `${start}.${ext}`,
 ])
 
