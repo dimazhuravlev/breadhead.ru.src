@@ -116,6 +116,12 @@ const Container = Slider => {
                     duration={slides[index].duration}
                     isVisible={isVisible && !down}
                     quantity={slides.length}
+                    onClick={
+                      // condition is used because current is null at first and doesnt got updated later if i put it to prop
+                      this.sliderRef.current
+                        ? this.sliderRef.current.slickGoTo
+                        : () => {}
+                    }
                     onRest={
                       this.sliderRef.current
                         ? this.sliderRef.current.slickNext
