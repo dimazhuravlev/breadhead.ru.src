@@ -73,10 +73,6 @@
   }
 }
 
-.caseNameOnly {
-  margin-top: 4px;
-}
-
 .descriptorDesktop {
   @media (max-width: 600px) {
     display: none;
