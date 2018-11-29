@@ -275,7 +275,7 @@ export const casesDataMobile = [
         data: {
           title: `Меняем представление о${NON_BREAKING_SPACE}фитнес-клубах`,
           description: [
-            `Мы консультировали разработку концепции бренда и${NON_BREAKING_SPACE}сделали сайт, который стал продолжением уникального клиентского опыта в${NON_BREAKING_SPACE}клубах Encore Fitness —${NON_BREAKING_SPACE}сочетанием функциональности с${NON_BREAKING_SPACE}историей бренда.`
+            `Мы помогли разработать концепцию бренда (с${NON_BREAKING_SPACE}<a target="_blank" rel = "noopener noreferrer" href="http://fullfort.agency/">Fullfort</a>) и${NON_BREAKING_SPACE}сделали сайт, который стал продолжением уникального клиентского опыта в${NON_BREAKING_SPACE}клубах Encore —${NON_BREAKING_SPACE}сочетанием технологичности, внимания к${NON_BREAKING_SPACE}деталям и${NON_BREAKING_SPACE}истории бренда.`
           ],
           links: [
             {
