@@ -4,7 +4,10 @@ import { NON_BREAKING_SPACE } from '@site/constants.js'
 export const howWeWorkDataDesktop = {
   description: {
     type: 'вики',
-    name: 'Как мы работаем',
+    name: {
+      ru: 'Как мы работаем',
+      en: 'How we work'
+    },
     links: [
       {
         icontype: 'globe',
