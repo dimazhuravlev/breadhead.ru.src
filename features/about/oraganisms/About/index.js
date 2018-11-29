@@ -4,6 +4,7 @@ import VisibilitySensor from 'react-visibility-sensor'
 import PropTypes from 'prop-types'
 import Descriptor from '@site/features/descriptor'
 import Slider from '@site/features/slider'
+import ExternalLink from '@site/ui/molecules/ExternalLink'
 import TextBlock from '@site/ui/molecules/TextBlock'
 import AboutText from '../../atoms/AboutText'
 import styles from './about.css'
@@ -69,7 +70,11 @@ class About extends React.Component {
               </TextBlock>
 
               <TextBlock header={t('text-block-header-practices')}>
-                {t('text-block-text-practices')}
+                {t('text-block-text-practices-first')}
+                <ExternalLink href="http://fullfort.agency/">
+                  {t('text-block-text-practices-link')}
+                </ExternalLink>
+                {t('text-block-text-practices-second')}
               </TextBlock>
 
               <TextBlock

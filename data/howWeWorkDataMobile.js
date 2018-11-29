@@ -3,8 +3,14 @@ import { NON_BREAKING_SPACE } from '@site/constants.js'
 
 export const howWeWorkDataMobile = {
   description: {
-    type: 'вики',
-    name: 'Как мы работаем'
+    type: {
+      ru: 'вики',
+      en: 'wiki'
+    },
+    name: {
+      ru: 'Как мы работаем',
+      en: 'How we work'
+    }
   },
   slides: [
     {

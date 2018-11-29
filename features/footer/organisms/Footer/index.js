@@ -6,7 +6,6 @@ import ExternalLink from '@site/ui/molecules/ExternalLink'
 import Image from '@site/ui/atoms/Image'
 import Descriptor from '@site/features/descriptor'
 import TextBlock from '@site/ui/molecules/TextBlock'
-import { NON_BREAKING_SPACE } from '@site/constants'
 import styles from './footer.css'
 import cx from 'classnames'
 

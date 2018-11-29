@@ -12,12 +12,16 @@
   "about-text2": "We are committed to\u00a0the idea of\u00a0an\u00a0open working process, creating the sense of\u00a0being in\u00a0one team with the client. We believe that this approach changes outlook on\u00a0our work and helps create useful products.",
 
   "text-block-header-skills": "expertise",
-  "text-block-header-practices": "practices",
-  "text-block-header-technologies": "technologies",
+  "text-block-header-practices": "practice",
+  "text-block-header-technologies": "technology",
 
   "text-block-text-skills": "Education products / E-commerce / Booking and delivery services / Automation / Media",
 
-  "text-block-text-practices": "Research / Brand consultancy (Fullfort) / Design / Web +\u00a0mobile development",
+  "text-block-text-practices-first": "Research / Brand consultancy (",
+
+  "text-block-text-practices-link": "Fullfort",
+
+  "text-block-text-practices-second": ") / Design / Web +\u00a0mobile development",
 
   "text-block-text-technologies": "Web: React, Node.js, PHP, Typescript / iOS: Swift / Android: Kotlin, Java",
 
