@@ -2,10 +2,12 @@ import Document, { Head, Main, NextScript } from 'next/document'
 import { getHTML } from '@site/features/googleAnalytics'
 import resolveStaticSrc from '@site/features/slider/molecules/VideoPlayer/resolveStaticSrc'
 
+import i18n from '@site/lib/i18n/i18n'
+
 export default class MyDocument extends Document {
   render() {
     return (
-      <html>
+      <html lang={i18n.language}>
         <Head>
           <meta
             name="title"
