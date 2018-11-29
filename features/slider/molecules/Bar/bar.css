@@ -1,5 +1,6 @@
 .bar {
-  z-index: 1;
+  cursor: pointer;
+  z-index: 100;
   width: calc(100% - 40px);
   display: flex;
   position: absolute;

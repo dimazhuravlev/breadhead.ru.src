@@ -8,12 +8,12 @@ import styles from './bar.css'
 
 class Bar extends React.Component {
   render() {
-    const { onRest, index, quantity, isVisible, duration } = this.props
+    const { onRest, index, quantity, isVisible, duration, onClick } = this.props
     const timeLines = range(quantity)
     const slideDuration = duration > 0 ? duration : SLIDE_DURATION
     return (
       <div className={styles.bar}>
-        {timeLines.map(timeLine => {
+        {timeLines.map((timeLine, i) => {
           let state
           if (!isVisible && index === timeLine) {
             state = 'frozen'
@@ -26,6 +26,7 @@ class Bar extends React.Component {
           }
           return (
             <TimeLine
+              onClick={() => onClick(i)}
               duration={slideDuration}
               index={index}
               onRest={onRest}
@@ -40,14 +41,14 @@ class Bar extends React.Component {
 }
 
 Bar.defautProps = {
-  duration: 0
+  duration: 0,
 }
 
 Bar.propTypes = {
   index: PropTypes.number,
   onRest: PropTypes.oneOfType([PropTypes.bool, PropTypes.func]),
   quantity: PropTypes.number,
-  slideDuration: PropTypes.number
+  slideDuration: PropTypes.number,
 }
 
 const BarHOC = compose(onlyUpdateForKeys(['index', 'isVisible', 'duration']))
