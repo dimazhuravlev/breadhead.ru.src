@@ -5,6 +5,7 @@ import Slider from '@site/features/slider'
 import Descriptor from '@site/features/descriptor'
 import cx from 'classnames'
 import styles from './case.css'
+import withLang from '@site/lib/i18n/withLang'
 
 class Case extends React.Component {
   constructor(props) {
@@ -17,13 +18,14 @@ class Case extends React.Component {
   }
 
   render() {
-    const { name, className, description, slides, priority } = this.props
+    const { name, lang, className, description, slides, priority } = this.props
     const { isVisible } = this.state
     return (
       <VisibilitySensor
         onChange={this.onVisibilityChange}
         partialVisibility
         delayedCall
+        key={lang}
       >
         <section
           name={name}
@@ -51,4 +53,4 @@ Case.propTypes = {
   slides: PropTypes.arrayOf(PropTypes.object),
 }
 
-export default Case
+export default withLang(Case)
