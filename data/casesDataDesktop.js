@@ -149,6 +149,131 @@ export const casesDataDesktop = [
     ]
   },
 
+  /* OBED BUFET DESKTOP CASE */
+  {
+    description: {
+      type: 'приложение',
+      name: 'ОбедБуфет'
+    },
+    slides: [
+      {
+        type: TemplatesNames.PictureDesktop,
+        data: {
+          image: {
+            src: 'obed_bufet/cover_obedbufet_desktop_fullslide.jpg',
+            preloader:
+              'obed_bufet/preloader-cover_obedbufet_desktop_fullslide.jpg'
+          }
+        }
+      },
+      {
+        type: TemplatesNames.ArticleWithPhoneDesktop,
+        duration: 12000,
+        data: {
+          title: 'Дружелюбная доставка домашней еды',
+          description: [
+            `Заказ еды — простое и${NON_BREAKING_SPACE}понятное действие. Таким мы${NON_BREAKING_SPACE}сделали интерфейс этого приложения. Mинимум рекламы, позитивные цвета и${NON_BREAKING_SPACE}формы, забавные персонажи, легкий тон коммуникации и${NON_BREAKING_SPACE}простота в${NON_BREAKING_SPACE}использовании.`
+          ],
+          image: {
+            src: 'obed_bufet/0-location_obedbufet-app_desktop.jpg',
+            preloader:
+              'obed_bufet/preloader-1.1-video1_obedbufet-app_desktop.jpg'
+          }
+        }
+      },
+      {
+        type: TemplatesNames.PhonesDesktop,
+        duration: 13000,
+        data: {
+          screens: [
+            {
+              src: 'obed_bufet/1.1-video1_obedbufet-app_desktop.mp4',
+              preloader:
+                'obed_bufet/preloader-1.1-video1_obedbufet-app_desktop.jpg',
+              type: 'video'
+            },
+            {
+              src: 'obed_bufet/1.2-main_obedbufet-app_desktop.jpg',
+              preloader:
+                'obed_bufet/preloader-1.2-main_obedbufet-app_desktop.jpg',
+              type: 'img'
+            },
+            {
+              src: 'obed_bufet/1.3-catalog_obedbufet-app_desktop.jpg',
+              preloader:
+                'obed_bufet/preloader-1.3-catalog_obedbufet-app_desktop.jpg',
+              type: 'img'
+            }
+          ],
+          backgroundColor: '#FED67D'
+        }
+      },
+      {
+        type: TemplatesNames.PictureDesktop,
+        data: {
+          image: {
+            src: 'obed_bufet/7-rest_obedbufet_desktop-fullscreen.jpg',
+            preloader:
+              'obed_bufet/preloader-7-rest_obedbufet_desktop-fullscreen.jpg'
+          }
+        }
+      },
+      {
+        type: TemplatesNames.PhonesDesktop,
+        duration: 13000,
+        data: {
+          screens: [
+            {
+              src: 'obed_bufet/2.1-video2_obedbufet-app_desktop.mp4',
+              preloader:
+                'obed_bufet/preloader-2.1-video2_obedbufet-app_desktop.jpg',
+              type: 'video'
+            },
+            {
+              src: 'obed_bufet/2.2-product_obedbufet-app_desktop.jpg',
+              preloader:
+                'obed_bufet/preloader-2.2-product_obedbufet-app_desktop.jpg',
+              type: 'img'
+            },
+            {
+              src: 'obed_bufet/2.3-order_obedbufet-app_desktop.jpg',
+              preloader:
+                'obed_bufet/preloader-2.3-order_obedbufet-app_desktop.jpg',
+              type: 'img'
+            }
+          ],
+          backgroundColor: '#FED67D'
+        }
+      },
+      {
+        type: TemplatesNames.PhonesDesktop,
+        data: {
+          screens: [
+            {
+              src: 'obed_bufet/3.1-profile_obedbufet-app_desktop.jpg',
+              preloader:
+                'obed_bufet/preloader-3.1-profile_obedbufet-app_desktop.jpg',
+              type: 'img'
+            },
+            {
+              src: 'obed_bufet/3.2-address_obedbufet-app_desktop.jpg',
+              preloader:
+                'obed_bufet/preloader-3.2-address_obedbufet-app_desktop.jpg',
+              type: 'img'
+            },
+            {
+              src: 'obed_bufet/3.3-history_obedbufet-app_desktop.jpg',
+              preloader:
+                'obed_bufet/preloader-3.3-history_obedbufet-app_desktop.jpg',
+              type: 'img'
+            }
+          ],
+          backgroundColor: '#FED67D'
+        }
+      }
+    ]
+  },
+
   /* ENCORE FITNESS DESKTOP CASE */
   {
     description: {
@@ -325,131 +450,6 @@ export const casesDataDesktop = [
     ]
   },
 
-  /* OBED BUFET DESKTOP CASE */
-  {
-    description: {
-      type: 'приложение',
-      name: 'ОбедБуфет'
-    },
-    slides: [
-      {
-        type: TemplatesNames.PictureDesktop,
-        data: {
-          image: {
-            src: 'obed_bufet/cover_obedbufet_desktop_fullslide.jpg',
-            preloader:
-              'obed_bufet/preloader-cover_obedbufet_desktop_fullslide.jpg'
-          }
-        }
-      },
-      {
-        type: TemplatesNames.ArticleWithPhoneDesktop,
-        duration: 12000,
-        data: {
-          title: 'Дружелюбная доставка домашней еды',
-          description: [
-            `Заказ еды — простое и${NON_BREAKING_SPACE}понятное действие. Таким мы${NON_BREAKING_SPACE}сделали интерфейс этого приложения. Mинимум рекламы, позитивные цвета и${NON_BREAKING_SPACE}формы, забавные персонажи, легкий тон коммуникации и${NON_BREAKING_SPACE}простота в${NON_BREAKING_SPACE}использовании.`
-          ],
-          image: {
-            src: 'obed_bufet/0-location_obedbufet-app_desktop.jpg',
-            preloader:
-              'obed_bufet/preloader-1.1-video1_obedbufet-app_desktop.jpg'
-          }
-        }
-      },
-      {
-        type: TemplatesNames.PhonesDesktop,
-        duration: 13000,
-        data: {
-          screens: [
-            {
-              src: 'obed_bufet/1.1-video1_obedbufet-app_desktop.mp4',
-              preloader:
-                'obed_bufet/preloader-1.1-video1_obedbufet-app_desktop.jpg',
-              type: 'video'
-            },
-            {
-              src: 'obed_bufet/1.2-main_obedbufet-app_desktop.jpg',
-              preloader:
-                'obed_bufet/preloader-1.2-main_obedbufet-app_desktop.jpg',
-              type: 'img'
-            },
-            {
-              src: 'obed_bufet/1.3-catalog_obedbufet-app_desktop.jpg',
-              preloader:
-                'obed_bufet/preloader-1.3-catalog_obedbufet-app_desktop.jpg',
-              type: 'img'
-            }
-          ],
-          backgroundColor: '#FED67D'
-        }
-      },
-      {
-        type: TemplatesNames.PictureDesktop,
-        data: {
-          image: {
-            src: 'obed_bufet/7-rest_obedbufet_desktop-fullscreen.jpg',
-            preloader:
-              'obed_bufet/preloader-7-rest_obedbufet_desktop-fullscreen.jpg'
-          }
-        }
-      },
-      {
-        type: TemplatesNames.PhonesDesktop,
-        duration: 13000,
-        data: {
-          screens: [
-            {
-              src: 'obed_bufet/2.1-video2_obedbufet-app_desktop.mp4',
-              preloader:
-                'obed_bufet/preloader-2.1-video2_obedbufet-app_desktop.jpg',
-              type: 'video'
-            },
-            {
-              src: 'obed_bufet/2.2-product_obedbufet-app_desktop.jpg',
-              preloader:
-                'obed_bufet/preloader-2.2-product_obedbufet-app_desktop.jpg',
-              type: 'img'
-            },
-            {
-              src: 'obed_bufet/2.3-order_obedbufet-app_desktop.jpg',
-              preloader:
-                'obed_bufet/preloader-2.3-order_obedbufet-app_desktop.jpg',
-              type: 'img'
-            }
-          ],
-          backgroundColor: '#FED67D'
-        }
-      },
-      {
-        type: TemplatesNames.PhonesDesktop,
-        data: {
-          screens: [
-            {
-              src: 'obed_bufet/3.1-profile_obedbufet-app_desktop.jpg',
-              preloader:
-                'obed_bufet/preloader-3.1-profile_obedbufet-app_desktop.jpg',
-              type: 'img'
-            },
-            {
-              src: 'obed_bufet/3.2-address_obedbufet-app_desktop.jpg',
-              preloader:
-                'obed_bufet/preloader-3.2-address_obedbufet-app_desktop.jpg',
-              type: 'img'
-            },
-            {
-              src: 'obed_bufet/3.3-history_obedbufet-app_desktop.jpg',
-              preloader:
-                'obed_bufet/preloader-3.3-history_obedbufet-app_desktop.jpg',
-              type: 'img'
-            }
-          ],
-          backgroundColor: '#FED67D'
-        }
-      }
-    ]
-  },
-
   /* YANGO DESKTOP CASE */
   {
     description: {
@@ -514,7 +514,7 @@ export const casesDataDesktop = [
               type: 'img'
             }
           ],
-          backgroundColor: '#AAACB5'
+          backgroundColor: '#9093a8'
         }
       },
       {
@@ -538,7 +538,7 @@ export const casesDataDesktop = [
               type: 'img'
             }
           ],
-          backgroundColor: '#AAACB5'
+          backgroundColor: '#9093a8'
         }
       },
       {
@@ -561,7 +561,7 @@ export const casesDataDesktop = [
               type: 'img'
             }
           ],
-          backgroundColor: '#AAACB5'
+          backgroundColor: '#9093a8'
         }
       },
       {
@@ -581,7 +581,7 @@ export const casesDataDesktop = [
             src: 'yango/desktop/5_desktop.jpg',
             preloader: 'yango/desktop/preloader-5_desktop.jpg'
           },
-          backgroundColor: '#AAACB5'
+          backgroundColor: '#9093a8'
         }
       },
       {
@@ -602,7 +602,7 @@ export const casesDataDesktop = [
             src: 'yango/desktop/7_desktop.mp4',
             preloader: 'yango/desktop/preloader-7_desktop.jpg'
           },
-          backgroundColor: '#AAACB5'
+          backgroundColor: '#9093a8'
         }
       },
       {
@@ -625,7 +625,7 @@ export const casesDataDesktop = [
               type: 'img'
             }
           ],
-          backgroundColor: '#AAACB5'
+          backgroundColor: '#9093a8'
         }
       },
       {
