@@ -5,7 +5,6 @@ import PropTypes from 'prop-types'
 import Descriptor from '@site/features/descriptor'
 import Slider from '@site/features/slider'
 import TextBlock from '@site/ui/molecules/TextBlock'
-import { NON_BREAKING_SPACE } from '@site/constants'
 import AboutText from '../../atoms/AboutText'
 import styles from './about.css'
 import cx from 'classnames'
@@ -66,18 +65,11 @@ class About extends React.Component {
             </AboutText>
             <div className={styles.aboutTextBlocks}>
               <TextBlock header={t('text-block-header-skills')}>
-                {`Образовательные сервисы / E-commerce / Службы бронирования и${NON_BREAKING_SPACE}доставки / Инструменты автоматизации / Медиа`}
+                {t('text-block-text-skills')}
               </TextBlock>
 
               <TextBlock header={t('text-block-header-practices')}>
-                {'Исследования / Бренд-консалтинг ('}
-                <a
-                  className={styles.TextBlockLink}
-                  href="http://fullfort.agency/"
-                >
-                  Fullfort
-                </a>
-                {`) / Дизайн, проектирование / Веб +${NON_BREAKING_SPACE}мобильная разработка`}
+                {t('text-block-text-practices')}
               </TextBlock>
 
               <TextBlock
@@ -90,8 +82,7 @@ class About extends React.Component {
                   </React.Fragment>
                 }
               >
-                Веб: React, Node.js, PHP, Typescript / iOS: Swift / Android:
-                Kotlin, Java
+                {t('text-block-text-technologies')}
               </TextBlock>
             </div>
           </div>

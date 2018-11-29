@@ -1,5 +1,6 @@
 import React from 'react'
 import VisibilitySensor from 'react-visibility-sensor'
+import withNamespaces from '@site/lib/i18n/utils/withNamespaces'
 
 import ExternalLink from '@site/ui/molecules/ExternalLink'
 import Image from '@site/ui/atoms/Image'
@@ -16,7 +17,9 @@ class Footer extends React.Component {
   }
 
   render() {
+    const { t } = this.props
     const date = new Date()
+
     return (
       <footer id="footer">
         <div className={styles.footer}>
@@ -33,26 +36,27 @@ class Footer extends React.Component {
               }
             >
               <div className={cx(styles.content)}>
-                <Descriptor className={styles.caseNameOnly} name="Для связи" />
+                <Descriptor
+                  className={styles.caseNameOnly}
+                  name={t('contact-title')}
+                />
 
                 <div className={styles.textBlocks}>
-                  <TextBlock header="офис">
+                  <TextBlock header={t('text-block-address')}>
                     <ExternalLink href="https://goo.gl/maps/vud3y2m6k7m">
-                      {`Итальянская улица,${NON_BREAKING_SPACE}14,`}
+                      {t('text-block-text-address-link')}
                     </ExternalLink>
                     <br />
-                    мансарда №39
-                    <br />
-                    Санкт-Петербург, Россия, 191186
+                    {t('text-block-text-address')}
                   </TextBlock>
-                  <TextBlock header="контакты">
+                  <TextBlock header={t('text-block-phone')}>
                     <a className={styles.phoneLink} href="tel:+78129383779">
                       +7 812 938-37-79
                     </a>
                     <br />
                     <a href="mailto:hello@breadhead.ru">hello@breadhead.ru</a>
                   </TextBlock>
-                  <TextBlock header="мы в соцсетях">
+                  <TextBlock header={t('text-block-social')}>
                     <ExternalLink href="https://www.facebook.com/breadhead.ru">
                       Facebook
                     </ExternalLink>
@@ -89,4 +93,4 @@ class Footer extends React.Component {
   }
 }
 
-export default Footer
+export default withNamespaces(['common'])(Footer)

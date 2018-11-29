@@ -6,9 +6,26 @@
   "contact-btn": "связь",
   "more-btn": "ещё",
   "less-btn": "скрыть",
+  "clients-title": "Клиенты",
+
   "about-text1": "Breadhead проектирует и\u00a0выпускает сервисы и\u00a0приложения. Совершенствует деятельность компаний с\u00a0помощью технологий.",
   "about-text2": "Мы стремимся к\u00a0открытой рабочей среде, в\u00a0которой студия и\u00a0клиент —\u00a0одна команда. Верим, что такой подход меняет отношение к\u00a0делу и\u00a0помогает создавать полезные продукты.",
-  "text-block-header-skills": "экспертиза",
+
+  "text-block-header-skills": "компетентность",
   "text-block-header-practices": "практики",
-  "text-block-header-technologies": "технилогии"
+  "text-block-header-technologies": "технологии",
+
+  "text-block-text-skills": "Образовательные сервисы / E-commerce / Службы бронирования и\u00a0доставки / Инструменты автоматизации / Медиа",
+
+  "text-block-text-practices": "Исследования / Бренд-консалтинг (Fullfort) / Дизайн, проектирование / Веб +\u00a0мобильная разработка",
+
+  "text-block-text-technologies": "Веб: React, Node.js, PHP, Typescript / iOS: Swift / Android: Kotlin, Java",
+
+  "contact-title": "Для связи",
+  "text-block-address": "офис",
+  "text-block-phone": "контакты",
+  "text-block-social": "мы в соцсетях",
+
+  "text-block-text-address-link": "Итальянская улица,\u00a014,",
+  "text-block-text-address": "мансарда №39,\nСанкт-Петербург, Россия, 191186"
 }

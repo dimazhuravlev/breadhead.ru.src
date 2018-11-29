@@ -4,8 +4,8 @@ export const aboutDataDesktop = {
   description: {
     name: {
       ru: 'Студия',
-      en: 'Studio',
-    },
+      en: 'About'
+    }
   },
   slides: [
     {
