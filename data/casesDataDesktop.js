@@ -21,6 +21,7 @@ export const casesDataDesktop = [
         }
       },
       {
+        onlyFor: ['ru'],
         type: TemplatesNames.ArticleWithPhoneDesktop,
         duration: 12000,
         data: {

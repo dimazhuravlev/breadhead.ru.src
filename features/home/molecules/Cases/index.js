@@ -57,7 +57,7 @@ class Cases extends React.Component {
 
   render() {
     const { isShown, isVisible } = this.state
-    const { t } = this.props
+    const { t, casesDataDesktop, casesDataMobile } = this.props
 
     const allCasesDesktop = casesDataDesktop.map(caseData => (
       <Case key={caseData.description.name} {...caseData} />

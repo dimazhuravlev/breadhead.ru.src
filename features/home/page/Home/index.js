@@ -6,34 +6,36 @@ import Clients from '@site/features/clients'
 import About from '@site/features/about'
 import Footer from '@site/features/footer'
 import Cases from '@site/features/home/molecules/Cases'
-import { aboutDataDesktop } from '@site/data/aboutDataDesktop'
-import { aboutDataMobile } from '@site/data/aboutDataMobile'
-import { howWeWorkDataDesktop } from '@site/data/howWeWorkDataDesktop'
-import { howWeWorkDataMobile } from '@site/data/howWeWorkDataMobile'
 import styles from './home.css'
 import cx from 'classnames'
 
-const Home = () => (
+const Home = ({ howWeWorkDataDesktop, howWeWorkDataMobile, casesDataDesktop, casesDataMobile }) => (
   <main>
     <Header />
+
     <Intro />
-    <Cases />
-    <Clients name="clients" />
-    <About
-      name="about"
-      aboutDataDesktop={aboutDataDesktop}
-      aboutDataMobile={aboutDataMobile}
+
+    <Cases
+      casesDataMobile={casesDataMobile}
+      casesDataDesktop={casesDataDesktop}
     />
+
+    <Clients name="clients" />
+
+    <About name="about" />
+
     <Case
       name="howWeWork"
       className={cx(styles.howWeWork, styles.howWeWorkDesktop)}
       {...howWeWorkDataDesktop}
     />
+
     <Case
       name="howWeWork"
       className={cx(styles.howWeWork, styles.howWeWorkMobile)}
       {...howWeWorkDataMobile}
     />
+    
     <Footer />
   </main>
 )
