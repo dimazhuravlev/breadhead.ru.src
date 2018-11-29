@@ -1,10 +1,15 @@
 import React from 'react'
 
-import withLang from '@site/lib/i18n/withLang'
+import withPickByLang from '@site/lib/i18n/withPickByLang'
 import { clientsData } from '@site/data/clientsData'
 
-const Container = (Component) => withLang(
-  ({ lang, ...rest }) => <Component clientsData={clientsData[lang]} {...rest} />
+const Container = (Component) => withPickByLang(
+  ({ pickByLang, ...rest }) => (
+    <Component
+      clientsData={pickByLang(clientsData)}
+      {...rest}
+    />
+  )
 )
 
 export default Container
