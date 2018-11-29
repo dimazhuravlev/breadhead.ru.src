@@ -17,7 +17,9 @@
 
   "text-block-text-skills": "Образовательные сервисы / E-commerce / Службы бронирования и\u00a0доставки / Инструменты автоматизации / Медиа",
 
-  "text-block-text-practices": "Исследования / Бренд-консалтинг (Fullfort) / Дизайн, проектирование / Веб +\u00a0мобильная разработка",
+  "text-block-text-practices-first": "Исследования / Бренд-консалтинг (",
+  "text-block-text-practices-link": "Fullført",
+  "text-block-text-practices-second": ") / Дизайн, проектирование / Веб +\u00a0мобильная разработка",
 
   "text-block-text-technologies": "Веб: React, Node.js, PHP, Typescript / iOS: Swift / Android: Kotlin, Java",
 
