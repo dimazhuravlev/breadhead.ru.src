@@ -10,16 +10,48 @@ export const howWeWorkDataDesktop = {
     name: {
       ru: 'Как мы работаем',
       en: 'How we work'
-    },
-    links: [
-      {
-        icontype: 'globe',
-        href: 'https://medium.com/breadhead-stories'
-      }
-    ]
+    }
   },
   slides: [
     {
+      onlyFor: ['en'],
+      type: TemplatesNames.NavDesktop,
+      data: {
+        title: 'Workflow and communication principles. Coming soon',
+        links: [
+          {
+            text: 'Team and client ›',
+            isDisabled: true
+          },
+          {
+            text: 'Process and roles ›',
+            isDisabled: true
+          },
+          {
+            text: 'Report and payment ›',
+            isDisabled: true
+          },
+          {
+            text: 'Design ›',
+            isDisabled: true
+          },
+          {
+            text: 'Development ›',
+            isDisabled: true
+          },
+          {
+            text: 'Quality assurance ›',
+            isDisabled: true
+          },
+          {
+            text: 'How to start ›',
+            isDisabled: true
+          }
+        ]
+      }
+    },
+    {
+      onlyFor: ['ru'],
       type: TemplatesNames.NavDesktop,
       data: {
         title: `Принципы проектной работы и${NON_BREAKING_SPACE}коммуникации Breadhead`,
@@ -57,6 +89,7 @@ export const howWeWorkDataDesktop = {
     },
 
     {
+      onlyFor: ['ru'],
       type: TemplatesNames.ArticleDesktop,
       id: 'team_clients',
       data: {
@@ -67,6 +100,7 @@ export const howWeWorkDataDesktop = {
       }
     },
     {
+      onlyFor: ['ru'],
       type: TemplatesNames.ArticleDesktop,
       data: {
         title: 'Команда и клиент\n→ Ответственность',
@@ -76,6 +110,7 @@ export const howWeWorkDataDesktop = {
       }
     },
     {
+      onlyFor: ['ru'],
       type: TemplatesNames.ArticleDesktop,
       data: {
         title: 'Команда и клиент\n→ Скорость решений',
@@ -85,6 +120,7 @@ export const howWeWorkDataDesktop = {
       }
     },
     {
+      onlyFor: ['ru'],
       type: TemplatesNames.ArticleDesktop,
       id: 'processes_roles',
       data: {
@@ -95,6 +131,7 @@ export const howWeWorkDataDesktop = {
       }
     },
     {
+      onlyFor: ['ru'],
       type: TemplatesNames.ArticleDesktop,
       data: {
         title: 'Процесс и роли\n→ Спринты',
@@ -104,6 +141,7 @@ export const howWeWorkDataDesktop = {
       }
     },
     {
+      onlyFor: ['ru'],
       type: TemplatesNames.ArticleDesktop,
       data: {
         title: 'Процесс и роли\n→ Специалисты',
@@ -114,6 +152,7 @@ export const howWeWorkDataDesktop = {
     },
 
     {
+      onlyFor: ['ru'],
       type: TemplatesNames.ArticleDesktop,
       id: 'reports_money',
       data: {
@@ -124,6 +163,7 @@ export const howWeWorkDataDesktop = {
       }
     },
     {
+      onlyFor: ['ru'],
       type: TemplatesNames.ArticleDesktop,
       data: {
         title: 'Отчёты и деньги\n→ Учёт часов',
@@ -133,6 +173,7 @@ export const howWeWorkDataDesktop = {
       }
     },
     {
+      onlyFor: ['ru'],
       type: TemplatesNames.ArticleDesktop,
       data: {
         title: 'Отчёты и деньги\n→ Оценка',

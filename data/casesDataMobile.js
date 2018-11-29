@@ -5,7 +5,10 @@ export const casesDataMobile = [
   /* FASTER MOBILE CASE */
   {
     description: {
-      type: 'веб-сервис',
+      type: {
+        ru: 'веб-сервис',
+        en: 'web application'
+      },
       name: 'Faster'
     },
     priority: true,
@@ -22,6 +25,7 @@ export const casesDataMobile = [
         }
       },
       {
+        onlyFor: ['ru'],
         type: TemplatesNames.ArticleMobile,
         duration: 12000,
         data: {
@@ -115,7 +119,10 @@ export const casesDataMobile = [
   /* YANGO MOBILE CASE */
   {
     description: {
-      type: 'сайт + приложение',
+      type: {
+        ru: 'приложение и сайт',
+        en: 'app and website'
+      },
       name: 'Yango'
     },
     slides: [
@@ -129,6 +136,7 @@ export const casesDataMobile = [
         }
       },
       {
+        onlyFor: ['ru'],
         type: TemplatesNames.ArticleMobile,
         duration: 12000,
         data: {
@@ -280,7 +288,10 @@ export const casesDataMobile = [
   /* ENCORE FITNESS MOBILE CASE */
   {
     description: {
-      type: 'сайт',
+      type: {
+        ru: 'сайт',
+        en: 'website'
+      },
       name: 'Encore Fitness'
     },
     slides: [
@@ -295,6 +306,7 @@ export const casesDataMobile = [
         }
       },
       {
+        onlyFor: ['ru'],
         type: TemplatesNames.ArticleMobile,
         duration: 12000,
         data: {
@@ -429,8 +441,14 @@ export const casesDataMobile = [
   /* OBED BUFET MOBILE CASE */
   {
     description: {
-      type: 'ios + android',
-      name: 'ОбедБуфет'
+      type: {
+        ru: 'приложение',
+        en: 'mobile app'
+      },
+      name: {
+        ru: 'ОбедБуфет',
+        en: 'ObedBufet'
+      }
     },
     slides: [
       {
@@ -445,6 +463,7 @@ export const casesDataMobile = [
         }
       },
       {
+        onlyFor: ['ru'],
         type: TemplatesNames.ArticleMobile,
         duration: 12000,
         data: {

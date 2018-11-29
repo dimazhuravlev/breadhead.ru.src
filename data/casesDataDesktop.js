@@ -5,7 +5,10 @@ export const casesDataDesktop = [
   /* FASTER DESKTOP CASE */
   {
     description: {
-      type: 'веб-сервис',
+      type: {
+        ru: 'веб-сервис',
+        en: 'web application'
+      },
       name: 'Faster'
     },
     priority: true,
@@ -153,7 +156,10 @@ export const casesDataDesktop = [
   /* YANGO DESKTOP CASE */
   {
     description: {
-      type: 'приложение и сайт',
+      type: {
+        ru: 'приложение и сайт',
+        en: 'app and website'
+      },
       name: 'Yango',
       links: [
         {
@@ -173,6 +179,7 @@ export const casesDataDesktop = [
         }
       },
       {
+        onlyFor: ['ru'],
         type: TemplatesNames.ArticleWithPhoneDesktop,
         duration: 12000,
         data: {
@@ -352,7 +359,10 @@ export const casesDataDesktop = [
   /* ENCORE FITNESS DESKTOP CASE */
   {
     description: {
-      type: 'сайт',
+      type: {
+        ru: 'сайт',
+        en: 'website'
+      },
       name: 'Encore Fitness',
       links: [
         {
@@ -378,6 +388,7 @@ export const casesDataDesktop = [
         }
       },
       {
+        onlyFor: ['ru'],
         type: TemplatesNames.ArticleDesktop,
         duration: 12000,
         data: {
@@ -528,8 +539,14 @@ export const casesDataDesktop = [
   /* OBED BUFET DESKTOP CASE */
   {
     description: {
-      type: 'приложение',
-      name: 'ОбедБуфет'
+      type: {
+        ru: 'приложение',
+        en: 'mobile app'
+      },
+      name: {
+        ru: 'ОбедБуфет',
+        en: 'ObedBufet'
+      }
     },
     slides: [
       {
@@ -543,6 +560,7 @@ export const casesDataDesktop = [
         }
       },
       {
+        onlyFor: ['ru'],
         type: TemplatesNames.ArticleWithPhoneDesktop,
         duration: 12000,
         data: {
