@@ -8,7 +8,7 @@ const targetImages = ['static/img/**/*.{jpg,png}', '!static/img/**/*-compress.{j
 gulp.task('images', () =>
   gulp.src(targetImages)
     .pipe(imagemin())
-    .pipe(imageResize({ percentage: 66 }))
+    .pipe(imageResize({ percentage: 66, imageMagick: true }))
     .pipe(rename({ suffix: '-compress' }))
     .pipe(gulp.dest('static/img/'))
 )
