@@ -6,9 +6,9 @@ import { I18nextProvider } from 'react-i18next'
 
 import Sprite from '@site/ui/atoms/icons/Sprite'
 
-import config from '../config'
-import i18n from '../i18n'
-import languagePathCorrection from '../lib/lngPathCorrection'
+import config from '../lib/i18n/config'
+import i18n from '../lib/i18n/i18n'
+import languagePathCorrection from '../lib/i18n/utils/lngPathCorrection'
 
 /*
   We need to perform clientside validation of
