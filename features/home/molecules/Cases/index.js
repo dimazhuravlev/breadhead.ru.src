@@ -6,8 +6,6 @@ import { Desktop, Mobile, Any } from '@site/lib/responsive'
 import Button from '@site/ui/molecules/Button'
 import { PlusIcon } from '@site/ui/atoms/icons'
 import { MinusIcon } from '@site/ui/atoms/icons'
-import { casesDataDesktop } from '@site/data/casesDataDesktop'
-import { casesDataMobile } from '@site/data/casesDataMobile'
 
 import styles from './cases.css'
 import cx from 'classnames'
@@ -56,6 +54,7 @@ class Cases extends React.Component {
 
   render() {
     const { isShown, isVisible } = this.state
+    const { casesDataDesktop, casesDataMobile } = this.props
 
     const allCasesDesktop = casesDataDesktop.map(caseData => (
       <Case key={caseData.description.name} {...caseData} />

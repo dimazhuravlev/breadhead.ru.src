@@ -9,23 +9,33 @@ import Cases from '@site/features/home/molecules/Cases'
 import styles from './home.css'
 import cx from 'classnames'
 
-const Home = ({ howWeWorkDataDesktop, howWeWorkDataMobile }) => (
+const Home = ({ howWeWorkDataDesktop, howWeWorkDataMobile, casesDataDesktop, casesDataMobile }) => (
   <main>
     <Header />
+
     <Intro />
-    <Cases />
+
+    <Cases
+      casesDataMobile={casesDataMobile}
+      casesDataDesktop={casesDataDesktop}
+    />
+
     <Clients name="clients" />
+
     <About name="about" />
+
     <Case
       name="howWeWork"
       className={cx(styles.howWeWork, styles.howWeWorkDesktop)}
       {...howWeWorkDataDesktop}
     />
+
     <Case
       name="howWeWork"
       className={cx(styles.howWeWork, styles.howWeWorkMobile)}
       {...howWeWorkDataMobile}
     />
+    
     <Footer />
   </main>
 )
