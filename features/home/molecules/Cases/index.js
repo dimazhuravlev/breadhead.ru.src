@@ -2,6 +2,7 @@ import React from 'react'
 import { scroller } from 'react-scroll'
 import Case from '@site/features/case'
 import VisibilitySensor from 'react-visibility-sensor'
+import withNamespaces from '@site/lib/i18n/utils/withNamespaces'
 import { Desktop, Mobile, Any } from '@site/lib/responsive'
 import Button from '@site/ui/molecules/Button'
 import { PlusIcon } from '@site/ui/atoms/icons'
@@ -56,6 +57,7 @@ class Cases extends React.Component {
 
   render() {
     const { isShown, isVisible } = this.state
+    const { t } = this.props
 
     const allCasesDesktop = casesDataDesktop.map(caseData => (
       <Case key={caseData.description.name} {...caseData} />
@@ -103,7 +105,7 @@ class Cases extends React.Component {
               )}
               icon={isShown ? <MinusIcon /> : <PlusIcon />}
             >
-              {isShown ? 'скрыть' : 'ещё'}
+              {isShown ? t('less-btn') : t('more-btn')}
             </Button>
           </Any>
         </VisibilitySensor>
@@ -112,4 +114,4 @@ class Cases extends React.Component {
   }
 }
 
-export default Cases
+export default withNamespaces(['common'])(Cases)

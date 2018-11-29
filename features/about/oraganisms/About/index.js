@@ -1,4 +1,5 @@
 import React from 'react'
+import withNamespaces from '@site/lib/i18n/utils/withNamespaces'
 import VisibilitySensor from 'react-visibility-sensor'
 import PropTypes from 'prop-types'
 import Descriptor from '@site/features/descriptor'
@@ -19,7 +20,7 @@ class About extends React.Component {
   }
 
   render() {
-    const { aboutDataDesktop, aboutDataMobile, name } = this.props
+    const { aboutDataDesktop, aboutDataMobile, name, t } = this.props
     const { isVisible } = this.state
     return (
       <VisibilitySensor
@@ -45,9 +46,7 @@ class About extends React.Component {
             />
           </div>
           <div className={styles.aboutContent}>
-            <AboutText>
-              {`Breadhead проектирует и${NON_BREAKING_SPACE}выпускает сервисы и${NON_BREAKING_SPACE}приложения. Совершенствует деятельность компаний с${NON_BREAKING_SPACE}помощью технологий.`}
-            </AboutText>
+            <AboutText>{t('about-text1')}</AboutText>
             {isVisible ? (
               <>
                 <Slider
@@ -63,18 +62,14 @@ class About extends React.Component {
               <div className={styles.placeholder} />
             )}
             <AboutText>
-              <React.Fragment>
-                {`Мы стремимся к${NON_BREAKING_SPACE}открытой рабочей среде, в${NON_BREAKING_SPACE}которой студия
-          и${NON_BREAKING_SPACE}клиент —${NON_BREAKING_SPACE}одна команда. Верим, что такой подход меняет отношение к${NON_BREAKING_SPACE}делу и${NON_BREAKING_SPACE}помогает создавать полезные
-          продукты.`}
-              </React.Fragment>
+              <React.Fragment>{t('about-text2')}</React.Fragment>
             </AboutText>
             <div className={styles.aboutTextBlocks}>
-              <TextBlock header="экспертиза">
+              <TextBlock header={t('text-block-header-skills')}>
                 {`Образовательные сервисы / E-commerce / Службы бронирования и${NON_BREAKING_SPACE}доставки / Инструменты автоматизации / Медиа`}
               </TextBlock>
 
-              <TextBlock header="практики">
+              <TextBlock header={t('text-block-header-practices')}>
                 {'Исследования / Бренд-консалтинг ('}
                 <a
                   className={styles.TextBlockLink}
@@ -86,7 +81,7 @@ class About extends React.Component {
               </TextBlock>
 
               <TextBlock
-                header="технологии"
+                header={t('text-block-header-technologies')}
                 icons={
                   <React.Fragment>
                     <img src="static/img/react.png" width="36" height="35" />
@@ -112,4 +107,4 @@ About.propTypes = {
   name: PropTypes.string
 }
 
-export default About
+export default withNamespaces(['common'])(About)
