@@ -1,23 +1,16 @@
 import React from 'react'
+import i18n from '@site/i18n'
 import styles from './buttonEng.css'
 
 class ButtonEng extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = { language: 'en' }
-    this.handleClick = this.handleClick.bind(this)
-  }
-
   handleClick() {
-    this.setState(state => ({
-      language: state.language === 'ru' ? 'en' : 'ru'
-    }))
+    i18n.changeLanguage(i18n.language.startsWith('ru') ? 'en' : 'ru')
   }
 
   render() {
     return (
       <button onClick={this.handleClick} className={styles.button}>
-        {this.state.language}
+        {i18n.language}
       </button>
     )
   }

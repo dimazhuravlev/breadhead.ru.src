@@ -13,26 +13,12 @@
   "env": {
     "development": {
       "presets": [
-        [
-          "next/babel",
-          {
-            "preset-env": {
-              "useBuiltIns": "usage"
-            }
-          }
-        ]
+        [ "next/babel" ]
       ]
     },
     "production": {
       "presets": [
-        [
-          "next/babel",
-          {
-            "preset-env": {
-              "useBuiltIns": "usage"
-            }
-          }
-        ]
+        [ "next/babel" ]
       ]
     },
     "test": {

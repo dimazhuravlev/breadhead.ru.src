@@ -2,14 +2,15 @@ import React from 'react'
 import withScrollOnClick from '@site/features/withScrollOnClick'
 import NavLink from './atoms/navigationLink'
 import styles from './navigation.css'
+import withNamespaces from '@site/lib/withNamespaces'
 
 const ScrollLink = withScrollOnClick(NavLink)
 
-const Navigation = () => (
+const Navigation = ({ t }) => (
   <nav>
     <ul className={styles.navigation}>
       <li>
-        <ScrollLink targetscroll="cases">опыт</ScrollLink>
+        <ScrollLink targetscroll="cases">{t('experience')}</ScrollLink>
       </li>
       <li>
         <ScrollLink targetscroll="clients">студия</ScrollLink>
@@ -21,4 +22,4 @@ const Navigation = () => (
   </nav>
 )
 
-export default Navigation
+export default withNamespaces(['common'])(Navigation)
