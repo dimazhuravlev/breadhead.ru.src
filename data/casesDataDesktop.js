@@ -149,25 +149,20 @@ export const casesDataDesktop = [
     ]
   },
 
-  /* YANGO DESKTOP CASE */
+  /* OBED BUFET DESKTOP CASE */
   {
     description: {
-      type: 'приложение и сайт',
-      name: 'Yango',
-      links: [
-        {
-          icontype: 'globe',
-          href: 'https://yango.pro'
-        }
-      ]
+      type: 'приложение',
+      name: 'ОбедБуфет'
     },
     slides: [
       {
         type: TemplatesNames.PictureDesktop,
         data: {
           image: {
-            src: 'yango/desktop/cover_desktop_fullslide.jpg',
-            preloader: 'yango/desktop/preloader-cover_desktop_fullslide.jpg'
+            src: 'obed_bufet/cover_obedbufet_desktop_fullslide.jpg',
+            preloader:
+              'obed_bufet/preloader-cover_obedbufet_desktop_fullslide.jpg'
           }
         }
       },
@@ -175,174 +170,105 @@ export const casesDataDesktop = [
         type: TemplatesNames.ArticleWithPhoneDesktop,
         duration: 12000,
         data: {
-          title: 'Инвестиции через мобильное приложение',
+          title: 'Дружелюбная доставка домашней еды',
           description: [
-            `Yango — сервис для инвестирования в${NON_BREAKING_SPACE}надежные компании. С${NON_BREAKING_SPACE}помощью приложения можно купить облигации Сбербанка, МТС или РЖД и${NON_BREAKING_SPACE}получить доход выше, чем у${NON_BREAKING_SPACE}обычных вкладов. Мы сделали редизайн приложения и${NON_BREAKING_SPACE}запустили первую версию промо-сайта.`
-          ],
-          links: [
-            {
-              icontype: 'globe',
-              href: 'https://yango.pro',
-              text: 'yango.pro'
-            }
+            `Заказ еды — простое и${NON_BREAKING_SPACE}понятное действие. Таким мы${NON_BREAKING_SPACE}сделали интерфейс этого приложения. Mинимум рекламы, позитивные цвета и${NON_BREAKING_SPACE}формы, забавные персонажи, легкий тон коммуникации и${NON_BREAKING_SPACE}простота в${NON_BREAKING_SPACE}использовании.`
           ],
           image: {
-            src: 'yango/desktop/0_desktop.jpg',
-            preloader: 'yango/desktop/preloader-0_desktop.jpg'
+            src: 'obed_bufet/0-location_obedbufet-app_desktop.jpg',
+            preloader:
+              'obed_bufet/preloader-1.1-video1_obedbufet-app_desktop.jpg'
           }
         }
       },
       {
         type: TemplatesNames.PhonesDesktop,
-        duration: 12000,
+        duration: 13000,
         data: {
           screens: [
             {
-              src: 'yango/desktop/1.2_desktop.mp4',
-              preloader: 'yango/desktop/preloader-1.2_desktop.jpg',
+              src: 'obed_bufet/1.1-video1_obedbufet-app_desktop.mp4',
+              preloader:
+                'obed_bufet/preloader-1.1-video1_obedbufet-app_desktop.jpg',
               type: 'video'
             },
             {
-              src: 'yango/desktop/1.1_desktop.jpg',
-              preloader: 'yango/desktop/preloader-1.1_desktop.jpg',
+              src: 'obed_bufet/1.2-main_obedbufet-app_desktop.jpg',
+              preloader:
+                'obed_bufet/preloader-1.2-main_obedbufet-app_desktop.jpg',
               type: 'img'
             },
             {
-              src: 'yango/desktop/1.3_desktop.jpg',
-              preloader: 'yango/desktop/preloader-1.3_desktop.jpg',
+              src: 'obed_bufet/1.3-catalog_obedbufet-app_desktop.jpg',
+              preloader:
+                'obed_bufet/preloader-1.3-catalog_obedbufet-app_desktop.jpg',
               type: 'img'
             }
           ],
-          backgroundColor: '#AAACB5'
-        }
-      },
-      {
-        type: TemplatesNames.PhonesDesktop,
-        duration: 9000,
-        data: {
-          screens: [
-            {
-              src: 'yango/desktop/2.2_desktop.mp4',
-              preloader: 'yango/desktop/preloader-2.2_desktop.jpg',
-              type: 'video'
-            },
-            {
-              src: 'yango/desktop/2.1_desktop.jpg',
-              preloader: 'yango/desktop/preloader-2.1_desktop.jpg',
-              type: 'img'
-            },
-            {
-              src: 'yango/desktop/2.3_desktop.jpg',
-              preloader: 'yango/desktop/preloader-2.3_desktop.jpg',
-              type: 'img'
-            }
-          ],
-          backgroundColor: '#AAACB5'
-        }
-      },
-      {
-        type: TemplatesNames.PhonesDesktop,
-        data: {
-          screens: [
-            {
-              src: 'yango/desktop/3.1_desktop.jpg',
-              preloader: 'yango/desktop/preloader-3.1_desktop.jpg',
-              type: 'img'
-            },
-            {
-              src: 'yango/desktop/3.2_desktop.jpg',
-              preloader: 'yango/desktop/preloader-3.2_desktop.jpg',
-              type: 'img'
-            },
-            {
-              src: 'yango/desktop/3.3_desktop.jpg',
-              preloader: 'yango/desktop/preloader-3.3_desktop.jpg',
-              type: 'img'
-            }
-          ],
-          backgroundColor: '#AAACB5'
-        }
-      },
-      {
-        type: TemplatesNames.VideoDesktop,
-        duration: 11000,
-        data: {
-          image: {
-            src: 'yango/desktop/4_desktop_fullslide.mp4',
-            preloader: 'yango/desktop/preloader-4_desktop_fullslide.jpg'
-          }
-        }
-      },
-      {
-        type: TemplatesNames.FramePictDesktop,
-        data: {
-          image: {
-            src: 'yango/desktop/5_desktop.jpg',
-            preloader: 'yango/desktop/preloader-5_desktop.jpg'
-          },
-          backgroundColor: '#AAACB5'
-        }
-      },
-      {
-        type: TemplatesNames.FramePictDesktop,
-        data: {
-          image: {
-            src: 'yango/desktop/6_desktop.jpg',
-            preloader: 'yango/desktop/preloader-6_desktop.jpg'
-          },
-          backgroundColor: '#AAACB5'
-        }
-      },
-      {
-        type: TemplatesNames.FrameVideoDesktop,
-        duration: 17000,
-        data: {
-          image: {
-            src: 'yango/desktop/7_desktop.mp4',
-            preloader: 'yango/desktop/preloader-7_desktop.jpg'
-          },
-          backgroundColor: '#AAACB5'
-        }
-      },
-      {
-        type: TemplatesNames.PhonesDesktop,
-        data: {
-          screens: [
-            {
-              src: 'yango/desktop/8.1_desktop.jpg',
-              preloader: 'yango/desktop/preloader-8.1_desktop.jpg',
-              type: 'img'
-            },
-            {
-              src: 'yango/desktop/8.2_desktop.jpg',
-              preloader: 'yango/desktop/preloader-8.2_desktop.jpg',
-              type: 'img'
-            },
-            {
-              src: 'yango/desktop/8.3_desktop.jpg',
-              preloader: 'yango/desktop/preloader-8.3_desktop.jpg',
-              type: 'img'
-            }
-          ],
-          backgroundColor: '#AAACB5'
+          backgroundColor: '#FED67D'
         }
       },
       {
         type: TemplatesNames.PictureDesktop,
         data: {
           image: {
-            src: 'yango/desktop/9_desktop_fullslide.jpg',
-            preloader: 'yango/desktop/preloader-9_desktop_fullslide.jpg'
+            src: 'obed_bufet/7-rest_obedbufet_desktop-fullscreen.jpg',
+            preloader:
+              'obed_bufet/preloader-7-rest_obedbufet_desktop-fullscreen.jpg'
           }
         }
       },
       {
-        type: TemplatesNames.PictureDesktop,
+        type: TemplatesNames.PhonesDesktop,
+        duration: 13000,
         data: {
-          image: {
-            src: 'yango/desktop/10_desktop_fullslide.jpg',
-            preloader: 'yango/desktop/preloader-10_desktop_fullslide.jpg'
-          }
+          screens: [
+            {
+              src: 'obed_bufet/2.1-video2_obedbufet-app_desktop.mp4',
+              preloader:
+                'obed_bufet/preloader-2.1-video2_obedbufet-app_desktop.jpg',
+              type: 'video'
+            },
+            {
+              src: 'obed_bufet/2.2-product_obedbufet-app_desktop.jpg',
+              preloader:
+                'obed_bufet/preloader-2.2-product_obedbufet-app_desktop.jpg',
+              type: 'img'
+            },
+            {
+              src: 'obed_bufet/2.3-order_obedbufet-app_desktop.jpg',
+              preloader:
+                'obed_bufet/preloader-2.3-order_obedbufet-app_desktop.jpg',
+              type: 'img'
+            }
+          ],
+          backgroundColor: '#FED67D'
+        }
+      },
+      {
+        type: TemplatesNames.PhonesDesktop,
+        data: {
+          screens: [
+            {
+              src: 'obed_bufet/3.1-profile_obedbufet-app_desktop.jpg',
+              preloader:
+                'obed_bufet/preloader-3.1-profile_obedbufet-app_desktop.jpg',
+              type: 'img'
+            },
+            {
+              src: 'obed_bufet/3.2-address_obedbufet-app_desktop.jpg',
+              preloader:
+                'obed_bufet/preloader-3.2-address_obedbufet-app_desktop.jpg',
+              type: 'img'
+            },
+            {
+              src: 'obed_bufet/3.3-history_obedbufet-app_desktop.jpg',
+              preloader:
+                'obed_bufet/preloader-3.3-history_obedbufet-app_desktop.jpg',
+              type: 'img'
+            }
+          ],
+          backgroundColor: '#FED67D'
         }
       }
     ]
@@ -382,7 +308,7 @@ export const casesDataDesktop = [
         data: {
           title: `Меняем представление о${NON_BREAKING_SPACE}фитнес-клубах`,
           description: [
-            `Мы консультировали разработку концепции бренда (совместно с${NON_BREAKING_SPACE}<a target="_blank" rel = "noopener noreferrer" href="http://fullfort.agency/">Fullfort</a>) и${NON_BREAKING_SPACE}сделали сайт, который стал продолжением уникального клиентского опыта в${NON_BREAKING_SPACE}клубах Encore Fitness —${NON_BREAKING_SPACE}сочетанием технологичности и${NON_BREAKING_SPACE}функциональности с${NON_BREAKING_SPACE}историей бренда и${NON_BREAKING_SPACE}вниманием к${NON_BREAKING_SPACE}деталям.`,
+            `Мы помогли разработать концепцию бренда (совместно с${NON_BREAKING_SPACE}<a target="_blank" rel = "noopener noreferrer" href="http://fullfort.agency/">Fullfort</a>) и${NON_BREAKING_SPACE}сделали сайт, который стал продолжением уникального клиентского опыта в${NON_BREAKING_SPACE}клубах Encore —${NON_BREAKING_SPACE}сочетанием технологичности, внимания к${NON_BREAKING_SPACE}деталям и${NON_BREAKING_SPACE}истории бренда.`,
             'Фото: Арсений Джабиев.'
           ],
           links: [
@@ -524,20 +450,25 @@ export const casesDataDesktop = [
     ]
   },
 
-  /* OBED BUFET DESKTOP CASE */
+  /* YANGO DESKTOP CASE */
   {
     description: {
-      type: 'приложение',
-      name: 'ОбедБуфет'
+      type: 'приложение и сайт',
+      name: 'Yango',
+      links: [
+        {
+          icontype: 'globe',
+          href: 'https://yango.pro'
+        }
+      ]
     },
     slides: [
       {
         type: TemplatesNames.PictureDesktop,
         data: {
           image: {
-            src: 'obed_bufet/cover_obedbufet_desktop_fullslide.jpg',
-            preloader:
-              'obed_bufet/preloader-cover_obedbufet_desktop_fullslide.jpg'
+            src: 'yango/desktop/cover_desktop_fullslide.jpg',
+            preloader: 'yango/desktop/preloader-cover_desktop_fullslide.jpg'
           }
         }
       },
@@ -545,105 +476,174 @@ export const casesDataDesktop = [
         type: TemplatesNames.ArticleWithPhoneDesktop,
         duration: 12000,
         data: {
-          title: 'Дружелюбная доставка домашней еды',
+          title: 'Инвестиции через мобильное приложение',
           description: [
-            `Заказ еды — простое и${NON_BREAKING_SPACE}понятное действие. Таким мы${NON_BREAKING_SPACE}сделали интерфейс этого приложения. Mинимум рекламы, позитивные цвета и${NON_BREAKING_SPACE}формы, забавные персонажи, легкий тон коммуникации и${NON_BREAKING_SPACE}простота в${NON_BREAKING_SPACE}использовании.`
+            `Yango — сервис для инвестирования в${NON_BREAKING_SPACE}надежные компании. С${NON_BREAKING_SPACE}помощью приложения можно купить облигации Сбербанка, МТС или РЖД и${NON_BREAKING_SPACE}получить доход выше, чем у${NON_BREAKING_SPACE}обычных вкладов. Мы сделали редизайн приложения и${NON_BREAKING_SPACE}запустили первую версию промо-сайта.`
+          ],
+          links: [
+            {
+              icontype: 'globe',
+              href: 'https://yango.pro',
+              text: 'yango.pro'
+            }
           ],
           image: {
-            src: 'obed_bufet/0-location_obedbufet-app_desktop.jpg',
-            preloader:
-              'obed_bufet/preloader-1.1-video1_obedbufet-app_desktop.jpg'
+            src: 'yango/desktop/0_desktop.jpg',
+            preloader: 'yango/desktop/preloader-0_desktop.jpg'
           }
         }
       },
       {
         type: TemplatesNames.PhonesDesktop,
-        duration: 13000,
+        duration: 12000,
         data: {
           screens: [
             {
-              src: 'obed_bufet/1.1-video1_obedbufet-app_desktop.mp4',
-              preloader:
-                'obed_bufet/preloader-1.1-video1_obedbufet-app_desktop.jpg',
+              src: 'yango/desktop/1.2_desktop.mp4',
+              preloader: 'yango/desktop/preloader-1.2_desktop.jpg',
               type: 'video'
             },
             {
-              src: 'obed_bufet/1.2-main_obedbufet-app_desktop.jpg',
-              preloader:
-                'obed_bufet/preloader-1.2-main_obedbufet-app_desktop.jpg',
+              src: 'yango/desktop/1.1_desktop.jpg',
+              preloader: 'yango/desktop/preloader-1.1_desktop.jpg',
               type: 'img'
             },
             {
-              src: 'obed_bufet/1.3-catalog_obedbufet-app_desktop.jpg',
-              preloader:
-                'obed_bufet/preloader-1.3-catalog_obedbufet-app_desktop.jpg',
+              src: 'yango/desktop/1.3_desktop.jpg',
+              preloader: 'yango/desktop/preloader-1.3_desktop.jpg',
               type: 'img'
             }
           ],
-          backgroundColor: '#FED67D'
+          backgroundColor: '#9093a8'
+        }
+      },
+      {
+        type: TemplatesNames.PhonesDesktop,
+        duration: 9000,
+        data: {
+          screens: [
+            {
+              src: 'yango/desktop/2.2_desktop.mp4',
+              preloader: 'yango/desktop/preloader-2.2_desktop.jpg',
+              type: 'video'
+            },
+            {
+              src: 'yango/desktop/2.1_desktop.jpg',
+              preloader: 'yango/desktop/preloader-2.1_desktop.jpg',
+              type: 'img'
+            },
+            {
+              src: 'yango/desktop/2.3_desktop.jpg',
+              preloader: 'yango/desktop/preloader-2.3_desktop.jpg',
+              type: 'img'
+            }
+          ],
+          backgroundColor: '#9093a8'
+        }
+      },
+      {
+        type: TemplatesNames.PhonesDesktop,
+        data: {
+          screens: [
+            {
+              src: 'yango/desktop/3.1_desktop.jpg',
+              preloader: 'yango/desktop/preloader-3.1_desktop.jpg',
+              type: 'img'
+            },
+            {
+              src: 'yango/desktop/3.2_desktop.jpg',
+              preloader: 'yango/desktop/preloader-3.2_desktop.jpg',
+              type: 'img'
+            },
+            {
+              src: 'yango/desktop/3.3_desktop.jpg',
+              preloader: 'yango/desktop/preloader-3.3_desktop.jpg',
+              type: 'img'
+            }
+          ],
+          backgroundColor: '#9093a8'
+        }
+      },
+      {
+        type: TemplatesNames.VideoDesktop,
+        duration: 11000,
+        data: {
+          image: {
+            src: 'yango/desktop/4_desktop_fullslide.mp4',
+            preloader: 'yango/desktop/preloader-4_desktop_fullslide.jpg'
+          }
+        }
+      },
+      {
+        type: TemplatesNames.FramePictDesktop,
+        data: {
+          image: {
+            src: 'yango/desktop/5_desktop.jpg',
+            preloader: 'yango/desktop/preloader-5_desktop.jpg'
+          },
+          backgroundColor: '#9093a8'
+        }
+      },
+      {
+        type: TemplatesNames.FramePictDesktop,
+        data: {
+          image: {
+            src: 'yango/desktop/6_desktop.jpg',
+            preloader: 'yango/desktop/preloader-6_desktop.jpg'
+          },
+          backgroundColor: '#AAACB5'
+        }
+      },
+      {
+        type: TemplatesNames.FrameVideoDesktop,
+        duration: 17000,
+        data: {
+          image: {
+            src: 'yango/desktop/7_desktop.mp4',
+            preloader: 'yango/desktop/preloader-7_desktop.jpg'
+          },
+          backgroundColor: '#9093a8'
+        }
+      },
+      {
+        type: TemplatesNames.PhonesDesktop,
+        data: {
+          screens: [
+            {
+              src: 'yango/desktop/8.1_desktop.jpg',
+              preloader: 'yango/desktop/preloader-8.1_desktop.jpg',
+              type: 'img'
+            },
+            {
+              src: 'yango/desktop/8.2_desktop.jpg',
+              preloader: 'yango/desktop/preloader-8.2_desktop.jpg',
+              type: 'img'
+            },
+            {
+              src: 'yango/desktop/8.3_desktop.jpg',
+              preloader: 'yango/desktop/preloader-8.3_desktop.jpg',
+              type: 'img'
+            }
+          ],
+          backgroundColor: '#9093a8'
         }
       },
       {
         type: TemplatesNames.PictureDesktop,
         data: {
           image: {
-            src: 'obed_bufet/7-rest_obedbufet_desktop-fullscreen.jpg',
-            preloader:
-              'obed_bufet/preloader-7-rest_obedbufet_desktop-fullscreen.jpg'
+            src: 'yango/desktop/9_desktop_fullslide.jpg',
+            preloader: 'yango/desktop/preloader-9_desktop_fullslide.jpg'
           }
         }
       },
       {
-        type: TemplatesNames.PhonesDesktop,
-        duration: 13000,
+        type: TemplatesNames.PictureDesktop,
         data: {
-          screens: [
-            {
-              src: 'obed_bufet/2.1-video2_obedbufet-app_desktop.mp4',
-              preloader:
-                'obed_bufet/preloader-2.1-video2_obedbufet-app_desktop.jpg',
-              type: 'video'
-            },
-            {
-              src: 'obed_bufet/2.2-product_obedbufet-app_desktop.jpg',
-              preloader:
-                'obed_bufet/preloader-2.2-product_obedbufet-app_desktop.jpg',
-              type: 'img'
-            },
-            {
-              src: 'obed_bufet/2.3-order_obedbufet-app_desktop.jpg',
-              preloader:
-                'obed_bufet/preloader-2.3-order_obedbufet-app_desktop.jpg',
-              type: 'img'
-            }
-          ],
-          backgroundColor: '#FED67D'
-        }
-      },
-      {
-        type: TemplatesNames.PhonesDesktop,
-        data: {
-          screens: [
-            {
-              src: 'obed_bufet/3.1-profile_obedbufet-app_desktop.jpg',
-              preloader:
-                'obed_bufet/preloader-3.1-profile_obedbufet-app_desktop.jpg',
-              type: 'img'
-            },
-            {
-              src: 'obed_bufet/3.2-address_obedbufet-app_desktop.jpg',
-              preloader:
-                'obed_bufet/preloader-3.2-address_obedbufet-app_desktop.jpg',
-              type: 'img'
-            },
-            {
-              src: 'obed_bufet/3.3-history_obedbufet-app_desktop.jpg',
-              preloader:
-                'obed_bufet/preloader-3.3-history_obedbufet-app_desktop.jpg',
-              type: 'img'
-            }
-          ],
-          backgroundColor: '#FED67D'
+          image: {
+            src: 'yango/desktop/10_desktop_fullslide.jpg',
+            preloader: 'yango/desktop/preloader-10_desktop_fullslide.jpg'
+          }
         }
       }
     ]
