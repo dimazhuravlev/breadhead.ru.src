@@ -17,21 +17,21 @@ const Container = Slider => {
         index: 0,
         slideComponents: (props.slides || []).map(
           item => templatesMap[item.type]
-        ),
+        )
       }
     }
 
     componentDidMount() {
       window.addEventListener('touchstart', this.touchStart)
       window.addEventListener('touchmove', this.preventTouch, {
-        passive: false,
+        passive: false
       })
     }
 
     componentWillUnmount() {
       window.removeEventListener('touchstart', this.touchStart)
       window.removeEventListener('touchmove', this.preventTouch, {
-        passive: false,
+        passive: false
       })
     }
 
@@ -73,7 +73,7 @@ const Container = Slider => {
       const { slides } = this.props
       const slideIndex = slides.findIndex(slide => slide.id === id)
       if (slideIndex !== -1) {
-        this.sliderRef.current.slickGoTo(slideIndex)
+        // this.sliderRef.current.slickGoTo(slideIndex)
       }
     }
 
@@ -86,8 +86,8 @@ const Container = Slider => {
 
       const isRightSide = xCoord - offsetWidth / 2 > 0
       isRightSide
-        ? this.sliderRef.current.slickNext()
-        : this.sliderRef.current.slickPrev()
+      // ? this.sliderRef.current.slickNext()
+      // : this.sliderRef.current.slickPrev()
     }
 
     sliderRef = React.createRef()
@@ -116,23 +116,14 @@ const Container = Slider => {
                     duration={slides[index].duration}
                     isVisible={isVisible && !down}
                     quantity={slides.length}
-                    onClick={
-                      // condition is used because current is null at first and doesnt got updated later if i put it to prop
-                      this.sliderRef.current
-                        ? this.sliderRef.current.slickGoTo
-                        : () => {}
-                    }
-                    onRest={
-                      this.sliderRef.current
-                        ? this.sliderRef.current.slickNext
-                        : () => {}
-                    }
+                    onClick={() => {}}
+                    onRest={() => {}}
                   />
                   <SliderAmount amount={slides.length} />
                   <Slider
-                    width={width}
-                    forwardRef={this.sliderRef}
-                    beforeChange={this.beforeChange}
+                  // width={width}
+                  // forwardRef={this.sliderRef}
+                  // beforeChange={this.beforeChange}
                   >
                     {slideComponents.map((SlideComponent, i) => (
                       <SlideComponent
@@ -156,7 +147,7 @@ const Container = Slider => {
 
 const mapSizesToProps = ({ width, height }) => ({
   width,
-  height,
+  height
 })
 
 export default compose(

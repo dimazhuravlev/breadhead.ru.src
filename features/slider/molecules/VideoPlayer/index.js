@@ -74,7 +74,7 @@ class VideoPlayer extends React.Component {
 VideoPlayer.propTypes = {
   src: PropTypes.string.isRequired,
   height: PropTypes.string.isRequired,
-  width: PropTypes.string.isRequired,
+  width: PropTypes.string.isRequired
 }
 
 export default VideoPlayer
