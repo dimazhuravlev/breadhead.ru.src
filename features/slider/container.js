@@ -40,6 +40,24 @@ const Container = Slider => {
       this.firstClientY = e.touches[0].clientY
     }
 
+    setIndex = i => {
+      const slidesCount = this.state.slideComponents.length
+      this.setState(() => {
+        const nextIndex = (i + slidesCount) % slidesCount
+        return { index: nextIndex }
+      })
+    }
+
+    prevSlide = () => {
+      const { index } = this.state
+      this.setIndex(index - 1)
+    }
+
+    nextSlide = () => {
+      const { index } = this.state
+      this.setIndex(index + 1)
+    }
+
     preventTouch(e) {
       const MIN_VALUE = 5 // threshold
 
@@ -59,7 +77,7 @@ const Container = Slider => {
       const { index } = this.state
 
       if (prevIndex !== index) {
-        this.setState({ index })
+        this.setIndex(index)
       }
     }
 
@@ -69,7 +87,7 @@ const Container = Slider => {
       const { slides } = this.props
       const slideIndex = slides.findIndex(slide => slide.id === id)
       if (slideIndex !== -1) {
-        this.setState({ index: slideIndex })
+        this.setIndex(slideIndex)
       }
     }
 
@@ -81,12 +99,12 @@ const Container = Slider => {
       const xCoord = e.clientX - offsetLeft
 
       const isRightSide = xCoord - offsetWidth / 2 > 0
-      this.setState(({ index }) => ({
-        index: isRightSide ? index + 1 : index - 1
-      }))
+      if (isRightSide) {
+        this.nextSlide()
+      } else {
+        this.prevSlide()
+      }
     }
-
-    sliderRef = React.createRef()
 
     render() {
       const { height, className, slides } = this.props
@@ -112,12 +130,8 @@ const Container = Slider => {
                     duration={slides[index].duration}
                     isVisible={isVisible && !down}
                     quantity={slides.length}
-                    onClick={i => this.setState({ index: i })}
-                    onRest={() => {
-                      this.setState(({ index }) => ({
-                        index: index + 1
-                      }))
-                    }}
+                    onClick={this.setIndex}
+                    onRest={this.nextSlide}
                   />
                   <SliderAmount amount={slides.length} />
                   <Slider index={index}>
