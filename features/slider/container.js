@@ -134,7 +134,7 @@ const Container = Slider => {
                     onRest={this.nextSlide}
                   />
                   <SliderAmount amount={slides.length} />
-                  <Slider index={index}>
+                  <Slider afterChange={this.setIndex} index={index}>
                     {slideComponents.map((SlideComponent, i) => (
                       <SlideComponent
                         onLinkClick={this.onLinkClick}

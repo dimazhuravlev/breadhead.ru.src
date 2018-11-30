@@ -6,7 +6,12 @@ import styles from './Slider.css'
 
 const getXState = (viewportWidth, index) => -(viewportWidth * index)
 
-const Slider = ({ children, threshold = 0.15, index: parentIndex = 0 }) => {
+const Slider = ({
+  children,
+  threshold = 0.15,
+  index: parentIndex = 0,
+  afterChange = () => {}
+}) => {
   const viewPortRef = useRef(null)
   const [handlers, { xDelta, down }] = useGesture()
   const { width: viewportWidth } = useComponentSize(viewPortRef)
@@ -18,6 +23,7 @@ const Slider = ({ children, threshold = 0.15, index: parentIndex = 0 }) => {
   useEffect(
     () => {
       setXState(getXState(viewportWidth, index))
+      afterChange(index)
     },
     [index]
   )
