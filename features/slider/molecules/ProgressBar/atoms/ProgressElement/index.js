@@ -9,7 +9,6 @@ const cx = cn.bind(styles)
 class ProgressElement extends React.Component {
   render() {
     const { active, duration, passed, delay, paused } = this.props;
-    console.log(this.props.element, this.props);
     return (
       <div className={cx('container', { passed, paused } ) }>
         { active && <div className={cx('progress')} style={{ 

@@ -31,23 +31,19 @@ class ProgressBar extends React.Component {
     return (
       <div className={styles.bar} onAnimationEnd={this.timerHandler}>
         {elements.map((element, i) => {
-          
-          const params = {
-            element: element,
-            passed: index > element,
-            active: index === element,
-          }  
-          
-          if (params.active) {
-            params.delay = delay
-            params.duration = slideDuration
-            params.paused = paused || !isVisible
-          }
+          const active = index === element;
+          const activeParams = active ? {
+            delay,
+            duration: slideDuration,
+            paused: paused || !isVisible,
+          } : {};
           
           return (
             <ProgressElement
               key={element}
-              {...params}
+              passed={index > element}
+              active={index === element}
+              {...activeParams}
             />
           )
         })}
