@@ -3,10 +3,10 @@ import PropTypes from 'prop-types'
 import { compose, onlyUpdateForKeys } from 'recompose'
 import { SLIDE_DURATION } from '@site/constants'
 import { range } from 'lodash'
-import TimeLine from '../../molecules/Bar/atoms/TimeLine'
-import styles from './bar.css'
+import ProgressBarSection from './atoms/ProgressElement'
+import styles from './progressBar.css'
 
-class Bar extends React.Component {
+class ProgressBar extends React.Component {
   constructor(props) {
     super(props)
     this.clickHandler = this.clickHandler.bind(this)
@@ -24,15 +24,16 @@ class Bar extends React.Component {
   }
   
   render() {
-    const { index, quantity, isVisible, duration, paused } = this.props
+    const { index, quantity, isVisible, duration, paused, delay } = this.props
     const timeLines = range(quantity)
     const slideDuration = duration > 0 ? duration : SLIDE_DURATION
     return (
       <div className={styles.bar} onAnimationEnd={this.timerHandler}>
         {timeLines.map((timeLine, i) => {
           return (
-            <TimeLine
+            <ProgressBarSection
               duration={slideDuration}
+              delay={delay}
               key={timeLine}
               active={index === timeLine}
               paused={paused || !isVisible}
@@ -46,17 +47,22 @@ class Bar extends React.Component {
   }
 }
 
-Bar.defautProps = {
+ProgressBar.defautProps = {
   duration: 0,
+  delay: 0,
+  paused: false,
+  changeSlide: () => {} 
+  
 }
 
-Bar.propTypes = {
+ProgressBar.propTypes = {
   index: PropTypes.number,
-  onRest: PropTypes.oneOfType([PropTypes.bool, PropTypes.func]),
+  changeSlide: PropTypes.func,
   quantity: PropTypes.number,
-  slideDuration: PropTypes.number,
+  duration: PropTypes.number,
+  delay: PropTypes.number
 }
 
 const BarHOC = compose(onlyUpdateForKeys(['index', 'isVisible', 'duration', 'paused']))
 
-export default BarHOC(Bar)
+export default BarHOC(ProgressBar)

@@ -7,7 +7,7 @@ import { templatesMap } from '@site/features/slider/molecules/Templates'
 import VisibilitySensor from 'react-visibility-sensor'
 import styles from './index.css'
 import SliderAmount from '@site/ui/molecules/SliderAmount'
-import Bar from './molecules/Bar'
+import ProgressBar from './molecules/ProgressBar'
 
 const Container = Slider => {
   return class extends React.PureComponent {
@@ -134,10 +134,11 @@ const Container = Slider => {
                   onClick={this.onSlideClick}
                   className={cx(styles.wrapper, className)}
                 >
-                  <Bar
+                  <ProgressBar
                     index={index}
                     duration={slides[index].duration}
                     isVisible={isVisible && !down}
+                    delay={500}
                     quantity={slides.length}
                     paused={paused}
                     changeSlide={this.changeSlide}

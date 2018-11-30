@@ -1,4 +1,4 @@
-.timeLine {
+.container {
   height: 2px;
   border-radius: 4px;
   display: flex;
@@ -13,7 +13,7 @@
   }
 }
   
-.progressLine {
+.progress {
   display: block;
   content: " ";
   position: absolute;
@@ -29,11 +29,11 @@
   will-change: transform;
 }
 
-.timeLine.passed {
+.passed {
   background-color: rgba(255, 255, 255, .5);
 }
   
-.timeLine.paused .progressLine {
+.paused .progress {
   animation-play-state: paused;
 }
 

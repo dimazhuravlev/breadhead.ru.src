@@ -1,16 +1,16 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import cn from 'classnames/bind'
-import styles from './timeLine.css'
+import styles from './progressElement.css'
 
 const cx = cn.bind(styles)
 
-class TimeLine extends React.Component {
+class ProgressElement extends React.Component {
   render() {
     const { active, duration, passed, delay, paused } = this.props
     return (
-      <div className={cx('timeLine', { passed, paused } ) }>
-        { active && <div className={cx('progressLine')} style={{ 
+      <div className={cx('container', { passed, paused } ) }>
+        { active && <div className={cx('progress')} style={{ 
           animationDuration: `${duration}ms`,
           animationDelay: `${delay}ms`,
         }} /> }
@@ -19,11 +19,11 @@ class TimeLine extends React.Component {
   }
 }
 
-TimeLine.propTypes = {
+ProgressElement.propTypes = {
   active: PropTypes.bool,
   passed: PropTypes.bool,
   duration: PropTypes.number,
   delay: PropTypes.number
 }
 
-export default TimeLine;
+export default ProgressElement;
