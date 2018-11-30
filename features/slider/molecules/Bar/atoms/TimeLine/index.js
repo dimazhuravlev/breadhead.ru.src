@@ -7,13 +7,13 @@ const cx = cn.bind(styles)
 
 class TimeLine extends React.Component {
   render() {
-    const { active, duration, passed, delay } = this.props
+    const { active, duration, passed, delay, paused } = this.props
     return (
-      <div className={cx('timeLine', {active, passed} ) }>
-        { active && <div style={{ 
+      <div className={cx('timeLine', { passed, paused } ) }>
+        { active && <div className={cx('progressLine')} style={{ 
           animationDuration: `${duration}ms`,
           animationDelay: `${delay}ms`,
-        }} className={cx('progressLine')} /> }
+        }} /> }
       </div>
     )
   }

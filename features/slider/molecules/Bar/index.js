@@ -24,7 +24,7 @@ class Bar extends React.Component {
   }
   
   render() {
-    const { index, changeSlide, quantity, isVisible, duration, paused } = this.props
+    const { index, quantity, isVisible, duration, paused } = this.props
     const timeLines = range(quantity)
     const slideDuration = duration > 0 ? duration : SLIDE_DURATION
     return (
@@ -35,7 +35,7 @@ class Bar extends React.Component {
               duration={slideDuration}
               key={timeLine}
               active={index === timeLine}
-              paused={paused}
+              paused={paused || !isVisible}
               passed={index > timeLine}
             />
           )
