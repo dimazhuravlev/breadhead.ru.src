@@ -666,5 +666,55 @@ export const casesDataDesktop = [
         }
       }
     ]
+  },
+
+  /*ONCOHELP DESKTOP CASE */
+  {
+    description: {
+      type: {
+        ru: 'веб-сервис',
+        en: 'web application'
+      },
+      name: {
+        ru: 'Просто спросить',
+        en: 'Just Ask'
+      }
+    },
+    slides: [
+      {
+        type: TemplatesNames.FramePictDesktop,
+        data: {
+          image: {
+            src: 'just_ask/desktop/1_oncohelp_preview_desktop.jpg',
+            preloader:
+              'just_ask/desktop/preloader-1_oncohelp_preview_desktop.jpg'
+          },
+          backgroundColor: '#3C54EE'
+        }
+      },
+      {
+        onlyFor: ['ru'],
+        type: TemplatesNames.ArticleWithPhoneDesktop,
+        duration: 12000,
+        data: {
+          title: `Бесплатные консультации с${NON_BREAKING_SPACE}лучшими онкологами`,
+          description: [
+            `В начале 2019 года «Фонд профилактики рака» и Breadhead запускают новый сервис помощи людям, столкнувшимся с${NON_BREAKING_SPACE}онкологией. Это справочная об${NON_BREAKING_SPACE}организации лечения и${NON_BREAKING_SPACE}система оценки качества работы медицинских служб.`
+          ],
+          links: [
+            {
+              icontype: 'globe',
+              href:
+                'https://nenaprasno.ru/fund/news-and-events/fond-profilaktiki-raka-pristupil-k-razrabotke-nezavisimoy-spravochnoy-sluzhby-v-onkologii/',
+              text: 'анонс на сайте фонда'
+            }
+          ],
+          image: {
+            src: 'just_ask/mobile/2_oncohelp_filling_mobile.jpg',
+            preloader: 'just_ask/mobile/preloader-2_oncohelp_filling_mobile.jpg'
+          }
+        }
+      }
+    ]
   }
 ]
