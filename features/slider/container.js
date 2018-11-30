@@ -63,17 +63,13 @@ const Container = Slider => {
       }
     }
 
-    beforeChange = (_, index) => {
-      this.setState(() => ({ index }))
-    }
-
     onLinkClick = (id, e) => {
       e.preventDefault()
       e.stopPropagation()
       const { slides } = this.props
       const slideIndex = slides.findIndex(slide => slide.id === id)
       if (slideIndex !== -1) {
-        // this.sliderRef.current.slickGoTo(slideIndex)
+        this.setState({ index: slideIndex })
       }
     }
 
@@ -85,15 +81,15 @@ const Container = Slider => {
       const xCoord = e.clientX - offsetLeft
 
       const isRightSide = xCoord - offsetWidth / 2 > 0
-      isRightSide
-      // ? this.sliderRef.current.slickNext()
-      // : this.sliderRef.current.slickPrev()
+      this.setState(({ index }) => ({
+        index: isRightSide ? index + 1 : index - 1
+      }))
     }
 
     sliderRef = React.createRef()
 
     render() {
-      const { height, className, slides, width } = this.props
+      const { height, className, slides } = this.props
       const { index, slideComponents } = this.state
       const minTopValue = height > 600 ? height / 2.5 : height / 2
       const offset = { top: height / 2 }
@@ -116,15 +112,15 @@ const Container = Slider => {
                     duration={slides[index].duration}
                     isVisible={isVisible && !down}
                     quantity={slides.length}
-                    onClick={() => {}}
-                    onRest={() => {}}
+                    onClick={i => this.setState({ index: i })}
+                    onRest={() => {
+                      this.setState(({ index }) => ({
+                        index: index + 1
+                      }))
+                    }}
                   />
                   <SliderAmount amount={slides.length} />
-                  <Slider
-                  // width={width}
-                  // forwardRef={this.sliderRef}
-                  // beforeChange={this.beforeChange}
-                  >
+                  <Slider index={index}>
                     {slideComponents.map((SlideComponent, i) => (
                       <SlideComponent
                         onLinkClick={this.onLinkClick}

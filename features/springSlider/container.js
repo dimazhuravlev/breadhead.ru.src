@@ -4,18 +4,20 @@ import { useGesture } from 'react-with-gesture'
 import useComponentSize from '@rehooks/component-size'
 import styles from './Slider.css'
 
-const Slider = ({ children }) => {
+const getXState = (viewportWidth, index) => -(viewportWidth * index)
+
+const Slider = ({ children, threshold = 0.15, index: parentIndex = 0 }) => {
   const viewPortRef = useRef(null)
   const [handlers, { xDelta, down }] = useGesture()
   const { width: viewportWidth } = useComponentSize(viewPortRef)
-  const [xState, setXState] = useState(0)
-  const [index, setIndex] = useState(0)
+  const [index, setIndex] = useState(parentIndex)
+
+  const pxThreshold = threshold * viewportWidth
+  const [xState, setXState] = useState(getXState(viewportWidth, parentIndex))
 
   useEffect(
     () => {
-      if (index >= 0) {
-        setXState(-(viewportWidth * index))
-      }
+      setXState(getXState(viewportWidth, index))
     },
     [index]
   )
@@ -31,6 +33,13 @@ const Slider = ({ children }) => {
     }
   }
 
+  useEffect(
+    () => {
+      setIndex(parentIndex)
+    },
+    [parentIndex]
+  )
+
   const [{ x }] = useSpring({
     x: down ? xDelta + xState : xState,
     from: { x: 0 },
@@ -41,11 +50,11 @@ const Slider = ({ children }) => {
   useEffect(
     () => {
       if (!down) {
-        if (xDelta < -50) {
+        if (xDelta < -pxThreshold) {
           nextSlide()
         }
 
-        if (xDelta > 50) {
+        if (xDelta > pxThreshold) {
           prevSlide()
         }
       }
@@ -58,9 +67,6 @@ const Slider = ({ children }) => {
       <p>x: {xState}</p>
       <p>viewportWidth: {viewportWidth}</p>
       <p>index: {index}</p>
-
-      <button onClick={prevSlide}>left</button>
-      <button onClick={nextSlide}>right</button>
 
       <div ref={viewPortRef} className={styles.viewPort}>
         <animated.div
