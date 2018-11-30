@@ -11,12 +11,11 @@ export const casesDataDesktop = [
     priority: true,
     slides: [
       {
-        type: TemplatesNames.VideoDesktop,
-        duration: 10000,
+        type: TemplatesNames.PictureDesktop,
         data: {
           image: {
-            src: 'faster/desktop/full_order_desktop.mp4',
-            preloader: 'faster/desktop/preloader-full_order_desktop.jpg'
+            src: 'faster/desktop/cover_desktop.jpg',
+            preloader: 'faster/desktop/preloader-cover_desktop.jpg'
           }
         }
       },
@@ -32,6 +31,16 @@ export const casesDataDesktop = [
           image: {
             src: 'faster/desktop/phone_map_desktop.jpg',
             preloader: 'faster/desktop/preloader-phone_map_desktop.jpg'
+          }
+        }
+      },
+      {
+        type: TemplatesNames.VideoDesktop,
+        duration: 10000,
+        data: {
+          image: {
+            src: 'faster/desktop/full_order_desktop.mp4',
+            preloader: 'faster/desktop/preloader-full_order_desktop.jpg'
           }
         }
       },
