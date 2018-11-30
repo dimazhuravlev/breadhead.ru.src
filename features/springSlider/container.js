@@ -1,64 +1,88 @@
-import React from 'react'
-import { Spring, animated } from 'react-spring'
+import React, { useState, useRef, useEffect } from 'react'
+import { animated, useSpring } from 'react-spring'
+import { useGesture } from 'react-with-gesture'
+import useComponentSize from '@rehooks/component-size'
 import styles from './Slider.css'
 
-class Slider extends React.Component {
-  state = { x: 0, viewportWidth: null }
+const Slider = ({ children }) => {
+  const viewPortRef = useRef(null)
+  const [handlers, { xDelta, down }] = useGesture()
+  const { width: viewportWidth } = useComponentSize(viewPortRef)
+  const [xState, setXState] = useState(0)
+  const [index, setIndex] = useState(0)
 
-  componentDidMount() {
-    const { clientWidth } = this.viewPort.current
+  useEffect(
+    () => {
+      if (index >= 0) {
+        setXState(-(viewportWidth * index))
+      }
+    },
+    [index]
+  )
 
-    this.setState({ viewportWidth: clientWidth })
+  const prevSlide = () => {
+    if (index !== 0) {
+      setIndex(index - 1)
+    }
+  }
+  const nextSlide = () => {
+    if (index < React.Children.count(children) - 1) {
+      setIndex(index + 1)
+    }
   }
 
-  slideLeft = () => {
-    const { viewportWidth } = this.state
-    this.setState(({ x }) => ({ x: x + viewportWidth }))
-  }
+  const [{ x }] = useSpring({
+    x: down ? xDelta + xState : xState,
+    from: { x: 0 },
+    native: true,
+    immediate: name => down && name === 'x'
+  })
 
-  slideRight = () => {
-    const { viewportWidth } = this.state
-    this.setState(({ x }) => ({ x: x - viewportWidth }))
-  }
+  useEffect(
+    () => {
+      if (!down) {
+        if (xDelta < -50) {
+          nextSlide()
+        }
 
-  viewPort = React.createRef()
+        if (xDelta > 50) {
+          prevSlide()
+        }
+      }
+    },
+    [down]
+  )
 
-  render() {
-    const { children } = this.props
-    const { x, viewportWidth } = this.state
-    return (
-      <div className="App">
-        <p>x: {x}</p>
-        <p>viewportWidth: {viewportWidth}</p>
+  return (
+    <div className="App">
+      <p>x: {xState}</p>
+      <p>viewportWidth: {viewportWidth}</p>
+      <p>index: {index}</p>
 
-        <button onClick={this.slideLeft}>left</button>
-        <button onClick={this.slideRight}>right</button>
+      <button onClick={prevSlide}>left</button>
+      <button onClick={nextSlide}>right</button>
 
-        <div ref={this.viewPort} className={styles.viewPort}>
-          <Spring native from={{ x: 0 }} to={{ x }}>
-            {({ x }) => (
-              <animated.div
-                style={{
-                  transform: x.interpolate(x => `translate3d(${x}px, 0, 0)`)
-                }}
-                className={styles.slides}
-              >
-                {React.Children.map(children, (child, i) => (
-                  <div
-                    style={{ width: `${viewportWidth}px` }}
-                    className={styles.slide}
-                    key={i}
-                  >
-                    {child}
-                  </div>
-                ))}
-              </animated.div>
-            )}
-          </Spring>
-        </div>
+      <div ref={viewPortRef} className={styles.viewPort}>
+        <animated.div
+          {...handlers}
+          style={{
+            transform: x.interpolate(x => `translate3d(${x}px, 0, 0)`)
+          }}
+          className={styles.slides}
+        >
+          {React.Children.map(children, (child, i) => (
+            <div
+              style={{ width: `${viewportWidth}px`, order: i }}
+              className={styles.slide}
+              key={i}
+            >
+              {child}
+            </div>
+          ))}
+        </animated.div>
       </div>
-    )
-  }
+    </div>
+  )
 }
 
 export default Slider

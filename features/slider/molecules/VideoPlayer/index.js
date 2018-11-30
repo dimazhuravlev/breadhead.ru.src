@@ -9,12 +9,12 @@ class VideoPlayer extends React.Component {
   state = { canPlay: false }
 
   componentDidUpdate() {
-    const { active, visible } = this.props
-    if (active) {
-      this.handleActiveState(visible)
-    } else {
-      this.handleInActiveState()
-    }
+    // const { active, visible } = this.props
+    // if (active) {
+    //   this.handleActiveState(visible)
+    // } else {
+    //   this.handleInActiveState()
+    // }
   }
 
   play = () => {
@@ -52,16 +52,16 @@ class VideoPlayer extends React.Component {
     const { src, height, width, className, active, preloader } = this.props
     const { canPlay } = this.state
     return (
-      <div className={cx(className, styles.wrapper, canPlay && styles.canPlay)}>
+      <div className={cx(className, styles.wrapper, styles.canPlay)}>
         <video
-          onCanPlay={this.onCanPlay}
-          ref={this.videoRef}
+          // onCanPlay={this.onCanPlay}
+          // ref={this.videoRef}
           src={resolveStaticSrc(src)}
           height={height}
           width={width}
           className={cx(styles.video)}
           playsInline
-          autoPlay={active}
+          // autoPlay={active}
           loop
           muted
         />
