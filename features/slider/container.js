@@ -42,10 +42,19 @@ const Container = Slider => {
 
     setIndex = i => {
       const slidesCount = this.state.slideComponents.length
+      
       this.setState(() => {
         const nextIndex = (i + slidesCount) % slidesCount
         return { index: nextIndex }
       })
+    }
+    
+    changeSlide = i => {
+      if (typeof i === 'undefined') {
+        return this.nextSlide();
+      } else {
+        return this.setIndex(i)
+      }
     }
 
     prevSlide = () => {
@@ -108,7 +117,7 @@ const Container = Slider => {
 
     render() {
       const { height, className, slides } = this.props
-      const { index, slideComponents } = this.state
+      const { index, slideComponents, paused } = this.state
       const minTopValue = height > 600 ? height / 2.5 : height / 2
       const offset = { top: height / 2 }
       return (
@@ -130,8 +139,9 @@ const Container = Slider => {
                     duration={slides[index].duration}
                     isVisible={isVisible && !down}
                     quantity={slides.length}
-                    onClick={this.setIndex}
-                    onRest={this.nextSlide}
+                    paused={paused}
+                    changeSlide={this.changeSlide}
+                    
                   />
                   <SliderAmount amount={slides.length} />
                   <Slider afterChange={this.setIndex} index={index}>

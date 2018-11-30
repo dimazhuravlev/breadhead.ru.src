@@ -7,34 +7,40 @@ import TimeLine from '../../molecules/Bar/atoms/TimeLine'
 import styles from './bar.css'
 
 class Bar extends React.Component {
+  constructor(props) {
+    super(props)
+    this.clickHandler = this.clickHandler.bind(this)
+    this.timerHandler = this.timerHandler.bind(this)
+  }
+  
+  clickHandler(e) {
+    const { quantity, changeSlide } = this.props
+    const index = Math.floor ( e.nativeEvent.offsetX / (e.nativeEvent.target.clientWidth / quantity ) )
+    return changeSlide(index)
+  }
+  
+  timerHandler() {
+    return this.props.changeSlide()
+  }
+  
   render() {
-    const { onRest, index, quantity, isVisible, duration, onClick } = this.props
+    const { index, changeSlide, quantity, isVisible, duration, paused } = this.props
     const timeLines = range(quantity)
     const slideDuration = duration > 0 ? duration : SLIDE_DURATION
     return (
-      <div className={styles.bar}>
+      <div className={styles.bar} onAnimationEnd={this.timerHandler}>
         {timeLines.map((timeLine, i) => {
-          let state
-          if (!isVisible && index === timeLine) {
-            state = 'frozen'
-          } else if (isVisible && index === timeLine) {
-            state = 'active'
-          } else if (index < timeLine) {
-            state = 'empty'
-          } else if (index > timeLine) {
-            state = 'full'
-          }
           return (
             <TimeLine
-              onClick={() => onClick(i)}
               duration={slideDuration}
-              index={index}
-              onRest={onRest}
               key={timeLine}
-              state={state}
+              active={index === timeLine}
+              paused={paused}
+              passed={index > timeLine}
             />
           )
         })}
+        <div className={styles.clickHandler} onClick={ this.clickHandler } ></div>
       </div>
     )
   }
@@ -51,6 +57,6 @@ Bar.propTypes = {
   slideDuration: PropTypes.number,
 }
 
-const BarHOC = compose(onlyUpdateForKeys(['index', 'isVisible', 'duration']))
+const BarHOC = compose(onlyUpdateForKeys(['index', 'isVisible', 'duration', 'paused']))
 
 export default BarHOC(Bar)
