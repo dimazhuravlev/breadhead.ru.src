@@ -11,12 +11,11 @@ export const casesDataDesktop = [
     priority: true,
     slides: [
       {
-        type: TemplatesNames.VideoDesktop,
-        duration: 10000,
+        type: TemplatesNames.PictureDesktop,
         data: {
           image: {
-            src: 'faster/desktop/full_order_desktop.mp4',
-            preloader: 'faster/desktop/preloader-full_order_desktop.jpg'
+            src: 'faster/desktop/cover_desktop.jpg',
+            preloader: 'faster/desktop/preloader-cover_desktop.jpg'
           }
         }
       },
@@ -26,12 +25,22 @@ export const casesDataDesktop = [
         data: {
           title: 'Новый опыт покупки лекарств',
           description: [
-            `Faster — это сервис, который объединяет все аптеки города, находит и${NON_BREAKING_SPACE}бронирует лекарства по${NON_BREAKING_SPACE}лучшим ценам. Мы отвечали за${NON_BREAKING_SPACE}все стороны продукта: от${NON_BREAKING_SPACE}логотипа и${NON_BREAKING_SPACE}цвета кнопок до${NON_BREAKING_SPACE}архитектуры проекта, интеграций с${NON_BREAKING_SPACE}базами данных и${NON_BREAKING_SPACE}разработки приложения для аптек.`,
+            `Faster — это сервис, который объединяет все аптеки города, находит и${NON_BREAKING_SPACE}бронирует лекарства по${NON_BREAKING_SPACE}лучшим ценам. Мы отвечали за${NON_BREAKING_SPACE}все стороны продукта: от${NON_BREAKING_SPACE}логотипа и${NON_BREAKING_SPACE}цвета кнопок до${NON_BREAKING_SPACE}архитектуры, интеграций с${NON_BREAKING_SPACE}базами данных и${NON_BREAKING_SPACE}разработки приложения для аптек.`,
             'Запуск скоро.'
           ],
           image: {
             src: 'faster/desktop/phone_map_desktop.jpg',
             preloader: 'faster/desktop/preloader-phone_map_desktop.jpg'
+          }
+        }
+      },
+      {
+        type: TemplatesNames.VideoDesktop,
+        duration: 10000,
+        data: {
+          image: {
+            src: 'faster/desktop/full_order_desktop.mp4',
+            preloader: 'faster/desktop/preloader-full_order_desktop.jpg'
           }
         }
       },
@@ -591,7 +600,7 @@ export const casesDataDesktop = [
             src: 'yango/desktop/6_desktop.jpg',
             preloader: 'yango/desktop/preloader-6_desktop.jpg'
           },
-          backgroundColor: '#AAACB5'
+          backgroundColor: '#9093a8'
         }
       },
       {

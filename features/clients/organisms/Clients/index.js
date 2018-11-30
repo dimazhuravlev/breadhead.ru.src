@@ -29,7 +29,7 @@ class Clients extends React.Component {
             this.state.isVisible ? styles.visible : styles.inVisible
           )}
         >
-          <Descriptor className={styles.caseNameOnly} name="Клиенты" />
+          <Descriptor name="Клиенты" />
           <ClientsList clients={clientsData} />
         </section>
       </VisibilitySensor>

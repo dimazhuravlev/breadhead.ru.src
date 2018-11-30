@@ -33,7 +33,7 @@ class Footer extends React.Component {
               }
             >
               <div className={cx(styles.content)}>
-                <Descriptor className={styles.caseNameOnly} name="Для связи" />
+                <Descriptor name="Для связи" />
 
                 <div className={styles.textBlocks}>
                   <TextBlock header="офис">
