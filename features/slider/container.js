@@ -13,8 +13,14 @@ const Container = Slider => {
   return class extends React.PureComponent {
     constructor(props) {
       super(props)
+      
+      this.touchStart = this.touchStart.bind(this)
+      this.preventTouch = this.preventTouch.bind(this)
+      this.validateClick = this.validateClick.bind(this)
+      
       this.state = {
         index: 0,
+        clickPos: {x: 0, y: 0},
         slideComponents: (props.slides || []).map(
           item => templatesMap[item.type]
         )
@@ -23,6 +29,7 @@ const Container = Slider => {
 
     componentDidMount() {
       window.addEventListener('touchstart', this.touchStart)
+      window.addEventListener('mousedown', this.touchStart)
       window.addEventListener('touchmove', this.preventTouch, {
         passive: false
       })
@@ -30,14 +37,18 @@ const Container = Slider => {
 
     componentWillUnmount() {
       window.removeEventListener('touchstart', this.touchStart)
+      window.removeEventListener('mousedown', this.touchStart)
       window.removeEventListener('touchmove', this.preventTouch, {
         passive: false
       })
     }
 
     touchStart(e) {
-      this.firstClientX = e.touches[0].clientX
-      this.firstClientY = e.touches[0].clientY
+      
+      const event = e.touches ? e.touches[0] : e
+      
+      this.firstClientX = event.clientX
+      this.firstClientY = event.clientY
     }
 
     setIndex = i => {
@@ -93,18 +104,26 @@ const Container = Slider => {
     onLinkClick = (id, e) => {
       e.preventDefault()
       e.stopPropagation()
-      const { slides } = this.props
+      const {slides} = this.props
       const slideIndex = slides.findIndex(slide => slide.id === id)
       if (slideIndex !== -1) {
         this.setIndex(slideIndex)
       }
     }
+    
+    validateClick = (e) => {
+      return ( Math.sqrt(
+          Math.pow(e.clientX - this.firstClientX, 2) +
+          Math.pow(e.clientY - this.firstClientY, 2)
+        ) < 5 )
+    }
 
     onSlideClick = e => {
+    
+      if (!this.validateClick(e)) return;
+        
       e.persist()
-
       const { offsetLeft, offsetWidth } = e.currentTarget
-
       const xCoord = e.clientX - offsetLeft
 
       const isRightSide = xCoord - offsetWidth / 2 > 0
@@ -112,7 +131,8 @@ const Container = Slider => {
         this.nextSlide()
       } else {
         this.prevSlide()
-      }
+      }   
+      
     }
 
     render() {
