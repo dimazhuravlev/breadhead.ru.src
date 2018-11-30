@@ -14,6 +14,8 @@ class ProgressBar extends React.Component {
   }
   
   clickHandler(e) {
+    e.preventDefault()
+    e.stopPropagation()
     const { quantity, changeSlide } = this.props
     const index = Math.floor ( e.nativeEvent.offsetX / (e.nativeEvent.target.clientWidth / quantity ) )
     return changeSlide(index)
