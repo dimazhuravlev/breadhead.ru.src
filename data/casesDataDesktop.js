@@ -591,7 +591,7 @@ export const casesDataDesktop = [
             src: 'yango/desktop/6_desktop.jpg',
             preloader: 'yango/desktop/preloader-6_desktop.jpg'
           },
-          backgroundColor: '#AAACB5'
+          backgroundColor: '#9093a8'
         }
       },
       {
