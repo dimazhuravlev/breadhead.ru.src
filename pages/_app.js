@@ -1,10 +1,10 @@
 import App, { Container } from 'next/app'
 import Head from 'next/head'
 import React from 'react'
+import { compose } from 'recompose'
 
 import Sprite from '@site/ui/atoms/icons/Sprite'
-
-import { appWithTranslation } from '../lib/i18n'
+import { appWithTranslation, withNamespaces } from '@site/lib/i18n'
 
 class MyApp extends App {
   static async getInitialProps({ Component, ctx }) {
@@ -18,12 +18,16 @@ class MyApp extends App {
   }
 
   render() {
-    const { Component, pageProps } = this.props
+    const { Component, pageProps, t } = this.props
 
     return (
       <Container>
         <Head>
-          <title>Breadhead – разработка цифровых сервисов</title>
+          <title>{t('title')}</title>
+          <meta
+            property="twitter:description"
+            content={t('title')}
+          />
         </Head>
         <Sprite />
         <Component {...pageProps} />
@@ -32,4 +36,7 @@ class MyApp extends App {
   }
 }
 
-export default appWithTranslation(MyApp)
+export default compose(
+  appWithTranslation,
+  withNamespaces(['common']),
+)(MyApp)
