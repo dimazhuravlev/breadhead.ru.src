@@ -1,21 +1,11 @@
-.viewPort {
-  overflow: hidden;
-
-  display: flex;
-  backface-visibility: hidden;
-  user-select: none;
-}
-
 .slides {
   flex-grow: 1;
   display: flex;
   will-change: transform;
   backface-visibility: hidden;
-  user-select: none;
 }
 
 .slide {
   position: relative;
   backface-visibility: hidden;
-  user-select: none;
 }

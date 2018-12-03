@@ -20,18 +20,16 @@ const SlidesWrapper = (params) => {
       style={{ transform: x.interpolate(x => `translate3d(${x}px, 0, 0)`) }}
       className={styles.slides}
     >
-      {children.map((child, i) => {
-
-        return (
-          <div
-            style={{ width: `${width}px`, order: child.props.order }}
-            className={styles.slide}
-            key={i}
-          >
-            {child}
-          </div>
-        )
-      })}
+      {React.Children.map(children, (child, i) => (
+        <div
+          style={{ width: `${width}px`, order: child.props.order }}
+          className={styles.slide}
+          key={i}
+        >
+          {child}
+        </div>
+      )
+      )}
     </animated.div>
   )
 }

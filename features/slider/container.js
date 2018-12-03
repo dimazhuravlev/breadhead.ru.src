@@ -13,14 +13,10 @@ const Container = Slider => {
   return class extends React.PureComponent {
     constructor(props) {
       super(props)
-      
-      this.touchStart = this.touchStart.bind(this)
-      this.preventTouch = this.preventTouch.bind(this)
-      this.validateClick = this.validateClick.bind(this)
-      
+
+
       this.state = {
         index: 0,
-        clickPos: {x: 0, y: 0},
         slideComponents: (props.slides || []).map(
           item => templatesMap[item.type]
         )
@@ -43,26 +39,26 @@ const Container = Slider => {
       })
     }
 
-    touchStart(e) {
-      
+    touchStart = (e) => {
+
       const event = e.touches ? e.touches[0] : e
-      
+
       this.firstClientX = event.clientX
       this.firstClientY = event.clientY
     }
 
     setIndex = i => {
       const slidesCount = this.state.slideComponents.length
-      
+
       this.setState(() => {
         const nextIndex = (i + slidesCount) % slidesCount
         return { index: nextIndex }
       })
     }
-    
+
     changeSlide = i => {
       if (typeof i === 'undefined') {
-        return this.nextSlide();
+        return this.nextSlide()
       } else {
         return this.setIndex(i)
       }
@@ -78,7 +74,7 @@ const Container = Slider => {
       this.setIndex(index + 1)
     }
 
-    preventTouch(e) {
+    preventTouch = (e) => {
       const MIN_VALUE = 5 // threshold
 
       this.clientX = e.touches[0].clientX - this.firstClientX
@@ -104,24 +100,24 @@ const Container = Slider => {
     onLinkClick = (id, e) => {
       e.preventDefault()
       e.stopPropagation()
-      const {slides} = this.props
+      const { slides } = this.props
       const slideIndex = slides.findIndex(slide => slide.id === id)
       if (slideIndex !== -1) {
         this.setIndex(slideIndex)
       }
     }
-    
+
     validateClick = (e) => {
-      return ( Math.sqrt(
-          Math.pow(e.clientX - this.firstClientX, 2) +
-          Math.pow(e.clientY - this.firstClientY, 2)
-        ) < 5 )
+      return (Math.sqrt(
+        Math.pow(e.clientX - this.firstClientX, 2) +
+        Math.pow(e.clientY - this.firstClientY, 2)
+      ) < 5)
     }
 
     onSlideClick = e => {
-    
-      if (!this.validateClick(e)) return;
-        
+
+      if (!this.validateClick(e)) return
+
       e.persist()
       const { offsetLeft, offsetWidth } = e.currentTarget
       const xCoord = e.clientX - offsetLeft
@@ -131,8 +127,8 @@ const Container = Slider => {
         this.nextSlide()
       } else {
         this.prevSlide()
-      }   
-      
+      }
+
     }
 
     render() {
@@ -162,7 +158,7 @@ const Container = Slider => {
                     quantity={slides.length}
                     paused={paused}
                     changeSlide={this.changeSlide}
-                    
+
                   />
                   <SliderAmount amount={slides.length} />
                   <Slider afterChange={this.setIndex} index={index}>

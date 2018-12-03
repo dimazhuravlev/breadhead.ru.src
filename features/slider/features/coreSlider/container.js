@@ -1,8 +1,8 @@
 import React, { useState, useLayoutEffect, useRef, useEffect } from 'react'
 import { useGesture } from 'react-with-gesture'
 import useComponentSize from '@rehooks/component-size'
-import SlidesWrapper from './SlidesWrapper'
-import styles from './Slider.css'
+import Slider from './organisms/Slider'
+import styles from './index.css'
 import { getCalcX } from './helpers/getCalcX'
 import { getImmediate } from './helpers/getImmediate'
 import { Shuffler } from './helpers/Shuffler'
@@ -11,7 +11,7 @@ import { onDiffChange } from './helpers/onDiffChange'
 import { onParentIndexChange } from './helpers/onParentIndexChange'
 import { onDownChange } from './helpers/onDownChange'
 
-const Slider = ({
+const Container = ({
   children,
   threshold = 0.15,
   index: parentIndex = 0,
@@ -76,10 +76,10 @@ const Slider = ({
 
   return (
     <div {...handlers} ref={viewPortRef} className={styles.viewPort}>
-      <SlidesWrapper immediate={immediate} width={viewportWidth} to={calcX} from={{ x: 0 }}>{children}</SlidesWrapper>
+      <Slider immediate={immediate} width={viewportWidth} to={calcX} from={{ x: 0 }}>{children}</Slider>
     </div>
   )
 }
 
-export default Slider
+export default Container
 

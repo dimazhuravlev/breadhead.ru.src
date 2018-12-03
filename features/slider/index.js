@@ -1,5 +1,4 @@
 import Container from './container'
-// import Slider from './organisms/Slider'
-import Slider from '@site/features/springSlider'
+import Slider from './features/coreSlider/index'
 
 export default Container(Slider)
