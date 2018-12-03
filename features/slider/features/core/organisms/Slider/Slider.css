@@ -8,4 +8,5 @@
 .slide {
   position: relative;
   backface-visibility: hidden;
+  overflow: hidden;
 }
