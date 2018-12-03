@@ -21,18 +21,17 @@ const Slider = ({
   
   const pxThreshold = threshold * viewportWidth
   
-  /*const allParams = {
-    xDelta, index, savedDiff, viewPortRef, viewportWidth, parentIndex, down
-  }
+  const direction = Math.sign (down ? -xDelta : parentIndex - index)
   
-  console.log('SLIDER INIT', allParams)*/
+  console.log('DIRECTION', direction);
   
   const helper = new RotateHelper({
     width: viewportWidth,
     count: React.Children.count(children),
     selected: index,
-    next: parentIndex,
-    diff: Math.max(0, savedDiff)
+    next: down ? parentIndex + direction : parentIndex,
+    diff: Math.max(0, savedDiff),
+    direction
   })
 
   const diff = savedDiff >= 0 ? savedDiff : helper.getDiff()
@@ -66,22 +65,19 @@ const Slider = ({
     () => {
       if (!down) {
         if (xDelta < -pxThreshold) {
-          nextSlide()
+          changeSlide(1)
         }
 
         if (xDelta > pxThreshold) {
-          prevSlide()
+          changeSlide(-1)
         }
       }
     },
     [down]
   )
-
-  const prevSlide = () => {
-    setIndex(helper.rotateNumber(index-1))
-  }
-  const nextSlide = () => {
-    setIndex(helper.rotateNumber(index+1))
+  
+  const changeSlide = (d) => {
+    setIndex(helper.rotateNumber(index+d))
   }
   
   const immediate = down || (helper.getDiff() !== savedDiff)
@@ -96,8 +92,6 @@ const Slider = ({
     const x = (+down) * xDelta - viewportWidth * helper.rotateNumber(index + helper.getDiff())
     return x;
   }
-
-  //console.log('DIFF', { helperDiff: helper.getDiff(), diff, savedDiff, index, parentIndex, immediate, x: calcX()} )
   
   return (
     <div className="App">

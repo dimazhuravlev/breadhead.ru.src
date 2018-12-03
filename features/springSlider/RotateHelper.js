@@ -22,7 +22,8 @@ export default class RotateHelper {
     if (!this.params.width) return 0
     
     if (!this.checkBoundaries()) {
-      this.params.diff = this.rotateNumber(this.params.diff + this.params.count / 2)
+      
+      this.params.diff = this.rotateNumber(this.params.diff + Math.round(this.params.count / 4 * (2 + this.params.direction))  )
     }
     return this.params.diff
   }
