@@ -99,9 +99,10 @@ class Cases extends React.Component {
               onClick={this.handleClick}
               className={cx(
                 styles.plusButton,
-                isVisible ? styles.visible : styles.inVisible
+                isVisible ? styles.visible : styles.inVisible,
+                isShown ? styles.withoutIcon : null
               )}
-              icon={isShown ? <MinusIcon /> : <PlusIcon />}
+              icon={isShown ? null : <PlusIcon />}
             >
               {isShown ? 'скрыть' : 'ещё'}
             </Button>
