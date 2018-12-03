@@ -112,320 +112,6 @@ export const casesDataMobile = [
     ]
   },
 
-  /* YANGO MOBILE CASE */
-  {
-    description: {
-      type: 'сайт + приложение',
-      name: 'Yango'
-    },
-    slides: [
-      {
-        type: TemplatesNames.PictureMobile,
-        data: {
-          image: {
-            src: 'yango/mobile/cover_mobile_fullslide.jpg',
-            preloader: 'yango/mobile/preloader-cover_mobile_fullslide.jpg'
-          }
-        }
-      },
-      {
-        type: TemplatesNames.ArticleMobile,
-        duration: 12000,
-        data: {
-          title: 'Инвестиции через мобильное приложение',
-          description: [
-            `Yango — сервис для инвестирования в${NON_BREAKING_SPACE}надежные компании. С${NON_BREAKING_SPACE}помощью приложения можно купить облигации Сбербанка, МТС или РЖД и${NON_BREAKING_SPACE}получить доход выше, чем у${NON_BREAKING_SPACE}обычных вкладов. Мы сделали редизайн приложения и${NON_BREAKING_SPACE}запустили первую версию промо-сайта.`
-          ],
-          links: [
-            {
-              icontype: 'globe',
-              href: 'https://yango.pro',
-              text: 'yango.pro'
-            }
-          ]
-        }
-      },
-      {
-        type: TemplatesNames.FrameVideoMobile,
-        duration: 12000,
-        data: {
-          image: {
-            src: 'yango/mobile/1_mobile.mp4',
-            preloader: 'yango/mobile/preloader-1_mobile.jpg'
-          },
-          backgroundColor: '#AAACB5'
-        }
-      },
-      {
-        type: TemplatesNames.FramePictMobile,
-        data: {
-          image: {
-            src: 'yango/mobile/2_mobile.jpg',
-            preloader: 'yango/mobile/preloader-2_mobile.jpg'
-          },
-          backgroundColor: '#AAACB5'
-        }
-      },
-      {
-        type: TemplatesNames.FramePictMobile,
-        data: {
-          image: {
-            src: 'yango/mobile/3_mobile.jpg',
-            preloader: 'yango/mobile/preloader-3_mobile.jpg'
-          },
-          backgroundColor: '#AAACB5'
-        }
-      },
-      {
-        type: TemplatesNames.FrameVideoMobile,
-        duration: 9000,
-        data: {
-          image: {
-            src: 'yango/mobile/4_mobile.mp4',
-            preloader: 'yango/mobile/preloader-4_mobile.jpg'
-          },
-          backgroundColor: '#AAACB5'
-        }
-      },
-      {
-        type: TemplatesNames.FramePictMobile,
-        data: {
-          image: {
-            src: 'yango/mobile/5_mobile.jpg',
-            preloader: 'yango/mobile/preloader-5_mobile.jpg'
-          },
-          backgroundColor: '#AAACB5'
-        }
-      },
-      {
-        type: TemplatesNames.FramePictMobile,
-        data: {
-          image: {
-            src: 'yango/mobile/6_mobile.jpg',
-            preloader: 'yango/mobile/preloader-6_mobile.jpg'
-          },
-          backgroundColor: '#AAACB5'
-        }
-      },
-      {
-        type: TemplatesNames.VideoMobile,
-        duration: 12000,
-        data: {
-          image: {
-            src: 'yango/mobile/7_mobile_fullslide.mp4',
-            preloader: 'yango/mobile/preloader-7_mobile_fullslide.jpg'
-          }
-        }
-      },
-      {
-        type: TemplatesNames.FramePictMobile,
-        data: {
-          image: {
-            src: 'yango/mobile/8_mobile.jpg',
-            preloader: 'yango/mobile/preloader-8_mobile.jpg'
-          },
-          backgroundColor: '#AAACB5'
-        }
-      },
-      {
-        type: TemplatesNames.FramePictMobile,
-        data: {
-          image: {
-            src: 'yango/mobile/9_mobile.jpg',
-            preloader: 'yango/mobile/preloader-9_mobile.jpg'
-          },
-          backgroundColor: '#AAACB5'
-        }
-      },
-      {
-        type: TemplatesNames.FramePictMobile,
-        data: {
-          image: {
-            src: 'yango/mobile/10_mobile.jpg',
-            preloader: 'yango/mobile/preloader-10_mobile.jpg'
-          },
-          backgroundColor: '#AAACB5'
-        }
-      },
-      {
-        type: TemplatesNames.PictureMobile,
-        data: {
-          image: {
-            src: 'yango/mobile/11_mobile_fullslide.jpg',
-            preloader: 'yango/mobile/preloader-11_mobile_fullslide.jpg'
-          }
-        }
-      },
-      {
-        type: TemplatesNames.PictureMobile,
-        data: {
-          image: {
-            src: 'yango/mobile/12_mobile_fullslide.jpg',
-            preloader: 'yango/mobile/preloader-12_mobile_fullslide.jpg'
-          }
-        }
-      },
-      {
-        type: TemplatesNames.PictureMobile,
-        data: {
-          image: {
-            src: 'yango/mobile/13_mobile_fullslide.jpg',
-            preloader: 'yango/mobile/preloader-13_mobile_fullslide.jpg'
-          }
-        }
-      }
-    ]
-  },
-
-  /* ENCORE FITNESS MOBILE CASE */
-  {
-    description: {
-      type: 'сайт',
-      name: 'Encore Fitness'
-    },
-    slides: [
-      {
-        type: TemplatesNames.PictureMobile,
-        data: {
-          image: {
-            src: 'encore_fitness/mobile/cover_encore_mobile_fullslide.jpg',
-            preloader:
-              'encore_fitness/mobile/preloader-cover_encore_mobile_fullslide.jpg'
-          }
-        }
-      },
-      {
-        type: TemplatesNames.ArticleMobile,
-        duration: 12000,
-        data: {
-          title: `Меняем представление о${NON_BREAKING_SPACE}фитнес-клубах`,
-          description: [
-            `Мы консультировали разработку концепции бренда и${NON_BREAKING_SPACE}сделали сайт, который стал продолжением уникального клиентского опыта в${NON_BREAKING_SPACE}клубах Encore Fitness —${NON_BREAKING_SPACE}сочетанием функциональности с${NON_BREAKING_SPACE}историей бренда.`
-          ],
-          links: [
-            {
-              icontype: 'article',
-              href:
-                'https://medium.com/breadhead-stories/%D0%BC%D0%B5%D0%BD%D1%8F%D0%B5%D0%BC-%D0%BF%D1%80%D0%B5%D0%B4%D1%81%D1%82%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BE-%D1%84%D0%B8%D1%82%D0%BD%D0%B5%D1%81-%D0%BA%D0%BB%D1%83%D0%B1%D0%B0%D1%85-d6e8e081f8e8',
-              text: 'читать кейс'
-            },
-            {
-              icontype: 'globe',
-              href: 'https://encorefitness.ru',
-              text: 'encorefitness.ru'
-            }
-          ]
-        }
-      },
-      {
-        type: TemplatesNames.FramePictMobile,
-        data: {
-          image: {
-            preloader:
-              'encore_fitness/mobile/preloader-1-main_encore_mobile.jpg',
-            src: 'encore_fitness/mobile/1-main_encore_mobile.jpg'
-          }
-        }
-      },
-      {
-        type: TemplatesNames.FrameVideoMobile,
-        duration: 10000,
-        data: {
-          image: {
-            src: 'encore_fitness/mobile/2-club_encore_mobile_opt.mp4',
-            preloader:
-              'encore_fitness/mobile/preloader-2-club_encore_mobile_opt.jpg'
-          }
-        }
-      },
-      {
-        type: TemplatesNames.PictureMobile,
-        data: {
-          image: {
-            preloader:
-              'encore_fitness/mobile/preloader-3-desktop-screens_encore_mobile_fullslide.jpg',
-            src:
-              'encore_fitness/mobile/3-desktop-screens_encore_mobile_fullslide.jpg'
-          }
-        }
-      },
-      {
-        type: TemplatesNames.FramePictMobile,
-        data: {
-          image: {
-            preloader:
-              'encore_fitness/mobile/preloader-4-club-gallery_encore_mobile.jpg',
-            src: 'encore_fitness/mobile/4-club-gallery_encore_mobile.jpg'
-          }
-        }
-      },
-      {
-        type: TemplatesNames.PictureMobile,
-        data: {
-          image: {
-            preloader:
-              'encore_fitness/mobile/preloader-5-schedule-desktop_encore_mobile_fullslide.jpg',
-            src:
-              'encore_fitness/mobile/5-schedule-desktop_encore_mobile_fullslide.jpg'
-          }
-        }
-      },
-      {
-        type: TemplatesNames.FramePictMobile,
-        data: {
-          image: {
-            preloader:
-              'encore_fitness/mobile/preloader-6-schedule_encore_mobile.jpg',
-            src: 'encore_fitness/mobile/6-schedule_encore_mobile.jpg'
-          }
-        }
-      },
-      {
-        type: TemplatesNames.PictureMobile,
-        data: {
-          image: {
-            preloader:
-              'encore_fitness/mobile/preloader-7-desktop-screens_encore_mobile_fullslide.jpg',
-            src:
-              'encore_fitness/mobile/7-desktop-screens_encore_mobile_fullslide.jpg'
-          }
-        }
-      },
-      {
-        type: TemplatesNames.FramePictMobile,
-        data: {
-          image: {
-            preloader:
-              'encore_fitness/mobile/preloader-8-trainers_encore_mobile.jpg',
-            src: 'encore_fitness/mobile/8-trainers_encore_mobile.jpg'
-          }
-        }
-      },
-      {
-        type: TemplatesNames.PictureMobile,
-        data: {
-          image: {
-            preloader:
-              'encore_fitness/mobile/preloader-9_grid-desktop_encore_mobile_full-slide.jpg',
-            src:
-              'encore_fitness/mobile/9_grid-desktop_encore_mobile_full-slide.jpg'
-          }
-        }
-      },
-      {
-        type: TemplatesNames.PictureMobile,
-        data: {
-          image: {
-            preloader:
-              'encore_fitness/mobile/preloader-10_phone-mockup_encore_mobile_full-slide.jpg',
-            src:
-              'encore_fitness/mobile/10_phone-mockup_encore_mobile_full-slide.jpg'
-          }
-        }
-      }
-    ]
-  },
-
   /* OBED BUFET MOBILE CASE */
   {
     description: {
@@ -561,6 +247,310 @@ export const casesDataMobile = [
               'obed_bufet/preloader-3.3-history_obedbufet-app_desktop.jpg'
           },
           backgroundColor: '#FED67D'
+        }
+      }
+    ]
+  },
+
+  /* ENCORE FITNESS MOBILE CASE */
+  {
+    description: {
+      type: 'сайт',
+      name: 'Encore Fitness'
+    },
+    slides: [
+      {
+        type: TemplatesNames.PictureMobile,
+        data: {
+          image: {
+            src: 'encore_fitness/mobile/cover_encore_mobile_fullslide.jpg',
+            preloader:
+              'encore_fitness/mobile/preloader-cover_encore_mobile_fullslide.jpg'
+          }
+        }
+      },
+      {
+        type: TemplatesNames.ArticleMobile,
+        duration: 12000,
+        data: {
+          title: `Меняем представление о${NON_BREAKING_SPACE}фитнес-клубах`,
+          description: [
+            `Мы помогли разработать концепцию бренда (с${NON_BREAKING_SPACE}<a target="_blank" rel = "noopener noreferrer" href="http://fullfort.agency/">Fullfort</a>) и${NON_BREAKING_SPACE}сделали сайт, который стал продолжением уникального клиентского опыта в${NON_BREAKING_SPACE}клубах Encore —${NON_BREAKING_SPACE}сочетанием технологичности, внимания к${NON_BREAKING_SPACE}деталям и${NON_BREAKING_SPACE}истории бренда.`
+          ],
+          links: [
+            {
+              icontype: 'article',
+              href:
+                'https://medium.com/@breadhead.ru/encore-fitness-2ea1deba6f70',
+              text: 'читать кейс'
+            },
+            {
+              icontype: 'globe',
+              href: 'https://encorefitness.ru',
+              text: 'encorefitness.ru'
+            }
+          ]
+        }
+      },
+      {
+        type: TemplatesNames.PictureMobile,
+        data: {
+          image: {
+            preloader:
+              'encore_fitness/mobile/preloader-10_phone-mockup_encore_mobile_full-slide.jpg',
+            src:
+              'encore_fitness/mobile/10_phone-mockup_encore_mobile_full-slide.jpg'
+          }
+        }
+      },
+      {
+        type: TemplatesNames.FrameVideoMobile,
+        duration: 10000,
+        data: {
+          image: {
+            src: 'encore_fitness/mobile/2-club_encore_mobile_opt.mp4',
+            preloader:
+              'encore_fitness/mobile/preloader-2-club_encore_mobile_opt.jpg'
+          }
+        }
+      },
+      {
+        type: TemplatesNames.FramePictMobile,
+        data: {
+          image: {
+            preloader:
+              'encore_fitness/mobile/preloader-4-club-gallery_encore_mobile.jpg',
+            src: 'encore_fitness/mobile/4-club-gallery_encore_mobile.jpg'
+          }
+        }
+      },
+      {
+        type: TemplatesNames.PictureMobile,
+        data: {
+          image: {
+            preloader:
+              'encore_fitness/mobile/preloader-3-desktop-screens_encore_mobile_fullslide.jpg',
+            src:
+              'encore_fitness/mobile/3-desktop-screens_encore_mobile_fullslide.jpg'
+          }
+        }
+      },
+      {
+        type: TemplatesNames.PictureMobile,
+        data: {
+          image: {
+            preloader:
+              'encore_fitness/mobile/preloader-7-desktop-screens_encore_mobile_fullslide.jpg',
+            src:
+              'encore_fitness/mobile/7-desktop-screens_encore_mobile_fullslide.jpg'
+          }
+        }
+      },
+      {
+        type: TemplatesNames.FramePictMobile,
+        data: {
+          image: {
+            preloader:
+              'encore_fitness/mobile/preloader-8-trainers_encore_mobile.jpg',
+            src: 'encore_fitness/mobile/8-trainers_encore_mobile.jpg'
+          }
+        }
+      },
+      {
+        type: TemplatesNames.FramePictMobile,
+        data: {
+          image: {
+            preloader:
+              'encore_fitness/mobile/preloader-6-schedule_encore_mobile.jpg',
+            src: 'encore_fitness/mobile/6-schedule_encore_mobile.jpg'
+          }
+        }
+      },
+      {
+        type: TemplatesNames.PictureMobile,
+        data: {
+          image: {
+            preloader:
+              'encore_fitness/mobile/preloader-5-schedule-desktop_encore_mobile_fullslide.jpg',
+            src:
+              'encore_fitness/mobile/5-schedule-desktop_encore_mobile_fullslide.jpg'
+          }
+        }
+      },
+      {
+        type: TemplatesNames.PictureMobile,
+        data: {
+          image: {
+            preloader:
+              'encore_fitness/mobile/preloader-9_grid-desktop_encore_mobile_full-slide.jpg',
+            src:
+              'encore_fitness/mobile/9_grid-desktop_encore_mobile_full-slide.jpg'
+          }
+        }
+      }
+    ]
+  },
+
+  /* YANGO MOBILE CASE */
+  {
+    description: {
+      type: 'сайт + приложение',
+      name: 'Yango'
+    },
+    slides: [
+      {
+        type: TemplatesNames.PictureMobile,
+        data: {
+          image: {
+            src: 'yango/mobile/cover_mobile_fullslide.jpg',
+            preloader: 'yango/mobile/preloader-cover_mobile_fullslide.jpg'
+          }
+        }
+      },
+      {
+        type: TemplatesNames.ArticleMobile,
+        duration: 12000,
+        data: {
+          title: 'Инвестиции через мобильное приложение',
+          description: [
+            `Yango — сервис для инвестирования в${NON_BREAKING_SPACE}надежные компании. С${NON_BREAKING_SPACE}помощью приложения можно купить облигации Сбербанка, МТС или РЖД и${NON_BREAKING_SPACE}получить доход выше, чем у${NON_BREAKING_SPACE}обычных вкладов. Мы сделали редизайн приложения и${NON_BREAKING_SPACE}запустили первую версию промо-сайта.`
+          ],
+          links: [
+            {
+              icontype: 'globe',
+              href: 'https://yango.pro',
+              text: 'yango.pro'
+            }
+          ]
+        }
+      },
+      {
+        type: TemplatesNames.FrameVideoMobile,
+        duration: 12000,
+        data: {
+          image: {
+            src: 'yango/mobile/1_mobile.mp4',
+            preloader: 'yango/mobile/preloader-1_mobile.jpg'
+          },
+          backgroundColor: '#9093a8'
+        }
+      },
+      {
+        type: TemplatesNames.FramePictMobile,
+        data: {
+          image: {
+            src: 'yango/mobile/2_mobile.jpg',
+            preloader: 'yango/mobile/preloader-2_mobile.jpg'
+          },
+          backgroundColor: '#9093a8'
+        }
+      },
+      {
+        type: TemplatesNames.FramePictMobile,
+        data: {
+          image: {
+            src: 'yango/mobile/3_mobile.jpg',
+            preloader: 'yango/mobile/preloader-3_mobile.jpg'
+          },
+          backgroundColor: '#9093a8'
+        }
+      },
+      {
+        type: TemplatesNames.FrameVideoMobile,
+        duration: 9000,
+        data: {
+          image: {
+            src: 'yango/mobile/4_mobile.mp4',
+            preloader: 'yango/mobile/preloader-4_mobile.jpg'
+          },
+          backgroundColor: '#9093a8'
+        }
+      },
+      {
+        type: TemplatesNames.FramePictMobile,
+        data: {
+          image: {
+            src: 'yango/mobile/5_mobile.jpg',
+            preloader: 'yango/mobile/preloader-5_mobile.jpg'
+          },
+          backgroundColor: '#9093a8'
+        }
+      },
+      {
+        type: TemplatesNames.FramePictMobile,
+        data: {
+          image: {
+            src: 'yango/mobile/6_mobile.jpg',
+            preloader: 'yango/mobile/preloader-6_mobile.jpg'
+          },
+          backgroundColor: '#9093a8'
+        }
+      },
+      {
+        type: TemplatesNames.PictureMobile,
+        data: {
+          image: {
+            src: 'yango/mobile/13_mobile_fullslide.jpg',
+            preloader: 'yango/mobile/preloader-13_mobile_fullslide.jpg'
+          }
+        }
+      },
+      {
+        type: TemplatesNames.VideoMobile,
+        duration: 12000,
+        data: {
+          image: {
+            src: 'yango/mobile/7_mobile_fullslide.mp4',
+            preloader: 'yango/mobile/preloader-7_mobile_fullslide.jpg'
+          }
+        }
+      },
+      {
+        type: TemplatesNames.FramePictMobile,
+        data: {
+          image: {
+            src: 'yango/mobile/8_mobile.jpg',
+            preloader: 'yango/mobile/preloader-8_mobile.jpg'
+          },
+          backgroundColor: '#9093a8'
+        }
+      },
+      {
+        type: TemplatesNames.FramePictMobile,
+        data: {
+          image: {
+            src: 'yango/mobile/9_mobile.jpg',
+            preloader: 'yango/mobile/preloader-9_mobile.jpg'
+          },
+          backgroundColor: '#9093a8'
+        }
+      },
+      {
+        type: TemplatesNames.FramePictMobile,
+        data: {
+          image: {
+            src: 'yango/mobile/10_mobile.jpg',
+            preloader: 'yango/mobile/preloader-10_mobile.jpg'
+          },
+          backgroundColor: '#9093a8'
+        }
+      },
+      {
+        type: TemplatesNames.PictureMobile,
+        data: {
+          image: {
+            src: 'yango/mobile/11_mobile_fullslide.jpg',
+            preloader: 'yango/mobile/preloader-11_mobile_fullslide.jpg'
+          }
+        }
+      },
+      {
+        type: TemplatesNames.PictureMobile,
+        data: {
+          image: {
+            src: 'yango/mobile/12_mobile_fullslide.jpg',
+            preloader: 'yango/mobile/preloader-12_mobile_fullslide.jpg'
+          }
         }
       }
     ]
