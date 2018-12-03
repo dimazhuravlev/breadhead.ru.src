@@ -13,7 +13,16 @@ export const clientsData = {
     'London Calling'
   ],
   en: [
-    'first',
-    'second'
+    'VTB',
+    'Look at Media',
+    'Philharmonia',
+    'Encore Fitness',
+    'Yami Yami',
+    'Ginza Project',
+    'Great Simple',
+    'PYE',
+    'TRA Robotics',
+    'Artdocfest',
+    'London Calling'
   ]
 }

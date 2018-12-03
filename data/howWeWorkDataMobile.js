@@ -3,11 +3,56 @@ import { NON_BREAKING_SPACE } from '@site/constants.js'
 
 export const howWeWorkDataMobile = {
   description: {
-    type: 'вики',
-    name: 'Как мы работаем'
+    type: {
+      ru: 'вики',
+      en: 'wiki'
+    },
+    name: {
+      ru: 'Как мы работаем',
+      en: 'How we work'
+    }
   },
   slides: [
     {
+      onlyFor: ['en'],
+      type: TemplatesNames.NavMobile,
+      data: {
+        title: 'Workflow and communication principles.Coming soon',
+        links: [
+          {
+            text: 'Team and client ›',
+            isDisabled: true
+          },
+          {
+            text: 'Process and roles ›',
+            isDisabled: true
+          },
+          {
+            text: 'Report and payment ›',
+            isDisabled: true
+          },
+          {
+            text: 'Design ›',
+            isDisabled: true
+          },
+          {
+            text: 'Development ›',
+            isDisabled: true
+          },
+          {
+            text: 'Quality assurance ›',
+            isDisabled: true
+          },
+          {
+            text: 'How to start ›',
+            isDisabled: true
+          }
+        ]
+      }
+    },
+
+    {
+      onlyFor: ['ru'],
       type: TemplatesNames.NavMobile,
       data: {
         title: `Принципы проектной работы и${NON_BREAKING_SPACE}коммуникации Breadhead`,
@@ -45,6 +90,7 @@ export const howWeWorkDataMobile = {
     },
 
     {
+      onlyFor: ['ru'],
       type: TemplatesNames.ArticleMobile,
       id: 'team_clients',
       data: {
@@ -55,6 +101,7 @@ export const howWeWorkDataMobile = {
       }
     },
     {
+      onlyFor: ['ru'],
       type: TemplatesNames.ArticleMobile,
       data: {
         title: 'Команда и клиент\n→ Ответственность',
@@ -64,6 +111,7 @@ export const howWeWorkDataMobile = {
       }
     },
     {
+      onlyFor: ['ru'],
       type: TemplatesNames.ArticleMobile,
       data: {
         title: 'Команда и клиент\n→ Скорость решений',
@@ -74,6 +122,7 @@ export const howWeWorkDataMobile = {
     },
 
     {
+      onlyFor: ['ru'],
       type: TemplatesNames.ArticleMobile,
       id: 'processes_roles',
       data: {
@@ -84,6 +133,7 @@ export const howWeWorkDataMobile = {
       }
     },
     {
+      onlyFor: ['ru'],
       type: TemplatesNames.ArticleMobile,
       data: {
         title: 'Процесс и роли\n→ Спринты',
@@ -93,6 +143,7 @@ export const howWeWorkDataMobile = {
       }
     },
     {
+      onlyFor: ['ru'],
       type: TemplatesNames.ArticleMobile,
       data: {
         title: 'Процесс и роли\n→ Специалисты',
@@ -103,6 +154,7 @@ export const howWeWorkDataMobile = {
     },
 
     {
+      onlyFor: ['ru'],
       type: TemplatesNames.ArticleMobile,
       id: 'reports_money',
       data: {
@@ -113,6 +165,7 @@ export const howWeWorkDataMobile = {
       }
     },
     {
+      onlyFor: ['ru'],
       type: TemplatesNames.ArticleMobile,
       data: {
         title: 'Отчёты и деньги\n→ Учёт часов',
@@ -122,6 +175,7 @@ export const howWeWorkDataMobile = {
       }
     },
     {
+      onlyFor: ['ru'],
       type: TemplatesNames.ArticleMobile,
       data: {
         title: 'Отчёты и деньги\n→ Оценка',

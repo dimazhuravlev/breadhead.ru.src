@@ -10,13 +10,13 @@ const Navigation = ({ t }) => (
   <nav>
     <ul className={styles.navigation}>
       <li>
-        <ScrollLink targetscroll="cases">{t('experience')}</ScrollLink>
+        <ScrollLink targetscroll="cases">{t('experience-nav')}</ScrollLink>
       </li>
       <li>
-        <ScrollLink targetscroll="clients">студия</ScrollLink>
+        <ScrollLink targetscroll="clients">{t('about-nav')}</ScrollLink>
       </li>
       <li>
-        <ScrollLink targetscroll="howWeWork">как мы работаем</ScrollLink>
+        <ScrollLink targetscroll="howWeWork">{t('how-we-work-nav')}</ScrollLink>
       </li>
     </ul>
   </nav>

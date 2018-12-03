@@ -1,3 +1,35 @@
 {
-  "experience": "experience"
+  "experience-nav": "experience",
+  "about-nav": "about",
+  "how-we-work-nav": "how we work",
+  "main-title": "\nCreating digital\nservices. Web,\niOS, Android",
+  "contact-btn": "contact",
+  "more-btn": "more",
+  "less-btn": "less",
+  "clients-title": "Clients",
+
+  "about-text1": "Breadhead designs and launches services and apps improving the performance of\u00a0companies with the help of\u00a0technology.",
+  "about-text2": "We are committed to\u00a0the idea of\u00a0an\u00a0open working process, creating the sense of\u00a0being in\u00a0one team with the client. We believe that this approach changes outlook on\u00a0our work and helps create useful products.",
+
+  "text-block-header-skills": "expertise",
+  "text-block-header-practices": "practice",
+  "text-block-header-technologies": "technology",
+
+  "text-block-text-skills": "Education products / E-commerce / Booking and delivery services / Automation / Media",
+
+  "text-block-text-practices-first": "Research / Brand consultancy (",
+
+  "text-block-text-practices-link": "Fullført",
+
+  "text-block-text-practices-second": ") / Design / Web +\u00a0mobile development",
+
+  "text-block-text-technologies": "Web: React, Node.js, PHP, Typescript / iOS: Swift / Android: Kotlin, Java",
+
+  "contact-title": "Contact",
+  "text-block-address": "visit",
+  "text-block-phone": "get in touch",
+  "text-block-social": "follow",
+
+  "text-block-text-address-link": "14 Italyanskaya street,",
+  "text-block-text-address": "attic 39, Saint-Petersburg, Russia, 191186"
 }

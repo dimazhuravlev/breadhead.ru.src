@@ -4,8 +4,8 @@ export const aboutDataMobile = {
   description: {
     name: {
       ru: 'Студия',
-      en: 'Studio',
-    },
+      en: 'About'
+    }
   },
   slides: [
     {
