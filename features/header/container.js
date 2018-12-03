@@ -1,6 +1,6 @@
 import React from 'react'
 
-import i18n from '@site/lib/i18n/i18n'
+import { i18n } from '@site/lib/i18n'
 
 import revertLang from './utils/revertLang'
 

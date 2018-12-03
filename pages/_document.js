@@ -1,7 +1,7 @@
 import Document, { Head, Main, NextScript } from 'next/document'
 import { getHTML } from '@site/features/googleAnalytics'
 
-import i18n from '@site/lib/i18n/i18n'
+import i18n from '@site/lib/i18n'
 
 export default class MyDocument extends Document {
   render() {

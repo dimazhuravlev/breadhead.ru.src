@@ -2,7 +2,7 @@ import React from 'react'
 import withScrollOnClick from '@site/features/withScrollOnClick'
 import NavLink from './atoms/navigationLink'
 import styles from './navigation.css'
-import withNamespaces from '@site/lib/i18n/utils/withNamespaces'
+import { withNamespaces } from '@site/lib/i18n'
 
 const ScrollLink = withScrollOnClick(NavLink)
 

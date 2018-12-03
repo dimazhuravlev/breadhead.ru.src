@@ -1,5 +1,5 @@
 import React from 'react'
-import withNamespaces from '@site/lib/i18n/utils/withNamespaces'
+import { withNamespaces } from '@site/lib/i18n'
 import VisibilitySensor from 'react-visibility-sensor'
 import PropTypes from 'prop-types'
 import Descriptor from '@site/features/descriptor'

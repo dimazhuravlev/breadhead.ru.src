@@ -1,6 +1,6 @@
 import React from 'react'
 import VisibilitySensor from 'react-visibility-sensor'
-import withNamespaces from '@site/lib/i18n/utils/withNamespaces'
+import { withNamespaces } from '@site/lib/i18n'
 import Descriptor from '@site/features/descriptor'
 import ClientsList from '../../molecules/ClientsList'
 import styles from './clients.css'
@@ -14,6 +14,8 @@ class Clients extends React.Component {
 
   render() {
     const { t } = this.props
+
+    // console.log(this.props)
 
     return (
       <VisibilitySensor

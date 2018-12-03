@@ -1,6 +1,6 @@
 import React from 'react'
 import VisibilitySensor from 'react-visibility-sensor'
-import withNamespaces from '@site/lib/i18n/utils/withNamespaces'
+import { withNamespaces } from '@site/lib/i18n'
 
 import ExternalLink from '@site/ui/molecules/ExternalLink'
 import Image from '@site/ui/atoms/Image'

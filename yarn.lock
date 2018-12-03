@@ -3847,6 +3847,11 @@ detect-newline@^2.1.0:
   resolved "https://registry.yarnpkg.com/detect-newline/-/detect-newline-2.1.0.tgz#f41f1c10be4b00e87b5f13da680759f2c5bfd3e2"
   integrity sha1-9B8cEL5LAOh7XxPaaAdZ8sW/0+I=
 
+detect-node@^2.0.4:
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/detect-node/-/detect-node-2.0.4.tgz#014ee8f8f669c5c58023da64b8179c083a28c46c"
+  integrity sha512-ZIzRpLJrOj7jjP2miAtgqIfmzbxa4ZOr5jJc601zklsfEx9oTzmmj2nVpIPRpNlRTIh8lc1kyViIY7BWSGNmKw==
+
 diff@^3.2.0:
   version "3.5.0"
   resolved "https://registry.yarnpkg.com/diff/-/diff-3.5.0.tgz#800c0dd1e0a8bfbc95835c202ad220fe317e5a12"
@@ -5861,6 +5866,13 @@ hoist-non-react-statics@3.0.1:
   dependencies:
     react-is "^16.3.2"
 
+hoist-non-react-statics@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-3.2.0.tgz#d21b9fc72b50fdc38c5d88f6e2c52f2c2dbe5ee2"
+  integrity sha512-3IascCRfaEkbmHjJnUxWSspIUE1okLPjGTMVXW8zraUo1t3yg1BadKAxAGILHwgoBzmMnzrgeeaDGBvpuPz6dA==
+  dependencies:
+    react-is "^16.3.2"
+
 home-or-tmp@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/home-or-tmp/-/home-or-tmp-2.0.0.tgz#e36c3f2d2cae7d746a857e38d18d5f32a7882db8"
@@ -6013,7 +6025,7 @@ i18next-xhr-backend@^1.5.1:
   resolved "https://registry.yarnpkg.com/i18next-xhr-backend/-/i18next-xhr-backend-1.5.1.tgz#50282610780c6a696d880dfa7f4ac1d01e8c3ad5"
   integrity sha512-9OLdC/9YxDvTFcgsH5t2BHCODHEotHCa6h7Ly0EUlUC7Y2GS09UeoHOGj3gWKQ3HCqXz8NlH4gOrK3NNc9vPuw==
 
-i18next@^12.1.0:
+i18next@^12.0.0:
   version "12.1.0"
   resolved "https://registry.yarnpkg.com/i18next/-/i18next-12.1.0.tgz#387bf4b94d05b0160b6a41d001a6b360e384bdb1"
   integrity sha512-AexmwGkKxwKfo5fGeXTWEY4xqzRPigQ1S/0InOUUVziGO54cd4fKyYK8ED1Thx9fd+WA3fRSZ+1iekvFQMbsFw==
@@ -8512,6 +8524,22 @@ next-css-unpluggable@^2.0.0:
     find-up "2.1.0"
     ignore-loader "0.1.2"
     postcss-loader "3.0.0"
+
+next-i18next@^0.7.0:
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/next-i18next/-/next-i18next-0.7.0.tgz#9cfa5bea2aedc46dcafd2b2611f8db622607744f"
+  integrity sha512-sUBxj0ZJq8VfggoIS2j883iupnm0lcAWkdET/3t73ZmLr+wbC8YewCQdKJexxA/CH/J8eQPgjS6DtEiNYoSyjA==
+  dependencies:
+    detect-node "^2.0.4"
+    hoist-non-react-statics "^3.2.0"
+    i18next "^12.0.0"
+    i18next-browser-languagedetector "^2.2.4"
+    i18next-express-middleware "^1.5.0"
+    i18next-node-fs-backend "^2.1.0"
+    i18next-xhr-backend "^1.5.1"
+    prop-types "^15.6.2"
+    react "^16.6.3"
+    react-i18next "^8.3.8"
 
 next-optimized-images@^1.4.1:
   version "1.4.1"

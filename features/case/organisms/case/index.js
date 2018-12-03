@@ -25,9 +25,9 @@ class Case extends React.Component {
         onChange={this.onVisibilityChange}
         partialVisibility
         delayedCall
-        key={lang}
       >
         <section
+          key={lang}
           name={name}
           className={cx(
             styles.case,
