@@ -2,8 +2,7 @@
   cursor: grab;
   -webkit-mask-image: -webkit-radial-gradient(circle, white, black);
   background-color: var(--darkSecondary);
-  width: 100%;
-  height: 100%;
+
   border-radius: 6px;
   overflow: hidden;
   position: relative;
@@ -15,4 +14,24 @@
   &:active {
     cursor: grabbing;
   }
+
+flex-grow: 1;
+width: 100%;
+height: 768px;
+
+@media (max-width: 1920px) {
+  height: 40vw;
 }
+
+@media (max-width: 1024px) {
+  height: 60vw;
+}
+
+@media (max-width: 600px) {
+  height: 130vw;
+}
+}
+  
+
+
+  

@@ -1,0 +1,12 @@
+.slides {
+  flex-grow: 1;
+  display: flex;
+  will-change: transform;
+  backface-visibility: hidden;
+}
+
+.slide {
+  position: relative;
+  backface-visibility: hidden;
+  overflow: hidden;
+}

@@ -1,13 +1,24 @@
 .bar {
-  cursor: pointer;
+  
   z-index: 100;
   width: calc(100% - 40px);
   display: flex;
   position: absolute;
   left: 24px;
-  top: 16px;
+  
+  padding: 16px 0;
   @media (max-width: 600px) {
     width: calc(100% - 24px);
     left: 16px;
   }
 }
+  
+.clickHandler {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+  z-index: 101;
+}  

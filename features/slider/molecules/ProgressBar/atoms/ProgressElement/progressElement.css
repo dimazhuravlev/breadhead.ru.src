@@ -1,0 +1,43 @@
+.container {
+  height: 2px;
+  border-radius: 4px;
+  display: flex;
+  background-color: rgba(88, 89, 104, .5);
+  margin-right: 8px;
+  flex: 1 1 0;
+  position: relative;
+  overflow: hidden;
+  
+  @media (max-width: 600px) {
+    margin-right: 4px;
+  }
+}
+  
+.progress {
+  display: block;
+  content: " ";
+  position: absolute;
+  background-color: rgba(255, 255, 255, .5);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  animation: Loader 5s linear;
+  animation-fill-mode: forwards;
+  transform: translate3d(-100%, 0, 0);
+  
+  will-change: transform;
+}
+
+.passed {
+  background-color: rgba(255, 255, 255, .5);
+}
+  
+.paused .progress {
+  animation-play-state: paused;
+}
+
+@-webkit-keyframes Loader {
+  0%   { transform: translate3d(-100%, 0, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
