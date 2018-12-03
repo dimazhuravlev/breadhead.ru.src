@@ -11,4 +11,7 @@ const SliderAmount = ({ amount }) => {
   )
 }
 
-export default SliderAmount
+
+export default React.memo(SliderAmount,
+  ({ amount: prevAmount }, { amount: nextAmount }) =>
+    prevAmount === nextAmount)

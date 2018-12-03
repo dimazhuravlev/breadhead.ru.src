@@ -2,11 +2,7 @@ import React from 'react'
 import { animated, useSpring } from 'react-spring'
 import styles from './Slider.css'
 
-const SlidesWrapper = (params) => {
-
-  const { to, from, immediate, width, children } = params
-
-
+const SlidesWrapper = ({ to, from, immediate, width, children }) => {
   const [{ x }] = useSpring({
     x: to,
     from: from,
@@ -35,4 +31,4 @@ const SlidesWrapper = (params) => {
 }
 
 
-export default SlidesWrapper
+export default React.memo(SlidesWrapper)

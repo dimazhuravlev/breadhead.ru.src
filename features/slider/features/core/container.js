@@ -10,7 +10,6 @@ import { getDirection } from './helpers/getDirection'
 import { onDiffChange } from './helpers/onDiffChange'
 import { onParentIndexChange } from './helpers/onParentIndexChange'
 import { onDownChange } from './helpers/onDownChange'
-
 const Container = ({
   children,
   threshold = 0.15,
@@ -81,5 +80,6 @@ const Container = ({
   )
 }
 
-export default Container
+
+export default React.memo(Container, ({ index: prevIndex }, { index: nextIndex }) => prevIndex === nextIndex)
 
