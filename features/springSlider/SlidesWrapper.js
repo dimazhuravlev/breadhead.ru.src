@@ -6,7 +6,6 @@ const SlidesWrapper = (params) => {
 
   const { to, from, immediate, width, children } = params
 
-  console.log('WRAPPER', params)
 
   const [{ x }] = useSpring({
     x: to,
@@ -15,13 +14,10 @@ const SlidesWrapper = (params) => {
     immediate
   })
 
-  if (immediate) {
-    debugger
-  }
 
   return (
     <animated.div
-      style={{ transform: x.interpolate(x => `translate3d(${x}px, 0, 0)`)}}
+      style={{ transform: x.interpolate(x => `translate3d(${x}px, 0, 0)`) }}
       className={styles.slides}
     >
       {children.map((child, i) => {
@@ -32,10 +28,10 @@ const SlidesWrapper = (params) => {
             className={styles.slide}
             key={i}
           >
-            <div style={{position: "absolute", top: 0, left: 0, zIndex: 101, fontSize: "300px", color:"#f00"}}>{i}</div>
             {child}
           </div>
-        )})}
+        )
+      })}
     </animated.div>
   )
 }
