@@ -17,7 +17,7 @@ export const howWeWorkDataMobile = {
       onlyFor: ['en'],
       type: TemplatesNames.NavMobile,
       data: {
-        title: 'Workflow and communication principles.Coming soon',
+        title: 'Workflow and communication principles. Coming soon',
         links: [
           {
             text: 'Team and client ›',
