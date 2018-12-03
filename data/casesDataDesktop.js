@@ -381,7 +381,10 @@ export const casesDataDesktop = [
       links: [
         {
           icontype: 'globe',
-          href: 'https://encorefitness.ru'
+          href: {
+            ru: 'https://encorefitness.ru',
+            en: 'https://encorefitness.ru/en/?lang=en'
+          }
         },
         {
           icontype: 'article',
@@ -430,7 +433,10 @@ export const casesDataDesktop = [
             },
             {
               icontype: 'globe',
-              href: 'https://encorefitness.ru',
+              href: {
+                ru: 'https://encorefitness.ru',
+                en: 'https://encorefitness.ru/en/?lang=en'
+              },
               text: 'encorefitness.ru'
             }
           ]
