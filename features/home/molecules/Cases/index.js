@@ -5,7 +5,6 @@ import VisibilitySensor from 'react-visibility-sensor'
 import { Desktop, Mobile, Any } from '@site/lib/responsive'
 import Button from '@site/ui/molecules/Button'
 import { PlusIcon } from '@site/ui/atoms/icons'
-import { MinusIcon } from '@site/ui/atoms/icons'
 import { casesDataDesktop } from '@site/data/casesDataDesktop'
 import { casesDataMobile } from '@site/data/casesDataMobile'
 
