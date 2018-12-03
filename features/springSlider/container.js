@@ -1,10 +1,9 @@
-import React, { useState, useRef, useEffect } from 'react'
-import { animated, useSpring } from 'react-spring'
+import React, { useState, useLayoutEffect, useRef, useEffect } from 'react'
 import { useGesture } from 'react-with-gesture'
 import useComponentSize from '@rehooks/component-size'
+import SlidesWrapper from './SlidesWrapper'
+import RotateHelper from './RotateHelper'
 import styles from './Slider.css'
-
-const getXState = (viewportWidth, index) => -(viewportWidth * index)
 
 const Slider = ({
   children,
@@ -12,46 +11,56 @@ const Slider = ({
   index: parentIndex = 0,
   afterChange = () => {}
 }) => {
+  
   const viewPortRef = useRef(null)
+  
   const [handlers, { xDelta, down }] = useGesture()
   const { width: viewportWidth } = useComponentSize(viewPortRef)
   const [index, setIndex] = useState(parentIndex)
-
+  const [savedDiff, setDiff] = useState(-1)
+  
   const pxThreshold = threshold * viewportWidth
-  const [xState, setXState] = useState(getXState(viewportWidth, parentIndex))
+  
+  /*const allParams = {
+    xDelta, index, savedDiff, viewPortRef, viewportWidth, parentIndex, down
+  }
+  
+  console.log('SLIDER INIT', allParams)*/
+  
+  const helper = new RotateHelper({
+    width: viewportWidth,
+    count: React.Children.count(children),
+    selected: index,
+    next: parentIndex,
+    diff: Math.max(0, savedDiff)
+  })
 
+  const diff = savedDiff >= 0 ? savedDiff : helper.getDiff()
+  
   useEffect(
     () => {
-      setXState(getXState(viewportWidth, index))
       afterChange(index)
     },
     [index]
   )
 
-  const prevSlide = () => {
-    if (index !== 0) {
-      setIndex(index - 1)
-    }
-  }
-  const nextSlide = () => {
-    if (index < React.Children.count(children) - 1) {
-      setIndex(index + 1)
-    }
-  }
+  useLayoutEffect(
+    () => {
+      if (savedDiff !== helper.getDiff()) {
+        console.log('SAVE DIFF', helper.getDiff())
+        setDiff(helper.getDiff())  
+      }
+    })
 
   useEffect(
     () => {
-      setIndex(parentIndex)
+      if (index != parentIndex) {
+        setIndex(parentIndex)  
+      }
+
     },
     [parentIndex]
   )
-
-  const [{ x }] = useSpring({
-    x: down ? xDelta + xState : xState,
-    from: { x: 0 },
-    native: true,
-    immediate: name => down && name === 'x'
-  })
 
   useEffect(
     () => {
@@ -68,33 +77,41 @@ const Slider = ({
     [down]
   )
 
+  const prevSlide = () => {
+    setIndex(helper.rotateNumber(index-1))
+  }
+  const nextSlide = () => {
+    setIndex(helper.rotateNumber(index+1))
+  }
+  
+  const immediate = down || (helper.getDiff() !== savedDiff)
+  
+  children = React.Children.map(children, (child, i) => {
+    return React.cloneElement(child, {
+      order: helper.getOrder(i)
+    })
+  })
+  
+  const calcX = () => {
+    const x = (+down) * xDelta - viewportWidth * helper.rotateNumber(index + helper.getDiff())
+    return x;
+  }
+
+  //console.log('DIFF', { helperDiff: helper.getDiff(), diff, savedDiff, index, parentIndex, immediate, x: calcX()} )
+  
   return (
     <div className="App">
-      <p>x: {xState}</p>
+      <p>x: {calcX()}</p>
       <p>viewportWidth: {viewportWidth}</p>
       <p>index: {index}</p>
+      <p>diff: {diff}</p>
 
-      <div ref={viewPortRef} className={styles.viewPort}>
-        <animated.div
-          {...handlers}
-          style={{
-            transform: x.interpolate(x => `translate3d(${x}px, 0, 0)`)
-          }}
-          className={styles.slides}
-        >
-          {React.Children.map(children, (child, i) => (
-            <div
-              style={{ width: `${viewportWidth}px`, order: i }}
-              className={styles.slide}
-              key={i}
-            >
-              {child}
-            </div>
-          ))}
-        </animated.div>
+      <div {...handlers} ref={viewPortRef} className={styles.viewPort}>
+        <SlidesWrapper immediate={immediate} width={viewportWidth} to={calcX()} from={{ x: 0 }}>{children}</SlidesWrapper>
       </div>
     </div>
   )
 }
 
 export default Slider
+

@@ -21,7 +21,8 @@
     "react-spring": "^6.1.10",
     "react-visibility-sensor": "^5.0.2",
     "react-with-gesture": "^2.0.4",
-    "recompose": "^0.30.0"
+    "recompose": "^0.30.0",
+    "why-did-you-update": "^1.0.6"
   },
   "scripts": {
     "dev": "next",
