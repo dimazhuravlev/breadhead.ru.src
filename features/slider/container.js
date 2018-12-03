@@ -135,7 +135,7 @@ const Container = Slider => {
                     beforeChange={this.beforeChange}
                   >
                     {slideComponents.map((SlideComponent, i) => (
-                      <SlideComponent
+                      slides[i] && <SlideComponent
                         onLinkClick={this.onLinkClick}
                         key={i}
                         visible={isVisible}
