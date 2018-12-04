@@ -1,71 +1,71 @@
-import React from "react";
-import { scroller } from "react-scroll";
-import Case from "@site/features/case";
-import VisibilitySensor from "react-visibility-sensor";
-import { withNamespaces } from "@site/lib/i18n";
-import { Desktop, Mobile, Any } from "@site/lib/responsive";
-import Button from "@site/ui/molecules/Button";
-import { PlusIcon } from "@site/ui/atoms/icons";
+import React from 'react'
+import { scroller } from 'react-scroll'
+import Case from '@site/features/case'
+import VisibilitySensor from 'react-visibility-sensor'
+import { withNamespaces } from '@site/lib/i18n'
+import { Desktop, Mobile, Any } from '@site/lib/responsive'
+import Button from '@site/ui/molecules/Button'
+import { PlusIcon } from '@site/ui/atoms/icons'
 
-import styles from "./cases.css";
-import cx from "classnames";
+import styles from './cases.css'
+import cx from 'classnames'
 
 class Cases extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       isShown: false,
       isVisible: false
-    };
+    }
 
-    this.handleClick = this.handleClick.bind(this);
-    this.scrollToButton = this.scrollToButton.bind(this);
-    this.buttonRef = React.createRef();
+    this.handleClick = this.handleClick.bind(this)
+    this.scrollToButton = this.scrollToButton.bind(this)
+    this.buttonRef = React.createRef()
   }
 
   onVisibilityChange = isVisible => {
-    !this.state.isVisible && isVisible && this.setState({ isVisible });
-  };
+    !this.state.isVisible && isVisible && this.setState({ isVisible })
+  }
 
   scrollToButton(offset) {
-    scroller.scrollTo("buttonToShow", {
+    scroller.scrollTo('buttonToShow', {
       offset: offset
-    });
+    })
   }
 
   handleClick() {
-    let isShown;
-    let y;
+    let isShown
+    let y
     this.setState(
       state => {
-        isShown = state.isShown;
-        y = this.buttonRef.current.getBoundingClientRect().y;
+        isShown = state.isShown
+        y = this.buttonRef.current.getBoundingClientRect().y
         return {
           isShown: !state.isShown
-        };
+        }
       },
       () => {
         if (isShown) {
-          this.scrollToButton(-y);
+          this.scrollToButton(-y)
         }
       }
-    );
+    )
   }
 
   render() {
-    const { isShown, isVisible } = this.state;
-    const { t, casesDataDesktop, casesDataMobile } = this.props;
+    const { isShown, isVisible } = this.state
+    const { t, casesDataDesktop, casesDataMobile } = this.props
 
     const allCasesDesktop = casesDataDesktop.map(caseData => (
       <Case key={caseData.description.name} {...caseData} />
-    ));
+    ))
 
     const allCasesMobile = casesDataMobile.map(caseData => (
       <Case key={caseData.description.name} {...caseData} />
-    ));
+    ))
 
-    const firstShowCasesDesktop = allCasesDesktop.slice(0, 3);
-    const firstShowCasesMobile = allCasesMobile.slice(0, 3);
+    const firstShowCasesDesktop = allCasesDesktop.slice(0, 3)
+    const firstShowCasesMobile = allCasesMobile.slice(0, 3)
     return (
       <>
         <Desktop>
@@ -103,13 +103,13 @@ class Cases extends React.Component {
               )}
               icon={isShown ? null : <PlusIcon />}
             >
-              {isShown ? t("less-btn") : t("more-btn")}
+              {isShown ? t('less-btn') : t('more-btn')}
             </Button>
           </Any>
         </VisibilitySensor>
       </>
-    );
+    )
   }
 }
 
-export default withNamespaces(["common"])(Cases);
+export default withNamespaces(['common'])(Cases)

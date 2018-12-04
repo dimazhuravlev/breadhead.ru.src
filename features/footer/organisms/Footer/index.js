@@ -1,32 +1,30 @@
-import React from "react";
-import VisibilitySensor from "react-visibility-sensor";
-import { withNamespaces } from "@site/lib/i18n";
+import React from 'react'
+import VisibilitySensor from 'react-visibility-sensor'
+import { withNamespaces } from '@site/lib/i18n'
 
-import ExternalLink from "@site/ui/molecules/ExternalLink";
-import Image from "@site/ui/atoms/Image";
-import Descriptor from "@site/features/descriptor";
-import TextBlock from "@site/ui/molecules/TextBlock";
-import styles from "./footer.css";
-import cx from "classnames";
+import ExternalLink from '@site/ui/molecules/ExternalLink'
+import Image from '@site/ui/atoms/Image'
+import Descriptor from '@site/features/descriptor'
+import TextBlock from '@site/ui/molecules/TextBlock'
+import styles from './footer.css'
+import cx from 'classnames'
 
 class Footer extends React.Component {
   constructor(props) {
-    super(props);
-    this.state = { isVisible: false };
+    super(props)
+    this.state = { isVisible: false }
   }
 
   render() {
-    const { t } = this.props;
-    const date = new Date();
+    const { t } = this.props
+    const date = new Date()
 
     return (
       <footer id="footer">
         <div className={styles.footer}>
           <VisibilitySensor
             onChange={isVisible => {
-              !this.state.isVisible &&
-                isVisible &&
-                this.setState({ isVisible });
+              !this.state.isVisible && isVisible && this.setState({ isVisible })
             }}
             partialVisibility
             delayedCall
@@ -39,25 +37,25 @@ class Footer extends React.Component {
               <div className={cx(styles.content)}>
                 <Descriptor
                   className={styles.caseNameOnly}
-                  name={t("contact-title")}
+                  name={t('contact-title')}
                 />
 
                 <div className={styles.textBlocks}>
-                  <TextBlock header={t("text-block-address")}>
+                  <TextBlock header={t('text-block-address')}>
                     <ExternalLink href="https://goo.gl/maps/vud3y2m6k7m">
-                      {t("text-block-text-address-link")}
+                      {t('text-block-text-address-link')}
                     </ExternalLink>
                     <br />
-                    {t("text-block-text-address")}
+                    {t('text-block-text-address')}
                   </TextBlock>
-                  <TextBlock header={t("text-block-phone")}>
+                  <TextBlock header={t('text-block-phone')}>
                     <a className={styles.phoneLink} href="tel:+78129383779">
                       +7 812 938-37-79
                     </a>
                     <br />
                     <a href="mailto:hello@breadhead.ru">hello@breadhead.ru</a>
                   </TextBlock>
-                  <TextBlock header={t("text-block-social")}>
+                  <TextBlock header={t('text-block-social')}>
                     <ExternalLink href="https://www.facebook.com/breadhead.ru">
                       Facebook
                     </ExternalLink>
@@ -90,8 +88,8 @@ class Footer extends React.Component {
           </VisibilitySensor>
         </div>
       </footer>
-    );
+    )
   }
 }
 
-export default withNamespaces(["common"])(Footer);
+export default withNamespaces(['common'])(Footer)
