@@ -73,7 +73,8 @@ workflows:
             branches:
               ignore: 
                 - master
-  deploy-dev:
+  deploy:
+    jobs:
       - prod:
           filters:
             branches:
