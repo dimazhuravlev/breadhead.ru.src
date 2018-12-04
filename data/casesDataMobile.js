@@ -11,7 +11,6 @@ export const casesDataMobile = [
       },
       name: "Faster"
     },
-    priority: true,
     slides: [
       {
         type: TemplatesNames.FrameVideoMobile,

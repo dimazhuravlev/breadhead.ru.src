@@ -18,7 +18,7 @@ class Case extends React.Component {
   }
 
   render() {
-    const { name, lang, className, description, slides, priority } = this.props
+    const { name, className, description, slides, lang } = this.props
     const { isVisible } = this.state
     return (
       <VisibilitySensor
@@ -36,11 +36,7 @@ class Case extends React.Component {
           )}
         >
           <Descriptor {...description} />
-          {isVisible || priority ? (
-            <Slider slides={slides} />
-          ) : (
-            <div className={styles.placeholder} />
-          )}
+          <Slider slides={slides} />
         </section>
       </VisibilitySensor>
     )
@@ -50,7 +46,7 @@ class Case extends React.Component {
 Case.propTypes = {
   priority: PropTypes.bool,
   description: PropTypes.object.isRequired,
-  slides: PropTypes.arrayOf(PropTypes.object),
+  slides: PropTypes.arrayOf(PropTypes.object)
 }
 
 export default withLang(Case)

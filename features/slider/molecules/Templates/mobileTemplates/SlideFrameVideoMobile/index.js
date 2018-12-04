@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { onlyUpdateForKeys } from 'recompose'
+import { compose, onlyUpdateForKeys } from 'recompose'
 import VideoPlayer from '@site/features/slider/molecules/VideoPlayer'
 import styles from './slideFrameVideoMobile.css'
 
@@ -8,11 +8,13 @@ const SlideFrameVideoMobile = ({
   image: { src, preloader },
   backgroundColor,
   active,
-  visible
+  visible,
+  preload
 }) => (
   <div style={{ backgroundColor: backgroundColor }} className={styles.slide}>
     <div className={styles.phone}>
       <VideoPlayer
+        preload={preload}
         visible={visible}
         active={active}
         className={styles.video}
@@ -30,4 +32,6 @@ SlideFrameVideoMobile.propTypes = {
   backgroundColor: PropTypes.string
 }
 
-export default onlyUpdateForKeys(['active', 'visible'])(SlideFrameVideoMobile)
+const hoc = compose(onlyUpdateForKeys(['active', 'visible', 'preload']))
+
+export default hoc(SlideFrameVideoMobile)

@@ -11,7 +11,6 @@ export const casesDataDesktop = [
       },
       name: 'Faster'
     },
-    priority: true,
     slides: [
       {
         type: TemplatesNames.PictureDesktop,
