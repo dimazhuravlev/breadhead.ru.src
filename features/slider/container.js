@@ -14,7 +14,6 @@ const Container = Slider => {
     constructor(props) {
       super(props)
 
-
       this.state = {
         index: 0,
         slideComponents: (props.slides || []).map(
@@ -39,8 +38,7 @@ const Container = Slider => {
       })
     }
 
-    touchStart = (e) => {
-
+    touchStart = e => {
       const event = e.touches ? e.touches[0] : e
 
       this.firstClientX = event.clientX
@@ -74,7 +72,7 @@ const Container = Slider => {
       this.setIndex(index + 1)
     }
 
-    preventTouch = (e) => {
+    preventTouch = e => {
       const MIN_VALUE = 5 // threshold
 
       this.clientX = e.touches[0].clientX - this.firstClientX
@@ -107,15 +105,16 @@ const Container = Slider => {
       }
     }
 
-    validateClick = (e) => {
-      return (Math.sqrt(
-        Math.pow(e.clientX - this.firstClientX, 2) +
-        Math.pow(e.clientY - this.firstClientY, 2)
-      ) < 5)
+    validateClick = e => {
+      return (
+        Math.sqrt(
+          Math.pow(e.clientX - this.firstClientX, 2) +
+            Math.pow(e.clientY - this.firstClientY, 2)
+        ) < 5
+      )
     }
 
     onSlideClick = e => {
-
       if (!this.validateClick(e)) return
 
       e.persist()
@@ -128,12 +127,11 @@ const Container = Slider => {
       } else {
         this.prevSlide()
       }
-
     }
 
     render() {
       const { height, className, slides } = this.props
-      const { index, slideComponents, paused } = this.state
+      const { index, slideComponents } = this.state
       const minTopValue = height > 600 ? height / 2.5 : height / 2
       const offset = { top: height / 2 }
       return (
@@ -154,23 +152,24 @@ const Container = Slider => {
                     index={index}
                     duration={slides[index].duration}
                     isVisible={isVisible && !down}
-                    delay={500}
                     quantity={slides.length}
-                    paused={paused}
                     changeSlide={this.changeSlide}
-
                   />
                   <SliderAmount amount={slides.length} />
                   <Slider afterChange={this.setIndex} index={index}>
-                    {slideComponents.map((SlideComponent, i) => (
-                      <SlideComponent
-                        onLinkClick={this.onLinkClick}
-                        key={i}
-                        visible={isVisible}
-                        active={index === i}
-                        {...slides[i].data}
-                      />
-                    ))}
+                    {slideComponents.map((SlideComponent, i) => {
+                      const preload = i - index < 2
+                      return (
+                        <SlideComponent
+                          onLinkClick={this.onLinkClick}
+                          key={i}
+                          visible={isVisible}
+                          preload={preload}
+                          active={index === i}
+                          {...slides[i].data}
+                        />
+                      )
+                    })}
                   </Slider>
                 </div>
               )}

@@ -10,6 +10,7 @@ const SlideFrameVideoDesktop = ({
   backgroundColor,
   active,
   visible,
+  preload
 }) => {
   return (
     <div style={{ backgroundColor: backgroundColor }} className={styles.slide}>
@@ -18,6 +19,7 @@ const SlideFrameVideoDesktop = ({
           <Image className={styles.dots} src="dots.png" />
         </div>
         <VideoPlayer
+          preload={preload}
           visible={visible}
           active={active}
           className={styles.videoframe}
@@ -34,7 +36,9 @@ const SlideFrameVideoDesktop = ({
 SlideFrameVideoDesktop.propTypes = {
   src: PropTypes.string,
   backgroundColor: PropTypes.string,
-  active: PropTypes.bool,
+  active: PropTypes.bool
 }
 
-export default onlyUpdateForKeys(['active', 'visible'])(SlideFrameVideoDesktop)
+export default onlyUpdateForKeys(['active', 'visible', 'preload'])(
+  SlideFrameVideoDesktop
+)

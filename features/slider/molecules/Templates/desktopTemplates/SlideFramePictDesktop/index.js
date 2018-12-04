@@ -1,5 +1,5 @@
 import React from 'react'
-import { neverUpdate } from '@site/lib/shouldUpdate'
+import { compose, onlyUpdateForKeys } from 'recompose'
 import PreloadableImage from '@site/ui/molecules/PreloadableImage'
 import Image from '@site/ui/atoms/Image'
 import styles from './slideFramePictDesktop.css'
@@ -8,6 +8,7 @@ const SlideFramePictDesktop = ({
   image: { src, preloader },
   backgroundColor,
   backgroundSrc,
+  preload
 }) => {
   return (
     <div style={{ backgroundColor: backgroundColor }} className={styles.slide}>
@@ -16,6 +17,7 @@ const SlideFramePictDesktop = ({
           <Image className={styles.dots} src="dots.png" />
         </div>
         <PreloadableImage
+          preload={preload}
           src={src}
           className={styles.screen}
           preloader={preloader}
@@ -28,4 +30,6 @@ const SlideFramePictDesktop = ({
   )
 }
 
-export default neverUpdate(SlideFramePictDesktop)
+const hoc = compose(onlyUpdateForKeys(['preload']))
+
+export default hoc(SlideFramePictDesktop)
