@@ -1,4 +1,5 @@
 .Title {
+  white-space: pre-wrap;
   font-size: 80px;
   line-height: 80px;
   font-family: var(--fontFamilyAeroport);

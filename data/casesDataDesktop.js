@@ -5,7 +5,10 @@ export const casesDataDesktop = [
   /* FASTER DESKTOP CASE */
   {
     description: {
-      type: 'веб-сервис',
+      type: {
+        ru: 'веб-сервис',
+        en: 'web application'
+      },
       name: 'Faster'
     },
     slides: [
@@ -22,11 +25,19 @@ export const casesDataDesktop = [
         type: TemplatesNames.ArticleWithPhoneDesktop,
         duration: 12000,
         data: {
-          title: 'Новый опыт покупки лекарств',
-          description: [
-            `Faster — это сервис, который объединяет все аптеки города, находит и${NON_BREAKING_SPACE}бронирует лекарства по${NON_BREAKING_SPACE}лучшим ценам. Мы отвечали за${NON_BREAKING_SPACE}все стороны продукта: от${NON_BREAKING_SPACE}логотипа и${NON_BREAKING_SPACE}цвета кнопок до${NON_BREAKING_SPACE}архитектуры, интеграций с${NON_BREAKING_SPACE}базами данных и${NON_BREAKING_SPACE}разработки приложения для аптек.`,
-            'Запуск скоро.'
-          ],
+          title: {
+            ru: 'Новый опыт покупки лекарств',
+            en: 'New medicine shopping experience'
+          },
+          description: {
+            ru: [
+              `Faster — это сервис, который объединяет все аптеки города, находит и${NON_BREAKING_SPACE}бронирует лекарства по${NON_BREAKING_SPACE}лучшим ценам. Мы отвечали за${NON_BREAKING_SPACE}все стороны продукта: от${NON_BREAKING_SPACE}логотипа и${NON_BREAKING_SPACE}цвета кнопок до${NON_BREAKING_SPACE}архитектуры проекта, интеграций с${NON_BREAKING_SPACE}базами данных и${NON_BREAKING_SPACE}разработки приложения для аптек.`,
+              'Запуск скоро.'
+            ],
+            en: [
+              `Faster is a${NON_BREAKING_SPACE}service which integrates all pharmacies in the city, searches and orders medicines at their lowest prices. We are responsible for the entire product side: from the logo and button colors to software architecture, integration with databases and pharmacy applications development. Coming soon.`
+            ]
+          },
           image: {
             src: 'faster/desktop/phone_map_desktop.jpg',
             preloader: 'faster/desktop/preloader-phone_map_desktop.jpg'
@@ -160,8 +171,14 @@ export const casesDataDesktop = [
   /* OBED BUFET DESKTOP CASE */
   {
     description: {
-      type: 'приложение',
-      name: 'ОбедБуфет'
+      type: {
+        ru: 'приложение и сайт',
+        en: 'app and website'
+      },
+      name: {
+        ru: 'ОбедБуфет',
+        en: 'ObedBufet'
+      }
     },
     slides: [
       {
@@ -178,9 +195,24 @@ export const casesDataDesktop = [
         type: TemplatesNames.ArticleWithPhoneDesktop,
         duration: 12000,
         data: {
-          title: 'Дружелюбная доставка домашней еды',
-          description: [
-            `Заказ еды — простое и${NON_BREAKING_SPACE}понятное действие. Таким мы${NON_BREAKING_SPACE}сделали интерфейс этого приложения. Mинимум рекламы, позитивные цвета и${NON_BREAKING_SPACE}формы, забавные персонажи, легкий тон коммуникации и${NON_BREAKING_SPACE}простота в${NON_BREAKING_SPACE}использовании.`
+          title: {
+            ru: `Дружелюбная доставка еды от${NON_BREAKING_SPACE}Ginza Project`,
+            en: `Friendly food delivery by${NON_BREAKING_SPACE}Ginza Project`
+          },
+          description: {
+            ru: [
+              `Заказ еды — простое и${NON_BREAKING_SPACE}понятное действие. Таким мы${NON_BREAKING_SPACE}сделали интерфейс этого приложения. Mинимум рекламы, позитивные цвета и${NON_BREAKING_SPACE}формы, забавные персонажи, легкий тон коммуникации и${NON_BREAKING_SPACE}простота в${NON_BREAKING_SPACE}использовании.`
+            ],
+            en: [
+              `Ordering food is${NON_BREAKING_SPACE}clear and simple. So is${NON_BREAKING_SPACE}the interface we made for this application: minimized advertising, positive shapes and colors, funny characters, friendly tone of${NON_BREAKING_SPACE}voice and ease of${NON_BREAKING_SPACE}use.`
+            ]
+          },
+          links: [
+            {
+              icontype: 'globe',
+              href: 'https://yango.pro',
+              text: 'yango.pro'
+            }
           ],
           image: {
             src: 'obed_bufet/0-location_obedbufet-app_desktop.jpg',
@@ -285,12 +317,18 @@ export const casesDataDesktop = [
   /* ENCORE FITNESS DESKTOP CASE */
   {
     description: {
-      type: 'сайт',
+      type: {
+        ru: 'сайт',
+        en: 'website'
+      },
       name: 'Encore Fitness',
       links: [
         {
           icontype: 'globe',
-          href: 'https://encorefitness.ru'
+          href: {
+            ru: 'https://encorefitness.ru',
+            en: 'https://encorefitness.ru/en/?lang=en'
+          }
         },
         {
           icontype: 'article',
@@ -313,21 +351,35 @@ export const casesDataDesktop = [
         type: TemplatesNames.ArticleDesktop,
         duration: 12000,
         data: {
-          title: `Меняем представление о${NON_BREAKING_SPACE}фитнес-клубах`,
-          description: [
-            `Мы помогли разработать концепцию бренда (совместно с${NON_BREAKING_SPACE}<a target="_blank" rel = "noopener noreferrer" href="http://fullfort.agency/">Fullfort</a>) и${NON_BREAKING_SPACE}сделали сайт, который стал продолжением уникального клиентского опыта в${NON_BREAKING_SPACE}клубах Encore —${NON_BREAKING_SPACE}сочетанием технологичности, внимания к${NON_BREAKING_SPACE}деталям и${NON_BREAKING_SPACE}истории бренда.`,
-            'Фото: Арсений Джабиев.'
-          ],
+          title: {
+            ru: `Меняем представление о${NON_BREAKING_SPACE}фитнес-клубах`,
+            en: `Changing the idea of${NON_BREAKING_SPACE}fitness clubs`
+          },
+          description: {
+            ru: [
+              `Вместе с${NON_BREAKING_SPACE}<a target="_blank" rel="noopener noreferrer" href="http://fullfort.agency/">Fullført</a> мы разработали концепцию бренда и${NON_BREAKING_SPACE}сделали сайт, который стал продолжением уникального клиентского опыта в${NON_BREAKING_SPACE}клубах Encore Fitness —${NON_BREAKING_SPACE}сочетанием технологичности и${NON_BREAKING_SPACE}функциональности с${NON_BREAKING_SPACE}историей бренда и${NON_BREAKING_SPACE}вниманием к${NON_BREAKING_SPACE}деталям.`,
+              'Фото: Арсений Джабиев.'
+            ],
+            en: [
+              `Together with <a target="_blank" rel="noopener noreferrer" href="http://fullfort.agency/">Fullført</a>, we developed a${NON_BREAKING_SPACE}brand concept and created a${NON_BREAKING_SPACE}website which comprises the unique customer experience at Encore clubs—a${NON_BREAKING_SPACE}combination of technology, attention to detail and brand story. Photo by Arseny Dzhabiev.`
+            ]
+          },
           links: [
             {
               icontype: 'article',
               href:
                 'https://medium.com/@breadhead.ru/encore-fitness-2ea1deba6f70',
-              text: 'читать кейс'
+              text: {
+                ru: 'читать кейс',
+                en: 'read more'
+              }
             },
             {
               icontype: 'globe',
-              href: 'https://encorefitness.ru',
+              href: {
+                ru: 'https://encorefitness.ru',
+                en: 'https://encorefitness.ru/en/?lang=en'
+              },
               text: 'encorefitness.ru'
             }
           ]
@@ -460,7 +512,10 @@ export const casesDataDesktop = [
   /* YANGO DESKTOP CASE */
   {
     description: {
-      type: 'приложение и сайт',
+      type: {
+        ru: 'приложение и сайт',
+        en: 'app and website'
+      },
       name: 'Yango',
       links: [
         {
@@ -483,10 +538,18 @@ export const casesDataDesktop = [
         type: TemplatesNames.ArticleWithPhoneDesktop,
         duration: 12000,
         data: {
-          title: 'Инвестиции через мобильное приложение',
-          description: [
-            `Yango — сервис для инвестирования в${NON_BREAKING_SPACE}надежные компании. С${NON_BREAKING_SPACE}помощью приложения можно купить облигации Сбербанка, МТС или РЖД и${NON_BREAKING_SPACE}получить доход выше, чем у${NON_BREAKING_SPACE}обычных вкладов. Мы сделали редизайн приложения и${NON_BREAKING_SPACE}запустили первую версию промо-сайта.`
-          ],
+          title: {
+            ru: 'Инвестиции через мобильное приложение',
+            en: 'Investment via mobile app'
+          },
+          description: {
+            ru: [
+              `Yango — сервис для инвестирования в${NON_BREAKING_SPACE}надежные компании. С${NON_BREAKING_SPACE}помощью приложения можно купить облигации Сбербанка, МТС или РЖД и${NON_BREAKING_SPACE}получить доход выше, чем от${NON_BREAKING_SPACE}обычных вкладов. Мы сделали редизайн приложения и${NON_BREAKING_SPACE}запустили промо-сайт.`
+            ],
+            en: [
+              `Yango is a${NON_BREAKING_SPACE}service for investing in${NON_BREAKING_SPACE}reliable companies. Using this application, you can buy bonds of${NON_BREAKING_SPACE}such companies as${NON_BREAKING_SPACE}Sberbank, MTS or RZD and generate an income higher than that from ordinary deposits. We redesigned the application and launched the promo-site.`
+            ]
+          },
           links: [
             {
               icontype: 'globe',
@@ -651,6 +714,76 @@ export const casesDataDesktop = [
             src: 'yango/desktop/10_desktop_fullslide.jpg',
             preloader: 'yango/desktop/preloader-10_desktop_fullslide.jpg'
           }
+        }
+      }
+    ]
+  },
+
+  /*ONCOHELP DESKTOP CASE */
+  {
+    description: {
+      type: {
+        ru: 'веб-сервис',
+        en: 'web application'
+      },
+      name: {
+        ru: 'Просто спросить',
+        en: 'Just Ask'
+      }
+    },
+    slides: [
+      {
+        type: TemplatesNames.FramePictDesktop,
+        data: {
+          image: {
+            src: 'just_ask/desktop/1_oncohelp_preview_desktop.jpg',
+            preloader:
+              'just_ask/desktop/preloader-1_oncohelp_preview_desktop.jpg'
+          },
+          backgroundColor: '#3C54EE'
+        }
+      },
+      {
+        type: TemplatesNames.ArticleWithPhoneDesktop,
+        duration: 12000,
+        data: {
+          title: {
+            ru: `Бесплатные консультации с${NON_BREAKING_SPACE}лучшими онкологами`,
+            en: `Free consultations with the${NON_BREAKING_SPACE}best oncologists`
+          },
+          description: {
+            ru: [
+              `В начале 2019 года «Фонд профилактики рака» и${NON_BREAKING_SPACE}Breadhead запускают новый сервис помощи людям, столкнувшимся с${NON_BREAKING_SPACE}онкологией. Это справочная об${NON_BREAKING_SPACE}организации лечения и${NON_BREAKING_SPACE}система оценки качества работы медицинских служб.`
+            ],
+            en: [
+              `In early 2019, the Cancer Prevention Foundation and Breadhead are launching a${NON_BREAKING_SPACE}new service to help people facing cancer. This is a${NON_BREAKING_SPACE}reference service providing information about the organization of treatment and the assessment of health care services quality.`
+            ]
+          },
+          links: [
+            {
+              icontype: 'globe',
+              href:
+                'https://nenaprasno.ru/fund/news-and-events/fond-profilaktiki-raka-pristupil-k-razrabotke-nezavisimoy-spravochnoy-sluzhby-v-onkologii/',
+              text: {
+                ru: 'анонс на сайте фонда',
+                en: 'announcement'
+              }
+            }
+          ],
+          image: {
+            src: 'just_ask/mobile/2_oncohelp_filling_mobile.jpg',
+            preloader: 'just_ask/mobile/preloader-2_oncohelp_filling_mobile.jpg'
+          }
+        }
+      },
+      {
+        type: TemplatesNames.FramePictDesktop,
+        data: {
+          image: {
+            src: 'just_ask/desktop/3_oncohelp_form_desktop.jpg',
+            preloader: 'just_ask/desktop/preloader-3_oncohelp_form_desktop.jpg'
+          },
+          backgroundColor: '#3C54EE'
         }
       }
     ]

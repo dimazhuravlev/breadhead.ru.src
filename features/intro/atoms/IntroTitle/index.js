@@ -1,16 +1,9 @@
 import React from 'react'
+import { withNamespaces } from '@site/lib/i18n'
 import styles from './introTitle.css'
 
-const IntroTitle = () => (
-  <h1 className={styles.Title}>
-    Разработка
-    <br />
-    цифровых
-    <br />
-    сервисов. Веб,
-    <br />
-    iOS, Android
-  </h1>
+const IntroTitle = ({ t }) => (
+  <h1 className={styles.Title}>{t('main-title')}</h1>
 )
 
-export default IntroTitle
+export default withNamespaces(['common'])(IntroTitle)

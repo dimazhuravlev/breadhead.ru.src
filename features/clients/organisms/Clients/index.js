@@ -1,7 +1,6 @@
 import React from 'react'
 import VisibilitySensor from 'react-visibility-sensor'
-
-import { clientsData } from '@site/data/clientsData'
+import { withNamespaces } from '@site/lib/i18n'
 import Descriptor from '@site/features/descriptor'
 import ClientsList from '../../molecules/ClientsList'
 import styles from './clients.css'
@@ -14,6 +13,8 @@ class Clients extends React.Component {
   }
 
   render() {
+    const { t } = this.props
+
     return (
       <VisibilitySensor
         onChange={isVisible => {
@@ -29,12 +30,15 @@ class Clients extends React.Component {
             this.state.isVisible ? styles.visible : styles.inVisible
           )}
         >
-          <Descriptor name="Клиенты" />
-          <ClientsList clients={clientsData} />
+          <Descriptor
+            className={styles.caseNameOnly}
+            name={t('clients-title')}
+          />
+          <ClientsList clients={this.props.clientsData} />
         </section>
       </VisibilitySensor>
     )
   }
 }
 
-export default Clients
+export default withNamespaces(['common'])(Clients)

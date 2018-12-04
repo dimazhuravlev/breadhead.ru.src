@@ -28,7 +28,7 @@ const SlideFrameVideoMobile = ({
 )
 
 SlideFrameVideoMobile.propTypes = {
-  src: PropTypes.string.isRequired,
+  src: PropTypes.string,
   backgroundColor: PropTypes.string
 }
 

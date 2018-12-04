@@ -1,4 +1,5 @@
 .textBlock {
+  white-space: pre-wrap;
   margin-right: 32px;
   @media (max-width: 690px) {
     margin-bottom: 24px;
