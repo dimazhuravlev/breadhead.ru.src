@@ -165,7 +165,7 @@ const Container = Slider => {
                   <SliderAmount amount={slides.length} />
                   <Slider afterChange={this.setIndex} index={index}>
                     {slideComponents.map((SlideComponent, i) => (
-                      <SlideComponent
+                      slides[i] && <SlideComponent
                         onLinkClick={this.onLinkClick}
                         key={i}
                         visible={isVisible}
