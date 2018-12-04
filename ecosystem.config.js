@@ -8,6 +8,7 @@ module.exports = {
     merge_logs: true,
     env_production: {
       NODE_ENV: 'production',
+      PORT: 4242,
     },
   }],
 }
