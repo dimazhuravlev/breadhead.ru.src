@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-// const ExternalLink = ({ children, href, className }) =>
 class ExternalLink extends React.Component {
   onClick = e => {
     e.stopPropagation()
