@@ -4,6 +4,7 @@ import { compose } from 'recompose'
 import cx from 'classnames'
 import { Gesture } from 'react-with-gesture'
 import { templatesMap } from '@site/features/slider/molecules/Templates'
+import KeyHandler from './molecules/KeyHandler'
 import VisibilitySensor from 'react-visibility-sensor'
 import styles from './index.css'
 import SliderAmount from '@site/ui/molecules/SliderAmount'
@@ -154,6 +155,11 @@ const Container = Slider => {
                     isVisible={isVisible && !down}
                     quantity={slides.length}
                     changeSlide={this.changeSlide}
+                  />
+                  <KeyHandler
+                    prevSlide={this.prevSlide}
+                    nextSlide={this.nextSlide}
+                    isVisible={isVisible}
                   />
                   <SliderAmount amount={slides.length} />
                   <Slider afterChange={this.setIndex} index={index}>
