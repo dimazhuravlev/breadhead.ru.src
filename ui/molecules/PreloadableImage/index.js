@@ -38,17 +38,17 @@ class PreloadableImage extends React.Component {
     const { loaded, preloaded } = this.state
     return (
       <div className={cx(className, styles.wrapper, loaded && styles.loaded)}>
-        <Image
-          className={cx(styles.image, className)}
-          src={preloaded ? src : undefined}
-          ref={this.image}
-          onLoad={this.handleImageLoaded}
-        />
-        <Image
-          className={cx(styles.preloader)}
-          src={preloader}
-          alt="загружается"
-        />
+        {preloaded ? (
+          <Image
+            className={cx(styles.image, className)}
+            src={src}
+            ref={this.image}
+            onLoad={this.handleImageLoaded}
+          />
+        ) : (
+          <div className={cx(styles.image, className)} />
+        )}
+        <Image className={cx(styles.preloader)} src={preloader} />
       </div>
     )
   }
