@@ -28,11 +28,11 @@
   },
   "scripts": {
     "dev": "node server.js",
-    "prod": "gulp && next build && pm2 start ecosystem.config.js",
+    "prod": "pm2 start ecosystem.config.js",
     "build": "gulp && next build && next export",
-    "lint": "yarn lint-css && yarn lint-js",
-    "lint-css": "stylelint 'pages/**/*.css' && stylelint 'ui/**/*.css' & stylelint 'features/**/*.css'",
-    "lint-js": "eslint 'pages/**/*.js' && eslint 'ui/**/*.js' && eslint 'features/**/*.js'",
+    "lint": "yarn lint:style && yarn lint:code",
+    "lint:style": "stylelint 'pages/**/*.css' && stylelint 'ui/**/*.css' & stylelint 'features/**/*.css'",
+    "lint:code": "eslint 'pages/**/*.js' && eslint 'ui/**/*.js' && eslint 'features/**/*.js'",
     "test": "jest",
     "ci": "yarn lint && yarn test"
   },

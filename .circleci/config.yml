@@ -1,0 +1,81 @@
+version: 2
+jobs:
+  lint:
+    docker:
+      - image: circleci/node:8.11.1
+
+    working_directory: ~/repo
+
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - js-dependencies-{{ checksum "yarn.lock" }}
+      - run:
+          name: Install Dependencies
+          command: yarn
+      - save_cache:
+          key: js-dependencies-{{ checksum "yarn.lock" }}
+          paths:
+            - ./node_modules
+      - run:
+          name: Lint Code
+          command: yarn lint:code
+      - run:
+          name: Link Styles
+          command: yarn lint:style
+
+  test:
+    docker:
+      - image: circleci/node:8.11.1
+
+    working_directory: ~/repo
+
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - js-dependencies-{{ checksum "yarn.lock" }}
+      - run:
+          name: Install Dependencies
+          command: yarn
+      - save_cache:
+          key: js-dependencies-{{ checksum "yarn.lock" }}
+          paths:
+            - ./node_modules
+      - run:
+          name: Unit Test
+          command: yarn test
+
+  prod:
+    machine:
+      enabled: true
+    steps:
+      - run:
+          name: Deploy Over SSH
+          command: ssh $SSH_USER@$SSH_HOST "cd /home/cloud-user/www/breadhead.ru/breadhead.ru.src &&
+            git pull &&
+            yarn install &&
+            yarn build &&
+            yarn prod"
+
+workflows:
+  version: 2
+  check-pr:
+    jobs:
+      - lint:
+          filters:
+            branches:
+              ignore: 
+                - master
+      - test:
+          filters:
+            branches:
+              ignore: 
+                - master
+  deploy-dev:
+      - prod:
+          filters:
+            branches:
+              only: 
+                - master
