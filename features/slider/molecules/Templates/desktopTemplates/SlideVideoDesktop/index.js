@@ -1,12 +1,18 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { onlyUpdateForKeys } from 'recompose'
+import { compose, onlyUpdateForKeys } from 'recompose'
 import VideoPlayer from '@site/features/slider/molecules/VideoPlayer'
 import styles from './slideVideoDesktop.css'
 
-const SlideVideoDesktop = ({ image: { src, preloader }, active, visible }) => (
+const SlideVideoDesktop = ({
+  image: { src, preloader },
+  active,
+  visible,
+  preload
+}) => (
   <div className={styles.frame}>
     <VideoPlayer
+      preload={preload}
       visible={visible}
       active={active}
       className={styles.video}
@@ -22,4 +28,6 @@ SlideVideoDesktop.propTypes = {
   src: PropTypes.string
 }
 
-export default onlyUpdateForKeys(['active', 'visible'])(SlideVideoDesktop)
+const hoc = compose(onlyUpdateForKeys(['active', 'visible', 'preload']))
+
+export default hoc(SlideVideoDesktop)

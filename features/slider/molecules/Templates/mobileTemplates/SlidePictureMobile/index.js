@@ -1,14 +1,17 @@
 import React from 'react'
-import { neverUpdate } from '@site/lib/shouldUpdate'
+import { compose, onlyUpdateForKeys } from 'recompose'
 import PreloadableImage from '@site/ui/molecules/PreloadableImage'
 import styles from './slidePictureMobile.css'
 
-const SlidePictureMobile = ({ image: { src, preloader } }) => (
+const SlidePictureMobile = ({ image: { src, preloader }, preload }) => (
   <PreloadableImage
+    preload={preload}
     src={src}
     className={styles.picture}
     preloader={preloader}
   />
 )
 
-export default neverUpdate(SlidePictureMobile)
+const hoc = compose(onlyUpdateForKeys(['preload']))
+
+export default hoc(SlidePictureMobile)

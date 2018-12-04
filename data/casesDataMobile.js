@@ -8,7 +8,6 @@ export const casesDataMobile = [
       type: 'веб-сервис',
       name: 'Faster'
     },
-    priority: true,
     slides: [
       {
         type: TemplatesNames.FrameVideoMobile,

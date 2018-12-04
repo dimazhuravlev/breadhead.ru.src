@@ -153,7 +153,6 @@ const Container = Slider => {
                     index={index}
                     duration={slides[index].duration}
                     isVisible={isVisible && !down}
-                    delay={500}
                     quantity={slides.length}
                     changeSlide={this.changeSlide}
                   />
@@ -164,15 +163,19 @@ const Container = Slider => {
                   />
                   <SliderAmount amount={slides.length} />
                   <Slider afterChange={this.setIndex} index={index}>
-                    {slideComponents.map((SlideComponent, i) => (
-                      <SlideComponent
-                        onLinkClick={this.onLinkClick}
-                        key={i}
-                        visible={isVisible}
-                        active={index === i}
-                        {...slides[i].data}
-                      />
-                    ))}
+                    {slideComponents.map((SlideComponent, i) => {
+                      const preload = i - index < 2
+                      return (
+                        <SlideComponent
+                          onLinkClick={this.onLinkClick}
+                          key={i}
+                          visible={isVisible}
+                          preload={preload}
+                          active={index === i}
+                          {...slides[i].data}
+                        />
+                      )
+                    })}
                   </Slider>
                 </div>
               )}

@@ -1,5 +1,5 @@
 import React from 'react'
-import { neverUpdate } from '@site/lib/shouldUpdate'
+import { compose, onlyUpdateForKeys } from 'recompose'
 import PreloadableImage from '@site/ui/molecules/PreloadableImage'
 import SlideText from '@site/ui/molecules/SlideText'
 import ArticleIconBlock from '@site/ui/molecules/ArticleIconBlock'
@@ -11,6 +11,7 @@ const SlideArticleWithPhoneDesktop = ({
   links,
   image: { src, preloader },
   backgroundColor,
+  preload
 }) => {
   return (
     <div style={{ backgroundColor: backgroundColor }}>
@@ -22,6 +23,7 @@ const SlideArticleWithPhoneDesktop = ({
         </article>
         <div className={styles.phone}>
           <PreloadableImage
+            preload={preload}
             src={src}
             preloader={preloader}
             className={styles.screen}
@@ -32,4 +34,6 @@ const SlideArticleWithPhoneDesktop = ({
   )
 }
 
-export default neverUpdate(SlideArticleWithPhoneDesktop)
+const hoc = compose(onlyUpdateForKeys(['preload']))
+
+export default hoc(SlideArticleWithPhoneDesktop)

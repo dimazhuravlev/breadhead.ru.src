@@ -1,11 +1,12 @@
 import React from 'react'
-import { neverUpdate } from '@site/lib/shouldUpdate'
+import { compose, onlyUpdateForKeys } from 'recompose'
 import PreloadableImage from '@site/ui/molecules/PreloadableImage'
 import styles from './slidePictureDesktop.css'
 
-const SlidePictureDesktop = ({ image: { src, preloader } }) => {
+const SlidePictureDesktop = ({ image: { src, preloader }, preload }) => {
   return (
     <PreloadableImage
+      preload={preload}
       src={src}
       className={styles.picture}
       preloader={preloader}
@@ -13,4 +14,6 @@ const SlidePictureDesktop = ({ image: { src, preloader } }) => {
   )
 }
 
-export default neverUpdate(SlidePictureDesktop)
+const hoc = compose(onlyUpdateForKeys(['preload']))
+
+export default hoc(SlidePictureDesktop)

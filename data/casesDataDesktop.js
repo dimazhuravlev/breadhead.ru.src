@@ -8,7 +8,6 @@ export const casesDataDesktop = [
       type: 'веб-сервис',
       name: 'Faster'
     },
-    priority: true,
     slides: [
       {
         type: TemplatesNames.PictureDesktop,

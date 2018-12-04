@@ -3,6 +3,7 @@ import { onlyUpdateForKeys } from 'recompose'
 import VideoPlayer from '@site/features/slider/molecules/VideoPlayer'
 import Image from '@site/ui/atoms/Image'
 import styles from './slidePhonesDesktop.css'
+import PreloadableImage from '@site/ui/molecules/PreloadableImage'
 
 const SlidePhonesDesktop = ({
   screens,
@@ -10,6 +11,7 @@ const SlidePhonesDesktop = ({
   backgroundSrc,
   active,
   visible,
+  preload
 }) => {
   return (
     <div style={{ backgroundColor: backgroundColor }} className={styles.slide}>
@@ -17,9 +19,15 @@ const SlidePhonesDesktop = ({
         {screens.map((screen, i) => (
           <div key={i} className={styles.phone}>
             {screen.type === 'img' ? (
-              <Image src={screen.src} className={styles.screen} />
+              <PreloadableImage
+                src={screen.src}
+                preload={preload}
+                className={styles.screen}
+                preloader={screen.preloader}
+              />
             ) : (
               <VideoPlayer
+                preload={preload}
                 visible={visible}
                 active={active}
                 src={screen.src}
@@ -39,4 +47,6 @@ const SlidePhonesDesktop = ({
   )
 }
 
-export default onlyUpdateForKeys(['active', 'visible'])(SlidePhonesDesktop)
+export default onlyUpdateForKeys(['active', 'visible', 'preload'])(
+  SlidePhonesDesktop
+)
