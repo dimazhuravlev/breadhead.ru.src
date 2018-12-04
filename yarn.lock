@@ -803,10 +803,6 @@
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/@nodelib/fs.stat/-/fs.stat-1.1.2.tgz#54c5a964462be3d4d78af631363c18d6fa91ac26"
 
-"@rehooks/component-size@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@rehooks/component-size/-/component-size-1.0.2.tgz#b93d5f39bc9f47a6c0feb39690ae07156bc65863"
-
 "@pm2/agent-node@^1.0.9":
   version "1.0.11"
   resolved "https://registry.yarnpkg.com/@pm2/agent-node/-/agent-node-1.0.11.tgz#2c1be90196ad10c80bc88daad8de5be7ee210198"
@@ -859,6 +855,10 @@
     debug "^2.6.8"
     eventemitter2 "^4.1.0"
     ws "^3.0.0"
+
+"@rehooks/component-size@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@rehooks/component-size/-/component-size-1.0.2.tgz#b93d5f39bc9f47a6c0feb39690ae07156bc65863"
 
 "@sindresorhus/is@^0.7.0":
   version "0.7.0"
@@ -1400,10 +1400,10 @@ autodll-webpack-plugin@0.4.2:
     webpack-merge "^4.1.0"
     webpack-sources "^1.0.1"
 
-autoprefixer@^9.0.0, autoprefixer@^9.3.1, autoprefixer@^9.4.1:
-  version "9.4.1"
-  resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-9.4.1.tgz#a3d7e9c5940ba85778ab780536f1cc51bd2dfbd6"
-  integrity sha512-T15Bt8akUOGqhkXPLKipYzzmmOOQ+H4dmZtk3VUNBbFiYuUh5uvXb/THxGGxbRlaNG+i39Qm3UdpLtpdiCMw9w==
+autoprefixer@^9.0.0, autoprefixer@^9.3.1, autoprefixer@^9.4.2:
+  version "9.4.2"
+  resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-9.4.2.tgz#0234d20900684fc4bfb67926493deb68384067f5"
+  integrity sha512-tYQYJvZvqlJCzF+BLC//uAcdT/Yy4ik9bwZRXr/EehUJ/bjjpTthsWTy8dpowdoIE1sLCDf1ch4Eb2cOSzZC9w==
   dependencies:
     browserslist "^4.3.5"
     caniuse-lite "^1.0.30000914"
@@ -9788,7 +9788,6 @@ read@^1.0.4:
 readable-stream@1.1.x, readable-stream@~1.1.9:
   version "1.1.14"
   resolved "https://registry.yarnpkg.com/readable-stream/-/readable-stream-1.1.14.tgz#7cf4c54ef648e3813084c636dd2079e166c081d9"
-  integrity sha1-fPTFTvZI44EwhMY23SB54WbAgdk=
   dependencies:
     core-util-is "~1.0.0"
     inherits "~2.0.1"
@@ -9811,17 +9810,6 @@ readable-stream@^3.0.6:
     inherits "^2.0.3"
     string_decoder "^1.1.1"
     util-deprecate "^1.0.1"
-
-
-readable-stream@~1.1.9:
-  version "1.1.14"
-  resolved "https://registry.yarnpkg.com/readable-stream/-/readable-stream-1.1.14.tgz#7cf4c54ef648e3813084c636dd2079e166c081d9"
-  dependencies:
-    core-util-is "~1.0.0"
-    inherits "~2.0.1"
-    isarray "0.0.1"
-    string_decoder "~0.10.x"
-
 
 readdirp@^2.0.0:
   version "2.2.1"
