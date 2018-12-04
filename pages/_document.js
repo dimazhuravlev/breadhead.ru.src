@@ -40,7 +40,6 @@ export default class MyDocument extends Document {
           <meta name="apple-mobile-web-app-title" content="Breadhead" />
           <meta name="application-name" content="Breadhead" />
           <meta name="msapplication-TileColor" content="#b91d47" />
-          <meta name="theme-color" content="#ffffff" />
           <meta charSet="utf-8" />
           <meta name="theme-color" content="#0e0f0f" />
           <meta name="viewport" content="width=device-width, initial=scale=1" />
