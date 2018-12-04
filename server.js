@@ -6,7 +6,7 @@ const { nextI18NextMiddleware } = require('./lib/i18n')
 const app = next({ dev: process.env.NODE_ENV !== 'production' })
 const handle = app.getRequestHandler()
 
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 4242
 
 const start = async () => {
   await app.prepare()
