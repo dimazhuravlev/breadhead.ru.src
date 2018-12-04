@@ -1,6 +1,7 @@
 module.exports = {
   apps: [{
     script: './server.js',
+    name: 'breadhead',
     watch: true,
     instances: 'max',
     exec_mode: 'cluster',
