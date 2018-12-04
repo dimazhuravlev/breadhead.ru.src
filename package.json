@@ -30,7 +30,7 @@
     "why-did-you-update": "^1.0.6"
   },
   "scripts": {
-    "dev": "node server.js",
+    "dev": "NODE_ENV=development node server.js",
     "prod": "pm2 start ecosystem.config.js",
     "build": "gulp && next build && next export",
     "lint": "yarn lint:style && yarn lint:code",

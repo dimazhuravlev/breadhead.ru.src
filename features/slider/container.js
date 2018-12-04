@@ -39,6 +39,17 @@ const Container = Slider => {
       })
     }
 
+    componentDidUpdate(prevProps, prevState) {
+      const { index: prevIndex } = prevState
+      const { index } = this.state
+
+      this.visitedSlides[index] = true
+
+      if (prevIndex !== index) {
+        this.setIndex(index)
+      }
+    }
+
     touchStart = e => {
       const event = e.touches ? e.touches[0] : e
 
@@ -87,15 +98,6 @@ const Container = Slider => {
       }
     }
 
-    componentDidUpdate(prevProps, prevState) {
-      const { index: prevIndex } = prevState
-      const { index } = this.state
-
-      if (prevIndex !== index) {
-        this.setIndex(index)
-      }
-    }
-
     onLinkClick = (id, e) => {
       e.preventDefault()
       e.stopPropagation()
@@ -129,6 +131,15 @@ const Container = Slider => {
         this.prevSlide()
       }
     }
+
+    getPreload = (slideIndex, currentIndex) => {
+      if (!isNaN(this.visitedSlides[slideIndex])) {
+        return true
+      }
+      return slideIndex - currentIndex < 2
+    }
+
+    visitedSlides = {}
 
     render() {
       const { height, className, slides } = this.props
@@ -164,7 +175,7 @@ const Container = Slider => {
                   <SliderAmount amount={slides.length} />
                   <Slider afterChange={this.setIndex} index={index}>
                     {slideComponents.map((SlideComponent, i) => {
-                      const preload = i - index < 2
+                      const preload = this.getPreload(i, index)
                       return (
                         <SlideComponent
                           onLinkClick={this.onLinkClick}
