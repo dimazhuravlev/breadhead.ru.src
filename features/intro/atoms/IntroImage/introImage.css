@@ -10,12 +10,12 @@
   height: 480px;
 
   @media (max-width: 1920px) {
-    height: 26vw;
+    height: 25vw;
   }
 
   @media (max-width: 1460px) {
     right: 17px;
-    height: 34vw;
+    height: 32vw;
   }
 
   @media (max-width: 1200px) {

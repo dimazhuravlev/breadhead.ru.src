@@ -41,7 +41,7 @@ class About extends React.Component {
               name={aboutDataDesktop.description.name}
             />
             <Descriptor
-              className={cx(styles.caseNameOnly, styles.descriptorMobile)}
+              className={styles.descriptorMobile}
               name={aboutDataMobile.description.name}
             />
           </div>

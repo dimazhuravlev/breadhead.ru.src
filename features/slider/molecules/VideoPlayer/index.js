@@ -8,12 +8,14 @@ import resolveStaticSrc from './resolveStaticSrc'
 class VideoPlayer extends React.Component {
   state = { canPlay: false }
 
-  componentDidUpdate() {
+  componentDidUpdate({ active: prevActive }) {
     const { active, visible } = this.props
-    if (active) {
-      this.handleActiveState(visible)
-    } else {
-      this.handleInActiveState()
+    if (active !== prevActive) {
+      if (active) {
+        this.handleActiveState(visible)
+      } else {
+        this.handleInActiveState()
+      }
     }
   }
 
@@ -74,7 +76,7 @@ class VideoPlayer extends React.Component {
 VideoPlayer.propTypes = {
   src: PropTypes.string.isRequired,
   height: PropTypes.string.isRequired,
-  width: PropTypes.string.isRequired,
+  width: PropTypes.string.isRequired
 }
 
 export default VideoPlayer
