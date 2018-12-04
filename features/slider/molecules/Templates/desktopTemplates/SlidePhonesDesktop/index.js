@@ -21,7 +21,7 @@ const SlidePhonesDesktop = ({
               <Image src={screen.src} className={styles.screen} />
             ) : (
               <VideoPlayer
-                preaload={preload}
+                preload={preload}
                 visible={visible}
                 active={active}
                 src={screen.src}

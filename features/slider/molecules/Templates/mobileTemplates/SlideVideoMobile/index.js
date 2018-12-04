@@ -4,9 +4,15 @@ import { onlyUpdateForKeys } from 'recompose'
 import VideoPlayer from '@site/features/slider/molecules/VideoPlayer'
 import styles from './slideVideoMobile.css'
 
-const SlideVideoMobile = ({ image: { src, preloader }, active, visible }) => (
+const SlideVideoMobile = ({
+  image: { src, preloader },
+  active,
+  visible,
+  preload
+}) => (
   <div className={styles.frame}>
     <VideoPlayer
+      preload={preload}
       visible={visible}
       active={active}
       className={styles.video}
@@ -19,7 +25,9 @@ const SlideVideoMobile = ({ image: { src, preloader }, active, visible }) => (
 )
 
 SlideVideoMobile.propTypes = {
-  src: PropTypes.string.isRequired,
+  src: PropTypes.string.isRequired
 }
 
-export default onlyUpdateForKeys(['active', 'visible'])(SlideVideoMobile)
+export default onlyUpdateForKeys(['active', 'visible', 'preload'])(
+  SlideVideoMobile
+)

@@ -11,10 +11,10 @@ class PreloadableImage extends React.Component {
     if (img && img.complete) {
       this.handleImageLoaded()
     }
-    this.handleImagePreload()
+    this.handlePreload()
   }
   componentDidUpdate() {
-    this.handleImagePreload()
+    this.handlePreload()
   }
 
   handleImageLoaded = () => {
@@ -25,7 +25,7 @@ class PreloadableImage extends React.Component {
 
   image = React.createRef()
 
-  handleImagePreload() {
+  handlePreload() {
     const { preload } = this.props
     const { preloaded } = this.state
     if (preload && !preloaded) {
