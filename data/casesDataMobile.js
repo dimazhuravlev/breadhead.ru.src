@@ -1,15 +1,15 @@
-import { TemplatesNames } from "@site/features/slider/molecules/Templates";
-import { NON_BREAKING_SPACE } from "@site/constants.js";
+import { TemplatesNames } from '@site/features/slider/molecules/Templates'
+import { NON_BREAKING_SPACE } from '@site/constants.js'
 
 export const casesDataMobile = [
   /* FASTER MOBILE CASE */
   {
     description: {
       type: {
-        ru: "веб-сервис",
-        en: "web application"
+        ru: 'веб-сервис',
+        en: 'web application'
       },
-      name: "Faster"
+      name: 'Faster'
     },
     slides: [
       {
@@ -17,10 +17,10 @@ export const casesDataMobile = [
         duration: 10000,
         data: {
           image: {
-            src: "faster/mobile/scroll_mobile.mp4",
-            preloader: "faster/mobile/preloader-scroll_mobile.jpg"
+            src: 'faster/mobile/scroll_mobile.mp4',
+            preloader: 'faster/mobile/preloader-scroll_mobile.jpg'
           },
-          backgroundColor: "#EDEEF0"
+          backgroundColor: '#EDEEF0'
         }
       },
       {
@@ -28,16 +28,16 @@ export const casesDataMobile = [
         duration: 12000,
         data: {
           title: {
-            ru: "Новый опыт покупки лекарств",
-            en: "New medicine shopping experience"
+            ru: 'Новый опыт покупки лекарств',
+            en: 'New medicine shopping experience'
           },
           description: {
             ru: [
               `Faster — это сервис, который объединяет все аптеки города, находит и${NON_BREAKING_SPACE}бронирует лекарства по${NON_BREAKING_SPACE}лучшим ценам. Мы отвечали за${NON_BREAKING_SPACE}все стороны продукта: от${NON_BREAKING_SPACE}логотипа и${NON_BREAKING_SPACE}цвета кнопок до${NON_BREAKING_SPACE}архитектуры проекта, интеграций с${NON_BREAKING_SPACE}базами данных и${NON_BREAKING_SPACE}разработки приложения для аптек.`,
-              "Запуск скоро."
+              'Запуск скоро.'
             ],
             en: [
-              "Faster is a service which integrates all pharmacies in the city, searches and orders medicines at their lowest prices. We are responsible for the entire product side: from the logo and button colors to software architecture, integration with databases and pharmacy applications development. Coming soon."
+              'Faster is a service which integrates all pharmacies in the city, searches and orders medicines at their lowest prices. We are responsible for the entire product side: from the logo and button colors to software architecture, integration with databases and pharmacy applications development. Coming soon.'
             ]
           }
         }
@@ -46,18 +46,18 @@ export const casesDataMobile = [
         type: TemplatesNames.FramePictMobile,
         data: {
           image: {
-            src: "faster/mobile/phone_map_mobile.jpg",
-            preloader: "faster/mobile/preloader-phone_map_mobile.jpg"
+            src: 'faster/mobile/phone_map_mobile.jpg',
+            preloader: 'faster/mobile/preloader-phone_map_mobile.jpg'
           },
-          backgroundColor: "#EDEEF0"
+          backgroundColor: '#EDEEF0'
         }
       },
       {
         type: TemplatesNames.PictureMobile,
         data: {
           image: {
-            src: "faster/mobile/full_product_mobile.jpg",
-            preloader: "faster/mobile/preloader-full_product_mobile.jpg"
+            src: 'faster/mobile/full_product_mobile.jpg',
+            preloader: 'faster/mobile/preloader-full_product_mobile.jpg'
           }
         }
       },
@@ -65,18 +65,18 @@ export const casesDataMobile = [
         type: TemplatesNames.FramePictMobile,
         data: {
           image: {
-            src: "faster/mobile/phone_bag_mobile.jpg",
-            preloader: "faster/mobile/preloader-phone_bag_mobile.jpg"
+            src: 'faster/mobile/phone_bag_mobile.jpg',
+            preloader: 'faster/mobile/preloader-phone_bag_mobile.jpg'
           },
-          backgroundColor: "#EDEEF0"
+          backgroundColor: '#EDEEF0'
         }
       },
       {
         type: TemplatesNames.PictureMobile,
         data: {
           image: {
-            src: "faster/mobile/full_elements_mobile.jpg",
-            preloader: "faster/mobile/preloader-full_elements_mobile.jpg"
+            src: 'faster/mobile/full_elements_mobile.jpg',
+            preloader: 'faster/mobile/preloader-full_elements_mobile.jpg'
           }
         }
       },
@@ -85,18 +85,18 @@ export const casesDataMobile = [
         duration: 7000,
         data: {
           image: {
-            src: "faster/mobile/filter_mobile.mp4",
-            preloader: "faster/mobile/preloader-filter_mobile.jpg"
+            src: 'faster/mobile/filter_mobile.mp4',
+            preloader: 'faster/mobile/preloader-filter_mobile.jpg'
           },
-          backgroundColor: "#EDEEF0"
+          backgroundColor: '#EDEEF0'
         }
       },
       {
         type: TemplatesNames.PictureMobile,
         data: {
           image: {
-            src: "faster/mobile/full_tooltip_mobile.jpg",
-            preloader: "faster/mobile/preloader-full_tooltip_mobile.jpg"
+            src: 'faster/mobile/full_tooltip_mobile.jpg',
+            preloader: 'faster/mobile/preloader-full_tooltip_mobile.jpg'
           }
         }
       },
@@ -104,18 +104,18 @@ export const casesDataMobile = [
         type: TemplatesNames.FramePictMobile,
         data: {
           image: {
-            src: "faster/mobile/phone_order_mobile.jpg",
-            preloader: "faster/mobile/preloader-phone_order_mobile.jpg"
+            src: 'faster/mobile/phone_order_mobile.jpg',
+            preloader: 'faster/mobile/preloader-phone_order_mobile.jpg'
           },
-          backgroundColor: "#EDEEF0"
+          backgroundColor: '#EDEEF0'
         }
       },
       {
         type: TemplatesNames.PictureMobile,
         data: {
           image: {
-            src: "faster/mobile/full_2browsers_mobile.jpg",
-            preloader: "faster/mobile/preloader-full_2browsers_mobile.jpg"
+            src: 'faster/mobile/full_2browsers_mobile.jpg',
+            preloader: 'faster/mobile/preloader-full_2browsers_mobile.jpg'
           }
         }
       }
@@ -126,12 +126,12 @@ export const casesDataMobile = [
   {
     description: {
       type: {
-        ru: "приложение",
-        en: "mobile app"
+        ru: 'приложение',
+        en: 'mobile app'
       },
       name: {
-        ru: "ОбедБуфет",
-        en: "ObedBufet"
+        ru: 'ОбедБуфет',
+        en: 'ObedBufet'
       }
     },
     slides: [
@@ -139,11 +139,11 @@ export const casesDataMobile = [
         type: TemplatesNames.PictureMobile,
         data: {
           image: {
-            src: "obed_bufet/cover_obedbufet_mobile_fullslide.jpg",
+            src: 'obed_bufet/cover_obedbufet_mobile_fullslide.jpg',
             preloader:
-              "obed_bufet/preloader-cover_obedbufet_mobile_fullslide.jpg"
+              'obed_bufet/preloader-cover_obedbufet_mobile_fullslide.jpg'
           },
-          backgroundColor: "#FED67D"
+          backgroundColor: '#FED67D'
         }
       },
       {
@@ -161,46 +161,6 @@ export const casesDataMobile = [
             en: [
               `Ordering food is${NON_BREAKING_SPACE}clear and simple. So is${NON_BREAKING_SPACE}the interface we made for this application: minimized advertising, positive shapes and colors, funny characters, friendly tone of${NON_BREAKING_SPACE}voice and ease of${NON_BREAKING_SPACE}use.`
             ]
-          },
-          links: [
-            {
-              icontype: "globe",
-              href: "https://yango.pro",
-              text: "yango.pro"
-            }
-          ]
-        }
-      },
-      {
-        type: TemplatesNames.FrameVideoMobile,
-        duration: 13000,
-        data: {
-          image: {
-            src: "obed_bufet/1.1-video1_obedbufet-app_desktop.mp4",
-            preloader:
-              "obed_bufet/preloader-1.1-video1_obedbufet-app_desktop.jpg"
-          },
-          backgroundColor: "#FED67D"
-        }
-      },
-      {
-        type: TemplatesNames.FramePictMobile,
-        data: {
-          image: {
-            src: "obed_bufet/1.3-catalog_obedbufet-app_desktop.jpg",
-            preloader:
-              "obed_bufet/preloader-1.3-catalog_obedbufet-app_desktop.jpg"
-          },
-          backgroundColor: "#FED67D"
-        }
-      },
-      {
-        type: TemplatesNames.PictureMobile,
-        data: {
-          image: {
-            src: "obed_bufet/7-rest_obedbufet_mobile-fullscreen.jpg",
-            preloader:
-              "obed_bufet/preloader-7-rest_obedbufet_mobile-fullscreen.jpg"
           }
         }
       },
@@ -209,41 +169,74 @@ export const casesDataMobile = [
         duration: 13000,
         data: {
           image: {
-            src: "obed_bufet/2.1-video2_obedbufet-app_desktop.mp4",
+            src: 'obed_bufet/1.1-video1_obedbufet-app_desktop.mp4',
             preloader:
-              "obed_bufet/preloader-2.1-video2_obedbufet-app_desktop.jpg"
+              'obed_bufet/preloader-1.1-video1_obedbufet-app_desktop.jpg'
           },
-          backgroundColor: "#FED67D"
+          backgroundColor: '#FED67D'
         }
       },
       {
         type: TemplatesNames.FramePictMobile,
         data: {
           image: {
-            src: "obed_bufet/2.2-product_obedbufet-app_desktop.jpg",
+            src: 'obed_bufet/1.3-catalog_obedbufet-app_desktop.jpg',
             preloader:
-              "obed_bufet/preloader-2.2-product_obedbufet-app_desktop.jpg"
+              'obed_bufet/preloader-1.3-catalog_obedbufet-app_desktop.jpg'
           },
-          backgroundColor: "#FED67D"
-        }
-      },
-      {
-        type: TemplatesNames.FramePictMobile,
-        data: {
-          image: {
-            src: "obed_bufet/2.3-order_obedbufet-app_desktop.jpg",
-            preloader:
-              "obed_bufet/preloader-2.3-order_obedbufet-app_desktop.jpg"
-          },
-          backgroundColor: "#FED67D"
+          backgroundColor: '#FED67D'
         }
       },
       {
         type: TemplatesNames.PictureMobile,
         data: {
           image: {
-            src: "obed_bufet/elements_mobile-fullscreen.jpg",
-            preloader: "obed_bufet/preloader-elements_mobile-fullscreen.jpg"
+            src: 'obed_bufet/7-rest_obedbufet_mobile-fullscreen.jpg',
+            preloader:
+              'obed_bufet/preloader-7-rest_obedbufet_mobile-fullscreen.jpg'
+          }
+        }
+      },
+      {
+        type: TemplatesNames.FrameVideoMobile,
+        duration: 13000,
+        data: {
+          image: {
+            src: 'obed_bufet/2.1-video2_obedbufet-app_desktop.mp4',
+            preloader:
+              'obed_bufet/preloader-2.1-video2_obedbufet-app_desktop.jpg'
+          },
+          backgroundColor: '#FED67D'
+        }
+      },
+      {
+        type: TemplatesNames.FramePictMobile,
+        data: {
+          image: {
+            src: 'obed_bufet/2.2-product_obedbufet-app_desktop.jpg',
+            preloader:
+              'obed_bufet/preloader-2.2-product_obedbufet-app_desktop.jpg'
+          },
+          backgroundColor: '#FED67D'
+        }
+      },
+      {
+        type: TemplatesNames.FramePictMobile,
+        data: {
+          image: {
+            src: 'obed_bufet/2.3-order_obedbufet-app_desktop.jpg',
+            preloader:
+              'obed_bufet/preloader-2.3-order_obedbufet-app_desktop.jpg'
+          },
+          backgroundColor: '#FED67D'
+        }
+      },
+      {
+        type: TemplatesNames.PictureMobile,
+        data: {
+          image: {
+            src: 'obed_bufet/elements_mobile-fullscreen.jpg',
+            preloader: 'obed_bufet/preloader-elements_mobile-fullscreen.jpg'
           }
         }
       },
@@ -251,33 +244,33 @@ export const casesDataMobile = [
         type: TemplatesNames.FramePictMobile,
         data: {
           image: {
-            src: "obed_bufet/3.1-profile_obedbufet-app_desktop.jpg",
+            src: 'obed_bufet/3.1-profile_obedbufet-app_desktop.jpg',
             preloader:
-              "obed_bufet/preloader-3.1-profile_obedbufet-app_desktop.jpg"
+              'obed_bufet/preloader-3.1-profile_obedbufet-app_desktop.jpg'
           },
-          backgroundColor: "#FED67D"
+          backgroundColor: '#FED67D'
         }
       },
       {
         type: TemplatesNames.FramePictMobile,
         data: {
           image: {
-            src: "obed_bufet/3.2-address_obedbufet-app_desktop.jpg",
+            src: 'obed_bufet/3.2-address_obedbufet-app_desktop.jpg',
             preloader:
-              "obed_bufet/preloader-3.2-address_obedbufet-app_desktop.jpg"
+              'obed_bufet/preloader-3.2-address_obedbufet-app_desktop.jpg'
           },
-          backgroundColor: "#FED67D"
+          backgroundColor: '#FED67D'
         }
       },
       {
         type: TemplatesNames.FramePictMobile,
         data: {
           image: {
-            src: "obed_bufet/3.3-history_obedbufet-app_desktop.jpg",
+            src: 'obed_bufet/3.3-history_obedbufet-app_desktop.jpg',
             preloader:
-              "obed_bufet/preloader-3.3-history_obedbufet-app_desktop.jpg"
+              'obed_bufet/preloader-3.3-history_obedbufet-app_desktop.jpg'
           },
-          backgroundColor: "#FED67D"
+          backgroundColor: '#FED67D'
         }
       }
     ]
@@ -287,19 +280,19 @@ export const casesDataMobile = [
   {
     description: {
       type: {
-        ru: "сайт",
-        en: "website"
+        ru: 'сайт',
+        en: 'website'
       },
-      name: "Encore Fitness"
+      name: 'Encore Fitness'
     },
     slides: [
       {
         type: TemplatesNames.PictureMobile,
         data: {
           image: {
-            src: "encore_fitness/mobile/cover_encore_mobile_fullslide.jpg",
+            src: 'encore_fitness/mobile/cover_encore_mobile_fullslide.jpg',
             preloader:
-              "encore_fitness/mobile/preloader-cover_encore_mobile_fullslide.jpg"
+              'encore_fitness/mobile/preloader-cover_encore_mobile_fullslide.jpg'
           }
         }
       },
@@ -321,18 +314,18 @@ export const casesDataMobile = [
           },
           links: [
             {
-              icontype: "article",
+              icontype: 'article',
               href:
-                "https://medium.com/@breadhead.ru/encore-fitness-2ea1deba6f70",
+                'https://medium.com/@breadhead.ru/encore-fitness-2ea1deba6f70',
               text: {
-                ru: "читать кейс",
-                en: "read more"
+                ru: 'читать кейс',
+                en: 'read more'
               }
             },
             {
-              icontype: "globe",
-              href: "https://encorefitness.ru",
-              text: "encorefitness.ru"
+              icontype: 'globe',
+              href: 'https://encorefitness.ru',
+              text: 'encorefitness.ru'
             }
           ]
         }
@@ -342,9 +335,9 @@ export const casesDataMobile = [
         data: {
           image: {
             preloader:
-              "encore_fitness/mobile/preloader-10_phone-mockup_encore_mobile_full-slide.jpg",
+              'encore_fitness/mobile/preloader-10_phone-mockup_encore_mobile_full-slide.jpg',
             src:
-              "encore_fitness/mobile/10_phone-mockup_encore_mobile_full-slide.jpg"
+              'encore_fitness/mobile/10_phone-mockup_encore_mobile_full-slide.jpg'
           }
         }
       },
@@ -353,9 +346,9 @@ export const casesDataMobile = [
         duration: 10000,
         data: {
           image: {
-            src: "encore_fitness/mobile/2-club_encore_mobile_opt.mp4",
+            src: 'encore_fitness/mobile/2-club_encore_mobile_opt.mp4',
             preloader:
-              "encore_fitness/mobile/preloader-2-club_encore_mobile_opt.jpg"
+              'encore_fitness/mobile/preloader-2-club_encore_mobile_opt.jpg'
           }
         }
       },
@@ -364,8 +357,8 @@ export const casesDataMobile = [
         data: {
           image: {
             preloader:
-              "encore_fitness/mobile/preloader-4-club-gallery_encore_mobile.jpg",
-            src: "encore_fitness/mobile/4-club-gallery_encore_mobile.jpg"
+              'encore_fitness/mobile/preloader-4-club-gallery_encore_mobile.jpg',
+            src: 'encore_fitness/mobile/4-club-gallery_encore_mobile.jpg'
           }
         }
       },
@@ -374,9 +367,9 @@ export const casesDataMobile = [
         data: {
           image: {
             preloader:
-              "encore_fitness/mobile/preloader-3-desktop-screens_encore_mobile_fullslide.jpg",
+              'encore_fitness/mobile/preloader-3-desktop-screens_encore_mobile_fullslide.jpg',
             src:
-              "encore_fitness/mobile/3-desktop-screens_encore_mobile_fullslide.jpg"
+              'encore_fitness/mobile/3-desktop-screens_encore_mobile_fullslide.jpg'
           }
         }
       },
@@ -385,9 +378,9 @@ export const casesDataMobile = [
         data: {
           image: {
             preloader:
-              "encore_fitness/mobile/preloader-7-desktop-screens_encore_mobile_fullslide.jpg",
+              'encore_fitness/mobile/preloader-7-desktop-screens_encore_mobile_fullslide.jpg',
             src:
-              "encore_fitness/mobile/7-desktop-screens_encore_mobile_fullslide.jpg"
+              'encore_fitness/mobile/7-desktop-screens_encore_mobile_fullslide.jpg'
           }
         }
       },
@@ -396,8 +389,8 @@ export const casesDataMobile = [
         data: {
           image: {
             preloader:
-              "encore_fitness/mobile/preloader-8-trainers_encore_mobile.jpg",
-            src: "encore_fitness/mobile/8-trainers_encore_mobile.jpg"
+              'encore_fitness/mobile/preloader-8-trainers_encore_mobile.jpg',
+            src: 'encore_fitness/mobile/8-trainers_encore_mobile.jpg'
           }
         }
       },
@@ -406,8 +399,8 @@ export const casesDataMobile = [
         data: {
           image: {
             preloader:
-              "encore_fitness/mobile/preloader-6-schedule_encore_mobile.jpg",
-            src: "encore_fitness/mobile/6-schedule_encore_mobile.jpg"
+              'encore_fitness/mobile/preloader-6-schedule_encore_mobile.jpg',
+            src: 'encore_fitness/mobile/6-schedule_encore_mobile.jpg'
           }
         }
       },
@@ -416,9 +409,9 @@ export const casesDataMobile = [
         data: {
           image: {
             preloader:
-              "encore_fitness/mobile/preloader-5-schedule-desktop_encore_mobile_fullslide.jpg",
+              'encore_fitness/mobile/preloader-5-schedule-desktop_encore_mobile_fullslide.jpg',
             src:
-              "encore_fitness/mobile/5-schedule-desktop_encore_mobile_fullslide.jpg"
+              'encore_fitness/mobile/5-schedule-desktop_encore_mobile_fullslide.jpg'
           }
         }
       },
@@ -427,9 +420,9 @@ export const casesDataMobile = [
         data: {
           image: {
             preloader:
-              "encore_fitness/mobile/preloader-9_grid-desktop_encore_mobile_full-slide.jpg",
+              'encore_fitness/mobile/preloader-9_grid-desktop_encore_mobile_full-slide.jpg',
             src:
-              "encore_fitness/mobile/9_grid-desktop_encore_mobile_full-slide.jpg"
+              'encore_fitness/mobile/9_grid-desktop_encore_mobile_full-slide.jpg'
           }
         }
       }
@@ -440,18 +433,18 @@ export const casesDataMobile = [
   {
     description: {
       type: {
-        ru: "приложение и сайт",
-        en: "app and website"
+        ru: 'приложение и сайт',
+        en: 'app and website'
       },
-      name: "Yango"
+      name: 'Yango'
     },
     slides: [
       {
         type: TemplatesNames.PictureMobile,
         data: {
           image: {
-            src: "yango/mobile/cover_mobile_fullslide.jpg",
-            preloader: "yango/mobile/preloader-cover_mobile_fullslide.jpg"
+            src: 'yango/mobile/cover_mobile_fullslide.jpg',
+            preloader: 'yango/mobile/preloader-cover_mobile_fullslide.jpg'
           }
         }
       },
@@ -460,8 +453,8 @@ export const casesDataMobile = [
         duration: 12000,
         data: {
           title: {
-            ru: "Инвестиции через мобильное приложение",
-            en: "Investment via mobile app"
+            ru: 'Инвестиции через мобильное приложение',
+            en: 'Investment via mobile app'
           },
           description: {
             ru: [
@@ -470,7 +463,14 @@ export const casesDataMobile = [
             en: [
               `Yango is a${NON_BREAKING_SPACE}service for investing in${NON_BREAKING_SPACE}reliable companies. Using this application, you can buy bonds of${NON_BREAKING_SPACE}such companies as${NON_BREAKING_SPACE}Sberbank, MTS or RZD and generate an income higher than that from ordinary deposits. We redesigned the application and launched the promo-site.`
             ]
-          }
+          },
+          links: [
+            {
+              icontype: 'globe',
+              href: 'https://yango.pro',
+              text: 'yango.pro'
+            }
+          ]
         }
       },
       {
@@ -478,30 +478,30 @@ export const casesDataMobile = [
         duration: 12000,
         data: {
           image: {
-            src: "yango/mobile/1_mobile.mp4",
-            preloader: "yango/mobile/preloader-1_mobile.jpg"
+            src: 'yango/mobile/1_mobile.mp4',
+            preloader: 'yango/mobile/preloader-1_mobile.jpg'
           },
-          backgroundColor: "#9093a8"
+          backgroundColor: '#9093a8'
         }
       },
       {
         type: TemplatesNames.FramePictMobile,
         data: {
           image: {
-            src: "yango/mobile/2_mobile.jpg",
-            preloader: "yango/mobile/preloader-2_mobile.jpg"
+            src: 'yango/mobile/2_mobile.jpg',
+            preloader: 'yango/mobile/preloader-2_mobile.jpg'
           },
-          backgroundColor: "#9093a8"
+          backgroundColor: '#9093a8'
         }
       },
       {
         type: TemplatesNames.FramePictMobile,
         data: {
           image: {
-            src: "yango/mobile/3_mobile.jpg",
-            preloader: "yango/mobile/preloader-3_mobile.jpg"
+            src: 'yango/mobile/3_mobile.jpg',
+            preloader: 'yango/mobile/preloader-3_mobile.jpg'
           },
-          backgroundColor: "#9093a8"
+          backgroundColor: '#9093a8'
         }
       },
       {
@@ -509,38 +509,38 @@ export const casesDataMobile = [
         duration: 9000,
         data: {
           image: {
-            src: "yango/mobile/4_mobile.mp4",
-            preloader: "yango/mobile/preloader-4_mobile.jpg"
+            src: 'yango/mobile/4_mobile.mp4',
+            preloader: 'yango/mobile/preloader-4_mobile.jpg'
           },
-          backgroundColor: "#9093a8"
+          backgroundColor: '#9093a8'
         }
       },
       {
         type: TemplatesNames.FramePictMobile,
         data: {
           image: {
-            src: "yango/mobile/5_mobile.jpg",
-            preloader: "yango/mobile/preloader-5_mobile.jpg"
+            src: 'yango/mobile/5_mobile.jpg',
+            preloader: 'yango/mobile/preloader-5_mobile.jpg'
           },
-          backgroundColor: "#9093a8"
+          backgroundColor: '#9093a8'
         }
       },
       {
         type: TemplatesNames.FramePictMobile,
         data: {
           image: {
-            src: "yango/mobile/6_mobile.jpg",
-            preloader: "yango/mobile/preloader-6_mobile.jpg"
+            src: 'yango/mobile/6_mobile.jpg',
+            preloader: 'yango/mobile/preloader-6_mobile.jpg'
           },
-          backgroundColor: "#9093a8"
+          backgroundColor: '#9093a8'
         }
       },
       {
         type: TemplatesNames.PictureMobile,
         data: {
           image: {
-            src: "yango/mobile/13_mobile_fullslide.jpg",
-            preloader: "yango/mobile/preloader-13_mobile_fullslide.jpg"
+            src: 'yango/mobile/13_mobile_fullslide.jpg',
+            preloader: 'yango/mobile/preloader-13_mobile_fullslide.jpg'
           }
         }
       },
@@ -549,8 +549,8 @@ export const casesDataMobile = [
         duration: 12000,
         data: {
           image: {
-            src: "yango/mobile/7_mobile_fullslide.mp4",
-            preloader: "yango/mobile/preloader-7_mobile_fullslide.jpg"
+            src: 'yango/mobile/7_mobile_fullslide.mp4',
+            preloader: 'yango/mobile/preloader-7_mobile_fullslide.jpg'
           }
         }
       },
@@ -558,38 +558,38 @@ export const casesDataMobile = [
         type: TemplatesNames.FramePictMobile,
         data: {
           image: {
-            src: "yango/mobile/8_mobile.jpg",
-            preloader: "yango/mobile/preloader-8_mobile.jpg"
+            src: 'yango/mobile/8_mobile.jpg',
+            preloader: 'yango/mobile/preloader-8_mobile.jpg'
           },
-          backgroundColor: "#9093a8"
+          backgroundColor: '#9093a8'
         }
       },
       {
         type: TemplatesNames.FramePictMobile,
         data: {
           image: {
-            src: "yango/mobile/9_mobile.jpg",
-            preloader: "yango/mobile/preloader-9_mobile.jpg"
+            src: 'yango/mobile/9_mobile.jpg',
+            preloader: 'yango/mobile/preloader-9_mobile.jpg'
           },
-          backgroundColor: "#9093a8"
+          backgroundColor: '#9093a8'
         }
       },
       {
         type: TemplatesNames.FramePictMobile,
         data: {
           image: {
-            src: "yango/mobile/10_mobile.jpg",
-            preloader: "yango/mobile/preloader-10_mobile.jpg"
+            src: 'yango/mobile/10_mobile.jpg',
+            preloader: 'yango/mobile/preloader-10_mobile.jpg'
           },
-          backgroundColor: "#9093a8"
+          backgroundColor: '#9093a8'
         }
       },
       {
         type: TemplatesNames.PictureMobile,
         data: {
           image: {
-            src: "yango/mobile/11_mobile_fullslide.jpg",
-            preloader: "yango/mobile/preloader-11_mobile_fullslide.jpg"
+            src: 'yango/mobile/11_mobile_fullslide.jpg',
+            preloader: 'yango/mobile/preloader-11_mobile_fullslide.jpg'
           }
         }
       },
@@ -597,8 +597,8 @@ export const casesDataMobile = [
         type: TemplatesNames.PictureMobile,
         data: {
           image: {
-            src: "yango/mobile/12_mobile_fullslide.jpg",
-            preloader: "yango/mobile/preloader-12_mobile_fullslide.jpg"
+            src: 'yango/mobile/12_mobile_fullslide.jpg',
+            preloader: 'yango/mobile/preloader-12_mobile_fullslide.jpg'
           }
         }
       }
@@ -609,12 +609,12 @@ export const casesDataMobile = [
   {
     description: {
       type: {
-        ru: "веб-сервис",
-        en: "web application"
+        ru: 'веб-сервис',
+        en: 'web application'
       },
       name: {
-        ru: "Просто спросить",
-        en: "Just Ask"
+        ru: 'Просто спросить',
+        en: 'Just Ask'
       }
     },
     slides: [
@@ -622,10 +622,10 @@ export const casesDataMobile = [
         type: TemplatesNames.FramePictMobile,
         data: {
           image: {
-            src: "just_ask/mobile/1_oncohelp_preview_mobile.jpg",
-            preloader: "just_ask/mobile/preloader-1_oncohelp_preview_mobile.jpg"
+            src: 'just_ask/mobile/1_oncohelp_preview_mobile.jpg',
+            preloader: 'just_ask/mobile/preloader-1_oncohelp_preview_mobile.jpg'
           },
-          backgroundColor: "#3C54EE"
+          backgroundColor: '#3C54EE'
         }
       },
       {
@@ -646,12 +646,12 @@ export const casesDataMobile = [
           },
           links: [
             {
-              icontype: "article",
+              icontype: 'article',
               href:
-                "https://nenaprasno.ru/fund/news-and-events/fond-profilaktiki-raka-pristupil-k-razrabotke-nezavisimoy-spravochnoy-sluzhby-v-onkologii/",
+                'https://nenaprasno.ru/fund/news-and-events/fond-profilaktiki-raka-pristupil-k-razrabotke-nezavisimoy-spravochnoy-sluzhby-v-onkologii/',
               text: {
-                ru: "анонс",
-                en: "announcement"
+                ru: 'анонс',
+                en: 'announcement'
               }
             }
           ]
@@ -661,12 +661,12 @@ export const casesDataMobile = [
         type: TemplatesNames.FramePictMobile,
         data: {
           image: {
-            src: "just_ask/mobile/2_oncohelp_filling_mobile.jpg",
-            preloader: "just_ask/mobile/preloader-2_oncohelp_filling_mobile.jpg"
+            src: 'just_ask/mobile/2_oncohelp_filling_mobile.jpg',
+            preloader: 'just_ask/mobile/preloader-2_oncohelp_filling_mobile.jpg'
           },
-          backgroundColor: "#3C54EE"
+          backgroundColor: '#3C54EE'
         }
       }
     ]
   }
-];
+]
