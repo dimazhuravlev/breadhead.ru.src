@@ -172,8 +172,8 @@ export const casesDataDesktop = [
   {
     description: {
       type: {
-        ru: 'приложение и сайт',
-        en: 'app and website'
+        ru: 'приложение',
+        en: 'mobile app'
       },
       name: {
         ru: 'ОбедБуфет',
@@ -207,13 +207,6 @@ export const casesDataDesktop = [
               `Ordering food is${NON_BREAKING_SPACE}clear and simple. So is${NON_BREAKING_SPACE}the interface we made for this application: minimized advertising, positive shapes and colors, funny characters, friendly tone of${NON_BREAKING_SPACE}voice and ease of${NON_BREAKING_SPACE}use.`
             ]
           },
-          links: [
-            {
-              icontype: 'globe',
-              href: 'https://yango.pro',
-              text: 'yango.pro'
-            }
-          ],
           image: {
             src: 'obed_bufet/0-location_obedbufet-app_desktop.jpg',
             preloader:

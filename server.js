@@ -3,7 +3,7 @@ const next = require('next')
 
 const { nextI18NextMiddleware } = require('./lib/i18n')
 
-const app = next({ dev: process.env.NODE_ENV !== 'production' })
+const app = next({ dev: process.env.NODE_ENV === 'development' })
 const handle = app.getRequestHandler()
 
 const PORT = process.env.PORT || 4242
