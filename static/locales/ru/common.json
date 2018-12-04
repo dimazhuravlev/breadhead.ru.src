@@ -15,7 +15,7 @@
   "text-block-header-practices": "практики",
   "text-block-header-technologies": "технологии",
 
-  "text-block-text-skills": "Образовательные сервисы / E-commerce / Службы бронирования и\u00a0доставки / Инструменты автоматизации / Медиа",
+  "text-block-text-skills": "Образовательные сервисы / E\u2011commerce / Службы бронирования и\u00a0доставки / Инструменты автоматизации / Медиа",
 
   "text-block-text-practices-first": "Исследования / Бренд-консалтинг (",
   "text-block-text-practices-link": "Fullført",
@@ -30,5 +30,9 @@
 
   "text-block-text-address-link": "Итальянская улица,\u00a014,",
   "text-block-text-address": "мансарда №39,\nСанкт-Петербург, Россия, 191186",
-  "title": "Breadhead – разработка цифровых сервисов"
+
+  "title": "Breadhead – разработка цифровых сервисов",
+  "meta-description": "Проектируем и выпускаем сервисы и приложения: e-commerce, образовательные продукты, службы бронирования и доставки, инструменты автоматизации, медиа.",
+
+  "meta-locale": "ru_RU"
 }

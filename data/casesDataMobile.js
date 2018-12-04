@@ -25,15 +25,22 @@ export const casesDataMobile = [
         }
       },
       {
-        onlyFor: ['ru'],
         type: TemplatesNames.ArticleMobile,
         duration: 12000,
         data: {
-          title: 'Новый опыт покупки лекарств',
-          description: [
-            `Faster — это сервис, который объединяет все аптеки города, находит и${NON_BREAKING_SPACE}бронирует лекарства по${NON_BREAKING_SPACE}лучшим ценам. Мы отвечали за${NON_BREAKING_SPACE}все стороны продукта: от${NON_BREAKING_SPACE}логотипа и${NON_BREAKING_SPACE}цвета кнопок до${NON_BREAKING_SPACE}архитектуры проекта, интеграций с${NON_BREAKING_SPACE}базами данных и${NON_BREAKING_SPACE}разработки приложения для аптек.`,
-            'Запуск скоро.'
-          ]
+          title: {
+            ru: 'Новый опыт покупки лекарств',
+            en: 'New medicine shopping experience'
+          },
+          description: {
+            ru: [
+              `Faster — это сервис, который объединяет все аптеки города, находит и${NON_BREAKING_SPACE}бронирует лекарства по${NON_BREAKING_SPACE}лучшим ценам. Мы отвечали за${NON_BREAKING_SPACE}все стороны продукта: от${NON_BREAKING_SPACE}логотипа и${NON_BREAKING_SPACE}цвета кнопок до${NON_BREAKING_SPACE}архитектуры проекта, интеграций с${NON_BREAKING_SPACE}базами данных и${NON_BREAKING_SPACE}разработки приложения для аптек.`,
+              'Запуск скоро.'
+            ],
+            en: [
+              'Faster is a service which integrates all pharmacies in the city, searches and orders medicines at their lowest prices. We are responsible for the entire product side: from the logo and button colors to software architecture, integration with databases and pharmacy applications development. Coming soon.'
+            ]
+          }
         }
       },
       {
@@ -136,14 +143,21 @@ export const casesDataMobile = [
         }
       },
       {
-        onlyFor: ['ru'],
         type: TemplatesNames.ArticleMobile,
         duration: 12000,
         data: {
-          title: 'Инвестиции через мобильное приложение',
-          description: [
-            `Yango — сервис для инвестирования в${NON_BREAKING_SPACE}надежные компании. С${NON_BREAKING_SPACE}помощью приложения можно купить облигации Сбербанка, МТС или РЖД и${NON_BREAKING_SPACE}получить доход выше, чем у${NON_BREAKING_SPACE}обычных вкладов. Мы сделали редизайн приложения и${NON_BREAKING_SPACE}запустили первую версию промо-сайта.`
-          ],
+          title: {
+            ru: 'Инвестиции через мобильное приложение',
+            en: 'Investment via mobile app'
+          },
+          description: {
+            ru: [
+              `Yango — сервис для инвестирования в${NON_BREAKING_SPACE}надежные компании. С${NON_BREAKING_SPACE}помощью приложения можно купить облигации Сбербанка, МТС или РЖД и${NON_BREAKING_SPACE}получить доход выше, чем от${NON_BREAKING_SPACE}обычных вкладов. Мы сделали редизайн приложения и${NON_BREAKING_SPACE}запустили промо-сайт.`
+            ],
+            en: [
+              `Yango is a${NON_BREAKING_SPACE}service for investing in${NON_BREAKING_SPACE}reliable companies. Using this application, you can buy bonds of${NON_BREAKING_SPACE}such companies as${NON_BREAKING_SPACE}Sberbank, MTS or RZD and generate an income higher than that from ordinary deposits. We redesigned the application and launched the promo-site.`
+            ]
+          },
           links: [
             {
               icontype: 'globe',
@@ -306,20 +320,30 @@ export const casesDataMobile = [
         }
       },
       {
-        onlyFor: ['ru'],
         type: TemplatesNames.ArticleMobile,
         duration: 12000,
         data: {
-          title: `Меняем представление о${NON_BREAKING_SPACE}фитнес-клубах`,
-          description: [
-            `Мы консультировали разработку концепции бренда и${NON_BREAKING_SPACE}сделали сайт, который стал продолжением уникального клиентского опыта в${NON_BREAKING_SPACE}клубах Encore Fitness —${NON_BREAKING_SPACE}сочетанием функциональности с${NON_BREAKING_SPACE}историей бренда.`
-          ],
+          title: {
+            ru: `Меняем представление о${NON_BREAKING_SPACE}фитнес-клубах`,
+            en: `Changing the idea of${NON_BREAKING_SPACE}fitness clubs`
+          },
+          description: {
+            ru: [
+              `Вместе с ${NON_BREAKING_SPACE}<a target="_blank" rel="noopener noreferrer" href="http://fullfort.agency/">Fullført</a> мы разработали концепцию бренда и${NON_BREAKING_SPACE}сделали сайт, который стал продолжением уникального клиентского опыта в${NON_BREAKING_SPACE}клубах Encore Fitness —${NON_BREAKING_SPACE}сочетанием функциональности с${NON_BREAKING_SPACE}историей бренда.`
+            ],
+            en: [
+              'Together with <a target="_blank" rel="noopener noreferrer" href="http://fullfort.agency/">Fullført</a>, we developed a brand concept and created a website which comprises the unique customer experience at Encore clubs—a combination of technology, attention to detail and brand story.'
+            ]
+          },
           links: [
             {
               icontype: 'article',
               href:
                 'https://medium.com/breadhead-stories/%D0%BC%D0%B5%D0%BD%D1%8F%D0%B5%D0%BC-%D0%BF%D1%80%D0%B5%D0%B4%D1%81%D1%82%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BE-%D1%84%D0%B8%D1%82%D0%BD%D0%B5%D1%81-%D0%BA%D0%BB%D1%83%D0%B1%D0%B0%D1%85-d6e8e081f8e8',
-              text: 'читать кейс'
+              text: {
+                ru: 'читать кейс',
+                en: 'read more'
+              }
             },
             {
               icontype: 'globe',
@@ -463,14 +487,21 @@ export const casesDataMobile = [
         }
       },
       {
-        onlyFor: ['ru'],
         type: TemplatesNames.ArticleMobile,
         duration: 12000,
         data: {
-          title: 'Дружелюбная доставка домашней еды',
-          description: [
-            `Заказ еды — простое и${NON_BREAKING_SPACE}понятное действие. Таким мы${NON_BREAKING_SPACE}сделали интерфейс этого приложения. Mинимум рекламы, позитивные цвета и${NON_BREAKING_SPACE}формы, забавные персонажи, легкий тон коммуникации и${NON_BREAKING_SPACE}простота в${NON_BREAKING_SPACE}использовании.`
-          ]
+          title: {
+            ru: `Дружелюбная доставка еды от${NON_BREAKING_SPACE}Ginza Project`,
+            en: `Friendly food delivery by${NON_BREAKING_SPACE}Ginza Project`
+          },
+          description: {
+            ru: [
+              `Заказ еды — простое и${NON_BREAKING_SPACE}понятное действие. Таким мы${NON_BREAKING_SPACE}сделали интерфейс этого приложения. Mинимум рекламы, позитивные цвета и${NON_BREAKING_SPACE}формы, забавные персонажи, легкий тон коммуникации и${NON_BREAKING_SPACE}простота в${NON_BREAKING_SPACE}использовании.`
+            ],
+            en: [
+              `Ordering food is${NON_BREAKING_SPACE}clear and simple. So is${NON_BREAKING_SPACE}the interface we made for this application: minimized advertising, positive shapes and colors, funny characters, friendly tone of${NON_BREAKING_SPACE}voice and ease of${NON_BREAKING_SPACE}use.`
+            ]
+          }
         }
       },
       {
@@ -609,20 +640,30 @@ export const casesDataMobile = [
         }
       },
       {
-        onlyFor: ['ru'],
         type: TemplatesNames.ArticleMobile,
         duration: 12000,
         data: {
-          title: `Бесплатные консультации с${NON_BREAKING_SPACE}лучшими онкологами`,
-          description: [
-            `В${NON_BREAKING_SPACE}начале 2019 года «Фонд профилактики рака» и${NON_BREAKING_SPACE}Breadhead запускают новый сервис помощи людям, столкнувшимся с${NON_BREAKING_SPACE}онкологией. Это справочная об${NON_BREAKING_SPACE}организации лечения и${NON_BREAKING_SPACE}система оценки качества работы медицинских служб.`
-          ],
+          title: {
+            ru: `Бесплатные консультации с${NON_BREAKING_SPACE}лучшими онкологами`,
+            en: `Free consultations with the${NON_BREAKING_SPACE}best oncologists`
+          },
+          description: {
+            ru: [
+              `В${NON_BREAKING_SPACE}начале 2019 года «Фонд профилактики рака» и${NON_BREAKING_SPACE}Breadhead запускают новый сервис помощи людям, столкнувшимся с${NON_BREAKING_SPACE}онкологией. Это справочная об${NON_BREAKING_SPACE}организации лечения и${NON_BREAKING_SPACE}система оценки качества работы медицинских служб.`
+            ],
+            en: [
+              `In early 2019, the Cancer Prevention Foundation and Breadhead are launching a${NON_BREAKING_SPACE}new service to help people facing cancer. This is a${NON_BREAKING_SPACE}reference service providing information about the organization of treatment and the assessment of health care services quality.`
+            ]
+          },
           links: [
             {
               icontype: 'article',
               href:
                 'https://nenaprasno.ru/fund/news-and-events/fond-profilaktiki-raka-pristupil-k-razrabotke-nezavisimoy-spravochnoy-sluzhby-v-onkologii/',
-              text: 'анонс'
+              text: {
+                ru: 'анонс',
+                en: 'announcement'
+              }
             }
           ]
         }
