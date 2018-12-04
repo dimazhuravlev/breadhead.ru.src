@@ -1,6 +1,6 @@
 
 
 git pull
-yarn install
-yarn build
-yarn prod
+sudo yarn install
+sudo yarn build
+sudo yarn prod
