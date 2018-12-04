@@ -24,7 +24,7 @@ class ProgressBar extends React.Component {
   render() {
     const { index, quantity, isVisible, duration, delay } = this.props
     const elements = range(quantity)
-    const slideDuration = SLIDE_DURATION
+    const slideDuration = duration > 0 ? duration : SLIDE_DURATION
 
     return (
       <div className={styles.bar} onAnimationEnd={this.timerHandler}>
