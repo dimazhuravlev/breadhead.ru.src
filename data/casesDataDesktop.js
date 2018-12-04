@@ -37,7 +37,7 @@ export const casesDataDesktop = [
               'Запуск скоро.'
             ],
             en: [
-              'Faster is a service which integrates all pharmacies in the city, searches and orders medicines at their lowest prices. We are responsible for the entire product side: from the logo and button colors to software architecture, integration with databases and pharmacy applications development. Coming soon.'
+              `Faster is a${NON_BREAKING_SPACE}service which integrates all pharmacies in the city, searches and orders medicines at their lowest prices. We are responsible for the entire product side: from the logo and button colors to software architecture, integration with databases and pharmacy applications development. Coming soon.`
             ]
           },
           image: {
@@ -198,7 +198,7 @@ export const casesDataDesktop = [
               `Yango — сервис для инвестирования в${NON_BREAKING_SPACE}надежные компании. С${NON_BREAKING_SPACE}помощью приложения можно купить облигации Сбербанка, МТС или РЖД и${NON_BREAKING_SPACE}получить доход выше, чем от${NON_BREAKING_SPACE}обычных вкладов. Мы сделали редизайн приложения и${NON_BREAKING_SPACE}запустили промо-сайт.`
             ],
             en: [
-              'Yango is a service for investing in reliable companies. Using this application, you can buy bonds of Sberbank, MTS or RZD and generate an income higher than that from ordinary deposits. We redesigned the application and launched the promo-site. '
+              `Yango is a${NON_BREAKING_SPACE}service for investing in reliable companies. Using this application, you can buy bonds of such companies as Sberbank, MTS or RZD and generate an income higher than that from ordinary deposits. We redesigned the application and launched the promo-site.`
             ]
           },
           links: [
@@ -414,11 +414,11 @@ export const casesDataDesktop = [
           },
           description: {
             ru: [
-              `Вместе с ${NON_BREAKING_SPACE}<a target="_blank" rel="noopener noreferrer" href="http://fullfort.agency/">Fullført</a> мы разработали концепцию бренда и${NON_BREAKING_SPACE}сделали сайт, который стал продолжением уникального клиентского опыта в${NON_BREAKING_SPACE}клубах Encore Fitness —${NON_BREAKING_SPACE}сочетанием технологичности и${NON_BREAKING_SPACE}функциональности с${NON_BREAKING_SPACE}историей бренда и${NON_BREAKING_SPACE}вниманием к${NON_BREAKING_SPACE}деталям.`,
+              `Вместе с${NON_BREAKING_SPACE}<a target="_blank" rel="noopener noreferrer" href="http://fullfort.agency/">Fullført</a> мы разработали концепцию бренда и${NON_BREAKING_SPACE}сделали сайт, который стал продолжением уникального клиентского опыта в${NON_BREAKING_SPACE}клубах Encore Fitness —${NON_BREAKING_SPACE}сочетанием технологичности и${NON_BREAKING_SPACE}функциональности с${NON_BREAKING_SPACE}историей бренда и${NON_BREAKING_SPACE}вниманием к${NON_BREAKING_SPACE}деталям.`,
               'Фото: Арсений Джабиев.'
             ],
             en: [
-              'Together with <a target="_blank" rel="noopener noreferrer" href="http://fullfort.agency/">Fullført</a>, we developed a brand concept and created a website which comprises the unique customer experience at Encore clubs—a combination of technology, attention to detail and brand story. Photo by Arseny Dzhabiev.'
+              `Together with <a target="_blank" rel="noopener noreferrer" href="http://fullfort.agency/">Fullført</a>, we developed a${NON_BREAKING_SPACE}brand concept and created a${NON_BREAKING_SPACE}website which comprises the unique customer experience at Encore clubs—a${NON_BREAKING_SPACE}combination of technology, attention to detail and brand story. Photo by Arseny Dzhabiev.`
             ]
           },
           links: [
@@ -428,7 +428,7 @@ export const casesDataDesktop = [
                 'https://medium.com/breadhead-stories/%D0%BC%D0%B5%D0%BD%D1%8F%D0%B5%D0%BC-%D0%BF%D1%80%D0%B5%D0%B4%D1%81%D1%82%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BE-%D1%84%D0%B8%D1%82%D0%BD%D0%B5%D1%81-%D0%BA%D0%BB%D1%83%D0%B1%D0%B0%D1%85-d6e8e081f8e8',
               text: {
                 ru: 'читать кейс',
-                en: 'read case'
+                en: 'read more'
               }
             },
             {
@@ -735,13 +735,15 @@ export const casesDataDesktop = [
         data: {
           title: {
             ru: `Бесплатные консультации с${NON_BREAKING_SPACE}лучшими онкологами`,
-            en: 'eng version title'
+            en: `Free consultations with the${NON_BREAKING_SPACE}best oncologists`
           },
           description: {
             ru: [
-              `В начале 2019 года «Фонд профилактики рака» и Breadhead запускают новый сервис помощи людям, столкнувшимся с${NON_BREAKING_SPACE}онкологией. Это справочная об${NON_BREAKING_SPACE}организации лечения и${NON_BREAKING_SPACE}система оценки качества работы медицинских служб.`
+              `В начале 2019 года «Фонд профилактики рака» и${NON_BREAKING_SPACE}Breadhead запускают новый сервис помощи людям, столкнувшимся с${NON_BREAKING_SPACE}онкологией. Это справочная об${NON_BREAKING_SPACE}организации лечения и${NON_BREAKING_SPACE}система оценки качества работы медицинских служб.`
             ],
-            en: ['eng version']
+            en: [
+              `In early 2019, the Cancer Prevention Foundation and Breadhead are launching a${NON_BREAKING_SPACE}new service to help people facing cancer. This is a${NON_BREAKING_SPACE}reference service providing information about the organization of treatment and the assessment of health care services quality.`
+            ]
           },
           links: [
             {

@@ -152,10 +152,10 @@ export const casesDataMobile = [
           },
           description: {
             ru: [
-              `Yango — сервис для инвестирования в${NON_BREAKING_SPACE}надежные компании. С${NON_BREAKING_SPACE}помощью приложения можно купить облигации Сбербанка, МТС или РЖД и${NON_BREAKING_SPACE}получить доход выше, чем у${NON_BREAKING_SPACE}обычных вкладов. Мы сделали редизайн приложения и${NON_BREAKING_SPACE}запустили первую версию промо-сайта.`
+              `Yango — сервис для инвестирования в${NON_BREAKING_SPACE}надежные компании. С${NON_BREAKING_SPACE}помощью приложения можно купить облигации Сбербанка, МТС или РЖД и${NON_BREAKING_SPACE}получить доход выше, чем от${NON_BREAKING_SPACE}обычных вкладов. Мы сделали редизайн приложения и${NON_BREAKING_SPACE}запустили промо-сайт.`
             ],
             en: [
-              'Yango is a service for investing in reliable companies. Using this application, you can buy bonds of Sberbank, MTS or RZD and generate an income higher than that from ordinary deposits. We redesigned the application and launched the promo-site.'
+              `Yango is a${NON_BREAKING_SPACE}service for investing in${NON_BREAKING_SPACE}reliable companies. Using this application, you can buy bonds of${NON_BREAKING_SPACE}such companies as${NON_BREAKING_SPACE}Sberbank, MTS or RZD and generate an income higher than that from ordinary deposits. We redesigned the application and launched the promo-site.`
             ]
           },
           links: [
@@ -342,7 +342,7 @@ export const casesDataMobile = [
                 'https://medium.com/breadhead-stories/%D0%BC%D0%B5%D0%BD%D1%8F%D0%B5%D0%BC-%D0%BF%D1%80%D0%B5%D0%B4%D1%81%D1%82%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BE-%D1%84%D0%B8%D1%82%D0%BD%D0%B5%D1%81-%D0%BA%D0%BB%D1%83%D0%B1%D0%B0%D1%85-d6e8e081f8e8',
               text: {
                 ru: 'читать кейс',
-                en: 'read case'
+                en: 'read more'
               }
             },
             {
@@ -645,13 +645,15 @@ export const casesDataMobile = [
         data: {
           title: {
             ru: `Бесплатные консультации с${NON_BREAKING_SPACE}лучшими онкологами`,
-            en: 'eng version title'
+            en: `Free consultations with the${NON_BREAKING_SPACE}best oncologists`
           },
           description: {
             ru: [
               `В${NON_BREAKING_SPACE}начале 2019 года «Фонд профилактики рака» и${NON_BREAKING_SPACE}Breadhead запускают новый сервис помощи людям, столкнувшимся с${NON_BREAKING_SPACE}онкологией. Это справочная об${NON_BREAKING_SPACE}организации лечения и${NON_BREAKING_SPACE}система оценки качества работы медицинских служб.`
             ],
-            en: ['eng version']
+            en: [
+              `In early 2019, the Cancer Prevention Foundation and Breadhead are launching a${NON_BREAKING_SPACE}new service to help people facing cancer. This is a${NON_BREAKING_SPACE}reference service providing information about the organization of treatment and the assessment of health care services quality.`
+            ]
           },
           links: [
             {
