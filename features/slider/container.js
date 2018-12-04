@@ -4,6 +4,7 @@ import { compose } from 'recompose'
 import cx from 'classnames'
 import { Gesture } from 'react-with-gesture'
 import { templatesMap } from '@site/features/slider/molecules/Templates'
+import KeyHandler from './molecules/KeyHandler'
 import VisibilitySensor from 'react-visibility-sensor'
 import styles from './index.css'
 import SliderAmount from '@site/ui/molecules/SliderAmount'
@@ -13,7 +14,6 @@ const Container = Slider => {
   return class extends React.PureComponent {
     constructor(props) {
       super(props)
-
 
       this.state = {
         index: 0,
@@ -39,8 +39,7 @@ const Container = Slider => {
       })
     }
 
-    touchStart = (e) => {
-
+    touchStart = e => {
       const event = e.touches ? e.touches[0] : e
 
       this.firstClientX = event.clientX
@@ -74,7 +73,7 @@ const Container = Slider => {
       this.setIndex(index + 1)
     }
 
-    preventTouch = (e) => {
+    preventTouch = e => {
       const MIN_VALUE = 5 // threshold
 
       this.clientX = e.touches[0].clientX - this.firstClientX
@@ -107,15 +106,16 @@ const Container = Slider => {
       }
     }
 
-    validateClick = (e) => {
-      return (Math.sqrt(
-        Math.pow(e.clientX - this.firstClientX, 2) +
-        Math.pow(e.clientY - this.firstClientY, 2)
-      ) < 5)
+    validateClick = e => {
+      return (
+        Math.sqrt(
+          Math.pow(e.clientX - this.firstClientX, 2) +
+            Math.pow(e.clientY - this.firstClientY, 2)
+        ) < 5
+      )
     }
 
     onSlideClick = e => {
-
       if (!this.validateClick(e)) return
 
       e.persist()
@@ -128,12 +128,11 @@ const Container = Slider => {
       } else {
         this.prevSlide()
       }
-
     }
 
     render() {
       const { height, className, slides } = this.props
-      const { index, slideComponents, paused } = this.state
+      const { index, slideComponents } = this.state
       const minTopValue = height > 600 ? height / 2.5 : height / 2
       const offset = { top: height / 2 }
       return (
@@ -156,9 +155,12 @@ const Container = Slider => {
                     isVisible={isVisible && !down}
                     delay={500}
                     quantity={slides.length}
-                    paused={paused}
                     changeSlide={this.changeSlide}
-
+                  />
+                  <KeyHandler
+                    prevSlide={this.prevSlide}
+                    nextSlide={this.nextSlide}
+                    isVisible={isVisible}
                   />
                   <SliderAmount amount={slides.length} />
                   <Slider afterChange={this.setIndex} index={index}>

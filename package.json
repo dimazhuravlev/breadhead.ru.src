@@ -12,6 +12,7 @@
     "react": "^16.7.0-alpha.2",
     "react-dom": "^16.7.0-alpha.2",
     "react-html-parser": "^2.0.2",
+    "react-key-handler": "^1.2.0-beta.3",
     "react-motion": "^0.5.2",
     "react-responsive": "^6.0.1",
     "react-scroll": "^1.7.10",
