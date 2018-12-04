@@ -184,7 +184,7 @@ export const howWeWorkDataMobile = {
         },
         description: {
           ru: [
-            `Точно оценить разработку сложного цифрового продукта невозможно. Мы либо обманем себя, недооценив проект, либо заложим большой запас на риски. Поэтому мы${NON_BREAKING_SPACE}берем деньги за${NON_BREAKING_SPACE}фактически затраченное время. Конечно, встаёт вопрос доверия. Но без доверия, в${NON_BREAKING_SPACE}любом случае, хороших проектов не${NON_BREAKING_SPACE}бывает.`
+            `Точно оценить разработку сложного цифрового продукта невозможно. Мы либо обманем себя, недооценив проект, либо заложим большой запас на риски. Поэтому мы${NON_BREAKING_SPACE}берём деньги за${NON_BREAKING_SPACE}фактически затраченное время. Конечно, встаёт вопрос доверия. Но без доверия, в${NON_BREAKING_SPACE}любом случае, хороших проектов не${NON_BREAKING_SPACE}бывает.`
           ],
           en: [
             `It is impossible to accurately estimate the development of a${NON_BREAKING_SPACE}complex digital product. We would either fool ourselves by underestimating the project, or charge the client with additional payment to cover possible risks. That’s why we price only the actual time spent on work. Naturally, the question of trust may arise, but we believe no good project is possible without trust.`

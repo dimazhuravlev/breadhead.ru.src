@@ -1,15 +1,15 @@
-import { TemplatesNames } from "@site/features/slider/molecules/Templates";
-import { NON_BREAKING_SPACE } from "@site/constants.js";
+import { TemplatesNames } from '@site/features/slider/molecules/Templates'
+import { NON_BREAKING_SPACE } from '@site/constants.js'
 
 export const howWeWorkDataDesktop = {
   description: {
     type: {
-      ru: "вики",
-      en: "wiki"
+      ru: 'вики',
+      en: 'wiki'
     },
     name: {
-      ru: "Как мы работаем",
-      en: "How we work"
+      ru: 'Как мы работаем',
+      en: 'How we work'
     }
   },
   slides: [
@@ -19,38 +19,38 @@ export const howWeWorkDataDesktop = {
       data: {
         title: {
           ru: `Принципы проектной работы и${NON_BREAKING_SPACE}коммуникации Breadhead`,
-          en: "Workflow and communication principles"
+          en: 'Workflow and communication principles'
         },
         links: [
           {
-            id: "team_clients",
+            id: 'team_clients',
             text: {
-              ru: "Команда и клиент ›",
-              en: "Team and client ›"
+              ru: 'Команда и клиент ›',
+              en: 'Team and client ›'
             }
           },
           {
-            id: "processes_roles",
-            text: { ru: "Процесс и роли ›", en: "Process and roles ›" }
+            id: 'processes_roles',
+            text: { ru: 'Процесс и роли ›', en: 'Process and roles ›' }
           },
           {
-            id: "reports_money",
-            text: { ru: "Отчёты и деньги ›", en: "Report and payment ›" }
+            id: 'reports_money',
+            text: { ru: 'Отчёты и деньги ›', en: 'Report and payment ›' }
           },
           {
-            text: { ru: "Проектирование ›", en: "Design ›" },
+            text: { ru: 'Проектирование ›', en: 'Design ›' },
             isDisabled: true
           },
           {
-            text: { ru: "Разработка ›", en: "Development ›" },
+            text: { ru: 'Разработка ›', en: 'Development ›' },
             isDisabled: true
           },
           {
-            text: { ru: "Контроль качества ›", en: "Quality assurance ›" },
+            text: { ru: 'Контроль качества ›', en: 'Quality assurance ›' },
             isDisabled: true
           },
           {
-            text: { ru: "Как начать ›", en: "How to start ›" },
+            text: { ru: 'Как начать ›', en: 'How to start ›' },
             isDisabled: true
           }
         ]
@@ -60,18 +60,18 @@ export const howWeWorkDataDesktop = {
     {
       type: TemplatesNames.ArticleDesktop,
       duration: 12000,
-      id: "team_clients",
+      id: 'team_clients',
       data: {
         title: {
-          ru: "Команда и клиент\n→ Открытость",
-          en: "Team and client\n→ Accessability"
+          ru: 'Команда и клиент\n→ Открытость',
+          en: 'Team and client\n→ Accessability'
         },
         description: {
           ru: [
             `Клиент имеет доступ к${NON_BREAKING_SPACE}чату в${NON_BREAKING_SPACE}Slack, трекеру задач в${NON_BREAKING_SPACE}Jira, почасовым отчётам, промежуточным результатам и${NON_BREAKING_SPACE}материалам в${NON_BREAKING_SPACE}облаке. Всё это открыто в${NON_BREAKING_SPACE}любой момент проекта. Аккаунт-менеджер рядом. Он помогает клиенту с${NON_BREAKING_SPACE}общими вопросами о${NON_BREAKING_SPACE}прогрессе, документах, расходах, но${NON_BREAKING_SPACE}не${NON_BREAKING_SPACE}вмешивается в${NON_BREAKING_SPACE}работу команды.`
           ],
           en: [
-            "The client has access to our Slack chat, Jira issue tracker, hourly reports, intermediate results and other data in the cloud. All this information is available at any stage of the project. Account manager is always there ready to advise the client on general matters—work progress, documents and expenses, while never interfering with team work."
+            'The client has access to our Slack chat, Jira issue tracker, hourly reports, intermediate results and other data in the cloud. All this information is available at any stage of the project. Account manager is always there ready to advise the client on general matters—work progress, documents and expenses, while never interfering with team work.'
           ]
         }
       }
@@ -82,8 +82,8 @@ export const howWeWorkDataDesktop = {
       duration: 12000,
       data: {
         title: {
-          ru: "Команда и клиент\n→ Ответственность",
-          en: "Team and client\n→ Responsibility"
+          ru: 'Команда и клиент\n→ Ответственность',
+          en: 'Team and client\n→ Responsibility'
         },
         description: {
           ru: [
@@ -101,8 +101,8 @@ export const howWeWorkDataDesktop = {
       duration: 12000,
       data: {
         title: {
-          ru: "Команда и клиент\n→ Скорость решений",
-          en: "Team and client\n→ Quick decision making"
+          ru: 'Команда и клиент\n→ Скорость решений',
+          en: 'Team and client\n→ Quick decision making'
         },
         description: {
           ru: [
@@ -118,11 +118,11 @@ export const howWeWorkDataDesktop = {
     {
       type: TemplatesNames.ArticleDesktop,
       duration: 12000,
-      id: "processes_roles",
+      id: 'processes_roles',
       data: {
         title: {
-          ru: "Процесс и роли\n→ Подход",
-          en: "Process and roles\n→ Approach"
+          ru: 'Процесс и роли\n→ Подход',
+          en: 'Process and roles\n→ Approach'
         },
         description: {
           ru: [
@@ -140,15 +140,15 @@ export const howWeWorkDataDesktop = {
       duration: 12000,
       data: {
         title: {
-          ru: "Процесс и роли\n→ Спринты",
-          en: "Process and roles\n→ Sprints"
+          ru: 'Процесс и роли\n→ Спринты',
+          en: 'Process and roles\n→ Sprints'
         },
         description: {
           ru: [
             `Работаем короткими двухнедельными итерациями. Спринты позволяют сделать процесс предсказуемым и${NON_BREAKING_SPACE}прозрачным. Команда и${NON_BREAKING_SPACE}клиент регулярно получают видимый результат и${NON_BREAKING_SPACE}обратную связь от${NON_BREAKING_SPACE}своей работы.`
           ],
           en: [
-            "We work in short two-week iterations. Sprints make the process transparent and predictable. The team and the client can always see perceptible results and get feedback from their work."
+            'We work in short two-week iterations. Sprints make the process transparent and predictable. The team and the client can always see perceptible results and get feedback from their work.'
           ]
         }
       }
@@ -159,8 +159,8 @@ export const howWeWorkDataDesktop = {
       duration: 12000,
       data: {
         title: {
-          ru: "Процесс и роли\n→ Специалисты",
-          en: "Process and roles\n→ Specialists"
+          ru: 'Процесс и роли\n→ Специалисты',
+          en: 'Process and roles\n→ Specialists'
         },
         description: {
           ru: [
@@ -176,15 +176,15 @@ export const howWeWorkDataDesktop = {
     {
       type: TemplatesNames.ArticleDesktop,
       duration: 12000,
-      id: "reports_money",
+      id: 'reports_money',
       data: {
         title: {
-          ru: "Отчёты и деньги\n→ Оплата за время",
-          en: "Report and payment\n→ Time payment"
+          ru: 'Отчёты и деньги\n→ Оплата за время',
+          en: 'Report and payment\n→ Time payment'
         },
         description: {
           ru: [
-            `Точно оценить разработку сложного цифрового продукта невозможно. Мы либо обманем себя, недооценив проект, либо заложим большой запас на риски. Поэтому мы${NON_BREAKING_SPACE}берем деньги за${NON_BREAKING_SPACE}фактически затраченное время. Конечно, встаёт вопрос доверия. Но без доверия, в${NON_BREAKING_SPACE}любом случае, хороших проектов не${NON_BREAKING_SPACE}бывает.`
+            `Точно оценить разработку сложного цифрового продукта невозможно. Мы либо обманем себя, недооценив проект, либо заложим большой запас на риски. Поэтому мы${NON_BREAKING_SPACE}берём деньги за${NON_BREAKING_SPACE}фактически затраченное время. Конечно, встаёт вопрос доверия. Но без доверия, в${NON_BREAKING_SPACE}любом случае, хороших проектов не${NON_BREAKING_SPACE}бывает.`
           ],
           en: [
             `It is impossible to accurately estimate the development of a${NON_BREAKING_SPACE}complex digital product. We would either fool ourselves by underestimating the project, or charge the client with additional payment to cover possible risks. That’s why we price only the actual time spent on work. Naturally, the question of trust may arise, but we believe no good project is possible without trust.`
@@ -198,8 +198,8 @@ export const howWeWorkDataDesktop = {
       duration: 12000,
       data: {
         title: {
-          ru: "Отчёты и деньги\n→ Учёт часов",
-          en: "Report and payment\n→ Hours accounting"
+          ru: 'Отчёты и деньги\n→ Учёт часов',
+          en: 'Report and payment\n→ Hours accounting'
         },
         description: {
           ru: [
@@ -217,18 +217,18 @@ export const howWeWorkDataDesktop = {
       duration: 12000,
       data: {
         title: {
-          ru: "Отчёты и деньги\n→ Оценка",
-          en: "Report and payment\n→ Evaluation"
+          ru: 'Отчёты и деньги\n→ Оценка',
+          en: 'Report and payment\n→ Evaluation'
         },
         description: {
           ru: [
             `Перед началом проекта мы${NON_BREAKING_SPACE}готовим ориентировочную оценку, согласовываем с${NON_BREAKING_SPACE}клиентом границы бюджета и${NON_BREAKING_SPACE}сроков. После каждого спринта клиент получает отчёт с${NON_BREAKING_SPACE}затратами специалистов и${NON_BREAKING_SPACE}обсуждает с${NON_BREAKING_SPACE}командой прогресс проекта.`
           ],
           en: [
-            "Before taking up the project, we prepare an approximate assessment and discuss budget limits and deadlines with the client. After each sprint, we send the client an expense report and discuss the project progress."
+            'Before taking up the project, we prepare an approximate assessment and discuss budget limits and deadlines with the client. After each sprint, we send the client an expense report and discuss the project progress.'
           ]
         }
       }
     }
   ]
-};
+}
