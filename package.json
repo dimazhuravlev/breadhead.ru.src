@@ -17,17 +17,14 @@
     "react-html-parser": "^2.0.2",
     "react-i18next": "^8.3.8",
     "react-key-handler": "^1.2.0-beta.3",
-    "react-motion": "^0.5.2",
     "react-responsive": "^6.0.1",
     "react-scroll": "^1.7.10",
     "react-sizeme": "^2.5.2",
     "react-sizes": "^1.0.4",
-    "react-slick": "^0.23.2",
     "react-spring": "^6.1.10",
     "react-visibility-sensor": "^5.0.2",
     "react-with-gesture": "^2.0.4",
-    "recompose": "^0.30.0",
-    "why-did-you-update": "^1.0.6"
+    "recompose": "^0.30.0"
   },
   "scripts": {
     "dev": "NODE_ENV=development node server.js",

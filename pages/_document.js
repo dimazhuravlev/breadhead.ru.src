@@ -41,17 +41,6 @@ export default class MyDocument extends Document {
           <meta name="application-name" content="Breadhead" />
           <meta name="msapplication-TileColor" content="#b91d47" />
           <meta name="theme-color" content="#ffffff" />
-          <link
-            rel="stylesheet"
-            type="text/css"
-            charSet="UTF-8"
-            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
-          />
-          <link
-            rel="stylesheet"
-            type="text/css"
-            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
-          />
           <meta charSet="utf-8" />
           <meta name="viewport" content="width=device-width, initial=scale=1" />
         </Head>
