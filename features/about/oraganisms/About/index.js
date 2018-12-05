@@ -81,9 +81,9 @@ class About extends React.Component {
                 header={t('text-block-header-technologies')}
                 icons={
                   <React.Fragment>
-                    <img src="react.png" width="36" height="35" />
-                    <img src="node.png" width="36" height="35" />
-                    <img src="swift.png" width="36" height="35" />
+                    <img src="/static/img/react.png" width="36" height="35" />
+                    <img src="/static/img/node.png" width="36" height="35" />
+                    <img src="/static/img/swift.png" width="36" height="35" />
                   </React.Fragment>
                 }
               >
