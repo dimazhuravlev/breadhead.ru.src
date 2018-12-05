@@ -81,9 +81,21 @@ class About extends React.Component {
                 header={t('text-block-header-technologies')}
                 icons={
                   <React.Fragment>
-                    <img src="/static/img/react.png" width="36" height="35" />
-                    <img src="/static/img/node.png" width="36" height="35" />
-                    <img src="/static/img/swift.png" width="36" height="35" />
+                    <img
+                      src="https://breadhead.ru/static/img/react.png"
+                      width="36px"
+                      height="35px"
+                    />
+                    <img
+                      src="https://breadhead.ru/static/img/node.png"
+                      width="36px"
+                      height="35px"
+                    />
+                    <img
+                      src="https://breadhead.ru/static/img/swift.png"
+                      width="36px"
+                      height="35px"
+                    />
                   </React.Fragment>
                 }
               >

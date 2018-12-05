@@ -10,6 +10,7 @@ import { getDirection } from './helpers/getDirection'
 import { onDiffChange } from './helpers/onDiffChange'
 import { onParentIndexChange } from './helpers/onParentIndexChange'
 import { onDownChange } from './helpers/onDownChange'
+
 const Container = ({
   children,
   threshold = 0.15,
@@ -46,8 +47,11 @@ const Container = ({
     [index]
   )
 
-  useLayoutEffect(
-    onDiffChange({ savedDiff, shuffler, setDiff }))
+  if (typeof window !== 'undefined') {
+    useLayoutEffect(
+      onDiffChange({savedDiff, shuffler, setDiff})
+    )
+  }
 
   useEffect(
     onParentIndexChange({ index, parentIndex, setIndex }),

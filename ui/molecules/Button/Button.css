@@ -2,7 +2,7 @@
 
 .Button {
   background-color: var(--beigeSecondary);
-  transition: background-color 0.2s ease-in;
+  transition: background-color 0.15s ease-in;
   border-radius: 50px;
   padding: 4px 20px;
   box-sizing: border-box;
@@ -11,12 +11,22 @@
   display: flex;
   align-items: center;
   cursor: pointer;
-  &:hover {
+}
+
+@media (min-width: 1025px) {
+  .Button:hover {
     background-color: var(--redPrimary);
     transition: background-color 0.2s ease-in;
   }
-  &:active {
+  .Button:active {
     background-color: var(--redSecondary);
+  }
+}
+
+@media (max-width: 1024px) {
+  .Button:active {
+    background-color: var(--redPrimary);
+    transition: background-color 0.05s ease-in;
   }
 }
 
@@ -24,7 +34,8 @@
   user-select: none;
   color: var(--darkPrimary);
   font: var(--caption20-24);
-  margin-bottom: 3px;
+  height: 40px;
+  padding-top: 6px;
 }
 
 .Button svg {
