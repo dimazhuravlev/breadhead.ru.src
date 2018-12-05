@@ -1,5 +1,6 @@
 import Document, { Head, Main, NextScript } from 'next/document'
 import { getHTML } from '@site/features/googleAnalytics'
+import { getCSS } from '@site/features/fonts'
 
 import i18n from '@site/lib/i18n'
 
@@ -14,6 +15,12 @@ export default class MyDocument extends Document {
             }}
           />
 
+          <style
+            dangerouslySetInnerHTML={{
+              __html: getCSS()
+            }}
+          />
+          
           <link
             rel="apple-touch-icon"
             sizes="180x180"
