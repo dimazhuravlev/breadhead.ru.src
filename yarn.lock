@@ -7830,10 +7830,10 @@ next-css-unpluggable@^2.0.0:
     ignore-loader "0.1.2"
     postcss-loader "3.0.0"
 
-next-i18next@^0.7.0:
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/next-i18next/-/next-i18next-0.7.0.tgz#9cfa5bea2aedc46dcafd2b2611f8db622607744f"
-  integrity sha512-sUBxj0ZJq8VfggoIS2j883iupnm0lcAWkdET/3t73ZmLr+wbC8YewCQdKJexxA/CH/J8eQPgjS6DtEiNYoSyjA==
+next-i18next@^0.8.0:
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/next-i18next/-/next-i18next-0.8.0.tgz#88119a05136b505796598b358862eb1f582ccf81"
+  integrity sha512-nQnf7VDjGwOJxUVUXk+QwnVaDY32fQHw/mDaUUd0+RG1U2zshdarnS6HgnGLIpF9tVjU067kwUQOh3ghZ66nXg==
   dependencies:
     detect-node "^2.0.4"
     hoist-non-react-statics "^3.2.0"
