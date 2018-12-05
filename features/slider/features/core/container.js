@@ -14,12 +14,11 @@ const Container = ({
   children,
   threshold = 0.15,
   index: parentIndex = 0,
-  afterChange = () => { }
+  afterChange = () => {}
 }) => {
-
   const viewPortRef = useRef(null)
 
-  const [handlers, { xDelta, down }] = useGesture()
+  const [handlers, { xDelta, down, yDelta }] = useGesture()
   const { width: viewportWidth } = useComponentSize(viewPortRef)
   const [index, setIndex] = useState(parentIndex)
   const [savedDiff, setDiff] = useState(-1)
@@ -27,7 +26,6 @@ const Container = ({
   const pxThreshold = threshold * viewportWidth
 
   const direction = getDirection({ down, xDelta, parentIndex, index })
-
 
   const shuffler = new Shuffler({
     width: viewportWidth,
@@ -38,7 +36,6 @@ const Container = ({
     direction
   })
 
-
   useEffect(
     () => {
       afterChange(index)
@@ -46,40 +43,50 @@ const Container = ({
     [index]
   )
 
-  useLayoutEffect(
-    onDiffChange({ savedDiff, shuffler, setDiff }))
+  useLayoutEffect(onDiffChange({ savedDiff, shuffler, setDiff }))
 
-  useEffect(
-    onParentIndexChange({ index, parentIndex, setIndex }),
-    [parentIndex]
-  )
+  useEffect(onParentIndexChange({ index, parentIndex, setIndex }), [
+    parentIndex
+  ])
 
-
-  const changeSlide = (d) => {
+  const changeSlide = d => {
     setIndex(shuffler.rotateNumber(index + d))
   }
 
-  useEffect(
-    onDownChange({ down, xDelta, pxThreshold, changeSlide }),
-    [down]
-  )
+  useEffect(onDownChange({ down, xDelta, pxThreshold, changeSlide }), [down])
 
   const immediate = getImmediate({ down, shuffler, savedDiff })
 
-  children = React.Children.map(children, (child, i) => React.cloneElement(child, {
-    order: shuffler.getOrder(i)
-  })
+  children = React.Children.map(children, (child, i) =>
+    React.cloneElement(child, {
+      order: shuffler.getOrder(i)
+    })
   )
 
-  const calcX = getCalcX({ down, xDelta, viewportWidth, shuffler, index })
+  const calcX = getCalcX({
+    down,
+    xDelta,
+    yDelta,
+    viewportWidth,
+    shuffler,
+    index
+  })
 
   return (
     <div {...handlers} ref={viewPortRef} className={styles.viewPort}>
-      <Slider immediate={immediate} width={viewportWidth} to={calcX} from={{ x: 0 }}>{children}</Slider>
+      <Slider
+        immediate={immediate}
+        width={viewportWidth}
+        to={calcX}
+        from={{ x: 0 }}
+      >
+        {children}
+      </Slider>
     </div>
   )
 }
 
-
-export default React.memo(Container, ({ index: prevIndex }, { index: nextIndex }) => prevIndex === nextIndex)
-
+export default React.memo(
+  Container,
+  ({ index: prevIndex }, { index: nextIndex }) => prevIndex === nextIndex
+)
