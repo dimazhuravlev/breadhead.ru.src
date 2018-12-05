@@ -72,18 +72,22 @@ class VideoPlayer extends React.Component {
     const { canPlay, preloaded } = this.state
     return (
       <div className={cx(className, styles.wrapper, canPlay && styles.canPlay)}>
-        <video
-          onCanPlay={this.onCanPlay}
-          ref={this.videoRef}
-          src={preloaded ? resolveStaticSrc(src) : undefined}
-          height={height}
-          width={width}
-          className={cx(styles.video)}
-          playsInline
-          autoPlay={active}
-          loop
-          muted
-        />
+        {preloaded ? (
+          <video
+            onCanPlay={this.onCanPlay}
+            ref={this.videoRef}
+            src={resolveStaticSrc(src)}
+            height={height}
+            width={width}
+            className={styles.video}
+            playsInline
+            autoPlay={active}
+            loop
+            muted
+          />
+        ) : (
+          <div className={styles.video} />
+        )}
         <Image className={cx(styles.preloader)} src={preloader} alt="" />
       </div>
     )
