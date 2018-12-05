@@ -53,14 +53,14 @@ jobs:
     steps:
       - run:
           name: Deploy Over SSH
-          command: ssh $SSH_USER@$SSH_HOST "bash --login -c && 
-            cd /home/cloud-user/www/breadhead.ru/breadhead.ru.src &&
+          command: ssh $SSH_USER@$SSH_HOST "bash --login -c  
+            \"cd /home/cloud-user/www/breadhead.ru/breadhead.ru.src &&
             git pull &&
             node -v &&
             nvm use stable &&
             yarn install &&
             yarn build &&
-            yarn prod"
+            yarn prod\""
 
 workflows:
   version: 2
