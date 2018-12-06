@@ -746,10 +746,10 @@ export const casesDataDesktop = [
           },
           description: {
             ru: [
-              `В начале 2019 года «Фонд профилактики рака» и${NON_BREAKING_SPACE}Breadhead запускают новый сервис помощи людям, столкнувшимся с${NON_BREAKING_SPACE}онкологией. Это справочная об${NON_BREAKING_SPACE}организации лечения и${NON_BREAKING_SPACE}система оценки качества работы медицинских служб.`
+              `В начале 2019 года «Фонд профилактики рака» и${NON_BREAKING_SPACE}Breadhead запускают новый сервис помощи людям, столкнувшимся с${NON_BREAKING_SPACE}онкологией. Это справочная об${NON_BREAKING_SPACE}организации качественного лечения.`
             ],
             en: [
-              `In early 2019, the Cancer Prevention Foundation and Breadhead are launching a${NON_BREAKING_SPACE}new service to help people facing cancer. This is a${NON_BREAKING_SPACE}reference service providing information about the organization of treatment and the assessment of health care services quality.`
+              `In early 2019, the Cancer Prevention Foundation and Breadhead are launching a${NON_BREAKING_SPACE}new service to help people facing cancer. This is a${NON_BREAKING_SPACE}reference service providing information about the organization of treatment.`
             ]
           },
           links: [
