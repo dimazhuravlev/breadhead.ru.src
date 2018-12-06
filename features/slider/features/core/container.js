@@ -10,6 +10,7 @@ import { getDirection } from './helpers/getDirection'
 import { onDiffChange } from './helpers/onDiffChange'
 import { onParentIndexChange } from './helpers/onParentIndexChange'
 import { onDownChange } from './helpers/onDownChange'
+
 const Container = ({
   children,
   threshold = 0.15,
