@@ -1,15 +1,24 @@
 import React from 'react'
-import { animated, useSpring } from 'react-spring'
+import { animated, useSpring, config } from 'react-spring'
 import styles from './Slider.css'
 
-const SlidesWrapper = ({ to, from, immediate, width, children }) => {
+const mobileConfig = { tension: 300, friction: 30 }
+
+const SlidesWrapper = ({
+  to,
+  from,
+  immediate,
+  width,
+  children,
+  thresholdWidth
+}) => {
   const [{ x }] = useSpring({
     x: to,
     from: from,
     native: true,
+    config: width < thresholdWidth ? mobileConfig : config.default,
     immediate
   })
-
 
   return (
     <animated.div
@@ -24,11 +33,9 @@ const SlidesWrapper = ({ to, from, immediate, width, children }) => {
         >
           {child}
         </div>
-      )
-      )}
+      ))}
     </animated.div>
   )
 }
-
 
 export default React.memo(SlidesWrapper)
