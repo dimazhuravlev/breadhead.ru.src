@@ -12,6 +12,8 @@ import { onDiffChange } from './helpers/onDiffChange'
 import { onParentIndexChange } from './helpers/onParentIndexChange'
 import { onDownChange } from './helpers/onDownChange'
 
+const THRESHOLD_WIDTH = 600
+
 const Container = ({
   children,
   threshold = 0.15,
@@ -46,7 +48,6 @@ const Container = ({
     },
     [index]
   )
-
 
   useLayoutEffect(onDiffChange({ savedDiff, shuffler, setDiff }))
 
@@ -91,6 +92,7 @@ const Container = ({
   return (
     <div {...handlers} ref={viewPortRef} className={styles.viewPort}>
       <Slider
+        thresholdWidth={THRESHOLD_WIDTH}
         immediate={immediate}
         width={viewportWidth}
         to={calcX}
