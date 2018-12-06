@@ -1,5 +1,6 @@
 import React, { useState, useLayoutEffect, useRef, useEffect } from 'react'
 import { useGesture } from 'react-with-gesture'
+import { compose, onlyUpdateForKeys } from 'recompose'
 import useComponentSize from '@rehooks/component-size'
 import Slider from './organisms/Slider'
 import styles from './index.css'
@@ -87,7 +88,6 @@ const Container = ({
   )
 }
 
-export default React.memo(
-  Container,
-  ({ index: prevIndex }, { index: nextIndex }) => prevIndex === nextIndex
-)
+const hoc = compose(onlyUpdateForKeys(['index', 'isVisible']))
+
+export default hoc(Container)
