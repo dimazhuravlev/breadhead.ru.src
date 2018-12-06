@@ -53,16 +53,19 @@ class VideoPlayer extends React.Component {
   }
 
   play = () => {
-    this.videoRef.current.paused && this.videoRef.current.play()
+    const video = this.videoRef.current
+    video.paused && video.play()
   }
 
   stop = () => {
-    this.videoRef.current.pause()
-    this.videoRef.current.currentTime = 0
+    const video = this.videoRef.current
+    video.pause()
+    video.currentTime = 0
   }
 
   pause = () => {
-    this.videoRef.current.pause()
+    const video = this.videoRef.current
+    video && video.pause()
   }
 
   videoRef = React.createRef()

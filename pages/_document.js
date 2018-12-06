@@ -1,7 +1,5 @@
 import Document, { Head, Main, NextScript } from 'next/document'
 import { getHTML } from '@site/features/googleAnalytics'
-import { getCSS } from '@site/features/fonts'
-
 import i18n from '@site/lib/i18n'
 
 export default class MyDocument extends Document {
@@ -16,11 +14,6 @@ export default class MyDocument extends Document {
           <script
             dangerouslySetInnerHTML={{
               __html: getHTML()
-            }}
-          />
-          <style
-            dangerouslySetInnerHTML={{
-              __html: getCSS()
             }}
           />
           <link

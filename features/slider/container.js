@@ -173,7 +173,11 @@ const Container = Slider => {
                     isVisible={isVisible}
                   />
                   <SliderAmount amount={slides.length} />
-                  <Slider afterChange={this.setIndex} index={index}>
+                  <Slider
+                    isVisible={isVisible}
+                    afterChange={this.setIndex}
+                    index={index}
+                  >
                     {slideComponents.map((SlideComponent, i) => {
                       const preload = this.getPreload(i, index)
                       return (
