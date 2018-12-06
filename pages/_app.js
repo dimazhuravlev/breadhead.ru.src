@@ -29,7 +29,7 @@ class MyApp extends App {
           <meta name="description" content={t('meta-description')} />
 
           <meta property="og:type" content="website" />
-          <meta property="og:url" content="https://breadhead.ru/" />
+          <meta property="og:url" content={t('meta-url')} />
           <meta property="og:title" content={t('title')} />
           <meta property="og:description" content={t('meta-description')} />
           <meta
