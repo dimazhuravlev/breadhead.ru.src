@@ -43,8 +43,6 @@ const Container = Slider => {
       const { index: prevIndex } = prevState
       const { index } = this.state
 
-      this.visitedSlides[index] = true
-
       if (prevIndex !== index) {
         this.setIndex(index)
       }
@@ -133,13 +131,8 @@ const Container = Slider => {
     }
 
     getPreload = (slideIndex, currentIndex) => {
-      if (!isNaN(this.visitedSlides[slideIndex])) {
-        return true
-      }
       return slideIndex - currentIndex < 2
     }
-
-    visitedSlides = {}
 
     render() {
       const { height, className, slides } = this.props
