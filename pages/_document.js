@@ -1,6 +1,5 @@
 import Document, { Head, Main, NextScript } from 'next/document'
 import { getHTML } from '@site/features/googleAnalytics'
-
 import i18n from '@site/lib/i18n'
 
 export default class MyDocument extends Document {
@@ -8,12 +7,15 @@ export default class MyDocument extends Document {
     return (
       <html lang={i18n.language}>
         <Head>
+          
+          <link rel="preload" href="/static/fonts/Aeroport-light.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+          <link rel="preload" href="/static/fonts/Graphik-Light-Cy-Web.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+              
           <script
             dangerouslySetInnerHTML={{
               __html: getHTML()
             }}
           />
-
           <link
             rel="apple-touch-icon"
             sizes="180x180"

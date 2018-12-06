@@ -48,7 +48,7 @@ class PreloadableImage extends React.Component {
         ) : (
           <div className={cx(styles.image, className)} />
         )}
-        <Image className={cx(styles.preloader)} src={preloader} />
+        <Image preloader={true} className={cx(styles.preloader)} src={preloader} />
       </div>
     )
   }
