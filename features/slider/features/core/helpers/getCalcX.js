@@ -1,16 +1,16 @@
-const Y_OFFSET_THRESHOLD = 2
+class Computer {
+  prevLock = false
 
-export const getCalcX = ({
-  down,
-  xDelta,
-  yDelta,
-  viewportWidth,
-  shuffler,
-  index
-}) => {
-  const baseXOffset =
-    -viewportWidth * shuffler.rotateNumber(index + shuffler.getDiff())
-  return Math.abs(yDelta) < Y_OFFSET_THRESHOLD
-    ? Number(down) * xDelta + baseXOffset
-    : baseXOffset
+  getCalcX = ({ down, xDelta, lock, viewportWidth, shuffler, index }) => {
+    const baseXOffset =
+      -viewportWidth * shuffler.rotateNumber(index + shuffler.getDiff())
+
+    if (lock) {
+      return baseXOffset
+    }
+
+    return Number(down) * xDelta + baseXOffset
+  }
 }
+
+export default Computer

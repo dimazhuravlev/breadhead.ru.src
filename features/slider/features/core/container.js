@@ -4,7 +4,7 @@ import { compose, onlyUpdateForKeys } from 'recompose'
 import useComponentSize from '@rehooks/component-size'
 import Slider from './organisms/Slider'
 import styles from './index.css'
-import { getCalcX } from './helpers/getCalcX'
+import Computer from './helpers/getCalcX'
 import { getImmediate } from './helpers/getImmediate'
 import { Shuffler } from './helpers/Shuffler'
 import { getDirection } from './helpers/getDirection'
@@ -18,12 +18,14 @@ const Container = ({
   index: parentIndex = 0,
   afterChange = () => {}
 }) => {
+  const { current: computor } = useRef(new Computer())
   const viewPortRef = useRef(null)
 
   const [handlers, { xDelta, down, yDelta }] = useGesture()
   const { width: viewportWidth } = useComponentSize(viewPortRef)
   const [index, setIndex] = useState(parentIndex)
   const [savedDiff, setDiff] = useState(-1)
+  const [lock, setLock] = useState(false)
 
   const pxThreshold = threshold * viewportWidth
 
@@ -66,10 +68,21 @@ const Container = ({
     })
   )
 
-  const calcX = getCalcX({
+  const tg = Math.abs(yDelta / xDelta)
+
+  const touchAngleTangens = 0.9
+  if (!lock && down && tg > touchAngleTangens) {
+    setLock(true)
+  }
+
+  if (!down && lock) {
+    setLock(false)
+  }
+
+  const calcX = computor.getCalcX({
     down,
     xDelta,
-    yDelta,
+    lock,
     viewportWidth,
     shuffler,
     index
