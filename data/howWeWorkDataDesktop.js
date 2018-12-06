@@ -15,7 +15,7 @@ export const howWeWorkDataDesktop = {
   slides: [
     {
       type: TemplatesNames.NavDesktop,
-      duration: 12000,
+      duration: 7000,
       data: {
         title: {
           ru: `Принципы проектной работы и${NON_BREAKING_SPACE}коммуникации Breadhead`,

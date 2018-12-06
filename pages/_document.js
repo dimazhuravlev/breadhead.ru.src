@@ -1,5 +1,6 @@
 import Document, { Head, Main, NextScript } from 'next/document'
 import { getHTML } from '@site/features/googleAnalytics'
+import { getCSS } from '@site/features/fonts'
 
 import i18n from '@site/lib/i18n'
 
@@ -8,12 +9,20 @@ export default class MyDocument extends Document {
     return (
       <html lang={i18n.language}>
         <Head>
+          
+          <link rel="preload" href="/static/fonts/Aeroport-light.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+          <link rel="preload" href="/static/fonts/Graphik-Light-Cy-Web.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+              
           <script
             dangerouslySetInnerHTML={{
               __html: getHTML()
             }}
           />
-
+          <style
+            dangerouslySetInnerHTML={{
+              __html: getCSS()
+            }}
+          />
           <link
             rel="apple-touch-icon"
             sizes="180x180"
@@ -40,7 +49,6 @@ export default class MyDocument extends Document {
           <meta name="apple-mobile-web-app-title" content="Breadhead" />
           <meta name="application-name" content="Breadhead" />
           <meta name="msapplication-TileColor" content="#b91d47" />
-          <meta name="theme-color" content="#ffffff" />
           <meta charSet="utf-8" />
           <meta name="theme-color" content="#0e0f0f" />
           <meta name="viewport" content="width=device-width, initial=scale=1" />

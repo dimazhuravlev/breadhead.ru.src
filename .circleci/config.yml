@@ -53,7 +53,8 @@ jobs:
     steps:
       - run:
           name: Deploy Over SSH
-          command: ssh $SSH_USER@$SSH_HOST "cd /home/cloud-user/www/breadhead.ru/breadhead.ru.src &&
+          command: ssh $SSH_USER@$SSH_HOST "export PATH='/home/cloud-user/.nvm/versions/node/v10.8.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games' &&
+            cd /home/cloud-user/www/breadhead.ru/breadhead.ru.src &&
             git pull &&
             yarn install &&
             yarn build &&
