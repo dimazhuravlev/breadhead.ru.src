@@ -11,6 +11,7 @@ import { getDirection } from './helpers/getDirection'
 import { onDiffChange } from './helpers/onDiffChange'
 import { onParentIndexChange } from './helpers/onParentIndexChange'
 import { onDownChange } from './helpers/onDownChange'
+import { canUseDOM } from '@site/lib/canUseDom'
 
 const THRESHOLD_WIDTH = 600
 
@@ -49,7 +50,11 @@ const Container = ({
     [index]
   )
 
-  useLayoutEffect(onDiffChange({ savedDiff, shuffler, setDiff }))
+  canUseDOM
+    ? // eslint-disable-next-line react-hooks/rules-of-hooks
+    useLayoutEffect(onDiffChange({ savedDiff, shuffler, setDiff }))
+    : // eslint-disable-next-line react-hooks/rules-of-hooks
+    useEffect(onDiffChange({ savedDiff, shuffler, setDiff }))
 
   useEffect(onParentIndexChange({ index, parentIndex, setIndex }), [
     parentIndex
