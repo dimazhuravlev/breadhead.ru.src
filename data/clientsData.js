@@ -1,5 +1,6 @@
 export const clientsData = {
   ru: [
+    'Яндекс',
     'ВТБ',
     'Look at Media',
     'Филармония',
@@ -13,6 +14,7 @@ export const clientsData = {
     'London Calling'
   ],
   en: [
+    'Yandex',
     'VTB',
     'Look at Media',
     'Philharmonia',
