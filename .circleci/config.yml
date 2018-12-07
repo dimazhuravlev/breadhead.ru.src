@@ -70,6 +70,8 @@ jobs:
             docker push breadheadhub/$IMAGE_NAME:$IMAGE_TAG
 
   prod:
+    machine:
+      enabled: true
     steps:
       - run:
           name: Deploy Over SSH
