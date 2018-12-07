@@ -1,4 +1,4 @@
-import React, { useState, useLayoutEffect, useRef, useEffect } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import { useGesture } from 'react-with-gesture'
 import { compose, onlyUpdateForKeys } from 'recompose'
 import useComponentSize from '@rehooks/component-size'
@@ -11,6 +11,7 @@ import { getDirection } from './helpers/getDirection'
 import { onDiffChange } from './helpers/onDiffChange'
 import { onParentIndexChange } from './helpers/onParentIndexChange'
 import { onDownChange } from './helpers/onDownChange'
+import { useIsomorficEffect } from '@site/lib/useIsomorphicEffect'
 
 const THRESHOLD_WIDTH = 600
 
@@ -49,7 +50,7 @@ const Container = ({
     [index]
   )
 
-  useLayoutEffect(onDiffChange({ savedDiff, shuffler, setDiff }))
+  useIsomorficEffect(onDiffChange({ savedDiff, shuffler, setDiff }))
 
   useEffect(onParentIndexChange({ index, parentIndex, setIndex }), [
     parentIndex

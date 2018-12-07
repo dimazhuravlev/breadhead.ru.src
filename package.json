@@ -2,9 +2,11 @@
   "dependencies": {
     "@rehooks/component-size": "^1.0.2",
     "babel-polyfill": "^6.26.0",
+    "can-use-dom": "^0.1.0",
     "classnames": "^2.2.6",
     "express": "^4.16.4",
     "lodash": "^4.17.11",
+    "morgan": "^1.9.1",
     "next": "^7.0.2",
     "next-compose-plugins": "^2.1.1",
     "next-css-unpluggable": "^2.0.0",
