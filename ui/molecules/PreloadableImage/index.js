@@ -2,6 +2,7 @@ import React from 'react'
 import cx from 'classnames'
 import styles from './PreloadableImage.css'
 import Image from '@site/ui/atoms/Image'
+import { MountContext } from '@site/features/mountContext'
 
 class PreloadableImage extends React.Component {
   state = { loaded: false, preloaded: false }
@@ -37,19 +38,29 @@ class PreloadableImage extends React.Component {
     const { className, src, preloader } = this.props
     const { loaded, preloaded } = this.state
     return (
-      <div className={cx(className, styles.wrapper, loaded && styles.loaded)}>
-        {preloaded ? (
-          <Image
-            className={cx(styles.image, className)}
-            src={src}
-            ref={this.image}
-            onLoad={this.handleImageLoaded}
-          />
-        ) : (
-          <div className={cx(styles.image, className)} />
+      <MountContext.Consumer>
+        {mount => (
+          <div
+            className={cx(className, styles.wrapper, loaded && styles.loaded)}
+          >
+            {preloaded && mount ? (
+              <Image
+                className={cx(styles.image, className)}
+                src={src}
+                ref={this.image}
+                onLoad={this.handleImageLoaded}
+              />
+            ) : (
+              <div className={cx(styles.image, className)} />
+            )}
+            <Image
+              preloader={true}
+              className={cx(styles.preloader)}
+              src={preloader}
+            />
+          </div>
         )}
-        <Image preloader={true} className={cx(styles.preloader)} src={preloader} />
-      </div>
+      </MountContext.Consumer>
     )
   }
 }

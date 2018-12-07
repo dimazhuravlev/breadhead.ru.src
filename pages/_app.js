@@ -5,8 +5,12 @@ import { compose } from 'recompose'
 
 import Sprite from '@site/ui/atoms/icons/Sprite'
 import { appWithTranslation, withNamespaces } from '@site/lib/i18n'
-
+import { MountContext } from '@site/features/mountContext'
 class MyApp extends App {
+  state = {
+    mount: false
+  }
+
   static async getInitialProps({ Component, ctx }) {
     let pageProps = {}
 
@@ -17,9 +21,13 @@ class MyApp extends App {
     return { pageProps }
   }
 
+  componentDidMount() {
+    this.setState({ mount: true })
+  }
+
   render() {
     const { Component, pageProps, t } = this.props
-
+    const { mount } = this.state
     return (
       <Container>
         <Head>
@@ -58,7 +66,9 @@ class MyApp extends App {
           />
         </Head>
         <Sprite />
-        <Component {...pageProps} />
+        <MountContext.Provider value={mount}>
+          <Component {...pageProps} />
+        </MountContext.Provider>
       </Container>
     )
   }

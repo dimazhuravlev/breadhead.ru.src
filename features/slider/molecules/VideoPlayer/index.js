@@ -4,7 +4,7 @@ import cx from 'classnames'
 import Image from '@site/ui/atoms/Image'
 import styles from './videoPlayer.css'
 import resolveStaticSrc from './resolveStaticSrc'
-
+import { MountContext } from '@site/features/mountContext'
 class VideoPlayer extends React.Component {
   state = { canPlay: false, preloaded: false }
 
@@ -76,25 +76,31 @@ class VideoPlayer extends React.Component {
     const { src, height, width, className, active, preloader } = this.props
     const { canPlay, preloaded } = this.state
     return (
-      <div className={cx(className, styles.wrapper, canPlay && styles.canPlay)}>
-        {preloaded ? (
-          <video
-            onCanPlay={this.onCanPlay}
-            ref={this.videoRef}
-            src={resolveStaticSrc(src)}
-            height={height}
-            width={width}
-            className={styles.video}
-            playsInline
-            autoPlay={active}
-            loop
-            muted
-          />
-        ) : (
-          <div className={styles.video} />
+      <MountContext.Consumer>
+        {mount => (
+          <div
+            className={cx(className, styles.wrapper, canPlay && styles.canPlay)}
+          >
+            {preloaded && mount ? (
+              <video
+                onCanPlay={this.onCanPlay}
+                ref={this.videoRef}
+                src={resolveStaticSrc(src)}
+                height={height}
+                width={width}
+                className={styles.video}
+                playsInline
+                autoPlay={active}
+                loop
+                muted
+              />
+            ) : (
+              <div className={styles.video} />
+            )}
+            <Image className={cx(styles.preloader)} src={preloader} alt="" />
+          </div>
         )}
-        <Image className={cx(styles.preloader)} src={preloader} alt="" />
-      </div>
+      </MountContext.Consumer>
     )
   }
 }
