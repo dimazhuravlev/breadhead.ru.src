@@ -1,10 +1,11 @@
 const optimizedImages = require('next-optimized-images')
 const withCSS = require('next-css-unpluggable')
-const withBundleAnalyzer = require("@zeit/next-bundle-analyzer");
+const withBundleAnalyzer = require("@zeit/next-bundle-analyzer")
 const withPlugins = require('next-compose-plugins')
 
 module.exports = withPlugins([
   [optimizedImages, {
+    handleImages: ['jpeg', 'png', 'webp', 'gif'],
     webp: { quality: 95 },
     mozjpeg: { quality: 95 },
   }],
