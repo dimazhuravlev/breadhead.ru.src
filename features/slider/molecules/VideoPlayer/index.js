@@ -12,10 +12,10 @@ class VideoPlayer extends React.Component {
     this.handlePreload()
   }
 
-  componentDidUpdate({ active: prevActive }) {
+  componentDidUpdate({ active: prevActive, visible: prevVisible }) {
     const { active, visible } = this.props
     this.handlePreload()
-    if (active !== prevActive) {
+    if (active !== prevActive || visible !== prevVisible) {
       this.onActiveChange(active, visible)
     }
   }
@@ -54,13 +54,15 @@ class VideoPlayer extends React.Component {
 
   play = () => {
     const video = this.videoRef.current
-    video.paused && video.play()
+    video && video.paused && video.play()
   }
 
   stop = () => {
     const video = this.videoRef.current
-    video.pause()
-    video.currentTime = 0
+    if (video) {
+      this.pause()
+      video.currentTime = 0
+    }
   }
 
   pause = () => {

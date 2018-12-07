@@ -38,4 +38,4 @@ const SlidesWrapper = ({
   )
 }
 
-export default React.memo(SlidesWrapper)
+export default SlidesWrapper
