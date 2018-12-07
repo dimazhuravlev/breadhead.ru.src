@@ -1,4 +1,4 @@
-import React, { useState, useLayoutEffect, useRef, useEffect } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import { useGesture } from 'react-with-gesture'
 import { compose, onlyUpdateForKeys } from 'recompose'
 import useComponentSize from '@rehooks/component-size'
