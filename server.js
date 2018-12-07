@@ -1,5 +1,6 @@
 const express = require('express')
 const next = require('next')
+const morgan = require('morgan')
 
 const { nextI18NextMiddleware, preI18nextMiddleware } = require('./lib/i18n')
 
@@ -11,6 +12,8 @@ const PORT = process.env.PORT || 4242
 const start = async () => {
   await app.prepare()
   const server = express()
+
+  server.use(morgan('combined'))
 
   server.use(preI18nextMiddleware)
   nextI18NextMiddleware(app, server)
