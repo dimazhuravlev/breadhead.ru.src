@@ -5,6 +5,7 @@ const withPlugins = require('next-compose-plugins')
 
 module.exports = withPlugins([
   [optimizedImages, {
+    handleImages: ['jpeg', 'png', 'webp', 'gif'],
     webp: { quality: 95 },
     mozjpeg: { quality: 95 },
   }],
