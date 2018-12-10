@@ -1,9 +1,9 @@
 .intro {
   -webkit-animation-name: fadeIn;
-  -webkit-animation-duration: 1.4s;
+  -webkit-animation-duration: 1.6s;
   -webkit-animation-timing-function: cubic-bezier(0.59, 0.01, 0.28, 1);
   animation-name: fadeIn;
-  animation-duration: 1.4s;
+  animation-duration: 1.6s;
   animation-timing-function: cubic-bezier(0.59, 0.01, 0.28, 1);
   display: flex;
   position: relative;

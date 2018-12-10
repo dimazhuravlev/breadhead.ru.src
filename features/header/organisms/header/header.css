@@ -36,11 +36,6 @@
     opacity: 0;
     transform: translateY(-10px);
   }
-  50% {
-    visibility: hidden;
-    opacity: 0;
-    transform: translateY(-10px);
-  }
   100% {
     visibility: visible;
     opacity: 1;
@@ -50,11 +45,6 @@
 
 @-webkit-keyframes fadeIn {
   0% {
-    visibility: hidden;
-    -webkit-opacity: 0;
-    -webkit-transform: translateY(-10px);
-  }
-  50% {
     visibility: hidden;
     -webkit-opacity: 0;
     -webkit-transform: translateY(-10px);
