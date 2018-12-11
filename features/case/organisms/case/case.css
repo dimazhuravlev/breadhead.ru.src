@@ -46,3 +46,10 @@
     height: 60vw;
   }
 }
+
+.slider {
+  width: 75%;
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
+}

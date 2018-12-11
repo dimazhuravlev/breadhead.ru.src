@@ -140,56 +140,58 @@ const Container = Slider => {
       const minTopValue = height > 600 ? height / 2.5 : height / 2
       const offset = { top: height / 2 }
       return (
-        <Gesture>
-          {({ down }) => (
-            <VisibilitySensor
-              onChange={this.onVisibilityChange}
-              minTopValue={minTopValue}
-              offset={offset}
-              partialVisibility
-            >
-              {({ isVisible }) => (
-                <div
-                  onClick={this.onSlideClick}
-                  className={cx(styles.wrapper, className)}
-                >
-                  <ProgressBar
-                    index={index}
-                    duration={slides[index].duration}
-                    isVisible={isVisible && !down}
-                    quantity={slides.length}
-                    changeSlide={this.changeSlide}
-                  />
-                  <KeyHandler
-                    prevSlide={this.prevSlide}
-                    nextSlide={this.nextSlide}
-                    isVisible={isVisible}
-                  />
-                  <SliderAmount amount={slides.length} />
-                  <Slider
-                    isVisible={isVisible}
-                    afterChange={this.setIndex}
-                    index={index}
+        <div className={styles.outerWrapper}>
+          <Gesture>
+            {({ down }) => (
+              <VisibilitySensor
+                onChange={this.onVisibilityChange}
+                minTopValue={minTopValue}
+                offset={offset}
+                partialVisibility
+              >
+                {({ isVisible }) => (
+                  <div
+                    onClick={this.onSlideClick}
+                    className={cx(styles.wrapper, className)}
                   >
-                    {slideComponents.map((SlideComponent, i) => {
-                      const preload = this.getPreload(i, index)
-                      return (
-                        <SlideComponent
-                          onLinkClick={this.onLinkClick}
-                          key={i}
-                          visible={isVisible}
-                          preload={preload}
-                          active={index === i}
-                          {...slides[i].data}
-                        />
-                      )
-                    })}
-                  </Slider>
-                </div>
-              )}
-            </VisibilitySensor>
-          )}
-        </Gesture>
+                    <ProgressBar
+                      index={index}
+                      duration={slides[index].duration}
+                      isVisible={isVisible && !down}
+                      quantity={slides.length}
+                      changeSlide={this.changeSlide}
+                    />
+                    <KeyHandler
+                      prevSlide={this.prevSlide}
+                      nextSlide={this.nextSlide}
+                      isVisible={isVisible}
+                    />
+                    <SliderAmount amount={slides.length} />
+                    <Slider
+                      isVisible={isVisible}
+                      afterChange={this.setIndex}
+                      index={index}
+                    >
+                      {slideComponents.map((SlideComponent, i) => {
+                        const preload = this.getPreload(i, index)
+                        return (
+                          <SlideComponent
+                            onLinkClick={this.onLinkClick}
+                            key={i}
+                            visible={isVisible}
+                            preload={preload}
+                            active={index === i}
+                            {...slides[i].data}
+                          />
+                        )
+                      })}
+                    </Slider>
+                  </div>
+                )}
+              </VisibilitySensor>
+            )}
+          </Gesture>
+        </div>
       )
     }
   }

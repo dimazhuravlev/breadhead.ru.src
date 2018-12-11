@@ -9,7 +9,12 @@ import Cases from '@site/features/home/molecules/Cases'
 import styles from './home.css'
 import cx from 'classnames'
 
-const Home = ({ howWeWorkDataDesktop, howWeWorkDataMobile, casesDataDesktop, casesDataMobile }) => (
+const Home = ({
+  howWeWorkDataDesktop,
+  howWeWorkDataMobile,
+  casesDataDesktop,
+  casesDataMobile
+}) => (
   <main>
     <Header />
 
@@ -35,7 +40,7 @@ const Home = ({ howWeWorkDataDesktop, howWeWorkDataMobile, casesDataDesktop, cas
       className={cx(styles.howWeWork, styles.howWeWorkMobile)}
       {...howWeWorkDataMobile}
     />
-    
+
     <Footer />
   </main>
 )

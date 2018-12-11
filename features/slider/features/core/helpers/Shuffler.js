@@ -6,23 +6,27 @@ export class Shuffler {
   }
 
   setParams(params) {
-    this.params = { ...params, params }
+    this.params = { ...this.params, ...params }
   }
 
   checkBoundaries() {
     const selectedOrder = this.getOrder(this.params.next)
-    return (this.getOrder(this.params.next - 1) < selectedOrder) &&
-      (this.getOrder(this.params.next + 1) > selectedOrder)
-
+    return (
+      this.getOrder(this.params.next - 1) < selectedOrder &&
+      this.getOrder(this.params.next + 1) > selectedOrder
+    )
   }
 
   getDiff() {
-
-    if (!this.params.width) { return 0 }
+    if (!this.params.width) {
+      return 0
+    }
 
     if (!this.checkBoundaries()) {
-
-      this.params.diff = this.rotateNumber(this.params.diff + Math.round(this.params.count / 4 * (2 + this.params.direction)))
+      this.params.diff = this.rotateNumber(
+        this.params.diff +
+          Math.round((this.params.count / 4) * (2 + this.params.direction))
+      )
     }
     return this.params.diff
   }
@@ -34,6 +38,4 @@ export class Shuffler {
   rotateNumber(n) {
     return (n + this.params.count) % this.params.count
   }
-
 }
-
