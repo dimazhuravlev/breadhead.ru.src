@@ -18,7 +18,7 @@ class MyApp extends App {
       pageProps = await Component.getInitialProps(ctx)
     }
 
-    pageProps = browserSupport(pageProps, ctx.req.headers['user-agent'])
+    pageProps = browserSupport(pageProps, ctx.req)
 
     return { pageProps }
   }
