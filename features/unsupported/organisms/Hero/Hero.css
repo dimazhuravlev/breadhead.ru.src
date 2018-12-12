@@ -9,6 +9,7 @@
   }
 
   @media (max-width: 1024px) {
+    font: var(--titleMobile28-32);
     width: auto;
     margin: 60px 16px 0px 14px;
   }

@@ -1,6 +1,8 @@
 .Footer {
-  margin-top: 288px;
+  margin-top: auto;
+  padding-bottom: 84px;
   @media (max-width: 1024px) {
-    margin-top: 120px;
+    padding-top: 120px;
+    padding-bottom: 40px;
   }
 }

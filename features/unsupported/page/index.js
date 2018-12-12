@@ -6,7 +6,7 @@ import Footer from '../organisms/Footer'
 
 const Page = () => {
   return (
-    <div>
+    <div className={styles.Unsupported}>
       <Header />
       <main>
         <Hero />
