@@ -16,7 +16,7 @@
 @media (min-width: 1025px) {
   .Button:hover {
     background-color: var(--redPrimary);
-    transition: background-color 0.2s ease-in;
+    transition: background-color 0.15s ease-in;
   }
   .Button:active {
     background-color: var(--redSecondary);

@@ -39,8 +39,8 @@ export const casesDataDesktop = [
             ]
           },
           image: {
-            src: 'faster/desktop/phone_map_desktop.jpg',
-            preloader: 'faster/desktop/preloader-phone_map_desktop.jpg'
+            src: 'faster/mobile/phone_catalog_mobile.jpg',
+            preloader: 'faster/mobile/preloader-phone_catalog_mobile.jpg'
           }
         }
       },
