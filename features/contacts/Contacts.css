@@ -1,0 +1,43 @@
+.content {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0px 56px 0px 56px;
+
+  @media (max-width: 1440px) {
+    padding: 0px 34px 0px 34px;
+  }
+
+  @media (max-width: 1024px) {
+    padding: 0px 16px 0px 16px;
+    flex-direction: column;
+  }
+}
+
+.textBlocks {
+  grid-template-columns: repeat(3, 1fr);
+  display: grid;
+  width: 75%;
+
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
+
+  @media (max-width: 690px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.phoneLink {
+  color: var(--beigePrimary);
+  cursor: default;
+  &:hover {
+    color: var(--beigePrimary);
+  }
+  @media (max-width: 690px) {
+    color: var(--beigeSecondary);
+    cursor: pointer;
+    &:hover {
+      color: var(--redPrimary);
+    }
+  }
+}

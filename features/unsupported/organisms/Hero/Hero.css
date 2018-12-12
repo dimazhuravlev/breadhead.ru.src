@@ -1,0 +1,15 @@
+.Hero {
+  font: var(--title40-48);
+  color: var(--beigePrimary);
+  width: 50%;
+  margin: 96px 56px 0px 54px;
+
+  @media (max-width: 1440px) {
+    margin: 96px 34px 0px 32px;
+  }
+
+  @media (max-width: 1024px) {
+    width: auto;
+    margin: 60px 16px 0px 14px;
+  }
+}
