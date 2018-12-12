@@ -36,7 +36,9 @@ class Case extends React.Component {
           )}
         >
           <Descriptor {...description} />
-          <Slider slides={slides} />
+          <div className={styles.slider}>
+            <Slider slides={slides} />
+          </div>
         </section>
       </VisibilitySensor>
     )
