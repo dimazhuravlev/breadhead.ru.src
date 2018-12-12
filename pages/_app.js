@@ -2,10 +2,10 @@ import App, { Container } from 'next/app'
 import Head from 'next/head'
 import React from 'react'
 import { compose } from 'recompose'
-
 import Sprite from '@site/ui/atoms/icons/Sprite'
 import { appWithTranslation, withNamespaces } from '@site/lib/i18n'
 import { MountContext } from '@site/features/mountContext'
+import { browserSupport } from '@site/lib/browserSupport'
 class MyApp extends App {
   state = {
     mount: false
@@ -17,6 +17,8 @@ class MyApp extends App {
     if (Component.getInitialProps) {
       pageProps = await Component.getInitialProps(ctx)
     }
+
+    pageProps = browserSupport(pageProps, ctx.req.headers['user-agent'])
 
     return { pageProps }
   }

@@ -1,0 +1,25 @@
+.Unsupported {
+  width: 100%;
+  min-height: 100vh;
+  display: table;
+}
+
+.Unsupported a {
+  color: rgb(163, 142, 124);
+}
+.Unsupported a:hover {
+  color: rgb(255, 79, 5);
+}
+
+.HeaderWrapper {
+  display: table-row;
+}
+
+.Main {
+  display: table-row;
+  height: 100%;
+}
+
+.FooterWrapper {
+  display: table-row;
+}
