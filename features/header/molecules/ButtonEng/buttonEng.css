@@ -2,7 +2,7 @@
   font: var(--caption20-24);
   color: var(--beigeSecondary);
   background-color: var(--darkSecondary);
-  transition: all 0.15s ease-in;
+  transition: all 0.12s ease-in;
   border-radius: 50px;
   padding: 2px 8px 6px 8px;
   width: 40px;
@@ -19,7 +19,7 @@
 @media (min-width: 1025px) {
   .button:hover {
     background-color: var(--redPrimary);
-    transition: background-color 0.2s ease-in;
+    transition: background-color 0.12s ease-in;
     color: var(--darkSecondary);
   }
   .button:active {
