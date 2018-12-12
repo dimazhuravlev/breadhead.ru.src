@@ -70,7 +70,7 @@
     "postcss-custom-properties": "^8.0.9",
     "postcss-nesting": "^7.0.0",
     "postcss-normalize": "^7.0.1",
-    "postcss-preset-env": "^6.4.0",
+    "postcss-preset-env": "^6.5.0",
     "stylelint": "^9.9.0",
     "stylelint-config-recommended": "^2.1.0",
     "webpack-bundle-analyzer": "^3.0.3",
