@@ -203,7 +203,7 @@ export const howWeWorkDataDesktop = {
         },
         description: {
           ru: [
-            `Час наших специалистов стоит 2–3 тысячи рублей, в${NON_BREAKING_SPACE}зависимости от${NON_BREAKING_SPACE}их${NON_BREAKING_SPACE}уровня. В${NON_BREAKING_SPACE}отчёт попадает только чистое время на работу — в${NON_BREAKING_SPACE}среднем 6${NON_BREAKING_SPACE}часов в${NON_BREAKING_SPACE}день. Всё остальное: внутренние собрания, перерывы на обед или кофе — не фиксируем. Работа менеджера и${NON_BREAKING_SPACE}арт-директора включена в${NON_BREAKING_SPACE}ставку специалистов и${NON_BREAKING_SPACE}отдельно не${NON_BREAKING_SPACE}тарифицируется.`
+            `Час работы наших специалистов стоит 2–3 тысячи рублей, в${NON_BREAKING_SPACE}зависимости от${NON_BREAKING_SPACE}их${NON_BREAKING_SPACE}уровня. В${NON_BREAKING_SPACE}отчёт попадает только чистое время на работу — в${NON_BREAKING_SPACE}среднем 6${NON_BREAKING_SPACE}часов в${NON_BREAKING_SPACE}день. Всё остальное: внутренние собрания, перерывы на обед или кофе — не фиксируем. Работа менеджера и${NON_BREAKING_SPACE}арт-директора включена в${NON_BREAKING_SPACE}ставку специалистов и${NON_BREAKING_SPACE}отдельно не${NON_BREAKING_SPACE}тарифицируется.`
           ],
           en: [
             `An hour of our work costs 2–3 thousand rubles depending on the level of a${NON_BREAKING_SPACE}specialist. The report only contains the actual working time—an average of 6 hours per day. Internal meetings, lunch or coffee breaks are not priced. The work of the manager and art director is included in the rate of specialists and is not charged additionally.`
