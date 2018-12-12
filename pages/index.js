@@ -6,9 +6,6 @@ import 'babel-polyfill'
 import 'normalize.css'
 import './index.css'
 
-export default () => (
-  <div>
-    {/* <Home /> */}
-    <Unsupported />
-  </div>
+export default ({ unsupported }) => (
+  <div>{unsupported ? <Unsupported /> : <Home />}</div>
 )

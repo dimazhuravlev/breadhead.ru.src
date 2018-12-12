@@ -7,11 +7,15 @@ import Footer from '../organisms/Footer'
 const Page = () => {
   return (
     <div className={styles.Unsupported}>
-      <Header />
-      <main>
+      <div className={styles.HeaderWrapper}>
+        <Header />
+      </div>
+      <main className={styles.Main}>
         <Hero />
       </main>
-      <Footer />
+      <div className={styles.FooterWrapper}>
+        <Footer />
+      </div>
     </div>
   )
 }
