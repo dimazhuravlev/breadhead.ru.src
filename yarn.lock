@@ -9383,17 +9383,17 @@ next-i18next@^0.8.0:
     react "^16.6.3"
     react-i18next "^8.3.8"
 
-next-optimized-images@^2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/next-optimized-images/-/next-optimized-images-2.0.2.tgz#f501779129a7d2e92bda3344cefcd637736337c6"
-  integrity sha512-V/ZfpGU4QZEwZBrClBQtjcplHM/buxPCo0VkUUg0gNHKYSTmSukp4eLxFx5pJRQRGV3ofzbOQ1AUUH2vgQEvzA==
+next-optimized-images@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/next-optimized-images/-/next-optimized-images-2.1.0.tgz#6cfe7b8c0a31204c4f9bf196d586237c4b4ef68d"
+  integrity sha512-oOTtVdHfe8nYR88Vt3hn36/IlUkj96wOwbI6+GDYKDQIdi3s/yW1DBpN54GkwTGnd3/+zYmJur0FNZ1GFKsocQ==
   dependencies:
     chalk "^2.4.1"
     figures "^2.0.0"
     file-loader "^2.0.0"
     imagemin "^6.0.0"
     img-loader "^3.0.1"
-    raw-loader "^0.5.1"
+    raw-loader "^1.0.0"
     url-loader "^1.1.2"
 
 next@^7.0.2:
@@ -11286,10 +11286,13 @@ raw-body@2.3.3, raw-body@^2.2.0:
     iconv-lite "0.4.23"
     unpipe "1.0.0"
 
-raw-loader@^0.5.1:
-  version "0.5.1"
-  resolved "https://registry.yarnpkg.com/raw-loader/-/raw-loader-0.5.1.tgz#0c3d0beaed8a01c966d9787bf778281252a979aa"
-  integrity sha1-DD0L6u2KAclm2Xh793goElKpeao=
+raw-loader@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/raw-loader/-/raw-loader-1.0.0.tgz#3f9889e73dadbda9a424bce79809b4133ad46405"
+  integrity sha512-Uqy5AqELpytJTRxYT4fhltcKPj0TyaEpzJDcGz7DFJi+pQOOi3GjR/DOdxTkTsF+NzhnldIoG6TORaBlInUuqA==
+  dependencies:
+    loader-utils "^1.1.0"
+    schema-utils "^1.0.0"
 
 rc@^1.1.2, rc@^1.2.7:
   version "1.2.8"
