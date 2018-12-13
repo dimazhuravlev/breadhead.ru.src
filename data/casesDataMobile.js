@@ -666,6 +666,17 @@ export const casesDataMobile = [
           },
           backgroundColor: '#3C54EE'
         }
+      },
+      {
+        type: TemplatesNames.FramePictMobile,
+        data: {
+          image: {
+            src: 'just_ask/desktop/4.1-client_account_mobile.jpg',
+            preloader:
+              'just_ask/desktop/preloader-4.1-client_account_mobile.jpg'
+          },
+          backgroundColor: '#3C54EE'
+        }
       }
     ]
   }

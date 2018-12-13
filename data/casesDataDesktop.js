@@ -778,6 +778,31 @@ export const casesDataDesktop = [
           },
           backgroundColor: '#3C54EE'
         }
+      },
+      {
+        type: TemplatesNames.PhonesDesktop,
+        data: {
+          screens: [
+            {
+              src: 'just_ask/desktop/4.1-client_account_mobile.jpg',
+              preloader:
+                'just_ask/desktop/preloader-4.1-client_account_mobile.jpg',
+              type: 'img'
+            },
+            {
+              src: 'just_ask/desktop/4.2-consultation_mobile.jpg',
+              preloader:
+                'just_ask/desktop/preloader-4.2-consultation_mobile.jpg',
+              type: 'img'
+            },
+            {
+              src: 'just_ask/desktop/4.3-chat_mobile.jpg',
+              preloader: 'just_ask/desktop/preloader-4.3-chat_mobile.jpg',
+              type: 'img'
+            }
+          ],
+          backgroundColor: '#3C54EE'
+        }
       }
     ]
   }
