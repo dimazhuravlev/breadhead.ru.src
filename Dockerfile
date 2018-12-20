@@ -17,4 +17,7 @@ ENV PATH="./node_modules/.bin:$PATH"
 
 COPY --from=build /usr/src .
 
-CMD [ "pm2-docker", "start", "ecosystem.config.js" ]
+ENV PM2_PUBLIC_KEY nuy4opgo3zkve58
+ENV PM2_SECRET_KEY 3mhqt6mznnvzr6a
+
+CMD ["pm2-runtime", "start", "ecosystem.config.js" ]
