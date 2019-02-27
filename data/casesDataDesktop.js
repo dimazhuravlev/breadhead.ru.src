@@ -2,6 +2,100 @@ import { TemplatesNames } from '@site/features/slider/molecules/Templates'
 import { NON_BREAKING_SPACE } from '@site/constants.js'
 
 export const casesDataDesktop = [
+  /*CHEVOSTIK DESKTOP CASE */
+  {
+    description: {
+      type: {
+        ru: 'веб-сервиc',
+        en: 'web application'
+      },
+      name: {
+        ru: 'Чевостик',
+        en: 'Chevostik'
+      },
+      links: [
+        {
+          icontype: 'globe',
+          href: 'https://chevostik.ru/'
+        }
+      ]
+    },
+    slides: [
+      {
+        type: TemplatesNames.PictureDesktop,
+        data: {
+          image: {
+            src: 'chevostik/desktop/full_title_desktop.jpg',
+            preloader: 'just_ask/desktop/preloader-main-oncohelp_desktop.jpg'
+          }
+        }
+      },
+      {
+        type: TemplatesNames.FrameVideoDesktop,
+        duration: 23000,
+        data: {
+          image: {
+            src: 'chevostik/desktop/desktop_map_browser.mp4',
+            preloader: 'just_ask/desktop/preloader-main-oncohelp_desktop.jpg'
+          },
+          backgroundColor: '#EDEBE8'
+        }
+      },
+      {
+        type: TemplatesNames.VideoDesktop,
+        duration: 9500,
+        data: {
+          image: {
+            src: 'chevostik/desktop/lessons.mp4',
+            preloader: 'faster/desktop/preloader-full_order_desktop.jpg'
+          }
+        }
+      },
+      {
+        type: TemplatesNames.FramePictDesktop,
+        data: {
+          image: {
+            src: 'chevostik/desktop/desktop_games_browser.jpg',
+            preloader:
+              'just_ask/desktop/preloader-1_oncohelp_preview_desktop.jpg'
+          },
+          backgroundColor: '#EDEBE8'
+        }
+      },
+      {
+        type: TemplatesNames.VideoDesktop,
+        duration: 8000,
+        data: {
+          image: {
+            src: 'chevostik/desktop/full_eyes_desktop.mov',
+            preloader: 'faster/desktop/preloader-full_order_desktop.jpg'
+          }
+        }
+      },
+      {
+        type: TemplatesNames.FrameVideoDesktop,
+        duration: 6000,
+        data: {
+          image: {
+            src: 'chevostik/desktop/desktop_prizes_browser.mov',
+            preloader: 'just_ask/desktop/preloader-main-oncohelp_desktop.jpg'
+          },
+          backgroundColor: '#EDEBE8'
+        }
+      },
+      {
+        type: TemplatesNames.VideoDesktop,
+        duration: 5000,
+        data: {
+          image: {
+            src: 'chevostik/desktop/play3.mov',
+            preloader: 'faster/desktop/preloader-full_order_desktop.jpg'
+          }
+        }
+      }
+    ]
+  },
+
   /*ONCOHELP DESKTOP CASE */
   {
     description: {
