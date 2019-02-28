@@ -25,20 +25,63 @@ export const casesDataDesktop = [
         type: TemplatesNames.PictureDesktop,
         data: {
           image: {
-            src: 'chevostik/desktop/full_title_desktop.jpg',
+            src: 'chevostik/desktop/desktop_title_full.png',
             preloader: 'just_ask/desktop/preloader-main-oncohelp_desktop.jpg'
           }
         }
       },
       {
+        type: TemplatesNames.ArticleWithPhoneDesktop,
+        duration: 12000,
+        data: {
+          title: {
+            ru: 'Современный способ узнать всё обо всём',
+            en: `Consultations with the${NON_BREAKING_SPACE}best oncologists`
+          },
+          description: {
+            ru: [
+              'Чевостик — главный героя интерактивной энциклопедии для дошкольников. Дети слушают аудиоуроки, проходят тесты и играют в игры, связанные с темой урока. Такой подход позволяет детям усваивать новую информацию эффективнее, чем простое чтение книг или просмотр обучающих роликов.'
+            ],
+            en: [
+              'Chevostik is the main character of an interactive encyclopedia for preschoolers. Children listen to audio lessons, pass tests and play games related to the topic of each lesson. This approach allows children to memorize new information more effectively than just reading books or watching educational videos.'
+            ]
+          },
+          links: [
+            {
+              icontype: 'globe',
+              href: 'https://chevostik.ru/',
+              text: 'chevostik.ru'
+            },
+            {
+              icontype: 'article',
+              href: 'https://medium.ru/',
+              text: 'статья на Medium'
+            }
+          ],
+          image: {
+            src: 'chevostik/desktop/phone_article_mobile.jpg',
+            preloader: 'just_ask/mobile/preloader-2_oncohelp_filling_mobile.jpg'
+          }
+        }
+      },
+      {
         type: TemplatesNames.FrameVideoDesktop,
-        duration: 23000,
+        duration: 17000,
         data: {
           image: {
-            src: 'chevostik/desktop/desktop_map_browser.mp4',
+            src: 'chevostik/desktop/map.mp4',
             preloader: 'just_ask/desktop/preloader-main-oncohelp_desktop.jpg'
           },
           backgroundColor: '#EDEBE8'
+        }
+      },
+      {
+        type: TemplatesNames.PictureDesktop,
+        data: {
+          image: {
+            src: 'chevostik/desktop/desktop_tablet_full.jpg',
+            preloader: 'just_ask/desktop/preloader-main-oncohelp_desktop.jpg'
+          }
         }
       },
       {
@@ -48,6 +91,26 @@ export const casesDataDesktop = [
           image: {
             src: 'chevostik/desktop/lessons.mp4',
             preloader: 'faster/desktop/preloader-full_order_desktop.jpg'
+          }
+        }
+      },
+      {
+        type: TemplatesNames.VideoDesktop,
+        duration: 8000,
+        data: {
+          image: {
+            src: 'chevostik/desktop/full_eyes_desktop.mov',
+            preloader: 'faster/desktop/preloader-full_order_desktop.jpg'
+          }
+        }
+      },
+      {
+        type: TemplatesNames.VideoDesktop,
+        duration: 17000,
+        data: {
+          image: {
+            src: 'chevostik/desktop/test_best_short.mp4',
+            preloader: 'just_ask/desktop/preloader-main-oncohelp_desktop.jpg'
           }
         }
       },
@@ -64,17 +127,17 @@ export const casesDataDesktop = [
       },
       {
         type: TemplatesNames.VideoDesktop,
-        duration: 8000,
+        duration: 13500,
         data: {
           image: {
-            src: 'chevostik/desktop/full_eyes_desktop.mov',
-            preloader: 'faster/desktop/preloader-full_order_desktop.jpg'
+            src: 'chevostik/desktop/games_select.mp4',
+            preloader: 'just_ask/desktop/preloader-main-oncohelp_desktop.jpg'
           }
         }
       },
       {
         type: TemplatesNames.FrameVideoDesktop,
-        duration: 6000,
+        duration: 5500,
         data: {
           image: {
             src: 'chevostik/desktop/desktop_prizes_browser.mov',

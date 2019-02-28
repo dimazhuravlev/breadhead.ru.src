@@ -2,7 +2,7 @@
   overflow: hidden;
   pointer-events: none;
   object-fit: cover;
-  object-position: top left;
+  object-position: top center;
   position: absolute;
   top: 0;
   -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
@@ -13,7 +13,7 @@
   overflow: hidden;
   pointer-events: none;
   object-fit: cover;
-  object-position: top left;
+  object-position: top center;
   position: absolute;
   top: 0;
   left: 0;

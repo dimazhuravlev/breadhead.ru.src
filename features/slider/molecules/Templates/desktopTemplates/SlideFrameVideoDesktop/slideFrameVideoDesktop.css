@@ -17,13 +17,13 @@
   left: 50%;
   margin-left: -518px;
   margin-top: -306px;
-  width: 1036px;
-  height: 612px;
+  width: 1022px;
+  height: 620px;
 
   @media (max-width: 1920px) {
     margin-left: -27vw;
     margin-top: -16.5vw;
-    width: 54vw;
+    width: calc(54vw - 1px);
     height: 33vw;
     border-radius: calc(4px + 3 * ((100vw - 1024px) / 896));
   }
