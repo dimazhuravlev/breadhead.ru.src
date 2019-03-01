@@ -17,19 +17,33 @@ export const casesDataDesktop = [
         {
           icontype: 'globe',
           href: 'https://chevostik.ru/'
+        },
+        {
+          icontype: 'article',
+          href: 'https://medium.ru/'
         }
       ]
     },
     slides: [
       {
-        type: TemplatesNames.PictureDesktop,
+        type: TemplatesNames.VideoDesktop,
+        duration: 8000,
         data: {
           image: {
-            src: 'chevostik/desktop/desktop_title_full.png',
-            preloader: 'just_ask/desktop/preloader-main-oncohelp_desktop.jpg'
+            src: 'chevostik/desktop/button_desktop.mov',
+            preloader: 'faster/desktop/preloader-full_order_desktop.jpg'
           }
         }
       },
+      // {
+      //   type: TemplatesNames.PictureDesktop,
+      //   data: {
+      //     image: {
+      //       src: 'chevostik/desktop/desktop_title_full.png',
+      //       preloader: 'just_ask/desktop/preloader-main-oncohelp_desktop.jpg'
+      //     }
+      //   }
+      // },
       {
         type: TemplatesNames.ArticleWithPhoneDesktop,
         duration: 12000,
@@ -72,14 +86,14 @@ export const casesDataDesktop = [
             src: 'chevostik/desktop/map.mp4',
             preloader: 'just_ask/desktop/preloader-main-oncohelp_desktop.jpg'
           },
-          backgroundColor: '#EDEBE8'
+          backgroundColor: '#FFCA35'
         }
       },
       {
         type: TemplatesNames.PictureDesktop,
         data: {
           image: {
-            src: 'chevostik/desktop/desktop_tablet_full.jpg',
+            src: 'chevostik/desktop/phone.jpg',
             preloader: 'just_ask/desktop/preloader-main-oncohelp_desktop.jpg'
           }
         }
@@ -106,23 +120,12 @@ export const casesDataDesktop = [
       },
       {
         type: TemplatesNames.VideoDesktop,
-        duration: 17000,
+        duration: 14000,
         data: {
           image: {
-            src: 'chevostik/desktop/test_best_short.mp4',
+            src: 'chevostik/desktop/test_fast.mp4',
             preloader: 'just_ask/desktop/preloader-main-oncohelp_desktop.jpg'
           }
-        }
-      },
-      {
-        type: TemplatesNames.FramePictDesktop,
-        data: {
-          image: {
-            src: 'chevostik/desktop/desktop_games_browser.jpg',
-            preloader:
-              'just_ask/desktop/preloader-1_oncohelp_preview_desktop.jpg'
-          },
-          backgroundColor: '#EDEBE8'
         }
       },
       {
@@ -136,6 +139,17 @@ export const casesDataDesktop = [
         }
       },
       {
+        type: TemplatesNames.FramePictDesktop,
+        data: {
+          image: {
+            src: 'chevostik/desktop/desktop_games_browser.jpg',
+            preloader:
+              'just_ask/desktop/preloader-1_oncohelp_preview_desktop.jpg'
+          },
+          backgroundColor: '#023d89'
+        }
+      },
+      {
         type: TemplatesNames.FrameVideoDesktop,
         duration: 5500,
         data: {
@@ -143,17 +157,7 @@ export const casesDataDesktop = [
             src: 'chevostik/desktop/desktop_prizes_browser.mov',
             preloader: 'just_ask/desktop/preloader-main-oncohelp_desktop.jpg'
           },
-          backgroundColor: '#EDEBE8'
-        }
-      },
-      {
-        type: TemplatesNames.VideoDesktop,
-        duration: 5000,
-        data: {
-          image: {
-            src: 'chevostik/desktop/play3.mov',
-            preloader: 'faster/desktop/preloader-full_order_desktop.jpg'
-          }
+          backgroundColor: '#FEA471'
         }
       }
     ]

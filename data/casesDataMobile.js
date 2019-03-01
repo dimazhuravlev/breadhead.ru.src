@@ -2,6 +2,119 @@ import { TemplatesNames } from '@site/features/slider/molecules/Templates'
 import { NON_BREAKING_SPACE } from '@site/constants.js'
 
 export const casesDataMobile = [
+  /*CHEVOSTIK MOBILE CASE */
+  {
+    description: {
+      type: {
+        ru: 'веб-сервис',
+        en: 'web application'
+      },
+      name: {
+        ru: 'Чевостик',
+        en: 'Chevostik'
+      }
+    },
+    slides: [
+      {
+        type: TemplatesNames.VideoMobile,
+        duration: 6000,
+        data: {
+          image: {
+            src: 'chevostik/mobile/button_mobile.mov',
+            preloader: 'faster/mobile/preloader-filter_mobile.jpg'
+          }
+        }
+      },
+      {
+        type: TemplatesNames.ArticleMobile,
+        duration: 12000,
+        data: {
+          title: {
+            ru: 'Современный способ узнать всё обо всём',
+            en: `Consultations with the${NON_BREAKING_SPACE}best oncologists`
+          },
+          description: {
+            ru: [
+              'Чевостик — главный героя интерактивной энциклопедии для дошкольников. Дети слушают аудиоуроки, проходят тесты и играют в игры, связанные с темой урока. Такой подход позволяет детям усваивать новую информацию эффективнее, чем простое чтение книг или просмотр обучающих роликов.'
+            ],
+            en: [
+              'Chevostik is the main character of an interactive encyclopedia for preschoolers. Children listen to audio lessons, pass tests and play games related to the topic of each lesson. This approach allows children to memorize new information more effectively than just reading books or watching educational videos.'
+            ]
+          },
+          links: [
+            {
+              icontype: 'globe',
+              href: 'https://chevostik.ru/',
+              text: 'chevostik.ru'
+            },
+            {
+              icontype: 'article',
+              href: 'https://medium.ru/',
+              text: 'статья на Medium'
+            }
+          ]
+        }
+      },
+      {
+        type: TemplatesNames.VideoMobile,
+        duration: 5000,
+        data: {
+          image: {
+            src: 'chevostik/mobile/tooltip_map.mov',
+            preloader: 'faster/mobile/preloader-filter_mobile.jpg'
+          }
+        }
+      },
+      {
+        type: TemplatesNames.VideoMobile,
+        duration: 8000,
+        data: {
+          image: {
+            src: 'chevostik/mobile/lessons_mobile.mp4',
+            preloader: 'faster/mobile/preloader-filter_mobile.jpg'
+          }
+        }
+      },
+      {
+        type: TemplatesNames.PictureMobile,
+        data: {
+          image: {
+            src: 'chevostik/mobile/mobile_icons.jpg',
+            preloader: 'just_ask/mobile/preloader-cover_oncohelp_mobile.jpg'
+          }
+        }
+      },
+      {
+        type: TemplatesNames.PictureMobile,
+        data: {
+          image: {
+            src: 'chevostik/mobile/2browsers_mobile.jpg',
+            preloader: 'just_ask/mobile/preloader-cover_oncohelp_mobile.jpg'
+          }
+        }
+      },
+      {
+        type: TemplatesNames.PictureMobile,
+        data: {
+          image: {
+            src: 'chevostik/mobile/mobile_chevostik.jpg',
+            preloader: 'just_ask/mobile/preloader-cover_oncohelp_mobile.jpg'
+          }
+        }
+      },
+      {
+        type: TemplatesNames.VideoMobile,
+        duration: 7000,
+        data: {
+          image: {
+            src: 'chevostik/mobile/test_mobile_2.mov',
+            preloader: 'faster/mobile/preloader-filter_mobile.jpg'
+          }
+        }
+      }
+    ]
+  },
+
   /*ONCOHELP MOBILE CASE */
   {
     description: {
