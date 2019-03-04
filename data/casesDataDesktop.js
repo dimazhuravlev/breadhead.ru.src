@@ -20,7 +20,7 @@ export const casesDataDesktop = [
         },
         {
           icontype: 'article',
-          href: 'https://medium.ru/'
+          href: 'https://medium.com/@breadhead.ru/c2720cba7fa9'
         }
       ]
     },
@@ -30,20 +30,11 @@ export const casesDataDesktop = [
         duration: 8000,
         data: {
           image: {
-            src: 'chevostik/desktop/button_desktop.mov',
+            src: 'chevostik/desktop/button_desktop.mp4',
             preloader: 'faster/desktop/preloader-full_order_desktop.jpg'
           }
         }
       },
-      // {
-      //   type: TemplatesNames.PictureDesktop,
-      //   data: {
-      //     image: {
-      //       src: 'chevostik/desktop/desktop_title_full.png',
-      //       preloader: 'just_ask/desktop/preloader-main-oncohelp_desktop.jpg'
-      //     }
-      //   }
-      // },
       {
         type: TemplatesNames.ArticleWithPhoneDesktop,
         duration: 12000,
@@ -54,10 +45,10 @@ export const casesDataDesktop = [
           },
           description: {
             ru: [
-              'Чевостик — главный героя интерактивной энциклопедии для дошкольников. Дети слушают аудиоуроки, проходят тесты и играют в игры, связанные с темой урока. Такой подход позволяет детям усваивать новую информацию эффективнее, чем простое чтение книг или просмотр обучающих роликов.'
+              `Чевостик —${NON_BREAKING_SPACE}главный герой интерактивной энциклопедии, где дети слушают анимированные аудиоуроки, проходят тесты и${NON_BREAKING_SPACE}игры, объединенные одной темой.`
             ],
             en: [
-              'Chevostik is the main character of an interactive encyclopedia for preschoolers. Children listen to audio lessons, pass tests and play games related to the topic of each lesson. This approach allows children to memorize new information more effectively than just reading books or watching educational videos.'
+              `Chevostik is${NON_BREAKING_SPACE}the main character of${NON_BREAKING_SPACE}an interactive encyclopedia where children listen to${NON_BREAKING_SPACE}animated audio lessons, pass tests and play games related to${NON_BREAKING_SPACE}the topic of${NON_BREAKING_SPACE}each lesson.`
             ]
           },
           links: [
@@ -68,8 +59,8 @@ export const casesDataDesktop = [
             },
             {
               icontype: 'article',
-              href: 'https://medium.ru/',
-              text: 'статья на Medium'
+              href: 'https://medium.com/@breadhead.ru/c2720cba7fa9',
+              text: 'читать кейс'
             }
           ],
           image: {
@@ -113,7 +104,7 @@ export const casesDataDesktop = [
         duration: 8000,
         data: {
           image: {
-            src: 'chevostik/desktop/full_eyes_desktop.mov',
+            src: 'chevostik/desktop/full_eyes_desktop.mp4',
             preloader: 'faster/desktop/preloader-full_order_desktop.jpg'
           }
         }
@@ -123,7 +114,7 @@ export const casesDataDesktop = [
         duration: 14000,
         data: {
           image: {
-            src: 'chevostik/desktop/test_fast.mp4',
+            src: 'chevostik/desktop/test.mp4',
             preloader: 'just_ask/desktop/preloader-main-oncohelp_desktop.jpg'
           }
         }
@@ -142,7 +133,7 @@ export const casesDataDesktop = [
         type: TemplatesNames.FramePictDesktop,
         data: {
           image: {
-            src: 'chevostik/desktop/desktop_games_browser.jpg',
+            src: 'chevostik/desktop/games.jpg',
             preloader:
               'just_ask/desktop/preloader-1_oncohelp_preview_desktop.jpg'
           },
@@ -154,7 +145,7 @@ export const casesDataDesktop = [
         duration: 5500,
         data: {
           image: {
-            src: 'chevostik/desktop/desktop_prizes_browser.mov',
+            src: 'chevostik/desktop/prizes.mp4',
             preloader: 'just_ask/desktop/preloader-main-oncohelp_desktop.jpg'
           },
           backgroundColor: '#FEA471'

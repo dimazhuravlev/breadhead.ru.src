@@ -15,16 +15,16 @@
   border-radius: 5px;
   top: 50%;
   left: 50%;
-  margin-left: -518px;
-  margin-top: -306px;
+  margin-left: -511px;
+  margin-top: -310px;
   width: 1022px;
   height: 620px;
 
   @media (max-width: 1920px) {
     margin-left: -27vw;
     margin-top: -16.5vw;
-    width: calc(54vw - 1px);
-    height: 33vw;
+    width: calc(54vw - 5px);
+    height: calc(33vw - 2px);
     border-radius: calc(4px + 3 * ((100vw - 1024px) / 896));
   }
 
@@ -68,18 +68,18 @@
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   top: 24px;
-  width: 100%;
+  width: calc(100% + 2px);
   height: calc(100% - 24px);
 
   @media (max-width: 1920px) {
     border-bottom-left-radius: calc(4px + 3 * ((100vw - 1024px) / 896));
     border-bottom-right-radius: calc(4px + 3 * ((100vw - 1024px) / 896));
     top: 1.6vw;
-    height: calc(100% - 1.6vw);
+    height: calc(100% - 1.5vw);
   }
 
   @media (max-width: 1024px) {
     top: 2vw;
-    height: calc(100% - 2vw);
+    height: calc(100% - 1.9vw);
   }
 }

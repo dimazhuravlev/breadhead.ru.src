@@ -20,7 +20,7 @@ export const casesDataMobile = [
         duration: 6000,
         data: {
           image: {
-            src: 'chevostik/mobile/button_mobile.mov',
+            src: 'chevostik/mobile/button_mobile.mp4',
             preloader: 'faster/mobile/preloader-filter_mobile.jpg'
           }
         }
@@ -35,10 +35,10 @@ export const casesDataMobile = [
           },
           description: {
             ru: [
-              'Чевостик — главный героя интерактивной энциклопедии для дошкольников. Дети слушают аудиоуроки, проходят тесты и играют в игры, связанные с темой урока. Такой подход позволяет детям усваивать новую информацию эффективнее, чем простое чтение книг или просмотр обучающих роликов.'
+              `Чевостик —${NON_BREAKING_SPACE}главный герой интерактивной энциклопедии, где дети слушают анимированные аудиоуроки, проходят тесты и${NON_BREAKING_SPACE}игры, объединенные одной темой.`
             ],
             en: [
-              'Chevostik is the main character of an interactive encyclopedia for preschoolers. Children listen to audio lessons, pass tests and play games related to the topic of each lesson. This approach allows children to memorize new information more effectively than just reading books or watching educational videos.'
+              `Chevostik is${NON_BREAKING_SPACE}the main character of${NON_BREAKING_SPACE}an interactive encyclopedia where children listen to${NON_BREAKING_SPACE}animated audio lessons, pass tests and play games related to${NON_BREAKING_SPACE}the topic of${NON_BREAKING_SPACE}each lesson.`
             ]
           },
           links: [
@@ -49,8 +49,8 @@ export const casesDataMobile = [
             },
             {
               icontype: 'article',
-              href: 'https://medium.ru/',
-              text: 'статья на Medium'
+              href: 'https://medium.com/@breadhead.ru/c2720cba7fa9',
+              text: 'читать кейс'
             }
           ]
         }
@@ -60,7 +60,7 @@ export const casesDataMobile = [
         duration: 5000,
         data: {
           image: {
-            src: 'chevostik/mobile/tooltip_map.mov',
+            src: 'chevostik/mobile/tooltip_map.mp4',
             preloader: 'faster/mobile/preloader-filter_mobile.jpg'
           }
         }
@@ -107,7 +107,7 @@ export const casesDataMobile = [
         duration: 7000,
         data: {
           image: {
-            src: 'chevostik/mobile/test_mobile_2.mov',
+            src: 'chevostik/mobile/test_mobile.mp4',
             preloader: 'faster/mobile/preloader-filter_mobile.jpg'
           }
         }
