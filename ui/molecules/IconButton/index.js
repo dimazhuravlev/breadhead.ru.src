@@ -1,26 +1,37 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { GlobeIcon } from '@site/ui/atoms/icons'
-import { ArticleIcon } from '@site/ui/atoms/icons'
+import Icon from '@site/ui/atoms/icons/Icon'
 import styles from './iconButton.css'
 import cx from 'classnames'
 
-const iconsMap = {
-  globe: GlobeIcon,
-  article: ArticleIcon,
+const iconTypeMap = {
+  globe: 'GlobeIcon',
+  article: 'ArticleIcon'
 }
 
 class IconButton extends React.Component {
   render() {
-    const { icontype, description, text, className, onClick } = this.props
-    const Icon = iconsMap[icontype]
+    const {
+      icontype,
+      description,
+      text,
+      isDisabled,
+      className,
+      onClick
+    } = this.props
 
     return (
       <div className={cx(styles.iconButton, className)}>
         {description && <div className={styles.description}>{description}</div>}
         <button onClick={onClick} className={styles.button}>
-          {Icon && <Icon className={styles.icon} />}
-          {text && <div className={styles.text}>{text}</div>}
+          {icontype && (
+            <Icon className={styles.icon} name={iconTypeMap[icontype]} />
+          )}
+          {text && (
+            <div className={isDisabled ? styles.disableText : styles.text}>
+              {text}
+            </div>
+          )}
         </button>
       </div>
     )
@@ -31,7 +42,7 @@ IconButton.propTypes = {
   onClick: PropTypes.func,
   icontype: PropTypes.oneOf(['globe', 'article']),
   description: PropTypes.string,
-  text: PropTypes.string,
+  text: PropTypes.string
 }
 
 export default IconButton

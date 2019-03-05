@@ -1,13 +1,19 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import { compose, onlyUpdateForKeys } from 'recompose'
+import PreloadableImage from '@site/ui/molecules/PreloadableImage'
 import styles from './slidePictureDesktop.css'
 
-const SlidePictureDesktop = ({ src }) => (
-  <img src={src} className={styles.picture} />
-)
-
-SlidePictureDesktop.propTypes = {
-  src: PropTypes.string.isRequired,
+const SlidePictureDesktop = ({ image: { src, preloader }, preload }) => {
+  return (
+    <PreloadableImage
+      preload={preload}
+      src={src}
+      className={styles.picture}
+      preloader={preloader}
+    />
+  )
 }
 
-export default React.memo(SlidePictureDesktop)
+const hoc = compose(onlyUpdateForKeys(['preload']))
+
+export default hoc(SlidePictureDesktop)

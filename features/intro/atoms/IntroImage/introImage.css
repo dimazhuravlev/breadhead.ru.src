@@ -1,23 +1,25 @@
 .introImage {
   z-index: -1;
   position: absolute;
-  right: 56px;
-  margin-top: 18px;
+  right: 28px;
+  margin-top: 64px;
   flex-shrink: 1;
   width: auto;
-  height: 26vw;
+  user-select: none;
+  -webkit-user-drag: none;
+  height: 360px;
 
-  @media (max-width: 1440px) {
-    right: 34px;
-    height: 34vw;
-  }
-
-  @media (max-width: 1200px) {
-    height: 32vw;
+  @media (max-width: 1460px) {
+    right: 17px;
   }
 
   @media (max-width: 1024px) {
-    right: 16px;
+    right: 8px;
+    height: 300px;
+  }
+
+  @media (max-width: 768px) {
+    height: 260px;
   }
 
   @media (max-width: 600px) {

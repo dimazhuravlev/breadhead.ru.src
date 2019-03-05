@@ -1,13 +1,17 @@
 import React from 'react'
-import { SliderAmountIcon } from '@site/ui/atoms/icons'
+import Icon from '@site/ui/atoms/icons/Icon'
 import styles from './sliderAmount.css'
 
 const SliderAmount = ({ amount }) => {
   return (
-    <SliderAmountIcon className={styles.amountIcon}>
+    <div className={styles.amountIcon}>
+      <Icon name="SliderAmountIcon" />
       <span className={styles.amount}>{amount}</span>
-    </SliderAmountIcon>
+    </div>
   )
 }
 
-export default SliderAmount
+
+export default React.memo(SliderAmount,
+  ({ amount: prevAmount }, { amount: nextAmount }) =>
+    prevAmount === nextAmount)

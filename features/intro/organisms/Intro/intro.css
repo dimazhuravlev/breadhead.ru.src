@@ -1,26 +1,52 @@
 .intro {
+  animation-name: fadeIn;
+  animation-duration: 1.3s;
+  animation-timing-function: cubic-bezier(0.59, 0.01, 0.28, 1);
   display: flex;
+  position: relative;
   align-items: flex-end;
   justify-content: space-between;
-  margin-top: 160px;
+  /* margin-top: 240px; */
+  margin-top: 100px;
+
   margin-bottom: 64px;
   margin-left: 25%;
   padding: 0px 56px 0px 28px;
 
+  @media (max-width: 1460px) {
+    margin-left: 34px;
+  }
+
   @media (max-width: 1440px) {
-    margin-top: 120px;
+    /* margin-top: 200px; */
+    margin-top: 80px;
+
     margin-left: 0;
     padding: 0px 34px 0px 34px;
   }
 
   @media (max-width: 1024px) {
+    /* margin-top: 160px; */
+
     padding: 0px 16px 0px 16px;
   }
 
   @media (max-width: 600px) {
     flex-direction: column;
     align-items: stretch;
-    margin-top: 80px;
     margin-bottom: 24px;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
   }
 }

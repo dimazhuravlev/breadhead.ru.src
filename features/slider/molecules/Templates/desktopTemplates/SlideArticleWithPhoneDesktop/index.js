@@ -1,5 +1,6 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import { compose, onlyUpdateForKeys } from 'recompose'
+import PreloadableImage from '@site/ui/molecules/PreloadableImage'
 import SlideText from '@site/ui/molecules/SlideText'
 import ArticleIconBlock from '@site/ui/molecules/ArticleIconBlock'
 import styles from './slideArticleWithPhoneDesktop.css'
@@ -8,29 +9,31 @@ const SlideArticleWithPhoneDesktop = ({
   title,
   description,
   links,
-  src,
+  image: { src, preloader },
   backgroundColor,
-}) => (
-  <div style={{ backgroundColor: backgroundColor }}>
-    <div className={styles.wrapper}>
-      <article className={styles.article}>
-        {title && <h2 className={styles.title}>{title}</h2>}
-        <SlideText description={description} />
-        <ArticleIconBlock links={links} />
-      </article>
-      <div className={styles.phone}>
-        <img src={src} className={styles.screen} />
+  preload
+}) => {
+  return (
+    <div style={{ backgroundColor: backgroundColor }}>
+      <div className={styles.wrapper}>
+        <article className={styles.article}>
+          {title && <h2 className={styles.title}>{title}</h2>}
+          <SlideText description={description} />
+          <ArticleIconBlock links={links} />
+        </article>
+        <div className={styles.phone}>
+          <PreloadableImage
+            preload={preload}
+            src={src}
+            preloader={preloader}
+            className={styles.screen}
+          />
+        </div>
       </div>
     </div>
-  </div>
-)
-
-SlideArticleWithPhoneDesktop.propTypes = {
-  title: PropTypes.string,
-  description: PropTypes.arrayOf(PropTypes.string),
-  links: PropTypes.arrayOf(PropTypes.object),
-  src: PropTypes.string.isRequired,
-  backgroundColor: PropTypes.string,
+  )
 }
 
-export default React.memo(SlideArticleWithPhoneDesktop)
+const hoc = compose(onlyUpdateForKeys(['preload']))
+
+export default hoc(SlideArticleWithPhoneDesktop)

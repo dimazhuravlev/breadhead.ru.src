@@ -1,15 +1,14 @@
 import React from 'react'
+import { withNamespaces } from '@site/lib/i18n'
 import VisibilitySensor from 'react-visibility-sensor'
 import PropTypes from 'prop-types'
 import Descriptor from '@site/features/descriptor'
 import Slider from '@site/features/slider'
+import ExternalLink from '@site/ui/molecules/ExternalLink'
 import TextBlock from '@site/ui/molecules/TextBlock'
-import { ReactIcon, NodeIcon, SwiftIcon } from '@site/ui/atoms/icons'
-import { NON_BREAKING_SPACE } from '@site/constants'
 import AboutText from '../../atoms/AboutText'
 import styles from './about.css'
 import cx from 'classnames'
-
 class About extends React.Component {
   constructor(props) {
     super(props)
@@ -21,7 +20,8 @@ class About extends React.Component {
   }
 
   render() {
-    const { aboutDataDesktop, aboutDataMobile, name } = this.props
+    const { aboutDataDesktop, aboutDataMobile, name, t } = this.props
+    const { isVisible } = this.state
     return (
       <VisibilitySensor
         onChange={this.onVisibilityChange}
@@ -41,57 +41,65 @@ class About extends React.Component {
               name={aboutDataDesktop.description.name}
             />
             <Descriptor
-              className={cx(styles.caseNameOnly, styles.descriptorMobile)}
+              className={styles.descriptorMobile}
               name={aboutDataMobile.description.name}
             />
           </div>
           <div className={styles.aboutContent}>
+            <AboutText>{t('about-text1')}</AboutText>
+            {isVisible ? (
+              <>
+                <Slider
+                  slides={aboutDataDesktop.slides}
+                  className={cx(styles.aboutSlider, styles.sliderDesktop)}
+                />
+                <Slider
+                  slides={aboutDataMobile.slides}
+                  className={cx(styles.aboutSlider, styles.sliderMobile)}
+                />
+              </>
+            ) : (
+              <div className={styles.placeholder} />
+            )}
             <AboutText>
-              {`Breadhead проектирует и${NON_BREAKING_SPACE}выпускает сервисы и${NON_BREAKING_SPACE}приложения. Совершенствует деятельность компаний с${NON_BREAKING_SPACE}помощью технологий.`}
-            </AboutText>
-            <Slider
-              slides={aboutDataDesktop.slides}
-              className={cx(styles.aboutSlider, styles.sliderDesktop)}
-            />
-            <Slider
-              slides={aboutDataMobile.slides}
-              className={cx(styles.aboutSlider, styles.sliderMobile)}
-            />
-            <AboutText>
-              <React.Fragment>
-                {`Мы стремимся к${NON_BREAKING_SPACE}открытой рабочей среде, в${NON_BREAKING_SPACE}которой студия
-          и${NON_BREAKING_SPACE}клиент —${NON_BREAKING_SPACE}одна команда. Верим, что такой подход меняет отношение к${NON_BREAKING_SPACE}делу и${NON_BREAKING_SPACE}помогает создавать полезные
-          продукты.`}
-              </React.Fragment>
+              <React.Fragment>{t('about-text2')}</React.Fragment>
             </AboutText>
             <div className={styles.aboutTextBlocks}>
-              <TextBlock header="экспертиза">
-                {`Образовательные сервисы / E-commerce / Службы бронирования и${NON_BREAKING_SPACE}доставки / Инструменты автоматизации / Медиа`}
+              <TextBlock header={t('text-block-header-skills')}>
+                {t('text-block-text-skills')}
               </TextBlock>
 
-              <TextBlock header="практики">
-                {'Исследования / Бренд-консалтинг ('}
-                <a
-                  className={styles.TextBlockLink}
-                  href="http://fullfort.agency/"
-                >
-                  Fullfort
-                </a>
-                {`) / Дизайн, проектирование / Веб +${NON_BREAKING_SPACE}мобильная разработка`}
+              <TextBlock header={t('text-block-header-practices')}>
+                {t('text-block-text-practices-first')}
+                <ExternalLink href="http://fullfort.agency/">
+                  {t('text-block-text-practices-link')}
+                </ExternalLink>
+                {t('text-block-text-practices-second')}
               </TextBlock>
 
               <TextBlock
-                header="технологии"
+                header={t('text-block-header-technologies')}
                 icons={
                   <React.Fragment>
-                    <ReactIcon />
-                    <NodeIcon />
-                    <SwiftIcon />
+                    <img
+                      src="https://breadhead.ru/static/img/react.png"
+                      width="36px"
+                      height="35px"
+                    />
+                    <img
+                      src="https://breadhead.ru/static/img/node.png"
+                      width="36px"
+                      height="35px"
+                    />
+                    <img
+                      src="https://breadhead.ru/static/img/swift.png"
+                      width="36px"
+                      height="35px"
+                    />
                   </React.Fragment>
                 }
               >
-                Веб: React, Node.js, PHP, Typescript / iOS: Swift / Android:
-                Kotlin, Java
+                {t('text-block-text-technologies')}
               </TextBlock>
             </div>
           </div>
@@ -107,4 +115,4 @@ About.propTypes = {
   name: PropTypes.string
 }
 
-export default About
+export default withNamespaces(['common'])(About)

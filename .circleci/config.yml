@@ -1,0 +1,112 @@
+version: 2
+jobs:
+  lint:
+    docker:
+      - image: circleci/node:8.11.1
+
+    working_directory: ~/repo
+
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - js-dependencies-{{ checksum "yarn.lock" }}
+      - run:
+          name: Install Dependencies
+          command: yarn
+      - save_cache:
+          key: js-dependencies-{{ checksum "yarn.lock" }}
+          paths:
+            - ./node_modules
+      - run:
+          name: Lint Code
+          command: yarn lint:code
+      - run:
+          name: Link Styles
+          command: yarn lint:style
+
+  test:
+    docker:
+      - image: circleci/node:8.11.1
+
+    working_directory: ~/repo
+
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - js-dependencies-{{ checksum "yarn.lock" }}
+      - run:
+          name: Install Dependencies
+          command: yarn
+      - save_cache:
+          key: js-dependencies-{{ checksum "yarn.lock" }}
+          paths:
+            - ./node_modules
+      - run:
+          name: Unit Test
+          command: yarn test
+
+  push:
+    docker:
+      - image: docker:17.05.0-ce-git
+
+    working_directory: ~/repo
+
+    steps:
+      - checkout
+      - setup_remote_docker
+      - run:
+          name: Setup Env
+          command: |
+            echo 'export IMAGE_TAG=${VERSION:-latest}' >> $BASH_ENV
+            echo 'export IMAGE_NAME=breadhead' >> $BASH_ENV
+      - run:
+          name: Build and push Docker image
+          command: |
+            source $BASH_ENV
+            docker build -t breadheadhub/$IMAGE_NAME:$IMAGE_TAG .
+            docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD"
+            docker push breadheadhub/$IMAGE_NAME:$IMAGE_TAG
+
+  prod:
+    machine:
+      enabled: true
+    steps:
+      - run:
+          name: Deploy Over SSH
+          command: ssh $SSH_USER@$SSH_HOST "cd /home/cloud-user/www/breadhead.ru &&
+            sudo docker pull breadheadhub/breadhead &&
+            sudo docker-compose down &&
+            sudo docker-compose up -d &&
+            sudo docker image prune"
+
+workflows:
+  version: 2
+  check-pr:
+    jobs:
+      - lint:
+          filters:
+            branches:
+              ignore: 
+                - master
+      - test:
+          filters:
+            branches:
+              ignore: 
+                - master
+  deploy:
+    jobs:
+      - push:
+          filters:
+            branches:
+              only: 
+                - master
+      - prod:
+          filters:
+            branches:
+              only: 
+                - master
+          requires:
+            - push
+

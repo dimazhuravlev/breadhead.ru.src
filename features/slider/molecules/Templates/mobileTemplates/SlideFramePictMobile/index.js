@@ -1,18 +1,25 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import { compose, onlyUpdateForKeys } from 'recompose'
+import PreloadableImage from '@site/ui/molecules/PreloadableImage'
 import styles from './slideFramePictMobile.css'
 
-const SlideFramePictMobile = ({ src, backgroundColor }) => (
+const SlideFramePictMobile = ({
+  image: { src, preloader },
+  backgroundColor,
+  preload
+}) => (
   <div style={{ backgroundColor: backgroundColor }} className={styles.slide}>
     <div className={styles.phone}>
-      <img src={src} className={styles.screen} />
+      <PreloadableImage
+        preload={preload}
+        src={src}
+        className={styles.screen}
+        preloader={preloader}
+      />
     </div>
   </div>
 )
 
-SlideFramePictMobile.propTypes = {
-  src: PropTypes.string.isRequired,
-  backgroundColor: PropTypes.string,
-}
+const hoc = compose(onlyUpdateForKeys(['preload']))
 
-export default React.memo(SlideFramePictMobile)
+export default hoc(SlideFramePictMobile)

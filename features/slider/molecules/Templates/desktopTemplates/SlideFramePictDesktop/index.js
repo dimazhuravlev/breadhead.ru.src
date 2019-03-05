@@ -1,23 +1,35 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import { compose, onlyUpdateForKeys } from 'recompose'
+import PreloadableImage from '@site/ui/molecules/PreloadableImage'
+import Image from '@site/ui/atoms/Image'
 import styles from './slideFramePictDesktop.css'
 
-const SlideFramePictDesktop = ({ src, backgroundColor, backgroundSrc }) => (
-  <div style={{ backgroundColor: backgroundColor }} className={styles.slide}>
-    <div className={styles.browser}>
-      <div className={styles.header}>
-        <img className={styles.dots} src="/static/img/dots.png" />
+const SlideFramePictDesktop = ({
+  image: { src, preloader },
+  backgroundColor,
+  backgroundSrc,
+  preload
+}) => {
+  return (
+    <div style={{ backgroundColor: backgroundColor }} className={styles.slide}>
+      <div className={styles.browser}>
+        <div className={styles.header}>
+          <Image className={styles.dots} src="dots.png" />
+        </div>
+        <PreloadableImage
+          preload={preload}
+          src={src}
+          className={styles.screen}
+          preloader={preloader}
+        />
       </div>
-      <img src={src} className={styles.screen} />
+      {backgroundSrc && (
+        <Image src={backgroundSrc} className={styles.background} />
+      )}
     </div>
-    {backgroundSrc && <img src={backgroundSrc} className={styles.background} />}
-  </div>
-)
-
-SlideFramePictDesktop.propTypes = {
-  src: PropTypes.string.isRequired,
-  backgroundColor: PropTypes.string,
-  backgroundSrc: PropTypes.string,
+  )
 }
 
-export default React.memo(SlideFramePictDesktop)
+const hoc = compose(onlyUpdateForKeys(['preload']))
+
+export default hoc(SlideFramePictDesktop)

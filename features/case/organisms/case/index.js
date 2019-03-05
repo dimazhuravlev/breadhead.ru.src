@@ -5,6 +5,7 @@ import Slider from '@site/features/slider'
 import Descriptor from '@site/features/descriptor'
 import cx from 'classnames'
 import styles from './case.css'
+import withLang from '@site/lib/i18n/withLang'
 
 class Case extends React.Component {
   constructor(props) {
@@ -17,7 +18,7 @@ class Case extends React.Component {
   }
 
   render() {
-    const { name, className, description, slides, priority } = this.props
+    const { name, className, description, slides, lang } = this.props
     const { isVisible } = this.state
     return (
       <VisibilitySensor
@@ -26,6 +27,7 @@ class Case extends React.Component {
         delayedCall
       >
         <section
+          key={lang}
           name={name}
           className={cx(
             styles.case,
@@ -34,11 +36,9 @@ class Case extends React.Component {
           )}
         >
           <Descriptor {...description} />
-          {isVisible || priority ? (
+          <div className={styles.slider}>
             <Slider slides={slides} />
-          ) : (
-            <div className={styles.placeholder} />
-          )}
+          </div>
         </section>
       </VisibilitySensor>
     )
@@ -48,7 +48,7 @@ class Case extends React.Component {
 Case.propTypes = {
   priority: PropTypes.bool,
   description: PropTypes.object.isRequired,
-  slides: PropTypes.arrayOf(PropTypes.object),
+  slides: PropTypes.arrayOf(PropTypes.object)
 }
 
-export default Case
+export default withLang(Case)

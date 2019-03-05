@@ -22,37 +22,34 @@
   }
 }
 
+.icon {
+  margin-right: 8px;
+  fill: #a38e7c;
+}
+
 .link {
   display: flex;
   align-items: center;
   cursor: pointer;
-  transition: all 0.15s ease-in;
-  &:hover g {
+  transition: all 0.2s ease-in;
+
+  &:hover .icon {
     fill: var(--redPrimary);
-    transition: all 0.15s ease-in;
+    transition: all 0.2s ease-in;
   }
-  &:hover rect {
-    fill: var(--redPrimary);
-    transition: all 0.15s ease-in;
-  }
+
   &:hover .text {
     color: var(--redPrimary);
-    transition: all 0.15s ease-in;
+    transition: all 0.2s ease-in;
   }
-  &:active g {
+
+  &:active .icon {
     fill: var(--redSecondary);
-    transition: all 0.15s ease-in;
+    transition: all 0.2s ease-in;
   }
-  &:active rect {
-    fill: var(--redSecondary);
-    transition: all 0.15s ease-in;
-  }
+
   &:active .text {
     color: var(--redSecondary);
-    transition: all 0.15s ease-in;
+    transition: all 0.2s ease-in;
   }
-}
-
-.icon {
-  margin-right: 8px;
 }

@@ -1,36 +1,52 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import { onlyUpdateForKeys } from 'recompose'
+import VideoPlayer from '@site/features/slider/molecules/VideoPlayer'
+import Image from '@site/ui/atoms/Image'
 import styles from './slidePhonesDesktop.css'
+import PreloadableImage from '@site/ui/molecules/PreloadableImage'
 
 const SlidePhonesDesktop = ({
-  srcLeft,
-  srcCenter,
-  srcRight,
+  screens,
   backgroundColor,
   backgroundSrc,
-}) => (
-  <div style={{ backgroundColor: backgroundColor }} className={styles.slide}>
-    <div className={styles.phones}>
-      <div className={styles.phone}>
-        <img src={srcLeft} className={styles.screen} />
+  active,
+  visible,
+  preload
+}) => {
+  return (
+    <div style={{ backgroundColor: backgroundColor }} className={styles.slide}>
+      <div className={styles.phones}>
+        {screens.map((screen, i) => (
+          <div key={i} className={styles.phone}>
+            {screen.type === 'img' ? (
+              <PreloadableImage
+                src={screen.src}
+                preload={preload}
+                className={styles.screen}
+                preloader={screen.preloader}
+              />
+            ) : (
+              <VideoPlayer
+                preload={preload}
+                visible={visible}
+                active={active}
+                src={screen.src}
+                preloader={screen.preloader}
+                className={styles.screen}
+                width="220"
+                height="410"
+              />
+            )}
+          </div>
+        ))}
       </div>
-      <div className={styles.phone}>
-        <img src={srcCenter} className={styles.screen} />
-      </div>
-      <div className={styles.phone}>
-        <img src={srcRight} className={styles.screen} />
-      </div>
+      {backgroundSrc && (
+        <Image src={backgroundSrc} className={styles.background} />
+      )}
     </div>
-    {backgroundSrc && <img src={backgroundSrc} className={styles.background} />}
-  </div>
-)
-
-SlidePhonesDesktop.propTypes = {
-  srcLeft: PropTypes.string.isRequired,
-  srcCenter: PropTypes.string.isRequired,
-  srcRight: PropTypes.string.isRequired,
-  backgroundColor: PropTypes.string,
-  backgroundSrc: PropTypes.string,
+  )
 }
 
-export default React.memo(SlidePhonesDesktop)
+export default onlyUpdateForKeys(['active', 'visible', 'preload'])(
+  SlidePhonesDesktop
+)

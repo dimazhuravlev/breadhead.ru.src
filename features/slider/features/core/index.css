@@ -1,0 +1,12 @@
+.viewPort {
+  overflow: hidden;
+  height: 100%;
+
+  display: flex;
+  backface-visibility: hidden;
+  user-select: none;
+  & * {
+    user-select: none;
+  }
+}
+

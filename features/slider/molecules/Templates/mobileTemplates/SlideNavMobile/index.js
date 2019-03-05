@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { neverUpdate } from '@site/lib/shouldUpdate'
 import SlideText from '@site/ui/molecules/SlideText'
 import ArticleIconBlock from '../../../ArticleIconBlock'
 import styles from './slideNavMobile.css'
@@ -16,7 +17,7 @@ const SlideNavMobile = ({
     className={styles.slide}
   >
     {title && <h2 className={styles.title}>{title}</h2>}
-    <SlideText description={description} />
+    {description && <SlideText description={description} />}
     <ArticleIconBlock
       onLinkClick={onLinkClick}
       links={links}
@@ -34,4 +35,4 @@ SlideNavMobile.propTypes = {
   backgroundColor: PropTypes.string,
 }
 
-export default React.memo(SlideNavMobile)
+export default neverUpdate(SlideNavMobile)

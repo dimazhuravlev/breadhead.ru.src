@@ -1,13 +1,17 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import { compose, onlyUpdateForKeys } from 'recompose'
+import PreloadableImage from '@site/ui/molecules/PreloadableImage'
 import styles from './slidePictureMobile.css'
 
-const SlidePictureMobile = ({ src }) => (
-  <img src={src} className={styles.picture} />
+const SlidePictureMobile = ({ image: { src, preloader }, preload }) => (
+  <PreloadableImage
+    preload={preload}
+    src={src}
+    className={styles.picture}
+    preloader={preloader}
+  />
 )
 
-SlidePictureMobile.propTypes = {
-  src: PropTypes.string.isRequired,
-}
+const hoc = compose(onlyUpdateForKeys(['preload']))
 
-export default React.memo(SlidePictureMobile)
+export default hoc(SlidePictureMobile)

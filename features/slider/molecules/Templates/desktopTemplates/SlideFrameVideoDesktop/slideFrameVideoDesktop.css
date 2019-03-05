@@ -9,20 +9,29 @@
 .browser {
   position: absolute;
   overflow: hidden;
-  top: 50%;
-  left: 50%;
-  margin-left: -27vw;
-  margin-top: -16vw;
-  width: 54vw;
-  height: 32vw;
-  border-radius: calc(4px + 3 * ((100vw - 1024px) / 896));
   background-color: #dcdce0;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05), 0 1px 2px 0 rgba(0, 0, 0, 0.1),
     0 8px 12px 0 rgba(0, 0, 0, 0.03);
+  border-radius: 5px;
+  top: 50%;
+  left: 50%;
+  margin-left: -511px;
+  margin-top: -310px;
+  width: 1022px;
+  height: 620px;
+
+  @media (max-width: 1920px) {
+    margin-left: -27vw;
+    margin-top: -16.5vw;
+    width: calc(54vw - 5px);
+    height: calc(33vw - 2px);
+    border-radius: calc(4px + 3 * ((100vw - 1024px) / 896));
+  }
+
   @media (max-width: 1024px) {
-    margin-left: -41vw;
+    margin-left: -39.5vw;
     margin-top: -24vw;
-    width: 82vw;
+    width: 79vw;
     height: 48vw;
   }
 }
@@ -30,9 +39,14 @@
 .header {
   position: relative;
   z-index: 1;
-  height: 1.6vw;
+  height: 24px;
   width: 100%;
   background-color: #dcdce0;
+
+  @media (max-width: 1920px) {
+    height: 1.6vw;
+  }
+
   @media (max-width: 1024px) {
     height: 2vw;
   }
@@ -41,8 +55,31 @@
 .dots {
   pointer-events: none;
   position: absolute;
-  width: calc(16px + 16 * ((100vw - 600px) / 1320));
+  width: 32px;
   height: auto;
   top: 40%;
   left: 1.2%;
+  @media (max-width: 1920px) {
+    width: calc(16px + 16 * ((100vw - 600px) / 1320));
+  }
+}
+
+.videoframe {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  top: 24px;
+  width: calc(100% + 2px);
+  height: calc(100% - 24px);
+
+  @media (max-width: 1920px) {
+    border-bottom-left-radius: calc(4px + 3 * ((100vw - 1024px) / 896));
+    border-bottom-right-radius: calc(4px + 3 * ((100vw - 1024px) / 896));
+    top: 1.6vw;
+    height: calc(100% - 1.5vw);
+  }
+
+  @media (max-width: 1024px) {
+    top: 2vw;
+    height: calc(100% - 1.9vw);
+  }
 }

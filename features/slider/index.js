@@ -1,3 +1,4 @@
-import Slider from './organisms/Slider'
+import Container from './container'
+import Slider from './features/core/index'
 
-export default Slider
+export default Container(Slider)
