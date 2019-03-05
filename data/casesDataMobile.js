@@ -21,7 +21,7 @@ export const casesDataMobile = [
         data: {
           image: {
             src: 'chevostik/mobile/button_mobile.mp4',
-            preloader: 'faster/mobile/preloader-filter_mobile.jpg'
+            preloader: 'chevostik/mobile/preview-button_mobile.jpg'
           }
         }
       },
@@ -61,7 +61,7 @@ export const casesDataMobile = [
         data: {
           image: {
             src: 'chevostik/mobile/tooltip_map.mp4',
-            preloader: 'faster/mobile/preloader-filter_mobile.jpg'
+            preloader: 'chevostik/mobile/preview-tooltip_map.jpg'
           }
         }
       },
@@ -71,7 +71,7 @@ export const casesDataMobile = [
         data: {
           image: {
             src: 'chevostik/mobile/lessons_mobile.mp4',
-            preloader: 'faster/mobile/preloader-filter_mobile.jpg'
+            preloader: 'chevostik/mobile/preview-lessons_mobile.jpg'
           }
         }
       },
@@ -80,7 +80,7 @@ export const casesDataMobile = [
         data: {
           image: {
             src: 'chevostik/mobile/mobile_icons.jpg',
-            preloader: 'just_ask/mobile/preloader-cover_oncohelp_mobile.jpg'
+            preloader: 'chevostik/mobile/preview-mobile_icons.jpg'
           }
         }
       },
@@ -89,7 +89,7 @@ export const casesDataMobile = [
         data: {
           image: {
             src: 'chevostik/mobile/2browsers_mobile.jpg',
-            preloader: 'just_ask/mobile/preloader-cover_oncohelp_mobile.jpg'
+            preloader: 'chevostik/mobile/preview-2browsers_mobile.jpg'
           }
         }
       },
@@ -98,7 +98,7 @@ export const casesDataMobile = [
         data: {
           image: {
             src: 'chevostik/mobile/mobile_chevostik.jpg',
-            preloader: 'just_ask/mobile/preloader-cover_oncohelp_mobile.jpg'
+            preloader: 'chevostik/mobile/preview-mobile_chevostik.jpg'
           }
         }
       },
@@ -108,7 +108,7 @@ export const casesDataMobile = [
         data: {
           image: {
             src: 'chevostik/mobile/test_mobile.mp4',
-            preloader: 'faster/mobile/preloader-filter_mobile.jpg'
+            preloader: 'chevostik/mobile/preview-test_mobile.jpg'
           }
         }
       }
