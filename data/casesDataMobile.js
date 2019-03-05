@@ -393,8 +393,8 @@ export const casesDataMobile = [
         duration: 12000,
         data: {
           title: {
-            ru: 'Современный способ узнать всё обо всём',
-            en: `Consultations with the${NON_BREAKING_SPACE}best oncologists`
+            ru: 'Узнать всё обо всём',
+            en: `To${NON_BREAKING_SPACE}find out everything about everything`
           },
           description: {
             ru: [

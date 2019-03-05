@@ -7,10 +7,10 @@
     height: 420px;
   }
   @media (max-width: 768px) {
-    height: 260px;
+    height: 360px;
   }
-  @media (max-width: 420px) {
-    height: 70vw;
+  @media (max-width: 530px) {
+    height: 80vw;
   }
 }
 
@@ -25,9 +25,9 @@
     height: 400px;
   }
   @media (max-width: 768px) {
-    height: 260px;
+    height: 360px;
   }
-  @media (max-width: 420px) {
+  @media (max-width: 530px) {
     height: auto;
     width: 100%;
   }

@@ -1,5 +1,11 @@
 .cases {
-  padding-top: 56px;
+  padding-top: 144px;
+  @media (max-width: 1024px) {
+    padding-top: 80px;
+  }
+  @media (max-width: 600px) {
+    padding-top: 56px;
+  }
 }
 
 .desktopCases {
