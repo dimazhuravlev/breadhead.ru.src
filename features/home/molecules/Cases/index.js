@@ -64,8 +64,8 @@ class Cases extends React.Component {
       <Case key={caseData.description.name} {...caseData} />
     ))
 
-    const firstShowCasesDesktop = allCasesDesktop.slice(0, 3)
-    const firstShowCasesMobile = allCasesMobile.slice(0, 3)
+    const firstShowCasesDesktop = allCasesDesktop.slice(0, 4)
+    const firstShowCasesMobile = allCasesMobile.slice(0, 4)
     return (
       <>
         <Desktop>

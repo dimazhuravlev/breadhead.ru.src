@@ -2,159 +2,7 @@ import { TemplatesNames } from '@site/features/slider/molecules/Templates'
 import { NON_BREAKING_SPACE } from '@site/constants.js'
 
 export const casesDataDesktop = [
-  /*CHEVOSTIK DESKTOP CASE */
-  {
-    description: {
-      type: {
-        ru: 'веб-сервиc',
-        en: 'web application'
-      },
-      name: {
-        ru: 'Чевостик',
-        en: 'Chevostik'
-      },
-      links: [
-        {
-          icontype: 'globe',
-          href: 'https://chevostik.ru/'
-        },
-        {
-          icontype: 'article',
-          href: 'https://medium.com/@breadhead.ru/c2720cba7fa9'
-        }
-      ]
-    },
-    slides: [
-      {
-        type: TemplatesNames.VideoDesktop,
-        duration: 8000,
-        data: {
-          image: {
-            src: 'chevostik/desktop/button_desktop.mp4',
-            preloader: 'chevostik/desktop/preview-button_desktop.jpg'
-          }
-        }
-      },
-      {
-        type: TemplatesNames.ArticleWithPhoneDesktop,
-        duration: 12000,
-        data: {
-          title: {
-            ru: 'Современный способ узнать всё обо всём',
-            en: `Consultations with the${NON_BREAKING_SPACE}best oncologists`
-          },
-          description: {
-            ru: [
-              `Чевостик —${NON_BREAKING_SPACE}главный герой интерактивной энциклопедии, где дети слушают анимированные аудиоуроки, проходят тесты и${NON_BREAKING_SPACE}игры, объединенные одной темой.`
-            ],
-            en: [
-              `Chevostik is${NON_BREAKING_SPACE}the main character of${NON_BREAKING_SPACE}an interactive encyclopedia where children listen to${NON_BREAKING_SPACE}animated audio lessons, pass tests and play games related to${NON_BREAKING_SPACE}the topic of${NON_BREAKING_SPACE}each lesson.`
-            ]
-          },
-          links: [
-            {
-              icontype: 'globe',
-              href: 'https://chevostik.ru/',
-              text: 'chevostik.ru'
-            },
-            {
-              icontype: 'article',
-              href: 'https://medium.com/@breadhead.ru/c2720cba7fa9',
-              text: 'читать кейс'
-            }
-          ],
-          image: {
-            src: 'chevostik/desktop/phone_article_mobile.jpg',
-            preloader: 'chevostik/desktop/preview-phone_article_mobile.jpg'
-          }
-        }
-      },
-      {
-        type: TemplatesNames.FrameVideoDesktop,
-        duration: 17000,
-        data: {
-          image: {
-            src: 'chevostik/desktop/map.mp4',
-            preloader: 'chevostik/desktop/map.jpg'
-          },
-          backgroundColor: '#FFCA35'
-        }
-      },
-      {
-        type: TemplatesNames.PictureDesktop,
-        data: {
-          image: {
-            src: 'chevostik/desktop/phone.jpg',
-            preloader: 'chevostik/desktop/preview-phone.jpg'
-          }
-        }
-      },
-      {
-        type: TemplatesNames.VideoDesktop,
-        duration: 9500,
-        data: {
-          image: {
-            src: 'chevostik/desktop/lessons.mp4',
-            preloader: 'chevostik/desktop/preview-lessons.jpg'
-          }
-        }
-      },
-      {
-        type: TemplatesNames.VideoDesktop,
-        duration: 8000,
-        data: {
-          image: {
-            src: 'chevostik/desktop/full_eyes_desktop.mp4',
-            preloader: 'chevostik/desktop/preview-full_eyes_desktop.jpg'
-          }
-        }
-      },
-      {
-        type: TemplatesNames.VideoDesktop,
-        duration: 14000,
-        data: {
-          image: {
-            src: 'chevostik/desktop/test.mp4',
-            preloader: 'chevostik/desktop/preview-test.jpg'
-          }
-        }
-      },
-      {
-        type: TemplatesNames.VideoDesktop,
-        duration: 13500,
-        data: {
-          image: {
-            src: 'chevostik/desktop/games_select.mp4',
-            preloader: 'chevostik/desktop/preview-games_select.jpg'
-          }
-        }
-      },
-      {
-        type: TemplatesNames.FramePictDesktop,
-        data: {
-          image: {
-            src: 'chevostik/desktop/games.jpg',
-            preloader:
-              'chevostik/desktop/preview-games.jpg'
-          },
-          backgroundColor: '#023d89'
-        }
-      },
-      {
-        type: TemplatesNames.FrameVideoDesktop,
-        duration: 5500,
-        data: {
-          image: {
-            src: 'chevostik/desktop/prizes.mp4',
-            preloader: 'chevostik/desktop/preview-prizes.jpg'
-          },
-          backgroundColor: '#FEA471'
-        }
-      }
-    ]
-  },
-
-  /*ONCOHELP DESKTOP CASE */
+  /*JUST ASK DESKTOP CASE */
   {
     description: {
       type: {
@@ -445,6 +293,493 @@ export const casesDataDesktop = [
     ]
   },
 
+  /* ENCORE FITNESS DESKTOP CASE */
+  {
+    description: {
+      type: {
+        ru: 'сайт',
+        en: 'website'
+      },
+      name: 'Encore Fitness',
+      links: [
+        {
+          icontype: 'globe',
+          href: {
+            ru: 'https://encorefitness.ru',
+            en: 'https://encorefitness.ru/en/?lang=en'
+          }
+        },
+        {
+          icontype: 'article',
+          href: 'https://medium.com/@breadhead.ru/encore-fitness-2ea1deba6f70'
+        }
+      ]
+    },
+    slides: [
+      {
+        type: TemplatesNames.PictureDesktop,
+        data: {
+          image: {
+            src: 'encore_fitness/desktop/cover_encore_desktop_fullslide.jpg',
+            preloader:
+              'encore_fitness/desktop/preloader-cover_encore_desktop_fullslide.jpg'
+          }
+        }
+      },
+      {
+        type: TemplatesNames.ArticleDesktop,
+        duration: 12000,
+        data: {
+          title: {
+            ru: `Меняем представление о${NON_BREAKING_SPACE}фитнес-клубах`,
+            en: `Changing the idea of${NON_BREAKING_SPACE}fitness clubs`
+          },
+          description: {
+            ru: [
+              `Вместе с${NON_BREAKING_SPACE}<a target="_blank" rel="noopener noreferrer" href="http://fullfort.agency/">Fullført</a> мы разработали концепцию бренда и${NON_BREAKING_SPACE}сделали сайт, который стал продолжением уникального клиентского опыта в${NON_BREAKING_SPACE}клубах Encore Fitness —${NON_BREAKING_SPACE}сочетанием технологичности и${NON_BREAKING_SPACE}функциональности с${NON_BREAKING_SPACE}историей бренда и${NON_BREAKING_SPACE}вниманием к${NON_BREAKING_SPACE}деталям.`,
+              'Фото: Арсений Джабиев.'
+            ],
+            en: [
+              `Together with <a target="_blank" rel="noopener noreferrer" href="http://fullfort.agency/">Fullført</a>, we developed a${NON_BREAKING_SPACE}brand concept and created a${NON_BREAKING_SPACE}website which comprises the unique customer experience at Encore clubs—a${NON_BREAKING_SPACE}combination of technology, attention to detail and brand story. Photo by Arseny Dzhabiev.`
+            ]
+          },
+          links: [
+            {
+              icontype: 'article',
+              href:
+                'https://medium.com/@breadhead.ru/encore-fitness-2ea1deba6f70',
+              text: {
+                ru: 'читать кейс',
+                en: 'read more'
+              }
+            },
+            {
+              icontype: 'globe',
+              href: {
+                ru: 'https://encorefitness.ru',
+                en: 'https://encorefitness.ru/en/?lang=en'
+              },
+              text: 'encorefitness.ru'
+            }
+          ]
+        }
+      },
+      {
+        type: TemplatesNames.FramePictDesktop,
+        data: {
+          image: {
+            src: 'encore_fitness/desktop/1-main_encore_desktop.jpg',
+            preloader:
+              'encore_fitness/desktop/preloader-1-main_encore_desktop.jpg'
+          }
+        }
+      },
+      {
+        type: TemplatesNames.FrameVideoDesktop,
+        duration: 10000,
+        data: {
+          image: {
+            src: 'encore_fitness/desktop/2-club_encore_desktop_opt.mp4',
+            preloader:
+              'encore_fitness/desktop/preloader-2-club_encore_desktop_opt.jpg'
+          }
+        }
+      },
+      {
+        type: TemplatesNames.FramePictDesktop,
+        data: {
+          image: {
+            src: 'encore_fitness/desktop/3-trainers_encore_desktop.jpg',
+            preloader:
+              'encore_fitness/desktop/preloader-3-trainers_encore_desktop.jpg'
+          }
+        }
+      },
+      {
+        type: TemplatesNames.FramePictDesktop,
+        data: {
+          image: {
+            src: 'encore_fitness/desktop/4-cards_encore_desktop.jpg',
+            preloader:
+              'encore_fitness/desktop/preloader-4-cards_encore_desktop.jpg'
+          }
+        }
+      },
+      {
+        type: TemplatesNames.PhonesDesktop,
+        data: {
+          screens: [
+            {
+              src:
+                'encore_fitness/desktop/9.1-main_encore_mobile-screen_desktop.jpg',
+              preloader:
+                'encore_fitness/desktop/preloader-9.1-main_encore_mobile-screen_desktop.jpg',
+              type: 'img'
+            },
+            {
+              src:
+                'encore_fitness/desktop/9.2-trainers_encore_mobile-screen_desktop.jpg',
+              preloader:
+                'encore_fitness/desktop/preloader-9.2-trainers_encore_mobile-screen_desktop.jpg',
+              type: 'img'
+            },
+            {
+              src:
+                'encore_fitness/desktop/9.3-schedule_encore_mobile-screen_desktop.jpg',
+              preloader:
+                'encore_fitness/desktop/preloader-9.3-schedule_encore_mobile-screen_desktop.jpg',
+              type: 'img'
+            }
+          ]
+        }
+      },
+      {
+        type: TemplatesNames.FrameVideoDesktop,
+        duration: 8000,
+        data: {
+          image: {
+            src: 'encore_fitness/desktop/5-grouptraining_desktop_opt.mp4',
+            preloader:
+              'encore_fitness/desktop/preloader-5-grouptraining_desktop_opt.jpg'
+          }
+        }
+      },
+      {
+        type: TemplatesNames.FramePictDesktop,
+        data: {
+          image: {
+            src: 'encore_fitness/desktop/6-schedule_encore_desktop.jpg',
+            preloader:
+              'encore_fitness/desktop/preloader-6-schedule_encore_desktop.jpg'
+          }
+        }
+      },
+      {
+        type: TemplatesNames.FramePictDesktop,
+        data: {
+          image: {
+            src: 'encore_fitness/desktop/7-workout_encore_desktop.jpg',
+            preloader:
+              'encore_fitness/desktop/preloader-7-workout_encore_desktop.jpg'
+          }
+        }
+      },
+      {
+        type: TemplatesNames.FramePictDesktop,
+        data: {
+          image: {
+            src: 'encore_fitness/desktop/8-spa_encore_desktop.jpg',
+            preloader:
+              'encore_fitness/desktop/preloader-8-spa_encore_desktop.jpg'
+          }
+        }
+      },
+      {
+        type: TemplatesNames.PictureDesktop,
+        data: {
+          image: {
+            src:
+              'encore_fitness/desktop/10_grid-desktop_encore_desktop_full-slide.jpg',
+            preloader:
+              'encore_fitness/desktop/preloader-10_grid-desktop_encore_desktop_full-slide.jpg'
+          }
+        }
+      }
+    ]
+  },
+
+  /*CHEVOSTIK DESKTOP CASE */
+  {
+    description: {
+      type: {
+        ru: 'веб-сервиc',
+        en: 'web application'
+      },
+      name: {
+        ru: 'Чевостик',
+        en: 'Chevostik'
+      },
+      links: [
+        {
+          icontype: 'globe',
+          href: 'https://chevostik.ru/'
+        },
+        {
+          icontype: 'article',
+          href:
+            'https://medium.com/breadhead-stories/%D1%87%D0%B5%D0%B2%D0%BE%D1%81%D1%82%D0%B8%D0%BA-%D0%BA%D0%B0%D0%BA-%D0%BC%D1%8B-%D0%BE%D0%B1%D1%8A%D0%B5%D0%B4%D0%B8%D0%BD%D1%8F%D0%BB%D0%B8-%D0%B7%D0%BD%D0%B0%D0%BD%D0%B8%D1%8F-%D0%B8-%D1%80%D0%B0%D0%B7%D0%B2%D0%BB%D0%B5%D1%87%D0%B5%D0%BD%D0%B8%D1%8F-c2720cba7fa9?source=friends_link&sk=a4a5870eac8f6719da266fb619f1fda2'
+        }
+      ]
+    },
+    slides: [
+      {
+        type: TemplatesNames.VideoDesktop,
+        duration: 8000,
+        data: {
+          image: {
+            src: 'chevostik/desktop/button_desktop.mp4',
+            preloader: 'chevostik/desktop/preview-button_desktop.jpg'
+          }
+        }
+      },
+      {
+        type: TemplatesNames.ArticleWithPhoneDesktop,
+        duration: 12000,
+        data: {
+          title: {
+            ru: 'Современный способ узнать всё обо всём',
+            en: `Consultations with the${NON_BREAKING_SPACE}best oncologists`
+          },
+          description: {
+            ru: [
+              `Чевостик —${NON_BREAKING_SPACE}главный герой интерактивной энциклопедии, где дети слушают анимированные аудиоуроки, проходят тесты и${NON_BREAKING_SPACE}игры, объединенные одной темой.`
+            ],
+            en: [
+              `Chevostik is${NON_BREAKING_SPACE}the main character of${NON_BREAKING_SPACE}an interactive encyclopedia where children listen to${NON_BREAKING_SPACE}animated audio lessons, pass tests and play games related to${NON_BREAKING_SPACE}the topic of${NON_BREAKING_SPACE}each lesson.`
+            ]
+          },
+          links: [
+            {
+              icontype: 'globe',
+              href: 'https://chevostik.ru/',
+              text: 'chevostik.ru'
+            },
+            {
+              icontype: 'article',
+              href:
+                'https://medium.com/breadhead-stories/%D1%87%D0%B5%D0%B2%D0%BE%D1%81%D1%82%D0%B8%D0%BA-%D0%BA%D0%B0%D0%BA-%D0%BC%D1%8B-%D0%BE%D0%B1%D1%8A%D0%B5%D0%B4%D0%B8%D0%BD%D1%8F%D0%BB%D0%B8-%D0%B7%D0%BD%D0%B0%D0%BD%D0%B8%D1%8F-%D0%B8-%D1%80%D0%B0%D0%B7%D0%B2%D0%BB%D0%B5%D1%87%D0%B5%D0%BD%D0%B8%D1%8F-c2720cba7fa9?source=friends_link&sk=a4a5870eac8f6719da266fb619f1fda2',
+              text: 'читать кейс'
+            }
+          ],
+          image: {
+            src: 'chevostik/desktop/phone_article_mobile.jpg',
+            preloader: 'chevostik/desktop/preview-phone_article_mobile.jpg'
+          }
+        }
+      },
+      {
+        type: TemplatesNames.FrameVideoDesktop,
+        duration: 17000,
+        data: {
+          image: {
+            src: 'chevostik/desktop/map.mp4',
+            preloader: 'chevostik/desktop/map.jpg'
+          },
+          backgroundColor: '#FFCA35'
+        }
+      },
+      {
+        type: TemplatesNames.PictureDesktop,
+        data: {
+          image: {
+            src: 'chevostik/desktop/phone.jpg',
+            preloader: 'chevostik/desktop/preview-phone.jpg'
+          }
+        }
+      },
+      {
+        type: TemplatesNames.VideoDesktop,
+        duration: 9500,
+        data: {
+          image: {
+            src: 'chevostik/desktop/lessons.mp4',
+            preloader: 'chevostik/desktop/preview-lessons.jpg'
+          }
+        }
+      },
+      {
+        type: TemplatesNames.VideoDesktop,
+        duration: 8000,
+        data: {
+          image: {
+            src: 'chevostik/desktop/full_eyes_desktop.mp4',
+            preloader: 'chevostik/desktop/preview-full_eyes_desktop.jpg'
+          }
+        }
+      },
+      {
+        type: TemplatesNames.VideoDesktop,
+        duration: 14000,
+        data: {
+          image: {
+            src: 'chevostik/desktop/test.mp4',
+            preloader: 'chevostik/desktop/preview-test.jpg'
+          }
+        }
+      },
+      {
+        type: TemplatesNames.VideoDesktop,
+        duration: 13500,
+        data: {
+          image: {
+            src: 'chevostik/desktop/games_select.mp4',
+            preloader: 'chevostik/desktop/preview-games_select.jpg'
+          }
+        }
+      },
+      {
+        type: TemplatesNames.FramePictDesktop,
+        data: {
+          image: {
+            src: 'chevostik/desktop/games.jpg',
+            preloader: 'chevostik/desktop/preview-games.jpg'
+          },
+          backgroundColor: '#023d89'
+        }
+      },
+      {
+        type: TemplatesNames.FrameVideoDesktop,
+        duration: 5500,
+        data: {
+          image: {
+            src: 'chevostik/desktop/prizes.mp4',
+            preloader: 'chevostik/desktop/preview-prizes.jpg'
+          },
+          backgroundColor: '#FEA471'
+        }
+      }
+    ]
+  },
+
+  /* OBED BUFET DESKTOP CASE */
+  {
+    description: {
+      type: {
+        ru: 'приложение',
+        en: 'mobile app'
+      },
+      name: {
+        ru: 'ОбедБуфет',
+        en: 'ObedBufet'
+      }
+    },
+    slides: [
+      {
+        type: TemplatesNames.PictureDesktop,
+        data: {
+          image: {
+            src: 'obed_bufet/cover_obedbufet_desktop_fullslide.jpg',
+            preloader:
+              'obed_bufet/preloader-cover_obedbufet_desktop_fullslide.jpg'
+          }
+        }
+      },
+      {
+        type: TemplatesNames.ArticleWithPhoneDesktop,
+        duration: 12000,
+        data: {
+          title: {
+            ru: `Дружелюбная доставка еды от${NON_BREAKING_SPACE}Ginza Project`,
+            en: `Friendly food delivery by${NON_BREAKING_SPACE}Ginza Project`
+          },
+          description: {
+            ru: [
+              `Заказ еды — простое и${NON_BREAKING_SPACE}понятное действие. Таким мы${NON_BREAKING_SPACE}сделали интерфейс этого приложения. Mинимум рекламы, позитивные цвета и${NON_BREAKING_SPACE}формы, забавные персонажи, легкий тон коммуникации и${NON_BREAKING_SPACE}простота в${NON_BREAKING_SPACE}использовании.`
+            ],
+            en: [
+              `Ordering food is${NON_BREAKING_SPACE}clear and simple. So is${NON_BREAKING_SPACE}the interface we made for this application: minimized advertising, positive shapes and colors, funny characters, friendly tone of${NON_BREAKING_SPACE}voice and ease of${NON_BREAKING_SPACE}use.`
+            ]
+          },
+          image: {
+            src: 'obed_bufet/0-location_obedbufet-app_desktop.jpg',
+            preloader:
+              'obed_bufet/preloader-1.1-video1_obedbufet-app_desktop.jpg'
+          }
+        }
+      },
+      {
+        type: TemplatesNames.PhonesDesktop,
+        duration: 13000,
+        data: {
+          screens: [
+            {
+              src: 'obed_bufet/1.1-video1_obedbufet-app_desktop.mp4',
+              preloader:
+                'obed_bufet/preloader-1.1-video1_obedbufet-app_desktop.jpg',
+              type: 'video'
+            },
+            {
+              src: 'obed_bufet/1.2-main_obedbufet-app_desktop.jpg',
+              preloader:
+                'obed_bufet/preloader-1.2-main_obedbufet-app_desktop.jpg',
+              type: 'img'
+            },
+            {
+              src: 'obed_bufet/1.3-catalog_obedbufet-app_desktop.jpg',
+              preloader:
+                'obed_bufet/preloader-1.3-catalog_obedbufet-app_desktop.jpg',
+              type: 'img'
+            }
+          ],
+          backgroundColor: '#FED67D'
+        }
+      },
+      {
+        type: TemplatesNames.PictureDesktop,
+        data: {
+          image: {
+            src: 'obed_bufet/7-rest_obedbufet_desktop-fullscreen.jpg',
+            preloader:
+              'obed_bufet/preloader-7-rest_obedbufet_desktop-fullscreen.jpg'
+          }
+        }
+      },
+      {
+        type: TemplatesNames.PhonesDesktop,
+        duration: 13000,
+        data: {
+          screens: [
+            {
+              src: 'obed_bufet/2.1-video2_obedbufet-app_desktop.mp4',
+              preloader:
+                'obed_bufet/preloader-2.1-video2_obedbufet-app_desktop.jpg',
+              type: 'video'
+            },
+            {
+              src: 'obed_bufet/2.2-product_obedbufet-app_desktop.jpg',
+              preloader:
+                'obed_bufet/preloader-2.2-product_obedbufet-app_desktop.jpg',
+              type: 'img'
+            },
+            {
+              src: 'obed_bufet/2.3-order_obedbufet-app_desktop.jpg',
+              preloader:
+                'obed_bufet/preloader-2.3-order_obedbufet-app_desktop.jpg',
+              type: 'img'
+            }
+          ],
+          backgroundColor: '#FED67D'
+        }
+      },
+      {
+        type: TemplatesNames.PhonesDesktop,
+        data: {
+          screens: [
+            {
+              src: 'obed_bufet/3.1-profile_obedbufet-app_desktop.jpg',
+              preloader:
+                'obed_bufet/preloader-3.1-profile_obedbufet-app_desktop.jpg',
+              type: 'img'
+            },
+            {
+              src: 'obed_bufet/3.2-address_obedbufet-app_desktop.jpg',
+              preloader:
+                'obed_bufet/preloader-3.2-address_obedbufet-app_desktop.jpg',
+              type: 'img'
+            },
+            {
+              src: 'obed_bufet/3.3-history_obedbufet-app_desktop.jpg',
+              preloader:
+                'obed_bufet/preloader-3.3-history_obedbufet-app_desktop.jpg',
+              type: 'img'
+            }
+          ],
+          backgroundColor: '#FED67D'
+        }
+      }
+    ]
+  },
+
   /* YANGO DESKTOP CASE */
   {
     description: {
@@ -650,340 +985,6 @@ export const casesDataDesktop = [
             src: 'yango/desktop/10_desktop_fullslide.jpg',
             preloader: 'yango/desktop/preloader-10_desktop_fullslide.jpg'
           }
-        }
-      }
-    ]
-  },
-
-  /* ENCORE FITNESS DESKTOP CASE */
-  {
-    description: {
-      type: {
-        ru: 'сайт',
-        en: 'website'
-      },
-      name: 'Encore Fitness',
-      links: [
-        {
-          icontype: 'globe',
-          href: {
-            ru: 'https://encorefitness.ru',
-            en: 'https://encorefitness.ru/en/?lang=en'
-          }
-        },
-        {
-          icontype: 'article',
-          href: 'https://medium.com/@breadhead.ru/encore-fitness-2ea1deba6f70'
-        }
-      ]
-    },
-    slides: [
-      {
-        type: TemplatesNames.PictureDesktop,
-        data: {
-          image: {
-            src: 'encore_fitness/desktop/cover_encore_desktop_fullslide.jpg',
-            preloader:
-              'encore_fitness/desktop/preloader-cover_encore_desktop_fullslide.jpg'
-          }
-        }
-      },
-      {
-        type: TemplatesNames.ArticleDesktop,
-        duration: 12000,
-        data: {
-          title: {
-            ru: `Меняем представление о${NON_BREAKING_SPACE}фитнес-клубах`,
-            en: `Changing the idea of${NON_BREAKING_SPACE}fitness clubs`
-          },
-          description: {
-            ru: [
-              `Вместе с${NON_BREAKING_SPACE}<a target="_blank" rel="noopener noreferrer" href="http://fullfort.agency/">Fullført</a> мы разработали концепцию бренда и${NON_BREAKING_SPACE}сделали сайт, который стал продолжением уникального клиентского опыта в${NON_BREAKING_SPACE}клубах Encore Fitness —${NON_BREAKING_SPACE}сочетанием технологичности и${NON_BREAKING_SPACE}функциональности с${NON_BREAKING_SPACE}историей бренда и${NON_BREAKING_SPACE}вниманием к${NON_BREAKING_SPACE}деталям.`,
-              'Фото: Арсений Джабиев.'
-            ],
-            en: [
-              `Together with <a target="_blank" rel="noopener noreferrer" href="http://fullfort.agency/">Fullført</a>, we developed a${NON_BREAKING_SPACE}brand concept and created a${NON_BREAKING_SPACE}website which comprises the unique customer experience at Encore clubs—a${NON_BREAKING_SPACE}combination of technology, attention to detail and brand story. Photo by Arseny Dzhabiev.`
-            ]
-          },
-          links: [
-            {
-              icontype: 'article',
-              href:
-                'https://medium.com/@breadhead.ru/encore-fitness-2ea1deba6f70',
-              text: {
-                ru: 'читать кейс',
-                en: 'read more'
-              }
-            },
-            {
-              icontype: 'globe',
-              href: {
-                ru: 'https://encorefitness.ru',
-                en: 'https://encorefitness.ru/en/?lang=en'
-              },
-              text: 'encorefitness.ru'
-            }
-          ]
-        }
-      },
-      {
-        type: TemplatesNames.FramePictDesktop,
-        data: {
-          image: {
-            src: 'encore_fitness/desktop/1-main_encore_desktop.jpg',
-            preloader:
-              'encore_fitness/desktop/preloader-1-main_encore_desktop.jpg'
-          }
-        }
-      },
-      {
-        type: TemplatesNames.FrameVideoDesktop,
-        duration: 10000,
-        data: {
-          image: {
-            src: 'encore_fitness/desktop/2-club_encore_desktop_opt.mp4',
-            preloader:
-              'encore_fitness/desktop/preloader-2-club_encore_desktop_opt.jpg'
-          }
-        }
-      },
-      {
-        type: TemplatesNames.FramePictDesktop,
-        data: {
-          image: {
-            src: 'encore_fitness/desktop/3-trainers_encore_desktop.jpg',
-            preloader:
-              'encore_fitness/desktop/preloader-3-trainers_encore_desktop.jpg'
-          }
-        }
-      },
-      {
-        type: TemplatesNames.FramePictDesktop,
-        data: {
-          image: {
-            src: 'encore_fitness/desktop/4-cards_encore_desktop.jpg',
-            preloader:
-              'encore_fitness/desktop/preloader-4-cards_encore_desktop.jpg'
-          }
-        }
-      },
-      {
-        type: TemplatesNames.PhonesDesktop,
-        data: {
-          screens: [
-            {
-              src:
-                'encore_fitness/desktop/9.1-main_encore_mobile-screen_desktop.jpg',
-              preloader:
-                'encore_fitness/desktop/preloader-9.1-main_encore_mobile-screen_desktop.jpg',
-              type: 'img'
-            },
-            {
-              src:
-                'encore_fitness/desktop/9.2-trainers_encore_mobile-screen_desktop.jpg',
-              preloader:
-                'encore_fitness/desktop/preloader-9.2-trainers_encore_mobile-screen_desktop.jpg',
-              type: 'img'
-            },
-            {
-              src:
-                'encore_fitness/desktop/9.3-schedule_encore_mobile-screen_desktop.jpg',
-              preloader:
-                'encore_fitness/desktop/preloader-9.3-schedule_encore_mobile-screen_desktop.jpg',
-              type: 'img'
-            }
-          ]
-        }
-      },
-      {
-        type: TemplatesNames.FrameVideoDesktop,
-        duration: 8000,
-        data: {
-          image: {
-            src: 'encore_fitness/desktop/5-grouptraining_desktop_opt.mp4',
-            preloader:
-              'encore_fitness/desktop/preloader-5-grouptraining_desktop_opt.jpg'
-          }
-        }
-      },
-      {
-        type: TemplatesNames.FramePictDesktop,
-        data: {
-          image: {
-            src: 'encore_fitness/desktop/6-schedule_encore_desktop.jpg',
-            preloader:
-              'encore_fitness/desktop/preloader-6-schedule_encore_desktop.jpg'
-          }
-        }
-      },
-      {
-        type: TemplatesNames.FramePictDesktop,
-        data: {
-          image: {
-            src: 'encore_fitness/desktop/7-workout_encore_desktop.jpg',
-            preloader:
-              'encore_fitness/desktop/preloader-7-workout_encore_desktop.jpg'
-          }
-        }
-      },
-      {
-        type: TemplatesNames.FramePictDesktop,
-        data: {
-          image: {
-            src: 'encore_fitness/desktop/8-spa_encore_desktop.jpg',
-            preloader:
-              'encore_fitness/desktop/preloader-8-spa_encore_desktop.jpg'
-          }
-        }
-      },
-      {
-        type: TemplatesNames.PictureDesktop,
-        data: {
-          image: {
-            src:
-              'encore_fitness/desktop/10_grid-desktop_encore_desktop_full-slide.jpg',
-            preloader:
-              'encore_fitness/desktop/preloader-10_grid-desktop_encore_desktop_full-slide.jpg'
-          }
-        }
-      }
-    ]
-  },
-
-  /* OBED BUFET DESKTOP CASE */
-  {
-    description: {
-      type: {
-        ru: 'приложение',
-        en: 'mobile app'
-      },
-      name: {
-        ru: 'ОбедБуфет',
-        en: 'ObedBufet'
-      }
-    },
-    slides: [
-      {
-        type: TemplatesNames.PictureDesktop,
-        data: {
-          image: {
-            src: 'obed_bufet/cover_obedbufet_desktop_fullslide.jpg',
-            preloader:
-              'obed_bufet/preloader-cover_obedbufet_desktop_fullslide.jpg'
-          }
-        }
-      },
-      {
-        type: TemplatesNames.ArticleWithPhoneDesktop,
-        duration: 12000,
-        data: {
-          title: {
-            ru: `Дружелюбная доставка еды от${NON_BREAKING_SPACE}Ginza Project`,
-            en: `Friendly food delivery by${NON_BREAKING_SPACE}Ginza Project`
-          },
-          description: {
-            ru: [
-              `Заказ еды — простое и${NON_BREAKING_SPACE}понятное действие. Таким мы${NON_BREAKING_SPACE}сделали интерфейс этого приложения. Mинимум рекламы, позитивные цвета и${NON_BREAKING_SPACE}формы, забавные персонажи, легкий тон коммуникации и${NON_BREAKING_SPACE}простота в${NON_BREAKING_SPACE}использовании.`
-            ],
-            en: [
-              `Ordering food is${NON_BREAKING_SPACE}clear and simple. So is${NON_BREAKING_SPACE}the interface we made for this application: minimized advertising, positive shapes and colors, funny characters, friendly tone of${NON_BREAKING_SPACE}voice and ease of${NON_BREAKING_SPACE}use.`
-            ]
-          },
-          image: {
-            src: 'obed_bufet/0-location_obedbufet-app_desktop.jpg',
-            preloader:
-              'obed_bufet/preloader-1.1-video1_obedbufet-app_desktop.jpg'
-          }
-        }
-      },
-      {
-        type: TemplatesNames.PhonesDesktop,
-        duration: 13000,
-        data: {
-          screens: [
-            {
-              src: 'obed_bufet/1.1-video1_obedbufet-app_desktop.mp4',
-              preloader:
-                'obed_bufet/preloader-1.1-video1_obedbufet-app_desktop.jpg',
-              type: 'video'
-            },
-            {
-              src: 'obed_bufet/1.2-main_obedbufet-app_desktop.jpg',
-              preloader:
-                'obed_bufet/preloader-1.2-main_obedbufet-app_desktop.jpg',
-              type: 'img'
-            },
-            {
-              src: 'obed_bufet/1.3-catalog_obedbufet-app_desktop.jpg',
-              preloader:
-                'obed_bufet/preloader-1.3-catalog_obedbufet-app_desktop.jpg',
-              type: 'img'
-            }
-          ],
-          backgroundColor: '#FED67D'
-        }
-      },
-      {
-        type: TemplatesNames.PictureDesktop,
-        data: {
-          image: {
-            src: 'obed_bufet/7-rest_obedbufet_desktop-fullscreen.jpg',
-            preloader:
-              'obed_bufet/preloader-7-rest_obedbufet_desktop-fullscreen.jpg'
-          }
-        }
-      },
-      {
-        type: TemplatesNames.PhonesDesktop,
-        duration: 13000,
-        data: {
-          screens: [
-            {
-              src: 'obed_bufet/2.1-video2_obedbufet-app_desktop.mp4',
-              preloader:
-                'obed_bufet/preloader-2.1-video2_obedbufet-app_desktop.jpg',
-              type: 'video'
-            },
-            {
-              src: 'obed_bufet/2.2-product_obedbufet-app_desktop.jpg',
-              preloader:
-                'obed_bufet/preloader-2.2-product_obedbufet-app_desktop.jpg',
-              type: 'img'
-            },
-            {
-              src: 'obed_bufet/2.3-order_obedbufet-app_desktop.jpg',
-              preloader:
-                'obed_bufet/preloader-2.3-order_obedbufet-app_desktop.jpg',
-              type: 'img'
-            }
-          ],
-          backgroundColor: '#FED67D'
-        }
-      },
-      {
-        type: TemplatesNames.PhonesDesktop,
-        data: {
-          screens: [
-            {
-              src: 'obed_bufet/3.1-profile_obedbufet-app_desktop.jpg',
-              preloader:
-                'obed_bufet/preloader-3.1-profile_obedbufet-app_desktop.jpg',
-              type: 'img'
-            },
-            {
-              src: 'obed_bufet/3.2-address_obedbufet-app_desktop.jpg',
-              preloader:
-                'obed_bufet/preloader-3.2-address_obedbufet-app_desktop.jpg',
-              type: 'img'
-            },
-            {
-              src: 'obed_bufet/3.3-history_obedbufet-app_desktop.jpg',
-              preloader:
-                'obed_bufet/preloader-3.3-history_obedbufet-app_desktop.jpg',
-              type: 'img'
-            }
-          ],
-          backgroundColor: '#FED67D'
         }
       }
     ]
